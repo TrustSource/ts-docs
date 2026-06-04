@@ -1,0 +1,324 @@
+# Project
+site_name: TrustSource Documentation
+site_url: https://trustsource.github.io/ts-docs
+site_description: >-
+  Online help and user guide for the TrustSource software supply chain
+  compliance platform — license compliance, vulnerability management,
+  SBOM generation, CRA/NIS2 readiness.
+site_author: TrustSource Team
+
+# Repository
+repo_url: https://github.com/trustsource/ts-docs
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 <a href="https://www.eacg.de/editorial">EACG GmbH</a>
+
+nav:
+  - Home:
+    - index.md
+  - Getting Started (v2.16):
+    - v2.16/index.md
+    - What is TrustSource?: v2.16/00-getting-started/01-what-is-trustsource.md
+    - Account Types: v2.16/00-getting-started/02-account-types.md
+    - First Login: v2.16/00-getting-started/03-first-login.md
+    - Quick Tour: v2.16/00-getting-started/04-quick-tour.md
+    - Mental Model: v2.16/00-getting-started/05-mental-model.md
+    - Roles & Licenses Cheat Sheet: v2.16/00-getting-started/06-roles-licenses-cheatsheet.md
+  - Installation & Setup:
+    - v2.16/01-installation-setup/index.md
+    - Prerequisites: v2.16/01-installation-setup/01-prerequisites.md
+    - Docker-Compose Setup: v2.16/01-installation-setup/02-docker-compose.md
+    - Environment Variables: v2.16/01-installation-setup/03-environment-variables.md
+    - External Services: v2.16/01-installation-setup/04-external-services.md
+    - Keycloak / SSO Setup: v2.16/01-installation-setup/05-sso-keycloak-setup.md
+    - First Admin User: v2.16/01-installation-setup/06-first-admin-user.md
+    - Backups & Monitoring: v2.16/01-installation-setup/07-backups-monitoring.md
+    - Upgrade Guide: v2.16/01-installation-setup/08-upgrade.md
+  - Inbound:
+    - v2.16/02-inbound/index.md
+    - Quick Check: v2.16/02-inbound/01-check.md
+    - Scans: v2.16/02-inbound/02-scans.md
+    - CI/CD Integrations: v2.16/02-inbound/03-cicd-integrations.md
+    - Code Tests (SARIF): v2.16/02-inbound/04-tests-sarif.md
+    - Repositories (Deep Scan): v2.16/02-inbound/05-repositories-deep-scan.md
+    - Bulk Repositories: v2.16/02-inbound/06-bulk-repositories.md
+    - Container Scanning: v2.16/02-inbound/07-containers.md
+  - Internal:
+    - v2.16/03-internal/index.md
+    - Projects:
+      - v2.16/03-internal/01-projects/index.md
+      - Create & List: v2.16/03-internal/01-projects/01-create-and-list.md
+      - Project Overview: v2.16/03-internal/01-projects/02-project-overview.md
+      - Settings:
+        - v2.16/03-internal/01-projects/settings/index.md
+        - General: v2.16/03-internal/01-projects/settings/01-general.md
+        - Legal: v2.16/03-internal/01-projects/settings/02-legal.md
+        - CIA: v2.16/03-internal/01-projects/settings/03-cia.md
+        - Quality: v2.16/03-internal/01-projects/settings/04-quality.md
+        - Encryption: v2.16/03-internal/01-projects/settings/05-encryption.md
+        - End of Life: v2.16/03-internal/01-projects/settings/06-end-of-life.md
+        - Whitelists & Blacklists: v2.16/03-internal/01-projects/settings/07-whitelists-blacklists.md
+        - Obligations: v2.16/03-internal/01-projects/settings/08-obligations.md
+        - Module Classification: v2.16/03-internal/01-projects/settings/09-module-classification.md
+        - Issue Tracker: v2.16/03-internal/01-projects/settings/10-issue-tracker.md
+        - Module Import: v2.16/03-internal/01-projects/settings/11-module-import.md
+        - Danger Zone: v2.16/03-internal/01-projects/settings/12-danger-zone.md
+    - Modules:
+      - v2.16/03-internal/02-modules/index.md
+      - Create & List: v2.16/03-internal/02-modules/01-create-and-list.md
+      - Module Detail Tabs: v2.16/03-internal/02-modules/02-module-detail-tabs.md
+      - Settings:
+        - v2.16/03-internal/02-modules/settings/index.md
+        - General: v2.16/03-internal/02-modules/settings/01-general.md
+        - Legal: v2.16/03-internal/02-modules/settings/02-legal.md
+        - Obligations: v2.16/03-internal/02-modules/settings/03-obligations.md
+        - Viability: v2.16/03-internal/02-modules/settings/04-viability.md
+        - OSSF: v2.16/03-internal/02-modules/settings/05-ossf.md
+        - Versioning: v2.16/03-internal/02-modules/settings/06-versioning.md
+        - MDR/IVDR Classification: v2.16/03-internal/02-modules/settings/07-module-classification-mdr-ivdr.md
+        - CIA: v2.16/03-internal/02-modules/settings/08-cia.md
+        - Capabilities: v2.16/03-internal/02-modules/settings/09-capabilities.md
+        - Encryption: v2.16/03-internal/02-modules/settings/10-encryption.md
+        - End of Life: v2.16/03-internal/02-modules/settings/11-end-of-life.md
+        - Quality: v2.16/03-internal/02-modules/settings/12-quality.md
+        - Releases: v2.16/03-internal/02-modules/settings/13-releases.md
+        - Whitelists & Blacklists: v2.16/03-internal/02-modules/settings/14-whitelists-blacklists.md
+        - CVE Whitelist: v2.16/03-internal/02-modules/settings/15-cve-whitelist.md
+        - Custom Components: v2.16/03-internal/02-modules/settings/16-custom-components.md
+        - SPDX Export: v2.16/03-internal/02-modules/settings/17-spdx-export.md
+        - Danger Zone: v2.16/03-internal/02-modules/settings/18-danger-zone.md
+    - Products:
+      - v2.16/03-internal/03-products/index.md
+      - Create & Import: v2.16/03-internal/03-products/01-create-import.md
+      - Information: v2.16/03-internal/03-products/02-tab-information.md
+      - Solutions: v2.16/03-internal/03-products/03-tab-solutions.md
+      - CRA Classification: v2.16/03-internal/03-products/04-tab-classification-cra.md
+      - Photos: v2.16/03-internal/03-products/05-tab-photos.md
+      - Documents: v2.16/03-internal/03-products/06-tab-documents.md
+      - Contacts: v2.16/03-internal/03-products/07-tab-contacts.md
+      - Support: v2.16/03-internal/03-products/08-tab-support.md
+      - Misuse Cases: v2.16/03-internal/03-products/09-tab-misuse.md
+      - Link with Release: v2.16/03-internal/03-products/10-link-with-release.md
+    - Analysis Reports: v2.16/03-internal/04-analysis-reports.md
+    - Risks:
+      - v2.16/03-internal/05-risks/index.md
+      - Overview: v2.16/03-internal/05-risks/01-overview.md
+      - Risks List: v2.16/03-internal/05-risks/02-risks-list.md
+      - Risks Tasks: v2.16/03-internal/05-risks/03-risks-tasks.md
+      - Portfolio Views: v2.16/03-internal/05-risks/04-portfolio-views.md
+    - Approvals:
+      - v2.16/03-internal/06-approvals/index.md
+      - Create Approval: v2.16/03-internal/06-approvals/01-create-approval.md
+      - Approval Detail Tabs: v2.16/03-internal/06-approvals/02-approval-detail-tabs.md
+      - Approve / Reject: v2.16/03-internal/06-approvals/03-approve-reject-workflow.md
+      - Binary Linking: v2.16/03-internal/06-approvals/04-binary-linking.md
+      - Public Approves: v2.16/03-internal/06-approvals/05-public-approves.md
+      - Post-Release Vulnerabilities: v2.16/03-internal/06-approvals/06-post-release-vulnerabilities.md
+    - Releases: v2.16/03-internal/07-releases.md
+    - Threat Models:
+      - v2.16/03-internal/08-threat-models/index.md
+      - Create Threat Model: v2.16/03-internal/08-threat-models/01-create-threat-model.md
+      - STRIDE / LINDDUN: v2.16/03-internal/08-threat-models/02-threat-detail-stride-linddun.md
+      - Mitigations & Status: v2.16/03-internal/08-threat-models/03-mitigations-status.md
+    - Settings & Templates: v2.16/03-internal/09-settings-templates.md
+    - Vulnerabilities Activity: v2.16/03-internal/10-vulnerabilities-activity.md
+    - Critical Components: v2.16/03-internal/11-critical-components.md
+  - Outbound:
+    - v2.16/04-outbound/index.md
+    - SBOM Files: v2.16/04-outbound/01-sbom-files.md
+    - SOUP Files: v2.16/04-outbound/02-soup-files.md
+    - Notice Files: v2.16/04-outbound/03-notice-files.md
+    - CSAF Documents: v2.16/04-outbound/04-csaf.md
+    - Verification: v2.16/04-outbound/05-verification.md
+  - Knowledge:
+    - v2.16/05-knowledge/index.md
+    - Component Lake: v2.16/05-knowledge/01-component-lake.md
+    - Vulnerability Lake: v2.16/05-knowledge/02-vulnerability-lake.md
+    - Infrastructure Components: v2.16/05-knowledge/03-infrastructure-components.md
+    - COTS Components: v2.16/05-knowledge/04-cots-components.md
+    - Licenses: v2.16/05-knowledge/05-licenses.md
+    - Algorithms: v2.16/05-knowledge/06-algorithms.md
+    - Open Source Policies: v2.16/05-knowledge/07-open-source-policies.md
+    - Your Policy: v2.16/05-knowledge/08-open-source-policy.md
+    - Copyright & Trademarks: v2.16/05-knowledge/09-copyright-trademarks.md
+    - AI Chat Assistant: v2.16/05-knowledge/10-chat.md
+    - Trainings: v2.16/05-knowledge/11-trainings.md
+  - Administration:
+    - v2.16/06-administration/index.md
+    - General Info: v2.16/06-administration/01-general-info.md
+    - Account & Billing: v2.16/06-administration/02-account-billing.md
+    - Enterprise Companies: v2.16/06-administration/03-enterprise-companies.md
+    - User Management: v2.16/06-administration/04-user-management.md
+    - Login History: v2.16/06-administration/05-login-history.md
+    - API Keys: v2.16/06-administration/06-api-keys.md
+    - Integrations: v2.16/06-administration/07-integrations.md
+    - Policies: v2.16/06-administration/08-policies.md
+    - Templates: v2.16/06-administration/09-templates.md
+    - Audit Logs: v2.16/06-administration/10-audit-logs.md
+    - T&C / Privacy: v2.16/06-administration/11-tc-privacy-documents.md
+  - Auth & SSO:
+    - v2.16/07-account-admin-auth/index.md
+    - User Storage: v2.16/07-account-admin-auth/01-user-storage.md
+    - Identity Providers: v2.16/07-account-admin-auth/02-identity-providers.md
+    - Stored Users: v2.16/07-account-admin-auth/03-stored-users.md
+    - Login Settings: v2.16/07-account-admin-auth/04-login-settings.md
+    - Authentication Flows: v2.16/07-account-admin-auth/05-authentication-settings.md
+    - SMTP Settings: v2.16/07-account-admin-auth/06-smtp-settings.md
+  - Personal:
+    - v2.16/08-personal/index.md
+    - Updates Feed: v2.16/08-personal/01-updates.md
+    - Inbox: v2.16/08-personal/02-inbox-messages.md
+    - Profile: v2.16/08-personal/03-profile.md
+    - Support: v2.16/08-personal/04-support.md
+    - API Documentation: v2.16/08-personal/05-api-documentation.md
+  - REST API:
+    - v2.16/09-rest-api/index.md
+    - Authentication: v2.16/09-rest-api/01-authentication.md
+    - Errors & Responses: v2.16/09-rest-api/02-error-handling.md
+    - Endpoint Reference: v2.16/09-rest-api/03-endpoint-reference.md
+    - Example (curl): v2.16/09-rest-api/04-examples-curl.md
+    - Public Routes: v2.16/09-rest-api/05-public-routes.md
+  - Roles & Permissions:
+    - v2.16/10-roles-permissions/index.md
+    - The 8 Public Roles: v2.16/10-roles-permissions/01-roles-overview.md
+    - Internal Roles: v2.16/10-roles-permissions/02-internal-roles.md
+    - Permission Model: v2.16/10-roles-permissions/03-permission-model.md
+    - Functions by Area: v2.16/10-roles-permissions/04-functions-by-area.md
+    - Functions by Role: v2.16/10-roles-permissions/05-functions-by-role.md
+    - Settings Permissions: v2.16/10-roles-permissions/06-settings-permission-matrix.md
+    - License Features: v2.16/10-roles-permissions/07-license-features.md
+    - Account Types: v2.16/10-roles-permissions/08-account-types.md
+  - Troubleshooting:
+    - v2.16/11-troubleshooting-faq/index.md
+    - FAQ: v2.16/11-troubleshooting-faq/01-faq.md
+    - Common Errors: v2.16/11-troubleshooting-faq/02-common-errors.md
+    - Scan Troubleshooting: v2.16/11-troubleshooting-faq/03-scan-troubleshooting.md
+    - Integration Issues: v2.16/11-troubleshooting-faq/04-integration-troubleshooting.md
+    - SSO Issues: v2.16/11-troubleshooting-faq/05-sso-troubleshooting.md
+    - Contact Support: v2.16/11-troubleshooting-faq/06-contact-support.md
+  - Release Notes:
+    - v2.16/12-release-notes/index.md
+  - Background:
+    - shared/background/index.md
+    - Cyber Resilience Act: shared/background/01-cra-cyber-resilience-act.md
+    - NIS2 Directive: shared/background/02-nis2-directive.md
+    - Supply Chain Security: shared/background/03-software-supply-chain-security.md
+    - Continuous Testing: shared/background/04-continuous-software-testing.md
+    - Product Security: shared/background/05-product-security.md
+    - Crypto Agility: shared/background/06-crypto-agility.md
+    - Post-Quantum Security: shared/background/07-post-quantum-security.md
+    - Export Controls: shared/background/08-export-controls.md
+    - Malware Identification: shared/background/09-malware-identification.md
+    - SBOM Formats: shared/background/10-sbom-formats.md
+    - VEX in CSAF: shared/background/11-vex-csaf-vex.md
+  - Glossary: shared/glossary.md
+  - Support: shared/support.md
+  - Community Edition (v3.0):
+    - v3.0/index.md
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: white
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  font: false  # data privacy — no Google Fonts
+  logo: assets/TS_logo_lang.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - header.autohide
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+extra:
+  homepage: https://www.trustsource.io
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: false
+    actions:
+      - accept
+      - manage
+      - reject
+  analytics:
+    provider: google
+    property: G-ZSZXY48Y3G
+  feedback:
+    title: Was this page helpful?
+    ratings:
+      - icon: material/emoticon-happy-outline
+        name: This page was helpful
+        data: 1
+        note: >-
+          Thanks for your feedback!
+      - icon: material/emoticon-sad-outline
+        name: This page could be improved
+        data: 0
+        note: >-
+          Thanks for your feedback! Help us improve this page by
+          using our <a href="https://www.trustsource.io/contact" target="_blank" rel="noopener">feedback form</a>.
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/trustsource
+      name: TrustSource @ LinkedIn
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:support@trustsource.io
+
+extra_css:
+  - assets/stylesheet.css
+
+extra_javascript:
+  - assets/feedback.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

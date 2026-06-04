@@ -1,0 +1,9 @@
+# Per-repo doc-gen-agent config — read by the screenshot agent after
+# cloning or mounting the repo. Anything not specified here falls through
+# to built-in defaults; anything here is overridden by
+# projects/<key>.yaml when it explicitly sets the same field.
+docsRoot: docs
+
+assets:
+  root: docs/assets/images
+  pathTemplate: "{root}/{relDir}/{basename}-shot-{nn}.png"
