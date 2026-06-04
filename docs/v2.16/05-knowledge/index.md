@@ -1,19 +1,17 @@
 # Knowledge — Lakes & References
 
-All read-only reference data: the lakes, the catalogs, the chat assistant and trainings.
+The Knowledge section provides global reference databases shared across all projects. These are the data sources that ***TrustSource*** uses to enrich your scans with license obligations, vulnerability data, algorithm classifications and policy rules.
 
-## In this chapter
-
-| Page | Status | Scope |
-|---|---|---|
-| [Component Lake](01-component-lake.md) | _Scaffold_ | Global component database; search, detail, dependents. |
-| [Vulnerability Lake](02-vulnerability-lake.md) | _Scaffold_ | CVE / CWE / GHSA search (Typesense). |
-| [Infrastructure Components](03-infrastructure-components.md) | _Scaffold_ | Cloud / runtime / web-server catalog. |
-| [COTS Components](04-cots-components.md) | _Scaffold_ | Commercial off-the-shelf catalog. |
-| [Licenses Database](05-licenses.md) | _Scaffold_ | Search, obligations, commercial terms, approval status. |
-| [Algorithms Database](06-algorithms.md) | _Scaffold_ | Cryptographic algorithms, FIPS status, deprecation, key-length advice. |
-| [Open Source Policies](07-open-source-policies.md) | _Scaffold_ | Available policy templates. |
-| [Your Open Source Policy](08-open-source-policy.md) | _Scaffold_ | View your active policy. |
-| [Copyright & Trademarks](09-copyright-trademarks.md) | _Scaffold_ | Trademark and copyright registry. |
-| [AI Chat Assistant](10-chat.md) | _Scaffold_ | Side panel and full-page chat (license `chat`, BETA). |
-| [Trainings](11-trainings.md) | _Scaffold_ | Internal training list or external link. |
+| Page | What it covers |
+|---|---|
+| [Component Lake](01-component-lake.md) | Global component library — search, inspect, see dependents. |
+| [Vulnerability Lake](02-vulnerability-lake.md) | CVE/CWE/GHSA search with severity, affected versions, aliases. |
+| [Infrastructure Components](03-infrastructure-components.md) | Cloud/container runtime catalog. |
+| [COTS Components](04-cots-components.md) | Commercial off-the-shelf component catalog. |
+| [Licenses](05-licenses.md) | License database with obligations and commercial terms. |
+| [Algorithms](06-algorithms.md) | Cryptographic algorithm database with FIPS status. |
+| [Open Source Policies](07-open-source-policies.md) | Available policy templates. |
+| [Your Policy](08-open-source-policy.md) | View your company's active FOSS policy. |
+| [Copyright & Trademarks](09-copyright-trademarks.md) | Trademark registry. |
+| [AI Chat Assistant](10-chat.md) | AI-powered assistant for compliance questions. |
+| [Trainings](11-trainings.md) | Training resources and links. |

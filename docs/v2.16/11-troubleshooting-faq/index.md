@@ -1,14 +1,12 @@
 # Troubleshooting & FAQ
 
-Where to look when something does not work the way you expect.
+When something does not work as expected, start here. This chapter collects frequently asked questions, common error messages and solution guides for specific areas.
 
-## In this chapter
-
-| Page | Status | Scope |
-|---|---|---|
-| [Frequently Asked Questions](01-faq.md) | _Scaffold_ | 20–30 most common questions. |
-| [Common Error Messages](02-common-errors.md) | _Scaffold_ | "Permission denied", "Scan failed", ... |
-| [Scan Troubleshooting](03-scan-troubleshooting.md) | _Scaffold_ | Scanner finds nothing / wrong licenses / phantom components. |
-| [Integration Troubleshooting](04-integration-troubleshooting.md) | _Scaffold_ | Jira / GitHub / TFS issue creation fails. |
-| [SSO / Auth Troubleshooting](05-sso-troubleshooting.md) | _Scaffold_ | Keycloak login fails. |
-| [Contact Support](06-contact-support.md) | _Scaffold_ | Escalation paths, what to put in a ticket. |
+| Page | What it covers |
+|---|---|
+| [FAQ](01-faq.md) | Top 20–30 frequently asked questions. |
+| [Common Errors](02-common-errors.md) | Error messages and what they mean. |
+| [Scan Troubleshooting](03-scan-troubleshooting.md) | Scanner issues, missing components, wrong licenses. |
+| [Integration Issues](04-integration-troubleshooting.md) | Jira/GitHub/TFS connection problems. |
+| [SSO Issues](05-sso-troubleshooting.md) | Keycloak/OIDC login problems. |
+| [Contact Support](06-contact-support.md) | How to reach us, what to include in a ticket. |

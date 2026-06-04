@@ -1,10 +1,6 @@
 # Frequently Asked Questions
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** 20–30 most common questions.
->
-> **Audience:** All users.
+The most common questions about ***TrustSource***. This page will be populated with real user questions as they come in.
 
-<!-- TODO: drafted content -->
+> [!NOTE]
+> This page is being built. If you have a question not answered here, please [contact support](06-contact-support.md).

@@ -1,10 +1,16 @@
 # Post-Quantum Security (PQC)
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** NIST standards (Kyber, Dilithium), migration paths.
->
-> **Audience:** Security, architects.
+Post-quantum cryptography prepares for the day when quantum computers can break current public-key algorithms.
 
-<!-- TODO: drafted content -->
+## NIST PQC Standards
+
+- **ML-KEM** (Kyber) — key encapsulation mechanism.
+- **ML-DSA** (Dilithium) — digital signature algorithm.
+- **SLH-DSA** (SPHINCS+) — stateless hash-based signatures.
+
+## Migration path
+
+1. **Inventory** — know which algorithms you use (***TrustSource*** [Algorithm database](../v2.16/05-knowledge/06-algorithms.md)).
+2. **Assess** — identify where PQC migration is needed.
+3. **Migrate** — replace vulnerable algorithms with PQC-safe alternatives.
+4. **Monitor** — track algorithm deprecation status continuously.

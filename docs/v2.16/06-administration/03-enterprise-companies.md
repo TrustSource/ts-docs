@@ -1,10 +1,8 @@
 # Enterprise Companies
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Sub-companies, quotas, feature toggles.
->
-> **Audience:** Enterprise admins.
+> **Required role:** `enterprise_admin`
 
-<!-- TODO: drafted content -->
+Manage sub-companies in your enterprise hierarchy. Set quotas, feature toggles and user assignments per sub-company. Only available for Enterprise and Medical accounts.
+
+📸 *Screenshot: the Enterprise Companies page.*

@@ -1,10 +1,5 @@
 # COTS Components
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Commercial off-the-shelf catalog.
->
-> **Audience:** Procurement, PMs.
+The COTS (Commercial Off-The-Shelf) catalog tracks commercial software components used in your projects. Unlike open-source components from scans, COTS entries are managed manually.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the COTS components list.*

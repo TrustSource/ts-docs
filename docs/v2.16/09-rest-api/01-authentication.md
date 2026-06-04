@@ -1,10 +1,9 @@
-# Authentication (`x-apikey`)
+# Authentication (x-apikey)
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Obtain a key, header format, scopes.
->
-> **Audience:** Developers, integrators.
+Authenticate API requests by passing your API key in the `x-apikey` HTTP header.
 
-<!-- TODO: drafted content -->
+```bash
+curl -H "x-apikey: YOUR_KEY" https://app.trustsource.io/api/v1/projects
+```
+
+API keys are created under [Administration → API Keys](../06-administration/06-api-keys.md).

@@ -1,10 +1,8 @@
 # User Management
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Invite, assign roles, remove, bulk import.
->
-> **Audience:** Account admins.
+> **Required role:** `account_admin`
 
-<!-- TODO: drafted content -->
+Invite new users via email, assign roles, manage team members and remove users. Bulk import is supported. Disabled when corporate IDM (Keycloak) enforces user management externally.
+
+📸 *Screenshot: the User Management page.*

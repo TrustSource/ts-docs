@@ -1,10 +1,5 @@
 # Infrastructure Components
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Cloud / runtime catalog.
->
-> **Audience:** DevOps, architects.
+The Infrastructure Components catalog lists cloud and container runtime components — database servers, base images, web servers, message brokers, operating systems — that can be linked to [Infrastructure Modules](../03-internal/02-modules/03-infrastructure-modules.md).
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the infrastructure components list.*

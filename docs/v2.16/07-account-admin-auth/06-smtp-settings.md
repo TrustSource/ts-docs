@@ -1,10 +1,9 @@
 # SMTP Settings
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Mail server for resets and notifications.
->
-> **Audience:** Account admins.
+> **Required role:** `account_admin`
+> **Required account type:** Enterprise or Medical
 
-<!-- TODO: drafted content -->
+Configure the mail server used for password reset emails, enrollment links and notification messages.
+
+📸 *Screenshot: the SMTP Settings configuration page.*

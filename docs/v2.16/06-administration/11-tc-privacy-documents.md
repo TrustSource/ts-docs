@@ -1,10 +1,8 @@
-# T & C / Privacy
+# T&C / Privacy Documents
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Display of legal documents.
->
-> **Audience:** All users.
+> **Required role:** `(all)`
 
-<!-- TODO: drafted content -->
+View the Terms & Conditions and Privacy Policy documents applicable to your account.
+
+📸 *Screenshot: the T&C / Privacy Documents page.*

@@ -1,10 +1,5 @@
 # Inbox / Messages
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Internal messaging with folders.
->
-> **Audience:** All users.
+Your message inbox with folders: Inbox, Archive and Drafts. Receive notifications about approvals, vulnerability alerts and team activities.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the Inbox / Messages page.*

@@ -1,10 +1,9 @@
 # Login Settings
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Password policy, session timeout, brute-force.
->
-> **Audience:** Account admins.
+> **Required role:** `account_admin`
+> **Required account type:** Enterprise or Medical
 
-<!-- TODO: drafted content -->
+Configure password policies (minimum length, complexity), session timeouts and brute-force protection thresholds.
+
+📸 *Screenshot: the Login Settings configuration page.*

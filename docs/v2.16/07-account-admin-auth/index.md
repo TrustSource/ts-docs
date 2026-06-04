@@ -1,14 +1,18 @@
-# Account Admin — Auth & SSO
+# Auth & SSO
 
-Authentication and SSO setup. Visible only to `account_admin` on Enterprise / Medical accounts.
+> [!NOTE]
+> **Required role:** `account_admin`
+> **Required account type:** Enterprise or Medical
 
-## In this chapter
+This section covers identity provider configuration for enterprise-grade authentication. It is only visible for Enterprise and Medical accounts.
 
-| Page | Status | Scope |
-|---|---|---|
-| [User Storage (LDAP / DB)](01-user-storage.md) | _Scaffold_ | Custom user directory. |
-| [Identity Providers](02-identity-providers.md) | _Scaffold_ | Keycloak multi-realm: OIDC, SAML, LDAP, OAuth. |
-| [Stored Users](03-stored-users.md) | _Scaffold_ | Local user CRUD. |
-| [Login Settings](04-login-settings.md) | _Scaffold_ | Password policy, session timeout, brute-force. |
-| [Authentication Flows](05-authentication-settings.md) | _Scaffold_ | MFA enforcement, custom flows. |
-| [SMTP Settings](06-smtp-settings.md) | _Scaffold_ | Mail server for resets and notifications. |
+| Page | What it covers |
+|---|---|
+| [User Storage](01-user-storage.md) | Custom user directory (LDAP/DB) integration. |
+| [Identity Providers](02-identity-providers.md) | Keycloak multi-realm, OIDC, SAML, LDAP, GitHub/LinkedIn OAuth. |
+| [Stored Users](03-stored-users.md) | Local user CRUD within the identity provider. |
+| [Login Settings](04-login-settings.md) | Password policy, session timeout, brute-force protection. |
+| [Authentication Flows](05-authentication-settings.md) | MFA enforcement, authentication flow configuration. |
+| [SMTP Settings](06-smtp-settings.md) | Mail server for password reset and notification emails. |
+
+📸 *Screenshot: the Auth & SSO section in the sidebar.*

@@ -1,10 +1,7 @@
 # Endpoint Reference
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** 25 endpoint families with link to interactive docs.
->
-> **Audience:** Developers, integrators.
+***TrustSource*** exposes 25 endpoint families:
 
-<!-- TODO: drafted content -->
+scans, components, cotsComponents, infrastructureComponents, modules, projects, check, imports, deepscan, csaf, releases, approves, reports, risks, users, companyFoss, tests, demo, public-BoM, public-Notice, and more.
+
+For full endpoint details, use the built-in [API Documentation Browser](../08-personal/05-api-documentation.md).

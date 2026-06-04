@@ -1,19 +1,19 @@
 # Administration
 
-Company-wide configuration. Most pages here require the `account_admin` role; a few are open to other admin-style roles.
+Company-wide settings and management. Most pages in this section require the `account_admin` role.
 
-## In this chapter
-
-| Page | Status | Scope |
+| Page | What it covers | Required role |
 |---|---|---|
-| [General Company Info](01-general-info.md) | _Scaffold_ | Name, logo, contact, language. |
-| [Account & Billing](02-account-billing.md) | _Scaffold_ | Subscription, trial, account type, written offer. |
-| [Enterprise Companies](03-enterprise-companies.md) | _Scaffold_ | Sub-companies, quotas, feature toggles. |
-| [User Management](04-user-management.md) | _Scaffold_ | Invite, assign roles, remove, bulk import. |
-| [Login History](05-login-history.md) | _Scaffold_ | When, from where, success / failure. |
-| [Scanners & API Keys](06-api-keys.md) | _Scaffold_ | Create, rotate, revoke; usage tracking. |
-| [Integrations](07-integrations.md) | _Scaffold_ | GitHub, Jira, TFS, LeanIX, Scanoss, webhooks, PSIRT — at company level. |
-| [Company Policies](08-policies.md) | _Scaffold_ | EOL, FOSS, Crypto Algorithms. |
-| [Templates](09-templates.md) | _Scaffold_ | Private licenses, manual vulns, tags, legal templates, private algorithms. |
-| [Audit Logs](10-audit-logs.md) | _Scaffold_ | Company-wide audit trail. |
-| [T & C / Privacy](11-tc-privacy-documents.md) | _Scaffold_ | Display of legal documents. |
+| [General Info](01-general-info.md) | Company name, logo, contact, language. | account_admin |
+| [Account & Billing](02-account-billing.md) | Subscription, usage, invoices. | account_admin |
+| [Enterprise Companies](03-enterprise-companies.md) | Sub-company management (Enterprise/Medical). | enterprise_admin |
+| [User Management](04-user-management.md) | Invite, assign roles, remove members. | account_admin |
+| [Login History](05-login-history.md) | Audit log of user logins. | account_admin |
+| [API Keys](06-api-keys.md) | Scanner API key management. | account_admin |
+| [Integrations](07-integrations.md) | Jira, GitHub, TFS, LeanIX, webhooks. | account_admin |
+| [Policies](08-policies.md) | EOL, FOSS and crypto policies. | account_admin |
+| [Templates](09-templates.md) | Private licenses, algorithms, tags, legal templates. | account_admin |
+| [Audit Logs](10-audit-logs.md) | Company-wide audit trail. | account_admin |
+| [T&C / Privacy](11-tc-privacy-documents.md) | Terms and privacy documents. | all |
+
+📸 *Screenshot: the Administration section in the sidebar.*

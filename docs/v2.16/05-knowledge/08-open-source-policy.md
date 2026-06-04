@@ -1,10 +1,10 @@
 # Your Open Source Policy
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** View your active policy.
->
-> **Audience:** All users.
+View and manage your company's active FOSS policy. The policy determines the default classification of licenses across all your projects.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: your active open source policy.*
+
+## Related
+
+- [Open Source Policies](07-open-source-policies.md) — available policy templates
+- [Policies (Administration)](../06-administration/08-policies.md) — company-wide policy management

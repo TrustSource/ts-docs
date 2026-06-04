@@ -1,10 +1,9 @@
 # Integration Troubleshooting
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Jira / GitHub / TFS issue creation fails.
->
-> **Audience:** PMs, account admins.
+Issues with Jira, GitHub and TFS integrations.
 
-<!-- TODO: drafted content -->
+| Problem | Likely cause | Fix |
+|---|---|---|
+| Issues not created | Credentials expired. | Regenerate the API token and update in project settings. |
+| Wrong Jira project | Project key mismatch. | Verify the project key in Administration → Integrations. |
+| GitHub rate limit | Too many API calls. | Wait for the rate limit to reset (1 hour). |

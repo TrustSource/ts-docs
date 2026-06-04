@@ -1,10 +1,5 @@
-# Field-Level Permissions in Settings
+# Settings Permission Matrix
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** From `analyse/role-permission-matrix.md` (simplified).
->
-> **Audience:** PMs, advanced users.
+Field-level permissions for project and module settings tabs. Shows which fields each role can read, write or execute.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the Settings Permission Matrix reference page.*

@@ -1,10 +1,9 @@
-# User Storage (LDAP / DB)
+# User Storage
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Custom user directory.
->
-> **Audience:** Account admins (Enterprise/Medical).
+> **Required role:** `account_admin`
+> **Required account type:** Enterprise or Medical
 
-<!-- TODO: drafted content -->
+Connect a custom user directory (LDAP or database) to ***TrustSource*** for centralized user management.
+
+📸 *Screenshot: the User Storage configuration page.*

@@ -1,10 +1,8 @@
 # Audit Logs
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Company-wide audit trail.
->
-> **Audience:** Account admins, auditors.
+> **Required role:** `account_admin`
 
-<!-- TODO: drafted content -->
+Company-wide audit trail showing all significant actions — who did what, when, on which object. Filterable by user, action type and date.
+
+📸 *Screenshot: the Audit Logs page.*

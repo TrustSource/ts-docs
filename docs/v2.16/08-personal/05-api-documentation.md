@@ -1,10 +1,5 @@
 # API Documentation Browser
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** In-app OpenAPI browser.
->
-> **Audience:** Developers, integrators.
+Browse the built-in interactive API documentation (OpenAPI/Swagger). Test API endpoints directly from the browser.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the API Documentation Browser page.*

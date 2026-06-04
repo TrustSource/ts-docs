@@ -1,10 +1,5 @@
 # Trainings
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Internal list or external link.
->
-> **Audience:** All users.
+Access training resources for ***TrustSource*** — either internal training links managed by your company or an external training portal.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the trainings page.*

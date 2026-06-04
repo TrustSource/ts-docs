@@ -1,13 +1,14 @@
 # Outbound — Compliance Documents
 
-When you need to hand a document to someone outside the team: SBOMs, SOUP, attribution / notice, CSAF advisories, plus a verification tool for documents you receive.
+This chapter covers the documents you generate from ***TrustSource*** for external consumption — SBOMs, attribution files, SOUP lists, CSAF advisories and the verification tool.
 
-## In this chapter
+| Page | What it covers |
+|---|---|
+| [SBOM Files](01-sbom-files.md) | Generate, upload, freeze and download Software Bills of Materials (SPDX, CycloneDX). |
+| [SOUP Files](02-soup-files.md) | Software of Unknown Provenance lists for medical devices. |
+| [Notice Files](03-notice-files.md) | Attribution / open-source notice file generation and maintenance. |
+| [CSAF Documents](04-csaf.md) | CSAF security advisory creation, editing and JSON export. |
+| [Verification](05-verification.md) | Validate external SBOMs, CSAF documents, CBOMs or Notice files. |
 
-| Page | Status | Scope |
-|---|---|---|
-| [SBOM Files (SPDX, CycloneDX)](01-sbom-files.md) | _Scaffold_ | Generation, upload, freeze, versioning, download formats. |
-| [SOUP Files (Medical)](02-soup-files.md) | _Scaffold_ | Software-of-Unknown-Provenance for IEC 62304 (license `medical`, feature `soup_report`). |
-| [Notice / Attribution Files](03-notice-files.md) | _Scaffold_ | Generated NOTICE.txt / THIRD_PARTY.txt; pinning & comments. |
-| [CSAF Documents](04-csaf.md) | _Scaffold_ | Tabs: Metadata, Affected, Remediation, History; bulk from SBOM (license `csaf`). |
-| [Verification Tool](05-verification.md) | _Scaffold_ | Validate an externally-received SBOM / CSAF / CBOM / Notice file. |
+> [!TIP]
+> Most outbound documents are generated automatically as part of the [approval workflow](../03-internal/06-approvals/index.md). You can also generate them on demand from the module or project level.

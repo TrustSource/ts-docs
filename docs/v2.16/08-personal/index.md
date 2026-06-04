@@ -1,13 +1,11 @@
-# Personal Area
+# Your Personal Area
 
-Your personal settings and notification surface.
+These pages cover features available to every logged-in user — updates, inbox, profile and support.
 
-## In this chapter
-
-| Page | Status | Scope |
-|---|---|---|
-| [Updates Feed](01-updates.md) | _Scaffold_ | System updates and notifications. |
-| [Inbox / Messages](02-inbox-messages.md) | _Scaffold_ | Internal messaging with folders. |
-| [Your Profile](03-profile.md) | _Scaffold_ | Preferences, password, avatar, your own API keys. |
-| [Getting Support](04-support.md) | _Scaffold_ | Zendesk and account-admin contact. |
-| [API Documentation Browser](05-api-documentation.md) | _Scaffold_ | In-app OpenAPI browser. |
+| Page | What it covers |
+|---|---|
+| [Updates Feed](01-updates.md) | System updates and notifications. |
+| [Inbox](02-inbox-messages.md) | Messages with folders (Inbox, Archive, Drafts). |
+| [Profile](03-profile.md) | Preferences, password, avatar, personal API keys. |
+| [Support](04-support.md) | Getting help — Zendesk, admin contact. |
+| [API Documentation](05-api-documentation.md) | Built-in OpenAPI browser. |

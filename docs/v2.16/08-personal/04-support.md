@@ -1,10 +1,5 @@
 # Getting Support
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Zendesk and account-admin contact.
->
-> **Audience:** All users.
+Contact support via Zendesk or reach your company's account administrator. Links to the knowledge base and this documentation.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the Getting Support page.*

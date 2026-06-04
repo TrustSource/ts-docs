@@ -1,10 +1,9 @@
 # Identity Providers
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Keycloak multi-realm: OIDC, SAML, LDAP, OAuth.
->
-> **Audience:** Account admins.
+> **Required role:** `account_admin`
+> **Required account type:** Enterprise or Medical
 
-<!-- TODO: drafted content -->
+Configure identity providers for single sign-on. ***TrustSource*** supports Keycloak multi-realm setups with OIDC, SAML, LDAP, GitHub OAuth and LinkedIn OAuth.
+
+📸 *Screenshot: the Identity Providers configuration page.*

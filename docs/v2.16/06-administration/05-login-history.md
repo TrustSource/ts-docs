@@ -1,10 +1,8 @@
 # Login History
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** When, from where, success / failure.
->
-> **Audience:** Account admins.
+> **Required role:** `account_admin`
 
-<!-- TODO: drafted content -->
+Audit log of all user logins — timestamps, IP addresses, login methods. Useful for security auditing and compliance.
+
+📸 *Screenshot: the Login History page.*

@@ -1,10 +1,9 @@
 # Authentication Flows
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** MFA enforcement, custom flows.
->
-> **Audience:** Account admins.
+> **Required role:** `account_admin`
+> **Required account type:** Enterprise or Medical
 
-<!-- TODO: drafted content -->
+Configure authentication flows including MFA (multi-factor authentication) enforcement for your company.
+
+📸 *Screenshot: the Authentication Flows configuration page.*

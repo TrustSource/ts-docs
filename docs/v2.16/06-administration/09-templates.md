@@ -1,10 +1,8 @@
 # Templates
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Private licenses, manual vulns, tags, legal templates, private algorithms.
->
-> **Audience:** PMs, compliance.
+> **Required role:** `account_admin, manager, compliance_manager`
 
-<!-- TODO: drafted content -->
+Manage reusable templates: private license definitions, manual vulnerability templates, company tags, legal templates and private algorithm configurations.
+
+📸 *Screenshot: the Templates page.*

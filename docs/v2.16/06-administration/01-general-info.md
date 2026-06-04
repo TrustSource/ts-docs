@@ -1,10 +1,8 @@
 # General Company Info
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Name, logo, contact, language.
->
-> **Audience:** Account admins.
+> **Required role:** `account_admin`
 
-<!-- TODO: drafted content -->
+Configure your company's display name, logo, contact information and default language.
+
+📸 *Screenshot: the General Company Info page.*

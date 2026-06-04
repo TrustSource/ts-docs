@@ -1,10 +1,9 @@
 # Stored Users
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Local user CRUD.
->
-> **Audience:** Account admins.
+> **Required role:** `account_admin`
+> **Required account type:** Enterprise or Medical
 
-<!-- TODO: drafted content -->
+Manage users stored locally in your Keycloak realm — create, edit and delete user accounts directly.
+
+📸 *Screenshot: the Stored Users configuration page.*

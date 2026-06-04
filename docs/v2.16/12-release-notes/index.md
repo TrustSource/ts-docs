@@ -1,9 +1,10 @@
 # Release Notes
 
-What changed and when. Patch versions are listed below.
+Release notes for ***TrustSource*** v2.16.x.
 
-## In this chapter
-
-| Page | Status | Scope |
+| Version | Date | Highlights |
 |---|---|---|
-| [v2.16.29](2.16.29.md) | _Scaffold_ | Most recent release. |
+| v2.16.29 | — | Latest patch release. |
+
+> [!NOTE]
+> For older versions, see the [CHANGELOG](https://github.com/eacg-gmbh/ts-app/blob/develop/CHANGELOG.md) in the repository.

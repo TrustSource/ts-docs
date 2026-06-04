@@ -1,10 +1,5 @@
 # The 8 Public Roles
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Per role: persona, main responsibility, typical actions.
->
-> **Audience:** All users, especially admins.
+Detailed descriptions of each public role in ***TrustSource***: Developer, Compliance Manager, Portfolio Manager, Manager, Account Admin, Enterprise Admin, Company Component Manager, and Company Security Manager. Each role has a specific focus area and set of permissions.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the The 8 Public Roles reference page.*

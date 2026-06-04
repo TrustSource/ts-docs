@@ -1,10 +1,5 @@
 # Your Profile
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Preferences, password, avatar, your own API keys.
->
-> **Audience:** All users.
+Manage your personal settings: display name, avatar, email, password change, two-factor authentication (2FA) setup, notification preferences and personal API keys.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the Your Profile page.*

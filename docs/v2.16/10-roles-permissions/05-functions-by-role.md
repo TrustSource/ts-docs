@@ -1,10 +1,5 @@
-# What Each Role Can Do — by Role
+# Functions by Role
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** From `analyse/roles-and-permissions.md` Section D.
->
-> **Audience:** All users.
+A comprehensive matrix showing what each role can do, organized by role. Useful for understanding the full scope of a specific role.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the Functions by Role reference page.*

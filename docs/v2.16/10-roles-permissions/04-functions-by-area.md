@@ -1,10 +1,5 @@
-# What Each Role Can Do — by Area
+# Functions by Area
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** From `analyse/roles-and-permissions.md` Section C.
->
-> **Audience:** All users.
+A comprehensive matrix showing which functions are available in each area of the application (Inbound, Internal, Outbound, Knowledge, Administration) and which roles can access them.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the Functions by Area reference page.*

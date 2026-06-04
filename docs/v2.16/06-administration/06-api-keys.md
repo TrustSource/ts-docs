@@ -1,10 +1,8 @@
 # Scanners & API Keys
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Create, rotate, revoke; usage tracking.
->
-> **Audience:** Account admins, DevOps.
+> **Required role:** `account_admin`
 
-<!-- TODO: drafted content -->
+Create, rotate and revoke API keys used by CI/CD scanners and REST API integrations. Each key has a name and scope.
+
+📸 *Screenshot: the Scanners & API Keys page.*

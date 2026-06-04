@@ -1,10 +1,5 @@
 # Updates Feed
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** System updates and notifications.
->
-> **Audience:** All users.
+View system updates, platform announcements and notifications relevant to your account.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the Updates Feed page.*

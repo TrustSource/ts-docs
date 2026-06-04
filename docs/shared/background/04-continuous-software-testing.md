@@ -1,10 +1,15 @@
 # Continuous Software Testing
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Shift-left, CI/CD integration, SARIF, security tests.
->
-> **Audience:** Developers, DevOps.
+Shift-left testing integrates security and quality checks directly into your CI/CD pipeline, catching issues before they reach production.
 
-<!-- TODO: drafted content -->
+## Key practices
+
+- **SAST** (Static Application Security Testing) — analyze source code for vulnerabilities.
+- **DAST** (Dynamic Application Security Testing) — test running applications.
+- **SCA** (Software Composition Analysis) — identify known vulnerabilities in dependencies.
+- **SARIF** — the Static Analysis Results Interchange Format standardizes tool output.
+
+## How TrustSource helps
+
+- [SARIF upload](../v2.16/02-inbound/04-tests-sarif.md) — ingest results from any SARIF-producing tool.
+- [CI/CD integration](../v2.16/02-inbound/03-cicd-integrations.md) — automate scanning in your pipeline.

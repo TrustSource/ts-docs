@@ -1,10 +1,8 @@
 # Integrations
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** GitHub, Jira, TFS, LeanIX, Scanoss, webhooks, PSIRT.
->
-> **Audience:** Account admins.
+> **Required role:** `account_admin`
 
-<!-- TODO: drafted content -->
+Configure company-wide integrations with external services: Jira, GitHub, Azure DevOps (TFS), LeanIX, Scanoss, webhooks and PSIRT contacts.
+
+📸 *Screenshot: the Integrations page.*

@@ -1,10 +1,5 @@
 # Copyright & Trademarks
 
-> [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Trademark and copyright registry.
->
-> **Audience:** Legal.
+Browse the trademark registry managed by your company. Track trademarks, copyright notices and their usage across your software portfolio.
 
-<!-- TODO: drafted content -->
+📸 *Screenshot: the copyright and trademarks list.*
