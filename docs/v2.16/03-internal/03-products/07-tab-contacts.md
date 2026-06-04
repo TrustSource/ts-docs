@@ -1,10 +1,12 @@
 # Tab: Contacts
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Manufacturer, PSIRT, sales, support contacts.
->
-> **Audience:** Product management, security.
+> **Required license feature:** `products`
 
-<!-- TODO: drafted content -->
+Manufacturer information (registered trade name, address, website) and product security contact (PSIRT) with web link. Required for CRA compliance — the manufacturer must be identifiable on the product.
+
+📸 *Screenshot: the Contacts tab of a product.*
+
+## Related
+
+- [Products overview](index.md) — all eight product tabs

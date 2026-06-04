@@ -1,10 +1,8 @@
-# Danger Zone (Module)
+# danger zone (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Archive, delete, delete history.
->
-> **Audience:** Developers, PMs.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Delete or archive this module — permanent and irreversible.
+
+📸 *Screenshot: the danger zone settings tab.*

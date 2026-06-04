@@ -1,10 +1,8 @@
-# CIA (Module)
+# cia (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Module-level CIA requirements.
->
-> **Audience:** Security.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Confidentiality, Integrity and Availability requirements — can be higher than project level.
+
+📸 *Screenshot: the cia settings tab.*

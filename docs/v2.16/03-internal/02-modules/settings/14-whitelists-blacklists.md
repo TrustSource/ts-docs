@@ -1,10 +1,8 @@
-# Whitelists & Blacklists (Module)
+# whitelists ulacklists (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Per-module W/B lists.
->
-> **Audience:** Compliance.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Module-level allowed/denied licenses and components — overrides project defaults.
+
+📸 *Screenshot: the whitelists ulacklists settings tab.*

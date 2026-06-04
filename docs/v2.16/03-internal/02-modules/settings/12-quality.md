@@ -1,10 +1,8 @@
-# Quality (Module)
+# quality (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Module-level quality settings.
->
-> **Audience:** PMs.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Test and quality requirements specific to this module.
+
+📸 *Screenshot: the quality settings tab.*

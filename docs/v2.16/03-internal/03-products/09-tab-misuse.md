@@ -1,10 +1,12 @@
-# Tab: Misuse
+# Tab: Misuse Cases
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Misuse cases at product level.
->
-> **Audience:** Security, product management.
+> **Required license feature:** `products`
 
-<!-- TODO: drafted content -->
+Document potential misuse and abuse scenarios for the product. Each entry has an ID, name, creation date and description. Part of the CRA security-by-design requirements — you must consider how the product could be misused.
+
+📸 *Screenshot: the Misuse Cases tab of a product.*
+
+## Related
+
+- [Products overview](index.md) — all eight product tabs

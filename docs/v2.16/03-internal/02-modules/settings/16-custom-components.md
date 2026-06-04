@@ -1,10 +1,8 @@
-# Custom Components (Module)
+# custom components (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Manual entries for in-house libraries.
->
-> **Audience:** Developers.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Manually defined components not detected by scans (internal libraries, vendored code).
+
+📸 *Screenshot: the custom components settings tab.*

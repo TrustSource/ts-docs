@@ -1,11 +1,20 @@
 # Projects
 
-Projects are organizational containers. They group related modules, hold default project / compliance manager assignments, and carry policy overrides.
+A **project** in ***TrustSource*** is an organisational container that groups related modules. Think of it as one software product line, one business unit, or one team's scope. Projects carry their own legal settings, obligation policies, integration credentials and default managers.
 
-## In this chapter
+## In this section
 
-| Page | Status | Scope |
-|---|---|---|
-| [Create & List Projects](01-create-and-list.md) | _Scaffold_ | Project creation, the project list view, filtering, sorting. |
-| [Project Overview](02-project-overview.md) | _Scaffold_ | What you see when you open a project: modules, status roll-up, recent activity. |
-| [Project Settings](settings/) | _Scaffold_ | Twelve-tab configuration of a project. |
+| Page | What it covers |
+|---|---|
+| [Create & List](01-create-and-list.md) | How to create a project and navigate the project list. |
+| [Project Overview](02-project-overview.md) | What the project detail page shows — modules, status, statistics. |
+| [Project Settings](settings/index.md) | All 12 settings tabs — General, Legal, CIA, Quality, Encryption, End of Life, Whitelists, Obligations, Classification, Issue Tracker, Module Import, Danger Zone. |
+
+## Key concepts
+
+- Every module belongs to exactly one project. A project can contain many modules.
+- Project-level settings act as **defaults** that modules inherit. Modules can override where it makes sense.
+- Projects have a **traffic-light status** (green/yellow/red) that rolls up from their modules.
+- The **project manager** and **compliance manager** are assigned per project and can be propagated to all modules.
+
+📸 *Screenshot: the project list in table view showing status, name, modules count, legal and security stats.*

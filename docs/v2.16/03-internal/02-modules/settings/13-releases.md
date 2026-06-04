@@ -1,10 +1,8 @@
-# Releases (Module)
+# releases (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Per-module release configuration; analysis / scans visibility.
->
-> **Audience:** Developers, PMs.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Module version history, release tagging, scan timeline.
+
+📸 *Screenshot: the releases settings tab.*

@@ -1,10 +1,12 @@
 # Tab: Photos
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Product images, fan gallery.
->
-> **Audience:** Marketing, product management.
+> **Required license feature:** `products`
 
-<!-- TODO: drafted content -->
+Product photo gallery. Upload photos with drag-and-drop or file picker. Each photo stores upload date and uploader name. Useful for product identification and regulatory documentation.
+
+📸 *Screenshot: the Photos tab of a product.*
+
+## Related
+
+- [Products overview](index.md) — all eight product tabs

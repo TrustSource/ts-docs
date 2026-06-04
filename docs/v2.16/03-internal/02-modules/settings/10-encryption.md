@@ -1,10 +1,8 @@
-# Encryption (Module)
+# encryption (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Module-level crypto requirements.
->
-> **Audience:** Security.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Cryptographic algorithm usage and export control classification.
+
+📸 *Screenshot: the encryption settings tab.*

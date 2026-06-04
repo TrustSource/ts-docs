@@ -1,10 +1,8 @@
-# Viability (Module)
+# viauility (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** EOL / activity / community thresholds.
->
-> **Audience:** PMs.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Repository activity monitoring — commit frequency, contributor health, activity thresholds.
+
+📸 *Screenshot: the viauility settings tab.*

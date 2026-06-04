@@ -1,12 +1,21 @@
 # Modules & Infrastructure Modules
 
-The unit of analysis. Modules represent in-house code; infrastructure modules represent third-party non-code dependencies (DBs, base images, web servers). Both behave the same way in TrustSource — only their source differs.
+A **module** is the unit of analysis in ***TrustSource***. It represents one piece of software — a microservice, a library, a frontend, a firmware build — and its bill of materials.
 
-## In this chapter
+## In this section
 
-| Page | Status | Scope |
-|---|---|---|
-| [Create & List Modules](01-create-and-list.md) | _Scaffold_ | Module creation (manual and auto-on-upload); module list view. |
-| [Module Detail Tabs](02-module-detail-tabs.md) | _Scaffold_ | Settings, Legal, Viability, Vulnerability, Components, Dependencies, Graphs, Approve. |
-| [Infrastructure Modules](03-infrastructure-modules.md) | _Scaffold_ | Linking a module to a global infrastructure entry (`debian:bookworm`, `mysql:8.0.36`, ...). |
-| [Module Settings](settings/) | _Scaffold_ | 18 tabs of module-level configuration. |
+| Page | What it covers |
+|---|---|
+| [Create & List](01-create-and-list.md) | Creating modules, the module list within a project. |
+| [Module Detail Tabs](02-module-detail-tabs.md) | The main module view — dependencies, legal, vulnerabilities, graphs. |
+| [Infrastructure Modules](03-infrastructure-modules.md) | How infrastructure modules differ from regular modules. |
+| [Module Settings](settings/index.md) | All 18 settings tabs. |
+
+## Key concepts
+
+- Each module belongs to exactly one project.
+- A module's components come from **scans** — CI/CD, manual upload, SBOM import, or deep scan.
+- Modules have a traffic-light status that rolls up from their components.
+- Module settings can **override** project-level defaults.
+
+📸 *Screenshot: a module detail page showing the dependency list with status indicators.*

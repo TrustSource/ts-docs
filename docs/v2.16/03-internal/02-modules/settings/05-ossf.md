@@ -1,10 +1,8 @@
-# OSSF (Module)
+# ossf (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** OpenSSF Scorecard thresholds.
->
-> **Audience:** PMs, security.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+OpenSSF Scorecard security health scoring and threshold configuration.
+
+📸 *Screenshot: the ossf settings tab.*

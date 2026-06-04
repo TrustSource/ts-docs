@@ -1,10 +1,12 @@
 # Tab: Classification (CRA)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** STANDARD / IMPORTANT_1 / IMPORTANT_2 / CRITICAL with sample areas.
->
-> **Audience:** Compliance, security.
+> **Required license feature:** `products`
 
-<!-- TODO: drafted content -->
+EU Cyber Resilience Act classification for this product. Select one of: STANDARD, IMPORTANT_1, IMPORTANT_2, or CRITICAL. The classification determines the conformity assessment procedure required.
+
+📸 *Screenshot: the Classification (CRA) tab of a product.*
+
+## Related
+
+- [Products overview](index.md) — all eight product tabs

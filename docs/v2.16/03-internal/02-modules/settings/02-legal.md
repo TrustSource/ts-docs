@@ -1,10 +1,8 @@
-# Legal (Module)
+# legal (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Module-level legal; can override project; wizard.
->
-> **Audience:** PMs, compliance.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+License obligation management, legal template, whitelist/blacklist.
+
+📸 *Screenshot: the legal settings tab.*

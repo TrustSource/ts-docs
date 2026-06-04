@@ -1,10 +1,8 @@
-# SPDX Export (Module)
+# spdx export (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** SPDX UUID and per-module export configuration.
->
-> **Audience:** Compliance.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+SPDX document generation and export configuration.
+
+📸 *Screenshot: the spdx export settings tab.*

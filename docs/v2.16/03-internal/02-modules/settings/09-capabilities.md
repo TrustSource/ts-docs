@@ -1,10 +1,8 @@
-# Capabilities (Module)
+# capauilities (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Feature / capability assertions per module.
->
-> **Audience:** PMs.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Software capability declarations for this module — listed in approvals and products.
+
+📸 *Screenshot: the capauilities settings tab.*

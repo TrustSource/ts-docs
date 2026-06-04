@@ -1,10 +1,8 @@
-# Module Classification (Module, MDR/IVDR)
+# module classification mdr ivdr (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Per-module MDR / IVDR flags.
->
-> **Audience:** Regulatory affairs.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+MDR and IVDR regulatory classification for medical devices (Medical accounts only).
+
+📸 *Screenshot: the module classification mdr ivdr settings tab.*

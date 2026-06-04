@@ -1,10 +1,8 @@
-# General (Module)
+# general (Module)
 
 > [!NOTE]
-> **Status:** Scaffold — content to be drafted.
->
-> **Scope:** Name, version, description, project assignment, related users, properties.
->
-> **Audience:** Developers, PMs.
+> **Required role:** varies by field — see [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md)
 
-<!-- TODO: drafted content -->
+Name, description, project, architecture type, version, tags.
+
+📸 *Screenshot: the general settings tab.*
