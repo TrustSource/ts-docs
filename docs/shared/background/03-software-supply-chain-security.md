@@ -11,6 +11,6 @@ Software supply chain attacks exploit trust relationships between software produ
 
 ## How TrustSource helps
 
-- Automated [scanning](../v2.16/02-inbound/index.md) of your dependencies.
-- [SBOM generation](../v2.16/04-outbound/01-sbom-files.md) in industry-standard formats.
-- Continuous [vulnerability monitoring](../v2.16/05-knowledge/02-vulnerability-lake.md).
+- Automated [scanning](../ce/02-inbound/index.md) of your dependencies.
+- [SBOM generation](../ce/04-outbound/01-sbom-files.md) in industry-standard formats.
+- Continuous [vulnerability monitoring](../ce/05-knowledge/02-vulnerability-lake.md).

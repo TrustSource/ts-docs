@@ -11,5 +11,5 @@ Shift-left testing integrates security and quality checks directly into your CI/
 
 ## How TrustSource helps
 
-- [SARIF upload](../v2.16/02-inbound/04-tests-sarif.md) — ingest results from any SARIF-producing tool.
-- [CI/CD integration](../v2.16/02-inbound/03-cicd-integrations.md) — automate scanning in your pipeline.
+- [SARIF upload](../ce/02-inbound/04-tests-sarif.md) — ingest results from any SARIF-producing tool.
+- [CI/CD integration](../ce/02-inbound/03-cicd-integrations.md) — automate scanning in your pipeline.

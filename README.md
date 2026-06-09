@@ -13,7 +13,7 @@ docs/
     background/               # CRA, NIS2, SBOM formats, ...
     glossary.md
     support.md
-  v2.16/                      # Production line (Standard/Corporate/Enterprise/Medical)
+  ce/                      # Production line (Standard/Corporate/Enterprise/Medical)
     00-getting-started/
     01-installation-setup/
     02-inbound/

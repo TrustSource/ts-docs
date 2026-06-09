@@ -28,7 +28,7 @@ ohelp/
 │   ├── background/                   # CRA/NIS2/SBOM-Themen — semantisch versions-unabhängig
 │   │   └── …
 │   └── support.md
-├── v2.16/                            # aktuelle Production-Linie (Enterprise, Medical, Corporate, Standard, Trial)
+├── ce/                            # aktuelle Production-Linie (Enterprise, Medical, Corporate, Standard, Trial)
 │   ├── index.md
 │   ├── 00-getting-started/
 │   ├── 01-installation-setup/        # ← dein bereits vorbereiteter Text kommt hier rein
@@ -143,7 +143,7 @@ jobs:
 - Produktnamen mit `***bold-italic***` ausgezeichnet (z.B. `***TrustSource***`, `***ts-scan***`)
 - Admonitions im GitHub-Style: `> [!NOTE]`, `> [!CAUTION]`, `> [!TIP]`
 - Code-Blöcke mit Sprache (` ```bash `, ` ```python `, ` ```yaml `)
-- Cross-Refs als absolute Pfade `/ohelp/v2.16/<chapter>/<page>` (analog zu `/ts-scan/<page>` in ts-scan)
+- Cross-Refs als absolute Pfade `/ohelp/ce/<chapter>/<page>` (analog zu `/ts-scan/<page>` in ts-scan)
 - **Kein Frontmatter pflicht** in mkdocs-material — Titel kommt aus erstem `# H1`. Falls Zensical Frontmatter unterstützt, gerne mit `title`/`description`/`hidden`/`status` ergänzen.
 
 #### Versions-Switch in der Sidebar
@@ -154,7 +154,7 @@ In ts-scan auskommentiert:
 #   provider: mike
 #   default: stable
 ```
-Für unsere v2.16/v3.0-Trennung würde sich **`mike`** anbieten (mehrere Versionen parallel deploybar). Alternativ kann der Versions-Switch manuell als Top-Nav-Eintrag erscheinen.
+Für unsere ce/v3.0-Trennung würde sich **`mike`** anbieten (mehrere Versionen parallel deploybar). Alternativ kann der Versions-Switch manuell als Top-Nav-Eintrag erscheinen.
 
 #### Sprache
 
@@ -162,7 +162,7 @@ Für unsere v2.16/v3.0-Trennung würde sich **`mike`** anbieten (mehrere Version
 
 ---
 
-## 2. Kapitel-Gliederung (für `v2.16/`)
+## 2. Kapitel-Gliederung (für `ce/`)
 
 Pro Kapitel: **Verzeichnis** + **`index.md`** als Übersichtsseite + Einzelseiten. Numerische Präfixe nur für die Sortierung (`nav_order` im Frontmatter regelt die Anzeige).
 
@@ -495,7 +495,7 @@ Pro Datei: **Working Title** (in `[]`), **Scope** (1-2 Sätze, was diese Seite a
 ## How to use it
 
 1. Schritt 1
-   ![Screenshot: …](../assets/images/v2.16/<chapter>/<slug>-01.png)
+   ![Screenshot: …](../assets/images/ce/<chapter>/<slug>-01.png)
 2. Schritt 2
 3. …
 
@@ -508,9 +508,9 @@ Pro Datei: **Working Title** (in `[]`), **Scope** (1-2 Sätze, was diese Seite a
 > Stolperstein hier.
 
 ## Related
-- [Background: …](/ohelp/v2.16/shared/background/…)
-- [Settings reference: …](/ohelp/v2.16/03-internal/02-modules/settings/…)
-- [Troubleshooting: …](/ohelp/v2.16/11-troubleshooting-faq/…)
+- [Background: …](/ohelp/ce/shared/background/…)
+- [Settings reference: …](/ohelp/ce/03-internal/02-modules/settings/…)
+- [Troubleshooting: …](/ohelp/ce/11-troubleshooting-faq/…)
 ```
 
 ### 4.2 Style-Guide Highlights
@@ -523,8 +523,8 @@ Konsistent mit ts-scan-Doku-Stil:
 - **Admonitions:** GitHub-Style `> [!NOTE]`, `> [!TIP]`, `> [!CAUTION]`, `> [!WARNING]`.
 - **Code-Blöcke:** Nur dort, wo CLI/curl/JSON wirklich gebraucht wird. Sprache angeben (` ```bash `, ` ```python `, ` ```yaml `).
 - **Screenshots:** PNG, max 1200px breit, mit Alt-Text. Annotationen (Pfeile/Markierungen) gerne via Excalidraw oder via Material's `image annotations`.
-- **Versionierte Bildverweise:** `assets/images/v2.16/<chapter>/<slug>-<n>.png`.
-- **Cross-Links:** Absolut mit `/ohelp/v2.16/...` (analog zu `/ts-scan/...` in der ts-scan-Doku).
+- **Versionierte Bildverweise:** `assets/images/ce/<chapter>/<slug>-<n>.png`.
+- **Cross-Links:** Absolut mit `/ohelp/ce/...` (analog zu `/ts-scan/...` in der ts-scan-Doku).
 - **Glossar-Links:** Erste Erwähnung eines Begriffs verlinkt zum Glossar.
 - **Tonalität:** Persönlich, nicht steif („we strive to provide…", „you may want to…") — passt zur ts-scan-Lektüre.
 

@@ -27,5 +27,5 @@ Two major SBOM formats dominate the industry. Both are supported by ***TrustSour
 
 ## How TrustSource helps
 
-- [SBOM Files](../v2.16/04-outbound/01-sbom-files.md) — generate in both formats.
-- [Verification](../v2.16/04-outbound/05-verification.md) — validate incoming SBOMs.
+- [SBOM Files](../ce/04-outbound/01-sbom-files.md) — generate in both formats.
+- [Verification](../ce/04-outbound/05-verification.md) — validate incoming SBOMs.

@@ -11,6 +11,6 @@ The NIS2 Directive (Network and Information Security Directive 2) expands the sc
 
 ## How TrustSource helps
 
-- [Risk management](../v2.16/03-internal/05-risks/index.md) — document and track risks.
-- [Supply chain visibility](../v2.16/02-inbound/index.md) — know what's in your software.
-- [Audit trails](../v2.16/06-administration/10-audit-logs.md) — demonstrate compliance.
+- [Risk management](../ce/03-internal/05-risks/index.md) — document and track risks.
+- [Supply chain visibility](../ce/02-inbound/index.md) — know what's in your software.
+- [Audit trails](../ce/06-administration/10-audit-logs.md) — demonstrate compliance.

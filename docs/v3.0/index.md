@@ -24,5 +24,5 @@ The Community Edition does not include enterprise features such as:
 
 ## Where to next
 
-- [v2.16 documentation](../v2.16/index.md) — the full feature set documented here
+- [v2.16 documentation](../ce/index.md) — the full feature set documented here
 - [GitHub repository](https://github.com/trustsource) — source code and releases
