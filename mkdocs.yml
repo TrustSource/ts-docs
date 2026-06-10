@@ -19,196 +19,403 @@ nav:
     - index.md
   - TrustSource (SaaS):
     - v3/index.md
-  - Getting Started:
+    - Getting Started:
+      - v3/00-getting-started/index.md
+      - What is TrustSource?: v3/00-getting-started/01-what-is-trustsource.md
+      - Account Types: v3/00-getting-started/02-account-types.md
+      - First Login: v3/00-getting-started/03-first-login.md
+      - Quick Tour: v3/00-getting-started/04-quick-tour.md
+      - Mental Model: v3/00-getting-started/05-mental-model.md
+      - Roles & Licenses Cheat Sheet: v3/00-getting-started/06-roles-licenses-cheatsheet.md
+    - Inbound (Scans):
+      - v3/02-inbound/index.md
+      - Check: v3/02-inbound/01-check.md
+      - Import Scans: v3/02-inbound/02-import-scans.md
+      - CI/CD Scan: v3/02-inbound/03-cicd-scan.md
+      - SW Quality Scans: v3/02-inbound/04-sw-quality-scans.md
+      - Repository Scans: v3/02-inbound/05-repository-scans.md
+      - Mass Scans: v3/02-inbound/06-mass-scans.md
+    - Internal:
+      - v3/03-internal/index.md
+      - Products:
+        - v3/03-internal/03-products/index.md
+        - Create & Import: v3/03-internal/03-products/01-create-import.md
+        - Information: v3/03-internal/03-products/02-tab-information.md
+        - Solutions: v3/03-internal/03-products/03-tab-solutions.md
+        - CRA Classification: v3/03-internal/03-products/04-tab-classification-cra.md
+        - Photos: v3/03-internal/03-products/05-tab-photos.md
+        - Documents: v3/03-internal/03-products/06-tab-documents.md
+        - Contacts: v3/03-internal/03-products/07-tab-contacts.md
+        - Support: v3/03-internal/03-products/08-tab-support.md
+        - Misuse Cases: v3/03-internal/03-products/09-tab-misuse.md
+        - Link with Release: v3/03-internal/03-products/10-link-with-release.md
+      - Projects:
+        - v3/03-internal/01-projects/index.md
+        - Create & List: v3/03-internal/01-projects/01-create-and-list.md
+        - Project Overview: v3/03-internal/01-projects/02-project-overview.md
+        - Settings:
+          - v3/03-internal/01-projects/settings/index.md
+          - General: v3/03-internal/01-projects/settings/01-general.md
+          - Legal: v3/03-internal/01-projects/settings/02-legal.md
+          - CIA: v3/03-internal/01-projects/settings/03-cia.md
+          - Quality: v3/03-internal/01-projects/settings/04-quality.md
+          - Encryption: v3/03-internal/01-projects/settings/05-encryption.md
+          - End of Life: v3/03-internal/01-projects/settings/06-end-of-life.md
+          - Whitelists & Blacklists: v3/03-internal/01-projects/settings/07-whitelists-blacklists.md
+          - Obligations: v3/03-internal/01-projects/settings/08-obligations.md
+          - Module Classification: v3/03-internal/01-projects/settings/09-module-classification.md
+          - Issue Tracker: v3/03-internal/01-projects/settings/10-issue-tracker.md
+          - Module Import: v3/03-internal/01-projects/settings/11-module-import.md
+          - Danger Zone: v3/03-internal/01-projects/settings/12-danger-zone.md
+      - Modules:
+        - v3/03-internal/02-modules/index.md
+        - Create & List: v3/03-internal/02-modules/01-create-and-list.md
+        - Module Detail Tabs: v3/03-internal/02-modules/02-module-detail-tabs.md
+        - Settings:
+          - v3/03-internal/02-modules/settings/index.md
+          - General: v3/03-internal/02-modules/settings/01-general.md
+          - Legal: v3/03-internal/02-modules/settings/02-legal.md
+          - Obligations: v3/03-internal/02-modules/settings/03-obligations.md
+          - Viability: v3/03-internal/02-modules/settings/04-viability.md
+          - OSSF: v3/03-internal/02-modules/settings/05-ossf.md
+          - Versioning: v3/03-internal/02-modules/settings/06-versioning.md
+          - MDR/IVDR Classification: v3/03-internal/02-modules/settings/07-module-classification-mdr-ivdr.md
+          - CIA: v3/03-internal/02-modules/settings/08-cia.md
+          - Capabilities: v3/03-internal/02-modules/settings/09-capabilities.md
+          - Encryption: v3/03-internal/02-modules/settings/10-encryption.md
+          - End of Life: v3/03-internal/02-modules/settings/11-end-of-life.md
+          - Quality: v3/03-internal/02-modules/settings/12-quality.md
+          - Releases: v3/03-internal/02-modules/settings/13-releases.md
+          - Whitelists & Blacklists: v3/03-internal/02-modules/settings/14-whitelists-blacklists.md
+          - CVE Whitelist: v3/03-internal/02-modules/settings/15-cve-whitelist.md
+          - Custom Components: v3/03-internal/02-modules/settings/16-custom-components.md
+          - SPDX Export: v3/03-internal/02-modules/settings/17-spdx-export.md
+          - Danger Zone: v3/03-internal/02-modules/settings/18-danger-zone.md
+      - Risks:
+        - v3/03-internal/05-risks/index.md
+        - Overview: v3/03-internal/05-risks/01-overview.md
+        - Risks List: v3/03-internal/05-risks/02-risks-list.md
+        - Risks Tasks: v3/03-internal/05-risks/03-risks-tasks.md
+        - Portfolio Views: v3/03-internal/05-risks/04-portfolio-views.md
+      - Approvals:
+        - v3/03-internal/06-approvals/index.md
+        - Request Approval: v3/03-internal/06-approvals/01-request-approval.md
+        - Approval Detail Tabs: v3/03-internal/06-approvals/02-approval-detail-tabs.md
+        - Approve / Reject: v3/03-internal/06-approvals/03-approve-reject-workflow.md
+        - Binary Linking: v3/03-internal/06-approvals/04-binary-linking.md
+        - Public Approves: v3/03-internal/06-approvals/05-public-approves.md
+        - Post-Release Vulnerabilities: v3/03-internal/06-approvals/06-post-release-vulnerabilities.md
+      - Releases: v3/03-internal/07-releases.md
+      - Reports: v3/03-internal/04-reports.md
+      - Threat Models:
+        - v3/03-internal/08-threat-models/index.md
+        - Create Threat Model: v3/03-internal/08-threat-models/01-create-threat-model.md
+        - STRIDE / LINDDUN: v3/03-internal/08-threat-models/02-threat-detail-stride-linddun.md
+        - Mitigations & Status: v3/03-internal/08-threat-models/03-mitigations-status.md
+    - Outbound:
+      - v3/04-outbound/index.md
+      - SBOM + CBOM: v3/04-outbound/01-sbom-cbom.md
+      - Notice Files: v3/04-outbound/02-notice-files.md
+      - SOUP Lists: v3/04-outbound/03-soup-lists.md
+      - CSAF: v3/04-outbound/04-csaf.md
+      - Verify: v3/04-outbound/05-verify.md
+    - Knowledge:
+      - v3/05-knowledge/index.md
+      - Component Lake: v3/05-knowledge/01-component-lake.md
+      - Infrastructure Elements: v3/05-knowledge/02-infrastructure-elements.md
+      - COTS: v3/05-knowledge/03-cots.md
+      - Vulnerability Lake: v3/05-knowledge/04-vulnerability-lake.md
+      - Algorithms: v3/05-knowledge/05-algorithms.md
+      - Licenses: v3/05-knowledge/06-licenses.md
+      - Open Source Policy: v3/05-knowledge/07-open-source-policy.md
+      - Trainings: v3/05-knowledge/08-trainings.md
+    - Administration:
+      - v3/06-administration/index.md
+      - Account & Billing: v3/06-administration/01-account-billing.md
+      - Settings: v3/06-administration/02-settings.md
+      - User Management: v3/06-administration/03-user-management.md
+      - API Keys: v3/06-administration/04-api-keys.md
+      - Policies: v3/06-administration/05-policies.md
+      - Enterprise Companies: v3/06-administration/06-enterprise-companies.md
+      - Audit Logs: v3/06-administration/07-audit-logs.md
+    - Identity Integration:
+      - v3/07-auth-sso/index.md
+      - User Storage: v3/07-auth-sso/01-user-storage.md
+      - Identity Providers: v3/07-auth-sso/02-identity-providers.md
+      - Stored Users: v3/07-auth-sso/03-stored-users.md
+      - Login Settings: v3/07-auth-sso/04-login-settings.md
+      - Authentication Flows: v3/07-auth-sso/05-authentication-settings.md
+      - SMTP Settings: v3/07-auth-sso/06-smtp-settings.md
+    - Component Manager:
+      - v3/14-component-manager/index.md
+      - Manage Infrastructure: v3/14-component-manager/01-manage-infrastructure.md
+      - Manage COTS: v3/14-component-manager/02-manage-cots.md
+      - Critical Components: v3/14-component-manager/03-critical-components.md
+    - Legal Manager:
+      - v3/15-legal-manager/index.md
+      - Manage Legal: v3/15-legal-manager/01-manage-legal.md
+      - Legal Templates: v3/15-legal-manager/02-legal-templates.md
+      - Copyright & Trademarks: v3/15-legal-manager/03-copyright-trademarks.md
+    - Personal:
+      - v3/08-personal/index.md
+      - Updates Feed: v3/08-personal/01-updates.md
+      - Inbox: v3/08-personal/02-inbox-messages.md
+      - Profile: v3/08-personal/03-profile.md
+      - Support: v3/08-personal/04-support.md
+      - API Documentation: v3/08-personal/05-api-documentation.md
+    - REST API:
+      - v3/09-rest-api/index.md
+      - Authentication: v3/09-rest-api/01-authentication.md
+      - Errors & Responses: v3/09-rest-api/02-error-handling.md
+      - Endpoint Reference: v3/09-rest-api/03-endpoint-reference.md
+      - Example (curl): v3/09-rest-api/04-examples-curl.md
+      - Public Routes: v3/09-rest-api/05-public-routes.md
+    - Roles & Permissions:
+      - v3/10-roles-permissions/index.md
+      - The 8 Public Roles: v3/10-roles-permissions/01-roles-overview.md
+      - Internal Roles: v3/10-roles-permissions/02-internal-roles.md
+      - Permission Model: v3/10-roles-permissions/03-permission-model.md
+      - Functions by Area: v3/10-roles-permissions/04-functions-by-area.md
+      - Functions by Role: v3/10-roles-permissions/05-functions-by-role.md
+      - Settings Permissions: v3/10-roles-permissions/06-settings-permission-matrix.md
+      - License Features: v3/10-roles-permissions/07-license-features.md
+      - Account Types: v3/10-roles-permissions/08-account-types.md
+    - Troubleshooting:
+      - v3/11-troubleshooting-faq/index.md
+      - FAQ: v3/11-troubleshooting-faq/01-faq.md
+      - Common Errors: v3/11-troubleshooting-faq/02-common-errors.md
+      - Scan Troubleshooting: v3/11-troubleshooting-faq/03-scan-troubleshooting.md
+      - Integration Issues: v3/11-troubleshooting-faq/04-integration-troubleshooting.md
+      - SSO Issues: v3/11-troubleshooting-faq/05-sso-troubleshooting.md
+      - Contact Support: v3/11-troubleshooting-faq/06-contact-support.md
+    - Capabilities:
+      - v3/13-capabilities/index.md
+      - OSCAR Chat: v3/13-capabilities/01-oscar-chat.md
+      - Risk: v3/13-capabilities/02-risk.md
+      - Product: v3/13-capabilities/03-product.md
+      - Medical: v3/13-capabilities/04-medical.md
+      - CVD: v3/13-capabilities/05-cvd.md
+      - CSAF Trusted Provider: v3/13-capabilities/06-csaf-trusted-provider.md
+    - Release Notes:
+      - v3/12-release-notes/index.md
+    - Recipes:
+      - v3/recipes/index.md
+      - First Module to SBOM: v3/recipes/01-first-module-to-sbom.md
+      - CI/CD Integration: v3/recipes/02-cicd-integration.md
+      - Handle License Conflict: v3/recipes/03-handle-license-conflict.md
+      - React to a 0-Day: v3/recipes/04-react-to-0day.md
+      - MDR SOUP Workflow: v3/recipes/05-mdr-soup-workflow.md
+      - CRA Classification: v3/recipes/06-cra-classification.md
+      - Crypto Inventory & PQC: v3/recipes/07-crypto-inventory-pqc.md
+      - Share SBOM Publicly: v3/recipes/08-share-sbom-publicly.md
+      - Onboard Team Member: v3/recipes/09-onboard-team-member.md
+      - Infrastructure Module: v3/recipes/10-add-infrastructure-module.md
+      - Migrate from Another SCA: v3/recipes/11-migrate-from-another-sca.md
+  - Community Edition (CE):
     - ce/index.md
-    - What is TrustSource?: ce/00-getting-started/01-what-is-trustsource.md
-    - Account Types: ce/00-getting-started/02-account-types.md
-    - First Login: ce/00-getting-started/03-first-login.md
-    - Quick Tour: ce/00-getting-started/04-quick-tour.md
-    - Mental Model: ce/00-getting-started/05-mental-model.md
-    - Roles & Licenses Cheat Sheet: ce/00-getting-started/06-roles-licenses-cheatsheet.md
-  - Installation & Setup:
-    - ce/01-installation-setup/index.md
-    - Prerequisites: ce/01-installation-setup/01-prerequisites.md
-    - Docker-Compose Setup: ce/01-installation-setup/02-docker-compose.md
-    - Environment Variables: ce/01-installation-setup/03-environment-variables.md
-    - External Services: ce/01-installation-setup/04-external-services.md
-    - Keycloak / SSO Setup: ce/01-installation-setup/05-sso-keycloak-setup.md
-    - First Admin User: ce/01-installation-setup/06-first-admin-user.md
-    - Backups & Monitoring: ce/01-installation-setup/07-backups-monitoring.md
-    - Upgrade Guide: ce/01-installation-setup/08-upgrade.md
-  - Inbound:
-    - ce/02-inbound/index.md
-    - Quick Check: ce/02-inbound/01-check.md
-    - Scans: ce/02-inbound/02-scans.md
-    - CI/CD Integrations: ce/02-inbound/03-cicd-integrations.md
-    - Code Tests (SARIF): ce/02-inbound/04-tests-sarif.md
-    - Repositories (Deep Scan): ce/02-inbound/05-repositories-deep-scan.md
-    - Bulk Repositories: ce/02-inbound/06-bulk-repositories.md
-    - Container Scanning: ce/02-inbound/07-containers.md
-  - Internal:
-    - ce/03-internal/index.md
-    - Projects:
-      - ce/03-internal/01-projects/index.md
-      - Create & List: ce/03-internal/01-projects/01-create-and-list.md
-      - Project Overview: ce/03-internal/01-projects/02-project-overview.md
-      - Settings:
-        - ce/03-internal/01-projects/settings/index.md
-        - General: ce/03-internal/01-projects/settings/01-general.md
-        - Legal: ce/03-internal/01-projects/settings/02-legal.md
-        - CIA: ce/03-internal/01-projects/settings/03-cia.md
-        - Quality: ce/03-internal/01-projects/settings/04-quality.md
-        - Encryption: ce/03-internal/01-projects/settings/05-encryption.md
-        - End of Life: ce/03-internal/01-projects/settings/06-end-of-life.md
-        - Whitelists & Blacklists: ce/03-internal/01-projects/settings/07-whitelists-blacklists.md
-        - Obligations: ce/03-internal/01-projects/settings/08-obligations.md
-        - Module Classification: ce/03-internal/01-projects/settings/09-module-classification.md
-        - Issue Tracker: ce/03-internal/01-projects/settings/10-issue-tracker.md
-        - Module Import: ce/03-internal/01-projects/settings/11-module-import.md
-        - Danger Zone: ce/03-internal/01-projects/settings/12-danger-zone.md
-    - Modules:
-      - ce/03-internal/02-modules/index.md
-      - Create & List: ce/03-internal/02-modules/01-create-and-list.md
-      - Module Detail Tabs: ce/03-internal/02-modules/02-module-detail-tabs.md
-      - Settings:
-        - ce/03-internal/02-modules/settings/index.md
-        - General: ce/03-internal/02-modules/settings/01-general.md
-        - Legal: ce/03-internal/02-modules/settings/02-legal.md
-        - Obligations: ce/03-internal/02-modules/settings/03-obligations.md
-        - Viability: ce/03-internal/02-modules/settings/04-viability.md
-        - OSSF: ce/03-internal/02-modules/settings/05-ossf.md
-        - Versioning: ce/03-internal/02-modules/settings/06-versioning.md
-        - MDR/IVDR Classification: ce/03-internal/02-modules/settings/07-module-classification-mdr-ivdr.md
-        - CIA: ce/03-internal/02-modules/settings/08-cia.md
-        - Capabilities: ce/03-internal/02-modules/settings/09-capabilities.md
-        - Encryption: ce/03-internal/02-modules/settings/10-encryption.md
-        - End of Life: ce/03-internal/02-modules/settings/11-end-of-life.md
-        - Quality: ce/03-internal/02-modules/settings/12-quality.md
-        - Releases: ce/03-internal/02-modules/settings/13-releases.md
-        - Whitelists & Blacklists: ce/03-internal/02-modules/settings/14-whitelists-blacklists.md
-        - CVE Whitelist: ce/03-internal/02-modules/settings/15-cve-whitelist.md
-        - Custom Components: ce/03-internal/02-modules/settings/16-custom-components.md
-        - SPDX Export: ce/03-internal/02-modules/settings/17-spdx-export.md
-        - Danger Zone: ce/03-internal/02-modules/settings/18-danger-zone.md
-    - Products:
-      - ce/03-internal/03-products/index.md
-      - Create & Import: ce/03-internal/03-products/01-create-import.md
-      - Information: ce/03-internal/03-products/02-tab-information.md
-      - Solutions: ce/03-internal/03-products/03-tab-solutions.md
-      - CRA Classification: ce/03-internal/03-products/04-tab-classification-cra.md
-      - Photos: ce/03-internal/03-products/05-tab-photos.md
-      - Documents: ce/03-internal/03-products/06-tab-documents.md
-      - Contacts: ce/03-internal/03-products/07-tab-contacts.md
-      - Support: ce/03-internal/03-products/08-tab-support.md
-      - Misuse Cases: ce/03-internal/03-products/09-tab-misuse.md
-      - Link with Release: ce/03-internal/03-products/10-link-with-release.md
-    - Analysis Reports: ce/03-internal/04-analysis-reports.md
-    - Risks:
-      - ce/03-internal/05-risks/index.md
-      - Overview: ce/03-internal/05-risks/01-overview.md
-      - Risks List: ce/03-internal/05-risks/02-risks-list.md
-      - Risks Tasks: ce/03-internal/05-risks/03-risks-tasks.md
-      - Portfolio Views: ce/03-internal/05-risks/04-portfolio-views.md
-    - Approvals:
-      - ce/03-internal/06-approvals/index.md
-      - Create Approval: ce/03-internal/06-approvals/01-create-approval.md
-      - Approval Detail Tabs: ce/03-internal/06-approvals/02-approval-detail-tabs.md
-      - Approve / Reject: ce/03-internal/06-approvals/03-approve-reject-workflow.md
-      - Binary Linking: ce/03-internal/06-approvals/04-binary-linking.md
-      - Public Approves: ce/03-internal/06-approvals/05-public-approves.md
-      - Post-Release Vulnerabilities: ce/03-internal/06-approvals/06-post-release-vulnerabilities.md
-    - Releases: ce/03-internal/07-releases.md
-    - Threat Models:
-      - ce/03-internal/08-threat-models/index.md
-      - Create Threat Model: ce/03-internal/08-threat-models/01-create-threat-model.md
-      - STRIDE / LINDDUN: ce/03-internal/08-threat-models/02-threat-detail-stride-linddun.md
-      - Mitigations & Status: ce/03-internal/08-threat-models/03-mitigations-status.md
-    - Settings & Templates: ce/03-internal/09-settings-templates.md
-    - Vulnerabilities Activity: ce/03-internal/10-vulnerabilities-activity.md
-    - Critical Components: ce/03-internal/11-critical-components.md
-  - Outbound:
-    - ce/04-outbound/index.md
-    - SBOM Files: ce/04-outbound/01-sbom-files.md
-    - SOUP Files: ce/04-outbound/02-soup-files.md
-    - Notice Files: ce/04-outbound/03-notice-files.md
-    - CSAF Documents: ce/04-outbound/04-csaf.md
-    - Verification: ce/04-outbound/05-verification.md
-  - Knowledge:
-    - ce/05-knowledge/index.md
-    - Component Lake: ce/05-knowledge/01-component-lake.md
-    - Vulnerability Lake: ce/05-knowledge/02-vulnerability-lake.md
-    - Infrastructure Components: ce/05-knowledge/03-infrastructure-components.md
-    - COTS Components: ce/05-knowledge/04-cots-components.md
-    - Licenses: ce/05-knowledge/05-licenses.md
-    - Algorithms: ce/05-knowledge/06-algorithms.md
-    - Open Source Policies: ce/05-knowledge/07-open-source-policies.md
-    - Your Policy: ce/05-knowledge/08-open-source-policy.md
-    - Copyright & Trademarks: ce/05-knowledge/09-copyright-trademarks.md
-    - AI Chat Assistant: ce/05-knowledge/10-chat.md
-    - Trainings: ce/05-knowledge/11-trainings.md
-  - Administration:
-    - ce/06-administration/index.md
-    - General Info: ce/06-administration/01-general-info.md
-    - Account & Billing: ce/06-administration/02-account-billing.md
-    - Enterprise Companies: ce/06-administration/03-enterprise-companies.md
-    - User Management: ce/06-administration/04-user-management.md
-    - Login History: ce/06-administration/05-login-history.md
-    - API Keys: ce/06-administration/06-api-keys.md
-    - Integrations: ce/06-administration/07-integrations.md
-    - Policies: ce/06-administration/08-policies.md
-    - Templates: ce/06-administration/09-templates.md
-    - Audit Logs: ce/06-administration/10-audit-logs.md
-    - T&C / Privacy: ce/06-administration/11-tc-privacy-documents.md
-  - Auth & SSO:
-    - ce/07-account-admin-auth/index.md
-    - User Storage: ce/07-account-admin-auth/01-user-storage.md
-    - Identity Providers: ce/07-account-admin-auth/02-identity-providers.md
-    - Stored Users: ce/07-account-admin-auth/03-stored-users.md
-    - Login Settings: ce/07-account-admin-auth/04-login-settings.md
-    - Authentication Flows: ce/07-account-admin-auth/05-authentication-settings.md
-    - SMTP Settings: ce/07-account-admin-auth/06-smtp-settings.md
-  - Personal:
-    - ce/08-personal/index.md
-    - Updates Feed: ce/08-personal/01-updates.md
-    - Inbox: ce/08-personal/02-inbox-messages.md
-    - Profile: ce/08-personal/03-profile.md
-    - Support: ce/08-personal/04-support.md
-    - API Documentation: ce/08-personal/05-api-documentation.md
-  - REST API:
-    - ce/09-rest-api/index.md
-    - Authentication: ce/09-rest-api/01-authentication.md
-    - Errors & Responses: ce/09-rest-api/02-error-handling.md
-    - Endpoint Reference: ce/09-rest-api/03-endpoint-reference.md
-    - Example (curl): ce/09-rest-api/04-examples-curl.md
-    - Public Routes: ce/09-rest-api/05-public-routes.md
-  - Roles & Permissions:
-    - ce/10-roles-permissions/index.md
-    - The 8 Public Roles: ce/10-roles-permissions/01-roles-overview.md
-    - Internal Roles: ce/10-roles-permissions/02-internal-roles.md
-    - Permission Model: ce/10-roles-permissions/03-permission-model.md
-    - Functions by Area: ce/10-roles-permissions/04-functions-by-area.md
-    - Functions by Role: ce/10-roles-permissions/05-functions-by-role.md
-    - Settings Permissions: ce/10-roles-permissions/06-settings-permission-matrix.md
-    - License Features: ce/10-roles-permissions/07-license-features.md
-    - Account Types: ce/10-roles-permissions/08-account-types.md
-  - Troubleshooting:
-    - ce/11-troubleshooting-faq/index.md
-    - FAQ: ce/11-troubleshooting-faq/01-faq.md
-    - Common Errors: ce/11-troubleshooting-faq/02-common-errors.md
-    - Scan Troubleshooting: ce/11-troubleshooting-faq/03-scan-troubleshooting.md
-    - Integration Issues: ce/11-troubleshooting-faq/04-integration-troubleshooting.md
-    - SSO Issues: ce/11-troubleshooting-faq/05-sso-troubleshooting.md
-    - Contact Support: ce/11-troubleshooting-faq/06-contact-support.md
-  - Capabilities:
-    - ce/14-capabilities/index.md
-    - OSCAR Chat: ce/14-capabilities/01-oscar-chat.md
-    - Risk: ce/14-capabilities/02-risk.md
-    - Product: ce/14-capabilities/03-product.md
-    - Medical: ce/14-capabilities/04-medical.md
-    - CVD: ce/14-capabilities/05-cvd.md
-    - CSAF Trusted Provider: ce/14-capabilities/06-csaf-trusted-provider.md
-  - Release Notes:
-    - ce/12-release-notes/index.md
+    - Getting Started:
+      - ce/00-getting-started/index.md
+      - What is TrustSource?: ce/00-getting-started/01-what-is-trustsource.md
+      - Account Types: ce/00-getting-started/02-account-types.md
+      - First Login: ce/00-getting-started/03-first-login.md
+      - Quick Tour: ce/00-getting-started/04-quick-tour.md
+      - Mental Model: ce/00-getting-started/05-mental-model.md
+      - Roles & Licenses Cheat Sheet: ce/00-getting-started/06-roles-licenses-cheatsheet.md
+    - Installation & Setup:
+      - ce/01-installation-setup/index.md
+      - Prerequisites: ce/01-installation-setup/01-prerequisites.md
+      - Docker-Compose Setup: ce/01-installation-setup/02-docker-compose.md
+      - Environment Variables: ce/01-installation-setup/03-environment-variables.md
+      - External Services: ce/01-installation-setup/04-external-services.md
+      - Keycloak / SSO Setup: ce/01-installation-setup/05-sso-keycloak-setup.md
+      - First Admin User: ce/01-installation-setup/06-first-admin-user.md
+      - Backups & Monitoring: ce/01-installation-setup/07-backups-monitoring.md
+      - Upgrade Guide: ce/01-installation-setup/08-upgrade.md
+    - Inbound:
+      - ce/02-inbound/index.md
+      - Quick Check: ce/02-inbound/01-check.md
+      - Scans: ce/02-inbound/02-scans.md
+      - CI/CD Integrations: ce/02-inbound/03-cicd-integrations.md
+      - Code Tests (SARIF): ce/02-inbound/04-tests-sarif.md
+      - Repositories (Deep Scan): ce/02-inbound/05-repositories-deep-scan.md
+      - Bulk Repositories: ce/02-inbound/06-bulk-repositories.md
+      - Container Scanning: ce/02-inbound/07-containers.md
+    - Internal:
+      - ce/03-internal/index.md
+      - Projects:
+        - ce/03-internal/01-projects/index.md
+        - Create & List: ce/03-internal/01-projects/01-create-and-list.md
+        - Project Overview: ce/03-internal/01-projects/02-project-overview.md
+        - Settings:
+          - ce/03-internal/01-projects/settings/index.md
+          - General: ce/03-internal/01-projects/settings/01-general.md
+          - Legal: ce/03-internal/01-projects/settings/02-legal.md
+          - CIA: ce/03-internal/01-projects/settings/03-cia.md
+          - Quality: ce/03-internal/01-projects/settings/04-quality.md
+          - Encryption: ce/03-internal/01-projects/settings/05-encryption.md
+          - End of Life: ce/03-internal/01-projects/settings/06-end-of-life.md
+          - Whitelists & Blacklists: ce/03-internal/01-projects/settings/07-whitelists-blacklists.md
+          - Obligations: ce/03-internal/01-projects/settings/08-obligations.md
+          - Module Classification: ce/03-internal/01-projects/settings/09-module-classification.md
+          - Issue Tracker: ce/03-internal/01-projects/settings/10-issue-tracker.md
+          - Module Import: ce/03-internal/01-projects/settings/11-module-import.md
+          - Danger Zone: ce/03-internal/01-projects/settings/12-danger-zone.md
+      - Modules:
+        - ce/03-internal/02-modules/index.md
+        - Create & List: ce/03-internal/02-modules/01-create-and-list.md
+        - Module Detail Tabs: ce/03-internal/02-modules/02-module-detail-tabs.md
+        - Settings:
+          - ce/03-internal/02-modules/settings/index.md
+          - General: ce/03-internal/02-modules/settings/01-general.md
+          - Legal: ce/03-internal/02-modules/settings/02-legal.md
+          - Obligations: ce/03-internal/02-modules/settings/03-obligations.md
+          - Viability: ce/03-internal/02-modules/settings/04-viability.md
+          - OSSF: ce/03-internal/02-modules/settings/05-ossf.md
+          - Versioning: ce/03-internal/02-modules/settings/06-versioning.md
+          - MDR/IVDR Classification: ce/03-internal/02-modules/settings/07-module-classification-mdr-ivdr.md
+          - CIA: ce/03-internal/02-modules/settings/08-cia.md
+          - Capabilities: ce/03-internal/02-modules/settings/09-capabilities.md
+          - Encryption: ce/03-internal/02-modules/settings/10-encryption.md
+          - End of Life: ce/03-internal/02-modules/settings/11-end-of-life.md
+          - Quality: ce/03-internal/02-modules/settings/12-quality.md
+          - Releases: ce/03-internal/02-modules/settings/13-releases.md
+          - Whitelists & Blacklists: ce/03-internal/02-modules/settings/14-whitelists-blacklists.md
+          - CVE Whitelist: ce/03-internal/02-modules/settings/15-cve-whitelist.md
+          - Custom Components: ce/03-internal/02-modules/settings/16-custom-components.md
+          - SPDX Export: ce/03-internal/02-modules/settings/17-spdx-export.md
+          - Danger Zone: ce/03-internal/02-modules/settings/18-danger-zone.md
+      - Products:
+        - ce/03-internal/03-products/index.md
+        - Create & Import: ce/03-internal/03-products/01-create-import.md
+        - Information: ce/03-internal/03-products/02-tab-information.md
+        - Solutions: ce/03-internal/03-products/03-tab-solutions.md
+        - CRA Classification: ce/03-internal/03-products/04-tab-classification-cra.md
+        - Photos: ce/03-internal/03-products/05-tab-photos.md
+        - Documents: ce/03-internal/03-products/06-tab-documents.md
+        - Contacts: ce/03-internal/03-products/07-tab-contacts.md
+        - Support: ce/03-internal/03-products/08-tab-support.md
+        - Misuse Cases: ce/03-internal/03-products/09-tab-misuse.md
+        - Link with Release: ce/03-internal/03-products/10-link-with-release.md
+      - Analysis Reports: ce/03-internal/04-analysis-reports.md
+      - Risks:
+        - ce/03-internal/05-risks/index.md
+        - Overview: ce/03-internal/05-risks/01-overview.md
+        - Risks List: ce/03-internal/05-risks/02-risks-list.md
+        - Risks Tasks: ce/03-internal/05-risks/03-risks-tasks.md
+        - Portfolio Views: ce/03-internal/05-risks/04-portfolio-views.md
+      - Approvals:
+        - ce/03-internal/06-approvals/index.md
+        - Create Approval: ce/03-internal/06-approvals/01-request-approval.md
+        - Approval Detail Tabs: ce/03-internal/06-approvals/02-approval-detail-tabs.md
+        - Approve / Reject: ce/03-internal/06-approvals/03-approve-reject-workflow.md
+        - Binary Linking: ce/03-internal/06-approvals/04-binary-linking.md
+        - Public Approves: ce/03-internal/06-approvals/05-public-approves.md
+        - Post-Release Vulnerabilities: ce/03-internal/06-approvals/06-post-release-vulnerabilities.md
+      - Releases: ce/03-internal/07-releases.md
+      - Threat Models:
+        - ce/03-internal/08-threat-models/index.md
+        - Create Threat Model: ce/03-internal/08-threat-models/01-create-threat-model.md
+        - STRIDE / LINDDUN: ce/03-internal/08-threat-models/02-threat-detail-stride-linddun.md
+        - Mitigations & Status: ce/03-internal/08-threat-models/03-mitigations-status.md
+      - Settings & Templates: ce/03-internal/09-settings-templates.md
+      - Vulnerabilities Activity: ce/03-internal/10-vulnerabilities-activity.md
+      - Critical Components: ce/03-internal/11-critical-components.md
+    - Outbound:
+      - ce/04-outbound/index.md
+      - SBOM Files: ce/04-outbound/01-sbom-files.md
+      - SOUP Files: ce/04-outbound/02-soup-files.md
+      - Notice Files: ce/04-outbound/03-notice-files.md
+      - CSAF Documents: ce/04-outbound/04-csaf.md
+      - Verification: ce/04-outbound/05-verification.md
+    - Knowledge:
+      - ce/05-knowledge/index.md
+      - Component Lake: ce/05-knowledge/01-component-lake.md
+      - Vulnerability Lake: ce/05-knowledge/02-vulnerability-lake.md
+      - Infrastructure Components: ce/05-knowledge/03-infrastructure-components.md
+      - COTS Components: ce/05-knowledge/04-cots-components.md
+      - Licenses: ce/05-knowledge/05-licenses.md
+      - Algorithms: ce/05-knowledge/06-algorithms.md
+      - Open Source Policies: ce/05-knowledge/07-open-source-policies.md
+      - Your Policy: ce/05-knowledge/08-open-source-policy.md
+      - Copyright & Trademarks: ce/05-knowledge/09-copyright-trademarks.md
+      - AI Chat Assistant: ce/05-knowledge/10-chat.md
+      - Trainings: ce/05-knowledge/11-trainings.md
+    - Administration:
+      - ce/06-administration/index.md
+      - General Info: ce/06-administration/01-general-info.md
+      - Account & Billing: ce/06-administration/02-account-billing.md
+      - Enterprise Companies: ce/06-administration/03-enterprise-companies.md
+      - User Management: ce/06-administration/04-user-management.md
+      - Login History: ce/06-administration/05-login-history.md
+      - API Keys: ce/06-administration/06-api-keys.md
+      - Integrations: ce/06-administration/07-integrations.md
+      - Policies: ce/06-administration/08-policies.md
+      - Templates: ce/06-administration/09-templates.md
+      - Audit Logs: ce/06-administration/10-audit-logs.md
+      - T&C / Privacy: ce/06-administration/11-tc-privacy-documents.md
+    - Auth & SSO:
+      - ce/07-account-admin-auth/index.md
+      - User Storage: ce/07-account-admin-auth/01-user-storage.md
+      - Identity Providers: ce/07-account-admin-auth/02-identity-providers.md
+      - Stored Users: ce/07-account-admin-auth/03-stored-users.md
+      - Login Settings: ce/07-account-admin-auth/04-login-settings.md
+      - Authentication Flows: ce/07-account-admin-auth/05-authentication-settings.md
+      - SMTP Settings: ce/07-account-admin-auth/06-smtp-settings.md
+    - Personal:
+      - ce/08-personal/index.md
+      - Updates Feed: ce/08-personal/01-updates.md
+      - Inbox: ce/08-personal/02-inbox-messages.md
+      - Profile: ce/08-personal/03-profile.md
+      - Support: ce/08-personal/04-support.md
+      - API Documentation: ce/08-personal/05-api-documentation.md
+    - REST API:
+      - ce/09-rest-api/index.md
+      - Authentication: ce/09-rest-api/01-authentication.md
+      - Errors & Responses: ce/09-rest-api/02-error-handling.md
+      - Endpoint Reference: ce/09-rest-api/03-endpoint-reference.md
+      - Example (curl): ce/09-rest-api/04-examples-curl.md
+      - Public Routes: ce/09-rest-api/05-public-routes.md
+    - Roles & Permissions:
+      - ce/10-roles-permissions/index.md
+      - The 8 Public Roles: ce/10-roles-permissions/01-roles-overview.md
+      - Internal Roles: ce/10-roles-permissions/02-internal-roles.md
+      - Permission Model: ce/10-roles-permissions/03-permission-model.md
+      - Functions by Area: ce/10-roles-permissions/04-functions-by-area.md
+      - Functions by Role: ce/10-roles-permissions/05-functions-by-role.md
+      - Settings Permissions: ce/10-roles-permissions/06-settings-permission-matrix.md
+      - License Features: ce/10-roles-permissions/07-license-features.md
+      - Account Types: ce/10-roles-permissions/08-account-types.md
+    - Troubleshooting:
+      - ce/11-troubleshooting-faq/index.md
+      - FAQ: ce/11-troubleshooting-faq/01-faq.md
+      - Common Errors: ce/11-troubleshooting-faq/02-common-errors.md
+      - Scan Troubleshooting: ce/11-troubleshooting-faq/03-scan-troubleshooting.md
+      - Integration Issues: ce/11-troubleshooting-faq/04-integration-troubleshooting.md
+      - SSO Issues: ce/11-troubleshooting-faq/05-sso-troubleshooting.md
+      - Contact Support: ce/11-troubleshooting-faq/06-contact-support.md
+    - Capabilities:
+      - ce/14-capabilities/index.md
+      - OSCAR Chat: ce/14-capabilities/01-oscar-chat.md
+      - Risk: ce/14-capabilities/02-risk.md
+      - Product: ce/14-capabilities/03-product.md
+      - Medical: ce/14-capabilities/04-medical.md
+      - CVD: ce/14-capabilities/05-cvd.md
+      - CSAF Trusted Provider: ce/14-capabilities/06-csaf-trusted-provider.md
+    - Release Notes:
+      - ce/12-release-notes/index.md
+    - Recipes:
+      - ce/recipes/index.md
+      - First Module to SBOM: ce/recipes/01-first-module-to-sbom.md
+      - CI/CD Integration: ce/recipes/02-cicd-integration.md
+      - Handle License Conflict: ce/recipes/03-handle-license-conflict.md
+      - React to a 0-Day: ce/recipes/04-react-to-0day.md
+      - MDR SOUP Workflow: ce/recipes/05-mdr-soup-workflow.md
+      - CRA Classification: ce/recipes/06-cra-classification.md
+      - Crypto Inventory & PQC: ce/recipes/07-crypto-inventory-pqc.md
+      - Share SBOM Publicly: ce/recipes/08-share-sbom-publicly.md
+      - Onboard Team Member: ce/recipes/09-onboard-team-member.md
+      - Infrastructure Module: ce/recipes/10-add-infrastructure-module.md
+      - Migrate from Another SCA: ce/recipes/11-migrate-from-another-sca.md
   - Background:
     - shared/background/index.md
     - Cyber Resilience Act: shared/background/01-cra-cyber-resilience-act.md

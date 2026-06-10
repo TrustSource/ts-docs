@@ -8,28 +8,30 @@ vulnerability and product security platform built by
 
 | | Edition | Status | Track |
 |---|---|---|---|
-| → | **[TrustSource (SaaS)](v3/index.md)** | Live at [app.trustsource.io](https://app.trustsource.io) | `docs/v3/` — content being written; refer to the CE track in the meantime |
-| → | **[Community Edition](ce/index.md)** | In preparation | `docs/ce/` — full structure available, based on the existing v2.16 baseline |
+| → | **[TrustSource (SaaS)](v3/index.md)** | Live at [app.trustsource.io](https://app.trustsource.io) | `docs/v3/` — full documentation |
+| → | **[Community Edition](ce/index.md)** | In preparation | `docs/ce/` — self-hosted edition, shares the platform core |
 
-The CE will cover the platform core but will not include all SaaS
+The CE covers the platform core but does not include all SaaS
 capabilities (e.g. the OSCAR chat assistant, the medical and CSAF
 capabilities, large-scale scan and analysis features that rely on cloud
-infrastructure). This help portal will gain CE-specific guidance as soon
-as the edition becomes available.
+infrastructure). The CE documentation additionally includes
+[Installation & Setup](ce/01-installation-setup/) for self-hosted
+deployments.
 
 ## Looking for something specific?
 
 - **New to TrustSource?** Start with
-  [What is TrustSource?](ce/00-getting-started/01-what-is-trustsource.md)
-  and the [mental model](ce/00-getting-started/05-mental-model.md).
+  [What is TrustSource?](v3/00-getting-started/01-what-is-trustsource.md)
+  and the [mental model](v3/00-getting-started/05-mental-model.md).
 - **Have an account and want to get hands-on?** Jump to
-  [Getting Started](ce/00-getting-started/).
+  [Getting Started](v3/00-getting-started/).
 - **Looking for a capability beyond the core?** See the
-  [Capabilities overview](ce/14-capabilities/) — OSCAR Chat, Risk,
-  Product, Medical, CVD, CSAF Trusted Provider. _(Capability stubs land
-  with the next docs commit; live pages may not yet exist.)_
+  [Capabilities overview](v3/13-capabilities/) — OSCAR Chat, Risk,
+  Product, Medical, CVD, CSAF Trusted Provider.
 - **Looking for an API reference?** Open the
-  [REST API chapter](ce/09-rest-api/).
+  [REST API chapter](v3/09-rest-api/).
+- **Self-hosting the Community Edition?** See the
+  [Installation & Setup guide](ce/01-installation-setup/).
 - **Need to talk to a human?**
   [support@trustsource.io](mailto:support@trustsource.io)
 

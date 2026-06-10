@@ -1,41 +1,33 @@
 # TrustSource v3 (SaaS)
 
-This is the documentation track for the **live SaaS** offering of
-*TrustSource*, hosted at
-[app.trustsource.io](https://app.trustsource.io).
+This is the documentation for ***TrustSource*** version **3** — the live SaaS platform hosted at [app.trustsource.io](https://app.trustsource.io).
 
 > [!NOTE]
-> The v3 SaaS documentation is being built. Until a given topic is
-> covered here, please refer to the
-> [Community Edition documentation](../ce/index.md) as a baseline —
-> it is structurally close to the SaaS but does not yet describe
-> SaaS-specific features (OSCAR Chat, Risk, Product, Medical, CVD,
-> CSAF Trusted Provider) and may differ in UI details where v3 has
-> evolved beyond the CE baseline.
+> Looking for the **Community Edition**? See the [CE documentation](../ce/index.md) — it covers the self-hosted open-source edition which shares the platform core but does not include cloud-scale and AI-dependent capabilities.
 
-## Editions
+## Where to start
 
-- **SaaS (v3)** — live, hosted by EACG. Documented here.
-- **Community Edition (CE)** — self-hosted, open-source. In preparation;
-  the CE shares the platform core but omits cloud-scale and
-  AI-dependent capabilities. See [the CE documentation](../ce/index.md).
+| If you want to … | Go to |
+|---|---|
+| understand what TrustSource is and isn't | [What is TrustSource?](00-getting-started/01-what-is-trustsource.md) |
+| understand how data is organized in the app | [Mental Model](00-getting-started/05-mental-model.md) |
+| go from "I just logged in" to "I have an SBOM" | [Your first module in 15 minutes](recipes/01-first-module-to-sbom.md) |
+| see a quick guided tour | [A 5-Minute Tour](00-getting-started/04-quick-tour.md) |
+| look up which role is allowed to do what | [Roles & Permissions](10-roles-permissions/index.md) |
+| find help on a specific menu item | Browse the chapters below — they mirror the app navigation |
 
-## What's coming
+## How this manual is organized
 
-The v3 SaaS documentation will mirror the structure of the CE track
-(Getting Started → Inbound → Internal → Outbound → Knowledge →
-Administration → Auth & SSO → Personal → REST API → Roles & Permissions
-→ Troubleshooting → Release Notes → Capabilities), with content added
-chapter by chapter as it is written.
+There are two ways to navigate:
 
-For SaaS-specific capabilities that have no CE counterpart, see the
-[Capabilities overview](../ce/14-capabilities/) — this section will be
-expanded and moved into the v3 track as content is written.
+- **By menu** — the chapters mirror the left navigation of the app. If you know where a feature lives, look it up in the matching chapter.
+- **By goal** — [How-To Recipes](recipes/) walk you through end-to-end tasks (e.g. "from scan to SBOM", "react to a 0-day", "classify a product under CRA"). Use these when you know **what** you want to achieve but not yet **where** to click.
 
-## Feedback
+If you're new to the platform, start with [Getting Started](00-getting-started/) — it gives you the vocabulary that the rest of the manual uses.
 
-This help portal is published from
-[github.com/trustsource/ts-docs](https://github.com/trustsource/ts-docs).
-Found a gap or a mismatch with the live UI?
-[Open an issue](https://github.com/trustsource/ts-docs/issues) or write to
-[support@trustsource.io](mailto:support@trustsource.io).
+## Conventions used in this manual
+
+- **`***TrustSource***`** in *bold-italic* refers to the platform itself.
+- Code in `monospace`, e.g. `developer`, refers to a role, an API parameter or a configuration key.
+- > [!TIP] for practical hints, > [!WARNING] for things that can cost you time, > [!CAUTION] for actions that are hard to undo.
+- Screenshots show v3 in the default light theme. The dark theme works the same way.
