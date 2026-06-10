@@ -5,6 +5,7 @@ Key terms used throughout the ***TrustSource*** documentation.
 | Term | Definition |
 |---|---|
 | **Approval** | A formal quality gate — a frozen snapshot of a module's bill of materials, reviewed and signed off before release. |
+| **Capability** | An optional functional bundle of the TrustSource platform — e.g. OSCAR Chat, Risk, Product, Medical, CVD, CSAF Trusted Provider. Capabilities sit alongside the platform core; not all are present in every edition (the Community Edition omits SaaS-only capabilities). **Not to be confused with "Module"**, which inside the app refers to a deployment artefact of a software product. |
 | **CBOM** | Crypto Bill of Materials — lists cryptographic algorithms used in software. |
 | **Component** | A third-party building block — a library, package, or artifact — referenced from a module. |
 | **CRA** | EU Cyber Resilience Act — mandatory cybersecurity requirements for products with digital elements. |
@@ -13,7 +14,7 @@ Key terms used throughout the ***TrustSource*** documentation.
 | **CycloneDX** | An SBOM format maintained by OWASP, strong in vulnerability and security metadata. |
 | **Deep Scan** | File-level repository analysis for license, copyright, and crypto detection. |
 | **Infrastructure Module** | A module representing third-party runtime dependencies (databases, base images, web servers). |
-| **Module** | The unit of analysis in TrustSource — represents one piece of software with its bill of materials. |
+| **Module** | Inside the app, the unit of analysis in TrustSource — a deployment artefact of one piece of software with its bill of materials. **Not to be confused with "Capability"**, which describes an optional functional bundle of the platform itself. |
 | **NIS2** | EU Network and Information Security Directive 2 — cybersecurity obligations for essential entities. |
 | **Notice File** | An attribution document listing all open-source components and their licenses. |
 | **PURL** | Package URL — a standard format for identifying software packages. |

@@ -8,12 +8,14 @@ Online help and user guide for the [TrustSource](https://www.trustsource.io) sof
 
 ```
 docs/
-  index.md                    # Landing page (version selector)
-  shared/                     # Version-independent content
+  index.md                    # Landing page
+  shared/                     # Edition-independent content
     background/               # CRA, NIS2, SBOM formats, ...
     glossary.md
     support.md
-  ce/                      # Production line (Standard/Corporate/Enterprise/Medical)
+  v3/                         # SaaS track (live; content being written)
+    index.md
+  ce/                         # Community Edition track (legacy v2.16 baseline)
     00-getting-started/
     01-installation-setup/
     02-inbound/
@@ -21,14 +23,15 @@ docs/
     04-outbound/              # SBOM, SOUP, Notice, CSAF
     05-knowledge/             # Lakes, Licenses, Algorithms, Chat
     06-administration/
-    07-account-admin-auth/    # SSO / Keycloak (Enterprise)
+    07-account-admin-auth/    # SSO / Keycloak
     08-personal/
     09-rest-api/
     10-roles-permissions/
     11-troubleshooting-faq/
     12-release-notes/
-  v3.0/                       # Community Edition (coming soon)
 ```
+
+See `STRUCTURE.md` for the edition strategy in detail.
 
 ## Local development
 

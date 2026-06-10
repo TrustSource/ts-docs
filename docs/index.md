@@ -6,14 +6,16 @@ vulnerability and product security platform built by
 
 ## Editions
 
-TrustSource is currently available as a **SaaS** offering, hosted by EACG and
-accessible at [app.trustsource.io](https://app.trustsource.io). A
-**Community Edition (CE)** — a self-hosted, open-source variant — is in
-preparation. The CE will cover the platform core but will not include all
-SaaS [capabilities](ce/14-capabilities/) (e.g. the OSCAR chat assistant,
-the medical and CSAF capabilities, large-scale scan and analysis features
-that rely on cloud infrastructure). This help portal will be extended with
-CE-specific guidance as soon as the edition becomes available.
+| | Edition | Status | Track |
+|---|---|---|---|
+| → | **[TrustSource (SaaS)](v3/index.md)** | Live at [app.trustsource.io](https://app.trustsource.io) | `docs/v3/` — content being written; refer to the CE track in the meantime |
+| → | **[Community Edition](ce/index.md)** | In preparation | `docs/ce/` — full structure available, based on the existing v2.16 baseline |
+
+The CE will cover the platform core but will not include all SaaS
+capabilities (e.g. the OSCAR chat assistant, the medical and CSAF
+capabilities, large-scale scan and analysis features that rely on cloud
+infrastructure). This help portal will gain CE-specific guidance as soon
+as the edition becomes available.
 
 ## Looking for something specific?
 
@@ -24,7 +26,8 @@ CE-specific guidance as soon as the edition becomes available.
   [Getting Started](ce/00-getting-started/).
 - **Looking for a capability beyond the core?** See the
   [Capabilities overview](ce/14-capabilities/) — OSCAR Chat, Risk,
-  Product, Medical, CVD, CSAF Trusted Provider.
+  Product, Medical, CVD, CSAF Trusted Provider. _(Capability stubs land
+  with the next docs commit; live pages may not yet exist.)_
 - **Looking for an API reference?** Open the
   [REST API chapter](ce/09-rest-api/).
 - **Need to talk to a human?**

@@ -1,11 +1,30 @@
 # TrustSource Online-Hilfe — Strukturvorschlag
 
-> **Status:** Vorschlag, zur Diskussion.
-> **Stand:** 2026-04-22
-> **Aktuelle App-Version:** `2.16.29` (lt. git tag und `package.json`).
-> **Geplant:** Demnächst `3.0.0` als **Community Edition**.
+> **Status:** Living document.
+> **Stand:** 2026-06-10.
+> **Editionen:** **v3 SaaS** (live, `app.trustsource.io`) und
+> **Community Edition (CE)** (Self-Hosted, in Vorbereitung).
+> **Aktuelle SaaS-App-Version:** v3.x.
 
-Dieses Dokument schlägt Verzeichnis-Layout, Kapitel-Gliederung und Datei-Benennung für die kunden-sichtbare Online-Hilfe vor. **Es enthält noch keine Hilfetexte** — nur Struktur, Skopus pro Seite, Screenshot-Hinweise und offene Fragen, die vor dem Schreiben geklärt werden sollten.
+Dieses Dokument hält das Verzeichnis-Layout, die Kapitel-Gliederung und
+die Datei-Benennung der kunden-sichtbaren Online-Hilfe fest. Es deckt
+den **aktuellen** Stand des Repos ab, nicht mehr nur einen Vorschlag.
+
+## Editions-Strategie
+
+- **`docs/v3/`** — Hilfe-Track der live laufenden SaaS-Version
+  (`app.trustsource.io`). Wird Kapitel für Kapitel ausgeschrieben.
+- **`docs/ce/`** — Hilfe-Track der Community Edition. Basis ist die
+  ursprünglich für v2.16 verfasste Doku, die strukturell weitgehend
+  weitertragen wird. Wo sich SaaS-Funktionalität von der CE
+  unterscheidet, entstehen die Abweichungen im v3-Track.
+- **`docs/shared/`** — Versions-übergreifender Inhalt (Glossar,
+  Background-Artikel zu CRA/NIS2/SBOM/…, Support).
+
+Versionierung **innerhalb** eines Tracks (z.B. v3.1, v3.2) erfolgt
+inhaltlich auf der jeweiligen Feature-Seite (z.B. "since v3.2 …") —
+nicht über zusätzliche Folder. Neue Major-Versionen (v4, v5) kommen
+erst dazu, wenn sie tatsächlich relevant werden.
 
 ---
 

@@ -17,7 +17,9 @@ copyright: Copyright &copy; 2025 <a href="https://www.eacg.de/editorial">EACG Gm
 nav:
   - Home:
     - index.md
-  - Getting Started (v2.16):
+  - TrustSource (SaaS):
+    - v3/index.md
+  - Getting Started:
     - ce/index.md
     - What is TrustSource?: ce/00-getting-started/01-what-is-trustsource.md
     - Account Types: ce/00-getting-started/02-account-types.md
@@ -214,8 +216,6 @@ nav:
     - VEX in CSAF: shared/background/11-vex-csaf-vex.md
   - Glossary: shared/glossary.md
   - Support: shared/support.md
-  - Community Edition (v3.0):
-    - v3.0/index.md
 
 theme:
   name: material
