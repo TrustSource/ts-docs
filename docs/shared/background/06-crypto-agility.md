@@ -10,6 +10,6 @@ Crypto agility is the ability to quickly switch cryptographic algorithms and pro
 
 ## How TrustSource helps
 
-- [Algorithm database](../ce/05-knowledge/06-algorithms.md) with FIPS status and deprecation tracking.
-- [Encryption settings](../ce/03-internal/01-projects/settings/05-encryption.md) at project and module level.
-- [Deep scan crypto analysis](../ce/02-inbound/05-repositories-deep-scan.md) detects algorithm usage in source code.
+- [Algorithm database](../../ce/05-knowledge/06-algorithms.md) with FIPS status and deprecation tracking.
+- [Encryption settings](../../ce/03-internal/01-projects/settings/05-encryption.md) at project and module level.
+- [Deep scan crypto analysis](../../ce/02-inbound/05-repositories-deep-scan.md) detects algorithm usage in source code.

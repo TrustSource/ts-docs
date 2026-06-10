@@ -19,5 +19,5 @@ VEX (Vulnerability Exploitability eXchange) is a companion to SBOMs that communi
 
 ## How TrustSource helps
 
-- [CSAF documents](../ce/04-outbound/04-csaf.md) support VEX statements.
-- [Post-release monitoring](../ce/03-internal/06-approvals/06-post-release-vulnerabilities.md) tracks VEX-relevant changes.
+- [CSAF documents](../../ce/04-outbound/04-csaf.md) support VEX statements.
+- [Post-release monitoring](../../ce/03-internal/06-approvals/06-post-release-vulnerabilities.md) tracks VEX-relevant changes.

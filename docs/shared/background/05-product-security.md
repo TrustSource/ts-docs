@@ -11,6 +11,6 @@ Product security is the practice of building, maintaining and operating products
 
 ## How TrustSource helps
 
-- [Products](../ce/03-internal/03-products/index.md) with PSIRT contacts and misuse cases.
-- [CSAF documents](../ce/04-outbound/04-csaf.md) for security advisories.
-- [Threat modelling](../ce/03-internal/08-threat-models/index.md) with STRIDE/LINDDUN.
+- [Products](../../ce/03-internal/03-products/index.md) with PSIRT contacts and misuse cases.
+- [CSAF documents](../../ce/04-outbound/04-csaf.md) for security advisories.
+- [Threat modelling](../../ce/03-internal/08-threat-models/index.md) with STRIDE/LINDDUN.

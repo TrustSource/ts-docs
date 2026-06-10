@@ -12,7 +12,7 @@ The EU Cyber Resilience Act establishes mandatory cybersecurity requirements for
 
 ## How TrustSource helps
 
-- [Product Classification](../ce/03-internal/03-products/04-tab-classification-cra.md) — assign CRA tiers to your products.
-- [SBOM generation](../ce/04-outbound/01-sbom-files.md) — produce the required bill of materials.
-- [CSAF documents](../ce/04-outbound/04-csaf.md) — create security advisories.
-- [Post-release monitoring](../ce/03-internal/06-approvals/06-post-release-vulnerabilities.md) — continuous vulnerability tracking.
+- [Product Classification](../../ce/03-internal/03-products/04-tab-classification-cra.md) — assign CRA tiers to your products.
+- [SBOM generation](../../ce/04-outbound/01-sbom-files.md) — produce the required bill of materials.
+- [CSAF documents](../../ce/04-outbound/04-csaf.md) — create security advisories.
+- [Post-release monitoring](../../ce/03-internal/06-approvals/06-post-release-vulnerabilities.md) — continuous vulnerability tracking.
