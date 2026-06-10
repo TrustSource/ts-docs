@@ -199,6 +199,14 @@ nav:
     - Integration Issues: ce/11-troubleshooting-faq/04-integration-troubleshooting.md
     - SSO Issues: ce/11-troubleshooting-faq/05-sso-troubleshooting.md
     - Contact Support: ce/11-troubleshooting-faq/06-contact-support.md
+  - Capabilities:
+    - ce/14-capabilities/index.md
+    - OSCAR Chat: ce/14-capabilities/01-oscar-chat.md
+    - Risk: ce/14-capabilities/02-risk.md
+    - Product: ce/14-capabilities/03-product.md
+    - Medical: ce/14-capabilities/04-medical.md
+    - CVD: ce/14-capabilities/05-cvd.md
+    - CSAF Trusted Provider: ce/14-capabilities/06-csaf-trusted-provider.md
   - Release Notes:
     - ce/12-release-notes/index.md
   - Background:
