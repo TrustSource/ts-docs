@@ -213,6 +213,7 @@ nav:
       - Onboard Team Member: v3/recipes/09-onboard-team-member.md
       - Infrastructure Module: v3/recipes/10-add-infrastructure-module.md
       - Migrate from Another SCA: v3/recipes/11-migrate-from-another-sca.md
+      - Fill in the Legal Questionnaire: v3/recipes/12-legal-questionnaire.md
   - Community Edition (CE):
     - ce/index.md
     - Getting Started:

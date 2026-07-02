@@ -15,3 +15,4 @@ Step-by-step walkthroughs for common ***TrustSource*** workflows. Each recipe is
 | [Onboard a Team Member](09-onboard-team-member.md) | Invite a user, assign roles, orient them in the app. |
 | [Add an Infrastructure Module](10-add-infrastructure-module.md) | Track a database or base image as an infrastructure dependency. |
 | [Migrate from Another SCA](11-migrate-from-another-sca.md) | Import data from a different SCA tool into TrustSource. |
+| [Fill in the Legal Questionnaire](12-legal-questionnaire.md) | Run the two-part Wizard that drives the obligation engine — commercial answers at the project level, distribution answers per module. |
