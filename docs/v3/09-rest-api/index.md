@@ -1,4 +1,4 @@
-# REST API v1
+# REST API v2
 
 ***TrustSource*** provides a REST API for programmatic access to scans, components, modules, projects and compliance data.
 
@@ -13,7 +13,7 @@
 ## Base URL
 
 ```
-https://app.trustsource.io/api/v1/
+https://api.trustsource.io/v2/
 ```
 
 All requests are JSON. CORS is enabled (`Access-Control-Allow-Origin: *`).
