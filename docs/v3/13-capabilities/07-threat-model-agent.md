@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > **Required license feature:** `threat`
-> **Service version at time of writing:** v0.32.0 (DEV + PRD)
+> **Service version at time of writing:** v0.32.0 
 
 The **Threat Modeling Agent** is the automated engine behind every
 project's threat model. It reads the current project state —
@@ -15,6 +15,8 @@ compares it against the last agent run, and produces:
 - **Proposed countermeasures** for every new threat.
 - An updated **OTM (Open Threat Model) v0.2.0** document per run,
   stored as an audit trail.
+
+📸 *Screenshot: an OTM run detail page with the improvement-summary hints and a link to the DFD viewer.*
 
 Risks that the agent creates in the risk register carry
 `origin: TMA Assessment` so they are distinguishable from manually
@@ -72,14 +74,12 @@ short checklist for the next iteration.
 
 ## Editions
 
-- **SaaS:** available with the `threat` feature flag enabled.
+- **SaaS:** available with the `threat` feature flag enabled. Contact sales for availability.
 - **Community Edition:** the TMA service is not part of the CE
   deployment (it depends on hosted LLM inference and the runs
   DynamoDB store).
 
 📸 *Screenshot: the Threat Models overview for a project with the "Run threat modeling" action visible and a recent run in the history list.*
-
-📸 *Screenshot: an OTM run detail page with the improvement-summary hints and a link to the DFD viewer.*
 
 ## Related
 

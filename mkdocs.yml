@@ -112,6 +112,7 @@ nav:
         - Create Threat Model: v3/03-internal/08-threat-models/01-create-threat-model.md
         - STRIDE / LINDDUN: v3/03-internal/08-threat-models/02-threat-detail-stride-linddun.md
         - Mitigations & Status: v3/03-internal/08-threat-models/03-mitigations-status.md
+        - Run Modes: v3/03-internal/08-threat-models/04-run-modes.md
     - Outbound:
       - v3/04-outbound/index.md
       - SBOM + CBOM: v3/04-outbound/01-sbom-cbom.md
