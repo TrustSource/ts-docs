@@ -196,6 +196,7 @@ nav:
       - Medical: v3/13-capabilities/04-medical.md
       - CVD: v3/13-capabilities/05-cvd.md
       - CSAF Trusted Provider: v3/13-capabilities/06-csaf-trusted-provider.md
+      - Threat Modeling Agent: v3/13-capabilities/07-threat-model-agent.md
     - Release Notes:
       - v3/12-release-notes/index.md
     - Recipes:

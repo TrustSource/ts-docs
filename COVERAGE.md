@@ -17,7 +17,7 @@ row, append to the log). Sits at the repo root, deliberately outside
 | **ts-legalcheck** | [`trustsource/ts-legalcheck`](https://github.com/trustsource/ts-legalcheck) | — | — | — | not yet documented in v3 track |
 | **ts-deepscan** | [`trustsource/ts-deepscan`](https://github.com/trustsource/ts-deepscan) | — | — | — | not yet documented in v3 track |
 | **Vulnerability Database** | [`eacg-gmbh/ts-vulndb-api`](https://github.com/eacg-gmbh/ts-vulndb-api), [`eacg-gmbh/ts-vlu`](https://github.com/eacg-gmbh/ts-vlu) | — | — | — | not yet documented in v3 track |
-| **Threat Modeling Agent** | [`eacg-gmbh/ts-tm-agent`](https://github.com/eacg-gmbh/ts-tm-agent) | — | — | — | not yet documented in v3 track |
+| **Threat Modeling Agent** | [`eacg-gmbh/ts-tm-agent`](https://github.com/eacg-gmbh/ts-tm-agent) | **v0.32.0** | v0.32.0 | v0.32.0 | **at parity** — new capability page + run-modes doc in progress |
 | **Trusted CSAF Provider** | [`eacg-gmbh/ts-csaf`](https://github.com/eacg-gmbh/ts-csaf) | — | — | — | capability stub only ([v3/13-capabilities/06-csaf-trusted-provider.md](docs/v3/13-capabilities/06-csaf-trusted-provider.md)) |
 | **CVD Service** | [`eacg-gmbh/ts-psirt`](https://github.com/eacg-gmbh/ts-psirt) | — | — | — | capability stub only ([v3/13-capabilities/05-cvd.md](docs/v3/13-capabilities/05-cvd.md)) |
 | **Academy** | [`eacg-gmbh/ts-training`](https://github.com/eacg-gmbh/ts-training) | — | — | — | not yet documented in v3 track |
@@ -47,3 +47,10 @@ the future Community Edition, not the live SaaS.
   established via the v3-track population commit `ea0b650`
   (docs/v3/ populated from CE baseline, aligned to v3.1.20 menu
   structure). Delta to PRD (v3.2.21) is now visible in this log.
+- **2026-07-02** — TMA docs coverage established at v0.32.0 (DEV+PRD
+  at parity, so the covered version equals the live version). Covers
+  the "no-risks reviewed" marker (v0.29.0), live run trace (v0.30.0),
+  model-improvement summary (v0.31.0) and the `TMA Assessment` risk
+  origin (v0.32.0). New capability page under
+  `v3/13-capabilities/07-threat-model-agent.md` and a run-modes page
+  under `v3/03-internal/08-threat-models/04-run-modes.md`.
