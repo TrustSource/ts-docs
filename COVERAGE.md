@@ -14,7 +14,7 @@ row, append to the log). Sits at the repo root, deliberately outside
 |---|---|---|---|---|---|
 | **Core (ts-app)** | [`eacg-gmbh/ts-app`](https://github.com/eacg-gmbh/ts-app) | **v3.1.20** | v3.2.29 | v3.2.21 | 1 minor / 21 patches behind PRD |
 | **ts-scan** | [`trustsource/ts-scan`](https://github.com/trustsource/ts-scan) | — | — | — | not yet documented in v3 track |
-| **ts-legalcheck** | [`trustsource/ts-legalcheck`](https://github.com/trustsource/ts-legalcheck) | — | — | — | not yet documented in v3 track |
+| **ts-legalcheck** | Public CLI: [`trustsource/ts-legalcheck`](https://github.com/trustsource/ts-legalcheck) · SaaS service: `eacg-gmbh/ts-legalcheck` (private) · Rule-set: proprietary | **Service v2.0.0 + rule-set v4.4** | v2.0.0 + v4.4 | v2.0.0 + v4.4 | **at parity** — Legal tab + obligations documented; new Legal Questionnaire page in progress |
 | **ts-deepscan** | [`trustsource/ts-deepscan`](https://github.com/trustsource/ts-deepscan) | — | — | — | not yet documented in v3 track |
 | **Vulnerability Database** | [`eacg-gmbh/ts-vulndb-api`](https://github.com/eacg-gmbh/ts-vulndb-api), [`eacg-gmbh/ts-vlu`](https://github.com/eacg-gmbh/ts-vlu) | — | — | — | not yet documented in v3 track |
 | **Threat Modeling Agent** | [`eacg-gmbh/ts-tm-agent`](https://github.com/eacg-gmbh/ts-tm-agent) | **v0.32.0** | v0.32.0 | v0.32.0 | **at parity** — new capability page + run-modes doc in progress |
@@ -54,3 +54,11 @@ the future Community Edition, not the live SaaS.
   origin (v0.32.0). New capability page under
   `v3/13-capabilities/07-threat-model-agent.md` and a run-modes page
   under `v3/03-internal/08-threat-models/04-run-modes.md`.
+- **2026-07-02** — ts-legalcheck docs coverage established at service
+  **v2.0.0** with rule-set **v4.4**. Service CHANGELOG has not been
+  bumped since 2022, so v2.0.0 is the baseline reference; rule-set
+  v4.4 is the newest constraint file checked into the private
+  service repo. Existing Legal (project) and Obligations pages
+  already cover the settings surface — remaining gap is the Legal
+  Questionnaire (Wizard) itself, which gets its own page in the
+  follow-up commit.
