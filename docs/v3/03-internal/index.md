@@ -12,8 +12,8 @@ This is the largest chapter in the ***TrustSource*** documentation. It covers ev
 | [Risks](05-risks/index.md) | Risk register with financial metrics, portfolio views and task management. | developer + (license: `risks`) |
 | [Approvals](06-approvals/index.md) | Formal release approvals with eight review tabs — the quality gate before shipping. | compliance_manager |
 | [Releases](07-releases.md) | Published releases with frozen SBOMs and post-release vulnerability monitoring. | developer + |
-| [Reports](04-reports.md) | Hub page linking to all report types (SBOM, SOUP, Notice, CSAF). | compliance_manager + |
-| [Threat Models](08-threat-models/index.md) | STRIDE and LINDDUN threat modelling with document store (OTM / OWASP Threat Dragon). | developer + (license: `threat`) |
+| [Reports](04-reports.md) | Hub page linking to all report types (SBOM, SOUP, Notice, CSAF, Vulnerabilities). | compliance_manager + |
+| [Threat Models](08-threat-models/index.md) | AI-generated STRIDE threat modelling with a Data Flow Diagram viewer (OTM / OWASP Threat Dragon import supported). | developer + (license: `threat`) |
 
 > [!TIP]
 > The typical workflow is: **create a project** → **add modules** → **scan** → **review findings** → **approve** → **release** → **generate documents**. Follow the sections in order for a natural progression through that flow.

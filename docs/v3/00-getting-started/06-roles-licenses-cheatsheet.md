@@ -32,8 +32,9 @@ A one-page reference for the roles, license features and account types in ***Tru
 | `sarif` | SW Quality Scans (SARIF upload and results) | developer + |
 | `products` | Products module (CRA classification, contacts, documents) | developer + |
 | `risks` | Risk assessment, risk tasks, portfolio views | developer + |
-| `threat` | Threat modelling (STRIDE / LINDDUN), BETA | developer + |
+| `threat` | Threat modelling (AI-generated, STRIDE), BETA | developer + |
 | `csaf` | CSAF security advisory documents | compliance_manager + |
+| `psirt` | CVD Cases (Coordinated Vulnerability Disclosure) | compliance_manager, manager, account_admin, company_security_manager |
 | `chat` | AI Chat Assistant (full-page and panel) | any role |
 | `medical` | SOUP reports, MDR/IVDR module classification | compliance_manager + |
 | `soup_report` | SOUP file generation (requires `medical`) | compliance_manager + |

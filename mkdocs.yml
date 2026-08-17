@@ -107,10 +107,11 @@ nav:
         - Post-Release Vulnerabilities: v3/03-internal/06-approvals/06-post-release-vulnerabilities.md
       - Releases: v3/03-internal/07-releases.md
       - Reports: v3/03-internal/04-reports.md
+      - Vulnerability Report: v3/03-internal/04a-vulnerability-report.md
       - Threat Models:
         - v3/03-internal/08-threat-models/index.md
-        - Create Threat Model: v3/03-internal/08-threat-models/01-create-threat-model.md
-        - STRIDE / LINDDUN: v3/03-internal/08-threat-models/02-threat-detail-stride-linddun.md
+        - Generate or Import: v3/03-internal/08-threat-models/01-create-threat-model.md
+        - Data Flow Diagram & Threat Detail: v3/03-internal/08-threat-models/02-threat-detail-stride-linddun.md
         - Mitigations & Status: v3/03-internal/08-threat-models/03-mitigations-status.md
     - Outbound:
       - v3/04-outbound/index.md
@@ -119,6 +120,7 @@ nav:
       - SOUP Lists: v3/04-outbound/03-soup-lists.md
       - CSAF: v3/04-outbound/04-csaf.md
       - Verify: v3/04-outbound/05-verify.md
+      - CVD Cases: v3/04-outbound/06-cvd-cases.md
     - Knowledge:
       - v3/05-knowledge/index.md
       - Component Lake: v3/05-knowledge/01-component-lake.md
@@ -198,6 +200,9 @@ nav:
       - CSAF Trusted Provider: v3/13-capabilities/06-csaf-trusted-provider.md
     - Release Notes:
       - v3/12-release-notes/index.md
+      - v3.3: v3/12-release-notes/3.3.md
+      - v3.2: v3/12-release-notes/3.2.md
+      - v3.1.20: v3/12-release-notes/3.1.20.md
     - Recipes:
       - v3/recipes/index.md
       - First Module to SBOM: v3/recipes/01-first-module-to-sbom.md

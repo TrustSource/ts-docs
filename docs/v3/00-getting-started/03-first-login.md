@@ -19,6 +19,11 @@ This page walks you through logging into ***TrustSource*** for the first time, c
 > [!NOTE]
 > Your admin can **enforce corporate IDM login** for all users in the company. When this is active, password and social login buttons are hidden and everyone must authenticate through the configured identity provider.
 
+> [!TIP]
+> If you registered yourself and the verification email never arrives, this
+> can mean the sign-up is still being checked. Genuine sign-ups are
+> unaffected, but if several minutes pass with no email, [contact support](../11-troubleshooting-faq/06-contact-support.md) rather than registering again.
+
 ## Two-factor authentication
 
 If your account has 2FA enabled, you will be asked for a six-digit code from your authenticator app after entering your password. 2FA is configured in your [Profile settings](../08-personal/03-profile.md).
@@ -67,5 +72,5 @@ The interface has four main areas:
 ## Related
 
 - [Profile settings](../08-personal/03-profile.md) — change your password, enable 2FA, set preferences
-- [User Management](../06-administration/04-user-management.md) — invite team members
-- [Auth & SSO](../07-account-admin-auth/index.md) — configure Keycloak and identity providers
+- [User Management](../06-administration/03-user-management.md) — invite team members
+- [Auth & SSO](../07-auth-sso/index.md) — configure Keycloak and identity providers

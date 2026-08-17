@@ -1,37 +1,23 @@
 # CVD — Coordinated Vulnerability Disclosure
 
 > [!NOTE]
-> **Required license feature:** `cvd`
+> **Required license feature:** `psirt`
 
-The **Coordinated Vulnerability Disclosure** capability gives security
-researchers, customers and partners a structured channel to report
-vulnerabilities they have discovered in your products, and gives the
-PSIRT team a workflow to triage and respond to those reports inside
-***TrustSource***.
+The **Coordinated Vulnerability Disclosure** capability connects your
+company to an external CVD platform and surfaces the cases held there —
+their coordination state, embargo status and CVSS scoring — inside
+***TrustSource***, with case creation available directly from the
+Vulnerability report or a CSAF advisory.
 
-## What this capability adds
-
-- A **public intake form** (or signed-in submission, depending on
-  configuration) where external reporters file vulnerability findings.
-- An internal **triage queue** with severity assessment, affected-product
-  selection, communication history with the reporter and remediation
-  tracking.
-- **Tight linkage to the CSAF capability** — confirmed and remediated
-  reports can be promoted to CSAF advisories with one click, preserving
-  the chain of custody from intake to publication.
-- Status notifications and SLA tracking aligned with ISO/IEC 29147 and
-  30111.
-
-📸 *Screenshot: the CVD triage list with open, in-progress and remediated reports.*
-
-📸 *Screenshot: a CVD report detail page with the reporter conversation, affected products and remediation status.*
+For the full workflow, see [CVD Cases](../04-outbound/06-cvd-cases.md).
 
 ## Editions
 
-- **SaaS:** available with the `cvd` feature flag enabled.
-- **Community Edition:** not included in the initial release.
+- **SaaS:** available with the `psirt` feature flag enabled per company.
+- **Community Edition:** not included.
 
 ## Related
 
-- [CSAF Trusted Provider](06-csaf-trusted-provider.md) — publish
-  remediated reports as CSAF advisories.
+- [CVD Cases](../04-outbound/06-cvd-cases.md) — the case list, detail view and creation form
+- [CSAF Trusted Provider](06-csaf-trusted-provider.md) — link a case when
+  building an advisory

@@ -44,7 +44,7 @@ The largest group. This is where you manage the core objects.
 | **Approvals** | Formal release approvals with eight review tabs. | compliance_manager + |
 | **Releases** | Published releases linked to approved modules. | developer + |
 | **Reports** | Hub for all analysis reports (SBOM, SOUP, Notice, CSAF). | compliance_manager + |
-| **Threat Models** | STRIDE / LINDDUN threat models (BETA). | developer + (license: `threat`) |
+| **Threat Models** | AI-generated STRIDE threat models with a Data Flow Diagram viewer (BETA). | developer + (license: `threat`) |
 
 📸 *Screenshot: the Internal sub-menu expanded.*
 

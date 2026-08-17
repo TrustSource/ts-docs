@@ -17,8 +17,8 @@ of the components and modules already managed by the core.
 - **Risk tasks** — turn a risk into actionable countermeasures and
   monitor their completion.
 - Optional integration with the **Threat Models** subsystem so threats
-  identified during a STRIDE/LINDDUN session feed straight into the
-  risk register.
+  identified by the threat-model agent feed straight into the risk
+  register, as risks with origin "Threat Model Assessment (TMA)".
 
 📸 *Screenshot: the risks overview dashboard with key metrics (new, unmitigated, financial exposure).*
 

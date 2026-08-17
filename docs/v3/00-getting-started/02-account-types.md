@@ -13,7 +13,7 @@
 | **Medical** | unlimited | unlimited | unlimited | unlimited | Same capacity as Enterprise, plus healthcare-specific compliance support (SOUP reports, MDR/IVDR classification). |
 
 > [!NOTE]
-> **Community Edition (v3.0)** is a free, self-hosted, open-source edition that is documented separately. See the [v3.0 landing page](../../v3.0/index.md).
+> **Community Edition (CE)** is a free, self-hosted, open-source edition that is documented separately. See the [CE landing page](../../ce/index.md).
 
 📸 *Screenshot: the Account & Billing page showing the current account type and usage meters.*
 
@@ -35,7 +35,7 @@ On top of account-type limits, individual capabilities are controlled by **licen
 | `sarif` | SW Quality Scans (SARIF upload) | Professional |
 | `products` | Products module (CRA classification, contacts, photos) | Corporate |
 | `risks` | Risk assessment and portfolio views | Corporate |
-| `threat` | Threat modelling (STRIDE / LINDDUN) | Corporate |
+| `threat` | Threat modelling (AI-generated, STRIDE) | Corporate |
 | `csaf` | CSAF security advisory documents | Corporate |
 | `chat` | AI Chat Assistant (Bedrock-backed) | Enterprise |
 | `medical` | SOUP reports, MDR/IVDR module classification | Medical |
@@ -52,5 +52,5 @@ Contact your account administrator or reach out to [support@trustsource.io](mail
 ## Related
 
 - [Roles & Licenses Cheat Sheet](06-roles-licenses-cheatsheet.md) — which role can do what, and which license feature unlocks which capability
-- [Administration → Account & Billing](../06-administration/02-account-billing.md) — managing your subscription
+- [Administration → Account & Billing](../06-administration/01-account-billing.md) — managing your subscription
 - [Roles & Permissions → License Features](../10-roles-permissions/07-license-features.md) — detailed feature-flag reference
