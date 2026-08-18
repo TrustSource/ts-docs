@@ -5,7 +5,10 @@
 
 A threat model's detail page renders it as an interactive **Data Flow
 Diagram (DFD)**: components, trust zones and data flows, with a Graph / Raw
-toggle to see the underlying document.
+toggle to see the underlying document. This is the human review surface on
+top of the [Threat Modeling Agent's](../../13-capabilities/07-threat-model-agent.md)
+**Generate risks** stage — the threats it elicited are what you review and
+act on here.
 
 ## Reading the diagram
 
@@ -31,9 +34,14 @@ Clicking a component, data flow or trust zone opens a side panel with:
   [Mitigations & Status](03-mitigations-status.md)).
 - Matching vulnerabilities for that component.
 
+A threat you act on — promoting it to a risk and setting a state on that
+risk — is a **human decision the agent will not overwrite** on later runs.
+See [Run Modes](04-run-modes.md#what-the-agent-will-not-touch).
+
 📸 *Screenshot: the DFD viewer with a component selected and the threat side panel open.*
 
 ## Related
 
 - [Mitigations & Status](03-mitigations-status.md) — tracking countermeasures
+- [Run Modes](04-run-modes.md) — re-eliciting threats via Generate risks
 - [Background: Product Security](../../../shared/background/05-product-security.md)

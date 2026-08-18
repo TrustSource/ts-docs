@@ -12,17 +12,22 @@ of the components and modules already managed by the core.
 
 - **Risk register** — document, assess and track individual risks per
   project and across projects.
-- **Portfolio views** — cross-project risk dashboards filtered by
-  status, owner, severity or financial exposure.
-- **Risk tasks** — turn a risk into actionable countermeasures and
-  monitor their completion.
-- Optional integration with the **Threat Models** subsystem so threats
-  identified by the threat-model agent feed straight into the risk
-  register, as risks with origin "Threat Model Assessment (TMA)".
 
 📸 *Screenshot: the risks overview dashboard with key metrics (new, unmitigated, financial exposure).*
 
+- **Portfolio views** — cross-project risk dashboards filtered by
+  status, owner, severity or financial exposure.
+
 📸 *Screenshot: the risks list with filters applied, showing a typical project portfolio.*
+
+- **Risk tasks** — turn a risk into actionable countermeasures and
+  monitor their completion.
+- **Integration with the Threat Modeling Agent** — risks raised by the
+  [TMA](07-threat-model-agent.md) land in the same register with
+  `origin: TMA Assessment` so they are distinguishable from risks
+  entered manually. The agent never overwrites a state a person has
+  set; see the [TMA capability page](07-threat-model-agent.md#key-guarantees)
+  for the full guarantees.
 
 ## Editions
 
@@ -33,4 +38,5 @@ of the components and modules already managed by the core.
 ## Related
 
 - [Internal → Risks](../03-internal/05-risks/index.md) — risk register, list and tasks
-- [Internal → Threat Models](../03-internal/08-threat-models/index.md) — threat modelling that can feed risks
+- [Internal → Threat Models](../03-internal/08-threat-models/index.md) — the threat-model workflow that feeds risks with `origin: TMA Assessment`
+- [Threat Modeling Agent](07-threat-model-agent.md) — the automated engine behind those threat-model risks

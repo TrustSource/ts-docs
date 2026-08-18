@@ -113,6 +113,7 @@ nav:
         - Generate or Import: v3/03-internal/08-threat-models/01-create-threat-model.md
         - Data Flow Diagram & Threat Detail: v3/03-internal/08-threat-models/02-threat-detail-stride-linddun.md
         - Mitigations & Status: v3/03-internal/08-threat-models/03-mitigations-status.md
+        - Run Modes: v3/03-internal/08-threat-models/04-run-modes.md
     - Outbound:
       - v3/04-outbound/index.md
       - SBOM + CBOM: v3/04-outbound/01-sbom-cbom.md
@@ -198,6 +199,7 @@ nav:
       - Medical: v3/13-capabilities/04-medical.md
       - CVD: v3/13-capabilities/05-cvd.md
       - CSAF Trusted Provider: v3/13-capabilities/06-csaf-trusted-provider.md
+      - Threat Modeling Agent: v3/13-capabilities/07-threat-model-agent.md
     - Release Notes:
       - v3/12-release-notes/index.md
       - v3.3: v3/12-release-notes/3.3.md
@@ -216,6 +218,7 @@ nav:
       - Onboard Team Member: v3/recipes/09-onboard-team-member.md
       - Infrastructure Module: v3/recipes/10-add-infrastructure-module.md
       - Migrate from Another SCA: v3/recipes/11-migrate-from-another-sca.md
+      - Fill in the Legal Questionnaire: v3/recipes/12-legal-questionnaire.md
   - Community Edition (CE):
     - ce/index.md
     - Getting Started:

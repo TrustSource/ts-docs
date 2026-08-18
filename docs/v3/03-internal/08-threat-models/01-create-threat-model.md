@@ -3,9 +3,9 @@
 > [!NOTE]
 > **Required license feature:** `threat`
 
-A threat model is produced one of two ways: **generated** by the AI
-threat-model agent, or **imported** from an existing OTM / OWASP Threat
-Dragon document.
+A threat model is produced one of two ways: **generated** by the
+[Threat Modeling Agent (TMA)](../../13-capabilities/07-threat-model-agent.md),
+or **imported** from an existing OTM / OWASP Threat Dragon document.
 
 ## Generating a model
 
@@ -28,6 +28,10 @@ Dragon document.
    run fails, times out, or the agent is already busy at its concurrency
    limit.
 
+Every run is **idempotent** — running a stage again with nothing new to
+act on produces no new risks and leaves the document unchanged. See
+[Run Modes](04-run-modes.md) for when to use each stage.
+
 The agent reads the project's **Application goals** text (see
 [Project Settings → General](../01-projects/settings/01-general.md)) to seed
 the model — populate that field, or upload an `architecture.md`, before
@@ -36,9 +40,8 @@ generating for the best result.
 ## Re-running a single stage
 
 Open a model's detail page and use the **Lifecycle** dropdown: it lists
-each stage (build model / generate risks / develop countermeasures), shows
-whether it already has data, and lets you run or re-run just that stage
-without going back to the project.
+each stage, shows whether it already has data, and lets you run or re-run
+just that stage without going back to the project.
 
 ## Importing a model
 
@@ -50,4 +53,5 @@ opens in the same Data Flow Diagram viewer.
 
 ## Related
 
+- [Run Modes](04-run-modes.md) — Complete run vs. individual stages
 - [Data Flow Diagram & Threat Detail](02-threat-detail-stride-linddun.md)

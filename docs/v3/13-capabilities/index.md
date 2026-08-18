@@ -23,6 +23,7 @@ or may not be present in a given account.
 | [Medical](04-medical.md) | SOUP reports and MDR/IVDR module classification | `medical` |
 | [CVD](05-cvd.md) | Coordinated Vulnerability Disclosure intake and triage | `cvd` |
 | [CSAF Trusted Provider](06-csaf-trusted-provider.md) | Publish CSAF advisories as a registered trusted provider | `csaf` |
+| [Threat Modeling Agent](07-threat-model-agent.md) | Automated STRIDE-per-Element threat modelling with human-in-the-loop review | `threat` |
 
 The exact set of capabilities available on your account depends on
 which subscription you hold. Pages in this help portal that depend on a
