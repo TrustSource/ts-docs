@@ -28,4 +28,4 @@ edit to the Legal Questionnaire answers, or a rule-set bump.
 
 - [Obligations (Module)](../../02-modules/settings/03-obligations.md) — module-level obligation tracking
 - [Legal (Project)](02-legal.md) — the legal framework that determines which obligations apply
-- [Fill in the Legal Questionnaire](../../../../recipes/12-legal-questionnaire.md) — end-to-end recipe covering both parts
+- [Fill in the Legal Questionnaire](../../../recipes/12-legal-questionnaire.md) — end-to-end recipe covering both parts

@@ -44,11 +44,11 @@ All licenses detected across components, grouped by license name. Shows:
 
 ### Deep Scans
 
-Results from [repository deep scans](../../02-inbound/05-repositories-deep-scan.md) — file-level license and copyright findings. Only populated if a deep scan has been run for this module's repository.
+Results from [repository deep scans](../../02-inbound/05-repository-scans.md) — file-level license and copyright findings. Only populated if a deep scan has been run for this module's repository.
 
 ### Quality
 
-Code quality and test results from [SARIF uploads](../../02-inbound/04-tests-sarif.md). Only visible when the `sarif` license feature is enabled.
+Code quality and test results from [SARIF uploads](../../02-inbound/04-sw-quality-scans.md). Only visible when the `sarif` license feature is enabled.
 
 ## Actions from the module header
 

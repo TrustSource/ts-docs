@@ -12,5 +12,7 @@ Company-wide settings and management. Most pages in this section require the `ac
 | [Policies](05-policies.md) | EOL, FOSS and crypto policies. | account_admin, company_security_manager, compliance_manager |
 | [Enterprise Companies](06-enterprise-companies.md) | Sub-company management (Enterprise/Medical). | enterprise_admin |
 | [Audit Logs](07-audit-logs.md) | Company-wide audit trail. | account_admin |
+| [Integrations](08-integrations.md) | Jira, GitHub, TFS, LeanIX, SCANOSS, webhooks & channels. | account_admin, enterprise_admin |
+| [Login History](09-login-history.md) | Company-wide login audit trail. | account_admin, manager, compliance_manager |
 
 📸 *Screenshot: the Administration section in the sidebar.*

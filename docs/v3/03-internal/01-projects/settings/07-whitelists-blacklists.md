@@ -32,4 +32,4 @@ When enabled, **every** license must be on the allow list to pass — anything n
 ## Related
 
 - [Whitelists & Blacklists (Module)](../../02-modules/settings/14-whitelists-blacklists.md) — module-level overrides
-- [Open Source Policy](../../../05-knowledge/07-open-source-policies.md) — company-wide policy rules
+- [Open Source Policy](../../../05-knowledge/07-open-source-policy.md) — company-wide policy rules

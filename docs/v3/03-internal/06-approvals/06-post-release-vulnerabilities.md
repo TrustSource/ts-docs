@@ -13,9 +13,9 @@ The post-release view shows:
 📸 *Screenshot: the post-release vulnerability tab showing newly discovered CVEs.*
 
 > [!TIP]
-> Set up [webhooks](../../06-administration/07-integrations.md) to receive notifications when new vulnerabilities are found in released modules.
+> Set up [webhooks](../../06-administration/08-integrations.md) to receive notifications when new vulnerabilities are found in released modules.
 
 ## Related
 
 - [Releases](../07-releases.md) — managing released versions
-- [Vulnerability Lake](../../05-knowledge/02-vulnerability-lake.md) — the CVE database
+- [Vulnerability Lake](../../05-knowledge/04-vulnerability-lake.md) — the CVE database

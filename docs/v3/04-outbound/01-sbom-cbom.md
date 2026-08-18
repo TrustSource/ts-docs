@@ -19,6 +19,6 @@
 
 ## Related
 
-- [Working with Scans](../02-inbound/02-scans.md) — how component data enters the SBOM
+- [Working with Scans](../02-inbound/02-import-scans.md) — how component data enters the SBOM
 - [Approvals](../03-internal/06-approvals/index.md) — SBOMs are frozen at approval time
 - [Background: SBOM Formats](../../shared/background/10-sbom-formats.md) — SPDX vs CycloneDX comparison

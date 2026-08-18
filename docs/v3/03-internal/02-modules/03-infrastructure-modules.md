@@ -15,7 +15,7 @@ Your software supply chain risk does not stop at your application code. A vulner
 |---|---|---|
 | **Architecture type** | `sourceCode` | `infrastructureModule` |
 | **Dependency tabs** | List, Tree, Graph, Deep Scans, Quality | Not shown — no dependency analysis |
-| **Component source** | Scans (CI/CD, upload, API) | Linked from the [Infrastructure catalog](../../05-knowledge/03-infrastructure-components.md) |
+| **Component source** | Scans (CI/CD, upload, API) | Linked from the [Infrastructure catalog](../../05-knowledge/02-infrastructure-elements.md) |
 | **Version field** | Not shown (derived from scans) | Editable in General settings |
 | **Analysis** | Full dependency + vulnerability + legal | Stats update only |
 
@@ -38,6 +38,5 @@ Once linked, vulnerabilities and license findings for that infrastructure entry 
 
 ## Related
 
-- [Infrastructure Components](../../05-knowledge/03-infrastructure-components.md) — the global catalog
-- [Container Scanning](../../02-inbound/07-containers.md) — scanning Docker images with ts-scan
+- [Infrastructure Components](../../05-knowledge/02-infrastructure-elements.md) — the global catalog
 - [Mental Model](../../00-getting-started/05-mental-model.md) — where infrastructure modules fit

@@ -15,5 +15,5 @@ The Encryption tab manages cryptographic algorithm requirements and export contr
 ## Related
 
 - [Encryption (Module)](../../02-modules/settings/10-encryption.md) — module-level encryption settings
-- [Algorithms](../../../05-knowledge/06-algorithms.md) — the global algorithm database
+- [Algorithms](../../../05-knowledge/05-algorithms.md) — the global algorithm database
 - [Background: Crypto Agility](../../../../shared/background/06-crypto-agility.md)

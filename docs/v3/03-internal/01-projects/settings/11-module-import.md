@@ -19,4 +19,4 @@ The import history table shows all past imports with their status.
 ## Related
 
 - [Create & List Modules](../../02-modules/01-create-and-list.md) — creating modules individually
-- [Working with Scans](../../../02-inbound/02-scans.md) — importing scan data
+- [Working with Scans](../../../02-inbound/02-import-scans.md) — importing scan data

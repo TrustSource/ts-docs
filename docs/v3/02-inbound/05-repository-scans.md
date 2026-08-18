@@ -90,7 +90,7 @@ The summary bar at the top of each scan result shows:
 
 ## Related
 
-- [Bulk Repositories](06-bulk-repositories.md) — scan many repositories in one pass
-- [Algorithms](../05-knowledge/06-algorithms.md) — the crypto algorithm database used by crypto analysis
-- [Licenses](../05-knowledge/05-licenses.md) — the license catalog that classifies findings
-- [Working with Scans](02-scans.md) — package-level scans vs. file-level deep scans
+- [Bulk Repositories](06-mass-scans.md) — scan many repositories in one pass
+- [Algorithms](../05-knowledge/05-algorithms.md) — the crypto algorithm database used by crypto analysis
+- [Licenses](../05-knowledge/06-licenses.md) — the license catalog that classifies findings
+- [Working with Scans](02-import-scans.md) — package-level scans vs. file-level deep scans

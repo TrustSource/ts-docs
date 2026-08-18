@@ -6,5 +6,4 @@ View and manage your company's active FOSS policy. The policy determines the def
 
 ## Related
 
-- [Open Source Policies](07-open-source-policies.md) — available policy templates
-- [Policies (Administration)](../06-administration/08-policies.md) — company-wide policy management
+- [Policies (Administration)](../06-administration/05-policies.md) — company-wide policy management

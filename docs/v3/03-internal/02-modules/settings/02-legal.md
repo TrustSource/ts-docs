@@ -39,7 +39,7 @@ module-specific obligation notes.
 
 - **Wizard mode** — the same guided flow as on the project tab, but
   scoped to the module-level questions. See the
-  [Fill in the Legal Questionnaire](../../../../recipes/12-legal-questionnaire.md)
+  [Fill in the Legal Questionnaire](../../../recipes/12-legal-questionnaire.md)
   recipe (Part 2).
 - **Import from template** — apply a legal template curated by your
   Legal Manager.
@@ -62,5 +62,5 @@ the [project obligations view](../../01-projects/settings/08-obligations.md).
 ## Related
 
 - [Legal (Project)](../../01-projects/settings/02-legal.md) — Part 1 of the Questionnaire
-- [Fill in the Legal Questionnaire](../../../../recipes/12-legal-questionnaire.md) — recipe covering both parts
+- [Fill in the Legal Questionnaire](../../../recipes/12-legal-questionnaire.md) — recipe covering both parts
 - [Obligations (Module)](03-obligations.md) — the resolved obligations for this module

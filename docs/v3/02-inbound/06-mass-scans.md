@@ -9,7 +9,7 @@
 
 ## What it does
 
-Bulk Repositories extends the [Repository Deep Scan](05-repositories-deep-scan.md) feature to work at scale. Instead of scheduling scans one by one, you create a scan list that processes many repositories with the same analysis settings.
+Bulk Repositories extends the [Repository Deep Scan](05-repository-scans.md) feature to work at scale. Instead of scheduling scans one by one, you create a scan list that processes many repositories with the same analysis settings.
 
 ## When to use it
 
@@ -47,7 +47,7 @@ The **Mass Scans list** shows all scheduled and completed bulk scans:
 
 📸 *Screenshot: the bulk scan list with status indicators for each scan.*
 
-Click a row to see individual repository results. Each repository follows the same [deep scan result format](05-repositories-deep-scan.md) — file tree, license annotations, copyright notices, and false-positive feedback.
+Click a row to see individual repository results. Each repository follows the same [deep scan result format](05-repository-scans.md) — file tree, license annotations, copyright notices, and false-positive feedback.
 
 ### Managing bulk scans
 
@@ -59,5 +59,5 @@ Click a row to see individual repository results. Each repository follows the sa
 
 ## Related
 
-- [Repositories (Deep Scan)](05-repositories-deep-scan.md) — scanning a single repository in detail
-- [Scans](02-scans.md) — package-level scans vs. file-level deep scans
+- [Repositories (Deep Scan)](05-repository-scans.md) — scanning a single repository in detail
+- [Scans](02-import-scans.md) — package-level scans vs. file-level deep scans

@@ -47,7 +47,7 @@ TrustSource. Three tiers are available:
 - **No trainings** — the trainings area is hidden; learning happens
   through this help portal and direct support.
 
-See the [Trainings page](../05-knowledge/11-trainings.md) for how the
+See the [Trainings page](../05-knowledge/08-trainings.md) for how the
 training area looks in the app.
 
 📸 *Screenshot: the capabilities / license-features panel in account settings, with a sample subscription's feature flags visible.*

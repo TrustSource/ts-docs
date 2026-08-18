@@ -41,4 +41,4 @@ Click any module to open the [Module Detail](02-module-detail-tabs.md).
 
 - [Module Detail Tabs](02-module-detail-tabs.md) — what you see inside a module
 - [Module Settings](settings/index.md) — configuring a module
-- [Working with Scans](../../02-inbound/02-scans.md) — how data gets into a module
+- [Working with Scans](../../02-inbound/02-import-scans.md) — how data gets into a module

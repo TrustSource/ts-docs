@@ -14,4 +14,4 @@ You can define a list of **quality requirements** — for example, minimum test 
 ## Related
 
 - [Quality (Module)](../../02-modules/settings/12-quality.md) — module-level quality settings
-- [Code Tests (SARIF)](../../../02-inbound/04-tests-sarif.md) — uploading test results
+- [Code Tests (SARIF)](../../../02-inbound/04-sw-quality-scans.md) — uploading test results

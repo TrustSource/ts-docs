@@ -13,7 +13,6 @@
 | **Medical** | unlimited | unlimited | unlimited | unlimited | Same capacity as Enterprise, plus healthcare-specific compliance support (SOUP reports, MDR/IVDR classification). |
 
 > [!NOTE]
-> **Community Edition (v3.0)** is a free, self-hosted, open-source edition that is documented separately. See the [v3.0 landing page](../../v3.0/index.md).
 
 📸 *Screenshot: the Account & Billing page showing the current account type and usage meters.*
 

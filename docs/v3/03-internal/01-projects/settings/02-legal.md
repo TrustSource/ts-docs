@@ -23,7 +23,7 @@ module-specific distribution details are captured on the module's own
 - **Wizard mode** — the guided way to fill the fields above. Walks
   you through the same questions the Legal Questionnaire covers, with
   contextual explanations. See the
-  [Fill in the Legal Questionnaire](../../../../recipes/12-legal-questionnaire.md)
+  [Fill in the Legal Questionnaire](../../../recipes/12-legal-questionnaire.md)
   recipe for the full flow across both parts.
 - **View all requirements** — see the full obligation matrix for the
   current settings.
@@ -48,6 +48,6 @@ inputs → same obligation set, every time.
 
 ## Related
 
-- [Fill in the Legal Questionnaire](../../../../recipes/12-legal-questionnaire.md) — recipe covering both project and module parts
+- [Fill in the Legal Questionnaire](../../../recipes/12-legal-questionnaire.md) — recipe covering both project and module parts
 - [Legal (Module)](../../02-modules/settings/02-legal.md) — Part 2 of the Questionnaire
 - [Obligations (Project)](08-obligations.md) — the resolved obligations that follow from these settings

@@ -24,5 +24,5 @@ The Verification tool lets you validate documents you receive from suppliers —
 
 ## Related
 
-- [SBOM Files](01-sbom-files.md) — generating your own SBOMs
+- [SBOM Files](01-sbom-cbom.md) — generating your own SBOMs
 - [CSAF Documents](04-csaf.md) — creating your own advisories

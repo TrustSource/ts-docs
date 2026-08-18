@@ -32,5 +32,5 @@ obligations of the EU **MDR** (Medical Device Regulation, 2017/745) and
 
 ## Related
 
-- [Outbound → SOUP Files](../04-outbound/02-soup-files.md) — in-app reference for SOUP generation.
+- [Outbound → SOUP Files](../04-outbound/03-soup-lists.md) — in-app reference for SOUP generation.
 - [Internal → Projects → Settings → Module Classification](../03-internal/01-projects/settings/09-module-classification.md) — where the MDR/IVDR template is configured per project.

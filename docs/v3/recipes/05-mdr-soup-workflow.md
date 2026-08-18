@@ -12,5 +12,5 @@ Generate a Software of Unknown Provenance list for a medical device project.
 1. Configure the module's MDR/IVDR classification.
 2. Ensure a scan with complete component data is available.
 3. Create an [approval](../03-internal/06-approvals/index.md) — the SOUP file is generated automatically.
-4. Review the SOUP file in [Outbound → SOUP Files](../04-outbound/02-soup-files.md).
+4. Review the SOUP file in [Outbound → SOUP Files](../04-outbound/03-soup-lists.md).
 5. Approve the module to freeze the SOUP document.

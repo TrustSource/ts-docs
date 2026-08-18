@@ -19,4 +19,4 @@ CSAF (Common Security Advisory Framework) documents are structured security advi
 
 - [Background: VEX in CSAF](../../shared/background/11-vex-csaf-vex.md) — VEX use cases
 - [Products](../03-internal/03-products/index.md) — products referenced in CSAF advisories
-- [Vulnerability Lake](../05-knowledge/02-vulnerability-lake.md) — the CVE database
+- [Vulnerability Lake](../05-knowledge/04-vulnerability-lake.md) — the CVE database

@@ -47,5 +47,5 @@ For a **component check**, results include:
 ## Related
 
 - [Component Lake](../05-knowledge/01-component-lake.md) — browse and search the full component database
-- [Licenses](../05-knowledge/05-licenses.md) — the license catalog with obligations and commercial terms
-- [Open Source Policy](../05-knowledge/07-open-source-policies.md) — how policies classify licenses as allowed, restricted or forbidden
+- [Licenses](../05-knowledge/06-licenses.md) — the license catalog with obligations and commercial terms
+- [Open Source Policy](../05-knowledge/07-open-source-policy.md) — how policies classify licenses as allowed, restricted or forbidden

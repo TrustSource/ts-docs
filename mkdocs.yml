@@ -141,6 +141,8 @@ nav:
       - Policies: v3/06-administration/05-policies.md
       - Enterprise Companies: v3/06-administration/06-enterprise-companies.md
       - Audit Logs: v3/06-administration/07-audit-logs.md
+      - Integrations: v3/06-administration/08-integrations.md
+      - Login History: v3/06-administration/09-login-history.md
     - Identity Integration:
       - v3/07-auth-sso/index.md
       - User Storage: v3/07-auth-sso/01-user-storage.md

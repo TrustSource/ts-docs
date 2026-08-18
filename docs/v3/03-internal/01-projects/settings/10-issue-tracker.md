@@ -22,5 +22,5 @@ Only one integration can be active at a time per project. Select the integration
 
 ## Related
 
-- [Integrations](../../../06-administration/07-integrations.md) — company-wide integration configuration
-- [Code Tests (SARIF)](../../../02-inbound/04-tests-sarif.md) — creating issues from test findings
+- [Integrations](../../../06-administration/08-integrations.md) — company-wide integration configuration
+- [Code Tests (SARIF)](../../../02-inbound/04-sw-quality-scans.md) — creating issues from test findings

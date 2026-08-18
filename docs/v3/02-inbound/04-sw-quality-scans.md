@@ -69,8 +69,8 @@ From any finding in the detail view, you can:
 You can upload SARIF files via the REST API to integrate Code Tests into your CI/CD pipeline:
 
 ```bash
-curl -X POST https://app.trustsource.io/api/v1/tests \
-  -H "x-apikey: YOUR_API_KEY" \
+curl -X POST https://api.trustsource.io/v2/core/tests/sarif \
+  -H "x-api-key: YOUR_API_KEY" \
   -H "Content-Type: multipart/form-data" \
   -F "file=@results.sarif" \
   -F "projectName=my-project" \
@@ -79,7 +79,7 @@ curl -X POST https://app.trustsource.io/api/v1/tests \
 
 ## Related
 
-- [Working with Scans](02-scans.md) — dependency scans vs. code test uploads
-- [CI/CD Integrations](03-cicd-integrations.md) — automate all inbound data
+- [Working with Scans](02-import-scans.md) — dependency scans vs. code test uploads
+- [CI/CD Integrations](03-cicd-scan.md) — automate all inbound data
 - [Risks](../03-internal/05-risks/index.md) — the risk register where findings can be tracked
-- [Integrations](../06-administration/07-integrations.md) — configuring issue trackers (Jira, GitHub, TFS)
+- [Integrations](../06-administration/08-integrations.md) — configuring issue trackers (Jira, GitHub, TFS)

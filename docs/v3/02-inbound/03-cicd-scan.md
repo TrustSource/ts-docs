@@ -22,7 +22,7 @@ Scans can arrive through several paths:
 |---|---|
 | **CI/CD scanner** | A scanner plugin in your build pipeline pushes results via the REST API after each build. |
 | **Manual upload** | Upload a scan result file (JSON, SPDX, CycloneDX) through the web UI. |
-| **REST API** | Push scan data programmatically using the `/api/v1/scans` endpoint with your API key. |
+| **REST API** | Push scan data programmatically using the `/core/scans` endpoint with your API key. |
 | **SBOM import** | Upload an existing SBOM (SPDX or CycloneDX format) and ***TrustSource*** creates a scan from it. |
 
 Every scan is attached to exactly one module. If the target module does not exist yet, it is created automatically (when using the API with auto-create enabled).
@@ -96,6 +96,5 @@ Deleting a scan removes it from the list and from the module's scan history. If 
 
 ## Related
 
-- [CI/CD Integrations](03-cicd-integrations.md) — automate scan uploads from your pipeline
 - [REST API → Scans endpoint](../09-rest-api/03-endpoint-reference.md) — programmatic scan upload
 - [Module Detail](../03-internal/02-modules/02-module-detail-tabs.md) — how scan data appears in the module view

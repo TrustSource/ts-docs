@@ -30,5 +30,4 @@ platform without having to know the underlying click-paths.
 
 ## Related
 
-- [Knowledge → AI Chat Assistant](../05-knowledge/10-chat.md) — the
   in-app reference for the chat panel.
