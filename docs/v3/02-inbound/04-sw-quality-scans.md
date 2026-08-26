@@ -77,6 +77,24 @@ curl -X POST https://api.trustsource.io/v2/core/tests/sarif \
   -F "moduleName=api-service"
 ```
 
+> [!WARNING]
+> **`moduleName` must match your dependency scan or SBOM upload exactly.**
+> TrustSource matches a module by name character-for-character — it does not
+> normalise or guess that two spellings mean the same thing. If your build
+> pipeline uploads dependency data (a scan, or an SBOM/SPDX import) under one
+> name — say the package name from your manifest, `@my-org/billing-service` —
+> and a separately maintained SARIF upload script sends a different name for
+> the same codebase — say the checkout folder, `billing-service` — you will
+> end up with **two modules** instead of one: one holding your dependency and
+> license data with no test findings, the other holding your SARIF findings
+> with no dependency information. Nothing in the upload response warns you
+> this happened; the split only becomes visible when a module you expect to
+> show both looks incomplete.
+>
+> Use the exact same project/module name on every upload path for a given
+> module, or — more reliably — look up the module once in the app or via the
+> API and pass its `moduleId` on subsequent uploads instead of a name.
+
 ## Related
 
 - [Working with Scans](02-import-scans.md) — dependency scans vs. code test uploads

@@ -27,6 +27,15 @@ Scans can arrive through several paths:
 
 Every scan is attached to exactly one module. If the target module does not exist yet, it is created automatically (when using the API with auto-create enabled).
 
+> [!WARNING]
+> The module name your scan or SBOM import uses becomes the string every other
+> upload path — most importantly a [SARIF test upload](04-sw-quality-scans.md) —
+> must match exactly to land on the same module. A mismatch (e.g. a package
+> manifest name vs. a checkout folder name) silently creates a second module
+> instead of merging into the first. See
+> [SW Quality Scans → module naming](04-sw-quality-scans.md#automating-sarif-uploads)
+> for the full explanation.
+
 ## The scan list
 
 Navigate to **Inbound → CI/CD Scan** to see all scans.
