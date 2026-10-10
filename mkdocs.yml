@@ -139,6 +139,8 @@ nav:
       - Settings: v3/06-administration/02-settings.md
       - User Management: v3/06-administration/03-user-management.md
       - API Keys: v3/06-administration/04-api-keys.md
+      - API Usage: v3/06-administration/04a-api-usage.md
+      - Release Keys: v3/06-administration/04b-release-keys.md
       - Policies: v3/06-administration/05-policies.md
       - Enterprise Companies: v3/06-administration/06-enterprise-companies.md
       - Audit Logs: v3/06-administration/07-audit-logs.md
