@@ -10,7 +10,7 @@ produced by the [Threat Modeling Agent (TMA)](../../13-capabilities/07-threat-mo
 an automated service that reads your project inventory, elicits
 STRIDE-classified threats, proposes countermeasures, and stores each run
 as an interactive Data Flow Diagram (DFD) — or you can import an existing
-OTM / OWASP Threat Dragon document instead. Reviewing findings and
+OTM, OWASP Threat Dragon or CycloneDX TM-BOM document instead. Reviewing findings and
 tracking mitigations happens in the app; the agent handles the analysis.
 
 📸 *Screenshot: the Threat Models list with project, run, format and threat count.*
@@ -33,7 +33,7 @@ use-cases and details.
 
 | Page | What it covers |
 |---|---|
-| [Generate or Import a Threat Model](01-create-threat-model.md) | Starting a run, choosing a stage, importing an existing document. |
+| [Generate or Import a Threat Model](01-create-threat-model.md) | Starting a run, choosing a stage, importing and downloading documents. |
 | [Data Flow Diagram & Threat Detail](02-threat-detail-stride-linddun.md) | Reading the diagram and the threat side panel (STRIDE / ENISA / CWE). |
 | [Mitigations & Status](03-mitigations-status.md) | Where countermeasures show up and how their status is tracked. |
 | [Run Modes](04-run-modes.md) | Complete run vs. individual stages, and when to use each. |
