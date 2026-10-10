@@ -9,7 +9,8 @@ This chapter documents the role-based access control system in ***TrustSource***
 | [Permission Model](03-permission-model.md) | OR-aggregation, owner-vacuum, resource-layer. |
 | [Functions by Area](04-functions-by-area.md) | What each area allows, grouped by app section. |
 | [Functions by Role](05-functions-by-role.md) | What each role can do, grouped by role. |
-| [Settings Permission Matrix](06-settings-permission-matrix.md) | Field-level permissions in settings tabs. |
+| [Settings Permission Matrix](06-settings-permission-matrix.md) | Field-level permissions in project settings tabs. |
+| [Module Settings Matrix](06a-module-settings-matrix.md) | Field-level permissions in module settings tabs. |
 | [License Features](07-license-features.md) | What each license feature unlocks. |
 | [Account Types](08-account-types.md) | Detailed account type comparison. |
 

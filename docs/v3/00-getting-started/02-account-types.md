@@ -19,16 +19,13 @@
 
 ## Where to see your account type
 
-Your current edition is shown in two places:
+Your current account type appears in brackets after your company name at the top of the left navigation, for example "Acme GmbH (corporate)". While a trial runs, a **TRIAL** marker with the expiry date appears below it. You can change the account type under **Administration → Account & Billing**; see [Account & Billing](../06-administration/01-account-billing.md).
 
-1. **Sidebar** — the account type badge appears in the user info section at the top of the left navigation.
-2. **Settings → Account & Billing** — a detail view with usage statistics (projects, modules, components, users) and the current plan name.
-
-Only users with the `account_admin` or `enterprise_admin` role can view or change the account type.
+Only users with the `account_admin` or `enterprise_admin` role can open that page.
 
 ## License features
 
-On top of account-type limits, individual capabilities are controlled by **license features** — flags that your account administrator can enable. A feature that is not licensed is hidden from the menu and API.
+On top of account-type limits, individual capabilities are controlled by **license features** — flags that ***TrustSource*** provisions for your company. A feature that is not licensed is hidden from the menu, and the server refuses the matching calls.
 
 | Feature flag | What it unlocks | Minimum edition |
 |---|---|---|
@@ -38,16 +35,19 @@ On top of account-type limits, individual capabilities are controlled by **licen
 | `threat` | Threat modelling (AI-generated, STRIDE) | Corporate |
 | `csaf` | CSAF security advisory documents | Corporate |
 | `chat` | AI Chat Assistant (Bedrock-backed) | Enterprise |
+| `psirt` | CVD cases (BETA) | Provisioned per company |
+| `obom` | OBOM upload, Deployments tile and OBOM tab | Provisioned per company |
+| `cvdself` | Makes the role `cvd_coordinator` assignable | Provisioned per company |
 | `medical` | SOUP reports, MDR/IVDR module classification | Medical |
 | `soup_report` | SOUP file generation (used with `medical`) | Medical |
 | `deep_scan` | Repository deep-scan analysis | Professional |
 
 > [!TIP]
-> If a menu entry you expect is missing, check with your account admin whether the corresponding license feature is enabled. The feature list is managed under **Settings → Account & Billing**.
+> If a menu entry you expect is missing, check whether your role includes it and whether the license feature is enabled. License features cannot be changed in the app: ask your ***TrustSource*** contact. See [License Features](../10-roles-permissions/07-license-features.md).
 
 ## Upgrading
 
-Contact your account administrator or reach out to [support@trustsource.io](mailto:support@trustsource.io) to discuss an upgrade. Downgrades that would exceed the target plan's limits (e.g. more projects than allowed) are blocked until you reduce usage.
+Account admins change the plan under **Administration → Account & Billing**. Enterprise and Medical upgrades are handled by the sales team; you can also reach out to [support@trustsource.io](mailto:support@trustsource.io). A downgrade takes effect with the next billing period.
 
 ## Related
 
