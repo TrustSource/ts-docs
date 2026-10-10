@@ -23,7 +23,7 @@ A **product** in ***TrustSource*** represents what you ship to the customer. Pro
 | [Documents](06-tab-documents.md) | User manual, secure setup guide, SBOM, CEDOC. |
 | [Contacts](07-tab-contacts.md) | Manufacturer info, PSIRT contact. |
 | [Support](08-tab-support.md) | Support contracts with dates and terms. |
-| [Misuse Cases](09-tab-misuse.md) | Potential abuse scenarios (threat-related). |
+| [Misuse](09-tab-misuse.md) | Potential abuse scenarios (threat-related). |
 
 📸 *Screenshot: the product list showing a hierarchical tree of products.*
 

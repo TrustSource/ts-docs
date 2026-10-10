@@ -47,7 +47,7 @@ nav:
         - Documents: v3/03-internal/03-products/06-tab-documents.md
         - Contacts: v3/03-internal/03-products/07-tab-contacts.md
         - Support: v3/03-internal/03-products/08-tab-support.md
-        - Misuse Cases: v3/03-internal/03-products/09-tab-misuse.md
+        - Misuse: v3/03-internal/03-products/09-tab-misuse.md
         - Link with Release: v3/03-internal/03-products/10-link-with-release.md
       - Projects:
         - v3/03-internal/01-projects/index.md
@@ -71,6 +71,7 @@ nav:
         - v3/03-internal/02-modules/index.md
         - Create & List: v3/03-internal/02-modules/01-create-and-list.md
         - Module Detail Tabs: v3/03-internal/02-modules/02-module-detail-tabs.md
+        - Infrastructure Modules: v3/03-internal/02-modules/03-infrastructure-modules.md
         - Settings:
           - v3/03-internal/02-modules/settings/index.md
           - General: v3/03-internal/02-modules/settings/01-general.md
@@ -120,8 +121,8 @@ nav:
       - Notice Files: v3/04-outbound/02-notice-files.md
       - SOUP Lists: v3/04-outbound/03-soup-lists.md
       - CSAF: v3/04-outbound/04-csaf.md
-      - Verify: v3/04-outbound/05-verify.md
       - CVD Cases: v3/04-outbound/06-cvd-cases.md
+      - Verify: v3/04-outbound/05-verify.md
     - Knowledge:
       - v3/05-knowledge/index.md
       - Component Lake: v3/05-knowledge/01-component-lake.md

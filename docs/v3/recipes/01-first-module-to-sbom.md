@@ -35,7 +35,7 @@ In the left navigation, open **Internal → Projects** and click **+ New Project
 
 ### 2. Create an API key
 
-Go to **Administration → Scanners & API Keys** and create a new key.
+Go to **Administration → API keys** and create a new key.
 
 > [!CAUTION]
 > The API key is shown **once**. Copy it immediately into a safe place — a password manager, your CI secret store, or for this recipe, just an environment variable in your shell.

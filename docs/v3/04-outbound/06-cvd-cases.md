@@ -3,6 +3,8 @@
 > [!NOTE]
 > **Required role:** `compliance_manager`, `manager`, `account_admin` or `company_security_manager`
 > **Required license feature:** `psirt`
+>
+> The **Outbound** menu is shown to `compliance_manager`, `manager` and `account_admin` only. A `company_security_manager` is allowed to read and create cases (the server accepts the role) but does not see the menu entry; they reach cases through the CVD case picker when creating a CSAF advisory from the Vulnerabilities report, or by opening `/cases` directly.
 
 ***TrustSource*** connects to an external Coordinated Vulnerability
 Disclosure (CVD) platform. **CVD Cases** (Outbound → CVD cases) gives you a

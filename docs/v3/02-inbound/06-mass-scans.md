@@ -9,7 +9,7 @@
 
 ## What it does
 
-Bulk Repositories extends the [Repository Deep Scan](05-repository-scans.md) feature to work at scale. Instead of scheduling scans one by one, you create a scan list that processes many repositories with the same analysis settings.
+Mass Scans extend the [Repository Deep Scan](05-repository-scans.md) feature to work at scale. Instead of scheduling scans one by one, you create a scan list that processes many repositories with the same analysis settings.
 
 ## When to use it
 
@@ -19,10 +19,10 @@ Bulk Repositories extends the [Repository Deep Scan](05-repository-scans.md) fea
 
 ## How to use it
 
-### Create a bulk scan
+### Create a mass scan
 
 1. Navigate to **Inbound → Mass Scans**.
-2. Click **Schedule Bulk Scan**.
+2. Click **Schedule scan**.
 3. Select the target **module** from your projects.
 4. Configure analysis options (same as single deep scans):
    - Scorecard analysis
@@ -31,31 +31,31 @@ Bulk Repositories extends the [Repository Deep Scan](05-repository-scans.md) fea
 5. Set the privacy flag (private or public results).
 6. Click **Schedule**.
 
-📸 *Screenshot: the bulk scan creation form with module selector and analysis toggles.*
+📸 *Screenshot: the mass scan creation form with module selector and analysis toggles.*
 
 ### Monitor progress
 
-The **Mass Scans list** shows all scheduled and completed bulk scans:
+The **Mass Scans list** shows all scheduled and completed mass scans:
 
 | Column | Meaning |
 |---|---|
 | **Name** | Scan list identifier. |
-| **Created** | When the bulk scan was scheduled. |
+| **Created** | When the mass scan was scheduled. |
 | **Privacy** | Whether results are private or shared. |
 | **Scorecard / Crypto / Copyright** | Which analysis types are enabled (toggle icons). |
 | **Actions** | View details, toggle privacy, delete. |
 
-📸 *Screenshot: the bulk scan list with status indicators for each scan.*
+📸 *Screenshot: the mass scan list with status indicators for each scan.*
 
 Click a row to see individual repository results. Each repository follows the same [deep scan result format](05-repository-scans.md) — file tree, license annotations, copyright notices, and false-positive feedback.
 
-### Managing bulk scans
+### Managing mass scans
 
-- **Toggle privacy** — switch a bulk scan between private and public visibility.
-- **Delete** — remove a bulk scan and all its results.
+- **Toggle privacy** — switch a mass scan between private and public visibility.
+- **Delete** — remove a mass scan and all its results.
 
 > [!CAUTION]
-> Deleting a bulk scan removes all associated repository scan results. This cannot be undone.
+> Deleting a mass scan removes all associated repository scan results. This cannot be undone.
 
 ## Related
 
