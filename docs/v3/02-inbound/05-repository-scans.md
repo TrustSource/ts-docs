@@ -1,96 +1,53 @@
 # Repository Scans
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` to open the page. Scheduling and linking a scan needs `account_admin`, `company_component_manager`, `compliance_manager` or `manager`.
 
-***TrustSource*** can scan a Git repository at the source-file level to detect licenses, copyrights, cryptographic algorithms and code snippets — going deeper than package-manager-level dependency scans.
+A repository scan (DeepScan) analyses a Git repository or a file at source level. It finds licenses and copyright notices in individual files and can add a crypto inventory and an OpenSSF Scorecard. It catches what package managers do not report: vendored code, copied snippets and non-standard license headers. The page is titled **Repositories [DeepScan]** and opens from **Inbound → Repository Scans**.
 
-## What it does
+## Schedule a scan
 
-A deep scan clones your repository and analyzes every file for:
+1. Press **Schedule DeepScan**.
+2. Enter the **Url**. The switch **Repository / File** says whether it points to a Git repository or to a single file.
+3. Optionally enter a **Tag** or **Branch**.
+4. Choose per option **Yes** or **No**: **Scorecard**, **Crypto** and **Copyright** analysis.
+5. For a private repository, switch authentication on and enter the **Username** and **Password** or a personal access token (PAT).
+6. Optionally select a deny list under **Compare effective licenses with deny list**.
+7. Press the submit button of the dialog.
 
-- **License declarations** — `LICENSE` files, SPDX headers, inline license comments.
-- **Copyright notices** — copyright statements in source files and headers.
-- **Cryptographic algorithms** — references to crypto libraries and algorithm usage (optional).
-- **OSSF Scorecard** — open-source security health score (optional).
+📸 *Screenshot: the Schedule DeepScan dialog.*
 
-This complements regular dependency scans by catching licenses and copyrights that package managers do not report — for example, vendored code, copy-pasted snippets, or files with non-standard license headers.
+## The scan list
 
-## When to use it
+The three buttons **Repositories**, **Files** and **Local** filter the list by scan type. Icons mark the options a scan was run with (copyright, crypto, scorecard) and whether it is linked. Columns: **Url**, **Created**, **Last execution** and **Last result**. Row actions:
 
-- You need **file-level license evidence** for compliance (e.g. CRA, NIS2, MDR due diligence).
-- Your project includes **vendored dependencies** or code not managed by a package manager.
-- You want to detect **copyright holders** across your codebase.
-- You need a **crypto inventory** for post-quantum readiness or export control.
+- **Re-scan** (play button) runs the scan again; for a private repository the dialog lets you enter credentials again.
+- **Link** connects the scan to a module, a dependency inside a module, or an infrastructure component or COTS.
+- **Remove** deletes the scan.
 
-## How to use it
+Select a row to open the result.
 
-### Schedule a repository scan
+## Read a result
 
-1. Navigate to **Inbound → Repository Scans**.
-2. Click **Schedule Scan**.
-3. Enter the repository URL (HTTPS or SSH).
-4. If the repository is private, provide credentials (username/password or API key).
-5. Optionally select a **branch or tag** to scan.
-6. Enable or disable analysis options:
-   - **Scorecard** — compute OSSF Scorecard metrics
-   - **Crypto analysis** — detect cryptographic algorithm usage
-   - **Copyright analysis** — extract copyright notices
-7. Optionally select a **deny list** (blacklisted licenses to flag).
-8. Click **Schedule**.
+The header shows the repository (with tag or branch) and a list of earlier runs: **Scan from ...** switches between executions. Next to it:
 
-📸 *Screenshot: the Schedule Scan form with repository URL, credentials and analysis toggles.*
+- **Scorecard** — the OpenSSF Scorecard score out of 10 with every check, its reason and details. It reports plainly if the Scorecard failed, is still running or is missing. The Scorecard icon in the list opens the scan with the Scorecard open.
+- **Identify known** / **Show all** — hide or show files that are known.
+- **Always deny** — choose the deny list to compare against.
+- **Stats** — incompatible license combinations, blacklisted licenses, license types, copyleft licenses and, if you switched it off, a note that copyright analysis was off.
 
-The scan is queued and executed asynchronously. Depending on repository size, it may take a few minutes to complete.
+The file tree can be filtered by name, by license and by status, and expanded or collapsed. A file's side panel shows licenses, copyrights, crypto algorithms (a red **B** marks a denied one) and a link to the file in the repository.
 
-### Review results
+### Correct a finding
 
-The scan result page shows a **file tree view** of the repository:
+Select a license manually or enter a copyright manually to overwrite what the service found, add a comment, then use **Approve file result** or **Reject file result**. Feedback is kept for the file.
 
-- Each file is annotated with detected **licenses** and **copyrights**.
-- Files with findings are highlighted; clean files are shown in grey.
-- Click a file to see the detailed findings — extracted license text, copyright lines, confidence scores.
+## Scorecards for components
 
-📸 *Screenshot: the deep scan tree view with license annotations on individual files.*
-
-### Filtering results
-
-Use the filter bar to narrow results by:
-
-- **License type** — show only files with a specific license.
-- **File name** — search for specific files or patterns.
-- **Feedback status** — show only unreviewed findings, or exclude rejected false positives.
-
-### False-positive feedback
-
-If the scanner misidentifies a license or copyright:
-
-1. Open the file's finding detail.
-2. Mark the finding as **false positive**.
-3. The finding is excluded from future reports but remains visible under the "rejected" filter.
-
-> [!TIP]
-> False-positive feedback is preserved across re-scans of the same repository. You only need to reject a finding once.
-
-### Scan history
-
-Each repository keeps a history of scans. Use the **execution dropdown** at the top of the result page to switch between scan dates and compare how findings changed over time.
-
-## Stats dashboard
-
-The summary bar at the top of each scan result shows:
-
-| Metric | Description |
-|---|---|
-| **Files processed** | Total files analyzed. |
-| **Licenses found** | Number of distinct licenses detected. |
-| **Copyrights found** | Number of copyright notices extracted. |
-| **Compatibility issues** | Findings that conflict with your policy or deny list. |
-| **Blacklisted** | Files with licenses on your deny list. |
+A component's **Scorecard** action requests only a Scorecard, not a full DeepScan, and mails the result to you. The **OpenSSF Scorecard** report can request a Scorecard for every component without one, listing components without a repository; repositories requested in the last 7 days are skipped. See [Reports](../03-internal/04-reports.md).
 
 ## Related
 
-- [Mass Scans](06-mass-scans.md) — scan many repositories in one pass
-- [Algorithms](../05-knowledge/05-algorithms.md) — the crypto algorithm database used by crypto analysis
-- [Licenses](../05-knowledge/06-licenses.md) — the license catalog that classifies findings
-- [Working with Scans](02-import-scans.md) — package-level scans vs. file-level deep scans
+- [Mass Scans](06-mass-scans.md) — scan every component of a module in one pass
+- [Algorithms](../05-knowledge/05-algorithms.md)
+- [Licenses](../05-knowledge/06-licenses.md)

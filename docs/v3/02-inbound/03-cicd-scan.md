@@ -3,107 +3,71 @@
 > [!NOTE]
 > **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`
 
-A **scan** is a snapshot of a module's bill of materials at a point in time. It lists every component, version, license and vulnerability that was detected. Scans are the primary way data enters ***TrustSource***.
+A **scan** is a snapshot of a module's bill of materials at one point in time: every component with its versions, licenses and dependencies. Scans from your build pipeline are the main way data enters ***TrustSource***. Open the list from **Inbound → CI/CD Scan**.
 
-## What it does
+## How scans arrive
 
-The Scans section lets you:
-
-- View all scans across your company in one list.
-- Inspect scan details — components found, licenses detected, vulnerabilities matched.
-- Re-process a scan against updated rules.
-- Delete scans you no longer need.
-
-## How scans are created
-
-Scans can arrive through several paths:
-
-| Source | How it works |
+| Source | How |
 |---|---|
-| **CI/CD scanner** | A scanner plugin in your build pipeline pushes results via the REST API after each build. |
-| **Manual upload** | Upload a scan result file (JSON, SPDX, CycloneDX) through the web UI. |
-| **REST API** | Push scan data programmatically using the `/core/scans` endpoint with your API key. |
-| **SBOM import** | Upload an existing SBOM (SPDX or CycloneDX format) and ***TrustSource*** creates a scan from it. |
+| **CI/CD scanner** | A scanner in your build pushes the result through the REST API after each build, using your API key. |
+| **REST API** | Post scan data to the [scans endpoint](../09-rest-api/endpoints/scans.md). |
+| **SBOM import** | An uploaded SPDX or CycloneDX file creates a scan too — see [Import Scans](02-import-scans.md). |
 
-Every scan is attached to exactly one module. If the target module does not exist yet, it is created automatically (when using the API with auto-create enabled).
+Each scan belongs to exactly one module. If the module named in the upload does not exist yet, it is created. Names are trimmed and matched exactly, so a [SARIF upload](04-sw-quality-scans.md) with the same module name lands on the same module.
 
 > [!WARNING]
-> The module name your scan or SBOM import uses becomes the string every other
-> upload path — most importantly a [SARIF test upload](04-sw-quality-scans.md) —
-> must match exactly to land on the same module. A mismatch (e.g. a package
-> manifest name vs. a checkout folder name) silently creates a second module
-> instead of merging into the first. See
-> [SW Quality Scans → module naming](04-sw-quality-scans.md#automating-sarif-uploads)
-> for the full explanation.
+> A mismatch in the module name, for example a package manifest name against a checkout folder name, silently creates a second module instead of adding to the first. See [SW Quality Scans](04-sw-quality-scans.md#automating-sarif-uploads).
+
+### Limits and rejections
+
+- A dependency tree nested more than 80 levels is refused with `400`; the message names the limit and the component. The same limit covers deeply nested content elsewhere in the upload.
+- Files above the upload limit (50 MB by default) are refused with `413`; a request without an API key is refused with `401`.
+- One unusable dependency does not stop the scan: it is skipped and recorded. The scan keeps the count and the first 100 entries, and **Company Logs** shows how many were skipped.
+- A checksum that fails validation is not stored; the response carries a warning.
+
+## Scanners and plugins
+
+The **CI/CD Integrations** catalogue lists the available scanners with links to their repositories and guides. It is open at `/scanners` and has no menu entry.
+
+| Group | Entries |
+|---|---|
+| **Package managers** | Bower, Composer, Gradle, Grunt, Gulp, Maven, npm, Yarn |
+| **Continuous development tools** | .Net foundation, Jenkins, TFS |
+| **Containers** | Docker scanner |
+| **Development languages** | Java, JavaScript, NodeJS, C/C++, PHP, Python, Ruby |
+| **IDE Plugins** | VisualStudio |
+
+📸 *Screenshot: the CI/CD Integrations catalogue.*
 
 ## The scan list
 
-Navigate to **Inbound → CI/CD Scan** to see all scans.
-
-📸 *Screenshot: the scan list showing scan date, module, project, status and component count.*
-
-The list shows:
+The list shows the transferred scans of your company, newest first. Queries are limited to 200 items.
 
 | Column | Meaning |
 |---|---|
-| **Date** | When the scan was received. |
-| **Module** | The module this scan belongs to. |
-| **Project** | The parent project. |
-| **Status** | Processing state — see below. |
-| **Components** | Number of components found. |
-| **Tag** | Optional label (e.g. branch name, build number). |
+| **When** | Time the scan was received. |
+| **Project - Module** | Where the scan belongs. |
+| **Upload by** | The user who uploaded the scan. |
+| **Dependencies** | Number of dependencies found. |
+| **Meta** | Branch, tag and binary links of the scan. |
 
-Click any row to open the scan detail page.
+Select a row to open the scan.
 
-## Scan statuses
+## Scan details
 
-| Status | Meaning |
-|---|---|
-| **Pending** | Scan received, queued for processing. |
-| **Processing** | License matching and vulnerability lookup in progress. |
-| **Done** | Scan processed successfully — components, licenses and vulnerabilities are available. |
-| **Failed** | Processing failed — check the scan detail for error messages. |
+The header shows project, module, branch, tag and the number of binary links, and who submitted the scan when. Buttons:
 
-## Scan detail
+- **Binary links** — manage the links to the built artifacts.
+- **Analysis** — open the module analysis for this scan; shown as *Analysis N/A* if none exists.
+- **Notices** — appears when validation found unknown licenses; check that they do not affect your company.
+- **Re-Process** — for `manager` and `compliance_manager`: runs processing and analysis of the scan again, for example after policies changed.
 
-The detail page shows everything found in a single scan:
+The body shows the dependency tree. Switch between **List** and **Diagram**, **Expand** or **Collapse** all levels, and **Show linked** or **Hide linked** modules. Selecting a dependency opens **Reported properties** at its side: purl, name, key, versions, description, homepage, repository, scanned and parsed licenses, checksum, meta data and crypto algorithms. **Lake** opens the component in the [Component Lake](../05-knowledge/01-component-lake.md).
 
-- **Components** — full list with version, license(s), vulnerability count, status (green/yellow/red).
-- **License summary** — licenses found across all components, grouped by approval status.
-- **Vulnerability summary** — open CVEs with severity scores.
-- **Metadata** — scan source, timestamp, scanner version, tag.
-
-📸 *Screenshot: a scan detail page with the component list and license summary.*
-
-## Re-scanning
-
-If your company's license policies or vulnerability feeds have changed, you can re-process an existing scan without uploading new data:
-
-1. Open the scan detail.
-2. Click **Re-scan**.
-3. ***TrustSource*** re-evaluates all components against current policies and vulnerability data.
-
-This is useful after updating whitelists, blacklists or policies — the underlying component data stays the same, but the status assessment is refreshed.
-
-## Deleting scans
-
-Deleting a scan removes it from the list and from the module's scan history. If it was the most recent scan, the module reverts to the previous scan's data.
-
-> [!CAUTION]
-> Deleting a scan is permanent. If the scan was the basis for an approved release, the approval's frozen snapshot is not affected — but the scan itself is gone from the module's history.
-
-## Supported formats
-
-| Format | Extension | Notes |
-|---|---|---|
-| TrustSource JSON | `.json` | Native format from `ts-scan` and CI/CD scanners. |
-| SPDX (JSON, RDF/XML, tag-value) | `.spdx`, `.spdx.json`, `.rdf` | SPDX 2.2 and 2.3 supported; auto-detected by content. |
-| CycloneDX | `.json`, `.xml` | CycloneDX 1.4+ supported. |
-
-> [!TIP]
-> When uploading manually, ***TrustSource*** auto-detects the format from the file content — you do not need to specify it.
+📸 *Screenshot: a scan with the dependency tree and the Reported properties panel.*
 
 ## Related
 
-- [REST API → Scans endpoint](../09-rest-api/03-endpoint-reference.md) — programmatic scan upload
-- [Module Detail](../03-internal/02-modules/02-module-detail-tabs.md) — how scan data appears in the module view
+- [Import Scans](02-import-scans.md)
+- [REST API → Scans](../09-rest-api/endpoints/scans.md)
+- [Module Detail](../03-internal/02-modules/02-module-detail-tabs.md)
