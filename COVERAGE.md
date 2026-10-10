@@ -12,7 +12,7 @@ row, append to the log). Sits at the repo root, deliberately outside
 
 | Service | Repo | Docs cover | Live in DEV | Live in PRD | Gap (docs → PRD) |
 |---|---|---|---|---|---|
-| **Core (ts-app)** | [`eacg-gmbh/ts-app`](https://github.com/eacg-gmbh/ts-app) | **v3.3.22** (+ v3.2.38–3.2.40 hotfix line) | not verified this session | not verified this session | see update log — DEV/PRD not re-checked, refresh from a deployment source before relying on this cell |
+| **Core (ts-app)** | [`eacg-gmbh/ts-app`](https://github.com/eacg-gmbh/ts-app) | Release notes up to **v3.3.22** (+ v3.2.40 hotfix line). Feature pages are partly stubs: 85 of 180 v3 pages were under 700 bytes at the 2026-10-10 gap check (80 after wave 1). | not verified this session | not verified this session | Target state is **v3.3.59** (`package.json` of ts-app). Gap report: `docs/ohelp-gap-2026-10-10/` in ts-app; wave 1 corrected outdated statements only. |
 | **ts-scan** | [`trustsource/ts-scan`](https://github.com/trustsource/ts-scan) | — | — | — | not yet documented in v3 track |
 | **ts-legalcheck** | Public CLI: [`trustsource/ts-legalcheck`](https://github.com/trustsource/ts-legalcheck) · SaaS service: `eacg-gmbh/ts-legalcheck` (private) · Rule-set: proprietary | **Service v2.0.0 + rule-set v4.4** | v2.0.0 + v4.4 | v2.0.0 + v4.4 | **at parity** — Legal tab + obligations documented; new Legal Questionnaire page in progress |
 | **ts-deepscan** | [`trustsource/ts-deepscan`](https://github.com/trustsource/ts-deepscan) | — | — | — | not yet documented in v3 track |
@@ -21,6 +21,15 @@ row, append to the log). Sits at the repo root, deliberately outside
 | **Trusted CSAF Provider** | [`eacg-gmbh/ts-csaf`](https://github.com/eacg-gmbh/ts-csaf) | — | — | — | capability stub only ([v3/13-capabilities/06-csaf-trusted-provider.md](docs/v3/13-capabilities/06-csaf-trusted-provider.md)) |
 | **CVD Service** | [`eacg-gmbh/ts-psirt`](https://github.com/eacg-gmbh/ts-psirt) | — | — | — | capability stub only ([v3/13-capabilities/05-cvd.md](docs/v3/13-capabilities/05-cvd.md)) |
 | **Academy** | [`eacg-gmbh/ts-training`](https://github.com/eacg-gmbh/ts-training) | — | — | — | not yet documented in v3 track |
+
+## API documentation
+
+The REST API is documented outside this help. The endpoint reference is the interactive API
+documentation in the app and the OpenAPI v2 specification; `docs/v3/09-rest-api/` links to both.
+
+| Documentation | Location | Covers |
+|---|---|---|
+| **API docs** | [`trustsource/api-docs`](https://github.com/trustsource/api-docs) · <https://trustsource.github.io/api-docs/> | Key management, roles and scopes, API structure, analytics, use cases, release keys. |
 
 ## Current coverage — CE track
 
@@ -43,6 +52,12 @@ the future Community Edition, not the live SaaS.
 
 ## Update log
 
+- **2026-10-10** — Wave 1 of the gap alignment for Core (ts-app) v3.3.59 (docs still cover
+  release notes up to v3.3.22 / v3.2.40; nothing new was added). Corrected statements that
+  contradicted the app: approval roles and tab names, project page and module header, project
+  and module settings tab names, messages folders, Reports hub, risk states, SARIF module-name
+  warning (3.2.47), CVD case roles, license flags, REST API landing pages. Source: ts-app
+  `docs/ohelp-gap-2026-10-10/`. New feature chapters are planned for later waves.
 - **2026-08-18** — Core (ts-app) docs refreshed from v3.1.20 to v3.3.22
   (+ the parallel v3.2.38–3.2.40 hotfix line), derived from
   `CHANGELOG.md` at repo HEAD. Release Notes chapter populated (was a

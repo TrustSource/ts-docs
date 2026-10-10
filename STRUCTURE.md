@@ -1,10 +1,10 @@
 # TrustSource Online Help — Structure
 
 > **Status:** Living document.
-> **Last updated:** 2026-06-10.
+> **Last updated:** 2026-10-10.
 > **Editions:** **v3 SaaS** (live, `app.trustsource.io`) and
 > **Community Edition (CE)** (self-hosted, in preparation).
-> **Current SaaS app version:** v3.1.20.
+> **Current SaaS app version:** see [COVERAGE.md](COVERAGE.md) (docs state vs. app version).
 
 This document describes the directory layout, chapter structure and
 naming conventions of the customer-facing online help.
@@ -41,22 +41,24 @@ ohelp/
 │   │   ├── glossary.md
 │   │   ├── support.md
 │   │   └── background/              # 11 background articles
-│   ├── v3/                           # SaaS documentation (174 pages)
+│   ├── v3/                           # SaaS documentation (180 pages)
 │   │   ├── index.md
 │   │   ├── 00-getting-started/      # 7 pages
-│   │   ├── 02-inbound/              # 8 pages
-│   │   ├── 03-internal/             # 46 pages (projects, modules, products, risks, approvals, ...)
-│   │   ├── 04-outbound/             # 6 pages
-│   │   ├── 05-knowledge/            # 12 pages
-│   │   ├── 06-administration/       # 12 pages
+│   │   ├── 02-inbound/              # 7 pages
+│   │   ├── 03-internal/             # 71 pages (projects, modules, products, risks, approvals, ...)
+│   │   ├── 04-outbound/             # 7 pages
+│   │   ├── 05-knowledge/            # 9 pages
+│   │   ├── 06-administration/       # 10 pages
 │   │   ├── 07-auth-sso/             # 7 pages
 │   │   ├── 08-personal/             # 6 pages
 │   │   ├── 09-rest-api/             # 6 pages
 │   │   ├── 10-roles-permissions/    # 9 pages
 │   │   ├── 11-troubleshooting-faq/  # 7 pages
-│   │   ├── 12-release-notes/        # 2 pages
-│   │   ├── 13-capabilities/         # 7 pages (OSCAR, Risk, Product, Medical, CVD, CSAF)
-│   │   └── recipes/                 # 12 pages
+│   │   ├── 12-release-notes/        # 4 pages
+│   │   ├── 13-capabilities/         # 8 pages (OSCAR, Risk, Product, Medical, CVD, CSAF)
+│   │   ├── 14-component-manager/    # 4 pages
+│   │   ├── 15-legal-manager/        # 4 pages
+│   │   └── recipes/                 # 13 pages
 │   └── ce/                           # Community Edition (183 pages)
 │       ├── index.md
 │       ├── 00-getting-started/      # 7 pages
@@ -84,7 +86,7 @@ ohelp/
 | Auth & SSO | `07-auth-sso/` | `07-account-admin-auth/` |
 | Capabilities | All available with license | Subset (see per-capability page) |
 | Version references | v3.x | v2.16 baseline |
-| Release Notes | v3.1.20+ | v2.16.29 |
+| Release Notes | v3.1.20 – v3.3.22 | v2.16.29 |
 
 ## Tooling
 
