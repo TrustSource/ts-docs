@@ -7,8 +7,12 @@ The Encryption tab manages cryptographic algorithm requirements and export contr
 
 ## What it does
 
-- Define which **cryptographic algorithms** are allowed or required for this project.
-- Configure **export control** classifications that affect how components with crypto capabilities are evaluated.
+The tab has two lists:
+
+- **List of Algorithms as managed**: the cryptographic algorithms you allow or deny for this project. Algorithms found in the project's modules are offered for selection.
+- **Export controls management**: export-control settings per algorithm, used when components with crypto capabilities are evaluated.
+
+Violations of these lists appear in the Algorithm report and the module's crypto status.
 
 📸 *Screenshot: the Encryption tab with algorithm settings list.*
 

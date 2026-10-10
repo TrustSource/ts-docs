@@ -8,8 +8,14 @@ The project overview is the landing page when you click a project. It shows all 
 ## What you see
 
 - **Header:** project name with approval status, description and tags, plus the actions listed below.
-- **Tiles:** a row of four tiles — **Risks** (needs the `risks` license), **Deployments** (needs the `obom` license), **Releases** and **Analytics**. Each tile shows a headline number and opens its own page when you click it. These pages are described in later chapters.
-- **Module list:** the project's modules as **cards** (grid) or **rows** (table), each with approval status badge, status ribbon (OK, Warnings, Violations), compliance bars and last analysis date. The list toolbar has **Import**, **Create module** and **Analyze all**.
+- **Tiles:** a row of four tiles, each with a headline number and a click-through to its own page:
+    - [**Risks**](05-risks-and-releases.md) (needs the `risks` license): open risks, threat model status, CIA rating.
+    - [**Deployments**](03-deployments.md) (needs the `obom` license and read access to the project's OBOM): deployments and the age of their newest OBOM.
+    - [**Releases**](05-risks-and-releases.md): approved releases and pending approvals.
+    - [**Analytics**](04-analytics.md): violations and warnings with the change against last month.
+
+    A tile that cannot be loaded shows `?` and the reason on hover.
+- **Module list:** the project's modules as **cards** (grid) or **rows** (table), each with approval status badge, status ribbon (OK, Warnings, Violations), compliance bars and last analysis date. The list toolbar has a filter, tag and **Module states** filters, **Import**, **Add/link module** and **Analyze all**. The grid or table choice is remembered separately for the project list and the module list.
 
 📸 *Screenshot: the project page with the four tiles above the module list.*
 
