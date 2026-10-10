@@ -35,8 +35,18 @@ A scope is a role name, for example `developer`, `manager` or `compliance_manage
 
 Pick the smallest scope that does the job. A scanner that only submits scans needs `developer`, not `account_admin`. [API scopes](../10-roles-permissions/09-api-scopes.md) lists which scope may call which operation.
 
-> [!NOTE]
-> The key list shows the scope but has no control to edit it. To get a different scope, create a new key and delete the old one.
+### Change a scope
+
+A scope cannot be changed after the key is created. To give a pipeline a different scope:
+
+1. Create a new key with the same name and the new scope.
+2. Replace the old key in the pipeline or integration.
+3. Unpublish and delete the old key.
+
+The new key is a different key, so the secret changes and every place that uses it must be updated. Because the name is the same, the logs and the [usage statistics](04a-api-usage.md) still show the activity under that name.
+
+> [!TIP]
+> If you widen a scope, make that visible in the name of the successor, for example `ci-scanner` → `ci-scanner-manager`. A reader of the logs then sees at a glance that the permissions changed.
 
 ## Publish and unpublish
 
@@ -49,7 +59,7 @@ An unpublished key is switched off: requests that use it are rejected with `403`
 
 ## Delete a key
 
-Only an unpublished key can be deleted. Select **Delete** in its row and type the key name to confirm. Deleting cannot be undone. Requests made earlier stay in the logs.
+Only an unpublished key can be deleted. Select **Delete** in its row and type the key name to confirm. Deleting cannot be undone. Requests made earlier stay in the logs under the key name, and you can create a new key with the same name (see [Change a scope](#change-a-scope)).
 
 ## Personal access keys
 
