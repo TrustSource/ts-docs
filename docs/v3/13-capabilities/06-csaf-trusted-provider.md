@@ -20,6 +20,13 @@ tooling.
 - **Trusted-Provider publication pipeline** — signed JSON output,
   provider-metadata file, ROLIE feed, and TLP-aware distribution
   channels configurable per advisory.
+- **TLP-based publication:** an advisory is published to the provider
+  directory that matches its TLP label. Restricted advisories can be handed
+  to selected recipients through access-protected feed keys, optionally
+  limited to the products a recipient is entitled to (AMBER+STRICT). See
+  [Outbound → CSAF Documents](../04-outbound/04-csaf.md).
+- **Quality gate and history:** the CSAF 2.0 mandatory tests run before an
+  advisory is published, and every published version is kept.
 - Integration with the [CVD capability](05-cvd.md) so external
   vulnerability reports can flow directly into a CSAF advisory.
 
