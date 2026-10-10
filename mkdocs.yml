@@ -59,14 +59,14 @@ nav:
           - Legal: v3/03-internal/01-projects/settings/02-legal.md
           - CIA: v3/03-internal/01-projects/settings/03-cia.md
           - Quality: v3/03-internal/01-projects/settings/04-quality.md
-          - Encryption: v3/03-internal/01-projects/settings/05-encryption.md
-          - End of Life: v3/03-internal/01-projects/settings/06-end-of-life.md
-          - Whitelists & Blacklists: v3/03-internal/01-projects/settings/07-whitelists-blacklists.md
-          - Obligations: v3/03-internal/01-projects/settings/08-obligations.md
-          - Module Classification: v3/03-internal/01-projects/settings/09-module-classification.md
-          - Issue Tracker: v3/03-internal/01-projects/settings/10-issue-tracker.md
-          - Module Import: v3/03-internal/01-projects/settings/11-module-import.md
-          - Danger Zone: v3/03-internal/01-projects/settings/12-danger-zone.md
+          - Crypto management: v3/03-internal/01-projects/settings/05-encryption.md
+          - End-of-life: v3/03-internal/01-projects/settings/06-end-of-life.md
+          - Allow/Deny: v3/03-internal/01-projects/settings/07-whitelists-blacklists.md
+          - Resolved obligations: v3/03-internal/01-projects/settings/08-obligations.md
+          - MDR/IVDR Classification: v3/03-internal/01-projects/settings/09-module-classification.md
+          - Issue Integration: v3/03-internal/01-projects/settings/10-issue-tracker.md
+          - Imports: v3/03-internal/01-projects/settings/11-module-import.md
+          - Danger Operations: v3/03-internal/01-projects/settings/12-danger-zone.md
       - Modules:
         - v3/03-internal/02-modules/index.md
         - Create & List: v3/03-internal/02-modules/01-create-and-list.md
@@ -75,22 +75,22 @@ nav:
           - v3/03-internal/02-modules/settings/index.md
           - General: v3/03-internal/02-modules/settings/01-general.md
           - Legal: v3/03-internal/02-modules/settings/02-legal.md
-          - Obligations: v3/03-internal/02-modules/settings/03-obligations.md
+          - Resolved obligations: v3/03-internal/02-modules/settings/03-obligations.md
           - Viability: v3/03-internal/02-modules/settings/04-viability.md
           - OSSF: v3/03-internal/02-modules/settings/05-ossf.md
           - Versioning: v3/03-internal/02-modules/settings/06-versioning.md
           - MDR/IVDR Classification: v3/03-internal/02-modules/settings/07-module-classification-mdr-ivdr.md
           - CIA: v3/03-internal/02-modules/settings/08-cia.md
           - Capabilities: v3/03-internal/02-modules/settings/09-capabilities.md
-          - Encryption: v3/03-internal/02-modules/settings/10-encryption.md
-          - End of Life: v3/03-internal/02-modules/settings/11-end-of-life.md
+          - Crypto management: v3/03-internal/02-modules/settings/10-encryption.md
+          - End-of-life: v3/03-internal/02-modules/settings/11-end-of-life.md
           - Quality: v3/03-internal/02-modules/settings/12-quality.md
-          - Releases: v3/03-internal/02-modules/settings/13-releases.md
-          - Whitelists & Blacklists: v3/03-internal/02-modules/settings/14-whitelists-blacklists.md
-          - CVE Whitelist: v3/03-internal/02-modules/settings/15-cve-whitelist.md
-          - Custom Components: v3/03-internal/02-modules/settings/16-custom-components.md
-          - SPDX Export: v3/03-internal/02-modules/settings/17-spdx-export.md
-          - Danger Zone: v3/03-internal/02-modules/settings/18-danger-zone.md
+          - History: v3/03-internal/02-modules/settings/13-releases.md
+          - Allow/Deny: v3/03-internal/02-modules/settings/14-whitelists-blacklists.md
+          - Allowed vulnerability: v3/03-internal/02-modules/settings/15-cve-whitelist.md
+          - Custom components: v3/03-internal/02-modules/settings/16-custom-components.md
+          - Export SPDX: v3/03-internal/02-modules/settings/17-spdx-export.md
+          - Danger Operations: v3/03-internal/02-modules/settings/18-danger-zone.md
       - Risks:
         - v3/03-internal/05-risks/index.md
         - Overview: v3/03-internal/05-risks/01-overview.md

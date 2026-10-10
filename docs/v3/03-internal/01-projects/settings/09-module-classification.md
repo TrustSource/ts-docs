@@ -1,4 +1,4 @@
-# Module Classification (Project, MDR/IVDR)
+# MDR/IVDR Classification (Project)
 
 > [!NOTE]
 > **Required role:** users with `project.m-classification.settings` write permission

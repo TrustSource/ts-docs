@@ -1,4 +1,4 @@
-# Encryption (Project)
+# Crypto management (Project)
 
 > [!NOTE]
 > **Required role:** users with write permission on project encryption settings

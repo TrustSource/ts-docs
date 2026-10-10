@@ -1,13 +1,13 @@
-# Obligations (Project)
+# Resolved obligations (Project)
 
 > [!NOTE]
-> **Required role:** users with `project.obligationConfig.list` write permission
+> **Required role:** users with `project.obligationConfig` read permission to open the page; `project.obligationConfig.list` write permission to change it
 
-The Obligations tab tracks which license obligations have been resolved at the project level.
+The **Resolved obligations** page tracks which license obligations have been resolved at the project level. It is not a settings tab: open it from the **Reports** dropdown in the project page header.
 
 ## What it does
 
-When your project uses open-source components, those components come with license obligations — attribution, source disclosure, copyleft compliance, etc. This tab lets you record which obligations you have already fulfilled so that they show as resolved in compliance reports.
+When your project uses open-source components, those components come with license obligations — attribution, source disclosure, copyleft compliance, etc. This page lets you record which obligations you have already fulfilled so that they show as resolved in compliance reports.
 
 The list itself is not authored here — it is the deterministic output of
 [**ts-legalcheck**](https://github.com/trustsource/ts-legalcheck) given
@@ -19,10 +19,14 @@ edit to the Legal Questionnaire answers, or a rule-set bump.
 
 ## Actions
 
-- **Import from other project** — copy obligation configurations from another project.
-- **Propagate to other projects** — push your obligation settings to other projects.
+The page header offers two actions (shown when you have the rights to use them):
 
-📸 *Screenshot: the Obligations tab with a list of resolved obligations.*
+- **Import settings from project...** — copy the resolved-obligation settings from another project.
+- **Propagate settings to...** — push your settings to one project, to all your projects or to all projects.
+
+Ticking and unticking an obligation saves immediately.
+
+📸 *Screenshot: the Resolved obligations page with a list of resolved obligations.*
 
 ## Related
 

@@ -1,4 +1,4 @@
-# End of Life (Project)
+# End-of-life (Project)
 
 > [!NOTE]
 > **Required role:** users with write permission on project EOL settings

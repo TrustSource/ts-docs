@@ -1,9 +1,9 @@
-# Danger Zone (Project)
+# Danger Operations (Project)
 
 > [!NOTE]
 > **Required role:** users with `project.danger.delete` execute permission
 
-The Danger Zone tab contains destructive operations for this project.
+The Danger Operations tab contains destructive operations for this project.
 
 ## Delete project
 

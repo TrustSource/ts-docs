@@ -1,4 +1,4 @@
-# Whitelists & Blacklists (Project)
+# Allow/Deny (Project)
 
 > [!NOTE]
 > **Required role:** users with write permission on project allow/deny settings

@@ -1,9 +1,9 @@
-# Issue Tracker (Project)
+# Issue Integration (Project)
 
 > [!NOTE]
 > **Required role:** `manager` or `account_admin`
 
-The Issue Tracker tab configures where ***TrustSource*** creates issues for this project — in Jira, GitHub or Azure DevOps (TFS).
+The Issue Integration tab configures where ***TrustSource*** creates issues for this project — in Jira, GitHub or Azure DevOps (TFS).
 
 ## Supported integrations
 
