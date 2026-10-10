@@ -18,7 +18,7 @@ The detail page is titled with the license name and its identifier in brackets, 
 If ***TrustSource*** does not hold the text, the page says so and links to the official text instead.
 
 > [!NOTE]
-> Users with the **Legal Manager** role (`legal_manager`) also see the license's status label for your company and an **Edit** button. See [Manage Legal](../15-legal-manager/01-manage-legal.md).
+> Users with the **Legal Manager** role (`legal_manager`) also see whether the license is *Analysed* or *Not analysed* and an **Edit** button. See [Manage Legal](../15-legal-manager/01-manage-legal.md).
 
 The catalogue also contains the special identifiers `NO-LICENSE`, `PUBLIC-DOMAIN` and `UNKNOWN`. Use them when you assign a license by hand to a component the scan could not match.
 

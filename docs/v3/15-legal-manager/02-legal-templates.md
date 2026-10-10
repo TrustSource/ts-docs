@@ -3,24 +3,26 @@
 > [!NOTE]
 > **Required role:** `legal_manager`
 
-Legal templates define reusable obligation mappings and notice file templates that are applied when generating compliance documents (SBOM, Notice, SOUP).
+Legal templates are presets for the **legal requirements** of a project or module: how it is sold, operated and distributed, and what intellectual-property protection it needs. Maintain them under **Legal mngr. → Legal templates**; the page is titled **Legal Settings Templates**. When a project or module's legal settings are set up, a template can be imported, as described under [Project Settings → Legal](../03-internal/01-projects/settings/02-legal.md).
 
-## What you can do
+## The template list
 
-- **View** the current set of legal templates.
-- **Create** new templates for specific obligation types or notice file formats.
-- **Edit** existing templates — update text blocks, obligation mappings, formatting rules.
-- **Delete** templates that are no longer needed.
+The list shows each template's **order**, **Type** (*Project* or *Module*) and **Name**. Select a row to open it; **Remove** deletes a template.
 
-📸 *Screenshot: the Legal Templates list with template names, types and edit/delete actions.*
+To add one, press the create button and enter a **Name**, choose the **Type** and optionally an **Order**; then press **Create Rule**.
 
-## Template types
+## Edit a template
 
-- **Obligation templates** — define how specific license obligations translate into concrete compliance actions (e.g. "provide source code", "include copyright notice", "state changes").
-- **Notice file templates** — control the structure and content of generated attribution files.
+Under **Update template information** you change name and order. Below, the template's requirements are set in one of two ways:
+
+- **Start wizard** guides you through a questionnaire and ends with **Finish**;
+- **View all** shows all questions in one form.
+
+Press **Update legal requirements** to save. For a **Project** template the questions cover the *Commercial Aspects* (if unsure, choose *usage fee*, the most restrictive), the *Operating Model* (if unsure, choose the *embedded model*) and *Intellectual Property Aspects* such as patent and litigation concerns. For a **Module** template they cover *Trade Secret Aspects*, the *Licensing Strategy* and the *Distribution of the module*.
+
+📸 *Screenshot: a project template in the wizard view.*
 
 ## Related
 
-- [Manage Legal](01-manage-legal.md) — license curation
-- [Administration → Settings](../06-administration/02-settings.md) — company-wide settings including legal template defaults
-- [Outbound → Notice Files](../04-outbound/02-notice-files.md) — where templates are applied
+- [Manage Legal](01-manage-legal.md)
+- [Project Settings → Legal](../03-internal/01-projects/settings/02-legal.md)
