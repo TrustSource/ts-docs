@@ -1,41 +1,55 @@
 # Create & List Modules
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`
+> **Required role:** `manager` or `compliance_manager` to create, import or analyze modules. Other roles with access to the project can browse the list.
 
 ## Creating a module
 
-1. Open a project (navigate to **Internal → Projects** and click the project).
-2. Click **Create**.
-3. Enter a **module name** (required).
-4. Optionally set: module identifier, description, architecture type, tags.
-5. Click **Save**.
+1. Open a project (**Internal → Projects**, then click the project).
+2. In the module list toolbar, click **Add/link**.
+3. In the **Add/link module** dialog, choose the **Module type** (see below).
+4. Fill in the fields and click **Create module**.
 
-### Architecture types
+| Module type | What you enter | Use case |
+|---|---|---|
+| **Create custom module** | **Module name** (required) | Your own software. Components arrive with scans. |
+| **Link company project** | An approved version of another project in your company | Reuse an already approved project as a module. The module shows a link icon. |
+| **COTS or Infrastructure component** | A pre-defined component from the [component lake](../../05-knowledge/01-component-lake.md), its version, the **Type of architecture** and whether it is open source | Third-party runtime or purchased software. See [Infrastructure Modules](03-infrastructure-modules.md). |
 
-| Type | Use case |
-|---|---|
-| **Source Code** (default) | Your in-house code — scanned for dependencies. |
-| **Infrastructure Module** | Third-party runtime (database, base image, web server). See [Infrastructure Modules](03-infrastructure-modules.md). |
-| **COTS Module** | Commercial off-the-shelf software. |
-| **Linked Project** | A module that links to another TrustSource project. |
+The architecture types offered for a COTS or infrastructure component are Frontend-UI-Module, Frontend-Endpoint, Frontend-Service, Backend-Service, Backend-Endpoint, System component, Infrastructure Service and Distributable Component.
+
+> [!TIP]
+> If the component you need is not in the list, click **Not finding what you are looking for?**, enter name and version, and click **Send request**. ***TrustSource*** support then makes the component available.
+
+If your company has reached its module limit, the list shows a **Limit was reached** warning with a link to upgrade.
+
+### Importing a module
+
+**Import** in the toolbar opens **Import module**. Switch between **SPDX** and **CycloneDX**, choose the file and optionally set a **Module name**. See [Working with Scans](../../02-inbound/02-import-scans.md).
 
 ### Auto-creation
 
-Modules can be created automatically when you submit a scan via the REST API with auto-create enabled — the scanner specifies the module name, and if it does not exist yet, it is created on the fly.
+A scan submitted through the REST API creates its module on the fly if it does not exist yet. See [CI/CD scan](../../02-inbound/03-cicd-scan.md).
 
-📸 *Screenshot: the Create Module modal with name, identifier and architecture type fields.*
+📸 *Screenshot: the Add/link module dialog with the Module type selector.*
 
 ## The module list
 
-Modules are listed within their project's overview page. The list supports **grid** and **table** views with:
+The module list is part of the [project page](../01-projects/02-project-overview.md). The toolbar offers:
 
-- **Search** — filter by module name.
-- **State filter** — OK, Warnings, Violations.
-- **Tags filter** — select one or more tags.
-- **Archived toggle** — show/hide archived modules.
+- **Filter** — search by module name.
+- **All states / OK / Warnings / Violations** — filter by traffic-light state.
+- **Tags** — select one or more company tags.
+- **Module states** — switch the rows to the analysis states of a past approval; **Current state** is the default.
+- **Show archived / Hide archived** — include or hide archived modules.
+- **Grid / Table** — switch the presentation. Grid also has a sort-order toggle.
+- **Analyze all** — re-analyze every module of the project.
 
-Click any module to open the [Module Detail](02-module-detail-tabs.md).
+**Grid** cards show the status ribbon, the architecture type, **Settings** and **Analyse** buttons, and the counts of licenses and components with the dates of the last analysis and scan.
+
+**Table** rows show State, Name, Tags, Releases, Components, Legal, Security, and a Settings button. The Releases column links to the releases list. Two columns depend on your license: **Quality** (feature `sarif`) and **OBOM** (feature `obom`).
+
+Click a module to open the [Module Detail](02-module-detail-tabs.md). A module whose card or header is highlighted asks you to complete its settings (legal and architecture).
 
 ## Related
 

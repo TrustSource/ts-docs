@@ -1,75 +1,70 @@
 # Module Detail Tabs
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`
+> **Required role:** any role with access to the project can open a module. The header actions below are available to `manager` and `compliance_manager`.
 
-When you open a module, you see the main detail view with several tabs. The exact tabs depend on the module's architecture type — infrastructure modules show a simplified view.
+Open a module from the [module list](01-create-and-list.md). The header shows the module name (with version, release name and architecture type), the traffic-light state, and the analysis selector. Below it, the tab bar switches the view. Infrastructure and COTS modules have no tab bar; see [Infrastructure Modules](03-infrastructure-modules.md).
 
-## Tabs for source-code modules
+If your company has used up its component allowance, a **Limit reached: N over** warning appears at the right of the tab bar and links to the company settings.
 
-### List (Dependencies)
+## Tabs
 
-The default tab. Shows a flat list of all components (direct and transitive dependencies) with:
+| Tab | Shows | Available when |
+|---|---|---|
+| **List** | Direct and transitive dependencies | Always |
+| **Tree** | The same dependencies as a hierarchy | Always |
+| **Graph** | Interactive dependency graph | Always |
+| **Legal** | Licenses with the components that use them | Always |
+| **DeepScans** | File-level findings of [repository deep scans](../../02-inbound/05-repository-scans.md) | Always; filled once a deep scan ran |
+| **Quality** | Results of [SARIF uploads](../../02-inbound/04-sw-quality-scans.md) | License feature `sarif` |
+| **OBOM** | The module's operational BOM, see [OBOM tab](07-obom-tab.md) | License feature `obom` |
 
-- Component name and version
-- License(s) detected
-- Vulnerability count and severity
-- Status indicators (legal, security, viability)
+### List
 
-Click a component row to open a **detail side panel** showing full component metadata.
+Each row shows the component name, version and detected licenses (**Multi-license** if you must choose one), plus small status badges for Licenses, Vulnerabilities, Viability, OpenSSF Scorecard, Versioning, Export control and End-of-life. Use the **Filter** box, the sort toggle and the status filters above the list. Click a row to open the **Component Details** side panel; see [Component details](04-component-detail.md).
 
-📸 *Screenshot: the module List tab with component rows and status columns.*
+📸 *Screenshot: the List tab with the Component Details side panel open.*
 
-### Tree
+### Tree and Graph
 
-The same dependencies in a **hierarchical tree view** — parent → child relationships. You can expand/collapse individual nodes or the entire tree.
-
-📸 *Screenshot: the Tree tab showing nested dependency hierarchy.*
-
-### Graph
-
-A **network visualization** of component relationships. Interactive force-directed graph using D3.js — drag nodes, zoom in/out, highlight paths.
-
-📸 *Screenshot: the Graph tab showing the dependency network.*
+**Tree** expands and collapses the parent-child structure. **Graph** draws it as a network you can drag and zoom.
 
 ### Legal
 
-All licenses detected across components, grouped by license name. Shows:
+Licenses with their status (OK, warning, violation, private license) and, when expanded, the components using them. Click a license name for the [license details](05-license-detail.md). `manager` and `compliance_manager` can right-click a license or a component and choose **Always allow in Module / Project / Company** or **Always deny in Module / Project / Company** (see [Allow/Deny](settings/14-whitelists-blacklists.md)). On problem entries, a link creates an issue if Jira or TFS is connected.
 
-- License approval status (allowed, restricted, forbidden)
-- Obligation summary
-- Components using each license
+## Header actions
 
-📸 *Screenshot: the Legal tab with licenses grouped by approval status.*
-
-### Deep Scans
-
-Results from [repository deep scans](../../02-inbound/05-repository-scans.md) — file-level license and copyright findings. Only populated if a deep scan has been run for this module's repository.
-
-### Quality
-
-Code quality and test results from [SARIF uploads](../../02-inbound/04-sw-quality-scans.md). Only visible when the `sarif` license feature is enabled.
-
-## Actions from the module header
-
-The actions are shown to `manager` and `compliance_manager`. Infrastructure modules only show **Settings**, **Analyse** and **Follow**.
+For `manager` and `compliance_manager`:
 
 | Action | What it does |
 |---|---|
-| **Settings** | Open [Module Settings](settings/index.md). |
-| **Env. settings** | Set the environmental vulnerability vector for this module. |
-| **Add component** | Add a component manually. |
-| **Analyze** | Re-analyze this module against current policies and vulnerability data. |
-| **Reports** | Dropdown: Vulnerability, Risks, Obligations, OpenSSF, Credits. |
-| **Initiate approval** | Start an [approval](../06-approvals/index.md) for this module (not shown for modules without a project). |
+| **Settings** | Opens [Module Settings](settings/index.md). Highlighted while legal or architecture settings are incomplete. |
+| **Env. settings** | Sets the environmental vulnerability vector for this module. |
+| **Add component** | Adds a component manually. |
+| **Analyse** | Re-analyzes the module against current policies and vulnerability data. Reads **Analysis in progress** while it runs. |
+| **Reports** | Opens **Vulnerability**, **Risks**, **Obligations**, **OpenSSF** or **Credits** for this module. |
+| **Resolve via Notice file** | Lists the obligations a [notice file](../../04-outbound/02-notice-files.md) resolves and creates it (**Create Notice file**). Becomes **View Notice file** once one exists. Also open to `developer` and `portfolio_manager`. |
+| **Initiate approval** | Starts an [approval](../06-approvals/index.md). Not shown for modules outside a project. |
 | **Follow** | Follow the module for notifications. |
 | **Stats** | Dropdown with the module's status chart. |
-| **Take tour** | Start the guided tour. |
+| **Take tour** | Starts the guided tour. |
 
-Below the title, the **analysis** dropdown selects which analysis you look at. You can filter by branch or tag, open the scan details, and (as manager or compliance manager) use the **+** icon to attach a name to the selected analysis.
+On narrow screens some of these move into a **...** menu.
+
+## Choosing an analysis
+
+Under the title, **Analysis from <date>** is a dropdown of all analyses of the module. Pick one to view an older state.
+
+- **Magnifier icon** — filter the analyses by **Branch** or **Tag**. It appears only if the scans carried branches or tags. The active filter shows as a badge; click it to remove the filter.
+- **+ icon** — **Attach a name to the selected analysis** (`manager`, `compliance_manager`). Enter a name of up to 30 characters and click **Save**. The name appears in the dropdown and as the release label next to the module name.
+- **External-link icon** — **View scan details** in a new tab.
+
+> [!NOTE]
+> Name, filter and scan details are not shown for infrastructure and COTS modules.
 
 ## Related
 
-- [Module Settings](settings/index.md) — configure the module
-- [Approvals](../06-approvals/index.md) — the approval workflow
-- [Infrastructure Modules](03-infrastructure-modules.md) — simplified view for infrastructure
+- [Component details](04-component-detail.md) · [License details](05-license-detail.md)
+- [Manual license resolution](06-manual-license-resolution.md)
+- [Module Settings](settings/index.md)
