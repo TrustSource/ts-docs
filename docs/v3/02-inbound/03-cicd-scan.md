@@ -16,7 +16,7 @@ A **scan** is a snapshot of a module's bill of materials at one point in time: e
 Each scan belongs to exactly one module. If the module named in the upload does not exist yet, it is created. Names are trimmed and matched exactly, so a [SARIF upload](04-sw-quality-scans.md) with the same module name lands on the same module.
 
 > [!WARNING]
-> A mismatch in the module name, for example a package manifest name against a checkout folder name, silently creates a second module instead of adding to the first. See [SW Quality Scans](04-sw-quality-scans.md#automating-sarif-uploads).
+> A mismatch in the module name, for example a package manifest name against a checkout folder name, silently creates a second module instead of adding to the first. See [SW Quality Scans](04-sw-quality-scans.md#import-with-the-api).
 
 ### Limits and rejections
 

@@ -12,7 +12,7 @@ row, append to the log). Sits at the repo root, deliberately outside
 
 | Service | Repo | Docs cover | Live in DEV | Live in PRD | Gap (docs → PRD) |
 |---|---|---|---|---|---|
-| **Core (ts-app)** | [`eacg-gmbh/ts-app`](https://github.com/eacg-gmbh/ts-app) | Release notes up to **v3.3.22** (+ v3.2.40 hotfix line). Feature pages are partly stubs: 85 of 180 v3 pages were under 700 bytes at the 2026-10-10 gap check (80 after wave 1). | not verified this session | not verified this session | Target state is **v3.3.59** (`package.json` of ts-app). Gap report: `docs/ohelp-gap-2026-10-10/` in ts-app; wave 1 corrected outdated statements only. |
+| **Core (ts-app)** | [`eacg-gmbh/ts-app`](https://github.com/eacg-gmbh/ts-app) | **v3.3.59** (feature pages, release notes and REST API, state 2026-10-10). Unpublished work (e.g. Software portfolio) is not covered. 20 pages are still short (personal pages, troubleshooting/FAQ, 7 recipes). | not verified this session | not verified this session | Screenshots are placeholders (📸) and need to be taken; the usage screenshots date from 2024. Open questions are listed in the 2026-10-10 log entry. |
 | **ts-scan** | [`trustsource/ts-scan`](https://github.com/trustsource/ts-scan) | — | — | — | not yet documented in v3 track |
 | **ts-legalcheck** | Public CLI: [`trustsource/ts-legalcheck`](https://github.com/trustsource/ts-legalcheck) · SaaS service: `eacg-gmbh/ts-legalcheck` (private) · Rule-set: proprietary | **Service v2.0.0 + rule-set v4.4** | v2.0.0 + v4.4 | v2.0.0 + v4.4 | **at parity** — Legal tab + obligations documented; new Legal Questionnaire page in progress |
 | **ts-deepscan** | [`trustsource/ts-deepscan`](https://github.com/trustsource/ts-deepscan) | — | — | — | not yet documented in v3 track |
@@ -53,6 +53,13 @@ the future Community Edition, not the live SaaS.
    e.g. `docs(<service>): refresh for v3.2.21 + coverage bump`.
 
 ## Update log
+
+- **2026-10-10 (waves 2–6)** — Core (ts-app) docs aligned to v3.3.59: Risks (treatment, decisions,
+  assessment scheme, automatic risks, history), SARIF/CWE, audit log and login history, approvals;
+  project page (tiles, deployments, analytics, webhooks), modules (detail, OBOM, AI/ML, all settings),
+  products, Reports hub and dashboard; roles and permission matrices, integrations, auth/SSO;
+  knowledge, inbound import, component and legal manager, threat models; release notes 3.2.41–3.3.59.
+  Still to do: personal pages, troubleshooting/FAQ, recipes, binary linking, curl examples, screenshots.
 
 - **2026-10-10** — Wave 1 of the gap alignment for Core (ts-app) v3.3.59 (docs still cover
   release notes up to v3.3.22 / v3.2.40; nothing new was added). Corrected statements that
