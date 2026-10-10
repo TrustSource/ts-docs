@@ -1,11 +1,11 @@
 # Approve / Reject Workflow
 
 > [!NOTE]
-> **Required role:** `compliance_manager`
+> **Required role:** `compliance_manager` or `manager`
 
 ## Approving
 
-1. Review all eight tabs.
+1. Review the tabs.
 2. Click **Approve**.
 3. The approval is frozen — the snapshot becomes immutable.
 
@@ -32,5 +32,5 @@ The project manager can address the issues and submit a new approval request.
 
 ## Related
 
-- [The Eight Approval Tabs](02-approval-detail-tabs.md) — what to review
+- [Approval Detail Tabs](02-approval-detail-tabs.md) — what to review
 - [Releases](../07-releases.md) — what happens after approval

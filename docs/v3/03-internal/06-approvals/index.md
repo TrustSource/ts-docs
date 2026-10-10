@@ -1,9 +1,9 @@
 # Approvals
 
 > [!NOTE]
-> **Required role:** `compliance_manager` (to approve/reject), `manager` or `developer` (to request)
+> **Required role:** `manager` or `compliance_manager` (to start an approval, approve or reject). Any member can save a draft.
 
-An **approval** is a formal quality gate before shipping. It captures a frozen snapshot of a module's bill of materials and runs it through eight review tabs covering vulnerabilities, licenses, versioning, viability, changes, export control, tests and capabilities.
+An **approval** is a formal quality gate before shipping. It captures a frozen snapshot of a module's bill of materials and runs it through review tabs covering vulnerabilities, licenses, versioning, viability, status changes, export control, capabilities and (with the `sarif` license) SW quality.
 
 ## Lifecycle
 
@@ -11,9 +11,9 @@ An **approval** is a formal quality gate before shipping. It captures a frozen s
 Draft → Review → Approve / Reject → Finalized (immutable)
 ```
 
-1. A **project manager** or **developer** creates a draft approval.
-2. The draft is submitted for review → assigned to a **compliance manager**.
-3. The compliance manager reviews all eight tabs and **approves** or **rejects**.
+1. Any member can save a draft approval. A **manager** or **compliance manager** starts the approval (or turns a draft into one); other members get a `403` and nothing is saved.
+2. The approval is assigned to a **compliance manager**.
+3. The compliance manager reviews the tabs and **approves** or **rejects**.
 4. Once finalized, the approval is **frozen and immutable** — it cannot be changed.
 
 ## In this section
@@ -21,7 +21,7 @@ Draft → Review → Approve / Reject → Finalized (immutable)
 | Page | What it covers |
 |---|---|
 | [Requesting an Approval](01-request-approval.md) | How to create and submit an approval request. |
-| [The Eight Approval Tabs](02-approval-detail-tabs.md) | What each review tab contains. |
+| [Approval Detail Tabs](02-approval-detail-tabs.md) | What each review tab contains (Overview plus eight tabs). |
 | [Approve / Reject](03-approve-reject-workflow.md) | The decision workflow and what happens after. |
 | [Binary Linking](04-binary-linking.md) | Attaching binary references to an approval. |
 | [Public Approves](05-public-approves.md) | Sharing approved releases with external stakeholders. |
