@@ -27,6 +27,7 @@ nav:
       - Quick Tour: v3/00-getting-started/04-quick-tour.md
       - Mental Model: v3/00-getting-started/05-mental-model.md
       - Roles & Licenses Cheat Sheet: v3/00-getting-started/06-roles-licenses-cheatsheet.md
+      - Dashboard: v3/00-getting-started/07-dashboard.md
     - Inbound (Scans):
       - v3/02-inbound/index.md
       - Check: v3/02-inbound/01-check.md
@@ -53,6 +54,9 @@ nav:
         - v3/03-internal/01-projects/index.md
         - Create & List: v3/03-internal/01-projects/01-create-and-list.md
         - Project Overview: v3/03-internal/01-projects/02-project-overview.md
+        - Deployments: v3/03-internal/01-projects/03-deployments.md
+        - Analytics: v3/03-internal/01-projects/04-analytics.md
+        - Risks & Releases: v3/03-internal/01-projects/05-risks-and-releases.md
         - Settings:
           - v3/03-internal/01-projects/settings/index.md
           - General: v3/03-internal/01-projects/settings/01-general.md
@@ -65,6 +69,7 @@ nav:
           - Resolved obligations: v3/03-internal/01-projects/settings/08-obligations.md
           - MDR/IVDR Classification: v3/03-internal/01-projects/settings/09-module-classification.md
           - Issue Integration: v3/03-internal/01-projects/settings/10-issue-tracker.md
+          - Webhooks and Channels: v3/03-internal/01-projects/settings/13-webhooks-channels.md
           - Imports: v3/03-internal/01-projects/settings/11-module-import.md
           - Danger Operations: v3/03-internal/01-projects/settings/12-danger-zone.md
       - Modules:
@@ -72,6 +77,10 @@ nav:
         - Create & List: v3/03-internal/02-modules/01-create-and-list.md
         - Module Detail Tabs: v3/03-internal/02-modules/02-module-detail-tabs.md
         - Infrastructure Modules: v3/03-internal/02-modules/03-infrastructure-modules.md
+        - Component details: v3/03-internal/02-modules/04-component-detail.md
+        - License details: v3/03-internal/02-modules/05-license-detail.md
+        - Manual license resolution: v3/03-internal/02-modules/06-manual-license-resolution.md
+        - OBOM tab: v3/03-internal/02-modules/07-obom-tab.md
         - Settings:
           - v3/03-internal/02-modules/settings/index.md
           - General: v3/03-internal/02-modules/settings/01-general.md
@@ -84,6 +93,7 @@ nav:
           - CIA: v3/03-internal/02-modules/settings/08-cia.md
           - Capabilities: v3/03-internal/02-modules/settings/09-capabilities.md
           - Crypto management: v3/03-internal/02-modules/settings/10-encryption.md
+          - AI / ML: v3/03-internal/02-modules/settings/19-ai-ml.md
           - End-of-life: v3/03-internal/02-modules/settings/11-end-of-life.md
           - Quality: v3/03-internal/02-modules/settings/12-quality.md
           - History: v3/03-internal/02-modules/settings/13-releases.md
@@ -109,6 +119,8 @@ nav:
       - Releases: v3/03-internal/07-releases.md
       - Reports: v3/03-internal/04-reports.md
       - Vulnerability Report: v3/03-internal/04a-vulnerability-report.md
+      - Analysis Reports: v3/03-internal/04b-analysis-reports.md
+      - Impact & Portfolio Reports: v3/03-internal/04c-impact-and-portfolio-reports.md
       - Threat Models:
         - v3/03-internal/08-threat-models/index.md
         - Generate or Import: v3/03-internal/08-threat-models/01-create-threat-model.md
