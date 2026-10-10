@@ -3,34 +3,36 @@
 > [!NOTE]
 > **Required role:** `account_admin`, `compliance_manager`, `company_security_manager`, `company_component_manager`, `portfolio_manager`, `manager` or `legal_manager`
 >
-> Each settings card is only visible to the roles that own it. Users without any matching role do not see this menu item.
+> Each card is only visible to the roles that own it. Users without any matching role do not see **Administration → Settings**.
 
-The **Settings** page consolidates company-wide configuration into a single view with individual settings cards. What you see depends on your role — account admins see everything, while other roles see only the cards relevant to their responsibilities.
+The **Settings** page ("General settings") is the entry point for company-wide configuration. It shows one card per settings group. What you see depends on your role: account admins see every card, other roles only the cards that belong to their work.
 
-## Settings cards
+📸 *Screenshot: the General settings page with the card grid.*
+
+## Cards
 
 | Card | What it configures | Visible to |
 |---|---|---|
-| **General** | Company name, logo, contact details, language. | account_admin |
-| **FOSS Liaison** | Open-source program office contact details. | account_admin, compliance_manager |
-| **PSIRT Contacts** | Product Security Incident Response Team contacts. | account_admin, company_security_manager |
-| **Written Offer** | Written offer text for GPL/LGPL compliance in distributed binaries. | account_admin, compliance_manager |
-| **Allow / Deny Lists** | Company-wide license and component allow/deny lists. | account_admin, compliance_manager |
-| **Encryption** | Default encryption and crypto-algorithm settings. | account_admin, company_security_manager |
-| **Quality** | Default quality and test requirements. | account_admin, compliance_manager |
-| **Tags** | Company-wide tag taxonomy for projects and modules. | account_admin, manager |
-| **Private Licenses** | Custom license definitions not in the public database. | account_admin, compliance_manager |
-| **Legal Templates** | Obligation and notice file templates. | account_admin, legal_manager |
-| **Private Algorithms** | Custom cryptographic algorithm definitions. | account_admin, company_security_manager |
-| **Manual Vulnerabilities** | Manually tracked vulnerabilities not in public feeds. | account_admin, company_security_manager |
+| **General info** | Distribution email, trainings URL, currency code, default vulnerability confidence level. See [Company details](02a-company-details.md). | `account_admin` |
+| **FOSS liaison** | Contact for your open-source program office. See [Company details](02a-company-details.md). | `account_admin`, `compliance_manager` |
+| **PSIRT contacts** | Manufacturer and product security contact data. See [Company details](02a-company-details.md). | `account_admin`, `company_security_manager` |
+| **Written offer** | Text of your GPL/LGPL written offer. See [Company details](02a-company-details.md). | `account_admin`, `compliance_manager` |
+| **License allow/deny** | Company-wide license allow and deny lists. | `account_admin`, `compliance_manager` |
+| **Component allow/deny** | Company-wide component allow and deny lists. | `account_admin`, `compliance_manager`, `company_security_manager`, `company_component_manager` |
+| **Encryption** | Export controls management. | `account_admin`, `compliance_manager`, `company_security_manager` |
+| **Quality** | Test requirements. | `account_admin`, `company_security_manager`, `compliance_manager` |
+| **Company tags** | The tag list for projects and modules. See [Company tags](02b-company-tags.md). | `account_admin`, `portfolio_manager`, `manager`, `company_security_manager`, `compliance_manager` |
+| **Private licenses** | Licenses that are not in the public database. Only shown for Enterprise and Medical accounts. | `account_admin`, `compliance_manager` |
+| **Legal templates** | Obligation and notice templates. See [Legal Templates](../15-legal-manager/02-legal-templates.md). | `account_admin`, `compliance_manager`, `legal_manager` |
+| **Private algorithms** | Cryptographic algorithms that are not in the public catalog. | `account_admin`, `company_security_manager` |
+| **Manual vulnerability** | Vulnerabilities you track yourself because they are not in public feeds. | `account_admin`, `company_security_manager`, `company_component_manager` |
 
-📸 *Screenshot: the Settings page showing the card grid with FOSS Liaison and PSIRT contacts visible.*
-
-> [!TIP]
-> Settings defined here act as company-wide defaults. Projects and modules can override most values in their own settings tabs.
+> [!NOTE]
+> A card can be visible to a role that may only look at the page. For example, the **FOSS liaison**, **PSIRT contacts** and **Written offer** forms are only shown to account admins, and only account admins and managers can add or remove company tags.
 
 ## Related
 
-- [Project Settings](../03-internal/01-projects/settings/index.md) — project-level overrides
-- [Module Settings](../03-internal/02-modules/settings/index.md) — module-level overrides
-- [Policies](05-policies.md) — EOL, FOSS and crypto policies
+- [Project Settings](../03-internal/01-projects/settings/index.md) — settings for one project
+- [Module Settings](../03-internal/02-modules/settings/index.md) — settings for one module
+- [Policies](05-policies.md) — open-source policy, crypto algorithms, end-of-life and risk assessment
+- [Settings Permission Matrix](../10-roles-permissions/06-settings-permission-matrix.md)
