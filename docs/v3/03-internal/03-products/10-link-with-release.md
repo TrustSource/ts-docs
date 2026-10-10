@@ -9,7 +9,7 @@ The connection between products and your actual software happens through **solut
 
 1. A module goes through the [approval workflow](../06-approvals/index.md) and is **approved**.
 2. The approved module becomes a **release** with a frozen snapshot.
-3. On the product's [Solutions tab](03-tab-solutions.md), click **Link Release**.
+3. On the product's [Solutions tab](03-tab-solutions.md), click **Add solution**.
 4. Select the approved release from the list.
 5. The release's capabilities (name, version, description) are extracted and shown in the Solutions tab.
 
@@ -26,7 +26,7 @@ Product (what you ship)
 
 At any point you can trace from a customer-facing product down to the individual components and their licenses, vulnerabilities and obligations.
 
-📸 *Screenshot: the Link Release modal showing available approved releases.*
+📸 *Screenshot: the Add solution dialog showing available approved releases.*
 
 ## Related
 

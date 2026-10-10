@@ -6,15 +6,19 @@ A **module** is the unit of analysis in ***TrustSource***. It represents one pie
 
 | Page | What it covers |
 |---|---|
-| [Create & List](01-create-and-list.md) | Creating modules, the module list within a project. |
-| [Module Detail Tabs](02-module-detail-tabs.md) | The main module view — dependencies, legal, vulnerabilities, graphs. |
-| [Infrastructure Modules](03-infrastructure-modules.md) | How infrastructure modules differ from regular modules. |
-| [Module Settings](settings/index.md) | All 18 settings tabs. |
+| [Create & List](01-create-and-list.md) | Creating, linking and importing modules; the module list within a project. |
+| [Module Detail Tabs](02-module-detail-tabs.md) | The main module view — tabs, header actions, choosing an analysis. |
+| [Infrastructure Modules](03-infrastructure-modules.md) | How infrastructure and COTS modules differ from regular modules. |
+| [Component details](04-component-detail.md) | The side panel in the List tab and the full component page. |
+| [License details](05-license-detail.md) | License text and status from a module's Legal tab. |
+| [Manual license resolution](06-manual-license-resolution.md) | Setting the license of a component the scan could not match. |
+| [OBOM tab](07-obom-tab.md) | The operational BOM of a module. |
+| [Module Settings](settings/index.md) | All settings tabs, including AI / ML. |
 
 ## Key concepts
 
 - Each module belongs to exactly one project.
-- A module's components come from **scans** — CI/CD, manual upload, SBOM import, or deep scan.
+- A module's components come from **scans** — CI/CD, manual upload, SBOM import, or deep scan. A module can also hold an operational BOM (OBOM).
 - Modules have a traffic-light status that rolls up from their components.
 - Module settings can **override** project-level defaults.
 

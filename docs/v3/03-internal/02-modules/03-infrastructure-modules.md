@@ -1,7 +1,7 @@
 # Infrastructure Modules
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`
+> **Required role:** `manager` or `compliance_manager` to create and analyze
 
 An **infrastructure module** represents third-party runtime components that your software depends on — database servers, base container images, message brokers, web servers, operating systems.
 
@@ -11,24 +11,30 @@ Your software supply chain risk does not stop at your application code. A vulner
 
 ## How they differ from regular modules
 
-| Aspect | Source-code module | Infrastructure module |
+| Aspect | Source-code module | Infrastructure or COTS module |
 |---|---|---|
-| **Architecture type** | `sourceCode` | `infrastructureModule` |
-| **Dependency tabs** | List, Tree, Graph, Deep Scans, Quality | Not shown — no dependency analysis |
-| **Component source** | Scans (CI/CD, upload, API) | Linked from the [Infrastructure catalog](../../05-knowledge/02-infrastructure-elements.md) |
-| **Version field** | Not shown (derived from scans) | Editable in General settings |
-| **Analysis** | Full dependency + vulnerability + legal | Stats update only |
+| **Tab bar** | List, Tree, Graph, Legal, DeepScans, Quality, OBOM | None. The page shows the **Component Details** panel of the linked catalog entry. |
+| **Component source** | Scans (CI/CD, upload, API) | Linked from the [Infrastructure catalog](../../05-knowledge/02-infrastructure-elements.md) or the [COTS catalog](../../05-knowledge/03-cots.md) |
+| **Version field** | Derived from scans | Editable in [General settings](settings/01-general.md) |
+| **Header actions** | Full set, see [Module Detail Tabs](02-module-detail-tabs.md) | **Settings**, **Analyse** and **Follow** only |
+| **Settings tabs** | All | Without Quality, Crypto management, AI / ML, Allow/Deny, Capabilities and MDR/IVDR Classification |
+| **Card in the list** | Licenses, components, last analysis and scan | License and last visit of the catalog entry |
+
+The header and the card carry a label, **Infrastructure Module** or **COTS Module**.
 
 ## Creating an infrastructure module
 
-1. Open a project and click **Create**.
-2. Set the architecture type to **Infrastructure Module**.
-3. Enter the name (e.g. `postgres:16.3`, `redis:7.2-alpine`).
-4. Link it to an entry in the global infrastructure catalog.
+1. Open a project and click **Add/link** in the module list toolbar.
+2. Set **Module type** to **COTS or Infrastructure component**.
+3. Under **Select pre-defined module**, search the catalog (for example `postgres`) and choose the entry, then choose its **Module version**.
+4. Choose the **Type of architecture** and tick **Is open source module** if it applies.
+5. Click **Create module**.
 
-Once linked, vulnerabilities and license findings for that infrastructure entry are surfaced in the project just like for any other module.
+If the entry is missing, click **Not finding what you are looking for?**, enter name and version and click **Send request**; support adds it to the catalog.
 
-📸 *Screenshot: an infrastructure module in the module list with its catalog link and version.*
+Once created, vulnerabilities and license findings for that entry are surfaced in the project like for any other module. Click **Analyse** after changing settings to refresh the module's statistics.
+
+📸 *Screenshot: an infrastructure module page with the Component Details panel.*
 
 ## When to use them
 

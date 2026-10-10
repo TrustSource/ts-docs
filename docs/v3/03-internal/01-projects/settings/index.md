@@ -1,6 +1,6 @@
 # Project Settings
 
-Project settings are organized in tabs (ten, plus MDR/IVDR Classification for Medical accounts). Tab visibility depends on your role. Settings defined here act as **defaults** for all modules in the project — modules can override most values.
+Project settings are organized in tabs (MDR/IVDR Classification only for Medical accounts). Tab visibility depends on your role. Settings defined here act as **defaults** for all modules in the project — modules can override most values.
 
 | Tab | What it configures |
 |---|---|
@@ -13,7 +13,7 @@ Project settings are organized in tabs (ten, plus MDR/IVDR Classification for Me
 | [Allow/Deny](07-whitelists-blacklists.md) | Allowed/denied licenses and components, enforce flag. |
 | [MDR/IVDR Classification](09-module-classification.md) | MDR/IVDR classification (Medical accounts). |
 | [Issue Integration](10-issue-tracker.md) | Jira, GitHub or TFS integration per project. |
-| Webhooks and Channels | Notification channels for project events (page still to be written). |
+| [Webhooks and Channels](13-webhooks-channels.md) | Webhooks and chat channels for project events and vulnerability alerts. |
 | [Danger Operations](12-danger-zone.md) | Delete the project. |
 
 > [!NOTE]
