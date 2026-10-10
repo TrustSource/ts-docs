@@ -1,52 +1,84 @@
 # Risks List
 
 > [!NOTE]
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` to view. Adding a risk needs `compliance_manager` or `manager`.
 > **Required license feature:** `risks`
 
-The risk list shows all risks in your company, filterable by project, module and status.
+The **Risks** tab is the register: one row per risk, for the whole company or for the project or module you choose. Click a row to open the risk in the editor.
 
-## Creating a risk
+## Choose what the list shows
 
-Risks can be created in two ways:
+Use the selector at the top right:
 
-1. **Manually** — click **Create Risk** and fill in the risk form.
-2. **From findings** — create a risk directly from a CSAF advisory, vulnerability finding or SARIF test result.
+- **All projects** — every risk of the company. Above 5,000 risks the list shows the 5,000 newest, with a note; choose a project to see the rest.
+- **All modules of** a project, or a single module.
 
-## Risk fields
+On a project's own Risks page (the Risks tile on the project page) the project is fixed and you can only narrow down to one of its modules. That page also lists the project's threat models if your plan includes the `threat` feature.
 
-Risks are structured in three tabs:
+📸 *Screenshot: the Risks list with the project selector and the tiles above the table.*
 
-### Impact tab
+## Tiles
 
-| Field | Description |
+The tiles count the risks in scope: **total**, **added last 7 days**, the three treatment groups **Untreated**, **In treatment** and **Done**, **overdue tasks**, and **exceptions ending in 30 days**. The three groups always add up to the total. See [Treatment and State](05-treatment-and-state.md).
+
+## Filter the list
+
+- Switch the **Untreated**, **In treatment** and **Done** buttons on or off to show or hide a group.
+- Use the search box above the table to filter by any text.
+- Links from the [Overview](01-overview.md) open the list with a filter, shown as chips such as *State: assessed*. Click **Clear filter** to remove them.
+
+## Columns
+
+*Added*, *Name*, *Origin*, *Impact class*, *C*, *I* and *A* (the confidentiality, integrity and availability boxes), *Impact description*, *Value* (the annual loss expectancy), *Treatment strategy*, *Decision*, *Valid until*, *Countermeasures*, *State* and *Treatment*. An impact class that your [scheme](07-risk-assessment-scheme.md) no longer contains is kept and marked **not in scheme**. Impact classes sort by their rank in the scheme.
+
+When you look at a project, the risks that belong to one of its modules show **in Module** instead of a delete button. Click the label to open the module's own list; these risks can only be edited and removed there.
+
+## Export
+
+**Export** downloads the listed risks as a CSV file named `risk-register-<date>.csv`. It contains exactly the rows currently shown, so the group buttons and filters apply.
+
+## Add a risk
+
+1. Select a project or module (the **Add risk** button is hidden in the company-wide list).
+2. Click **Add risk**. The **Risk capture** form opens.
+3. Enter a **Name** (3 to 200 characters), choose one or more **Origin** values and describe the impact.
+4. Tick the affected **Confidentiality**, **Integrity**, **Availability** boxes, pick an **Impact class** and a **State**.
+5. Click **Save**, or **Save and Create new one** to add the next risk.
+
+A risk can also start from a finding: **Create risk** on a SARIF finding, on an OBOM finding, or by setting a license by hand. See [Automatic Risks](08-automatic-risks.md).
+
+## The risk editor
+
+Click a row to open a risk. The header keeps **Save**, the previous/next arrows with a position counter and **Back to list**. The address bar names the open risk, so you can share the link.
+
+The top row holds **Name**, **Origin**, **Impact class**, **Treatment strategy** and **State**. The tabs below are:
+
+| Tab | What it holds |
 |---|---|
-| **Name** | Short risk title. |
-| **Origin** | Where the risk came from (manual, CSAF, CVE, SARIF). |
-| **CIA impact** | Confidentiality, Integrity, Availability impact ratings. |
-| **Impact class** | Overall impact severity. |
-| **State** | Progress of the risk: identified, assessed, approved, planned, implementing, deferred, escalated, monitored, closed. |
-| **Treatment strategy** | The decision on how to treat the risk: Avoid, Mitigate, Transfer or Accept. Set apart from the state. |
-| **Business Value (BV)** | Estimated business value at risk. |
-| **Exposure Factor (EF)** | Percentage of value lost if risk materializes. |
-| **Annual Rate of Occurrence (ARO)** | Expected frequency per year. |
+| **Impact** | The C/I/A boxes, the description of the impact and the financial figures. |
+| **Decision** | The documented decision. See [Decisions](06-decisions.md). |
+| **Countermeasures** | What you do about the risk. See [Risk Tasks](03-risks-tasks.md). |
+| **Tasks** | Follow-up tasks per countermeasure. |
+| **Threat model** | STRIDE categories, CWEs, ENISA category and threat, affected element type, trust boundary crossing, TM method, TM run ID and OTM threat ID. |
+| **Occurrences**, **Affected components**, **Affected resources** | Only on automatically created risks: the evidence behind them. |
+| **History** | Every change. See [Risk History](09-risk-history.md). |
 
-From these, ***TrustSource*** calculates **Single Loss Expectancy (SLE)** and **Annual Loss Expectancy (ALE)**.
+### Impact figures
 
-### Management tab
+Switch between **Simple impact view** and **Detailed impact view**.
 
-- Treatment strategy (Avoid, Mitigate, Transfer, Accept)
-- Countermeasures with status, comments and responsible parties
+- **Simple**: choose **Business value (BV)**, **Exposure factor (EF)** and **Annual rate of occurrence (ARO)** from the lists of your scheme (by default low, moderate, high and likely, unlikely, rare).
+- **Detailed**: enter BV in your company currency, EF in percent and ARO per year. ***TrustSource*** calculates **SLE = EF * BV** and **ALE = SLE * ARO**.
 
-### Review tab
+### Proposed impact class
 
-- Task assignments for countermeasures
+Risks created from a SARIF weakness, a vulnerability or a manually set license carry a proposed impact class, derived from the finding's severity and the module's CIA requirements. The form shows the proposal and what it is based on, and tells you when it differs from the stored class. Change the class once and later imports keep your choice; only the proposal beside it is refreshed.
 
 > [!NOTE]
-> Since 3.3.28 the state only tracks progress. The older states `accepted`, `transferred`, `eliminated`, `out-of-scope` and `expired` no longer exist; existing risks were migrated. The list, Overview and widgets group risks as **Untreated**, **In treatment** or **Done**. A fuller description of the treatment model follows in a later update.
-
-📸 *Screenshot: the risk edit form showing the Impact tab with financial metrics.*
+> A module's risk opened from the project register is read-only and shows **This risk is managed in module level**. Open it from the module to edit it.
 
 ## Related
 
-- [Risk Tasks](03-risks-tasks.md) — managing countermeasure tasks
-- [Portfolio Views](04-portfolio-views.md) — cross-project visualization
+- [Treatment and State](05-treatment-and-state.md) — strategy, state and the three groups
+- [Risk Tasks](03-risks-tasks.md) — countermeasures and tasks
+- [Risk History](09-risk-history.md) — the change trail
