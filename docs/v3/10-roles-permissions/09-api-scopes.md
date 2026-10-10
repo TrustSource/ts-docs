@@ -1,7 +1,7 @@
 # API scopes
 
 > [!NOTE]
-> Generated from the OpenAPI v2 specification (118 operations) and the scope checks of the REST API in ***TrustSource*** 3.3.59 on 2026-10-10. Operations whose scope cannot be derived from the code are listed separately instead of guessed.
+> Generated from the OpenAPI v2 specification (118 operations) and the scope checks of the REST API in ***TrustSource*** 3.3.59 on 2026-10-10. The Repository and Vulnerabilities rows come from the earlier API documentation. Operations whose scope is not documented anywhere are listed separately instead of guessed.
 
 Every API key carries a scope: one or more role names. A key may call an operation only if at least one of its scopes is allowed to. A call outside the scope fails with `403`. The scope of a key is set when you [create the key](../06-administration/04-api-keys.md). A personal access key takes your own roles as its scope.
 
@@ -193,6 +193,25 @@ An `x` means the scope may call the operation. The column **Licence** names a li
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | `POST /compliance/csaf` |  | x | x |  | x |  | x |  | `csaf` |
 
+### Repository (DeepScan)
+
+| Operation | Dev | Mgr | Compl | Port | Sec | Comp | Acct | Ent | Licence |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| `POST /repository/scan` | x | x | x |  | x | x |  |  |  |
+| `GET /repository/results` | x | x | x | x | x | x |  |  |  |
+| `GET /repository/status` | x | x | x |  | x | x |  |  |  |
+
+### Vulnerabilities
+
+| Operation | Dev | Mgr | Compl | Port | Sec | Comp | Acct | Ent | Licence |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| `POST /vulnerabilities/cveDetails` | x | x | x | x | x | x | x | x |  |
+| `POST /vulnerabilities/cveFind` | x | x | x | x | x | x | x | x |  |
+| `GET /vulnerabilities/cwes/{cwe_id}` | x | x | x | x | x | x | x | x |  |
+
+> [!NOTE]
+> The scopes for the Repository and Vulnerabilities groups are taken from the earlier API documentation. These groups are answered by separate backends, so the application code cannot confirm them.
+
 ### Users
 
 | Operation | Dev | Mgr | Compl | Port | Sec | Comp | Acct | Ent | Licence |
@@ -220,16 +239,10 @@ These operations need no `x-api-key` header and no scope. The key in the URL dec
 
 ## Operations without a verified scope
 
-The scope of these operations is not set by the application code that this page is built from. They are answered by separate services or check no role. They are listed so that nothing looks allowed or forbidden by omission.
+No scope mapping is documented for these operations: they are answered by separate services and are new since the earlier API documentation. They are listed so that nothing looks allowed or forbidden by omission.
 
 | Operation | Why it is not in the matrix |
 |---|---|
-| `POST /repository/scan` | Served by a separate backend; no scope mapping in the application code |
-| `GET /repository/results` | Served by a separate backend; no scope mapping in the application code |
-| `GET /repository/status` | Served by a separate backend; no scope mapping in the application code |
-| `GET /vulnerabilities/cwes/{cwe_id}` | Served by a separate backend; no scope mapping in the application code |
-| `POST /vulnerabilities/cveDetails` | Served by a separate backend; no scope mapping in the application code |
-| `POST /vulnerabilities/cveFind` | Served by a separate backend; no scope mapping in the application code |
 | `POST /vulnerabilities/cveFindByKey` | Served by a separate backend; no scope mapping in the application code |
 | `GET /euvd/{id}` | Served by a separate backend; no scope mapping in the application code |
 | `POST /euvd` | Served by a separate backend; no scope mapping in the application code |
