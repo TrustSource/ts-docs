@@ -33,6 +33,7 @@ nav:
       - Import Scans: v3/02-inbound/02-import-scans.md
       - CI/CD Scan: v3/02-inbound/03-cicd-scan.md
       - SW Quality Scans: v3/02-inbound/04-sw-quality-scans.md
+      - SARIF Weaknesses and Risks: v3/02-inbound/04a-sarif-weaknesses.md
       - Repository Scans: v3/02-inbound/05-repository-scans.md
       - Mass Scans: v3/02-inbound/06-mass-scans.md
     - Internal:

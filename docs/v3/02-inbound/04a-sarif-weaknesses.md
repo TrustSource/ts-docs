@@ -38,7 +38,7 @@ To change it, click **Edit assigned CWEs**. **Withdraw assignment** removes it w
 
 ### Did the assignments change since the import?
 
-The test page shows a line such as *Extractor v2 - CWE assignments unchanged since import*, or *changed since import*. The counts of an imported document were calculated with the assignments of that moment; the CWEs you see are always the current ones. The API returns `evaluatedWith` and `appliedMappings` on `GET /core/tests/sarif` and `/{id}`, so two answers for the same document can be told apart. A document imported before this was recorded says *Imported before provenance was recorded*.
+The test page shows a line such as *Extractor v1 - CWE assignments unchanged since import*, or *changed since import*. The counts of an imported document were calculated with the assignments of that moment; the CWEs you see are always the current ones. The API returns `evaluatedWith` and `appliedMappings` on `GET /core/tests/sarif` and `/{id}`, so two answers for the same document can be told apart. A document imported before this was recorded says *Imported before provenance was recorded*.
 
 ## Risks from weaknesses
 

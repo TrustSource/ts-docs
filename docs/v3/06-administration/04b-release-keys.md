@@ -48,7 +48,7 @@ The red button depends on usage. A key that was requested at least once shows **
 
 ## Keys created by approvals
 
-When you approve a request through the API, ***TrustSource*** creates a published release key for it. Approving the same request again returns that key instead of adding another. `GET /compliance/approvals/{approval_id}` returns the key and the URLs it serves. See [Compliance approvals](../09-rest-api/endpoints/compliance-approvals.md).
+When a request is approved, in the app or through the API, ***TrustSource*** creates a published release key for it. Approving the same request again returns that key instead of adding another. `GET /compliance/approvals/{approval_id}` returns the key and the URLs it serves. See [Compliance approvals](../09-rest-api/endpoints/compliance-approvals.md).
 
 ## Related
 
