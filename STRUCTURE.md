@@ -41,18 +41,18 @@ ohelp/
 │   │   ├── glossary.md
 │   │   ├── support.md
 │   │   └── background/              # 11 background articles
-│   ├── v3/                           # SaaS documentation (180 pages)
+│   ├── v3/                           # SaaS documentation (207 pages)
 │   │   ├── index.md
 │   │   ├── 00-getting-started/      # 7 pages
 │   │   ├── 02-inbound/              # 7 pages
 │   │   ├── 03-internal/             # 71 pages (projects, modules, products, risks, approvals, ...)
 │   │   ├── 04-outbound/             # 7 pages
 │   │   ├── 05-knowledge/            # 9 pages
-│   │   ├── 06-administration/       # 10 pages
+│   │   ├── 06-administration/       # 12 pages
 │   │   ├── 07-auth-sso/             # 7 pages
 │   │   ├── 08-personal/             # 6 pages
-│   │   ├── 09-rest-api/             # 6 pages
-│   │   ├── 10-roles-permissions/    # 9 pages
+│   │   ├── 09-rest-api/             # 30 pages (incl. endpoints/ with 22 group pages)
+│   │   ├── 10-roles-permissions/    # 10 pages
 │   │   ├── 11-troubleshooting-faq/  # 7 pages
 │   │   ├── 12-release-notes/        # 4 pages
 │   │   ├── 13-capabilities/         # 8 pages (OSCAR, Risk, Product, Medical, CVD, CSAF)

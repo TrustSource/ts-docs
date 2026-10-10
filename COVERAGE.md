@@ -24,12 +24,14 @@ row, append to the log). Sits at the repo root, deliberately outside
 
 ## API documentation
 
-The REST API is documented outside this help. The endpoint reference is the interactive API
-documentation in the app and the OpenAPI v2 specification; `docs/v3/09-rest-api/` links to both.
+The REST API documentation was merged into this help on **2026-10-10**; `trustsource/api-docs` is deprecated. The endpoint reference is the interactive API documentation in the app and the OpenAPI v2 specification.
 
-| Documentation | Location | Covers |
+| Topic | Location in this help | Covers |
 |---|---|---|
-| **API docs** | [`trustsource/api-docs`](https://github.com/trustsource/api-docs) · <https://trustsource.github.io/api-docs/> | Key management, roles and scopes, API structure, analytics, use cases, release keys. |
+| API keys, release keys, usage | `docs/v3/06-administration/04-api-keys.md`, `04a-api-usage.md`, `04b-release-keys.md` | Key management, release keys, usage statistics. |
+| REST API | `docs/v3/09-rest-api/` (index, `06-api-structure.md`, `endpoints/`) | API structure, v1 migration, 22 endpoint group pages. |
+| API scopes | `docs/v3/10-roles-permissions/09-api-scopes.md` | Operation × scope matrix, generated from the spec and the handler scope checks (app 3.3.59). |
+| Use case | `docs/v3/recipes/02-cicd-integration.md` | ts-scan in GitHub Actions. |
 
 ## Current coverage — CE track
 
@@ -95,3 +97,4 @@ the future Community Edition, not the live SaaS.
   already cover the settings surface — remaining gap is the Legal
   Questionnaire (Wizard) itself, which gets its own page in the
   follow-up commit.
+- **2026-10-10** — API docs merged into the v3 track (branch `docs/api-merge`): key management, release keys, API usage, API structure and v1 migration, endpoint group pages, API scope matrix (generated against app v3.3.59) and the ts-scan GitHub Actions recipe. `trustsource/api-docs` is deprecated.
