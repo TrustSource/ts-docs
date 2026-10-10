@@ -5,13 +5,16 @@
 
 A threat model is produced one of two ways: **generated** by the
 [Threat Modeling Agent (TMA)](../../13-capabilities/07-threat-model-agent.md),
-or **imported** from an existing OTM / OWASP Threat Dragon document.
+or **imported** from an existing OTM, OWASP Threat Dragon or CycloneDX
+TM-BOM document.
 
 ## Generating a model
 
 1. Click **Generate** — from the Threat Models list (choose a project in
-   the dialog) or from a project's module list (the project is
-   pre-selected).
+   the dialog) — or **Generate threat model** in the **Threat models**
+   section of a project's Risks page (the project is pre-selected; roles
+   `manager` and `compliance_manager`). That section also lists the
+   project's models.
 2. Pick a **stage**:
 
    | Stage | What it produces |
@@ -45,9 +48,25 @@ just that stage without going back to the project.
 
 ## Importing a model
 
-Import an existing **OTM** or **OWASP Threat Dragon** document from the
-Threat Models list. It appears in the list alongside generated models, and
-opens in the same Data Flow Diagram viewer.
+1. On the Threat Models list, press **Import**.
+2. Choose the **Project** the model belongs to.
+3. Select the **Document file**: an OTM file (`.yaml`, `.yml`), an OWASP Threat Dragon file (`.json`) or a CycloneDX TM-BOM (`.json`).
+4. Check the **Format**. It is detected from the file; change it if the detection is wrong. The options are *Open Threat Model (OTM)*, *OWASP Threat Dragon* and *CycloneDX TM-BOM (2.0 draft)*.
+5. Press **Import**.
+
+The model appears in the list next to generated models and opens in the same Data Flow Diagram viewer. An imported **TM-BOM** is read-only: the viewer shows a projection of the document and you cannot edit it there. TM-BOM is a CycloneDX 2.0 draft format.
+
+## Downloading a model
+
+Open a model and press **Download**. The menu offers, depending on how the model is stored:
+
+| Option | Gives you |
+|---|---|
+| **TrustSource (complete)** | Everything stored, including TrustSource-specific fields. The default. |
+| **OTM (spec-compliant)** | Only the fields defined by OTM v0.2.0, for tools that validate strictly. A message says how many fields were removed. Available for OTM models. |
+| **TM-BOM (CycloneDX 2.0 draft)** | The model as a CycloneDX TM-BOM. Not offered for a model that already is one. |
+
+A stored TM-BOM has a single **Download** button that returns the document as stored. Threat Dragon models offer the complete download and the TM-BOM export.
 
 📸 *Screenshot: the Generate dialog with the stage selector, and the live progress panel below it.*
 

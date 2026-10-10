@@ -3,13 +3,18 @@
 > [!NOTE]
 > **Required role:** `component_manager`
 
-This menu group is visible only to users with the **component_manager** role. It provides dedicated management views for infrastructure and COTS components, plus a company-wide critical components dashboard.
+The **Component mngr.** menu group is visible to users with the `component_manager` role. It adds the maintenance side to the read-only catalogues of the [Knowledge](../05-knowledge/index.md) section: you create and edit infrastructure and COTS components, and you fix components with missing license data in the whole component database.
 
-| Page | What it covers |
+| Menu entry | What it covers |
 |---|---|
-| [Manage Infrastructure](01-manage-infrastructure.md) | Create, edit and maintain infrastructure component entries (cloud services, databases, runtimes). |
-| [Manage COTS](02-manage-cots.md) | Create, edit and maintain commercial off-the-shelf component entries. |
-| [Critical Components](03-critical-components.md) | Components flagged as critical across the company portfolio — risk overview and tracking. |
+| **Manage IC** | The infrastructure components catalogue with create, edit and delete. See [Manage Infrastructure](01-manage-infrastructure.md). |
+| **Manage COTS** | The COTS catalogue with commercial terms. See [Manage COTS](02-manage-cots.md). |
+| **Critical Components** | Components with versions that lack license data, one tab per package type. See [Critical Components](03-critical-components.md). |
+
+Component managers also see **Component manager search** and **Add component** in the [Component Lake](../05-knowledge/01-component-lake.md).
 
 > [!TIP]
-> The read-only views of these catalogs are available to all users under [Knowledge → Infrastructure Elements](../05-knowledge/02-infrastructure-elements.md) and [Knowledge → COTS](../05-knowledge/03-cots.md). This section provides the **management** interface for creating and maintaining entries.
+> **Manage IC** and **Manage COTS** open the same lists as **Knowledge → Infrastructure Elements** and **Knowledge → COTS**. The extra buttons only appear for your role.
+
+> [!WARNING]
+> Changes to a component take effect for all later scans and analyses of every company that uses it. Edit with care; changes are logged.

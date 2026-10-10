@@ -3,24 +3,30 @@
 > [!NOTE]
 > **Required role:** `component_manager`
 
-The COTS (Commercial Off-The-Shelf) management view lets you maintain your company's catalog of commercial software components — proprietary libraries, licensed middleware, purchased tools and any other non-open-source software used in your projects.
+COTS (Commercial Off-The-Shelf) components are the commercial products you license rather than build. They are not found by scans, so you maintain them by hand. Open **Component mngr. → Manage COTS**; everyone else sees the list read-only under [Knowledge → COTS](../05-knowledge/03-cots.md).
 
-## What you can do
+## Add a component
 
-- **Create** new COTS entries with name, vendor, version, license terms and classification.
-- **Edit** existing entries — update licensing, add internal notes, set renewal dates.
-- **Delete** entries no longer in use.
+1. Press **Add COTS component**.
+2. Enter the **Name** (required) and optionally the **Key**, the **Versions** separated by commas, the **Homepage** and the **Repository**.
+3. Press **Create component**.
 
-📸 *Screenshot: the Manage COTS list with entries showing vendor, version and license status.*
+## Edit a component
 
-## When to use COTS entries
+Select a component, then **Edit**. The tabs **Info**, **CPE**, **Crawlers** and **Logs** work as for [infrastructure components](01-manage-infrastructure.md#edit-a-component). On **Info** you also set the **commercial terms**, each as *unlimited*, *limited* or *no*:
 
-Unlike open-source components (which are discovered automatically by scans), COTS components must be tracked manually. Typical use cases:
+- **Right to re-sell**
+- **Right to distribute**
+- **Right to host/operate as SaaS**
 
-- Licensed middleware or databases (Oracle, IBM MQ, Dynatrace).
-- Purchased libraries or SDKs (map providers, PDF engines).
-- Internal shared libraries from other teams that are treated as third-party.
+These terms are shown on the component page. **Soft-delete**, **Revert-delete** and **Delete** are available in the header.
+
+📸 *Screenshot: the commercial terms on the COTS edit page.*
+
+## Where it is used
+
+**View used as Modules** lists the modules of type COTS. See [Modules](../03-internal/02-modules/01-create-and-list.md) for the COTS module type.
 
 ## Related
 
-- [Knowledge → COTS](../05-knowledge/03-cots.md) — read-only catalog view
+- [Knowledge → COTS](../05-knowledge/03-cots.md)

@@ -3,24 +3,23 @@
 > [!NOTE]
 > **Required role:** `legal_manager`
 
-The Copyright & Trademarks view provides a company-wide registry for tracking trademarks and copyright notices associated with your products and projects.
+Maintain the copyrights and trademarks of the tools and brands used in ***TrustSource*** under **Legal mngr. → Copyright & Trademarks**; the page is titled **Copyrights / Trademarks**. The entries appear on the **Copyright & Trademarks** page that every user can open from the copyright line at the bottom of the left menu.
 
-## What you can do
+## The list
 
-- **Browse** the trademark and copyright registry.
-- **Create** new entries for trademarks, service marks and copyright notices.
-- **Edit** existing entries — update registration status, jurisdiction, renewal dates.
-- **Delete** entries that are no longer active.
+The table shows **Name**, **Type** (*Copyright* or *Trademark*), **Description**, **Usage** and **Link**. Select a row to edit an entry under **Update copyright/trademark information**; **Remove** deletes it.
 
-📸 *Screenshot: the Copyright & Trademarks list with trademark entries and status.*
+## Add an entry
 
-## When to use it
+1. Press the create button.
+2. Enter the **Name** and choose the **Type**.
+3. Add a **Description**, the **Usage** and an **External link**.
+4. Press **Create Trademark**.
 
-- Track your own trademarks and copyright notices for inclusion in compliance documents.
-- Maintain a registry of third-party trademarks that require attribution in your products.
-- Document trademark usage guidelines for your development teams.
+On the public page each entry is shown with its name (an anchor you can link to), description and usage text, and a **View** link when a link was entered.
+
+📸 *Screenshot: the Copyrights / Trademarks list.*
 
 ## Related
 
-- [Manage Legal](01-manage-legal.md) — license curation and review
-- [Outbound → Notice Files](../04-outbound/02-notice-files.md) — where copyright notices appear in generated documents
+- [Manage Legal](01-manage-legal.md)

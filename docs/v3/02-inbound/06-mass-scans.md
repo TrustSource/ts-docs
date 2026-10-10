@@ -2,62 +2,39 @@
 
 > [!NOTE]
 > **Required role:** `compliance_manager`, `manager` or `account_admin`
-> **Required account type:** Enterprise or Medical
-> **Status:** BETA
+> **Required account type:** Enterprise
+> **Status:** Beta
 
-***TrustSource*** lets you schedule deep scans across multiple repositories in a single pass — useful for enterprise-wide license and copyright inventory sweeps.
+A mass scan runs a [repository scan](05-repository-scans.md) for every component of a module in one pass. Use it to get file-level license and copyright evidence for a whole bill of materials, for example before a release or after a policy change. The page is called **Bulk repository** and opens from **Inbound → Mass Scans**; the menu entry is greyed out for other account types.
 
-## What it does
+## Schedule a mass scan
 
-Mass Scans extend the [Repository Deep Scan](05-repository-scans.md) feature to work at scale. Instead of scheduling scans one by one, you create a scan list that processes many repositories with the same analysis settings.
+1. Press **Schedule scan**.
+2. In **Schedule bulk scan**, choose the **Module**, grouped by project.
+3. Choose the **Analysis/Version** of the module to scan.
+4. Choose **Yes** or **No** for the options, as for a single repository scan, and whether the result is private.
+5. Press **Schedule DeepScan List**.
 
-## When to use it
+***TrustSource*** takes every component version of that analysis whose repository it knows and schedules one scan for each. A mass scan covers at most **500 component versions**; for a larger module the request is refused with a message saying so.
 
-- You need a **company-wide license inventory** across dozens or hundreds of repositories.
-- You want to run a **periodic compliance sweep** (e.g. quarterly crypto inventory for export control).
-- A new policy was introduced and you need to **re-evaluate all repositories** against it.
+📸 *Screenshot: the Schedule bulk scan dialog.*
 
-## How to use it
+## Monitor and review
 
-### Create a mass scan
+The list shows the private flag, the options (copyright, crypto, scorecard), the **Name** (project and module) and **Created**. A key button toggles private and public; the trash button removes the mass scan. Select a row to open it.
 
-1. Navigate to **Inbound → Mass Scans**.
-2. Click **Schedule scan**.
-3. Select the target **module** from your projects.
-4. Configure analysis options (same as single deep scans):
-   - Scorecard analysis
-   - Crypto analysis
-   - Copyright analysis
-5. Set the privacy flag (private or public results).
-6. Click **Schedule**.
+The detail page lists, per component version: **Url**, **Key**, **Version**, **Executed**, **Completed**, **Declared licenses**, **Found licenses**, **Found copyrights**, a link to the **Results** and the **Status**. The header offers:
 
-📸 *Screenshot: the mass scan creation form with module selector and analysis toggles.*
+- **Statistics** — completed, running or rejected, and failed scans, and how many scans found the same license, no result or another license than declared;
+- **CSV** to export the table and **Copy** to copy it;
+- a state filter for the rows.
 
-### Monitor progress
-
-The **Mass Scans list** shows all scheduled and completed mass scans:
-
-| Column | Meaning |
-|---|---|
-| **Name** | Scan list identifier. |
-| **Created** | When the mass scan was scheduled. |
-| **Privacy** | Whether results are private or shared. |
-| **Scorecard / Crypto / Copyright** | Which analysis types are enabled (toggle icons). |
-| **Actions** | View details, toggle privacy, delete. |
-
-📸 *Screenshot: the mass scan list with status indicators for each scan.*
-
-Click a row to see individual repository results. Each repository follows the same [deep scan result format](05-repository-scans.md) — file tree, license annotations, copyright notices, and false-positive feedback.
-
-### Managing mass scans
-
-- **Toggle privacy** — switch a mass scan between private and public visibility.
-- **Delete** — remove a mass scan and all its results.
+Select a result to open the single scan with the file tree.
 
 > [!CAUTION]
-> Deleting a mass scan removes all associated repository scan results. This cannot be undone.
+> Removing a mass scan removes its results.
 
 ## Related
 
-- [Repositories (Deep Scan)](05-repository-scans.md) — scanning a single repository in detail
-- [Scans](02-import-scans.md) — package-level scans vs. file-level deep scans
+- [Repository Scans](05-repository-scans.md)
+- [Licenses](../05-knowledge/06-licenses.md)
