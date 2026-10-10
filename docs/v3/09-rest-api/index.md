@@ -6,9 +6,9 @@
 |---|---|
 | [Authentication](01-authentication.md) | API key format, header usage, scopes. |
 | [Errors & Responses](02-error-handling.md) | HTTP status codes, error body format. |
-| [Endpoint Reference](03-endpoint-reference.md) | All 25 endpoint families. |
+| [Endpoint Reference](03-endpoint-reference.md) | Where to find the endpoint reference, and the endpoint groups. |
 | [Example: curl](04-examples-curl.md) | End-to-end workflow via curl. |
-| [Public Routes](05-public-routes.md) | Public SBOM/Notice sharing without auth. |
+| [Public Routes](05-public-routes.md) | Release keys and CSAF feed keys. |
 
 ## Base URL
 
@@ -17,6 +17,9 @@ https://api.trustsource.io/v2/
 ```
 
 All requests are JSON. CORS is enabled (`Access-Control-Allow-Origin: *`).
+
+> [!NOTE]
+> The API also has its own documentation site: <https://trustsource.github.io/api-docs/>.
 
 > [!TIP]
 > For interactive API exploration, use the built-in [API Documentation Browser](../08-personal/05-api-documentation.md) inside ***TrustSource***.
