@@ -33,7 +33,7 @@ Edits on the Countermeasures and Tasks tabs show up too: showing the tab reads t
 
 ## Company Logs
 
-The same edits appear in [Company Logs](../../06-administration/07-audit-logs.md) with the old and new state and the other fields that changed, together with the risk's project and module. A temporary exception that ends is logged there too.
+The same edits appear in [Company Logs](../../06-administration/07-audit-logs.md) as *Risk ...: state a -> b*, followed by the names of the other fields that changed, together with the risk's project and module. Only the History tab shows the old and new value of every field. A temporary exception that ends is logged there too.
 
 ## Read it over the API
 
