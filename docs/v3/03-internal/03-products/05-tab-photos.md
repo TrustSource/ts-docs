@@ -2,11 +2,25 @@
 
 > [!NOTE]
 > **Required license feature:** `products`
+> **Editing:** `developer`, `compliance_manager`, `company_security_manager` or `account_admin`
 
-Product photo gallery. Upload photos with drag-and-drop or file picker. Each photo stores upload date and uploader name. Useful for product identification and regulatory documentation.
+The **Photos** tab is a gallery of pictures and illustrations of the product, useful for identification and regulatory documentation.
 
-📸 *Screenshot: the Photos tab of a product.*
+## Upload a picture
+
+1. Click **Upload additional pictures or illustrations**.
+2. Select an image. Accepted formats: JPG, JPEG, PNG, WEBP, GIF, AVIF, SVG, HEIC and HEIF.
+
+The upload starts immediately (the button shows *Updating product* meanwhile) and the picture appears in the gallery. Other file types are rejected with "Invalid file type".
+
+## Browse and remove
+
+Use the gallery to page through the pictures. To delete one, show it and click **Remove picture**; the button is visible once at least one picture exists.
+
+Each picture stores who uploaded it and when. Photos can be downloaded together with the product documents; see [Documents](06-tab-documents.md).
+
+📸 *Screenshot: the Photos tab with a gallery of three pictures.*
 
 ## Related
 
-- [Products overview](index.md) — all eight product tabs
+- [Products overview](index.md) - all eight product tabs

@@ -16,14 +16,14 @@ A **product** in ***TrustSource*** represents what you ship to the customer. Pro
 
 | Tab | What it contains |
 |---|---|
-| [Information](02-tab-information.md) | Name, description, features, type, state, classification. |
+| [Information](02-tab-information.md) | Identifier, type, name, purpose and features; retire and revert. |
 | [Solutions](03-tab-solutions.md) | Approved releases linked to this product. |
 | [Classification](04-tab-classification-cra.md) | CRA classification (STANDARD, IMPORTANT_1, IMPORTANT_2, CRITICAL). |
 | [Photos](05-tab-photos.md) | Product photo gallery. |
 | [Documents](06-tab-documents.md) | User manual, secure setup guide, SBOM, CEDOC. |
 | [Contacts](07-tab-contacts.md) | Manufacturer info, PSIRT contact. |
 | [Support](08-tab-support.md) | Support contracts with dates and terms. |
-| [Misuse](09-tab-misuse.md) | Potential abuse scenarios (threat-related). |
+| [Misuse](09-tab-misuse.md) | Potential misuse cases required by the CRA. |
 
 📸 *Screenshot: the product list showing a hierarchical tree of products.*
 
