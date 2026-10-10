@@ -32,13 +32,6 @@ All requests and responses are JSON unless an endpoint says otherwise. CORS is e
 2. Call `GET /account/authorization` to check that the key works.
 3. Pick the operations you need on the [endpoint pages](endpoints/index.md) and try them in the [interactive API documentation](../08-personal/05-api-documentation.md).
 
-## Migrating from API v1
-
-> [!IMPORTANT]
-> API v1 was shut down on **30 September 2024**. Requests to it return `410`.
-
-Old scanners may still call `https://app.trustsource.io/api/v1/...`. To migrate, update the scanner to its latest version or change the target URL in its configuration. Point requests to `https://api.trustsource.io/v2` instead. The v2 API offers the same functions and more. Find the scanner repositories at <https://github.com/trustsource>.
-
 ## Further sources
 
 - [API Structure](06-api-structure.md) — the five building blocks of the API.

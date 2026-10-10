@@ -1,7 +1,7 @@
 # API scopes
 
 > [!NOTE]
-> Generated from the OpenAPI v2 specification (118 operations) and the scope checks of the REST API in ***TrustSource*** 3.3.59 on 2026-10-10. The Repository and Vulnerabilities rows come from the earlier API documentation. Operations whose scope is not documented anywhere are listed separately instead of guessed.
+> Generated from the OpenAPI v2 specification (118 operations) and the scope checks of the REST API in ***TrustSource*** 3.3.59 on 2026-10-10. The Repository and Vulnerabilities rows come from the earlier API documentation.
 
 Every API key carries a scope: one or more role names. A key may call an operation only if at least one of its scopes is allowed to. A call outside the scope fails with `403`. The scope of a key is set when you [create the key](../06-administration/04-api-keys.md). A personal access key takes your own roles as its scope.
 
@@ -208,9 +208,23 @@ An `x` means the scope may call the operation. The column **Licence** names a li
 | `POST /vulnerabilities/cveDetails` | x | x | x | x | x | x | x | x |  |
 | `POST /vulnerabilities/cveFind` | x | x | x | x | x | x | x | x |  |
 | `GET /vulnerabilities/cwes/{cwe_id}` | x | x | x | x | x | x | x | x |  |
+| `POST /vulnerabilities/cveFindByKey` | x | x | x | x | x | x | x | x |  |
 
 > [!NOTE]
 > The scopes for the Repository and Vulnerabilities groups are taken from the earlier API documentation. These groups are answered by separate backends, so the application code cannot confirm them.
+
+### EUVD, EPSS and PSIRT
+
+| Operation | Dev | Mgr | Compl | Port | Sec | Comp | Acct | Ent | Licence |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| `GET /euvd/{id}` | x | x | x | x | x | x | x | x |  |
+| `POST /euvd` | x | x | x | x | x | x | x | x |  |
+| `POST /epss` | x | x | x | x | x | x | x | x |  |
+| `GET /epss/{cve_id}/history` | x | x | x | x | x | x | x | x |  |
+| `GET /psirt/csaf` | x | x | x | x | x | x | x | x |  |
+
+> [!NOTE]
+> These operations only read, mostly public data. Every scope may call them.
 
 ### Users
 
@@ -236,19 +250,6 @@ These operations need no `x-api-key` header and no scope. The key in the URL dec
 | `GET /compliance/releases/{release_key}/csaf-changes` | [Release key](../06-administration/04b-release-keys.md) |
 | `GET /compliance/csaf/{csaf_key}/documents` | CSAF feed key |
 | `GET /compliance/csaf/{csaf_key}/documents/{document_id}` | CSAF feed key |
-
-## Operations without a verified scope
-
-No scope mapping is documented for these operations: they are answered by separate services and are new since the earlier API documentation. They are listed so that nothing looks allowed or forbidden by omission.
-
-| Operation | Why it is not in the matrix |
-|---|---|
-| `POST /vulnerabilities/cveFindByKey` | Served by a separate backend; no scope mapping in the application code |
-| `GET /euvd/{id}` | Served by a separate backend; no scope mapping in the application code |
-| `POST /euvd` | Served by a separate backend; no scope mapping in the application code |
-| `POST /epss` | Served by a separate backend; no scope mapping in the application code |
-| `GET /epss/{cve_id}/history` | Served by a separate backend; no scope mapping in the application code |
-| `GET /psirt/csaf` | Handler checks no role scope; gateway needs a valid key |
 
 ## Keys without a scope
 

@@ -29,7 +29,7 @@ The REST API documentation was merged into this help on **2026-10-10**; `trustso
 | Topic | Location in this help | Covers |
 |---|---|---|
 | API keys, release keys, usage | `docs/v3/06-administration/04-api-keys.md`, `04a-api-usage.md`, `04b-release-keys.md` | Key management, release keys, usage statistics. |
-| REST API | `docs/v3/09-rest-api/` (index, `06-api-structure.md`, `endpoints/`) | API structure, v1 migration, 22 endpoint group pages. |
+| REST API | `docs/v3/09-rest-api/` (index, `06-api-structure.md`, `endpoints/`) | API structure, 22 endpoint group pages. |
 | API scopes | `docs/v3/10-roles-permissions/09-api-scopes.md` | Operation × scope matrix, generated from the spec and the handler scope checks (app 3.3.59). |
 | Use case | `docs/v3/recipes/02-cicd-integration.md` | ts-scan in GitHub Actions. |
 
@@ -97,4 +97,4 @@ the future Community Edition, not the live SaaS.
   already cover the settings surface — remaining gap is the Legal
   Questionnaire (Wizard) itself, which gets its own page in the
   follow-up commit.
-- **2026-10-10** — API docs merged into the v3 track (branch `docs/api-merge`): key management, release keys, API usage, API structure and v1 migration, endpoint group pages, API scope matrix (generated against app v3.3.59) and the ts-scan GitHub Actions recipe. `trustsource/api-docs` is deprecated.
+- **2026-10-10** — API docs merged into the v3 track (branch `docs/api-merge`): key management, release keys, API usage, API structure, endpoint group pages, API scope matrix (generated against app v3.3.59) and the ts-scan GitHub Actions recipe. `trustsource/api-docs` is deprecated.
