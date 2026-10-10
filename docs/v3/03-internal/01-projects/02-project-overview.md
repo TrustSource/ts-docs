@@ -7,26 +7,22 @@ The project overview is the landing page when you click a project. It shows all 
 
 ## What you see
 
-Modules are displayed as **cards** (grid) or **rows** (table), each showing:
+- **Header:** project name with approval status, description and tags, plus the actions listed below.
+- **Tiles:** a row of four tiles — **Risks** (needs the `risks` license), **Deployments** (needs the `obom` license), **Releases** and **Analytics**. Each tile shows a headline number and opens its own page when you click it. These pages are described in later chapters.
+- **Module list:** the project's modules as **cards** (grid) or **rows** (table), each with approval status badge, status ribbon (OK, Warnings, Violations), compliance bars and last analysis date. The list toolbar has **Import**, **Create module** and **Analyze all**.
 
-- Module name with approval status badge
-- Status ribbon — OK, Warnings or Violations
-- Compliance bars — legal, security and quality percentages
-- Last analysis date
+📸 *Screenshot: the project page with the four tiles above the module list.*
 
-📸 *Screenshot: the project overview showing module cards with status ribbons and compliance bars.*
-
-## Actions
+## Header actions
 
 | Action | What it does |
 |---|---|
-| **Create Module** | Add a new module to this project. |
-| **Import Modules** | Import modules from a file or SPDX document. |
-| **Analyze All** | Re-analyze all modules against current policies. |
-| **Generate Reports** | Generate project-level reports (SBOM, Notice, SOUP). |
-| **Approve Project** | Create a project-wide approval. |
-| **Settings** | Open [Project Settings](settings/index.md). |
-| **Pin / Follow** | Pin to your dashboard or follow for notifications. |
+| **Reports** | Dropdown with the project-scoped reports: Licenses, Viability, OpenSSF, Versioning, Algorithms, Vulnerability, Obligations, Credits and Modifications. Below the divider: **Resolved obligations** and **Imports** (import history) — shown only if you have access. |
+| **Follow** | Follow the project to get notifications. |
+| **Settings** (cogs icon) | Open [Project Settings](settings/index.md). |
+
+> [!NOTE]
+> Approvals are started from a module (**Initiate approval** in the module header), not from the project page.
 
 Click any module to open the [Module Detail](../02-modules/02-module-detail-tabs.md).
 

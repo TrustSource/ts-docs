@@ -52,12 +52,21 @@ Code quality and test results from [SARIF uploads](../../02-inbound/04-sw-qualit
 
 ## Actions from the module header
 
+The actions are shown to `manager` and `compliance_manager`. Infrastructure modules only show **Settings**, **Analyse** and **Follow**.
+
 | Action | What it does |
 |---|---|
-| **Analyze** | Re-analyze this module against current policies and vulnerability data. |
 | **Settings** | Open [Module Settings](settings/index.md). |
-| **Approve** | Create an approval for this module. |
-| **Tags** | Manage module tags. |
+| **Env. settings** | Set the environmental vulnerability vector for this module. |
+| **Add component** | Add a component manually. |
+| **Analyze** | Re-analyze this module against current policies and vulnerability data. |
+| **Reports** | Dropdown: Vulnerability, Risks, Obligations, OpenSSF, Credits. |
+| **Initiate approval** | Start an [approval](../06-approvals/index.md) for this module (not shown for modules without a project). |
+| **Follow** | Follow the module for notifications. |
+| **Stats** | Dropdown with the module's status chart. |
+| **Take tour** | Start the guided tour. |
+
+Below the title, the **analysis** dropdown selects which analysis you look at. You can filter by branch or tag, open the scan details, and (as manager or compliance manager) use the **+** icon to attach a name to the selected analysis.
 
 ## Related
 
