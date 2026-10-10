@@ -78,22 +78,19 @@ curl -X POST https://api.trustsource.io/v2/core/tests/sarif \
 ```
 
 > [!WARNING]
-> **`moduleName` must match your dependency scan or SBOM upload exactly.**
-> TrustSource matches a module by name character-for-character — it does not
-> normalise or guess that two spellings mean the same thing. If your build
-> pipeline uploads dependency data (a scan, or an SBOM/SPDX import) under one
-> name — say the package name from your manifest, `@my-org/billing-service` —
-> and a separately maintained SARIF upload script sends a different name for
-> the same codebase — say the checkout folder, `billing-service` — you will
-> end up with **two modules** instead of one: one holding your dependency and
-> license data with no test findings, the other holding your SARIF findings
-> with no dependency information. Nothing in the upload response warns you
-> this happened; the split only becomes visible when a module you expect to
-> show both looks incomplete.
+> **Use the same module name on every upload path.**
+> Since 3.2.47, a dependency scan, an SBOM import and a SARIF upload that carry
+> the same module name land on the same module, whichever arrives first.
+> ***TrustSource*** still matches the name character for character within the
+> project: if the SARIF upload uses a different spelling than your scan (say
+> `billing-service` instead of `@my-org/billing-service`), you get two modules —
+> one with dependency data, one with test findings — and the upload response
+> does not warn you.
 >
-> Use the exact same project/module name on every upload path for a given
-> module, or — more reliably — look up the module once in the app or via the
-> API and pass its `moduleId` on subsequent uploads instead of a name.
+> Duplicate modules created before 3.2.47 are not merged automatically; merge
+> or remove them by hand. To be safe, pass the module's `moduleId` instead of a
+> name on subsequent uploads. `moduleName` and `projectName` work on all upload
+> paths; the older `module` and `project` still work.
 
 ## Related
 
