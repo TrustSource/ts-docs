@@ -16,7 +16,7 @@ A one-page reference for the roles, license features and account types in ***Tru
 | **Company Security Manager** | `company_security_manager` | Manages security configurations — CIA settings, capabilities, crypto-algorithm policies, vulnerability activity. |
 
 > [!NOTE]
-> Two additional **internal roles** exist (`component_manager`, `legal_manager`) that are not assignable through the standard UI. They unlock dedicated menu sections for component library and legal document management. See [Internal Roles](../10-roles-permissions/02-internal-roles.md).
+> Two additional **internal roles** exist (`component_manager`, `legal_manager`) that are not assignable through the standard UI. They unlock dedicated menu sections for component library and legal document management. A licence-bound role, `cvd_coordinator` (licence `cvdself`), is assignable only when the company holds the licence and has no permissions inside the app. See [Internal Roles](../10-roles-permissions/02-internal-roles.md).
 
 ## Role assignment rules
 
@@ -36,12 +36,19 @@ A one-page reference for the roles, license features and account types in ***Tru
 | `csaf` | CSAF security advisory documents | compliance_manager + |
 | `psirt` | CVD Cases (Coordinated Vulnerability Disclosure) | compliance_manager, manager, account_admin, company_security_manager |
 | `chat` | AI Chat Assistant (full-page and panel) | any role |
-| `medical` | SOUP reports, MDR/IVDR module classification | compliance_manager + |
-| `soup_report` | SOUP file generation (requires `medical`) | compliance_manager + |
+| `obom` | OBOM upload, Deployments tile, OBOM tab | project access |
+| `cvdself` | Makes the role `cvd_coordinator` assignable | n/a (marker role) |
 | `deep_scan` | Repository deep-scan analysis | developer + |
 
+Account type and plan features are not license flags:
+
+| Feature | Depends on |
+|---|---|
+| MDR/IVDR classification | Account type `medical` |
+| SOUP reports | `medical` or plan feature `soup_report` |
+
 > [!TIP]
-> License features are managed by your account admin under **Settings → Account & Billing**. If a feature is missing from your menu, it is either not licensed or your role does not include it.
+> License features are provisioned for your company and cannot be changed in the app. If a feature is missing from your menu, it is either not licensed or your role does not include it.
 
 ## Account types vs. features
 
@@ -65,8 +72,8 @@ A one-page reference for the roles, license features and account types in ***Tru
 |---|---|---|---|---|---|
 | Run scans | ✓ | ✓ | — | ✓ | — |
 | Review components | ✓ | ✓ | — | ✓ | — |
-| Create approvals | — | ✓ | — | — | — |
-| Approve / reject | — | ✓ | — | — | — |
+| Create approvals | — | ✓ | — | ✓ | — |
+| Approve / reject | — | ✓ | — | ✓ | — |
 | Create projects | — | — | — | ✓ | ✓ |
 | Assign managers | — | — | ✓ | ✓ | — |
 | Manage users | — | — | — | — | ✓ |
