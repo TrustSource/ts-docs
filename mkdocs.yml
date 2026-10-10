@@ -178,6 +178,31 @@ nav:
       - Endpoint Reference: v3/09-rest-api/03-endpoint-reference.md
       - Example (curl): v3/09-rest-api/04-examples-curl.md
       - Public Routes: v3/09-rest-api/05-public-routes.md
+      - API Structure: v3/09-rest-api/06-api-structure.md
+      - Endpoint Groups:
+        - v3/09-rest-api/endpoints/index.md
+        - Authorization: v3/09-rest-api/endpoints/authorization.md
+        - Projects: v3/09-rest-api/endpoints/projects.md
+        - Modules: v3/09-rest-api/endpoints/modules.md
+        - Products: v3/09-rest-api/endpoints/products.md
+        - Scans: v3/09-rest-api/endpoints/scans.md
+        - Imports (CycloneDX, SPDX): v3/09-rest-api/endpoints/imports.md
+        - OBOM: v3/09-rest-api/endpoints/obom.md
+        - Tests (SARIF): v3/09-rest-api/endpoints/tests.md
+        - Reports: v3/09-rest-api/endpoints/reports.md
+        - Risks: v3/09-rest-api/endpoints/risks.md
+        - Threat models: v3/09-rest-api/endpoints/threat-models.md
+        - Users: v3/09-rest-api/endpoints/users.md
+        - Compliance check: v3/09-rest-api/endpoints/compliance-check.md
+        - Compliance approvals: v3/09-rest-api/endpoints/compliance-approvals.md
+        - Compliance releases: v3/09-rest-api/endpoints/compliance-releases.md
+        - CSAF documents: v3/09-rest-api/endpoints/compliance-csaf.md
+        - CSAF feed: v3/09-rest-api/endpoints/compliance-csaf-feed.md
+        - Company FOSS: v3/09-rest-api/endpoints/compliance-foss.md
+        - Repository (DeepScan): v3/09-rest-api/endpoints/repository.md
+        - Vulnerabilities: v3/09-rest-api/endpoints/vulnerabilities.md
+        - EUVD & EPSS: v3/09-rest-api/endpoints/euvd-epss.md
+        - PSIRT: v3/09-rest-api/endpoints/psirt.md
     - Roles & Permissions:
       - v3/10-roles-permissions/index.md
       - The 8 Public Roles: v3/10-roles-permissions/01-roles-overview.md
@@ -188,6 +213,7 @@ nav:
       - Settings Permissions: v3/10-roles-permissions/06-settings-permission-matrix.md
       - License Features: v3/10-roles-permissions/07-license-features.md
       - Account Types: v3/10-roles-permissions/08-account-types.md
+      - API Scopes: v3/10-roles-permissions/09-api-scopes.md
     - Troubleshooting:
       - v3/11-troubleshooting-faq/index.md
       - FAQ: v3/11-troubleshooting-faq/01-faq.md
