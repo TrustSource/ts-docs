@@ -3,7 +3,7 @@
 > [!NOTE]
 > **Set by:** your ***TrustSource*** contact. License flags are provisioned for the company and cannot be changed in the app.
 
-A **license feature** is a flag in your company's `allowedLicenses`. Without the flag, the related menu entry is greyed out and the server refuses the matching calls.
+A **license feature** is a flag in your company's `allowedLicenses`. Without the flag, the related menu entry is hidden and the server refuses the matching calls.
 
 ## License flags
 
@@ -23,7 +23,7 @@ Creating risks from SARIF findings needs both `sarif` and `risks`.
 
 ## Where a flag takes effect
 
-- **Menu:** entries for unlicensed features are greyed out.
+- **Menu:** entries for unlicensed features are not shown.
 - **App:** server methods answer `403` ("This feature is not enabled for your company").
 - **REST API:** the `sarif`, `obom` and `csaf` endpoints answer `403`.
 

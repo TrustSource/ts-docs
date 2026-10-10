@@ -154,24 +154,33 @@ nav:
     - Administration:
       - v3/06-administration/index.md
       - Account & Billing: v3/06-administration/01-account-billing.md
-      - Settings: v3/06-administration/02-settings.md
+      - Identity Integration:
+        - v3/07-auth-sso/index.md
+        - User Storage: v3/07-auth-sso/01-user-storage.md
+        - Identity Providers: v3/07-auth-sso/02-identity-providers.md
+        - Stored Users: v3/07-auth-sso/03-stored-users.md
+        - Login Settings: v3/07-auth-sso/04-login-settings.md
+        - Authentication Flows: v3/07-auth-sso/05-authentication-settings.md
+        - SMTP Settings: v3/07-auth-sso/06-smtp-settings.md
+      - Integrations:
+        - v3/06-administration/08-integrations.md
+        - Issue Trackers: v3/06-administration/08a-issue-trackers.md
+        - LeanIX and SCANOSS: v3/06-administration/08b-leanix-scanoss.md
+        - Webhooks and Channels: v3/06-administration/08c-webhooks-channels.md
+      - Settings:
+        - v3/06-administration/02-settings.md
+        - Company Details: v3/06-administration/02a-company-details.md
+        - Company Tags: v3/06-administration/02b-company-tags.md
       - User Management: v3/06-administration/03-user-management.md
-      - API Keys: v3/06-administration/04-api-keys.md
-      - API Usage: v3/06-administration/04a-api-usage.md
-      - Release Keys: v3/06-administration/04b-release-keys.md
+      - API Keys:
+        - v3/06-administration/04-api-keys.md
+        - API Usage: v3/06-administration/04a-api-usage.md
+        - Release Keys: v3/06-administration/04b-release-keys.md
       - Policies: v3/06-administration/05-policies.md
       - Enterprise Companies: v3/06-administration/06-enterprise-companies.md
-      - Audit Logs: v3/06-administration/07-audit-logs.md
-      - Integrations: v3/06-administration/08-integrations.md
-      - Login History: v3/06-administration/09-login-history.md
-    - Identity Integration:
-      - v3/07-auth-sso/index.md
-      - User Storage: v3/07-auth-sso/01-user-storage.md
-      - Identity Providers: v3/07-auth-sso/02-identity-providers.md
-      - Stored Users: v3/07-auth-sso/03-stored-users.md
-      - Login Settings: v3/07-auth-sso/04-login-settings.md
-      - Authentication Flows: v3/07-auth-sso/05-authentication-settings.md
-      - SMTP Settings: v3/07-auth-sso/06-smtp-settings.md
+      - Audit Logs:
+        - v3/06-administration/07-audit-logs.md
+        - Login History: v3/06-administration/09-login-history.md
     - Component Manager:
       - v3/14-component-manager/index.md
       - Manage Infrastructure: v3/14-component-manager/01-manage-infrastructure.md
@@ -229,6 +238,7 @@ nav:
       - Functions by Area: v3/10-roles-permissions/04-functions-by-area.md
       - Functions by Role: v3/10-roles-permissions/05-functions-by-role.md
       - Settings Permissions: v3/10-roles-permissions/06-settings-permission-matrix.md
+      - Module Settings Permissions: v3/10-roles-permissions/06a-module-settings-matrix.md
       - License Features: v3/10-roles-permissions/07-license-features.md
       - Account Types: v3/10-roles-permissions/08-account-types.md
       - API Scopes: v3/10-roles-permissions/09-api-scopes.md
