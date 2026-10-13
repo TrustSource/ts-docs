@@ -35,7 +35,7 @@ CSAF documents are not part of this hub; find them under [Outbound → CSAF](../
 > [!NOTE]
 > The hub has no Viability report tile; the viability data is available through the REST API with `GET /core/reports/viability`. The OpenSSF Scorecard and Vulnerability activity reports of the SaaS edition are not part of TrustSource CE. See [CE and SaaS compared](../13-ce-vs-saas.md).
 
-📸 *Screenshot: the Reports hub with the report tiles.*
+![The Reports hub, titled Analyse Reports, with its report tiles, from Licenses overview, Vulnerability report, Versioning report and End-of-life report to Dependent projects and Components.](../../assets/images/ce/03-internal/04-reports-1.webp)
 
 ## Details
 

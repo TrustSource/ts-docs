@@ -2,7 +2,7 @@
 
 The **Messages** page collects the notifications ***TrustSource CE*** sends to you, for example about analyses, approvals, allow-list decisions and new vulnerabilities. Open it with the envelope icon **Messages** in the right bar. An open envelope ("Unread messages available") means you have unread messages.
 
-📸 *Screenshot: the Messages page with the folder buttons, the type filters and the message table.*
+![The Messages page with the Inbox, Marked and Trash buttons, the Filter box and the message table with From, Message and Date, listing unread approval notifications.](../../assets/images/ce/08-personal/02-inbox-messages-1.webp)
 
 ## Folders
 

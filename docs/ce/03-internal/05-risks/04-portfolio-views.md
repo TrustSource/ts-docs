@@ -24,7 +24,7 @@ A project is coloured by the worst of its modules.
 
 With more than 100 entries the chart shows projects only until you zoom in.
 
-📸 *Screenshot: the portfolio treemap coloured by state.*
+![The Portfolio overview treemap with Risks - State selected: the projects Webshop, Mobile App and Payment Service, each with its project risks and, for Webshop, the webshop-frontend module.](../../../assets/images/ce/03-internal/05-risks/04-portfolio-views-1.webp)
 
 ## Related
 

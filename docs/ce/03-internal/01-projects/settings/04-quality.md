@@ -15,7 +15,7 @@ The panel **Define test requirements** has one row per required tool. Test resul
 
 Rows that come from the company's quality list carry the label **in Company** and link to where you can change them. Every module of the project shows the project rows with the label **in Project**.
 
-📸 *Screenshot: the Quality tab with the tool selector and the Risk register panel.*
+![The Quality tab of Webshop with the Define test requirements panel, its Tool selector and Add button, and the Risk register panel with Enable risk creation from SARIF weaknesses (CWE) switched on.](../../../../assets/images/ce/03-internal/01-projects/settings/04-quality-1.webp)
 
 ## Risk register
 

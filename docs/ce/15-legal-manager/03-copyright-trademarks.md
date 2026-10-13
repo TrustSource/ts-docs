@@ -16,7 +16,7 @@ The page starts with a short statement: the app combines many new and existing t
 
 The list ships with TrustSource CE and is read-only. Every start of the app restores the shipped entries, so changes made directly in the database do not last. There is no screen to add or edit entries.
 
-📸 *Screenshot: the Copyright & Trademarks page.*
+![The Copyright & Trademarks page with the statement about the tools and trademarks used and the entry ScanOSS cpe2purl with its description, its use in TrustSource CE and the View link.](../../assets/images/ce/15-legal-manager/03-copyright-trademarks-1.webp)
 
 ## Related
 

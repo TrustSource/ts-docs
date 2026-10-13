@@ -28,4 +28,4 @@ For each analysis, the module's values are merged with the project's values. The
 - [CIA (Project)](../../01-projects/settings/03-cia.md)
 - [Risks](../../05-risks/index.md)
 
-📸 *Screenshot: the CIA tab with the project panel and the three requirement fields.*
+![The CIA tab: the Project CIA requirements panel with confidentiality high, integrity high and availability medium, and the module fields Confidentiality requirement (CR), Integrity requirement (IR) and Availability requirement (AR) with the Update button.](../../../../assets/images/ce/03-internal/02-modules/settings/08-cia-1.webp)

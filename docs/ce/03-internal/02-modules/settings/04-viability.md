@@ -42,4 +42,4 @@ Click **Update** to save and re-analyse the module. A toast confirms *Viability 
 > [!TIP]
 > The result shows as the Viability badge in the module's List view and in the Viability tab of an [approval](../../06-approvals/02-approval-detail-tabs.md). There is no Viability report page in the app; the REST API offers it under `/api/v2/core/reports/viability`, see [Reports endpoints](../../../09-rest-api/endpoints/reports.md).
 
-📸 *Screenshot: the Viability tab with the enable switch, two sliders and the confidence settings.*
+![The Viability tab with the switch Enable viability analysis for module turned on, the Warning threshold and Violation threshold sliders, the Minimum confidence level and the status shown if the minimum confidence level is not reached.](../../../../assets/images/ce/03-internal/02-modules/settings/04-viability-1.webp)

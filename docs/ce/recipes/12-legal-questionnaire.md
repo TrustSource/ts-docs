@@ -25,7 +25,7 @@ The questionnaire has two parts:
 
 3. Select **Finish**. The app confirms **Legal settings changed!**.
 
-📸 *Screenshot: project Legal tab with the Legal settings wizard on Question 1.*
+![The Legal tab of Webshop with the Legal settings wizard on Question 1, Commercial Aspects, listing the commercialisation options and the Next button.](../../assets/images/ce/recipes/12-legal-questionnaire-1.webp)
 
 If you are unsure, the app recommends the most restrictive answers: **usage fee** for the commercial aspects and the embedded (appliance) model for the operating model.
 

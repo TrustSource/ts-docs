@@ -27,7 +27,7 @@ Next to **Tags**, **Default project manager**, **Default compliance manager** an
 > [!TIP]
 > Use **Propagate to modules** after changing managers or members so that existing modules follow the project.
 
-📸 *Screenshot: the General settings tab with name, application goals, tags and manager fields.*
+![The General tab of Legacy Portal with Name, Application goals and Upload file, the tag internal, Alex Morgan and Maria Garcia as default managers, Members, Link with LeanIX, Default confidence level and the Update button.](../../../../assets/images/ce/03-internal/01-projects/settings/01-general-1.webp)
 
 ## Related
 

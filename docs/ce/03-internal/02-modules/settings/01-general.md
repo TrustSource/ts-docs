@@ -45,7 +45,7 @@ If you leave **Default confidence level** empty, the module inherits the value o
 > [!TIP]
 > An infrastructure module hides the tabs Quality, Crypto management, AI / ML, Allow/Deny, Capabilities, Custom components, History and Export SPDX. See [Infrastructure Modules](../03-infrastructure-modules.md).
 
-📸 *Screenshot: the General tab with name, project, tags, managers and the confidence level hint.*
+![The General tab of webshop-backend: Name, Description, Assigned Project Webshop, Type of architecture Backend-Service, the tag customer-facing, Default project manager Alex Morgan, Default compliance manager Maria Garcia, Members, Link with LeanIX, Module Identifier, Default confidence level and Repository, with the Update button.](../../../../assets/images/ce/03-internal/02-modules/settings/01-general-1.webp)
 
 ## Related
 

@@ -23,7 +23,7 @@ The detail page is titled with the license name and its identifier in brackets, 
 
 If the catalog holds no text for the license, the page reads "The text of this license is not stored in TrustSource CE." and links to the license URL when one is known.
 
-📸 *Screenshot: the license list with the All and Top List tabs.*
+![The Licenses page, 24 licenses known, with the Search licenses field and the tabs All and Top List; the All tab lists the licenses alphabetically, each with a link to its homepage.](../../assets/images/ce/05-knowledge/06-licenses-1.webp)
 
 ## Edit the catalog
 

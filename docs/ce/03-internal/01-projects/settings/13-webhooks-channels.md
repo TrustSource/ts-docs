@@ -39,7 +39,7 @@ Choosing a vulnerability trigger is the whole configuration of vulnerability ale
 
 The table shows **Created**, **Name**, **Type**, **Triggers**, **URL**, **Method** and **Headers**; **Remove** deletes an entry.
 
-📸 *Screenshot: the Webhooks and Channels tab with the Add webhook/channel dialog.*
+![The Add webhook/channel dialog with the name Security alerts, the triggers Vulnerabilities by module and Approval, the type Webhook, the method POST, a target URL on example.com and one header.](../../../../assets/images/ce/03-internal/01-projects/settings/13-webhooks-channels-1.webp)
 
 ## Related
 

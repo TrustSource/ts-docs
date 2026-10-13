@@ -15,7 +15,7 @@ Open **Administration → API keys**. The page **Scanners & API keys** opens wit
 
 Select **API keys** to see the key list.
 
-📸 *Screenshot: the API keys list with the columns Created, Number, Key (partial view), Name, Scopes, PAK and Last used, and the row actions.*
+![The API keys list with three keys: the personal access key of Alex Morgan with PAK ticked, GitHub Actions - Webshop with the developer scope, and Release pipeline with all scopes. Each row has the copy and Unpublish buttons.](../../assets/images/ce/06-administration/04-api-keys-1.webp)
 
 ## The key list
 

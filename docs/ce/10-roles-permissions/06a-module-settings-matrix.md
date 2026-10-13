@@ -2,7 +2,7 @@
 
 Field-level permissions for the **module** settings tabs of ***TrustSource CE***. For the codes, role abbreviations and the source of the tables, see the [project settings matrix](06-settings-permission-matrix.md#how-to-read-the-tables).
 
-📸 *Screenshot: the module settings tabs.*
+![The module settings of webshop-backend with the tab bar General, Legal, Quality, Crypto management, AI / ML, Allow/Deny, Capabilities and more, an arrow to scroll to the remaining tabs, and the top of the General tab.](../../assets/images/ce/10-roles-permissions/06a-module-settings-matrix-1.webp)
 
 Roles are combined with **OR**. See [Permission Model](03-permission-model.md).
 

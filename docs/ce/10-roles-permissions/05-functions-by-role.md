@@ -4,7 +4,7 @@ What each role can do in ***TrustSource CE***, one role at a time. Use it to dec
 
 Roles add up: a person with several roles can do everything any of them can do.
 
-📸 *Screenshot: the role drop-down in User Management.*
+![The Roles drop-down of Chris Taylor in User Management, with Portfolio manager and Manager assigned and the other roles offered in the list.](../../assets/images/ce/10-roles-permissions/05-functions-by-role-1.webp)
 
 ## Developer (`developer`)
 

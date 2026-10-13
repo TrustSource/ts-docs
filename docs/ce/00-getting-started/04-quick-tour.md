@@ -17,7 +17,7 @@ This page takes you through the main navigation groups of ***TrustSource CE***. 
 
 See [The Dashboard](07-dashboard.md) for every widget.
 
-📸 *Screenshot: the dashboard with the welcome banner and the compliance widgets.*
+![The dashboard with the welcome banner, the Company portfolio view treemap, and the Focussed projects and Incoming approval requests panels.](../../assets/images/ce/00-getting-started/04-quick-tour-1.webp)
 
 ## 2. Inbound (Scans) - bringing data in
 
@@ -30,7 +30,7 @@ Everything that feeds data into TrustSource CE lives here. Shown to Developer, C
 | **CI/CD Scan** | List of scans received from your CI/CD pipelines through the REST API. |
 | **SW Quality Scans** | SARIF test results from code analysis tools. |
 
-📸 *Screenshot: the Inbound (Scans) sub-menu expanded in the sidebar.*
+![The left sidebar with the Inbound (Scans) group expanded.](../../assets/images/ce/00-getting-started/04-quick-tour-2.webp)
 
 ## 3. Internal - managing your work
 
@@ -45,7 +45,7 @@ The largest group. This is where you manage the core objects. Shown to Developer
 | **Releases** | Approved module releases and their documents. | all roles of the group |
 | **Reports** | Hub for analysis reports: licenses, vulnerabilities, versioning, end-of-life, crypto, obligations and more. | all roles of the group |
 
-📸 *Screenshot: the Internal sub-menu expanded.*
+![The left sidebar with the Internal group expanded.](../../assets/images/ce/00-getting-started/04-quick-tour-3.webp)
 
 ## 4. Outbound - compliance documents
 
@@ -58,7 +58,7 @@ Documents you generate for others, or verify. Shown to Compliance manager, Manag
 | **CSAF** | Create, import and publish CSAF security advisories. |
 | **Verify** | Check a signed SBOM, notice or VEX file against its signature. |
 
-📸 *Screenshot: the Outbound sub-menu expanded.*
+![The left sidebar with the Outbound group expanded.](../../assets/images/ce/00-getting-started/04-quick-tour-4.webp)
 
 ## 5. Knowledge - reference data
 
@@ -73,7 +73,7 @@ Reference data shared across all projects. Shown to every role.
 | **Licenses** | The license catalog. |
 | **Open source policy** | Your company's open source policy. |
 
-📸 *Screenshot: the Knowledge sub-menu expanded.*
+![The left sidebar with the Knowledge group expanded.](../../assets/images/ce/00-getting-started/04-quick-tour-5.webp)
 
 ## 6. Administration - company settings
 
@@ -88,7 +88,7 @@ Company-wide configuration.
 | **Policies** | Open source policy, crypto algorithms, component end-of-life. | Account admin, Compliance manager, Company security manager |
 | **Audit logs** | Company log and login history. | Account admin |
 
-📸 *Screenshot: the Administration sub-menu expanded.*
+![The left sidebar with the Administration group expanded.](../../assets/images/ce/00-getting-started/04-quick-tour-6.webp)
 
 > [!NOTE]
 > Billing, account types, enterprise companies, identity integration (SSO), the AI assistants (OSCAR chat, Threat Model Agent), repository and mass scans and trainings are not part of CE. See [CE and SaaS compared](../13-ce-vs-saas.md).
@@ -97,19 +97,19 @@ Company-wide configuration.
 
 The narrow icon strip on the right edge of the screen gives you quick access to:
 
-| Icon | Action |
-|---|---|
-| Compass | **Guide for this screen** - opens the guide panel with a tour for the current screen. See [Guide, tour and demo project](08-guide-and-demo.md). |
-| Question mark | **Help** - opens the TrustSource CE README on GitHub. |
-| Document | **API documentation** - the built-in REST API documentation, where you can try the calls. |
-| Bell | **Updates** - the release notes shipped with your version. |
-| Envelope | **Messages** - your inbox. |
-| Paper plane | **Contact Account Admin** - writes an email to your company's account admin. |
-| Exit arrow | **Logout** - sign out. |
+| # | Icon | Action |
+|---|---|---|
+| 1 | Compass | **Guide for this screen** - opens the guide panel with a tour for the current screen. See [Guide, tour and demo project](08-guide-and-demo.md). |
+| 2 | Question mark | **Help** - opens the TrustSource CE README on GitHub. |
+| 3 | Document | **API documentation** - the built-in REST API documentation, where you can try the calls. |
+| 4 | Bell | **Updates** - the release notes shipped with your version. |
+| 5 | Envelope | **Messages** - your inbox. |
+| 6 | Paper plane | **Contact Account Admin** - writes an email to your company's account admin. |
+| 7 | Exit arrow | **Logout** - sign out. |
 
 On a narrow screen, these entries move into the left sidebar.
 
-📸 *Screenshot: the right bar with icons annotated.*
+![The dashboard with the seven right bar icons numbered from top to bottom: 1 Guide, 2 Help, 3 API documentation, 4 Updates, 5 Messages, 6 Contact Account Admin, 7 Logout.](../../assets/images/ce/00-getting-started/04-quick-tour-7.webp)
 
 ## Where to next
 

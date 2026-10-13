@@ -15,7 +15,7 @@ Click a badge to open the weakness in the [Vulnerability Lake](../05-knowledge/0
 
 A badge in the assigned style means that the weakness was assigned here rather than reported by the tool.
 
-📸 *Screenshot: the CWE strip and rule groups on a test page, one assigned badge in a different style.*
+![The CodeQL test page with the CWEs strip listing CWE-89, CWE-327, CWE-563 and CWE-79 with their finding counts, and the collapsed rule groups with their CWEs; CWE-563 of java/unused-local-variable is shown in the assigned style with Edit assigned CWEs.](../../assets/images/ce/02-inbound/04a-sarif-weaknesses-1.webp)
 
 ## Assign a CWE to a rule
 

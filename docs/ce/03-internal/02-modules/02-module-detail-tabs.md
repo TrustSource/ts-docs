@@ -21,7 +21,7 @@ Each row shows the component name, version and detected licenses (**Multi-licens
 
 The root of the module carries a folder icon. Managers and compliance managers also see a gavel icon there (**Set root component license**); see [Manual license resolution](06-manual-license-resolution.md#root-component).
 
-📸 *Screenshot: the List view with the Component Details side panel open.*
+![The List view of webshop-backend with log4j-core selected and the Component Details side panel open next to the list, showing Details, End-of-life, Versioning, Export control and the vulnerabilities of version 2.14.1.](../../../assets/images/ce/03-internal/02-modules/02-module-detail-tabs-1.webp)
 
 ### Tree and Graph
 

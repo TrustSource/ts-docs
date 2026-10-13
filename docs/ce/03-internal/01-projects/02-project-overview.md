@@ -11,7 +11,7 @@ The project page opens when you click a project in the [project list](01-create-
 - **Version selector:** below the title. **Current state** shows the modules as they are now; each approved version of the project (approval date and name) switches the list to the analyses that were approved then.
 - **Visibility note:** if the project has modules you are not allowed to see, a red note such as *3 of 5 visible to you* appears next to the selector.
 
-📸 *Screenshot: the project page with header actions and module cards.*
+![The Webshop project page with the Import, Settings, Add/link, Analyze all, Reports, Approve and Follow buttons in the header and the modules webshop-backend and webshop-frontend as cards in grid view.](../../../assets/images/ce/03-internal/01-projects/02-project-overview-1.webp)
 
 ## Header actions
 

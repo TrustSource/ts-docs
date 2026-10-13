@@ -10,7 +10,7 @@ If no policy is active, the page says *Your company does not yet have an active 
 
 When a new policy becomes active, users see a **New policy updates** dialog after signing in, with the same details. Open the file and click **Confirm** to acknowledge it; until you have viewed the file, the dialog reminds you: *You should review new policy first*. Viewing and confirming are written to the company's audit log, and the compliance manager sees the counts in the policy list.
 
-📸 *Screenshot: the active open source policy.*
+![The Open source policy page with the active policy Open Source Policy 2026, its Active from date, the description, the View policy file link and the Updated date.](../../assets/images/ce/05-knowledge/07-open-source-policy-1.webp)
 
 ## Related
 

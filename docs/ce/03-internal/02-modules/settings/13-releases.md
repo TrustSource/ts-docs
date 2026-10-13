@@ -27,4 +27,4 @@ The **Module scans** table lists every scan uploaded for this module, newest fir
 
 How scans get into a module is described in [Inbound](../../../02-inbound/index.md).
 
-📸 *Screenshot: the History tab with the Module analysis table and the Module scans table.*
+![The History tab of webshop-backend: the Module analysis table with two analyses, their license and component overview and a Remove button each, and the Module scans table below with the scan of webshop-backend 2.4.0.](../../../../assets/images/ce/03-internal/02-modules/settings/13-releases-1.webp)

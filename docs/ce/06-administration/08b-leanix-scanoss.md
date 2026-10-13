@@ -14,7 +14,7 @@ Link your projects and modules with the applications in your LeanIX workspace. S
 
 Select **Update** to save. Afterwards, the **General** settings of a project or module offer the LeanIX link. Without the integration, that field shows a link to these settings instead.
 
-📸 *Screenshot: the LeanIX settings page.*
+![The LeanIX settings page with a workspace name and a hidden API-Token typed in, and the Update button.](../../assets/images/ce/06-administration/08b-leanix-scanoss-1.webp)
 
 ## SCANOSS
 

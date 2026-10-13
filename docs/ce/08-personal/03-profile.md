@@ -2,7 +2,7 @@
 
 The **Manage Profile** page ("Configure your settings") holds your personal settings in ***TrustSource CE***. Open it by selecting your name and roles in the header.
 
-📸 *Screenshot: the Manage Profile page with the User, Personal access keys and Communication preferences panels.*
+![The Manage Profile page with the Enable Two-Factor Authentication and Change your Password buttons, and the User, Personal access keys and Communication preferences panels.](../../assets/images/ce/08-personal/03-profile-1.webp)
 
 The page header has two buttons: **Enable Two-Factor Authentication** (or **Disable Two-Factor Authentication**) and **Change your Password**.
 

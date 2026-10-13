@@ -22,7 +22,7 @@ The **Sign in** page has two fields, **Username** (your email address) and **Pas
 2. Click **Login**.
 3. If two-factor authentication is enabled for your account, a **Two-Factor Authentication** dialog asks you to *Enter the 6-digit code from your authenticator app*. Enter the code and click **Login**.
 
-📸 *Screenshot: the Sign in page with Username, Password, "I forgot my password" and the Login button.*
+![The Sign in page with the Username and Password fields, the I forgot my password link and the Login button, and the TrustSource CE version below the form.](../../assets/images/ce/00-getting-started/03-first-login-1.webp)
 
 If the sign-in fails, the page shows *Username/password combination not valid. Please try again*. The same message appears when your email address is not verified yet and when you made too many attempts in a short time; see [Common Errors](../11-troubleshooting-faq/02-common-errors.md).
 
@@ -74,7 +74,7 @@ You can protect your account with a time-based one-time code (TOTP) from an auth
 2. **Dashboard.** You land on the [Dashboard](07-dashboard.md).
 3. **Welcome tour.** On your first visit, a short guided tour of the navigation starts by itself. You can cancel it and start it again at any time with **Take tour**; see [Guide, tour and demo project](08-guide-and-demo.md).
 
-📸 *Screenshot: the dashboard of a new company with the "Welcome to TrustSource CE" banner.*
+![The dashboard of a newly created company: the Welcome to TrustSource CE banner with Load demo project and Take tour, an empty Activity log, and Finish company setup under the company name.](../../assets/images/ce/00-getting-started/03-first-login-2.webp)
 
 > [!WARNING]
 > If you hold all seven roles - as the first administrator and every user who signed up themselves do - the header shows *ATTENTION! You are using all roles. This is not intended for production use.* Invite your colleagues with only the roles they need, and work with fewer roles yourself where you can.
@@ -96,17 +96,17 @@ Your roles, projects and data change to those of the selected company. With a si
 
 The interface has four main areas:
 
-| Area | Location | Purpose |
-|---|---|---|
-| **Header** | Top bar | Logo, breadcrumb, the all-roles warning (if it applies), and your name and roles. Click your name to open your Profile. |
-| **Left sidebar** | Left edge | Main navigation: **Overview**, **Inbound (Scans)**, **Internal**, **Outbound**, **Knowledge**, **Administration**. At the bottom: the version (**TrustSource CE 1.0.0**), the copyright line and **Source code (AGPL-3.0)**. |
-| **Content area** | Centre | The current page, list or detail view. |
-| **Right bar** | Right edge | **Guide for this screen**, **Help**, **API documentation**, **Updates**, **Messages**, **Contact Account Admin**, **Logout**. |
+| # | Area | Location | Purpose |
+|---|---|---|---|
+| 1 | **Header** | Top bar | Logo, breadcrumb, the all-roles warning (if it applies), and your name and roles. Click your name to open your Profile. |
+| 2 | **Left sidebar** | Left edge | Main navigation: **Overview**, **Inbound (Scans)**, **Internal**, **Outbound**, **Knowledge**, **Administration**. At the bottom: the version (**TrustSource CE 1.0.0**), the copyright line and **Source code (AGPL-3.0)**. |
+| 3 | **Content area** | Centre | The current page, list or detail view. |
+| 4 | **Right bar** | Right edge | **Guide for this screen**, **Help**, **API documentation**, **Updates**, **Messages**, **Contact Account Admin**, **Logout**. |
 
 > [!TIP]
 > The left sidebar is **role-aware**: you only see menu items your roles give you access to. If something seems missing, check the [Roles Cheat Sheet](06-roles-cheatsheet.md).
 
-📸 *Screenshot: the main layout with header, sidebar, content area and right bar annotated.*
+![The main layout with four numbered areas: 1 the header, 2 the left sidebar, 3 the content area showing the Projects list, 4 the right bar.](../../assets/images/ce/00-getting-started/03-first-login-3.webp)
 
 ## Next steps
 

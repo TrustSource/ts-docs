@@ -21,7 +21,7 @@ Risks that nobody has started to work on: risks without any countermeasure whose
 
 Both lists are read-only. Use the link button at the end of a row to open the risk in the [Risks List](02-risks-list.md) in a new browser tab, where you can edit it.
 
-📸 *Screenshot: the Overview tab with the portfolio treemap and the New risks list.*
+![The Overview tab of Risk management with the Portfolio overview treemap of projects and modules, and below it the New risks (added in last 14 days) tiles and list.](../../../assets/images/ce/03-internal/05-risks/01-overview-1.webp)
 
 ## Related
 

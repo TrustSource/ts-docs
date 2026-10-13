@@ -60,7 +60,23 @@ Emails the app sends (invitations, password resets) are caught by Mailpit at <ht
 >
 > `INITIAL_ADMIN_PASSWORD` stays in `.env` in plain text. After the first sign-in, change the administrator's password in the app, then replace the value in `.env` with a random one (for example from `openssl rand -hex 32`) and run `docker compose up -d` so the running container no longer holds the old value. The compose file requires the setting to be present, but the app ignores it once a user exists.
 
-📸 *Screenshot: the terminal output of `docker compose logs -f ts_core` ending with "=> Initial admin created".*
+The end of `docker compose logs -f ts_core` on a first start looks like this (with your own email address and company name):
+
+```text
+ts_core-1  | => REGISTRATION_ENABLED false
+ts_core-1  | => INITIAL_ADMIN_EMAIL admin@example.com
+ts_core-1  | => INITIAL_ADMIN_PASSWORD set
+ts_core-1  | => INITIAL_COMPANY_NAME Example Corp
+ts_core-1  | [roles-seed] Created 8 canonical role(s)
+ts_core-1  | => Catch-all licenses inserted: 3
+ts_core-1  | => Popular licenses seeded: 21
+ts_core-1  | => Popular infrastructure components seeded: 6
+ts_core-1  | => Legal obligations seeded: 19
+ts_core-1  | => Legal rules seeded: 22
+ts_core-1  | => Initial admin created: admin@example.com in company Example Corp
+ts_core-1  | => Version: 1.0
+ts_core-1  | => Release notes inserted: 1.0
+```
 
 ## What runs where
 

@@ -28,4 +28,4 @@ Who may change which setting is listed in the [Settings Permission Matrix](../..
 
 MDR/IVDR classification is not part of TrustSource CE; see [CE and SaaS compared](../../../13-ce-vs-saas.md).
 
-📸 *Screenshot: project settings with the General tab active showing name, tags and manager fields.*
+![The project settings of Legacy Portal with the General tab active: Name, Application goals, Tags, Default project manager Alex Morgan, Default compliance manager Maria Garcia and Members, each manager field with a Propagate to modules button.](../../../../assets/images/ce/03-internal/01-projects/settings/index-1.webp)

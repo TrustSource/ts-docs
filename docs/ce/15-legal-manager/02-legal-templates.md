@@ -22,7 +22,7 @@ Press **Update legal requirements** to save. For a **Project** template the ques
 
 Creating, changing and removing templates is written to the company's audit log.
 
-📸 *Screenshot: a project template in the wizard view.*
+![The project template SaaS product (default) with Update template information and the Legal settings wizard started: Question 1 of 3 asks for the intended commercial use, with the View all button and Next.](../../assets/images/ce/15-legal-manager/02-legal-templates-1.webp)
 
 ## Related
 

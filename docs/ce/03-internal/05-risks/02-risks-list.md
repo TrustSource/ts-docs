@@ -14,7 +14,7 @@ Use the selector at the upper right (**Select report target**):
 
 Until you select a target, the page reads *Please select the project to run a report on the upper right*.
 
-📸 *Screenshot: the Risks list with the target selector and the tiles above the table.*
+![The Risks tab for All module of Webshop, with the report target selector at the upper right, the total, added last 7 days, in progress and resolved tiles, and the risk table with four Webshop risks.](../../../assets/images/ce/03-internal/05-risks/02-risks-list-1.webp)
 
 ## Tiles and filters
 

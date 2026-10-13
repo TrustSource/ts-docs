@@ -13,7 +13,7 @@ The license details page shows the text of a license. You reach it from a module
 
 The page does not rate the license. In TrustSource CE, obligations and violations are not stored in the license catalog; the bundled legalcheck service computes them for each module from the license, the project and module [Legal](settings/02-legal.md) settings, and your allow and deny lists. You see the result on the Legal view and in the [component side panel](04-component-detail.md).
 
-📸 *Screenshot: the license details page with the search box and the license text.*
+![The license details page Apache License 2.0 Apache-2.0 with the subtitle License Details, the Search in license text box and the Edit button in the header, and the license text below.](../../../assets/images/ce/03-internal/02-modules/05-license-detail-1.webp)
 
 ## From the Legal view
 

@@ -16,7 +16,7 @@ Open the release under **Internal → Releases**.
 - **Vulnerabilities**: the vulnerabilities as they were known at approval.
 - **Export control**: the crypto algorithms detected in the release.
 
-📸 *Screenshot: the New vulnerabilities tab of a release.*
+![The New vulnerabilities tab of the release Webshop Frontend 2.4.0 with Export as CSAF, the counters 1 new vulnerabilities, 0 resolved vulnerabilities and 1 vulnerable components, and the finding EXCORP-2026-0001 with score 7.5 in npm:webshop-frontend 2.4.0.](../../../assets/images/ce/03-internal/06-approvals/06-post-release-vulnerabilities-1.webp)
 
 External parties that hold a [release key](05-public-approves.md) can read the same changes as a CSAF VEX document from `/api/v2/compliance/releases/{release_key}/csaf-changes`.
 

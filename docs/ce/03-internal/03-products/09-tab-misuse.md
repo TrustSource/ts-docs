@@ -18,7 +18,7 @@ The table lists **Created**, **Case name** and **Description**; filter and sort 
 
 You can read and write misuse cases through the [Products API](../../09-rest-api/endpoints/products.md) as well.
 
-📸 *Screenshot: the Misuse tab with two cases.*
+![The Misuse tab of Home Hub X1 with the Add potential misuse case button and two cases, Using default credentials and Exposing the hub to the internet.](../../../assets/images/ce/03-internal/03-products/09-tab-misuse-1.webp)
 
 ## Related
 

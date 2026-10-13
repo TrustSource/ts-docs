@@ -32,9 +32,9 @@ The header and the card carry a label, **Infrastructure Module** or **COTS Modul
 
 If the entry is missing, click **Not finding what you are looking for?**, enter name and version and click **Send request**; the module is created with your values. A company component manager can add the entry to the catalog; see [Manage Infrastructure](../../14-component-manager/01-manage-infrastructure.md) and [Manage COTS](../../14-component-manager/02-manage-cots.md).
 
-Once created, vulnerabilities and license findings for that entry show in the project like for any other module. Click **Analyse** after changing settings to refresh the module's statistics. If the catalog entry has no details yet, the page reads *Sorry, detailed information not available yet.*
+Once created, the module takes part in the project's license findings, approvals and SBOMs like any other module. TrustSource CE does not look up vulnerabilities for catalog components, so the module shows no vulnerability findings. Click **Analyse** after changing settings to refresh the module's statistics. If the catalog entry has no details yet, the page reads *Sorry, detailed information not available yet.*
 
-📸 *Screenshot: an infrastructure module page with the Component Details panel.*
+![The page of the infrastructure module NGINX (1.26.0), labelled Infrastructure Service and Infrastructure Module, with the Component Details panel of the catalog entry im:nginx: Details, Select license, End-of-life, Versioning, Export control and the vulnerability section of version 1.26.0, which shows none.](../../../assets/images/ce/03-internal/02-modules/03-infrastructure-modules-1.webp)
 
 ## When to use them
 

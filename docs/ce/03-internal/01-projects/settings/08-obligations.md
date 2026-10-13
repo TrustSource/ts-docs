@@ -7,10 +7,10 @@ Use this tab to record which license obligations the project has already fulfill
 
 ## Record a completed obligation
 
-The list **List of completed constraints of project** has three columns: **Obligation**, **Comment** and **Component**.
+The list below the form has three columns: **Obligation**, **Comment** and **Component**.
 
 1. Select the **Obligation**.
-2. Optionally enter the **Component key** it was resolved for, for example `npm:left-pad`.
+2. Optionally enter the component **Key** it was resolved for, for example `npm:left-pad`.
 3. Enter a comment of up to 200 characters (required).
 4. Click **Add**.
 
@@ -18,12 +18,12 @@ Click a row to change it: the button becomes **Update**, and **Cancel** and **Re
 
 ## Import and propagate
 
-- **Import settings from Project**: choose a project (with a name search) and copy its list into this project.
+- **Import settings from Project** (shown once another project has resolved obligations): choose a project (with a name search) and copy its list into this project.
 - **Propagate settings to...**: push this project's list to one other project or to **All my n projects**. Portfolio managers also see **All n projects**.
 
 Each module shows the project list read-only in its own [Resolved obligations](../../02-modules/settings/03-obligations.md) tab under **Project obligations**.
 
-📸 *Screenshot: the Resolved obligations tab with the form and the list of completed obligations.*
+![The Resolved obligations tab of Legacy Portal with the Obligation, Key and Comment form and three resolved obligations, for example Reproduce copyright notice for npm:jquery.](../../../../assets/images/ce/03-internal/01-projects/settings/08-obligations-1.webp)
 
 ## Related
 

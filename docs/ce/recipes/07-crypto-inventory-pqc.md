@@ -47,13 +47,15 @@ Components of type `cryptographic-asset` become the module's cryptographic asset
 
 Open the module, select **Settings** and the **Crypto management** tab. **List of Algorithms as managed** shows the algorithms found in the imported data and lets you add, correct and remove entries.
 
-📸 *Screenshot: module settings, Crypto management tab with found algorithms.*
+![The Crypto management tab of the module webshop-backend with the algorithms found in the imported data, DES, ECDSA, RSA and SHA-1, and the List of Algorithms as managed with comments and the In use column.](../../assets/images/ce/recipes/07-crypto-inventory-pqc-1.webp)
 
 The project settings have a **Crypto management** tab as well, for project-wide entries.
 
 ### 4. Deny algorithms that are not quantum-safe
 
-Open **Administration → Policies → Crypto algorithms** and select **Deny algorithm**. Pick the algorithm, optionally a **Strength** (for example `1024` to deny only weak key sizes) and a **Comment**, and select **Add**. Repeat for every algorithm you want to phase out, for example RSA and ECDSA for key exchange and signatures.
+The deny list offers only the algorithms of your company's list, so add each algorithm (for example RSA, ECDSA) under **Administration → Settings → Private algorithms** first; see [Private algorithms](../06-administration/02-settings.md#private-algorithms).
+
+Then open **Administration → Policies → Crypto algorithms** and select **Deny algorithm**. Pick the algorithm, optionally a **Strength** (for example `1024` to deny only weak key sizes) and a **Comment**, and select **Add**. Repeat for every algorithm you want to phase out, for example RSA and ECDSA for key exchange and signatures.
 
 ### 5. Find where they are used
 
@@ -63,7 +65,7 @@ Under **Internal → Reports**:
 - **All bad crypto** - every use of a denied algorithm (Company security manager, Compliance manager or Portfolio manager);
 - **Algorithm impact** - every project that uses a given algorithm.
 
-📸 *Screenshot: All bad crypto overview with policy violations.*
+![The All bad crypto overview for the project Webshop: the counts of modules, components with algorithms, detected, managed and in-use algorithms and the coverage, and the Webshop row with the algorithms in use RSA, SHA-1 and DES, the last two marked B as denied by company policy.](../../assets/images/ce/recipes/07-crypto-inventory-pqc-2.webp)
 
 ### 6. Export the CBOM and track progress
 

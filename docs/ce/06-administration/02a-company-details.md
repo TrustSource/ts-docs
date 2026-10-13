@@ -9,7 +9,7 @@ Four cards on **Administration → Settings** hold data about your company in **
 
 The page has two panels.
 
-📸 *Screenshot: the General info page with the Company details and General settings panels.*
+![The General info page with the Company details panel (Company logo url, Company name, Company email) and the General settings panel (Distribution email, Currency code), each with an Update button.](../../assets/images/ce/06-administration/02a-company-details-1.webp)
 
 ### Company details
 

@@ -22,7 +22,7 @@ Click **Update** to save.
 > [!NOTE]
 > The requirements are stored with every module analysis and are part of the environmental context that the REST API returns for projects and modules, next to the environmental CVSS vector set with **Env. settings** on the module page. See [Projects endpoints](../../../09-rest-api/endpoints/projects.md). TrustSource CE does not adjust the CVSS scores of findings with the CIA requirements; use them as context for your own assessment and for tools that read the environmental context.
 
-📸 *Screenshot: the CIA tab with the three requirement fields.*
+![The CIA tab of Webshop with the Confidentiality requirement (CR) and Integrity requirement (IR) set to high and the Availability requirement (AR) set to medium.](../../../../assets/images/ce/03-internal/01-projects/settings/03-cia-1.webp)
 
 ## Related
 

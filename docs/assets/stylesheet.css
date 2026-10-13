@@ -3,3 +3,10 @@ root > * {
   --md-primary-fg-color--light: #FFFFFF;
   --md-primary-fg-color--dark:  #90030C;
 }
+/* CE screenshots: a light frame so white UI stays distinct from the page, also in dark mode. */
+.md-typeset img[src*="/images/ce/"] {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  margin: 0.4em 0;
+}

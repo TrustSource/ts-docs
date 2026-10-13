@@ -8,7 +8,7 @@ Select the **API documentation** icon in the right bar, or go to `https://<your-
 
 The raw specification is available at `https://<your-host>/api-v2/openapi.yaml`.
 
-📸 *Screenshot: the API documentation page with the operation groups.*
+![The API documentation page: the TrustSource Rest API header, the Servers selector and the collapsed operation groups from Account to CSAF.](../../assets/images/ce/08-personal/05-api-documentation-1.webp)
 
 ## Try a call
 

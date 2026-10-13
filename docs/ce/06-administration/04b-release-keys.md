@@ -7,7 +7,7 @@ A **release key** lets someone fetch the documents of one approved release of **
 
 Anyone who holds the key can read what it serves. Treat it like a password. Because the key is part of the URL, it also appears in the app log and in reverse proxy access logs; restrict who can read them. See [Public routes](../09-rest-api/05-public-routes.md).
 
-📸 *Screenshot: the Release keys page with one published and one unpublished key.*
+![The Release keys page with four keys. Keys 0 to 2 are published and show part of the key, the locked release and scope, and a Requested badge; key 2 was requested once and offers Unpublish. Key 3 is not published yet and offers Publish and Delete.](../../assets/images/ce/06-administration/04b-release-keys-1.webp)
 
 ## Before you start
 

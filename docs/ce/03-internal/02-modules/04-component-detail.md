@@ -21,7 +21,7 @@ Click a row in the **List** or **Tree** view of a [module](02-module-detail-tabs
 | **Comment** and **Comments** | Add a comment, or **Set status** to OK, Warning or Violation with a comment; **Reset component** removes the manual status. |
 | **History (up to 100 last entries)** | **Load 30 days history** shows the changes of the component in this module. |
 
-📸 *Screenshot: the Component Details side panel with the Vulnerabilities and license sections.*
+![The Component Details side panel of spring-beans 5.3.17: the Vulnerabilities section with CVE-2022-22965, shown as muted with the reason from the allowed vulnerability list, and CVE-2022-22970, the dependency path, and the license Apache-2.0 with its warnings, violation and obligations.](../../../assets/images/ce/03-internal/02-modules/04-component-detail-1.webp)
 
 ### Vulnerabilities
 

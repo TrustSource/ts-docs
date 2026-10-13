@@ -20,7 +20,7 @@ The page **SBOM files** lists every SBOM file of your company, including the one
 | **Complete** | How many components are cleared, in percent. |
 | (last column) | **Remove**. |
 
-📸 *Screenshot: the SBOM files list.*
+![The SBOM files list with the columns Created, Frozen, Project/Module, Components, Version, Edited, By and Complete, and a Remove button per row; the module file Webshop / webshop-backend is 36 percent complete.](../../assets/images/ce/04-outbound/01-sbom-cbom-1.webp)
 
 ## Create an SBOM file
 
@@ -36,7 +36,7 @@ Click a row to open the file. The left side lists the components; open one to ed
 
 The **TODOs Navigator** on the right counts components and remaining ToDos, shows the completion in percent, and jumps to a component. **ToDo's** / **Show all** switches between open and all components.
 
-📸 *Screenshot: an SBOM file with an opened component and the TODOs Navigator.*
+![The SBOM file of Webshop / webshop-backend with log4j-core opened for editing on the left and the TODOs Navigator on the right with the component count, the remaining ToDos and the completion.](../../assets/images/ce/04-outbound/01-sbom-cbom-2.webp)
 
 ## Versions and freezing
 

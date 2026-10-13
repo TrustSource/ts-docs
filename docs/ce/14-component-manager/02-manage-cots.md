@@ -24,7 +24,7 @@ Set the **commercial terms**, each as *unlimited*, *limited* or *no*:
 
 These terms are shown on the component page and in the [COTS overview](../03-internal/04c-impact-and-portfolio-reports.md#cots-overview) report. **Soft-delete**, **Revert-delete** and **Delete** are available in the header.
 
-📸 *Screenshot: the commercial terms on the COTS edit page.*
+![The Commercial terms panel on the edit page of Example Analytics Suite: Right to re-sell no, Right to distribute limited, Right to host/operate as SaaS unlimited and Right to modify no.](../../assets/images/ce/14-component-manager/02-manage-cots-1.webp)
 
 ## Where it is used
 

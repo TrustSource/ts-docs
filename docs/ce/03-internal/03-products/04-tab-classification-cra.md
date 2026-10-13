@@ -20,7 +20,7 @@ Once a value is saved, the tab lists these example areas below the form as orien
 > [!NOTE]
 > The examples are a guide, not a legal assessment. ***TrustSource CE*** stores your choice but does not derive it.
 
-📸 *Screenshot: the Classification tab with IMPORTANT Class 1 selected and the example list.*
+![The Classification tab of Home Hub X1 with IMPORTANT Class 1 selected and the sample areas for this class listed below.](../../../assets/images/ce/03-internal/03-products/04-tab-classification-cra-1.webp)
 
 ## Related
 

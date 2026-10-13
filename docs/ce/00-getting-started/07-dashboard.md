@@ -12,7 +12,7 @@ The banner at the top reads **Welcome to TrustSource CE** and has these buttons:
 
 See [Guide, tour and demo project](08-guide-and-demo.md) for details.
 
-📸 *Screenshot: the "Welcome to TrustSource CE" banner with Load demo project and Take tour.*
+![The Welcome to TrustSource CE banner with the Load demo project and Take tour buttons.](../../assets/images/ce/00-getting-started/07-dashboard-1.webp)
 
 ## Widgets by role
 
@@ -39,7 +39,7 @@ A treemap of all your projects (large rectangles) and their modules (small recta
 2. Click a project to zoom into it. Click **Back to all** to return.
 3. Click a module to open its dependencies in a new tab.
 
-📸 *Screenshot: the Company portfolio view treemap with the View type selector.*
+![The Company portfolio view: a treemap with one rectangle per project and module, coloured by status, and the view type selector set to Components - Summary.](../../assets/images/ce/00-getting-started/07-dashboard-2.webp)
 
 ## Focussed projects
 

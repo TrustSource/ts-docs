@@ -24,4 +24,4 @@ A **module** is the unit of analysis in ***TrustSource CE***. It represents one 
 
 Repository deep scans, the OpenSSF Scorecard, MDR/IVDR classification and the OBOM tab are not part of TrustSource CE; see [CE and SaaS compared](../../13-ce-vs-saas.md).
 
-📸 *Screenshot: a module page showing the dependency list with status indicators.*
+![The webshop-backend module page in the List view: each dependency with its license and with red or yellow status badges, the OK, Warnings and Violations filters, and the Component Details panel of the module root on the right.](../../../assets/images/ce/03-internal/02-modules/index-1.webp)

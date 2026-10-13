@@ -18,4 +18,4 @@ The panel **Associate capabilities with this module** lists each capability with
 
 The pencil icon at the end of a row edits a capability, the trash icon removes it. Both are available only with write rights.
 
-📸 *Screenshot: the Capabilities tab with the Add capability dialog.*
+![The Add capability dialog over the Capabilities tab, filled in with the Name Single sign-on, Introduced at version 3.2.0 and a Description, with the Add button.](../../../../assets/images/ce/03-internal/02-modules/settings/09-capabilities-1.webp)

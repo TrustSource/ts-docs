@@ -36,7 +36,7 @@ To bring it back, click **Revert**, enter a reason and confirm with **Yes, rever
 
 Retire and revert are written to the company's [audit log](../../06-administration/07-audit-logs.md).
 
-📸 *Screenshot: the Information tab of a retired product showing reason, user and date next to the Revert button.*
+![The retired product Indoor Camera C1, shown struck through in the tree after Show all. Its Information tab shows the shortened reason Replaced by Indoor Cam..., the user and the date in a red box next to the Revert button.](../../../assets/images/ce/03-internal/03-products/02-tab-information-1.webp)
 
 ## Related
 

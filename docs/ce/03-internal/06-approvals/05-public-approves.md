@@ -40,7 +40,7 @@ On the release page, **Published keys** opens the list of keys of that release:
 
 To limit what a key serves (SBOM, notice, CSAF), see [Release keys](../../06-administration/04b-release-keys.md) under **Administration → API keys**.
 
-📸 *Screenshot: the Published keys dialog of a release.*
+![The Published keys dialog of the release Webshop Frontend 2.4.0 with two published keys: one used once, with the copy button and Unpublish, and one never used, with the copy button and Delete. Create new key and Close are below.](../../../assets/images/ce/03-internal/06-approvals/05-public-approves-1.webp)
 
 ## Packageurl
 

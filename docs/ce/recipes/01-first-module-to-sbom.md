@@ -24,7 +24,7 @@ This recipe takes you from a fresh ***TrustSource CE*** installation to an appro
 
 Open **Internal → Projects** and select **Create**. Enter a **Project name**, for example the name of the product the software belongs to, and select **Create project**.
 
-📸 *Screenshot: Projects page with the "Create new project" dialog open.*
+![The Projects page with the Create new project dialog open and Smart Home Hub entered as Project name, with Close and Create project below.](../../assets/images/ce/recipes/01-first-module-to-sbom-1.webp)
 
 > [!TIP]
 > If you only want to look around, select **Generate** instead. It creates a demo project with a sample module that runs through the real analysis. **Remove demo** deletes it again.
@@ -35,7 +35,7 @@ Choose one of the two ways.
 
 **A. Import an SBOM file.** Open **Inbound (Scans) → Import Scans**. Pick your project under **Project**, set the toggle to **CycloneDX** or **SPDX**, choose the **File** and enter a **Module name**, for example `webshop-backend`. Select **Import**. The app opens the project's module list.
 
-📸 *Screenshot: Import Scans page with project, format toggle, file and module name filled in.*
+![The Import Scans page with Webshop selected as Project, the toggle set to CycloneDX, the file webshop-backend.cdx.json chosen, webshop-backend as Module name and the Import button.](../../assets/images/ce/recipes/01-first-module-to-sbom-2.webp)
 
 **B. Scan your repository with ts-scan.** First get an API key. On a fresh installation the initial admin is the account admin:
 
@@ -60,7 +60,7 @@ ts-scan upload --base-url "https://<your-host>/api" \
 
 Open your project and then the module. The analysis runs in the background and usually finishes within a minute. The **Analysis from** line under the module name shows the date of the analysis you are looking at.
 
-📸 *Screenshot: module page with the List tab populated and status colours visible.*
+![The webshop-backend module page with the List tab active and the Analysis from line under the module name: the components with their versions, licenses and red, orange or green legal and security markers, and the details of the selected component on the right.](../../assets/images/ce/recipes/01-first-module-to-sbom-3.webp)
 
 - **List**, **Tree** and **Graph** show the components and their dependencies. Select a component for its versions, licenses and vulnerabilities.
 - **Legal** shows the licenses, their obligations and violations.
@@ -80,7 +80,7 @@ When the module's status is good enough to ship, select **Initiate approval** in
 3. **Confirm statuses** - check the module's statuses.
 4. **Finalization** - the app generates the approval reports. Select **Jump to Compliance Report**.
 
-📸 *Screenshot: approval wizard on step 1 Settings.*
+![Step 1 Settings of the approval wizard for webshop-backend with Dry run unticked, Webshop Backend as Approve name or product name, version 2.4.0, a Packageurl and an Approve description.](../../assets/images/ce/recipes/01-first-module-to-sbom-4.webp)
 
 ### 5. Review and approve
 
@@ -88,7 +88,7 @@ A compliance manager opens the approval under **Internal → Approvals** and wor
 
 When the review is done, the compliance manager selects **Approve** (or **Reject** with a reason). An approved approval cannot be changed; the next iteration is a new approval.
 
-📸 *Screenshot: approval detail with the Approve and Reject buttons.*
+![The open approval Webshop Frontend 2.5.0 with Manage binary links, Approve and Reject in the header, the tabs Overview, Vulnerabilities, Licenses, Versioning, Viability, Status changes, Export control, Capabilities and SW-Quality, and the Modules table.](../../assets/images/ce/recipes/01-first-module-to-sbom-5.webp)
 
 ### 6. Download the release SBOM
 
@@ -98,7 +98,7 @@ The approved approval is now a release. Open **Internal → Releases** and the r
 - **CycloneDX** - **SBOM (components)**, **CBOM (cryptography)**, **AIBOM (AI / ML)** or **Full BOM (components + crypto + AI)**, as CycloneDX 1.7 JSON;
 - **SPDX** - SPDX 2.3.
 
-📸 *Screenshot: SBOM file page with the PDF, CycloneDX and SPDX buttons.*
+![The SBOM file page of the release Webshop Frontend 2.4.0 with the buttons PDF, CycloneDX, SPDX, Version and Freeze in the header, the components of the release and the TODOs Navigator.](../../assets/images/ce/recipes/01-first-module-to-sbom-6.webp)
 
 The release's **New vulnerabilities** tab shows vulnerabilities found after the approval, so you see when a shipped version becomes affected.
 

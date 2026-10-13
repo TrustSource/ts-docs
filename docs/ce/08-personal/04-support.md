@@ -2,7 +2,7 @@
 
 ***TrustSource CE*** is a self-hosted, open source edition. There is no vendor support desk built into the app; help comes from this documentation, your own administrators and the project on GitHub.
 
-📸 *Screenshot: the right bar with the Help and Contact Account Admin icons highlighted.*
+![The right bar with the Help icon at the top and the Contact Account Admin icon at the bottom outlined.](../../assets/images/ce/08-personal/04-support-1.webp)
 
 ## In the app
 

@@ -5,7 +5,7 @@
 
 The **Integrations** page connects ***TrustSource CE*** to the tools your team already uses: issue trackers, your application portfolio and receivers for notifications. Open it from **Administration → Integrations**. Each tile leads to the settings page of one integration.
 
-📸 *Screenshot: the Integrations page with the six tiles.*
+![The Integrations page with the tiles Github, Jira, TFS, SCANOSS, Webhooks and Channels, and LeanIX.](../../assets/images/ce/06-administration/08-integrations-1.webp)
 
 | Tile | What it does | Details |
 |---|---|---|

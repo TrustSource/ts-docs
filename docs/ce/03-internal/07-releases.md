@@ -27,7 +27,7 @@ Open **Internal → Releases**. The page lists the approved module releases, new
 
 Click a row to open the release.
 
-📸 *Screenshot: the releases list with approval dates and versions.*
+![The Releases list with All company projects selected: Payment Service 3.1.0 and Webshop Frontend 2.4.0, both approved on Oct 13, 2026 with Maria Garcia as contact and a Link button.](../../assets/images/ce/03-internal/07-releases-1.webp)
 
 ### Link a release into a project
 
@@ -49,7 +49,7 @@ The header shows the name, **Packageurl** and description of the release, and th
 | **Vulnerabilities** | The vulnerabilities as known at approval. |
 | **Export control** | The crypto algorithms detected in the release. |
 
-📸 *Screenshot: the release details with the New vulnerabilities tab.*
+![The release Webshop Frontend with the buttons SBOM, Binary links, Published keys and Approved in the header, and the New vulnerabilities tab open with one new vulnerability in npm:webshop-frontend 2.4.0.](../../assets/images/ce/03-internal/07-releases-2.webp)
 
 ## Related
 

@@ -22,9 +22,9 @@ Run the analyses again so they query OSV:
 
 ### 2. Find out where you are affected
 
-Open **Internal → Reports → CVE impact**, enter the id (for example `CVE-2021-44228`) and select **Check**. The report shows the vulnerability with its score and every project, module and component version it affects, with the responsible project and compliance managers.
+Open **Internal → Reports → CVE impact**, enter the id (for example `CVE-2021-44228`) and select **Check**. The report shows the vulnerability with its score and every project and module it affects, with the analysis that contains it and, where set, the responsible project and compliance managers.
 
-📸 *Screenshot: CVE impact report with one CVE and the affected projects listed.*
+![The CVE impact report for CVE-2021-44228: the CVE description with score 10, CWE-20 and the CVSS vector, and the impacted project Webshop with the module webshop-backend and its analysis of v2.4.0.](../../assets/images/ce/recipes/04-react-to-0day-1.webp)
 
 Alternatives:
 

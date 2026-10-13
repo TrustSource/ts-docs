@@ -19,7 +19,7 @@ The warning threshold must not be lower than the violation threshold, unless it 
 >
 > A typical configuration is a warning at 6 months and a violation at 1 month. This gives your team half a year to plan a migration away from the component.
 
-📸 *Screenshot: the End-of-life tab with the enable switch and the two month sliders.*
+![The End-of-life tab of Webshop with Enable end-of-life analysis for all modules switched on, the Warning threshold slider at 6m and the Violation threshold slider at no monitoring.](../../../../assets/images/ce/03-internal/01-projects/settings/06-end-of-life-1.webp)
 
 ## Related
 

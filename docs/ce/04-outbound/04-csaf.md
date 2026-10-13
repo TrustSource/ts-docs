@@ -26,7 +26,7 @@ Open **Outbound → CSAF**. The page lists the CSAF files of your company.
 
 The buttons **Published**, **Draft** and **Failed** show or hide each status. Click a row to open the document.
 
-📸 *Screenshot: the CSAF list with status filter.*
+![The CSAF list with the Published, Draft and Failed status filter buttons and two drafts, a security advisory for Webshop Backend and a VEX document for Payment Service, each with the publish, edit and delete actions.](../../assets/images/ce/04-outbound/04-csaf-1.webp)
 
 ## Create a document
 
@@ -43,7 +43,7 @@ VEX documents are also created from vulnerability data:
 - **Export as CSAF** on the **New vulnerabilities** tab of a [release](../03-internal/07-releases.md) creates a VEX draft for the new vulnerabilities and downloads it.
 - The [vulnerability report](../03-internal/04a-vulnerability-report.md) can create a CSAF document from its findings.
 
-📸 *Screenshot: step 1 Type of the Create CSAF wizard.*
+![Step 1 Type of the Create CSAF wizard with the four choices Informational Advisory, Security Advisory, VEX and Security Incident.](../../assets/images/ce/04-outbound/04-csaf-2.webp)
 
 ## Import a document
 

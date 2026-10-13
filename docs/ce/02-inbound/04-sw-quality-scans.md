@@ -18,7 +18,7 @@ The file is checked against the SARIF schema before it is stored; an invalid fil
 > [!WARNING]
 > Import from the module's **Quality** tab to attach the results to that module. A file imported with **Import** on the **Tests** page itself is stored *without a module*: it shows in the list, but it is not part of any module and creates no risks. To import for a module without opening the app, use the API with a project and module name.
 
-📸 *Screenshot: the Import test dialog.*
+![The Import test dialog opened from the Quality tab of a module, with the Browse button for the SARIF file and the Import button.](../../assets/images/ce/02-inbound/04-sw-quality-scans-1.webp)
 
 ### Import with the API
 
@@ -57,7 +57,7 @@ Reading the stored documents is possible too: `GET /api/v2/core/tests/sarif` lis
 
 Click a row to open the test. Use the buttons **Passed**, **Unfinished** and **Failed/Findings** to show or hide each status, and the filter box to search.
 
-📸 *Screenshot: the Tests list with several imports from different tools.*
+![The Tests list with three SARIF imports from ESLint, Semgrep OSS and CodeQL, all Failed, with their findings per severity, the CWEs badges and the project and module links.](../../assets/images/ce/02-inbound/04-sw-quality-scans-2.webp)
 
 ### How findings are counted
 
@@ -90,7 +90,7 @@ The page **Test details** shows the run's findings, grouped by rule:
 - A finding lists the file, line, message and code snippet. Findings without a location say **No file location reported**.
 - Per rule group: **Create issue** opens the dialog *Create new GitHub issue* (needs the GitHub integration, see [Integrations](../06-administration/08-integrations.md)), and **Create risk** adds a single risk to the register (Compliance manager or Manager).
 
-📸 *Screenshot: a test page grouped by rule, with Create issue and Create risk.*
+![The Test details page of the Semgrep OSS run grouped By Rule: three rule groups with their findings, CWE badges, and the Create issue and Create risk actions; the rule without a CWE also offers Assign CWEs.](../../assets/images/ce/02-inbound/04-sw-quality-scans-3.webp)
 
 ## Required tests
 

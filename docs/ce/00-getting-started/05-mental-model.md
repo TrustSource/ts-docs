@@ -31,7 +31,7 @@ A few catalogs are shared by all companies of an installation: the **Component L
 
 An organisational container. A project groups related modules - typically one project per software product line, business unit or team. Projects carry their own legal and obligation settings, default project and compliance manager, issue-tracker settings (Jira, TFS, GitHub issues), webhooks and policy overrides.
 
-📸 *Screenshot: project list with one project expanded to show its modules.*
+![The Webshop project page listing its two modules, webshop-backend and webshop-frontend, with their state, components and legal, security and quality bars.](../../assets/images/ce/00-getting-started/05-mental-model-1.webp)
 
 ### Module
 
@@ -45,7 +45,7 @@ The **unit of analysis** in TrustSource CE. A module represents one piece of sof
 
 A module belongs to at most one project (a module can be unassigned). Module settings can override project defaults where it makes sense.
 
-📸 *Screenshot: module page with the List, Tree, Graph, Legal and Quality views.*
+![The webshop-frontend module page with the List, Tree, Graph, Legal and Quality views and the component list.](../../assets/images/ce/00-getting-started/05-mental-model-2.webp)
 
 ### Infrastructure Module
 
@@ -62,7 +62,7 @@ TrustSource CE does not look up vulnerabilities for catalog components, so infra
 
 Use infrastructure modules whenever you want to describe the **complete** runtime and distribution surface of your software, as frameworks like the EU CRA and customer due-diligence questionnaires increasingly expect. See [Infrastructure Modules](../03-internal/02-modules/03-infrastructure-modules.md).
 
-📸 *Screenshot: an infrastructure module in the project's module list, with its catalog entry and version.*
+![The Payment Service project in the grid view: the infrastructure module NGINX, created from the catalog entry NGINX 1.26.0 and labelled Infrastructure Service and Infrastructure Module, next to the module payment-service.](../../assets/images/ce/00-getting-started/05-mental-model-3.webp)
 
 ### Component
 
@@ -79,7 +79,7 @@ You normally don't manage components by hand - scans and SBOM imports do that fo
 
 A product is **what you ship to the customer**. It contains one or more solutions, which link to modules and releases. Products are particularly relevant for **EU Cyber Resilience Act (CRA)** compliance - they carry the CRA classification, the misuse cases, contacts, support information, documents and photos.
 
-📸 *Screenshot: a product with its eight tabs: Information, Solutions, Classification, Photos, Documents, Contacts, Support, Misuse.*
+![The Products page with the product tree on the left and Home Hub X1 selected, showing the tabs Information, Solutions, Classification, Photos, Documents and more.](../../assets/images/ce/00-getting-started/05-mental-model-4.webp)
 
 ## Two cross-cutting ideas
 

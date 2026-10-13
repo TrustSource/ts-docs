@@ -23,4 +23,4 @@ Upload the test results of every required tool as SARIF, see [SW Quality Scans](
 
 - [Quality (Project)](../../01-projects/settings/04-quality.md)
 
-📸 *Screenshot: the Quality tab with the tool selector and two required tools.*
+![The Quality tab with Define test requirements, the note on SARIF test results, and the Tool selector with the Add button.](../../../../assets/images/ce/03-internal/02-modules/settings/12-quality-1.webp)

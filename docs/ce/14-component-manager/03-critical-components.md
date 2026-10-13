@@ -17,7 +17,7 @@ Open **Knowledge → Component Lake** and press **Critical components**, or open
 
 To look beyond one project, search the [Component Lake](../05-knowledge/01-component-lake.md) directly; component pages mark incomplete license data with *Key missing* or *Key and Name missing*.
 
-📸 *Screenshot: the Components report with a list of critical components.*
+![The Components report for Webshop with the counters modules and critical components, and the numbered list of critical components such as axios, bcprov-jdk15on, commons-collections and log4j-core, each opening its edit page.](../../assets/images/ce/14-component-manager/03-critical-components-1.webp)
 
 ## Fix a component
 

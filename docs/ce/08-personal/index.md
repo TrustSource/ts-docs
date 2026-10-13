@@ -12,6 +12,6 @@ These pages cover what every signed-in user of ***TrustSource CE*** has, whateve
 
 On small screens these entries move into the left navigation as **Updates**, **Inbox**, **Profile**, **Contact Account Admin**, **Support**, **API Documentation** and **Logout**.
 
-📸 *Screenshot: the right bar with the Guide, Help, API documentation, Updates, Messages, Contact Account Admin and Logout icons.*
+![The dashboard with the right bar outlined: Guide, Help, API documentation, Updates and Messages at the top, Contact Account Admin and Logout at the bottom.](../../assets/images/ce/08-personal/index-1.webp)
 
 The compass icon **Guide for this screen** at the top of the right bar opens the guide panel. See [Guide and demo](../00-getting-started/08-guide-and-demo.md).

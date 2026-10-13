@@ -20,7 +20,7 @@ Open **Internal → Products** and select **Add**. Fill in:
 
 Tick **Draft** for a test product that you can remove later. Select **Add**, then select the product in the tree.
 
-📸 *Screenshot: Products page with the "Add product" dialog.*
+![The Add product dialog on the Products page, filled in with Parent Smart Home, Identifier SH-THERM, Type Variant, Name Thermostat T3 and a purpose, with the Draft option and the Close and Add buttons.](../../assets/images/ce/recipes/06-cra-classification-1.webp)
 
 ### 2. Describe it
 
@@ -39,7 +39,7 @@ Open the **Classification** tab and choose under **Classified as**:
 
 Select **Save**. Below the field the app lists sample product areas for the chosen value, as a quick plausibility check.
 
-📸 *Screenshot: Classification tab with "IMPORTANT Class 1" selected and the sample areas listed.*
+![The Classification tab of Home Hub X1 with IMPORTANT Class 1 selected under Classified as and the sample areas for this class listed below.](../../assets/images/ce/recipes/06-cra-classification-2.webp)
 
 ### 4. Add the contacts
 

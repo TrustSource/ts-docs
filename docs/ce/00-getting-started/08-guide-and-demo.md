@@ -15,7 +15,7 @@ The panel shows the guide for the current screen:
 
 Screens without a guide show *There is no guide for this screen yet.*
 
-📸 *Screenshot: the Guide panel open next to the dashboard, with the "Getting started" steps.*
+![The Guide panel open next to the dashboard, showing Getting started with the Start tour button and the numbered steps.](../../assets/images/ce/00-getting-started/08-guide-and-demo-1.webp)
 
 ### Available guides
 
@@ -37,7 +37,7 @@ A tour dims the page and highlights one element at a time, with an explanation n
 
 The **Getting started** tour starts by itself the first time you open the dashboard. After that it only starts when you ask for it.
 
-📸 *Screenshot: a running tour step highlighting the left navigation, with Cancel, Back and Next.*
+![A tour step highlighting the left navigation, with the step text, the step dots and the Cancel, Back and Next buttons.](../../assets/images/ce/00-getting-started/08-guide-and-demo-2.webp)
 
 ## Demo project
 
@@ -60,7 +60,7 @@ Each company has at most one demo project. If it already exists, the app tells y
 > [!TIP]
 > The demo analysis uses the same services as a real one. If license results show only warnings or no vulnerabilities appear, the license check service or the vulnerability lookup is not available; see [Scan Troubleshooting](../11-troubleshooting-faq/03-scan-troubleshooting.md).
 
-📸 *Screenshot: the Projects list with "Demo project" and the Generate and Remove demo buttons.*
+![The Projects list with Demo project, and the Create, Generate and Remove demo buttons in the page header.](../../assets/images/ce/00-getting-started/08-guide-and-demo-3.webp)
 
 ### Remove the demo data
 

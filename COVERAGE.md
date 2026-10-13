@@ -37,7 +37,7 @@ The REST API documentation was merged into this help on **2026-10-10**; `trustso
 
 | Service | Repo | Docs cover | Gap |
 |---|---|---|---|
-| **TrustSource CE** | `TrustSource/ts-core-ce` (local `ts-core-ce`) | **CE 1.0.0** (`ts-core-ce` HEAD `6a354f3`, state 2026-10-13): text rebuilt from the v3 pages and verified against the CE code and a running instance (see [`docs/ce/12-release-notes/1.0.md`](docs/ce/12-release-notes/1.0.md)). | Screenshots are placeholders (📸, 170 on 132 pages), to be taken from a running CE (stage 2). Open code questions are tracked as issues in ts-core-ce. |
+| **TrustSource CE** | `TrustSource/ts-core-ce` (local `ts-core-ce`) | **CE 1.0.0** (`ts-core-ce` HEAD `6a354f3`, state 2026-10-13): text rebuilt from the v3 pages and verified against the CE code and a running instance (see [`docs/ce/12-release-notes/1.0.md`](docs/ce/12-release-notes/1.0.md)). | 170 screenshots taken from CE 1.0.0 (`6a354f3`) on 2026-10-13 with example data; regenerate with `tools/screenshots` (see its README). Open code questions are tracked as issues in ts-core-ce. |
 
 The CE track documents the self-hosted Community Edition only. It no
 longer derives from the v2.16 SaaS baseline.
@@ -55,6 +55,12 @@ longer derives from the v2.16 SaaS baseline.
    e.g. `docs(<service>): refresh for v3.2.21 + coverage bump`.
 
 ## Update log
+
+- **2026-10-13 (CE refresh, stage 2)** - All 170 screenshot placeholders in `docs/ce/` replaced with
+  screenshots of CE 1.0.0 (`6a354f3`), taken with Playwright from a local instance filled with
+  fictional example data (Example Corp, `example.com` users). Images are WebP under
+  `docs/assets/images/ce/` (about 6.5 MB). `tools/screenshots/` seeds the data and regenerates and
+  embeds every image. A few sentences were corrected where the screenshots showed different labels.
 
 - **2026-10-13 (CE refresh, stage 1)** - CE track rebuilt for TrustSource CE 1.0.0
   (`ts-core-ce` `6a354f3`). The old `docs/ce/` was the v2.16 SaaS manual renamed

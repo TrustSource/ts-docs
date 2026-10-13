@@ -45,7 +45,7 @@ A request is a draft whatever else is set on it; otherwise it counts as approved
 
 **Create** in the header starts the [approval wizard](01-request-approval.md) for a project.
 
-📸 *Screenshot: the approvals list with status filter and assignment column.*
+![The Your approvals list with All requests selected: a dry run of Webshop Backend 2.4.1 assigned to Alex Morgan with Remove DRAFT, the open requests Webshop Backend 2.4.0 and Webshop Frontend 2.5.0 with Approve and Reject and assign to me, and the results by Maria Garcia for Mobile App 1.8.2 (rejected), Payment Service 3.1.0 and Webshop Frontend 2.4.0 (approved). Create and the four status buttons are in the header.](../../../assets/images/ce/03-internal/06-approvals/index-1.webp)
 
 ## In this section
 

@@ -2,7 +2,7 @@
 
 The **Updates** page ("List of available updates.") shows the release notes that ship with your ***TrustSource CE*** installation. Open it with the bell icon **Updates** in the right bar. A dot on the icon ("Unread updates available") marks release notes you have not opened yet.
 
-📸 *Screenshot: the Updates page with the 1.0 release note.*
+![The Updates page with the release note 1.0, labelled New, Initial release.](../../assets/images/ce/08-personal/01-updates-1.webp)
 
 Each entry shows the version, the release date and its items, grouped under **New**, **Improvement** and **Fix**. An item can link to more information with **View details**. Opening the page marks the entries as read for you.
 

@@ -33,7 +33,7 @@ The result is shown twice, side by side: once for "Component was **not** modifie
 
 You get the **Vulnerabilities** known for that version (each linked and coloured by score, or "No vulnerabilities known"), followed by the same legal assessment as above, based on the component's license.
 
-📸 *Screenshot: the Check page in Component mode with a result.*
+![The Check page in Component mode for the Demo project, Demo module and log4j-core 2.14.1: the known vulnerabilities coloured by score, followed by the legal assessment for an unmodified and a modified component.](../../assets/images/ce/02-inbound/01-check-1.webp)
 
 ## When a project or module cannot be selected
 

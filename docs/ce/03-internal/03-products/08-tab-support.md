@@ -21,7 +21,7 @@ Remove a contract with the **x** button at the end of its row.
 > [!NOTE]
 > The file's schema reference is still a placeholder (`https://TODO/cle.v1.0.0.json`). Check with the receiving tool before you rely on it.
 
-📸 *Screenshot: the Support tab with two contracts.*
+![The Support tab of Home Hub X1 with the Add contract and Generate EoL info buttons and two contracts, Hardware warranty ending Jun 30, 2028 and Security updates ending Dec 31, 2031.](../../../assets/images/ce/03-internal/03-products/08-tab-support-1.webp)
 
 ## Related
 

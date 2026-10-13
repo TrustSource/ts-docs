@@ -11,7 +11,7 @@ You request an approval for a project, or for a single module, and choose which 
 - **From a project:** click **Approve** in the project header.
 - **From a module:** click **Initiate approval** in the module header. The module wizard opens for that module.
 
-📸 *Screenshot: the Create approval request dialog on the approvals list.*
+![The Create approval request dialog over the approvals list, with Webshop selected as Project and the buttons Close, Dry-run and Create approval request.](../../../assets/images/ce/03-internal/06-approvals/01-request-approval-1.webp)
 
 ## The project wizard (five steps)
 
@@ -27,7 +27,7 @@ You request an approval for a project, or for a single module, and choose which 
 
 The module wizard is the same without the module selection: **1 Settings**, **2 Select analysis**, **3 Confirm statuses**, **4 Finalization**. The name field is labelled **Approve name or product name**.
 
-📸 *Screenshot: step 1 Settings of the approval wizard.*
+![Step 1 Settings of the module wizard for mobile-app: Dry run ticked, Approve name or product name Mobile App, Semantic version 1.9.0, a Packageurl and an Approve description, with Return to module and Next below.](../../../assets/images/ce/03-internal/06-approvals/01-request-approval-2.webp)
 
 ## Finalization
 
@@ -36,9 +36,9 @@ The last step, *Finalizing your approval request*, shows one row per document in
 - **Done:** *Great! You made it!* A real request has been forwarded to the compliance managers of your organisation; the default compliance manager of the project, if one is set, is assigned and notified. For a dry run, the text points you to **Internal → Approvals**, where you see what the compliance manager would have seen.
 - **Failed:** *Report generation did not finish*, with the stage that failed. The approval request itself was created and is still available; open the reports that were generated, or jump to the Compliance Report.
 
-Use **Jump to Compliance Report** to open the approval, or **Return to project**.
+Use **Jump to Compliance Report** to open the approval, or **Return to project** (**Return to module** in the module wizard).
 
-📸 *Screenshot: the Finalization step with three progress rows.*
+![Step 4 Finalization of the module wizard for webshop-backend: Finalizing your approval request with 3 of 3 done, the rows Compliance Report, Notice and SBOM with full progress bars and their links, the dry run message under Great! You made it!, and the buttons Return to module and Jump to Compliance Report.](../../../assets/images/ce/03-internal/06-approvals/01-request-approval-3.webp)
 
 ## What the approval contains
 

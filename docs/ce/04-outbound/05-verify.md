@@ -24,7 +24,7 @@ Each of them carries a `signatures` list with an `hmac-sha256` signature over th
 2. Paste the complete JSON document, including its `signatures`, into the text field.
 3. Click **Verify**.
 
-📸 *Screenshot: the Verification page with a pasted document and the result.*
+![The Verification page with the signed SBOM of the Webshop Frontend 2.4.0 release pasted into the text field and the result Verified successfully, Verified and found in server.](../../assets/images/ce/04-outbound/05-verify-1.webp)
 
 ## Results
 

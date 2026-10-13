@@ -32,7 +32,7 @@ Both buttons are in the upper right of the tab.
 > [!WARNING]
 > Propagating replaces the obligation list of every target module.
 
-📸 *Screenshot: the Resolved obligations tab with the Project obligations panel and the module list.*
+![The Resolved obligations tab: the Project obligations panel saying that the project has no obligation settings yet, the form with Obligation, Key and Comment, and the list with Provide copy of license text and Reproduce copyright notice and their comments.](../../../../assets/images/ce/03-internal/02-modules/settings/03-obligations-1.webp)
 
 ## Related
 

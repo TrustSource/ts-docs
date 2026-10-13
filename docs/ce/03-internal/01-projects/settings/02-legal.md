@@ -25,7 +25,7 @@ The buttons in the upper right:
 - **Import settings from Project**: copy the legal settings of another project (with a name search).
 - **Propagate settings to...**: push the settings to one other project or to **All my n projects**. Portfolio managers also see **All n projects**.
 
-📸 *Screenshot: the Legal tab with Commercial Aspects, Operating Model and the IP protection fields.*
+![The Legal tab of Webshop with Commercial Aspects set to license fee, Operating Model set to traditional software distribution, Inbound IP Protection on and Outbound IP Protection off, and the View history, Start wizard, Import settings from Project and Propagate settings to buttons.](../../../../assets/images/ce/03-internal/01-projects/settings/02-legal-1.webp)
 
 ## How this drives obligations
 

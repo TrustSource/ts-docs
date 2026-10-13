@@ -26,9 +26,11 @@ The left panel shows **Tree of Products**. When you open the page, the first roo
 
 - **Expand all** / **Collapse all** opens or closes every branch.
 - **Show all** also lists retired products; **Hide retired** returns to the default view.
+
+On screens narrower than 1500 pixels these buttons show only their icons: the eye (**Show all**, crossed out for **Hide retired**) and the arrows (**Expand all** / **Collapse all**).
 - **Stats** shows the number of products, root entries and retired entries.
 
-📸 *Screenshot: the product tree with the Stats menu open and a product selected.*
+![The Products page with the expanded Tree of Products, Home Hub X1 selected, and the Stats menu open showing 4 products, 1 root entries and 1 retired entries.](../../../assets/images/ce/03-internal/03-products/01-create-import-1.webp)
 
 ## Import products
 

@@ -19,7 +19,7 @@ See [Import Scans](../../../02-inbound/02-import-scans.md) for the formats in de
 
 Below the button, tables list earlier imports with **ID**, **Type**, **File**, **Scan**, **Status** and **Created**, newest first. **File** downloads the uploaded file, **Scan** opens the scan that the import produced. If an import failed, a warning icon shows the reason in the **Scan** or **Status** column.
 
-📸 *Screenshot: the Imports tab with the Import button and the history table.*
+![The Imports tab of Legacy Portal with the Import button and the import history: three CycloneDX imports with Download links, their scans, the status FINISHED and the creation date.](../../../../assets/images/ce/03-internal/01-projects/settings/11-module-import-1.webp)
 
 ## Related
 

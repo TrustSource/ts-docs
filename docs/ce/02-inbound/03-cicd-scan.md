@@ -73,7 +73,7 @@ The **CI/CD Integrations** page lists the available scanners and plugins with li
 | **Development languages** | Java, JavaScript, NodeJS, C/C++, PHP, Python, Ruby |
 | **IDE Plugins** | VisualStudio |
 
-📸 *Screenshot: the CI/CD Integrations page.*
+![The CI/CD Integrations page with the Package managers group: Bower, Composer, Gradle, Grunt, Gulp, Maven, npm and Yarn, each with links to its repository, and the start of the Continuous development tools group.](../../assets/images/ce/02-inbound/03-cicd-scan-1.webp)
 
 ## The scan list
 
@@ -89,7 +89,7 @@ The page **Scans** shows the transferred scans of your company, newest first. Qu
 
 Select a row to open the scan.
 
-📸 *Screenshot: the Scans list.*
+![The Scans list with the columns When, Project - Module, Upload by, Dependencies and Meta, showing the scans of Legacy Portal, Webshop, Payment Service, Mobile App and the demo project, with branch, tag and binary links where the scan has them.](../../assets/images/ce/02-inbound/03-cicd-scan-2.webp)
 
 ## Scan details
 
@@ -102,7 +102,7 @@ The header shows project, module, branch, tag and the number of binary links, an
 
 The body shows the dependency tree. Switch between **List** and **Diagram**, **Expand** or **Collapse** all levels, and **Show linked** or **Hide linked** modules. Selecting a dependency opens **Reported properties** at its side: purl, name, key, versions, private flag, description, home, repo, scanned and parsed licenses, checksum, meta data and crypto algorithms. **Lake** opens the component in the [Component Lake](../05-knowledge/01-component-lake.md).
 
-📸 *Screenshot: a scan with the dependency tree and the Reported properties panel.*
+![The scan of Webshop - webshop-backend on branch main with tag v2.4.0: the dependency tree on the left with log4j-core selected, and the Reported properties of log4j-core on the right.](../../assets/images/ce/02-inbound/03-cicd-scan-3.webp)
 
 ## Related
 

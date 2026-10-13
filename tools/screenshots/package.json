@@ -1,0 +1,14 @@
+{
+  "name": "ts-docs-ce-screenshots",
+  "private": true,
+  "description": "Captures the TrustSource CE screenshots used in docs/ce from a running CE instance.",
+  "type": "module",
+  "scripts": {
+    "seed": "node seed.mjs",
+    "capture": "node capture.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1",
+    "sharp": "0.34.4"
+  }
+}

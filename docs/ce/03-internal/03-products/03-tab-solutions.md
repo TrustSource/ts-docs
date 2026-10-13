@@ -21,7 +21,7 @@ Click the **x** button at the end of the row. The release itself is not affected
 
 Click **Generate SBOM**, then **Generate SBOM** again in the **Generate SBOM by solutions** dialog. TrustSource CE merges the SBOMs of all listed solutions into one CycloneDX JSON file and stores it on the [Documents](06-tab-documents.md) tab as **SBOM file**, replacing a previous one. Finish your selection of solutions first. Without solutions, generation fails with "No solutions selected for product".
 
-📸 *Screenshot: the Solutions tab with two linked releases and their capabilities.*
+![The Solutions tab of Home Hub X1 with the Add solution and Generate SBOM buttons and two linked releases, Payment Service 3.1.0 and Webshop Frontend 2.4.0, in the columns Solution, Version and Capabilities.](../../../assets/images/ce/03-internal/03-products/03-tab-solutions-1.webp)
 
 ## Related
 

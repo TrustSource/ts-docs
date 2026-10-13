@@ -13,7 +13,7 @@ Binary links travel with the data, from the scan to the approval:
 2. **Analysis.** When a scan is analysed, its links are copied into the analysis. Links you add to a scan after its analysis reach the analysis when you run **Re-Process** on the scan.
 3. **Approval.** When an approval is created, the links of the selected analyses are copied into the approval and into its notice file.
 
-📸 *Screenshot: the Binary links dialog on a scan.*
+![The Binary links dialog of the webshop-frontend 2.5.0 scan: the Link and Comment fields with Add link, and a table with two links from the Release pipeline, an npm package and a container image, each with Remove.](../../../assets/images/ce/03-internal/06-approvals/04-binary-linking-1.webp)
 
 ## On an approval
 

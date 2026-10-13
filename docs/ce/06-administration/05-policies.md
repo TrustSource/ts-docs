@@ -5,7 +5,7 @@
 
 **Administration → Policies** collects the company-wide rules that projects and modules of ***TrustSource CE*** are measured against. The page ("Please select policy type") shows three cards.
 
-📸 *Screenshot: the Policies page with the three cards.*
+![The Policies page with the cards Opensource policy, Crypto algorithms and Component end-of-life.](../../assets/images/ce/06-administration/05-policies-1.webp)
 
 | Card | What it holds |
 |---|---|

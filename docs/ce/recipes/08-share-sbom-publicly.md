@@ -33,7 +33,7 @@ In the new key's row, pick the release (shown as name, version and approval date
 
 Leave the selection empty to serve all three. Use the preview button to check each document before you publish.
 
-📸 *Screenshot: Release keys page with one key, its release and scopes selected, before publishing.*
+![The Release keys page with the new key 3 outlined: release Payment Service 3.1.0 and scope sbom selected, the key shown as Key available after publish, and the Publish and Delete buttons.](../../assets/images/ce/recipes/08-share-sbom-publicly-1.webp)
 
 ### 3. Publish
 
@@ -45,7 +45,7 @@ https://<your-host>/api/v2/compliance/releases/<release_key>/notice
 https://<your-host>/api/v2/compliance/releases/<release_key>/csaf
 ```
 
-📸 *Screenshot: "Url and QR code" dialog for the SBOM of a published key.*
+![The Url and QR code dialog of a published release key, with the SBOM address of the key and its QR code.](../../assets/images/ce/recipes/08-share-sbom-publicly-2.webp)
 
 ### 4. Share and monitor
 

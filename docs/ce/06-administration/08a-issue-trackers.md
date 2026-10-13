@@ -7,7 +7,7 @@ Connect an issue tracker once for the whole company of ***TrustSource CE***. Aft
 
 Open the settings from **Administration → Integrations**.
 
-📸 *Screenshot: the Create new Jira issue dialog.*
+![The Create new Jira issue dialog for the crypto-js component of the webshop-frontend module, with the Title and Description filled in from the finding, and the Close and Create issue buttons.](../../assets/images/ce/06-administration/08a-issue-trackers-1.webp)
 
 ## Jira
 

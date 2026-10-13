@@ -5,7 +5,7 @@
 
 Invite colleagues, set their roles and remove users of your company in ***TrustSource CE***. Open **Administration → User Management**.
 
-📸 *Screenshot: the User management page with the user list, the CSV import and the invite form.*
+![The User management page: the user list with user name, name, roles and the Remove and RTBF buttons, the Import users from CSV panel and the Invite your colleagues form.](../../assets/images/ce/06-administration/03-user-management-1.webp)
 
 > [!WARNING]
 > Invitations are sent by email. They only reach your colleagues when the installation has a working SMTP server (`MAIL_URL`, `MAIL_SENDER`). The reference setup delivers all mail to the local Mailpit inbox instead. See [External services](../01-installation-setup/04-external-services.md). The links in the mail are built from `ROOT_URL`, so set it to the address your users open.
@@ -14,7 +14,7 @@ Invite colleagues, set their roles and remove users of your company in ***TrustS
 
 The panel **Your companie users** lists every member with **User name (login)**, **Name**, **Roles** and **Remove**.
 
-- **Change roles:** open the **Roles** drop-down of a user and tick or untick roles. The change is saved immediately. A user must keep at least one role; to take someone out of the company, remove the user instead. You cannot change your own roles.
+- **Change roles:** select a role in the **Roles** drop-down of a user to add it, or select the × on a role to remove it. The change is saved immediately. A user must keep at least one role; to take someone out of the company, remove the user instead. You cannot change your own roles.
 - **Resend invitation:** the refresh button next to the login sends the invitation email again. It is only enabled while the user has not verified the address yet, and never for yourself.
 - **Remove user:** the trash button removes the user from your company at once, without a confirmation. The account itself stays on the installation.
 - **RTBF:** removes the user under the right to be forgotten. A dialog asks for a replacement text for the user's name in records of your company, such as audit log entries, approvals, tags, notice files and manual vulnerabilities. Leave it empty to use `RTBF_USED`.

@@ -11,7 +11,7 @@ Infrastructure components describe the platform your software runs on: operating
 2. Enter the **Name** (required) and optionally the **Key** (for example `im:mysql`; leave it empty to build it from the name), the **Versions** separated by commas, the **Homepage** and the **Repository**.
 3. Press **Create component**.
 
-📸 *Screenshot: the Add infrastructure component dialog.*
+![The Add infrastructure component dialog filled in with the name PostgreSQL, the key im:postgresql, the versions 15.8, 16.4 and the homepage and repository, with the Create component button.](../../assets/images/ce/14-component-manager/01-manage-infrastructure-1.webp)
 
 ## Edit a component
 

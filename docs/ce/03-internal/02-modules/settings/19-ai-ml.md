@@ -34,7 +34,7 @@ The bin icon removes an artifact.
 
 AI models also appear in the **AI / ML models** section of the component side panel; see [Component details](../04-component-detail.md).
 
-📸 *Screenshot: the AI / ML tab with the detected and managed lists.*
+![The AI / ML tab of payment-service: List of AI artifacts as detected, and List of AI artifacts as managed with Add AI artifact, Export as CycloneDX and the models fraud-scoring-model 2.1 and chargeback-classifier 1.0 with provider, task, family, architecture and comment.](../../../../assets/images/ce/03-internal/02-modules/settings/19-ai-ml-1.webp)
 
 ## Related
 

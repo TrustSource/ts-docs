@@ -30,4 +30,4 @@ Click **Delete module** and confirm *Are you sure you want to delete module ...?
 > [!WARNING]
 > Deleting a module is final: *You will not be able to recover your module!* Archive the module if you may need it again, or if its releases and approvals must stay traceable.
 
-📸 *Screenshot: the Danger Operations tab with the three operations.*
+![The Danger Operations tab, Here starts the Danger Zone, with the three operations Archive module, Delete history and Delete module.](../../../../assets/images/ce/03-internal/02-modules/settings/18-danger-zone-1.webp)

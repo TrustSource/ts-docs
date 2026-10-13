@@ -31,4 +31,4 @@ The warning threshold must not be lower than the violation threshold, unless it 
 > [!TIP]
 > The result is listed in the Versioning report of the project (**Reports → Versioning** on the project page). See [Analysis Reports](../../04b-analysis-reports.md).
 
-📸 *Screenshot: the Versioning tab with jump detection and the two threshold sliders.*
+![The Versioning tab with the switch Enable versioning analysis for module turned on, the jump detection option and the Warning threshold and Violation threshold sliders.](../../../../assets/images/ce/03-internal/02-modules/settings/06-versioning-1.webp)

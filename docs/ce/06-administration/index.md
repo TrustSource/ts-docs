@@ -22,7 +22,7 @@ More detail pages:
 > [!NOTE]
 > TrustSource CE has no billing, account types, enterprise companies, identity provider integration (SSO) or API usage statistics. Every feature is available and gated by role only. See [CE and SaaS compared](../13-ce-vs-saas.md).
 
-📸 *Screenshot: the Administration section in the sidebar, expanded for an Account admin.*
+![The left sidebar with the Administration group expanded: Integrations, Settings, User Management, API keys, Policies and Audit logs.](../../assets/images/ce/06-administration/index-1.webp)
 
 ## Related
 

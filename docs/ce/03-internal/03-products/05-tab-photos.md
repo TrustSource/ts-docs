@@ -22,7 +22,7 @@ Each picture stores who uploaded it and when. Photos can be downloaded together 
 
 ***TrustSource CE*** keeps product pictures on its own file storage (the `ts-files` volume in the reference setup) and serves them under `/files/products/...`. See [Documents](06-tab-documents.md#where-documents-are-stored) for what that means for access and backups.
 
-📸 *Screenshot: the Photos tab with a gallery of three pictures.*
+![The Photos tab of Home Hub X1 with the Upload additional pictures or illustrations and Remove picture buttons and a gallery of three product pictures.](../../../assets/images/ce/03-internal/03-products/05-tab-photos-1.webp)
 
 ## Related
 

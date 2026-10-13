@@ -26,7 +26,7 @@ When the allow list is enforced, entries that are not added by a compliance mana
 > [!NOTE]
 > Whether a component was modified and whether it is loosely coupled is not set on this tab. Managers set it per component in the **Settings** section of the [component side panel](../../02-modules/04-component-detail.md).
 
-📸 *Screenshot: the Allow/Deny tab with the enforce switch and the license and component panels.*
+![The Allow/Deny tab of Webshop with the Enforce Allow list switch, the Always allow license and Always deny license panels and the Always allow component and Always deny component panels.](../../../../assets/images/ce/03-internal/01-projects/settings/07-whitelists-blacklists-1.webp)
 
 ## Related
 

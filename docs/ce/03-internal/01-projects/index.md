@@ -18,4 +18,4 @@ A **project** in ***TrustSource CE*** is a container that groups related modules
 - The **default project manager**, **default compliance manager** and **members** are set per project and can be propagated to all its modules.
 - Who sees a project: projects without members are visible to all users with access to Projects. Once members are set, only the members, the default project manager and the default compliance manager see it. Portfolio managers see all projects of the company.
 
-📸 *Screenshot: the project list in table view showing state, name, modules, legal and security bars.*
+![The Projects list in table view with the columns State, Name, Tags, Releases, Modules, Components, Legal, Security and Quality for Demo project, Legacy Portal, Mobile App, Payment Service and Webshop.](../../../assets/images/ce/03-internal/01-projects/index-1.webp)

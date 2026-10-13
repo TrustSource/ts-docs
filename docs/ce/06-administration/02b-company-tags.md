@@ -6,7 +6,7 @@
 
 **Company tags** is the list of tags that projects and modules can carry in ***TrustSource CE***. Open it from **Administration → Settings → Company tags**.
 
-📸 *Screenshot: the Company tags page with the import panel and the tag list.*
+![The Company tags page with the Add new tag and View removed tags buttons, the Import tags from CSV panel and the tag list with Created, Name, Description, Creator and a Remove button per tag.](../../assets/images/ce/06-administration/02b-company-tags-1.webp)
 
 ## Add a tag
 

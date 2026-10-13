@@ -16,7 +16,7 @@
 
 The app reminds you that you may check the import status under **Project settings → Imports** and takes you to the project's modules. See [Imports (Project)](../03-internal/01-projects/settings/11-module-import.md); a failed import shows its reason there.
 
-📸 *Screenshot: the Import Scans form with project, format switch, file and module name.*
+![The Import Scans form with the project Payment Service selected, the switch set to CycloneDX, the file acme-payment-sdk-bom.json chosen and the module name changed to acme-payment-sdk.](../../assets/images/ce/02-inbound/02-import-scans-1.webp)
 
 ## Supported files
 

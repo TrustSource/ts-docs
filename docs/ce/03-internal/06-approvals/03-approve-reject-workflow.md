@@ -38,7 +38,7 @@ Managers receive the result with the reason, and the webhook trigger **Approval*
 > [!NOTE]
 > Once approved or rejected, an approval **cannot be changed**. This is by design: it keeps the audit trail intact.
 
-📸 *Screenshot: the reject dialog with the reason field.*
+![The reject dialog for the approval Webshop Frontend with a reason typed into the text field and the buttons Cancel and Yes, reject it!](../../../assets/images/ce/03-internal/06-approvals/03-approve-reject-workflow-1.webp)
 
 ## Over the API
 

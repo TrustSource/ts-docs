@@ -29,7 +29,7 @@ The buttons in the upper right:
 - **Import settings from Module**: copy the legal settings of another module (with a name search).
 - **Propagate settings to...**: push the settings to one other module, **All my n modules** or **All my n project modules**. Portfolio managers also see **All n modules** and **All n project modules**.
 
-📸 *Screenshot: the module Legal tab with the project requirements panel and the three sections.*
+![The Legal tab of a module in the View all mode: the Legal requirements summary of the project, the sections Trade Secret Aspects, Licensing Strategy and Distribution of the module, and the buttons View history, Start wizard, Import settings from Module and Propagate settings to.](../../../../assets/images/ce/03-internal/02-modules/settings/02-legal-1.webp)
 
 ## Related
 

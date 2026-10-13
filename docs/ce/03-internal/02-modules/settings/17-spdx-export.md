@@ -28,4 +28,4 @@ Each click on **Generate** creates a new document; earlier ones stay in the list
 > [!NOTE]
 > This tab produces SPDX 2.3 in RDF. SPDX JSON and CycloneDX documents are available under [SBOM + CBOM](../../../04-outbound/01-sbom-cbom.md). SPDX tag-value is not supported.
 
-📸 *Screenshot: the Export SPDX tab with the Generate button and an export marked finished.*
+![The Export SPDX tab with the Generate button and one export in the table, with Download RDF and the status finished.](../../../../assets/images/ce/03-internal/02-modules/settings/17-spdx-export-1.webp)

@@ -19,7 +19,7 @@ Entries inherited from the company carry the label **in Company** and link to th
 
 The asset types and their fields are described under [Crypto management (Module)](../../02-modules/settings/10-encryption.md).
 
-📸 *Screenshot: the Crypto management tab with detected algorithms, the managed list and the export controls table.*
+![The Crypto management tab of Webshop: the detected algorithms with DES and SHA-1 marked B as denied by company policy, the managed list with Add algorithm, Export as CycloneDX and DES, SHA-1 and RSA marked In use with comments, and the Export controls management panel.](../../../../assets/images/ce/03-internal/01-projects/settings/05-encryption-1.webp)
 
 ## Related
 

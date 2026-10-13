@@ -31,7 +31,7 @@ The page header reads **Products** (*Product structure of your company*) and off
 
 Photos and documents are stored on the server's own file storage (the `ts-files` volume of the reference setup), not in an external service. Include that volume in your backups; see [Backups & Monitoring](../../01-installation-setup/07-backups-monitoring.md).
 
-📸 *Screenshot: the Products page with the product tree and a selected product.*
+![The Products page with the Tree of Products on the left and Home Hub X1 selected on the right, showing its Information tab and the tabs Solutions, Classification, Photos, Documents, Contacts, Support and Misuse.](../../../assets/images/ce/03-internal/03-products/index-1.webp)
 
 ## Related
 

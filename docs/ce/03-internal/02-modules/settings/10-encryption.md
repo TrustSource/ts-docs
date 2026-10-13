@@ -39,4 +39,4 @@ The export-control rules (which countries are strict, weak or irrelevant for an 
 - [Crypto management (Project)](../../01-projects/settings/05-encryption.md)
 - [Analysis Reports](../../04b-analysis-reports.md): Algorithm report and All bad crypto
 
-📸 *Screenshot: the Crypto management tab with the detected labels and the managed table.*
+![The Crypto management tab of webshop-backend: the detected algorithms DES, ECDSA, RSA and SHA-1, with DES and SHA-1 marked B for denied, and the List of Algorithms as managed with Add algorithm, Export as CycloneDX and the columns Added, B, Name, Asset type, Details, Comment and In use.](../../../../assets/images/ce/03-internal/02-modules/settings/10-encryption-1.webp)

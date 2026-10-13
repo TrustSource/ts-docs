@@ -15,7 +15,7 @@ The component page shows the **Information** (key, purl, homepage, repository, l
 
 COTS components are added to projects as modules of the COTS type (**Add/link module → COTS or Infrastructure component** on the project page); see [Create and List Modules](../03-internal/02-modules/01-create-and-list.md). The [COTS overview](../03-internal/04c-impact-and-portfolio-reports.md#cots-overview) report lists the COTS components of a project with their terms.
 
-📸 *Screenshot: a COTS component with its commercial terms.*
+![The COTS component Example Analytics Suite with its Information, Comment and the commercial terms: Right to re-sell no, Right to distribute limited, Right to host/operate as SaaS unlimited and Right to modify no.](../../assets/images/ce/05-knowledge/03-cots-1.webp)
 
 ## Related
 

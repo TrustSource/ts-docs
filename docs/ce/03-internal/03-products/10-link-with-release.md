@@ -26,7 +26,7 @@ Product (what you ship)
 
 At any point you can trace from a customer-facing product down to the individual components and their licenses, vulnerabilities and obligations. With the solutions in place, **Generate SBOM** on the Solutions tab merges their SBOMs into one product SBOM.
 
-📸 *Screenshot: the Add solution dialog showing available approved releases.*
+![The Add solution dialog listing the approved releases Payment Service 3.1.0 and Webshop Frontend 2.4.0 with approval date, version and contact, each with an Add button.](../../../assets/images/ce/03-internal/03-products/10-link-with-release-1.webp)
 
 ## Related
 

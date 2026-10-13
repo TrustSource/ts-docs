@@ -50,7 +50,7 @@ Lists the copyright of every component (**Copyright not detected** if none is fo
 
 Lists components modified in the project. Counters: **different components**, **modules**, **modified appearances**, **undocumented changes**. Each entry links to the place where the component appears, to the list of changes and to the modification notice. If missing, it reads *Changes url has not been provided* or *Modification notice has not been provided*.
 
-📸 *Screenshot: the Licenses overview with counters and the Project Goals panel.*
+![The Licenses overview for Webshop: the counters 5 licenses, 23 components and 17 obligations, the Project Goals panel with the project description, the Used modules with their analyses, the Legal requirements, and the first license MIT with its warnings and obligations.](../../assets/images/ce/03-internal/04b-analysis-reports-1.webp)
 
 ## Related
 

@@ -32,4 +32,4 @@ Who may change which setting is listed in the [Module Settings Permission Matrix
 
 The OSSF tab and MDR/IVDR classification are not part of TrustSource CE; see [CE and SaaS compared](../../../13-ce-vs-saas.md).
 
-📸 *Screenshot: module settings with the General tab active.*
+![The settings of the module webshop-backend with the General tab active: the tab bar General, Legal, Quality, Crypto management, AI / ML, Allow/Deny, Capabilities, End-of-life, CIA, Resolved obligations, Viability, Versioning and more, and the General form below.](../../../../assets/images/ce/03-internal/02-modules/settings/index-1.webp)

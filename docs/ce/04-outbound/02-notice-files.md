@@ -11,7 +11,7 @@ The page **Notice files** lists every notice file of your company, including the
 
 If your company has not set up a written offer yet, a warning above the list says so. The written offer is maintained under **Administration → Settings → Written offer**. See [Settings](../06-administration/02-settings.md).
 
-📸 *Screenshot: the Notice files list with completion percentage.*
+![The Notice files list below the Written Offer warning, with the columns Created, Frozen, Project/Module, Components, Version, Edited, By and Complete, showing completions between 29 and 100 percent.](../../assets/images/ce/04-outbound/02-notice-files-1.webp)
 
 ## Create a notice file
 
@@ -29,7 +29,7 @@ The **TODOs Navigator** on the right counts components, obligations and remainin
 
 If licenses could not be matched for some components, a **Notice** button in the header lists them.
 
-📸 *Screenshot: a notice file with an opened license and the TODOs Navigator.*
+![The notice file of the Webshop Backend 2.4.0 release with the license Apache-2.0 opened, showing its components with cleared checkboxes, and the TODOs Navigator with components, obligations, remaining ToDos and the Written Offer entry.](../../assets/images/ce/04-outbound/02-notice-files-2.webp)
 
 ## Versions, freezing and binary links
 

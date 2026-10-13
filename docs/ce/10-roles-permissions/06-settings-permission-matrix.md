@@ -5,7 +5,7 @@ Field-level permissions for the **project** settings tabs of ***TrustSource CE**
 > [!NOTE]
 > The tables are generated from the permission definitions of TrustSource CE 1.0 (`imports/lib/userExtUtils.js`, summarised in `ROLES_AND_PERMISSIONS.md` of the source repository). They control what the interface shows: a tab appears only when you have `r` on at least one of its settings; a field is editable only with `w`. The server checks role and company only, so the default-owner and member contexts are not a security boundary in TrustSource CE 1.0. See [Permission Model](03-permission-model.md#four-layers-of-checks).
 
-📸 *Screenshot: the project settings tabs with a read-only field and an editable field.*
+![The project settings of Legacy Portal for Chris Taylor, who is not an owner: read-only Name, Application goals, Tags and Members fields, and editable Default project manager and Default compliance manager fields.](../../assets/images/ce/10-roles-permissions/06-settings-permission-matrix-1.webp)
 
 ## How to read the tables
 

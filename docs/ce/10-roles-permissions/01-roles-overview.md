@@ -2,7 +2,7 @@
 
 ***TrustSource CE*** knows seven roles. Account admins assign them per company, and a user can hold several at once; the rights add up.
 
-📸 *Screenshot: the Roles drop-down of a user in User Management.*
+![User Management with the Roles drop-down of Sam Lee open: Developer is assigned, the list offers Compliance manager, Portfolio manager, Manager, Account admin, Company component manager and Company security manager.](../../assets/images/ce/10-roles-permissions/01-roles-overview-1.webp)
 
 | Role | Key | Focus |
 |---|---|---|

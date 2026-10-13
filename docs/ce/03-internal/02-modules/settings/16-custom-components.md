@@ -27,4 +27,4 @@ The component search covers the [Component Lake](../../../05-knowledge/01-compon
 
 **Remove** takes the component out of the module at once, without a confirmation. Run an analysis to refresh the views.
 
-📸 *Screenshot: the Custom components tab with two manually added components.*
+![The Custom components tab with the Add component button and the Module custom components table: commons-text 1.9 Apache-2.0 and h2 1.4.199 MPL-2.0, each with a Remove button.](../../../../assets/images/ce/03-internal/02-modules/settings/16-custom-components-1.webp)

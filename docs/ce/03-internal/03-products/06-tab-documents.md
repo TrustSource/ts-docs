@@ -37,7 +37,7 @@ Uploaded documents are listed with their type, upload date and uploader; click t
 - Back up the `ts-files` volume together with the database; a database backup alone does not contain these files. See [Backups & Monitoring](../../01-installation-setup/07-backups-monitoring.md).
 - Files are served under `/files/products/<company id>/<random file name>`. The download link does not require a login: anyone who has the exact link can fetch the file. The file name is a random identifier, so a link cannot be guessed, but treat shared links as confidential.
 
-📸 *Screenshot: the Documents tab with User Manual and SBOM file uploaded.*
+![The Documents tab of Home Hub X1 with User Manual, Secure Setup and SBOM file uploaded, the Add new document button and the Download all and incl. Photos buttons.](../../../assets/images/ce/03-internal/03-products/06-tab-documents-1.webp)
 
 ## Related
 

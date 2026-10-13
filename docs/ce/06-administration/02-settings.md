@@ -7,7 +7,7 @@
 
 The **Settings** page ("General settings", "Please select a settings group") is the entry point for company-wide configuration in ***TrustSource CE***. It shows one card per settings group. Account admins see every card; other roles see only the cards that belong to their work.
 
-📸 *Screenshot: the General settings page with the card grid, as seen by an Account admin.*
+![The General settings page with one card per settings group.](../../assets/images/ce/06-administration/02-settings-1.webp)
 
 ## Cards
 
@@ -42,7 +42,7 @@ Entries made here appear in project and module lists with the label **in Company
 > [!NOTE]
 > The **Enforce allow** switch is only enabled for Compliance managers, and the server accepts the change only from an Account admin or Manager. In practice, the person who switches it needs the Compliance manager role together with Account admin or Manager.
 
-📸 *Screenshot: the License allow/deny page with the Enforce allow switch and both lists.*
+![The License allow/deny page with the Enforce allow switch turned off and the Always allow license and Always deny license panels, each with License, Comment and Add.](../../assets/images/ce/06-administration/02-settings-2.webp)
 
 ## Component allow/deny
 
@@ -116,7 +116,7 @@ The table shows **Created**, **Severity**, **Component**, **Key**, **Description
 > [!NOTE]
 > The card is shown to Account admins, Company security managers and Company component managers. Adding and removing entries is accepted from Account admins, Compliance managers and Managers.
 
-📸 *Screenshot: the Add manual vulnerability dialog with a selected component version.*
+![The Add manual vulnerability dialog with lodash 4.17.21 selected as the component version, and the Vulnerability key, Vulnerability link, Severity, Score and Vulnerability description fields filled in.](../../assets/images/ce/06-administration/02-settings-3.webp)
 
 ## Related
 

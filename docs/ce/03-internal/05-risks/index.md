@@ -40,7 +40,7 @@ Open **Risks** in the menu. The page has three tabs: **Overview** (*Risk managem
 > [!NOTE]
 > TrustSource CE has no threat model generation and no **Threat Models** menu. You record threat-model details by hand on the **Threat model** tab of a risk. See [CE and SaaS compared](../../13-ce-vs-saas.md).
 
-📸 *Screenshot: the Risks module with the Overview, Risks and Tasks tabs.*
+![The Risk management page with the Overview, Risks and Tasks tabs and the report target set to All module of Webshop, showing the risk tiles and the risk list.](../../../assets/images/ce/03-internal/05-risks/index-1.webp)
 
 ## Related
 

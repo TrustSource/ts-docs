@@ -2,7 +2,7 @@
 
 Which role sees which part of ***TrustSource CE***, grouped by the sections of the left navigation. The tables list menu visibility and page access. For field-level rights inside project and module settings, see the [Settings Permission Matrix](06-settings-permission-matrix.md).
 
-📸 *Screenshot: the left navigation with all sections expanded.*
+![The left navigation with all sections expanded: Overview, Inbound (Scans), Internal, Outbound, Knowledge and Administration with their entries.](../../assets/images/ce/10-roles-permissions/04-functions-by-area-1.webp)
 
 ## How access works
 

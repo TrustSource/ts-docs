@@ -46,7 +46,7 @@ done
 
 For SPDX use `.../imports/scan/spdx/json` or `.../imports/scan/spdx/rdf`; for RDF set the content type on the file part, `-F "file=@$f;type=application/rdf+xml"`, or the upload is read as JSON and refused with `400`. Each import answers with `scanId` and `moduleId`; `warning` and `contentNotices` name values that could not be taken over, for example licenses that did not match a known license. See [Imports](../09-rest-api/endpoints/imports.md).
 
-📸 *Screenshot: project module list after importing several SBOMs.*
+![The Legacy Portal project page with the three imported modules portal-api, portal-reports and portal-web, each with its state, components and legal and security bars.](../../assets/images/ce/recipes/11-migrate-from-another-sca-1.webp)
 
 ### 5. Set the legal settings
 

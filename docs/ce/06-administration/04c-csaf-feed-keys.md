@@ -7,7 +7,7 @@ A **CSAF feed key** gives a partner or customer read access to your company's CS
 
 Open **Administration → API keys** and select the **CSAF feed keys** card ("TLP-scoped keys for the CSAF document feed").
 
-📸 *Screenshot: the CSAF feed keys page with the key table and the Create CSAF feed key dialog.*
+![The Create CSAF feed key dialog with a Name and the TLP levels WHITE, GREEN, AMBER and RED, open over the CSAF feed keys table.](../../assets/images/ce/06-administration/04c-csaf-feed-keys-1.webp)
 
 ## TLP levels
 

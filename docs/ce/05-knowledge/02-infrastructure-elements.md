@@ -15,7 +15,7 @@ Select a component to open its page: the **Information** panel (key, purl, homep
 > [!NOTE]
 > Everyone can read the catalog. Company component managers also see **Add infrastructure component**, **View used as Modules** and an **Edit** button. See [Manage Infrastructure Components](../14-component-manager/01-manage-infrastructure.md).
 
-📸 *Screenshot: the infrastructure components list.*
+![The Infrastructure components list with six components, among them Apache HTTP Server, MariaDB, MongoDB and NGINX, each with its categories, description and homepage and repository links.](../../assets/images/ce/05-knowledge/02-infrastructure-elements-1.webp)
 
 ## Related
 

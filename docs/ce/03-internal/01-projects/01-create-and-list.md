@@ -12,7 +12,7 @@
 
 A toast confirms *Project successfully created!*. A name that is already taken is refused with *A project with this name already exists*. The new project has default settings. If you are a manager, you become its default project manager; if you are a compliance manager, its default compliance manager. A role you do not hold is filled with another user of the company who holds it. The member list starts empty. Configure description, tags, managers and legal settings in the [Project Settings](settings/index.md) afterwards.
 
-📸 *Screenshot: the Create new project dialog with the Project name field.*
+![The Create new project dialog with Customer Portal entered as Project name and the Close and Create project buttons.](../../../assets/images/ce/03-internal/01-projects/01-create-and-list-1.webp)
 
 > [!TIP]
 > Give projects clear, descriptive names that match your team's vocabulary, for example "Customer Portal", "Firmware v3" or "Mobile App iOS".
@@ -51,7 +51,7 @@ The last column holds **Settings**, pin and follow.
 - **All states / OK / Warnings / Violations**: filter by traffic-light state.
 - **Tags**: select one or more company tags. Without company tags, the field reads **No tags** and links to the company tags.
 
-📸 *Screenshot: the project list with the state and tags filters active.*
+![The Projects list filtered to Violations and the tag customer-facing, showing Mobile App and Webshop with their tags.](../../../assets/images/ce/03-internal/01-projects/01-create-and-list-2.webp)
 
 If modules exist that belong to no project, the list also shows **Unassigned Modules**. Click any project to open the [Project Overview](02-project-overview.md).
 

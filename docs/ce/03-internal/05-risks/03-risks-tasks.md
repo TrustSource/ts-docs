@@ -45,12 +45,12 @@ Each task row also offers **Create issue**, which opens a GitHub issue from the 
 3. Read the tiles: **total**, **upcoming** (due within the next 7 days and not completed), **opened** (planned, in progress or in review) and **resolved** (completed).
 4. Use the buttons **Backlog**, **In progress** and **Completed** to show or hide groups, and the selector **My tasks**, **Unassigned** or **All tasks**.
 
-The list shows **Countermeasure**, **Tasks**, **Due date**, **Frequency**, **Status**, **Comment** and **Responsible**, with the issue link and a delete button.
+The list shows **Countermeasure**, **Tasks**, **Due date**, **Frequency**, **Status**, **Comment** and **Responsible**, with the issue action (**Copy details**, **Create issue** or **View issue**, see above) and a delete button.
 
 > [!NOTE]
 > TrustSource CE does not mark overdue tasks and sends no due-date reminders. Use the **upcoming** tile and the due dates in the list to follow up.
 
-📸 *Screenshot: the Tasks tab with the tiles and the group buttons.*
+![The Tasks tab for All module of Webshop with the total, upcoming, opened and resolved tiles, the Backlog, In progress and Completed buttons, All tasks selected and the task list with due dates, status and responsible people.](../../../assets/images/ce/03-internal/05-risks/03-risks-tasks-1.webp)
 
 ## Related
 

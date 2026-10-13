@@ -37,7 +37,7 @@ Project and module settings carry a rights code per setting:
 
 Codes combine: `rw` is view and edit, `rwd` view, edit and delete, `rx` view and run. An empty code means no access.
 
-📸 *Screenshot: a project settings tab with a read-only field next to an editable one.*
+![The General tab of Legacy Portal as seen by Chris Taylor, Manager and Portfolio manager but not the project owner: Name, Application goals, Tags and Members are greyed out and read-only, while Default project manager and Default compliance manager can be changed.](../../assets/images/ce/10-roles-permissions/03-permission-model-1.webp)
 
 ## Context: your relationship to the project or module
 

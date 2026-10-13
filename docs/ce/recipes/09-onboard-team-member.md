@@ -11,7 +11,7 @@ Invite a new user, give them the right roles and project access, and get them pr
 
 Open **Administration → User Management**. Under **Invite your colleagues** enter **Name** and **E-Mail** and select **Invite**. The user receives an enrolment email with a link to set a password.
 
-📸 *Screenshot: User management with the "Invite your colleagues" panel.*
+![The Invite your colleagues panel of User Management with a Name and an E-Mail entered and the Invite button.](../../assets/images/ce/recipes/09-onboard-team-member-1.webp)
 
 For many users at once, use **Import users from CSV** on the same page.
 

@@ -15,7 +15,7 @@ Your software runs on a web server, a database or a message broker that you do n
 
 Open the project and select **Add/link**. In **Add/link module** set **Module type** to **COTS or Infrastructure component**.
 
-📸 *Screenshot: "Add/link module" dialog with "COTS or Infrastructure component" selected.*
+![The Add/link module dialog with Module type COTS or Infrastructure component, NGINX in Select pre-defined module, 1.26.0 in Module version, Type of architecture Infrastructure Service and Is open source module ticked.](../../assets/images/ce/recipes/10-add-infrastructure-module-1.webp)
 
 ### 2. Pick the component and version
 
@@ -25,9 +25,9 @@ Set **Type of architecture**, for example **Infrastructure Service** for a web s
 
 ### 3. Create the module
 
-Select **Create module**. The module appears in the project, labelled **Infrastructure Module**, with the license of the catalog entry.
+Select **Create module**. The module appears in the project; in the grid view and on the module page it is labelled **Infrastructure Module** and carries the license of the catalog entry.
 
-📸 *Screenshot: project module list with the new infrastructure module.*
+![The Payment Service project in the grid view: the new module NGINX labelled Infrastructure Service and Infrastructure Module next to the module payment-service.](../../assets/images/ce/recipes/10-add-infrastructure-module-2.webp)
 
 ### 4. If the component is not in the catalog
 

@@ -5,3 +5,7 @@ site/
 __pycache__/
 .env
 tasks/
+node_modules/
+tools/screenshots/.auth-*.json
+tools/screenshots/.seed*.json
+tools/screenshots/.cache/

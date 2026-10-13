@@ -27,7 +27,9 @@ A component page shows the **Information** (key, purl, homepage, repository, lan
 
 Company component managers see **Add component** on the lake page, an **Edit** button on a component, and a **Critical components** button that opens the [Components report](../03-internal/04c-impact-and-portfolio-reports.md#components). See [Component Manager](../14-component-manager/index.md).
 
-📸 *Screenshot: the Components lake search bar with results, and a component page with its versions.*
+![The Components lake with the criteria Name lo, Any language and Active, sorted by Name ascending, and the nine matching components, among them lodash, log4j-api and log4j-core, with description and package icon.](../../assets/images/ce/05-knowledge/01-component-lake-1.webp)
+
+![The component page of log4j-core with the Information panel and the Versions list, showing version 2.14.1 with its license and reported vulnerabilities.](../../assets/images/ce/05-knowledge/01-component-lake-2.webp)
 
 ## Related
 

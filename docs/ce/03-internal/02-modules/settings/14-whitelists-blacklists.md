@@ -44,4 +44,4 @@ If the company or the project enforces the allow list (**Enforce Allow list** on
 - [Allow/Deny (Project)](../../01-projects/settings/07-whitelists-blacklists.md)
 - [Open Source Policy](../../../05-knowledge/07-open-source-policy.md)
 
-📸 *Screenshot: the Allow/Deny tab with the license and component panels.*
+![The Allow/Deny tab: under Licenses the Always allow license list with GNU Lesser General Public License v2.1 only and the Always deny license list with GNU Affero General Public License v3.0 only; under Components the Always allow component and Always deny component lists with key, version and comment.](../../../../assets/images/ce/03-internal/02-modules/settings/14-whitelists-blacklists-1.webp)

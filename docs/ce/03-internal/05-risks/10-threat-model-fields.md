@@ -14,7 +14,7 @@ TrustSource CE does not generate threat models and has no **Threat Models** menu
 
 All fields are optional. Click **Save** in the editor to store them. If you clear every field, the threat-model data is removed from the risk.
 
-📸 *Screenshot: the Threat model tab of a risk with STRIDE categories and two CWEs.*
+![The Threat model tab of the risk Customer data exposed through SQL injection, with the STRIDE categories Information Disclosure and Tampering, the CWEs CWE-89 and CWE-20, the affected element type process and Trust boundary crossing ticked.](../../../assets/images/ce/03-internal/05-risks/10-threat-model-fields-1.webp)
 
 ## Fields
 

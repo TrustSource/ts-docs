@@ -9,7 +9,7 @@ The **Logins history** page ("All logins of company") lists the sign-in attempts
 
 Select **Logins history** at the top right of the [Audit Logs](07-audit-logs.md) page (**Administration → Audit logs**). The page has no menu entry of its own, and the Audit logs page needs the Account admin role; Managers and Compliance managers open the Logins history at `/settings/company/loginsHistory`.
 
-📸 *Screenshot: the Logins history page with the table and the buttons at the top right.*
+![The Logins history page with the Audit logs, Users with no logins for 60 days, Export as CSV and Copy to clipboard buttons, and the table with Allowed, Created, Method, Type, Email and Name.](../../assets/images/ce/06-administration/09-login-history-1.webp)
 
 ## The table
 

@@ -7,7 +7,7 @@ The Issue Integration tab sets where ***TrustSource CE*** creates issues for thi
 
 ## Choose the tracker
 
-Select the tracker in the list at the top: **TFS**, **Jira** or **GitHub issues**. Once a tracker is configured, the info line *These settings will overwrite company settings* reminds you that the project values take precedence over the company integration under [Integrations](../../../06-administration/08a-issue-trackers.md).
+Select the tracker in the list at the top: **TFS**, **Jira** or **GitHub issues**. The info line *These settings will overwrite company settings* above the list reminds you that the project values take precedence over the company integration under [Integrations](../../../06-administration/08a-issue-trackers.md).
 
 ## Fields
 
@@ -19,7 +19,7 @@ Select the tracker in the list at the top: **TFS**, **Jira** or **GitHub issues*
 
 Password and token fields stay empty after saving; leave them blank to keep the stored value. Stored credentials are encrypted with the installation's encryption key. Click **Update** to save.
 
-📸 *Screenshot: the Issue Integration tab with the tracker selector and the Jira fields.*
+![The Issue Integration tab of Webshop with Jira selected, the API and Email switch on API, and the fields Project key, Company url, User, Password and Active filled in with example values.](../../../../assets/images/ce/03-internal/01-projects/settings/10-issue-tracker-1.webp)
 
 > [!TIP]
 > Use API tokens rather than passwords. Jira Cloud requires an API token; a GitHub token needs permission to create issues in the repository.

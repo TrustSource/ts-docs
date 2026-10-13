@@ -14,7 +14,7 @@ The header shows the approval name, its **Packageurl** and description, if set. 
 
 When the reports are ready, the tab shows key figures: **Modules**, **Component status changes**, **SW-Tests passed**, **Vulnerabilities resolved**, **Legal actions taken**, **Components outdated**, **Notice file completed** (opens the notice file) and **Capabilities**. Below them, the **Modules** table lists the modules of the approval with the analysis that was selected.
 
-📸 *Screenshot: the Overview tab of an approval.*
+![The Overview tab of the dry run Webshop Backend: the header with the Packageurl and the description, the buttons Manage binary links, Create approval request and Remove DRAFT, the review tabs, and the Modules table with webshop-backend, its analysis of v2.4.0 and the legal, security and quality bars.](../../../assets/images/ce/03-internal/06-approvals/02-approval-detail-tabs-1.webp)
 
 ## Tabs
 
@@ -29,7 +29,7 @@ When the reports are ready, the tab shows key figures: **Modules**, **Component 
 | **Capabilities** | The capabilities of the modules (**Name**, **Description**, **Introduced at version**). See [Module settings: Capabilities](../02-modules/settings/09-capabilities.md). |
 | **SW-Quality** | The SARIF test runs of the modules with status, tool and findings. See [SW Quality Scans](../../02-inbound/04-sw-quality-scans.md). |
 
-📸 *Screenshot: the approval detail page with the Licenses tab active.*
+![The Licenses tab of the open request Webshop Backend 2.4.0 with Approve and Reject in the header: the license distribution chart with Apache License 2.0, GPL-2.0 only, LGPL-2.1 only, MIT and Unknown, the counters 5 licenses and 17 unique obligations, the legal requirements, the counters License Ok, With obligations/warnings and Causing violations, and the Causing obligations group.](../../../assets/images/ce/03-internal/06-approvals/02-approval-detail-tabs-2.webp)
 
 > [!TIP]
 > The **Status changes** tab lists components that were modified. Undocumented changes are the ones to clarify before you approve, because a modification can change the obligations of a license.

@@ -11,7 +11,7 @@ The analysis flags a license violation in one of your modules. Here is how to fi
 
 Open the module and select the **Legal** tab. It lists the licenses found in the module, each with the components that carry it and the obligations and violations the evaluation produced. Use **Filter** to narrow the list. Select a component to see its versions, declared and detected licenses.
 
-📸 *Screenshot: module Legal tab with a license expanded and a violation visible.*
+![The Legal view of webshop-backend with the license GPL-2.0-only expanded, status Violations, showing its component mysql-connector-java 8.0.27; Apache-2.0 also has Violations, LGPL-2.1-only is Allowed in module, and MIT and License not detected have Warnings.](../../assets/images/ce/recipes/03-handle-license-conflict-1.webp)
 
 ### 2. Check the detection
 
@@ -34,7 +34,7 @@ Whether a license is a violation depends on the project's and module's legal set
 | **Allow the license** for this module or project | **Settings → Allow/Deny → Always allow license**. On a module, entries added by a developer wait for a compliance manager's approval. |
 | **Resolve the obligation** | Record how you meet the obligation on the **Resolved obligations** settings tab. |
 
-📸 *Screenshot: module settings, Allow/Deny tab with the "Always allow license" list.*
+![The Licenses part of the Allow/Deny tab of a module: the Always allow license list with GNU Lesser General Public License v2.1 only and its comment, and the Always deny license list with GNU Affero General Public License v3.0 only.](../../assets/images/ce/recipes/03-handle-license-conflict-2.webp)
 
 Company-wide allow and deny lists are kept under **Administration → Settings → License allow/deny** and **Administration → Settings → Component allow/deny**. See [Settings](../06-administration/02-settings.md).
 
