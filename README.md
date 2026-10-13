@@ -15,20 +15,23 @@ docs/
     support.md
   v3/                         # SaaS track (live; content being written)
     index.md
-  ce/                         # Community Edition track (legacy v2.16 baseline)
+  ce/                         # Community Edition track (TrustSource CE 1.0, self-hosted)
     00-getting-started/
-    01-installation-setup/
+    01-installation-setup/    # CE only
     02-inbound/
-    03-internal/              # Projects, Modules, Products, Approvals, ...
-    04-outbound/              # SBOM, SOUP, Notice, CSAF
-    05-knowledge/             # Lakes, Licenses, Algorithms, Chat
+    03-internal/              # Products, Projects, Modules, Risks, Approvals, Reports
+    04-outbound/              # SBOM + CBOM, Notice, CSAF, Verify
+    05-knowledge/             # Lakes, Licenses, Open source policy
     06-administration/
-    07-account-admin-auth/    # SSO / Keycloak
     08-personal/
-    09-rest-api/
+    09-rest-api/              # API v2
     10-roles-permissions/
     11-troubleshooting-faq/
     12-release-notes/
+    13-ce-vs-saas.md
+    14-component-manager/
+    15-legal-manager/
+    recipes/
 ```
 
 See `STRUCTURE.md` for the edition strategy in detail.

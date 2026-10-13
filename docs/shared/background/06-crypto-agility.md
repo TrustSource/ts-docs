@@ -1,6 +1,6 @@
 # Crypto Agility
 
-Crypto agility is the ability to quickly switch cryptographic algorithms and protocols without major redesigns — essential as algorithms become deprecated or broken.
+Crypto agility is the ability to quickly switch cryptographic algorithms and protocols without major redesigns - essential as algorithms become deprecated or broken.
 
 ## Why it matters
 
@@ -10,6 +10,6 @@ Crypto agility is the ability to quickly switch cryptographic algorithms and pro
 
 ## How TrustSource helps
 
-- [Algorithm database](../../ce/05-knowledge/06-algorithms.md) with FIPS status and deprecation tracking.
+- [Algorithm database](../../v3/05-knowledge/05-algorithms.md) with FIPS status and deprecation tracking.
 - [Encryption settings](../../ce/03-internal/01-projects/settings/05-encryption.md) at project and module level.
-- [Deep scan crypto analysis](../../ce/02-inbound/05-repositories-deep-scan.md) detects algorithm usage in source code.
+- [Deep scan crypto analysis](../../v3/02-inbound/05-repository-scans.md) detects algorithm usage in source code.

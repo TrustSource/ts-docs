@@ -1,19 +1,30 @@
 # Administration
 
-Company-wide settings and management. Most pages in this section require the `account_admin` role.
+Company-wide settings and management in ***TrustSource CE***. Open them from **Administration** in the left navigation. The entries you see depend on your roles: most pages are for the Account admin, while **Settings** and **Policies** are also shown to other roles for the cards that belong to their work.
 
-| Page | What it covers | Required role |
+| Page | What it covers | Menu entry shown to |
 |---|---|---|
-| [General Info](01-general-info.md) | Company name, logo, contact, language. | account_admin |
-| [Account & Billing](02-account-billing.md) | Subscription, usage, invoices. | account_admin |
-| [Enterprise Companies](03-enterprise-companies.md) | Sub-company management (Enterprise/Medical). | enterprise_admin |
-| [User Management](04-user-management.md) | Invite, assign roles, remove members. | account_admin |
-| [Login History](05-login-history.md) | Audit log of user logins. | account_admin |
-| [API Keys](06-api-keys.md) | Scanner API key management. | account_admin |
-| [Integrations](07-integrations.md) | Jira, GitHub, TFS, LeanIX, webhooks. | account_admin |
-| [Policies](08-policies.md) | EOL, FOSS and crypto policies. | account_admin |
-| [Templates](09-templates.md) | Private licenses, algorithms, tags, legal templates. | account_admin |
-| [Audit Logs](10-audit-logs.md) | Company-wide audit trail. | account_admin |
-| [T&C / Privacy](11-tc-privacy-documents.md) | Terms and privacy documents. | all |
+| [Integrations](08-integrations.md) | Github, Jira, TFS, SCANOSS, webhooks and channels, LeanIX. | Account admin |
+| [Settings](02-settings.md) | Company settings cards: general info, FOSS liaison, PSIRT contacts, written offer, allow/deny lists, encryption, quality, tags, private licenses, legal templates, private algorithms, manual vulnerabilities. | Account admin, Compliance manager, Company security manager, Company component manager, Portfolio manager, Manager (cards depend on role) |
+| [User Management](03-user-management.md) | Invite, import, assign roles, remove users. | Account admin |
+| [API keys](04-api-keys.md) | API keys, release keys and CSAF feed keys. | Account admin |
+| [Policies](05-policies.md) | Opensource policy, crypto algorithms, component end-of-life. | Account admin, Company security manager, Compliance manager |
+| [Audit logs](07-audit-logs.md) | Company-wide audit trail. | Account admin |
+| [Login History](09-login-history.md) | Sign-in attempts and users without logins, opened from the Audit logs page. | No menu entry (Account admin, Manager, Compliance manager) |
 
-📸 *Screenshot: the Administration section in the sidebar.*
+More detail pages:
+
+- [Company details](02a-company-details.md): General info, FOSS liaison, PSIRT contacts, Written offer
+- [Company tags](02b-company-tags.md): add, import, remove and re-activate tags
+- [Release keys](04b-release-keys.md) and [CSAF feed keys](04c-csaf-feed-keys.md)
+- [Issue trackers](08a-issue-trackers.md), [LeanIX and SCANOSS](08b-leanix-scanoss.md), [Webhooks and channels](08c-webhooks-channels.md)
+
+> [!NOTE]
+> TrustSource CE has no billing, account types, enterprise companies, identity provider integration (SSO) or API usage statistics. Every feature is available and gated by role only. See [CE and SaaS compared](../13-ce-vs-saas.md).
+
+📸 *Screenshot: the Administration section in the sidebar, expanded for an Account admin.*
+
+## Related
+
+- [Roles & Permissions](../10-roles-permissions/index.md)
+- [Functions by Area](../10-roles-permissions/04-functions-by-area.md)

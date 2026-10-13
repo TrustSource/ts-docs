@@ -2,9 +2,9 @@
 
 ## Getting help
 
-- **This documentation** — search or browse for answers.
-- **In-app help** — click the help icon in the right bar.
-- **AI Chat** — use the AI assistant (requires `chat` license feature).
+- **This documentation** - search or browse for answers.
+- **In-app help** - click the help icon in the right bar.
+- **AI Chat** - use the AI assistant (requires `chat` license feature).
 
 ## Contact support
 

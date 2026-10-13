@@ -1,12 +1,29 @@
 # Risk Overview
 
 > [!NOTE]
-> **Required license feature:** `risks`
+> **Menu:** **Internal → Risks** is shown to Developer, Compliance manager and Manager.
 
-The risk overview dashboard shows key metrics at a glance: total risks, new risks (last 7 days), in-progress risks and resolved risks. Filter by project and module to focus on specific areas.
+The **Overview** tab (*Risk management overview*, "Details about risks across whole company") answers two questions for the whole company in ***TrustSource CE***: which projects and modules carry risks that need attention, and which risks are new or unattended. It opens when you choose **Risks** in the menu.
 
-📸 *Screenshot: the risk overview dashboard with metric cards.*
+If the register is still empty, the page shows *No risks tracked yet* and lists what it will show once risks exist.
+
+## Portfolio overview
+
+A treemap of projects and modules, sized by the number of risks and coloured by state or impact. See [Portfolio Views](04-portfolio-views.md).
+
+## New risks (added in last 14 days)
+
+All risks of the company created in the last 14 days, with the tiles **total**, **added last 7 days**, **in progress** and **resolved**. Which states count as resolved is explained in [Treatment and State](05-treatment-and-state.md#resolved-and-in-progress).
+
+## Unattended risks
+
+Risks that nobody has started to work on: risks without any countermeasure whose mitigation strategy is not `ignore`. The same four tiles are shown above the list.
+
+Both lists are read-only. Use the link button at the end of a row to open the risk in the [Risks List](02-risks-list.md) in a new browser tab, where you can edit it.
+
+📸 *Screenshot: the Overview tab with the portfolio treemap and the New risks list.*
 
 ## Related
 
-- [Risks List](02-risks-list.md) — browse individual risk entries
+- [Risks List](02-risks-list.md) - the register behind these lists
+- [Portfolio Views](04-portfolio-views.md) - the treemap in detail

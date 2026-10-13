@@ -1,17 +1,19 @@
-# Knowledge — Lakes & References
+# Knowledge
 
-The Knowledge section provides global reference databases shared across all projects. These are the data sources that ***TrustSource*** uses to enrich your scans with license obligations, vulnerability data, algorithm classifications and policy rules.
+The **Knowledge** menu holds the reference data that ***TrustSource CE*** uses when it analyses your modules: the components it has seen, the infrastructure and commercial components it knows, the vulnerabilities reported for them, the license catalog and your company's open source policy. Every signed-in user can read these pages.
+
+All data lives in your own installation. The catalogs grow from the scans you import and from what your users enter; TrustSource CE does not download a public component index. Vulnerabilities come from OSV during analysis.
 
 | Page | What it covers |
 |---|---|
-| [Component Lake](01-component-lake.md) | Global component library — search, inspect, see dependents. |
-| [Vulnerability Lake](02-vulnerability-lake.md) | CVE/CWE/GHSA search with severity, affected versions, aliases. |
-| [Infrastructure Components](03-infrastructure-components.md) | Cloud/container runtime catalog. |
-| [COTS Components](04-cots-components.md) | Commercial off-the-shelf component catalog. |
-| [Licenses](05-licenses.md) | License database with obligations and commercial terms. |
-| [Algorithms](06-algorithms.md) | Cryptographic algorithm database with FIPS status. |
-| [Open Source Policies](07-open-source-policies.md) | Available policy templates. |
-| [Your Policy](08-open-source-policy.md) | View your company's active FOSS policy. |
-| [Copyright & Trademarks](09-copyright-trademarks.md) | Trademark registry. |
-| [AI Chat Assistant](10-chat.md) | AI-powered assistant for compliance questions. |
-| [Trainings](11-trainings.md) | Training resources and links. |
+| [Component Lake](01-component-lake.md) | The components this installation knows: search, inspect versions, licenses and vulnerabilities. |
+| [Infrastructure Elements](02-infrastructure-elements.md) | Operating systems, base images, servers and other infrastructure components. |
+| [3rd party (COTS)](03-cots.md) | Commercial off-the-shelf components with their commercial terms. |
+| [Vulnerability Lake](04-vulnerability-lake.md) | The OSV vulnerabilities found for the components this installation analysed; vulnerability and CWE lookup. |
+| [Licenses](06-licenses.md) | The license catalog with license texts. |
+| [Open Source Policy](07-open-source-policy.md) | Your company's active open source policy. |
+
+> [!NOTE]
+> The component, infrastructure, COTS and license catalogs are shared by all companies of an installation. Only users with the **Company component manager** role can change them; see [Component Manager](../14-component-manager/index.md) and [Licenses](06-licenses.md#edit-the-catalog).
+
+Cryptographic algorithms are managed under **Administration → Policies → Crypto algorithms** and **Administration → Settings → Private algorithms** (see [Policies](../06-administration/05-policies.md)). The **Copyright & Trademarks** page is linked from the copyright line at the bottom of the left menu; see [Copyright & Trademarks](../15-legal-manager/03-copyright-trademarks.md). Trainings and the AI chat assistant of the SaaS edition are not part of TrustSource CE; see [CE and SaaS compared](../13-ce-vs-saas.md).

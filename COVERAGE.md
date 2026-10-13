@@ -35,10 +35,12 @@ The REST API documentation was merged into this help on **2026-10-10**; `trustso
 
 ## Current coverage — CE track
 
-The CE track is derived from the v2.16 baseline. Version reflected:
-**v2.16.29** (see [`docs/ce/12-release-notes/2.16.29.md`](docs/ce/12-release-notes/2.16.29.md)).
-The CE track is expected to lag the v3 track by design — it targets
-the future Community Edition, not the live SaaS.
+| Service | Repo | Docs cover | Gap |
+|---|---|---|---|
+| **TrustSource CE** | `TrustSource/ts-core-ce` (local `ts-core-ce`) | **CE 1.0.0** (`ts-core-ce` HEAD `6a354f3`, state 2026-10-13): text rebuilt from the v3 pages and verified against the CE code and a running instance (see [`docs/ce/12-release-notes/1.0.md`](docs/ce/12-release-notes/1.0.md)). | Screenshots are placeholders (📸, 170 on 132 pages), to be taken from a running CE (stage 2). Open code questions are tracked as issues in ts-core-ce. |
+
+The CE track documents the self-hosted Community Edition only. It no
+longer derives from the v2.16 SaaS baseline.
 
 ## How to update
 
@@ -53,6 +55,18 @@ the future Community Edition, not the live SaaS.
    e.g. `docs(<service>): refresh for v3.2.21 + coverage bump`.
 
 ## Update log
+
+- **2026-10-13 (CE refresh, stage 1)** - CE track rebuilt for TrustSource CE 1.0.0
+  (`ts-core-ce` `6a354f3`). The old `docs/ce/` was the v2.16 SaaS manual renamed
+  (account types, license flags, billing, Keycloak, app.trustsource.io). Every page
+  now starts from its v3 counterpart and is checked against the CE code; navigation,
+  settings tabs and module views were checked in a running instance. SaaS-only
+  chapters removed (auth/SSO, capabilities, threat models, SOUP, CVD, deep scans,
+  billing, enterprise companies); new pages for installation (HTTPS reverse proxy),
+  guide and demo project, CSAF feed keys, risk threat model fields, CE vs SaaS and
+  CE 1.0 release notes; REST API rewritten for API v2. Internal tracking:
+  `tasks/2026-10-13-ce-docs-refresh.md`, `tasks/ce-feature-inventory.md`,
+  `tasks/ce-review-findings.md`. Screenshots (stage 2) still to do.
 
 - **2026-10-10 (waves 2–6)** — Core (ts-app) docs aligned to v3.3.59: Risks (treatment, decisions,
   assessment scheme, automatic risks, history), SARIF/CWE, audit log and login history, approvals;

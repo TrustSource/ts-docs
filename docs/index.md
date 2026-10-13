@@ -1,6 +1,6 @@
 # TrustSource Help
 
-Welcome to the help portal for ***TrustSource*** — the compliance,
+Welcome to the help portal for ***TrustSource*** - the compliance,
 vulnerability and product security platform built by
 [EACG](https://www.eacg.de).
 
@@ -8,13 +8,16 @@ vulnerability and product security platform built by
 
 | | Edition | Status | Track |
 |---|---|---|---|
-| → | **[TrustSource (SaaS)](v3/index.md)** | Live at [app.trustsource.io](https://app.trustsource.io) | `docs/v3/` — full documentation |
-| → | **[Community Edition](ce/index.md)** | In preparation | `docs/ce/` — self-hosted edition, shares the platform core |
+| → | **[TrustSource (SaaS)](v3/index.md)** | Live at [app.trustsource.io](https://app.trustsource.io) | `docs/v3/` - full documentation |
+| → | **[Community Edition](ce/index.md)** | Self-hosted, CE 1.0.0 | `docs/ce/` - self-hosted edition, shares the platform core |
 
-The CE covers the platform core but does not include all SaaS
-capabilities (e.g. the OSCAR chat assistant, the medical and CSAF
-capabilities, large-scale scan and analysis features that rely on cloud
-infrastructure). The CE documentation additionally includes
+TrustSource CE 1.0 (AGPL-3.0) covers the platform core:
+projects, modules, products, risks, approvals and releases, SBOM, notice
+files and CSAF. It does not include the SaaS capabilities that rely on
+cloud services, such as the OSCAR chat assistant, repository deep scans,
+the Threat Model Agent, CVD cases, SOUP lists and single sign-on. See
+[CE and SaaS compared](ce/13-ce-vs-saas.md). The CE
+documentation additionally includes
 [Installation & Setup](ce/01-installation-setup/) for self-hosted
 deployments.
 
@@ -26,7 +29,7 @@ deployments.
 - **Have an account and want to get hands-on?** Jump to
   [Getting Started](v3/00-getting-started/).
 - **Looking for a capability beyond the core?** See the
-  [Capabilities overview](v3/13-capabilities/) — OSCAR Chat, Risk,
+  [Capabilities overview](v3/13-capabilities/) - OSCAR Chat, Risk,
   Product, Medical, CVD, CSAF Trusted Provider.
 - **Looking for an API reference?** Open the
   [REST API chapter](v3/09-rest-api/).

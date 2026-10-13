@@ -15,9 +15,10 @@ naming conventions of the customer-facing online help.
   (`app.trustsource.io`). Full documentation mirroring CE content with
   SaaS-specific adaptations. Does NOT include Installation & Setup
   (SaaS is hosted).
-- **`docs/ce/`** — Help track for the Community Edition. Based on the
-  original v2.16 documentation, renamed to CE. Includes Installation &
-  Setup for self-hosted deployments.
+- **`docs/ce/`** - Help track for the Community Edition (TrustSource CE
+  1.0, self-hosted, AGPL-3.0). Rebuilt in October 2026 from the v3 pages
+  and verified against the `ts-core-ce` code; same chapter layout and file
+  names as v3, minus SaaS-only features. Includes Installation & Setup.
 - **`docs/shared/`** — Cross-edition content (glossary, background
   articles on CRA/NIS2/SBOM/etc., support).
 
@@ -59,22 +60,23 @@ ohelp/
 │   │   ├── 14-component-manager/    # 4 pages
 │   │   ├── 15-legal-manager/        # 4 pages
 │   │   └── recipes/                 # 13 pages
-│   └── ce/                           # Community Edition (183 pages)
+│   └── ce/                           # Community Edition (193 pages)
 │       ├── index.md
-│       ├── 00-getting-started/      # 7 pages
-│       ├── 01-installation-setup/   # 9 pages (CE only — self-hosted)
-│       ├── 02-inbound/              # 8 pages
-│       ├── 03-internal/             # 46 pages
-│       ├── 04-outbound/             # 6 pages
-│       ├── 05-knowledge/            # 12 pages
-│       ├── 06-administration/       # 12 pages
-│       ├── 07-account-admin-auth/   # 7 pages
+│       ├── 00-getting-started/      # 8 pages (incl. guide, tour and demo project)
+│       ├── 01-installation-setup/   # 9 pages (CE only - self-hosted)
+│       ├── 02-inbound/              # 6 pages
+│       ├── 03-internal/             # 76 pages (products, projects, modules, risks, approvals, reports)
+│       ├── 04-outbound/             # 5 pages
+│       ├── 05-knowledge/            # 7 pages
+│       ├── 06-administration/       # 15 pages
 │       ├── 08-personal/             # 6 pages
-│       ├── 09-rest-api/             # 6 pages
-│       ├── 10-roles-permissions/    # 9 pages
+│       ├── 09-rest-api/             # 23 pages (API v2)
+│       ├── 10-roles-permissions/    # 8 pages
 │       ├── 11-troubleshooting-faq/  # 7 pages
 │       ├── 12-release-notes/        # 2 pages
-│       ├── 14-capabilities/         # 7 pages
+│       ├── 13-ce-vs-saas.md         # what CE includes and what is SaaS-only
+│       ├── 14-component-manager/    # 4 pages
+│       ├── 15-legal-manager/        # 3 pages ("Legal Reference Data")
 │       └── recipes/                 # 12 pages
 ```
 
@@ -83,10 +85,12 @@ ohelp/
 | Aspect | v3 (SaaS) | CE |
 |---|---|---|
 | Installation & Setup | Not needed (hosted) | Full self-hosted guide (9 pages) |
-| Auth & SSO | `07-auth-sso/` | `07-account-admin-auth/` |
-| Capabilities | All available with license | Subset (see per-capability page) |
-| Version references | v3.x | v2.16 baseline |
-| Release Notes | v3.1.20 – v3.3.22 | v2.16.29 |
+| Auth & SSO | `07-auth-sso/` (Keycloak) | None: email and password with TOTP 2FA (`00-getting-started/03-first-login.md`) |
+| Capabilities | `13-capabilities/`, license-gated | No license flags; SaaS-only features listed in `13-ce-vs-saas.md` |
+| Roles | 8 public + 2 internal | 7 public roles |
+| REST API | v3 endpoint groups | API v2 subset (`09-rest-api/endpoints/`, 15 groups) |
+| Version references | v3.x | CE 1.0.0 |
+| Release Notes | v3.1.20 - v3.3.x | 1.0 |
 
 ## Tooling
 

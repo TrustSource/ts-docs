@@ -1,26 +1,30 @@
-# Issue Tracker (Project)
+# Issue Integration (Project)
 
 > [!NOTE]
-> **Required role:** `manager` or `account_admin`
+> **Required role:** Developer, Compliance manager, Portfolio manager, Manager and Account admin see the tab. Account admin, and managers who are the project's default project manager or default compliance manager (or any manager while none is set), can change it. See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
 
-The Issue Tracker tab configures where ***TrustSource*** creates issues for this project — in Jira, GitHub or Azure DevOps (TFS).
+The Issue Integration tab sets where ***TrustSource CE*** creates issues for this project. With an active integration, the **Tasks** section of the [component side panel](../../02-modules/04-component-detail.md) and problem rows on the module's Legal view offer a link to create an issue for a component with a problem.
 
-## Supported integrations
+## Choose the tracker
 
-| Integration | Configuration fields |
+Select the tracker in the list at the top: **TFS**, **Jira** or **GitHub issues**. Once a tracker is configured, the info line *These settings will overwrite company settings* reminds you that the project values take precedence over the company integration under [Integrations](../../../06-administration/08a-issue-trackers.md).
+
+## Fields
+
+| Tracker | Fields |
 |---|---|
-| **Jira** | Server URL, username, password/token, project key, issue type, notification email, active toggle. |
-| **GitHub** | Personal access token, repository (owner/repo), active toggle. |
-| **TFS / Azure DevOps** | Account URL, project name, access token, active toggle. |
+| **TFS** (Azure DevOps) | **Account or URL**, **Project**, **Access Token**, **Active**. |
+| **Jira** | Switch **API** / **Email**. API: **Project key**, **Company url**, **User**, **Password**, **Active**. Email: **Project key**, **Email address** (the receiver address of your Jira email handler), **Active**. |
+| **GitHub issues** | **Access Token** (required), **Repository** (optional), **Active** (required). |
 
-Only one integration can be active at a time per project. Select the integration type and fill in the credentials.
+Password and token fields stay empty after saving; leave them blank to keep the stored value. Stored credentials are encrypted with the installation's encryption key. Click **Update** to save.
 
-📸 *Screenshot: the Issue Tracker tab with Jira configuration fields.*
+📸 *Screenshot: the Issue Integration tab with the tracker selector and the Jira fields.*
 
 > [!TIP]
-> Store credentials as API tokens rather than passwords where possible. Jira Cloud requires an API token; GitHub requires a personal access token with `repo` scope.
+> Use API tokens rather than passwords. Jira Cloud requires an API token; a GitHub token needs permission to create issues in the repository.
 
 ## Related
 
-- [Integrations](../../../06-administration/07-integrations.md) — company-wide integration configuration
-- [Code Tests (SARIF)](../../../02-inbound/04-tests-sarif.md) — creating issues from test findings
+- [Issue Trackers](../../../06-administration/08a-issue-trackers.md): company-wide configuration
+- [Integrations](../../../06-administration/08-integrations.md)

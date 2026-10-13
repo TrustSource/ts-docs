@@ -6,14 +6,14 @@ Two major SBOM formats dominate the industry. Both are supported by ***TrustSour
 
 - Maintained by the Linux Foundation.
 - ISO/IEC 5962:2021 standard.
-- Serializations: JSON, tag-value, RDF/XML.
+- Serialisations: JSON, tag-value, RDF/XML.
 - Strength: license and legal metadata.
 
 ## CycloneDX
 
 - Maintained by OWASP.
 - ECMA-424 standard.
-- Serializations: JSON, XML.
+- Serialisations: JSON, XML.
 - Strength: vulnerability and security metadata.
 
 ## When to use which
@@ -27,5 +27,5 @@ Two major SBOM formats dominate the industry. Both are supported by ***TrustSour
 
 ## How TrustSource helps
 
-- [SBOM Files](../../ce/04-outbound/01-sbom-files.md) — generate in both formats.
-- [Verification](../../ce/04-outbound/05-verification.md) — validate incoming SBOMs.
+- [SBOM + CBOM](../../ce/04-outbound/01-sbom-cbom.md) - generate in both formats.
+- [Verify](../../ce/04-outbound/05-verify.md) - check that a signed SBOM issued by your installation is unchanged.

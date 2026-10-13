@@ -1,10 +1,12 @@
 # Release Notes
 
-Release notes for ***TrustSource*** v2.16.x.
+Release notes for ***TrustSource CE***.
 
 | Version | Date | Highlights |
 |---|---|---|
-| v2.16.29 | — | Latest patch release. |
+| [1.0](1.0.md) | 2026-09-16 | Initial release of the Community Edition (app version 1.0.0) |
+
+The release notes shipped with your installation are also shown in the app: click **Updates** (the bell) in the right bar. A new version adds its release notes there on its first start.
 
 > [!NOTE]
-> For older versions, see the [CHANGELOG](https://github.com/eacg-gmbh/ts-app/blob/develop/CHANGELOG.md) in the repository.
+> The source code and its full history are in the [ts-core-ce repository](https://github.com/TrustSource/ts-core-ce) on GitHub. To update an installation, see the [Upgrade Guide](../01-installation-setup/08-upgrade.md).

@@ -4,3 +4,4 @@ site/
 *.pyc
 __pycache__/
 .env
+tasks/

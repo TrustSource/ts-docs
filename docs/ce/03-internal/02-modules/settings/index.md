@@ -1,26 +1,35 @@
 # Module Settings
 
-Module settings are organized in eighteen tabs. Most settings inherit from the parent project and can be overridden at the module level.
+Open the module settings with **Settings** on the [module page](../02-module-detail-tabs.md) or on the module card. The page header shows the module name, the subtitle *Edit Module* and a **Follow** action. Many settings add to the project defaults; some inherit from the project when left empty.
+
+The tabs appear in this order. A tab is shown only if your role may read it; infrastructure and COTS modules hide the tabs marked with *.
 
 | Tab | What it configures |
 |---|---|
-| [General](01-general.md) | Name, description, project assignment, architecture type, version, tags. |
-| [Legal](02-legal.md) | License obligations, legal template assignment. |
-| [Obligations](03-obligations.md) | Obligation resolution status per component. |
-| [Viability](04-viability.md) | Repository health monitoring, activity thresholds. |
-| [OSSF](05-ossf.md) | OpenSSF Scorecard configuration and thresholds. |
-| [Versioning](06-versioning.md) | Component version tracking, jump detection. |
-| [MDR/IVDR Classification](07-module-classification-mdr-ivdr.md) | Medical device classification (Medical accounts). |
-| [CIA](08-cia.md) | Confidentiality, Integrity, Availability requirements. |
-| [Capabilities](09-capabilities.md) | Software capability declarations. |
-| [Encryption](10-encryption.md) | Cryptographic algorithm and export control settings. |
-| [End of Life](11-end-of-life.md) | EOL analysis thresholds. |
-| [Quality](12-quality.md) | Test and quality requirements. |
-| [Releases](13-releases.md) | Module version history and release tagging. |
-| [Whitelists & Blacklists](14-whitelists-blacklists.md) | Allowed/denied licenses and components. |
-| [CVE Whitelist](15-cve-whitelist.md) | Accepted vulnerabilities (known-risk exceptions). |
-| [Custom Components](16-custom-components.md) | Manually defined components not from scans. |
-| [SPDX Export](17-spdx-export.md) | SPDX document generation settings. |
-| [Danger Zone](18-danger-zone.md) | Delete or archive the module. |
+| [General](01-general.md) | Name, description, project, architecture type, tags, managers, members, LeanIX link, confidence level, repository. |
+| [Legal](02-legal.md) | Trade secret protection, sub-licensing, distribution. |
+| [Quality](12-quality.md) * | Required test tools. |
+| [Crypto management](10-encryption.md) * | Detected and managed crypto assets, CBOM export. |
+| [AI / ML](19-ai-ml.md) * | Detected and managed AI artifacts, AIBOM export. |
+| [Allow/Deny](14-whitelists-blacklists.md) * | Always allowed and always denied licenses and components. |
+| [Capabilities](09-capabilities.md) * | What the module can do for its users. |
+| [End-of-life](11-end-of-life.md) | End-of-life analysis switch and thresholds. |
+| [CIA](08-cia.md) | Confidentiality, integrity and availability requirements. |
+| [Resolved obligations](03-obligations.md) | Obligations already fulfilled in this module. |
+| [Viability](04-viability.md) | Viability analysis switch, thresholds and confidence. |
+| [Versioning](06-versioning.md) | Versioning analysis switch, jump detection and thresholds. |
+| [Allowed vulnerability](15-cve-whitelist.md) | Muted vulnerabilities. |
+| [Custom components](16-custom-components.md) * | Components added by hand. |
+| [History](13-releases.md) * | Analyses and scans of the module. |
+| [Export SPDX](17-spdx-export.md) * | SPDX RDF export. |
+| [Danger Operations](18-danger-zone.md) | Archive the module, delete its analysis history, delete it. |
+
+Who may change which setting is listed in the [Module Settings Permission Matrix](../../../10-roles-permissions/06a-module-settings-matrix.md). In short, "owner" below means the module's default project manager or default compliance manager; while the module has none, every manager and compliance manager counts as owner.
+
+- A **Developer** who is a member of the module (or of a module without members) can change most technical tabs; a developer who is not a member reads only.
+- **Manager** and **Compliance manager** who are owner can change almost every tab. Only managers delete the analysis history.
+- **Company security manager** edits CIA and Capabilities; **Portfolio manager** edits Capabilities, tags and the default managers.
+
+The OSSF tab and MDR/IVDR classification are not part of TrustSource CE; see [CE and SaaS compared](../../../13-ce-vs-saas.md).
 
 📸 *Screenshot: module settings with the General tab active.*

@@ -1,51 +1,49 @@
-# Quick Check (License / Component)
+# Check (License / Component)
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`
+> **Required role:** Developer, Compliance manager, Manager or Account admin
 
-***TrustSource*** lets you look up a license or component instantly — without creating a project, module or scan. Use it when you need a fast answer to "Can I use this library?" or "What obligations come with this license?".
+**Check** answers a "what if" question before you commit to a dependency: would this license, or this component version, pass the rules of a given module? ***TrustSource CE*** evaluates it against the legal settings of a project and module of yours, but adds nothing to them. Open it from **Inbound (Scans) → Check**.
 
-## What it does
+Two buttons in the header switch between the modes: **License** and **Component**.
 
-The Quick Check page gives you two lookup modes:
+## Check a license
 
-- **License check** — enter a license name (e.g. "MIT", "GPL-3.0-only") and see its classification, obligations, compatibility notes and whether your company policy allows it.
-- **Component check** — enter a component identifier (e.g. `lodash`, `org.apache.commons:commons-lang3`) and see its known versions, licenses, vulnerabilities and metadata from the Component Lake.
+1. Choose the **Project** and the **Module** whose rules apply.
+2. Choose the **License**.
+3. Press **Check license**.
 
-## When to use it
+The result shows the license with a status colour and then, for the module's settings:
 
-- A developer asks "Can I add this dependency?" — check the license before you commit.
-- A compliance manager wants to verify a license obligation without navigating into a specific module.
-- You received a third-party SBOM and want to spot-check individual entries.
+- whether the license is allowed, denied or a private license of your company;
+- legal problems, for example a conflict with the module's distribution model;
+- obligations that come with the license.
 
-## How to use it
+The result is shown twice, side by side: once for "Component was **not** modified" and once for "Component was modified", because the obligations differ.
 
-1. Navigate to **Inbound → Check** in the sidebar.
-2. Select the check type: **License** or **Component**.
-3. Type the name or identifier. Autocomplete suggests matches as you type.
-4. Review the results.
+> [!NOTE]
+> License compatibility is evaluated by the ts-legalcheck service that runs next to the app. If it is not running, the check cannot produce a legal assessment. See [External services](../01-installation-setup/04-external-services.md).
 
-📸 *Screenshot: the Check page with a license lookup result showing classification, obligations and policy status.*
+## Check a component
 
-For a **license check**, results include:
+1. Choose the **Project** and **Module**.
+2. Start typing in **Component** and pick a match from the suggestions.
+3. Choose the **Version**. The licenses of each version are shown next to it.
+4. Press **Check component**.
 
-- License name and SPDX identifier
-- Your company's approval status (allowed / restricted / forbidden)
-- Obligation summary (attribution, copyleft, patent grant, etc.)
-- Commercial terms (if configured)
+You get the **Vulnerabilities** known for that version (each linked and coloured by score, or "No vulnerabilities known"), followed by the same legal assessment as above, based on the component's license.
 
-For a **component check**, results include:
+📸 *Screenshot: the Check page in Component mode with a result.*
 
-- Component name, ecosystem, known versions
-- Declared and detected licenses
-- Open vulnerabilities (CVE, GHSA)
-- Dependent modules in your company (if any)
+## When a project or module cannot be selected
+
+If the project or module has incomplete legal settings, the page says it cannot be selected and links to its settings so you can complete the legal requirements first. Until all required fields are chosen, the page lists what is still missing.
 
 > [!TIP]
-> Quick Check queries the same global databases as your scans — Component Lake and the license catalog. The difference is that results are not attached to any module or project.
+> For automation, the [Check API](../09-rest-api/endpoints/compliance-check.md) offers the same evaluation.
 
 ## Related
 
-- [Component Lake](../05-knowledge/01-component-lake.md) — browse and search the full component database
-- [Licenses](../05-knowledge/05-licenses.md) — the license catalog with obligations and commercial terms
-- [Open Source Policy](../05-knowledge/07-open-source-policies.md) — how policies classify licenses as allowed, restricted or forbidden
+- [Licenses](../05-knowledge/06-licenses.md)
+- [Component Lake](../05-knowledge/01-component-lake.md)
+- [Legal settings of a module](../03-internal/02-modules/settings/02-legal.md)

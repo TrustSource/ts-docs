@@ -1,13 +1,34 @@
-# Contact Support
+# Reporting a Problem
 
-**Email:** [support@trustsource.io](mailto:support@trustsource.io)
+***TrustSource CE*** is an open source project. Help, bug reports and feature requests go through its public GitHub repository.
 
-When opening a ticket, please include:
+## Where to look first
 
-1. Your **company name** and **account type**.
-2. The **page or feature** where the issue occurs.
-3. **Steps to reproduce** the problem.
-4. Any **error messages** (screenshot or text).
-5. Your **browser** and **OS** (for UI issues).
+- **This manual** - especially [Troubleshooting & FAQ](index.md).
+- **The README** of the repository - the **Help** icon in the right bar and **Documentation and help** in the guide panel open it.
+- **Your operator** - if someone else runs your installation, ask them first. Many problems (mail, HTTPS, integrations, missing license evaluation) can only be fixed on the server. **Contact Account Admin** in the right bar writes an email to your company's account admin.
 
-For urgent security issues, use the subject line "SECURITY" to trigger priority handling.
+## Report a problem
+
+Open an issue at [github.com/TrustSource/ts-core-ce/issues](https://github.com/TrustSource/ts-core-ce/issues). Search the existing issues first; your problem may already be known.
+
+Please include:
+
+1. The **TrustSource CE version** - shown at the bottom of the left sidebar, e.g. *TrustSource CE 1.0.0*.
+2. **How you run it** - the reference Docker Compose setup or your own, the host's CPU architecture (amd64 or ARM), and whether a reverse proxy is in front.
+3. The **page or feature** where the problem occurs.
+4. **Steps to reproduce** the problem.
+5. The **error message** as shown in the app (screenshot or text).
+6. The relevant **log lines** from `docker compose logs ts_core` (and `ts_legalcheck` for license check problems).
+7. Your **browser** and **OS**, for problems in the user interface.
+
+> [!WARNING]
+> GitHub issues are public. Before you post logs or screenshots, remove secrets and personal data: passwords, API keys, `TS_ENCRYPTION_KEY`, the contents of `.env`, email addresses, and the names of your projects and components if they are confidential. The app masks secrets in its `=> Config:` output, but other lines may still contain data you do not want to publish.
+
+## Report a security vulnerability
+
+Do **not** report security issues in public issues. Use GitHub's private vulnerability reporting for the repository: [github.com/TrustSource/ts-core-ce](https://github.com/TrustSource/ts-core-ce), **Security → Report a vulnerability**.
+
+## Contribute
+
+Pull requests are welcome in the same repository. The README describes the development setup and the checks to run before opening a pull request. Contributions are licensed under the AGPL-3.0.

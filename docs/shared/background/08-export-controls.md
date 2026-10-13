@@ -1,13 +1,13 @@
 # Export Controls (Dual-Use, EAR, ECCN)
 
-Export controls regulate the transfer of technology — including software with encryption — across national borders.
+Export controls regulate the transfer of technology - including software with encryption - across national borders.
 
 ## Key frameworks
 
-- **Wassenaar Arrangement** — international dual-use export control regime.
-- **EAR** (Export Administration Regulations) — US export control law.
-- **ECCN** (Export Control Classification Number) — classifies items for export licensing.
-- **EU Dual-Use Regulation** — EU framework for dual-use item controls.
+- **Wassenaar Arrangement** - international dual-use export control regime.
+- **EAR** (Export Administration Regulations) - US export control law.
+- **ECCN** (Export Control Classification Number) - classifies items for export licensing.
+- **EU Dual-Use Regulation** - EU framework for dual-use item controls.
 
 ## How TrustSource helps
 
