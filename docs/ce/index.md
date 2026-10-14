@@ -36,5 +36,5 @@ If you are new to the app, start with [Getting Started](00-getting-started/index
 - ***TrustSource CE*** in *bold-italic* refers to the application itself.
 - Labels in **bold** are the exact labels the app shows, for example **Import Scans**.
 - Code in `monospace`, for example `developer` or `TS_ENCRYPTION_KEY`, refers to a role key, an API parameter or a setting.
-- `> [!TIP]` marks practical hints, `> [!NOTE]` background information, `> [!WARNING]` things that can cost you data or time.
+- Coloured boxes mark extra information: **Tip** for practical hints, **Note** for background information, **Warning** for things that can cost you data or time.
 - Screenshots show TrustSource CE 1.0.0 in the default light theme. The dark theme works the same way.

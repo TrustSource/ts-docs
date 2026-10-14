@@ -29,5 +29,5 @@ If you're new to the platform, start with [Getting Started](00-getting-started/)
 
 - **`***TrustSource***`** in *bold-italic* refers to the platform itself.
 - Code in `monospace`, e.g. `developer`, refers to a role, an API parameter or a configuration key.
-- > [!TIP] for practical hints, > [!WARNING] for things that can cost you time, > [!CAUTION] for actions that are hard to undo.
+- Coloured boxes mark extra information: **Tip** for practical hints, **Warning** for things that can cost you time, **Caution** for actions that are hard to undo.
 - Screenshots show v3 in the default light theme. The dark theme works the same way.

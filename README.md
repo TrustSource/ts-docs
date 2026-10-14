@@ -39,7 +39,7 @@ See `STRUCTURE.md` for the edition strategy in detail.
 ## Local development
 
 ```bash
-pip install zensical
+pip install zensical markdown-callouts
 zensical serve
 ```
 
