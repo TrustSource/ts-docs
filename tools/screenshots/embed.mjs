@@ -8,18 +8,18 @@
 // A page is written only when its content changed.
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { HERE, REPO } from './lib.mjs';
+import { DOCS_ROOT, IMAGE_ROOT, SHOTS_DIR, TRACK } from './lib.mjs';
 
-const DOCS = path.join(REPO, 'docs/ce');
-const IMAGES = path.join(REPO, 'docs/assets/images/ce');
+const DOCS = DOCS_ROOT;
+const IMAGES = IMAGE_ROOT;
 const check = process.argv.includes('--check');
 const filters = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const PLACEHOLDER = /^📸 \*Screenshot:.*\*\s*$/;
 
 const shots = [];
-for (const f of (await fs.readdir(path.join(HERE, 'shots'))).filter((x) => x.endsWith('.mjs')).sort()) {
+for (const f of (await fs.readdir(SHOTS_DIR)).filter((x) => x.endsWith('.mjs')).sort()) {
   if (filters.length && !filters.some((x) => f.includes(x))) continue;
-  shots.push(...(await import(path.join(HERE, 'shots', f))).default);
+  shots.push(...(await import(path.join(SHOTS_DIR, f))).default);
 }
 
 const byDoc = new Map();
@@ -41,7 +41,7 @@ for (const [doc, list] of byDoc) {
   // Slots in page order: placeholders and images this tool wrote earlier.
   const slots = [];
   lines.forEach((l, i) => {
-    if (PLACEHOLDER.test(l) || /^!\[[^\]]*\]\([^)]*assets\/images\/ce\/[^)]*\.webp\)/.test(l)) slots.push(i);
+    if (PLACEHOLDER.test(l) || new RegExp(`^!\\[[^\\]]*\\]\\([^)]*assets/images/${TRACK}/[^)]*\\.webp\\)`).test(l)) slots.push(i);
   });
   for (const shot of list) {
     const img = path.join(IMAGES, shot.id + '.webp');

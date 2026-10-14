@@ -23,12 +23,12 @@
 //   }
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { BASE_URL, HERE, SHOT_USER, launch, newContext, settle, shoot, CONTEXT_OPTIONS } from './lib.mjs';
+import { BASE_URL, HERE, SHOT_USER, SHOTS_DIR, TRACK, launch, newContext, settle, shoot, CONTEXT_OPTIONS } from './lib.mjs';
 
 const filters = process.argv.slice(2);
 
 async function loadShots() {
-  const dir = path.join(HERE, 'shots');
+  const dir = SHOTS_DIR;
   const files = (await fs.readdir(dir)).filter((f) => f.endsWith('.mjs')).sort();
   const all = [];
   for (const f of files) {
@@ -156,9 +156,44 @@ async function annotate(page, marks) {
   }, marks);
 }
 
+// Installations with real data (TS_TRACK other than ce) are masked before every shot: each
+// rule in .mask-<track>*.json ([[pattern, replacement], ...], git-ignored because it names the
+// real data) is applied to the visible text, form values and tooltips, and every remaining
+// e-mail address outside example.com becomes user@example.com.
+async function loadMasks() {
+  if (TRACK === 'ce') return [];
+  const files = (await fs.readdir(HERE)).filter((f) => f.startsWith(`.mask-${TRACK}`) && f.endsWith('.json')).sort();
+  const rules = [];
+  for (const f of files) rules.push(...JSON.parse(await fs.readFile(path.join(HERE, f), 'utf8')));
+  return [...rules, ['[A-Za-z0-9._%+-]+@(?!example\\.com\\b)[A-Za-z0-9.-]+\\.[A-Za-z]{2,}', 'user@example.com']];
+}
+
+async function mask(page, rules) {
+  await page.evaluate((rules) => {
+    const res = rules.map(([p, r]) => [new RegExp(p, 'gi'), r]);
+    const apply = (t) => res.reduce((acc, [re, r]) => acc.replace(re, r), t);
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+      const t = apply(n.nodeValue);
+      if (t !== n.nodeValue) n.nodeValue = t;
+    }
+    for (const el of document.querySelectorAll('input, textarea')) {
+      if (el.value) el.value = apply(el.value);
+      if (el.placeholder) el.placeholder = apply(el.placeholder);
+    }
+    for (const el of document.querySelectorAll('[title], [data-original-title], img[alt]')) {
+      for (const a of ['title', 'data-original-title', 'alt']) if (el.hasAttribute(a)) el.setAttribute(a, apply(el.getAttribute(a)));
+    }
+    // Avatars are images of real people; show the initials placeholder colour instead.
+    for (const img of document.querySelectorAll('img[src*="gravatar"], img[src*="avatar"]')) img.style.visibility = 'hidden';
+  }, rules);
+}
+
 async function main() {
   const shots = await loadShots();
-  const seed = JSON.parse(await fs.readFile(path.join(HERE, '.seed.json'), 'utf8'));
+  // Seed data exists for the CE track only; other tracks photograph an existing installation.
+  const seed = JSON.parse(await fs.readFile(path.join(HERE, '.seed.json'), 'utf8').catch(() => '{}'));
+  const masks = await loadMasks();
   // State of the extra seed steps: seed.extra[<step name>].
   seed.extra = {};
   for (const f of (await fs.readdir(HERE)).filter((x) => /^\.seed-.+\.json$/.test(x))) {
@@ -198,6 +233,7 @@ async function main() {
         }
         await settle(page, 500);
         if (user && await page.locator('#username').isVisible().catch(() => false)) throw new Error('session ended (login page shown)');
+        if (masks.length) await mask(page, masks);
         if (shot.annotate) await annotate(page, shot.annotate);
         let t = shot.target || 'viewport';
         if (typeof t === 'function') t = await t(page, seed, helpers);

@@ -7,7 +7,11 @@ import { fileURLToPath } from 'node:url';
 
 export const HERE = path.dirname(fileURLToPath(import.meta.url));
 export const REPO = path.resolve(HERE, '../..');
-export const IMAGE_ROOT = path.join(REPO, 'docs/assets/images/ce');
+// TS_TRACK=v3 captures the SaaS track (docs/v3, shots-v3/); the default is the CE track.
+export const TRACK = process.env.TS_TRACK || 'ce';
+export const DOCS_ROOT = path.join(REPO, 'docs', TRACK);
+export const IMAGE_ROOT = path.join(REPO, 'docs/assets/images', TRACK);
+export const SHOTS_DIR = path.join(HERE, TRACK === 'ce' ? 'shots' : `shots-${TRACK}`);
 
 export const BASE_URL = (process.env.TS_BASE_URL || 'http://localhost:3100').replace(/\/$/, '');
 export const VIEWPORT = { width: 1440, height: 900 };
@@ -41,17 +45,21 @@ export const CONTEXT_OPTIONS = { viewport: VIEWPORT, deviceScaleFactor: SCALE, c
 
 // A logged-in context for `email`. The Meteor login token lives in localStorage, so
 // storageState keeps the session between runs.
+export const authFile = (email) => path.join(HERE, `.auth-${email.replace(/[^a-z0-9]+/gi, '_')}.json`);
+
 export async function newContext(browser, { email = SHOT_USER } = {}) {
-  const stateFile = path.join(HERE, `.auth-${email.replace(/[^a-z0-9]+/gi, '_')}.json`);
+  const stateFile = authFile(email);
   try {
     await fs.access(stateFile);
     const ctx = await browser.newContext({ ...CONTEXT_OPTIONS, storageState: stateFile });
     const page = await ctx.newPage();
     await page.goto(BASE_URL + '/dashboard');
     await page.waitForLoadState('networkidle');
-    if (!(await page.locator('#username').count())) return { ctx, page };
+    const loggedIn = await page.waitForFunction(() => window.Meteor && Meteor.userId(), null, { timeout: 15000 }).then(() => true, () => false);
+    if (loggedIn && !(await page.locator('#username').count())) return { ctx, page };
     await ctx.close();
   } catch { /* no saved session */ }
+  if (TRACK !== 'ce') throw new Error(`No valid session for ${email}. Run login.mjs and log in by hand.`);
   const password = await credentials(email);
   const ctx = await browser.newContext(CONTEXT_OPTIONS);
   const page = await ctx.newPage();
