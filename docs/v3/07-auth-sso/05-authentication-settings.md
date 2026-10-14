@@ -12,7 +12,7 @@ For every step the page shows its name, a short description and a drop-down with
 
 Changes are saved the moment you pick a value: there is no **Update** button. A message confirms "Authentication settings updated". The change applies to the browser login flow of your company.
 
-> [!CAUTION]
+> [!WARNING]
 > Changing a requirement affects how every user of your company signs in with the browser flow.
 
 ## Related

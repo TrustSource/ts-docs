@@ -7,7 +7,7 @@ A threat model's detail page renders it as an interactive **Data Flow
 Diagram (DFD)**: components, trust zones and data flows, with a Graph / Raw
 toggle to see the underlying document. This is the human review surface on
 top of the [Threat Modeling Agent's](../../13-capabilities/07-threat-model-agent.md)
-**Generate risks** stage — the threats it elicited are what you review and
+**Generate risks** stage: the threats it elicited are what you review and
 act on here.
 
 ## Reading the diagram
@@ -21,15 +21,15 @@ act on here.
   one and counts the rest.
 - **Click a component to isolate it.** The rest fades back; the component,
   everything it exchanges data with and the flows between them stay lit and
-  are labelled. Hovering previews the same. Press `Escape` or click the
-  background to return to the full diagram. The bar above the diagram names
+  are labelled. Hovering previews the same. Press `Escape`, click the
+  background or click **Clear focus** to return to the full diagram. The bar above the diagram names
   what is in focus and counts the components, data flows and trust zones.
 - Each trust zone has a title bar with its trust rating. The legend explains
   the shapes (service / process, data store, external entity), the trust
   scale (0 untrusted to 100 trusted) and the threat colours; the threat
   colours are left out for a model without threats.
 - Manually arranged node positions are **saved** and preserved across
-  reloads and later agent runs — Auto Layout asks for confirmation before
+  reloads and later agent runs; Auto Layout asks for confirmation before
   discarding a manual arrangement.
 - Each node shows a **threat count badge**; components with many known
   vulnerabilities show up to five severity pills plus a "+N more" that
@@ -48,19 +48,23 @@ Clicking a component, data flow or trust zone opens a side panel with:
 - Metadata for the selected element; for a component, the data flows it is
   connected to, the component at the other end and what travels over each.
 - Threat cards classified by **STRIDE**, **ENISA** category and **CWE**,
-  each with a status and a link through to its linked risk.
-- Countermeasure rows for that threat (see
+  each coloured by the threat's state as stored in the model (open, in
+  progress, resolved, accepted or deferred; see the legend).
+- Countermeasure rows for that threat, with an icon for their status (see
   [Mitigations & Status](03-mitigations-status.md)).
 - Matching vulnerabilities for that component.
 
-A threat you act on — promoting it to a risk and setting a state on that
-risk — is a **human decision the agent will not overwrite** on later runs.
+The **Generate risks** stage files each threat as a risk in the project's
+[risk register](../05-risks/index.md) with the origin *TMA Assessment*. Open
+these risks in the [Risks list](../05-risks/02-risks-list.md); their **Threat model** tab holds
+the threat-model context. Once you set a state on such a risk, that is a
+**human decision the agent will not overwrite** on later runs.
 See [Run Modes](04-run-modes.md#what-the-agent-will-not-touch).
 
 📸 *Screenshot: the DFD viewer with a component selected and the threat side panel open.*
 
 ## Related
 
-- [Mitigations & Status](03-mitigations-status.md) — tracking countermeasures
-- [Run Modes](04-run-modes.md) — re-eliciting threats via Generate risks
+- [Mitigations & Status](03-mitigations-status.md) - tracking countermeasures
+- [Run Modes](04-run-modes.md) - re-eliciting threats via Generate risks
 - [Background: Product Security](../../../shared/background/05-product-security.md)

@@ -1,6 +1,6 @@
 # Imports (CycloneDX & SPDX)
 
-> Submit existing SBOM documents — in CycloneDX or SPDX format — as scans, so that third-party data flows into the same pipeline as native TrustSource scans.
+> Submit existing SBOM documents - in CycloneDX or SPDX format - as scans, so that third-party data flows into the same pipeline as native TrustSource scans.
 
 ## Use cases
 
@@ -12,13 +12,15 @@
 
 | Method | Path | What it does | Scopes |
 |---|---|---|---|
-| POST | `/core/imports/scan/cyclonedx` | Import CycloneDX SBOM (JSON body) | `developer`, `manager`, `compliance_manager`, `portfolio_manager`, `company_security_manager`, `company_component_manager` |
-| POST | `/core/imports/scan/cyclonedx/json` | Import CycloneDX SBOM (file upload) | `developer`, `manager`, `compliance_manager`, `portfolio_manager`, `company_security_manager`, `company_component_manager` |
-| POST | `/core/imports/scan/spdx` | Import SPDX SBOM (JSON body) | `developer`, `manager`, `compliance_manager`, `portfolio_manager`, `company_security_manager`, `company_component_manager` |
-| POST | `/core/imports/scan/spdx/json` | Import SPDX SBOM (JSON file) | `developer`, `manager`, `compliance_manager`, `portfolio_manager`, `company_security_manager`, `company_component_manager` |
-| POST | `/core/imports/scan/spdx/rdf` | Import SPDX SBOM (RDF file) | `developer`, `manager`, `compliance_manager`, `portfolio_manager`, `company_security_manager`, `company_component_manager` |
+| POST | `/core/imports/scan/cyclonedx` | Import CycloneDX SBOM (JSON body) | `developer`, `manager` |
+| POST | `/core/imports/scan/cyclonedx/json` | Import CycloneDX SBOM (file upload) | `developer`, `manager` |
+| POST | `/core/imports/scan/spdx` | Import SPDX SBOM (JSON body) | `developer`, `manager` |
+| POST | `/core/imports/scan/spdx/json` | Import SPDX SBOM (JSON file) | `developer`, `manager` |
+| POST | `/core/imports/scan/spdx/rdf` | Import SPDX SBOM (RDF file) | `developer`, `manager` |
 
 Request and response schemas are in the [OpenAPI specification](index.md#the-specification), which is also available as interactive documentation in the app.
+
+An import is turned into a scan and stored like `POST /core/scans`, so the same rules apply: the key needs the `developer` or `manager` scope (other scopes pass the first check but are refused with `403` when the scan is stored), and the project must exist (`404` otherwise).
 
 ## Module naming
 

@@ -12,10 +12,10 @@
 
 | Method | Path | What it does | Scopes |
 |---|---|---|---|
-| GET | `/euvd/{id}` | Map a CVE id to its EUVD id, or an EUVD id back to its CVE id | See [API scopes](../../10-roles-permissions/09-api-scopes.md#operations-without-a-verified-scope) |
-| POST | `/euvd` | Map a list of CVE ids to EUVD ids | See [API scopes](../../10-roles-permissions/09-api-scopes.md#operations-without-a-verified-scope) |
-| POST | `/epss` | Get EPSS scores for a list of CVE ids | See [API scopes](../../10-roles-permissions/09-api-scopes.md#operations-without-a-verified-scope) |
-| GET | `/epss/{cve_id}/history` | Get the EPSS score history of a CVE | See [API scopes](../../10-roles-permissions/09-api-scopes.md#operations-without-a-verified-scope) |
+| GET | `/euvd/{id}` | Map a CVE id to its EUVD id, or an EUVD id back to its CVE id | See [API scopes](../../10-roles-permissions/09-api-scopes.md#euvd-epss-and-psirt) |
+| POST | `/euvd` | Map a list of CVE ids to EUVD ids | See [API scopes](../../10-roles-permissions/09-api-scopes.md#euvd-epss-and-psirt) |
+| POST | `/epss` | Get EPSS scores for a list of CVE ids | See [API scopes](../../10-roles-permissions/09-api-scopes.md#euvd-epss-and-psirt) |
+| GET | `/epss/{cve_id}/history` | Get the EPSS score history of a CVE | See [API scopes](../../10-roles-permissions/09-api-scopes.md#euvd-epss-and-psirt) |
 
 Request and response schemas are in the [OpenAPI specification](index.md#the-specification), which is also available as interactive documentation in the app.
 
@@ -27,7 +27,9 @@ CRA vulnerability notifications to ENISA must carry EUVD ids, the identifiers of
 ENISA's European Vulnerability Database. The two `euvd` endpoints resolve
 between CVE and EUVD ids using ENISA's official `cve-euvd-mapping` catalogue,
 which TrustSource refreshes daily at 07:15 UTC. An id assigned after the last
-refresh is reported as unknown until the next refresh. ### EPSS scores
+refresh is reported as unknown until the next refresh.
+
+### EPSS scores
 
 `epss` is FIRST's estimated probability (0 to 1) that a CVE is exploited in the
 wild within the next 30 days, `percentile` its rank among all scored CVEs.

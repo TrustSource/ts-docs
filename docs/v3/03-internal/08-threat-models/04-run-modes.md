@@ -6,11 +6,11 @@
 The threat model for a project is produced by the
 [Threat Modeling Agent (TMA)](../../13-capabilities/07-threat-model-agent.md).
 You can either run the whole pipeline in a single pass or trigger the
-three underlying actions independently — both paths are fully automated.
+three underlying actions independently. Both paths are fully automated.
 
 ## Run all
 
-**Run all** — the default option in the Generate dialog — executes every
+**Run all**, the default option in the Generate dialog, executes every
 stage end-to-end: system model → threat elicitation → countermeasure
 proposal → write-back. This is the right choice when
 
@@ -24,32 +24,32 @@ proposal → write-back. This is the right choice when
 ## Individual stages
 
 The same pipeline is also exposed as three stages you can pick in the
-Generate dialog, or trigger — and re-trigger — separately from a model's
+Generate dialog, or trigger (and re-trigger) separately from a model's
 **Lifecycle** dropdown:
 
 | Stage | What it does |
 |---|---|
 | **Build model** | Rebuilds the system model from the current project inventory: trust zones, components, data flows, assets. |
 | **Generate risks** | Runs STRIDE analysis on new / changed components in the system model and records the threats it finds. |
-| **Develop countermeasures** | For every new threat, proposes one to three countermeasures with a standards reference, an estimated risk reduction, and a validation method. |
+| **Develop countermeasures** | For every agent risk that has no countermeasure yet, proposes one to three countermeasures with a standards reference, an estimated risk reduction, and a validation method. Risks that already have a countermeasure, or that carry a human decision, are skipped. |
 
 Use the individual stages when you want to
 
-- **review the system model before threats are elicited** — Build model
+- **review the system model before threats are elicited**: Build model
   produces the model; look it over in the DFD viewer, sharpen the
   classifications where needed, then trigger Generate risks;
-- **re-elicit threats after new information** — you added a new
+- **re-elicit threats after new information**: you added a new
   external interface or corrected a component's trust zone and want
   the STRIDE analysis re-done without touching countermeasures;
-- **regenerate countermeasures** — a threat already exists but your
-  understanding of it has evolved, and you want fresh countermeasure
-  proposals against the updated threat description.
+- **add countermeasures later**: run Generate risks, review the new risks
+  first, then run Develop countermeasures for the risks that still have
+  none. It does not replace countermeasures that already exist.
 
-📸 *Screenshot: the three stages in the Lifecycle dropdown — Build model, Generate risks, Develop countermeasures.*
+📸 *Screenshot: the three stages in the Lifecycle dropdown: Build model, Generate risks, Develop countermeasures.*
 
-## Idempotence — safe to re-run
+## Idempotence: safe to re-run
 
-Every stage — whether run via "Run all" or individually — is
+Every stage, whether run via "Run all" or individually, is
 **idempotent**. Running a stage a second time with no new material
 produces zero new risks and a
 structurally identical Open Threat Model (OTM) document. You do not
@@ -60,7 +60,7 @@ and only acts on the delta.
 This has two practical consequences:
 
 - You can trigger a refresh **whenever** you are unsure whether the
-  model still reflects reality — worst case, nothing happens.
+  model still reflects reality; worst case, nothing happens.
 - Clean components carry a "no risks reviewed on `<date>`" marker
   and are not re-analysed on every run. The marker expires after
   60 days by default, so quiet parts of the project are still
@@ -71,17 +71,19 @@ This has two practical consequences:
 
 The agent respects **human decisions**. Once a person has
 
-- accepted, closed, marked as out-of-scope or set any explicit state
-  on a risk, or
-- completed or verified a countermeasure,
+- moved a risk from `identified` to any other state (for example
+  `approved` or `closed`), or
+- set a countermeasure to completed, verified or ok,
 
-subsequent runs will never overwrite those states. Threats whose
-underlying module has been removed are marked `out-of-scope` — not
-deleted — so the audit trail stays intact.
+subsequent runs will never overwrite those states. When the underlying
+module of a threat has been removed, the agent marks the risk
+`out-of-scope` instead of deleting it, so the audit trail stays intact.
+***TrustSource*** stores that legacy value as state `closed`, with the
+strategy Accept if the risk had none (see [Treatment and State](../05-risks/05-treatment-and-state.md#older-risks)).
 
 ## Related
 
-- [Threat Modeling Agent](../../13-capabilities/07-threat-model-agent.md) — capability overview and guarantees
-- [Generate or Import a Threat Model](01-create-threat-model.md) — enabling threat modelling on a project for the first time
-- [Data Flow Diagram & Threat Detail](02-threat-detail-stride-linddun.md) — reviewing an elicited threat
-- [Mitigations & Status](03-mitigations-status.md) — tracking countermeasures across runs
+- [Threat Modeling Agent](../../13-capabilities/07-threat-model-agent.md) - capability overview and guarantees
+- [Generate or Import a Threat Model](01-create-threat-model.md) - enabling threat modelling on a project for the first time
+- [Data Flow Diagram & Threat Detail](02-threat-detail-stride-linddun.md) - reviewing an elicited threat
+- [Mitigations & Status](03-mitigations-status.md) - tracking countermeasures across runs

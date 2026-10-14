@@ -3,7 +3,7 @@
 > [!NOTE]
 > **Required role:** `component_manager`
 
-The **Component mngr.** menu group is visible to users with the `component_manager` role. It adds the maintenance side to the read-only catalogues of the [Knowledge](../05-knowledge/index.md) section: you create and edit infrastructure and COTS components, and you fix components with missing license data in the whole component database.
+The **Component mngr.** menu group is visible to users with the `component_manager` role, an [internal role](../10-roles-permissions/02-internal-roles.md) that is not offered in the role selection. It adds the maintenance side to the read-only catalogues of the [Knowledge](../05-knowledge/index.md) section: you create and edit infrastructure and COTS components, and you fix components with missing license data in the whole component database.
 
 | Menu entry | What it covers |
 |---|---|

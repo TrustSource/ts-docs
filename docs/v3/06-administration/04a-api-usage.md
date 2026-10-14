@@ -14,11 +14,11 @@ In **Administration → API keys → API keys**, each row has a small chart butt
 
 ![The usage dialog of one key: a bar chart of used quota per day and a shaded area for the remaining quota, with a month selector above the chart.](../../assets/images/v3/06-administration/04a-api-usage-key.png)
 
-- Choose the **API usage period** to switch the month.
-- The bars show the **used quota** per day.
-- The shaded area shows the **remaining quota**.
+- Choose the **API Usage period** to switch the month.
+- The bars show the **Used quota** per day.
+- The shaded area shows the **Remaining quota**.
 
-The button stays disabled for keys that have no usage record yet.
+The button stays disabled for keys that are not yet registered for usage tracking.
 
 ## Usage of all keys
 
@@ -26,11 +26,11 @@ Select **View overall usage** in the page header. The button appears once your a
 
 ![The API usage stats page with the month selector, a combined chart of all keys, Export as CSV and Copy to clipboard buttons, and a table with one row per key.](../../assets/images/v3/06-administration/04a-api-usage-overall.png)
 
-The page shows:
+The page **API usage stats** shows, for the month chosen under **API Usage period**:
 
 - **Overall usage**: the total number of calls of all keys in the selected month.
 - A chart with the calls per day and key.
-- A table with the **total within the period** and a small bar chart **by date** for each key.
+- A table with the columns **Key**, **Total within period** and **By date** (a small bar chart per key).
 
 Use the **Filter** field above the table to find a key by name. Select the column heading to sort.
 
@@ -42,4 +42,4 @@ Use the **Filter** field above the table to find a key by name. Select the colum
 ## Related
 
 - [API keys](04-api-keys.md)
-- [REST API: Users](../09-rest-api/endpoints/users.md) — `GET /core/users/usage` returns usage over the API
+- [REST API: Users](../09-rest-api/endpoints/users.md) - `GET /core/users/usage` returns usage over the API

@@ -8,7 +8,7 @@ Invite colleagues, set their roles and remove users. Open **Administration → U
 
 📸 *Screenshot: the User Management page with the user list, the CSV import and the invite form.*
 
-If your plan has a user limit and you exceed it, the page shows "Limit was reached" with the number of users to remove, or a link to upgrade.
+If your plan has a user limit and you exceed it, the page shows "Limit was reached": contact your account manager to upgrade, or remove the number of users it names.
 
 ## The user list
 
@@ -47,7 +47,7 @@ Use **Import users from CSV** to invite, change or remove many users at once.
 A single unknown role name falls back to `developer`; with several names, the unknown ones are ignored.
 
 > [!NOTE]
-> Suspending or re-enabling an account is not done from this page — it is
+> Suspending or re-enabling an account is not done from this page - it is
 > handled by TrustSource operations in a separate administration console.
 > A suspended account is blocked at sign-in and, within seconds, also loses
 > access from any session it already had open. If you need an account
@@ -56,5 +56,5 @@ A single unknown role name falls back to `developer`; with several names, the un
 ## Related
 
 - [Roles & Permissions](../10-roles-permissions/index.md)
-- [Login History](09-login-history.md) — who signed in and who did not
+- [Login History](09-login-history.md) - who signed in and who did not
 - [Identity Integration](../07-auth-sso/index.md)

@@ -1,6 +1,6 @@
 # Recipes
 
-Step-by-step walkthroughs for common ***TrustSource*** workflows. Each recipe is self-contained — you can follow it from start to finish.
+Step-by-step walkthroughs for common ***TrustSource*** workflows. Each recipe is self-contained - you can follow it from start to finish.
 
 | Recipe | What you learn |
 |---|---|
@@ -11,8 +11,8 @@ Step-by-step walkthroughs for common ***TrustSource*** workflows. Each recipe is
 | [MDR SOUP Workflow](05-mdr-soup-workflow.md) | Generate a SOUP list for a medical device project. |
 | [CRA Classification](06-cra-classification.md) | Classify a product under the EU Cyber Resilience Act. |
 | [Crypto Inventory for PQC](07-crypto-inventory-pqc.md) | Build a crypto algorithm inventory for post-quantum readiness. |
-| [Share an SBOM Publicly](08-share-sbom-publicly.md) | Share an SBOM with a customer via a public link. |
+| [Share an SBOM Publicly](08-share-sbom-publicly.md) | Share an SBOM with a customer via a release key. |
 | [Onboard a Team Member](09-onboard-team-member.md) | Invite a user, assign roles, orient them in the app. |
 | [Add an Infrastructure Module](10-add-infrastructure-module.md) | Track a database or base image as an infrastructure dependency. |
 | [Migrate from Another SCA](11-migrate-from-another-sca.md) | Import data from a different SCA tool into TrustSource. |
-| [Fill in the Legal Questionnaire](12-legal-questionnaire.md) | Run the two-part Wizard that drives the obligation engine — commercial answers at the project level, distribution answers per module. |
+| [Fill in the Legal Questionnaire](12-legal-questionnaire.md) | Run the two-part Wizard that drives the obligation engine - commercial answers at the project level, distribution answers per module. |

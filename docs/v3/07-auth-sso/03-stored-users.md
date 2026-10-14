@@ -34,5 +34,5 @@ Select **Edit** in a row. Besides **Update** and **Remove** (with confirmation),
 
 ## Related
 
-- [Identity Integration](index.md) — how users sign in and receive roles
+- [Identity Integration](index.md) - how users sign in and receive roles
 - [User Storage](01-user-storage.md)

@@ -1,8 +1,7 @@
 # Medical
 
 > [!NOTE]
-> **Required license feature:** `medical` (the SOUP-report sub-feature
-> additionally requires `soup_report`)
+> **Requires:** the **Medical** account type for the MDR/IVDR classification tabs. **SOUP Lists** appear with the license feature `medical` or the plan feature `soup_report`, which the Medical plan includes.
 
 The **Medical** capability extends ***TrustSource*** with workflows
 specific to medical-device software, supporting the documentation
@@ -11,26 +10,27 @@ obligations of the EU **MDR** (Medical Device Regulation, 2017/745) and
 
 ## What this capability adds
 
-- **MDR / IVDR classification** of modules — risk class (I/IIa/IIb/III
-  or IVD A/B/C/D) and intended use captured per module.
-- **SOUP reports** — generation of *Software of Unknown Provenance*
+- **MDR / IVDR classification** of modules: on the **MDR/IVDR Classification**
+  tab of the module settings you choose the **MDR Classification** (None, I,
+  IIa, IIb, III) and the **IVDR Classification** (None, A, B, C, D).
+- **SOUP lists**: generation of *Software of Unknown Provenance*
   documentation aligned with IEC 62304, listing third-party components,
-  versions, license and known anomalies.
-- Project-level **module-classification template** wiring so the
-  medical view is enforced by default for medical-device projects.
+  versions, licenses and known anomalies. The Reports hub also offers a
+  **COTS overview** of the project's commercial components.
+- A project-level **MDR/IVDR Classification** tab that holds the defaults
+  for the project's modules and can import and propagate them.
 
-📸 *Screenshot: a module's classification tab showing the MDR risk-class selector and intended-use field.*
+📸 *Screenshot: a module's MDR/IVDR Classification settings tab with the MDR Classification and IVDR Classification selectors.*
 
-📸 *Screenshot: the SOUP report export dialog from the outbound section.*
+📸 *Screenshot: the SOUP Lists page from the Outbound menu.*
 
 ## Editions
 
-- **SaaS:** available with the `medical` (and optionally `soup_report`)
-  feature flag enabled.
-- **Community Edition:** the underlying classification fields are
-  present but the SOUP generation pipeline is not included.
+- **SaaS:** MDR/IVDR classification with the Medical account type; SOUP
+  lists with the `medical` license feature or the `soup_report` plan feature.
+- **Community Edition:** not included. See [CE vs. SaaS](../../ce/13-ce-vs-saas.md).
 
 ## Related
 
-- [Outbound → SOUP Files](../04-outbound/03-soup-lists.md) — in-app reference for SOUP generation.
-- [Internal → Projects → Settings → Module Classification](../03-internal/01-projects/settings/09-module-classification.md) — where the MDR/IVDR template is configured per project.
+- [Outbound → SOUP Lists](../04-outbound/03-soup-lists.md): in-app reference for SOUP generation.
+- [Internal → Projects → Settings → Module Classification](../03-internal/01-projects/settings/09-module-classification.md): where the MDR/IVDR defaults are configured per project.

@@ -58,20 +58,20 @@ nav:
         - Deployments: v3/03-internal/01-projects/03-deployments.md
         - Analytics: v3/03-internal/01-projects/04-analytics.md
         - Risks & Releases: v3/03-internal/01-projects/05-risks-and-releases.md
+        - Resolved obligations: v3/03-internal/01-projects/settings/08-obligations.md
+        - Imports: v3/03-internal/01-projects/settings/11-module-import.md
         - Settings:
           - v3/03-internal/01-projects/settings/index.md
           - General: v3/03-internal/01-projects/settings/01-general.md
           - Legal: v3/03-internal/01-projects/settings/02-legal.md
-          - CIA: v3/03-internal/01-projects/settings/03-cia.md
           - Quality: v3/03-internal/01-projects/settings/04-quality.md
           - Crypto management: v3/03-internal/01-projects/settings/05-encryption.md
+          - CIA: v3/03-internal/01-projects/settings/03-cia.md
           - End-of-life: v3/03-internal/01-projects/settings/06-end-of-life.md
           - Allow/Deny: v3/03-internal/01-projects/settings/07-whitelists-blacklists.md
-          - Resolved obligations: v3/03-internal/01-projects/settings/08-obligations.md
           - MDR/IVDR Classification: v3/03-internal/01-projects/settings/09-module-classification.md
           - Issue Integration: v3/03-internal/01-projects/settings/10-issue-tracker.md
           - Webhooks and Channels: v3/03-internal/01-projects/settings/13-webhooks-channels.md
-          - Imports: v3/03-internal/01-projects/settings/11-module-import.md
           - Danger Operations: v3/03-internal/01-projects/settings/12-danger-zone.md
       - Modules:
         - v3/03-internal/02-modules/index.md

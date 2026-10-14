@@ -38,6 +38,7 @@ On the edit page:
 - **Update** saves your changes.
 - **Synchronize changed users** and **Synchronize all users** import users from the directory now.
 - **Remove imported** deletes the users that were imported from this storage.
+- **Unlink users** detaches the imported users from this storage; they stay in the identity store.
 - **Remove** deletes the storage after a confirmation.
 
 ## Related

@@ -1,7 +1,7 @@
 # Capabilities (Module)
 
 > [!NOTE]
-> **Required role:** everyone who can open the module settings reads the list. **Add capability**, edit and remove are for developers, company security managers, portfolio managers, and managers and compliance managers who are the module's default manager (or if none is set). See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
+> **Required role:** everyone who can open the module settings reads the list. **Add capability**, edit and remove are for developers, compliance managers, portfolio managers, managers and company security managers. See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
 
 A capability states what a module can do for its users, for example *Single sign-on* or *Export invoices as PDF*. Declare them once on the module; they then appear in the Capabilities tab of its [approvals](../../06-approvals/02-approval-detail-tabs.md) and in the Capabilities column of the [Solutions tab](../../03-products/03-tab-solutions.md) of products. The tab is not shown for infrastructure modules.
 

@@ -11,9 +11,9 @@ A repository scan (DeepScan) analyses a Git repository or a file at source level
 2. Enter the **Url**. The switch **Repository / File** says whether it points to a Git repository or to a single file.
 3. Optionally enter a **Tag** or **Branch**.
 4. Choose per option **Yes** or **No**: **Scorecard**, **Crypto** and **Copyright** analysis.
-5. For a private repository, switch authentication on and enter the **Username** and **Password** or a personal access token (PAT).
+5. For a private repository, switch authentication on and enter the **Username** and the **Password / PersonalAccessToken(PAT)**.
 6. Optionally select a deny list under **Compare effective licenses with deny list**.
-7. Press the submit button of the dialog.
+7. Press **Schedule DeepScan**.
 
 📸 *Screenshot: the Schedule DeepScan dialog.*
 
@@ -31,10 +31,10 @@ Select a row to open the result.
 
 The header shows the repository (with tag or branch) and a list of earlier runs: **Scan from ...** switches between executions. Next to it:
 
-- **Scorecard** — the OpenSSF Scorecard score out of 10 with every check, its reason and details. It reports plainly if the Scorecard failed, is still running or is missing. The Scorecard icon in the list opens the scan with the Scorecard open.
-- **Identify known** / **Show all** — hide or show files that are known.
-- **Always deny** — choose the deny list to compare against.
-- **Stats** — incompatible license combinations, blacklisted licenses, license types, copyleft licenses and, if you switched it off, a note that copyright analysis was off.
+- **Scorecard**: the OpenSSF Scorecard score out of 10 with every check, its reason and details. It reports plainly if the Scorecard failed, is still running or is missing. The Scorecard icon in the list opens the scan with the Scorecard open.
+- **Identify known** / **Show all**: hide or show files that are known.
+- **Always deny**: choose the deny list to compare against.
+- **Stats**: incompatible license combinations, blacklisted licenses, license types, copyleft licenses and, if you switched it off, a note that copyright analysis was off.
 
 The file tree can be filtered by name, by license and by status, and expanded or collapsed. A file's side panel shows licenses, copyrights, crypto algorithms (a red **B** marks a denied one) and a link to the file in the repository.
 
@@ -48,6 +48,6 @@ A component's **Scorecard** action requests only a Scorecard, not a full DeepSca
 
 ## Related
 
-- [Mass Scans](06-mass-scans.md) — scan every component of a module in one pass
+- [Mass Scans](06-mass-scans.md) - scan every component of a module in one pass
 - [Algorithms](../05-knowledge/05-algorithms.md)
 - [Licenses](../05-knowledge/06-licenses.md)

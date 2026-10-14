@@ -1,6 +1,6 @@
 # Compliance Check
 
-> Ad-hoc validation calls for licences and components — the "can we use this?" API that powers the in-product Check page.
+> Ad-hoc validation calls for licences and components - the "can we use this?" API that powers the in-product Check page.
 
 ## Use cases
 
@@ -23,7 +23,7 @@ Send your key in the `x-api-key` header. The **Scopes** column shows which key s
 
 ## Related
 
-- [Check](../../02-inbound/01-check.md) — UI-side documentation
-- [Licences](../../05-knowledge/06-licenses.md) — catalogue behind the verdicts
-- [Open-Source Policy](../../05-knowledge/07-open-source-policy.md) — the active policy consulted
+- [Check](../../02-inbound/01-check.md) - UI-side documentation
+- [Licences](../../05-knowledge/06-licenses.md) - catalogue behind the verdicts
+- [Open-Source Policy](../../05-knowledge/07-open-source-policy.md) - the active policy consulted
 - [Endpoint groups](index.md)

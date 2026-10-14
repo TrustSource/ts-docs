@@ -11,7 +11,7 @@ Open **Inbound → SW Quality Scans**. The page is titled **Tests** and lists ev
 ## Import a SARIF file
 
 1. Open the module's **Quality** tab and click **Import**.
-2. In the dialog **Import test**, click **Browse** and select a `.sarif` or `.json` file.
+2. In the dialog **Import test**, click **Browse...** and select a `.sarif` or `.json` file.
 3. Click **Import**.
 
 The file is validated against the SARIF schema before it is stored; an invalid file is refused with an error message. From the UI the file may be up to 5 MB. A file that cannot be imported shows an error instead of loading forever, and a successful import shows *File successfully uploaded.*
@@ -24,12 +24,12 @@ The file is validated against the SARIF schema before it is stored; an invalid f
 ### Import with the API
 
 ```bash
-curl -X POST https://api.trustsource.io/v2/core/tests/sarif/json \
+curl -X POST "https://api.trustsource.io/v2/core/tests/sarif/json?projectName=payment-platform&moduleName=billing-service" \
   -H "x-api-key: YOUR_API_KEY" \
-  -F "file=@results.sarif" \
-  -F "projectName=payment-platform" \
-  -F "moduleName=billing-service"
+  -F "file=@results.sarif"
 ```
+
+Pass `projectName` and `moduleName` (or `moduleId`, `scanId`, `analysisId`) in the query string. Form fields next to the file are ignored, so a test sent with `-F "moduleName=..."` is stored without a module; the response's `moduleId` then holds a warning instead of an id.
 
 The JSON variant `POST /core/tests/sarif` takes the document as the request body, up to 5 MB. A file upload above the server's upload limit (50 MB by default) is refused with `413`. See [Tests (SARIF) API](../09-rest-api/endpoints/tests.md). The response of a successful import includes `riskRegister`: how many risks were created, updated and left unchanged, and what was not tracked (see [SARIF weaknesses and risks](04a-sarif-weaknesses.md#risk-register-limits)).
 
@@ -94,8 +94,8 @@ Under **Quality** in the company, project or module settings you can list the to
 
 ## Related
 
-- [SARIF Weaknesses and Risks](04a-sarif-weaknesses.md) — CWEs, manual assignments and automatic risks
-- [Working with Scans](02-import-scans.md) — dependency scans vs. code test uploads
-- [CI/CD Integrations](03-cicd-scan.md) — automate all inbound data
-- [Risks](../03-internal/05-risks/index.md) — the risk register
-- [Integrations](../06-administration/08-integrations.md) — issue trackers
+- [SARIF Weaknesses and Risks](04a-sarif-weaknesses.md) - CWEs, manual assignments and automatic risks
+- [Import Scans](02-import-scans.md) - dependency scans vs. code test uploads
+- [CI/CD Scan](03-cicd-scan.md) - automate all inbound data
+- [Risks](../03-internal/05-risks/index.md) - the risk register
+- [Integrations](../06-administration/08-integrations.md) - issue trackers

@@ -1,6 +1,6 @@
 # Repository (Deep Scan)
 
-> Submit repositories for source-level deep scanning, fetch the results, and poll the scan status — the API behind the Repositories and Bulk Repositories features.
+> Submit repositories for source-level deep scanning, fetch the results, and poll the scan status - the API behind the Repositories and Bulk Repositories features.
 
 ## Use cases
 
@@ -12,9 +12,9 @@
 
 | Method | Path | What it does | Scopes |
 |---|---|---|---|
-| POST | `/repository/scan` | Create deep scan | See [API scopes](../../10-roles-permissions/09-api-scopes.md#operations-without-a-verified-scope) |
-| GET | `/repository/results` | Get deep scan results URL | See [API scopes](../../10-roles-permissions/09-api-scopes.md#operations-without-a-verified-scope) |
-| GET | `/repository/status` | Get deep scan status | See [API scopes](../../10-roles-permissions/09-api-scopes.md#operations-without-a-verified-scope) |
+| POST | `/repository/scan` | Create deep scan | See [API scopes](../../10-roles-permissions/09-api-scopes.md#repository-deepscan) |
+| GET | `/repository/results` | Get deep scan results URL | See [API scopes](../../10-roles-permissions/09-api-scopes.md#repository-deepscan) |
+| GET | `/repository/status` | Get deep scan status | See [API scopes](../../10-roles-permissions/09-api-scopes.md#repository-deepscan) |
 
 Request and response schemas are in the [OpenAPI specification](index.md#the-specification), which is also available as interactive documentation in the app.
 

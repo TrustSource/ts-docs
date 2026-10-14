@@ -40,7 +40,7 @@ Compliance is the part you use to prove your results to third parties. It covers
 ## Limits
 
 - **Upload size.** Larger uploads are refused with `413`. Ask support for the limit that applies to your account.
-- **Rate limit.** The API limits requests per key and answers `429` with `Retry-After` when you exceed it. See [Errors & Responses](02-error-handling.md).
+- **Rate limit and quota.** The API gateway applies the usage plan of your account, a request rate and a quota per period, and answers `429` when you exceed it. See [Errors & Responses](02-error-handling.md#rate-limits-and-quotas).
 
 ## Try the API
 

@@ -1,7 +1,7 @@
 # Policies
 
 > [!NOTE]
-> **Required role:** `account_admin`, `company_security_manager` or `compliance_manager`. The **Opensource policy** list is limited to `compliance_manager`.
+> **Required role:** `account_admin`, `company_security_manager` or `compliance_manager`. The **Opensource policy** card is shown to all three, but the policy list behind it opens for `compliance_manager` only.
 
 **Administration → Policies** collects the company-wide rules that projects and modules are measured against. The page shows four cards.
 
@@ -12,16 +12,16 @@
 | **Opensource policy** | The policy documents your company publishes to its users. |
 | **Crypto algorithms** | Algorithms your company denies. |
 | **Component end-of-life** | The company default for end-of-life monitoring. |
-| **Risk assessment** | The scales and decision limits your risks are assessed on. Shown with the `risks` feature. |
+| **Risk assessment** | The scales and decision limits your risks are assessed on. Needs the `risks` feature. |
 
 ## Opensource policy
 
 Compliance managers upload the policy document here. Users then see the active policy under **Knowledge → Open source policy** (see [Open Source Policy](../05-knowledge/07-open-source-policy.md)).
 
-1. Select the upload button and enter the **Policy name**.
+1. Select **Upload new policy** and enter the **Policy name**.
 2. Choose the **Document** (PDF or PPTX, up to 20 MB).
 3. Under **Notify users**, choose the roles that must be informed about the policy.
-4. Add a **Summary of changes** and save.
+4. Add a **Summary of changes** and select **Create Policy**.
 
 The list shows **Active**, **Active from**, **Created**, **Updated**, **Policy name**, **Document**, **Notify**, **Presented**, **Viewed** and **Confirmed**, so you can follow who has read and confirmed the policy. A policy name must be unique.
 
@@ -29,13 +29,13 @@ The list shows **Active**, **Active from**, **Created**, **Updated**, **Policy n
 
 Lists the algorithms your company denies. Each row shows **Created**, **Key**, **Strength**, **Comment** and **Added by**. Select a row to see where the algorithm is used.
 
-To add one, select **Deny algorithm** and fill in **Name**, **Strength** (a number such as `256` or `1024`) and an optional **Comment**. The trash button in a row removes the entry.
+To add one, select **Deny algorithm** and fill in **Name**, **Strength** (a numeric value such as `256` or `1024`) and an optional **Comment**. The trash button in a row removes the entry.
 
 ## Component end-of-life
 
 Switch **Enable end-of-life analysis for all modules** on to monitor end-of-life dates company-wide. A confirmation asks you to approve the change, because it affects all future analyses.
 
-Two sliders set the thresholds in months, from 0 to 24 (the sliders show values such as `12m`):
+While the switch is on, two sliders under **End-of-life thresholds** set the thresholds in months, from 0 to 24 (the sliders show values such as `12m`). Select **Update** to save them.
 
 | Slider | Meaning |
 |---|---|
@@ -60,4 +60,4 @@ Step by step instructions, the entry rules and the effect of each threshold are 
 - [Settings](02-settings.md)
 - [Open Source Policy](../05-knowledge/07-open-source-policy.md)
 - [Algorithms](../05-knowledge/05-algorithms.md)
-- [Risks](../03-internal/05-risks/index.md) — where the scheme is applied
+- [Risks](../03-internal/05-risks/index.md) - where the scheme is applied

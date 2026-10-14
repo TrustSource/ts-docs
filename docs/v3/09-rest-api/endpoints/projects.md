@@ -1,6 +1,6 @@
 # Projects
 
-> Create, list, inspect, and delete projects — fetch project-level artefacts such as the parts list and the SBOM, and import a project's Application goals from an architecture.md file.
+> Create, list, inspect, and delete projects - fetch project-level artefacts such as the parts list and the SBOM, and import a project's Application goals from an architecture.md file.
 
 ## Use cases
 
@@ -53,7 +53,16 @@ If your company has several projects with the same name, send `projectId` to rem
 
 ## Application goals content check
 
-Content sent to `POST /core/projects/{project_id}/architecture` is screened before it is stored. Content that fails the screening is rejected with `400`. The limit is 100 KB.
+Send the markdown as `{"content": "..."}`. The limit is 102,400 characters (100 KB); a larger text is rejected with `400` and an `error` that names its size and the limit.
+
+Before it is stored, the content is screened for instructions aimed at AI tools (prompt injection): first against a set of content rules, then, where the AI content check is configured, by that check. Rejected content answers `400` with `{"error": ..., "details": ...}`:
+
+- `error` explains why: each matched rule with its line and the matched text, or the verdict or failure code of the AI content check.
+- `details.check` is `pattern` (with the `findings`: rule, description, line, excerpt) or `ai` (with a `code`).
+
+If the AI content check is configured but does not answer, the upload is refused as well; the message says the content could not be screened. Try again later.
+
+On success the call returns `{"projectId": ..., "content": ...}`.
 
 ## Environmental (iCVSS) context
 
@@ -65,9 +74,9 @@ Send your key in the `x-api-key` header. The **Scopes** column shows which key s
 
 ## Related
 
-- [Modules](modules.md) — the children of a project
-- [Scans](scans.md) — inputs that populate project data
-- [Compliance Releases](compliance-releases.md) — per-release artefacts that roll up project data
-- [Threat Models](../../03-internal/08-threat-models/01-create-threat-model.md) — consumes a project's Application goals when generating a model
-- [Projects](../../03-internal/01-projects/01-create-and-list.md) — product-side documentation
+- [Modules](modules.md) - the children of a project
+- [Scans](scans.md) - inputs that populate project data
+- [Compliance Releases](compliance-releases.md) - per-release artefacts that roll up project data
+- [Threat Models](../../03-internal/08-threat-models/01-create-threat-model.md) - consumes a project's Application goals when generating a model
+- [Projects](../../03-internal/01-projects/01-create-and-list.md) - product-side documentation
 - [Endpoint groups](index.md)

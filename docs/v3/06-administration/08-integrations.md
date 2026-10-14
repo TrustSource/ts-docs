@@ -25,9 +25,9 @@ The **Integrations** page connects ***TrustSource*** to the tools your team alre
 - **Public addresses only.** Server and webhook URLs must point to a public address. ***TrustSource*** refuses internal, private or loopback addresses with the error "Invalid integration URL".
 
 > [!NOTE]
-> Account admins can open the Integrations page. Managers and compliance managers can create webhooks and channels, but reach them from a project's **Webhooks and Channels** tab. See [Webhooks and channels](08c-webhooks-channels.md).
+> Account admins can open the Integrations page. Managers and compliance managers can create webhooks and channels too: they use a project's **Webhooks and Channels** tab, or open the company page at `/settings/company/webhooks`. See [Webhooks and channels](08c-webhooks-channels.md).
 
 ## Related
 
-- [Issue Integration (Project)](../03-internal/01-projects/settings/10-issue-tracker.md) — pick the issue tracker for a project
+- [Issue Integration (Project)](../03-internal/01-projects/settings/10-issue-tracker.md) - pick the issue tracker for a project
 - [Integration Troubleshooting](../11-troubleshooting-faq/04-integration-troubleshooting.md)

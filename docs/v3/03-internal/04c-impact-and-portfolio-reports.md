@@ -1,7 +1,7 @@
 # Impact and Portfolio Reports
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`. Tiles with narrower roles are marked below.
+> **Required role:** `developer`, `compliance_manager` or `manager` (the roles that see the [Reports hub](04-reports.md)). Tiles with narrower roles are marked below.
 
 These reports from the [Reports hub](04-reports.md) look across your portfolio: which projects are hit by a component, a CVE or an algorithm, where your crypto policy is violated, and what your issue trackers hold. Single-project reports are on [Analysis Reports](04b-analysis-reports.md).
 
@@ -49,12 +49,11 @@ Role: `company_component_manager`. Lists components with missing data so you can
 
 ## Issue report
 
-Shows the open tasks of a project from your issue tracker. Select the project at the upper right. If the project has more than one tracker, a second selector switches between **TFS**, **Jira** and **GitHub issues**.
+Shows the tasks of a project from your issue tracker. Select the project at the upper right; the first project is preselected. The report uses the tracker configured for the project (and included in your plan), in this order: Jira, then TFS, then GitHub issues. Only if Jira, TFS and GitHub issues are all configured for the project does a second selector let you switch between **TFS**, **Jira** and **GitHub issues**.
 
-- Jira shows a status bar with the task count per status, then each task with key, summary, creator and date.
-- GitHub and TFS list each task with title, creator and creation date. Click the link icon to open the task.
+Each tracker shows a status bar with the task count per status, then each task with its status, key or number, title, creator, creation date and description. Click the link icon to open the task in the tracker.
 
-If no integration is configured for the project, the page says so and offers **Setup integration**. Configure trackers under [Integrations](../06-administration/08-integrations.md).
+If no integration is configured for the project, the page says so and offers **Setup integration**. If the tracker cannot be reached, it offers **Change integration settings**. Configure trackers under [Integrations](../06-administration/08-integrations.md).
 
 ## Related
 

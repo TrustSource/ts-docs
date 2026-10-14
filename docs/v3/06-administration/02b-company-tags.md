@@ -11,9 +11,9 @@
 ## Add a tag
 
 1. Select **Add new tag**.
-2. Enter the **Name**. Use only lowercase letters `a-z`, digits `0-9`, a colon `:` and a minus `-`, for example `customer-facing` or `team:payments`.
+2. Enter the **Name**, 2 to 50 characters. Use only lowercase letters `a-z`, digits `0-9`, a colon `:` and a minus `-`, for example `customer-facing` or `team:payments`.
 3. Optionally add a **Description**.
-4. Select **Add tag**. A tag name that already exists is refused.
+4. Select **Add tag**. A name that an active tag already has is refused.
 
 ## Import tags from CSV
 

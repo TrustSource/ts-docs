@@ -16,9 +16,9 @@ OBOMs are uploaded, not entered by hand. ***TrustSource*** `ts-scan` sends one a
 
 Open the module and click **OBOM**. A line above the table gives the **Source** tool and version, the **Created** date and the **CycloneDX** version. Three buttons switch the view:
 
-- **Components** — a searchable table with **Name**, **Version**, **Type**, **purl** and **Findings**. Click a findings count to jump to those findings.
-- **Findings (N)** — checks that tools reported on the operated environment: **Check**, **Tool**, **Severity**, **Title** and **Affected resources**. Resources that could not be matched show as *unresolved*. **show all** removes a component filter.
-- **Raw JSON** — the CycloneDX document as stored, for copying.
+- **Components**: a searchable table with **Name**, **Version**, **Type**, **purl** and **Findings**. Click a findings count to jump to those findings.
+- **Findings (N)**: checks that tools reported on the operated environment, with the columns **Check**, **Tool**, **Severity**, **Title**, **Affected resources** and **Risk** (always empty on the module tab, see below). Resources that could not be matched show as *unresolved*. **show all** removes a component filter.
+- **Raw JSON**: the CycloneDX document as stored, for copying.
 
 A **Defaults scan** chip means the scan used default parameters, so resource names may differ in the real environment. If the OBOM cannot be loaded, the tab says so instead of showing an empty state.
 

@@ -18,7 +18,7 @@
 
 ## How scans relate to modules
 
-Every scan result is attached to exactly one **module**. A module can have many scans over time — each scan is a snapshot of the module's bill of materials at a point in time. The most recent scan determines the module's current component list, license status and vulnerability exposure.
+Every scan result is attached to exactly one **module**. A module can have many scans over time; each scan is a snapshot of the module's bill of materials at a point in time. The most recent scan determines the module's current component list, license status and vulnerability exposure.
 
 ```
 Project

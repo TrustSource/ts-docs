@@ -3,22 +3,24 @@
 > [!NOTE]
 > **Required license feature:** `csaf`
 > **Who can do what:**
-> - Create, edit, mark as AMBER+STRICT and run checks: `compliance_manager`, `company_security_manager`, `account_admin`
+> - Create an advisory: `manager`, `compliance_manager`, `company_security_manager`, `account_admin`
+> - Edit, delete, mark as AMBER+STRICT and run checks: `compliance_manager`, `company_security_manager`, `account_admin`
 > - Publish an advisory: `company_security_manager`
-> - Manage feed keys: `account_admin`, `company_security_manager`
+> - Manage feed keys: `account_admin`
+>
+> The **Outbound** menu is shown to `compliance_manager`, `manager` and `account_admin`; a `company_security_manager` without one of these roles opens the CSAF list directly at `/csaf`.
 
 CSAF (Common Security Advisory Framework) documents are structured security advisories that describe vulnerabilities in your products and the remediation steps you have taken. ***TrustSource*** checks them against the CSAF 2.0 standard, publishes them to your CSAF provider and can hand restricted advisories to selected recipients through access-protected feeds.
 
 ## What you can do
 
-- **Create** CSAF advisories with structured metadata, or **import** an existing CSAF file.
-- **Edit** across the tabs Metadata, Affected Products, Remediation, Checks, JSON and History.
+- **Create** an advisory with the wizard (steps Type, Meta, Affected, Vulnerabilities, Remediations), start one from the findings you select in the [Vulnerability report](../03-internal/04a-vulnerability-report.md) (**Treatments → Create CSAF**), or **Import** an existing CSAF file.
+- **Edit** across the tabs **Meta information**, **Affected**, **Remediation**, **Checks**, **History** and **JSON**.
 - **Check** an advisory against the CSAF 2.0 mandatory tests before you publish it.
 - **Publish** an advisory to the provider directory that matches its TLP label, and keep every published version.
 - **Share restricted advisories** with a recipient through a feed key, optionally limited to the products that recipient is entitled to (AMBER+STRICT).
-- **Bulk-create** from SBOM — generate advisories for all known vulnerabilities in a module.
 
-📸 *Screenshot: the CSAF document editor with the Metadata tab active.*
+📸 *Screenshot: the CSAF document editor with the Meta information tab active.*
 
 ## The life of an advisory
 
@@ -58,7 +60,7 @@ Publishing is refused when a mandatory test fails or when the version number is 
 
 ## TLP: where an advisory is published
 
-The **TLP label** of the document (Metadata tab) decides where the advisory is published. *TLP* is the Traffic Light Protocol, which classifies how widely information may be shared.
+The **TLP label** of the document (**Meta information** tab, field **Label of TLP**) decides where the advisory is published. *TLP* is the Traffic Light Protocol, which classifies how widely information may be shared.
 
 | TLP label | Published to |
 |---|---|
@@ -78,7 +80,7 @@ Rules:
 
 A restricted advisory is not meant for the public. You give each recipient a **feed key**. The recipient uses the key to list and read exactly the advisories the key allows.
 
-Create and manage keys under **Settings → Scanners & API → CSAF feed keys**.
+Create and manage keys under **Administration → API keys** (page **Scanners & API keys**), card **CSAF feed keys**. The card is shown only with the `csaf` feature. **Create CSAF feed key** opens the dialog.
 
 | Field | What it does |
 |---|---|
@@ -91,7 +93,7 @@ Per key you can **copy** it, edit its **Products**, open its **Access log**, swi
 
 ### Access log
 
-Every read through a key is recorded: which key read which advisory, and when. Open it with the list icon of the key. Entries are kept for 365 days. The *Requests* column shows the number of reads.
+Every read through a key is recorded: which key read which advisory, and when. Open it with the **Access log** button of the key. Entries are kept for 365 days. The *Requests* column shows the number of reads.
 
 ### What a recipient sees
 
@@ -125,13 +127,13 @@ An AMBER+STRICT advisory is served only to a feed key that is **bound to a produ
 
 ### Set it up
 
-1. **Link the affected release to a product.** In the product, open the Solutions tab and use **Link Release**. See [Link with Release](../03-internal/03-products/10-link-with-release.md). The advisory's products come from the releases that contain the affected modules. Without this link, no key can read the advisory.
+1. **Link the affected release to a product.** In the product, open the **Solutions** tab and use **Add solution**. See [Link with Release](../03-internal/03-products/10-link-with-release.md). The advisory's products come from the releases that contain the affected modules. Without this link, no key can read the advisory.
 2. **Set the TLP label to `AMBER` and save the advisory.** Only an `AMBER` advisory can be marked.
-3. **Mark it.** On the **Metadata** tab, tick **AMBER+STRICT (product-restricted)**. The advisory then shows which products it concerns. If it shows *no product yet*, go back to step 1.
-4. **Bind the recipient's key to the product.** Create a key (or use the Products icon of an existing key) and select the products the recipient is entitled to.
+3. **Mark it.** On the **Meta information** tab, tick **AMBER+STRICT (product-restricted)**. The advisory then shows which products it concerns. If it shows *no product yet*, go back to step 1.
+4. **Bind the recipient's key to the product.** Create a key (or use the **Products** button of an existing key) and select the products the recipient is entitled to.
 5. **Publish the advisory.**
 
-📸 *Screenshot: the AMBER+STRICT option on the Metadata tab, with the products the advisory concerns.*
+📸 *Screenshot: the AMBER+STRICT option on the Meta information tab, with the products the advisory concerns.*
 
 📸 *Screenshot: the Create CSAF feed key dialog with TLP levels and Products.*
 
@@ -160,8 +162,8 @@ The published status follows the reason you select, not the text of your comment
 
 ## Related
 
-- [Background: VEX in CSAF](../../shared/background/11-vex-csaf-vex.md) — VEX use cases
-- [Link with Release](../03-internal/03-products/10-link-with-release.md) — connect releases to products
-- [Products](../03-internal/03-products/index.md) — products referenced in CSAF advisories
-- [CSAF Trusted Provider](../13-capabilities/06-csaf-trusted-provider.md) — the capability behind publishing
-- [Vulnerability Lake](../05-knowledge/04-vulnerability-lake.md) — the CVE database
+- [Background: VEX in CSAF](../../shared/background/11-vex-csaf-vex.md) - VEX use cases
+- [Link with Release](../03-internal/03-products/10-link-with-release.md) - connect releases to products
+- [Products](../03-internal/03-products/index.md) - products referenced in CSAF advisories
+- [CSAF Trusted Provider](../13-capabilities/06-csaf-trusted-provider.md) - the capability behind publishing
+- [Vulnerability Lake](../05-knowledge/04-vulnerability-lake.md) - the CVE database

@@ -12,11 +12,11 @@ If the register is still empty, the page lists what it will show once you add th
 
 A chart of the risk stock over time:
 
-- **Opened** — risks created in the period.
-- **Done** — risks that reached the Done group in the period.
-- **Open at end** — the open stock at the end of each period.
+- **Opened**: risks created in the period.
+- **Done**: risks that reached the Done group in the period.
+- **Open at end**: the open stock at the end of each period.
 
-Choose **Last 3 months**, **Last 6 months** or **Last 12 months**, and **By month** or **By week**.
+Choose **Last 3 months**, **Last 6 months** or **Last 12 months**, and **By month** or **By week**. The chart opens with the last 6 months by month.
 
 > [!NOTE]
 > Risks that were finished before version 3.3.23, or marked done by the upgrade to 3.3.28, have no recorded resolution date. They are not drawn in the chart; a note under the chart gives their number.
@@ -44,8 +44,8 @@ A treemap of projects and modules. See [Portfolio Views](04-portfolio-views.md).
 
 Two lists close the page:
 
-- **New risks (added in last 14 days)** — with the tiles *total*, *added last 7 days*, *Untreated*, *In treatment* and *Done*.
-- **Untreated risks** — risks nobody has decided on yet: no treatment strategy, or still identified or assessed.
+- **New risks (added in last 14 days)**: with the tiles *total*, *added last 7 days*, *Untreated*, *In treatment* and *Done*.
+- **Untreated risks**: risks nobody has decided on yet: no treatment strategy, or still identified or assessed.
 
 Click a row in either list to open that risk in the editor.
 
@@ -55,6 +55,6 @@ All charts follow the theme you chose in your profile and redraw immediately whe
 
 ## Related
 
-- [Risks List](02-risks-list.md) — the register behind these numbers
-- [Treatment and State](05-treatment-and-state.md) — what Untreated, In treatment and Done mean
-- [Risks API](../../09-rest-api/endpoints/risks.md) — the inventory and trend reports are also available over the API
+- [Risks List](02-risks-list.md) - the register behind these numbers
+- [Treatment and State](05-treatment-and-state.md) - what Untreated, In treatment and Done mean
+- [Risks API](../../09-rest-api/endpoints/risks.md) - the inventory and trend reports are also available over the API

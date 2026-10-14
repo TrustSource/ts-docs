@@ -1,6 +1,6 @@
 # Reports
 
-> Pull any of the eight analytical reports via REST — the same data that powers the in-product Analysis page.
+> Pull any of the eight analytical reports via REST - the same data that powers the in-product Analysis page.
 
 ## Use cases
 
@@ -30,7 +30,7 @@ Send your key in the `x-api-key` header. The **Scopes** column shows which key s
 ## Related
 
 - [Analysis](../../03-internal/04-reports.md)
-- [Vulnerabilities](vulnerabilities.md) — raw CVE search API
-- [Risks](risks.md) — track follow-up from report findings
-- [Compliance Approvals](compliance-approvals.md) — approvals consume some report data
+- [Vulnerabilities](vulnerabilities.md) - raw CVE search API
+- [Risks](risks.md) - track follow-up from report findings
+- [Compliance Approvals](compliance-approvals.md) - approvals consume some report data
 - [Endpoint groups](index.md)

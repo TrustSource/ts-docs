@@ -5,7 +5,7 @@
 | Page | What it covers |
 |---|---|
 | [Authentication](01-authentication.md) | API key format, header usage, scopes. |
-| [Errors & Responses](02-error-handling.md) | HTTP status codes, error body format. |
+| [Errors & Responses](02-error-handling.md) | HTTP status codes, error bodies, rate limits. |
 | [Endpoint Reference](03-endpoint-reference.md) | Where to find the specification, and the endpoint pages. |
 | [Example: curl](04-examples-curl.md) | End-to-end workflow via curl. |
 | [Public Routes](05-public-routes.md) | Release keys and CSAF feed keys. |
@@ -34,8 +34,8 @@ All requests and responses are JSON unless an endpoint says otherwise. CORS is e
 
 ## Further sources
 
-- [API Structure](06-api-structure.md) — the five building blocks of the API.
-- [API keys](../06-administration/04-api-keys.md) and [API usage](../06-administration/04a-api-usage.md) — manage and monitor your keys.
-- [API scopes](../10-roles-permissions/09-api-scopes.md) — which scope may call which operation.
-- [Recipe: CI/CD integration](../recipes/02-cicd-integration.md) — scan from GitHub Actions.
-- [Support](../08-personal/04-support.md) — questions about the API.
+- [API Structure](06-api-structure.md) - the five building blocks of the API.
+- [API keys](../06-administration/04-api-keys.md) and [API usage](../06-administration/04a-api-usage.md) - manage and monitor your keys.
+- [API scopes](../10-roles-permissions/09-api-scopes.md) - which scope may call which operation.
+- [Recipe: CI/CD integration](../recipes/02-cicd-integration.md) - scan from GitHub Actions.
+- [Support](../08-personal/04-support.md) - questions about the API.

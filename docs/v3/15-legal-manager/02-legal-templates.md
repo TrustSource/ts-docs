@@ -1,7 +1,7 @@
 # Legal Templates
 
 > [!NOTE]
-> **Required role:** `legal_manager`
+> **Required role:** `legal_manager` (an [internal role](../10-roles-permissions/02-internal-roles.md))
 
 Legal templates are presets for the **legal requirements** of a project or module: how it is sold, operated and distributed, and what intellectual-property protection it needs. Maintain them under **Legal mngr. → Legal templates**; the page is titled **Legal Settings Templates**. When a project or module's legal settings are set up, a template can be imported, as described under [Project Settings → Legal](../03-internal/01-projects/settings/02-legal.md).
 
@@ -9,11 +9,11 @@ Legal templates are presets for the **legal requirements** of a project or modul
 
 The list shows each template's **order**, **Type** (*Project* or *Module*) and **Name**. Select a row to open it; **Remove** deletes a template.
 
-To add one, press the create button and enter a **Name**, choose the **Type** and optionally an **Order**; then press **Create Rule**.
+To add one, press **Create template** and enter a **Name**, choose the **Type** and optionally an **Order**; then press **Create Rule**.
 
 ## Edit a template
 
-Under **Update template information** you change name and order. Below, the template's requirements are set in one of two ways:
+Under **Update template information** you change name and order and press **Update template**. Below, the template's requirements are set in one of two ways:
 
 - **Start wizard** guides you through a questionnaire and ends with **Finish**;
 - **View all** shows all questions in one form.

@@ -2,7 +2,7 @@
 
 What each role can do, one role at a time. Use it to decide which roles a person needs. Menu details are on [Functions by Area](04-functions-by-area.md); field-level rights in project and module settings are in the [Settings Permission Matrix](06-settings-permission-matrix.md).
 
-📸 *Screenshot: the role drop-down in User Management with all roles ticked.*
+📸 *Screenshot: the role selection of a user in User Management, with several roles selected.*
 
 Roles add up: a person with several roles can do everything any of them can do. License flags and account types can hide entries on top of that.
 
@@ -25,11 +25,12 @@ Roles add up: a person with several roles can do everything any of them can do. 
 
 - **Menu:** Overview, Knowledge, Settings with Company tags.
 - **Project and module settings:** assign the default project manager and default compliance manager; edit module tags and Capabilities; export SPDX.
+- **Visibility:** sees every project and module of the company, also those whose members do not include them. See [Permission Model](03-permission-model.md#which-projects-and-modules-you-see).
 
 ## Manager (`manager`)
 
 - **Menu:** Inbound, Internal with Approvals, Outbound, Knowledge, Settings with Company tags.
-- **Approvals:** start and approve or reject approvals.
+- **Approvals:** start approvals and remove open requests. The **Approve** and **Reject** buttons are shown to compliance managers only.
 - **Company data:** the Login history page; add, remove and import company tags; create and read webhooks and channels; change roles and remove users on the server side, although the User Management page itself is for account admins.
 - **Project and module settings:** read only, plus Capabilities and SPDX export on modules.
 - **Context:** gets default-owner rights, which are broad, on projects and modules where they are the default project manager or none is set. These include editing nearly every tab, running imports and deleting the project or module. See the [project matrix](06-settings-permission-matrix.md#rights-that-depend-on-your-relationship-to-the-project).
@@ -70,7 +71,7 @@ See [Internal Roles](02-internal-roles.md).
 
 - **Start an approval** (or turn a draft into one): `manager`, `compliance_manager`. Other members get a `403` and nothing is saved.
 - **Save a draft approval:** any member.
-- **Approve / reject:** `manager`, `compliance_manager`.
+- **Approve / reject:** `compliance_manager` in the app (the buttons are shown to this role only); through the REST API, a key with the `compliance_manager` scope.
 
 ## Related
 

@@ -57,7 +57,7 @@ Click the **JSON** link in the dialog to open a sample file.
 ```
 
 - `version` must be `1`.
-- Each product needs `identifier` and `name`; `type` and `description` are optional in the file.
+- Each product needs `identifier`, `name` and `type` (for example `class` or `family`); `description` and `properties` (a list of `{"name": ..., "value": ...}` pairs) are optional.
 - `relations` describe the tree: the product in `identifier` contains the products listed in `contains`. A product listed in several relations keeps the first one. The order of products in the file does not matter.
 - A relation may point to a product that already exists in your company; it must exist, or the import fails.
 - A file may hold up to 5,000 products and 5,000 relations, and you can start up to five imports per minute.
@@ -67,11 +67,11 @@ Click the **JSON** link in the dialog to open a sample file.
 The import checks the whole file before it creates anything. If a single row is invalid, nothing is imported, and the error names the problem, for example:
 
 - an identifier listed twice in the file, or already used by a product in your company,
-- a product without identifier or name,
+- a product without identifier, name or type,
 - a relation to an unknown parent, or relations that form a cycle,
 - a row that violates the product schema (the message names the row).
 
-Fix the file and import it again.
+Fix the file and import it again. A successful import shows "Products added".
 
 > [!CAUTION]
 > A file that is valid JSON but does not carry `"version": 1` is accepted without creating any product. If nothing appears after an import, check the `version` field.

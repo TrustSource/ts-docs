@@ -51,8 +51,8 @@ Send your key in the `x-api-key` header. The **Scopes** column shows which key s
 
 ## Related
 
-- [Projects](projects.md) — the parent container
-- [Scans](scans.md) — the primary data source for a module
-- [Imports](imports.md) — how CycloneDX / SPDX files land in a module
-- [Create a Module](../../03-internal/02-modules/01-create-and-list.md) — UI-side documentation
+- [Projects](projects.md) - the parent container
+- [Scans](scans.md) - the primary data source for a module
+- [Imports](imports.md) - how CycloneDX / SPDX files land in a module
+- [Create a Module](../../03-internal/02-modules/01-create-and-list.md) - UI-side documentation
 - [Endpoint groups](index.md)

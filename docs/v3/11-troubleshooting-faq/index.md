@@ -4,7 +4,7 @@ When something does not work as expected, start here. This chapter collects freq
 
 | Page | What it covers |
 |---|---|
-| [FAQ](01-faq.md) | Top 20–30 frequently asked questions. |
+| [FAQ](01-faq.md) | Frequently asked questions. |
 | [Common Errors](02-common-errors.md) | Error messages and what they mean. |
 | [Scan Troubleshooting](03-scan-troubleshooting.md) | Scanner issues, missing components, wrong licenses. |
 | [Integration Issues](04-integration-troubleshooting.md) | Jira/GitHub/TFS connection problems. |

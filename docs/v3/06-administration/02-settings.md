@@ -32,7 +32,7 @@ The **Settings** page ("General settings") is the entry point for company-wide c
 
 ## Related
 
-- [Project Settings](../03-internal/01-projects/settings/index.md) — settings for one project
-- [Module Settings](../03-internal/02-modules/settings/index.md) — settings for one module
-- [Policies](05-policies.md) — open-source policy, crypto algorithms, end-of-life and risk assessment
+- [Project Settings](../03-internal/01-projects/settings/index.md) - settings for one project
+- [Module Settings](../03-internal/02-modules/settings/index.md) - settings for one module
+- [Policies](05-policies.md) - open-source policy, crypto algorithms, end-of-life and risk assessment
 - [Settings Permission Matrix](../10-roles-permissions/06-settings-permission-matrix.md)

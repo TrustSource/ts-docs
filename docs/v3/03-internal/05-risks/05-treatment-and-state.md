@@ -6,8 +6,8 @@
 
 Every risk answers two separate questions, in two fields:
 
-- **Treatment strategy** — *what was decided?* Avoid, Mitigate, Transfer or Accept. Blank means *Not decided yet*.
-- **State** — *how far along is the work?* Progress only.
+- **Treatment strategy**: *what was decided?* Avoid, Mitigate, Transfer or Accept. Blank means *Not decided yet*.
+- **State**: *how far along is the work?* Progress only.
 
 From both, ***TrustSource*** derives one **treatment group**: **Untreated**, **In treatment** or **Done**. The group is never stored; every tile, filter, chart and report calculates it the same way, so the Overview, the list and the portfolio always show the same numbers.
 
@@ -63,6 +63,6 @@ Counts of open and done risks changed accordingly, and risks that were `deferred
 
 ## Related
 
-- [Risks List](02-risks-list.md) — filter by group
-- [Decisions](06-decisions.md) — document why a risk is accepted or transferred
-- [Risk Overview](01-overview.md) — the inventory by group
+- [Risks List](02-risks-list.md) - filter by group
+- [Decisions](06-decisions.md) - document why a risk is accepted or transferred
+- [Risk Overview](01-overview.md) - the inventory by group

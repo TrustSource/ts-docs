@@ -18,7 +18,7 @@ Every setting carries a **rights code**: a combination of these letters.
 | `x` | run | You can run an action on it, such as import, propagate, export or delete. |
 | `d` | delete | You can delete entries. |
 
-Codes combine: `rw` = view and edit, `rwd` = view, edit and delete, `rx` = view and run. `—` means the setting exists but the role has no access.
+Codes combine: `rw` = view and edit, `rwd` = view, edit and delete, `rx` = view and run. `-` means the setting exists but the role has no access.
 
 Column headings use these abbreviations:
 
@@ -59,78 +59,78 @@ Each heading is a tab in the project settings.
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
-| wizard | — | — | — | — | — | — | — | — |
-| import_template | — | — | — | — | — | — | — | — |
-| import | — | — | — | — | — | — | — | — |
-| propagate | — | — | — | — | — | — | — | — |
+| wizard | - | - | - | - | - | - | - | - |
+| import_template | - | - | - | - | - | - | - | - |
+| import | - | - | - | - | - | - | - | - |
+| propagate | - | - | - | - | - | - | - | - |
 
 ### Obligations
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | list | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
-| import | — | — | — | — | — | — | — | — |
-| propagate | — | — | — | — | — | — | — | — |
+| import | - | - | - | - | - | - | - | - |
+| propagate | - | - | - | - | - | - | - | - |
 
 ### MDR/IVDR Classification
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
-| import_template | — | — | — | — | — | — | — | — |
-| import | — | — | — | — | — | — | — | — |
-| propagate | — | — | — | — | — | — | — | — |
+| import_template | - | - | - | - | - | - | - | - |
+| import | - | - | - | - | - | - | - | - |
+| propagate | - | - | - | - | - | - | - | - |
 
 ### CIA
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `rw` |
-| import | — | — | — | — | — | — | — | `rx` |
+| import | - | - | - | - | - | - | - | `rx` |
 
 ### Capabilities
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `rw` |
-| import | — | — | — | — | — | — | — | `rx` |
+| import | - | - | - | - | - | - | - | `rx` |
 
 ### Crypto management
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
-| import | — | — | — | — | — | — | — | — |
+| import | - | - | - | - | - | - | - | - |
 
 ### End-of-life
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
-| import | — | — | — | — | — | — | — | — |
+| import | - | - | - | - | - | - | - | - |
 
 ### Quality
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
-| import | — | — | — | — | — | — | — | — |
+| import | - | - | - | - | - | - | - | - |
 
 ### OBOM
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
-| import | — | — | — | — | — | — | — | — |
+| import | - | - | - | - | - | - | - | - |
 
 ### Allow/Deny
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
 | enforce | `r` | `rw` | `r` | `r` | `r` | `r` | `r` | `r` |
-| whitelist_license_approve | — | `rx` | — | — | — | — | — | — |
+| whitelist_license_approve | - | `rx` | - | - | - | - | - | - |
 | whitelist_license | `r` | `rw` | `r` | `r` | `r` | `r` | `r` | `r` |
-| whitelist_component_approve | — | `rx` | — | — | — | — | — | — |
+| whitelist_component_approve | - | `rx` | - | - | - | - | - | - |
 | whitelist_component | `r` | `rw` | `r` | `r` | `r` | `r` | `r` | `r` |
 | blacklist_license | `r` | `rw` | `r` | `r` | `r` | `r` | `r` | `r` |
 | blacklist_component | `r` | `rw` | `r` | `r` | `r` | `r` | `r` | `r` |
@@ -139,27 +139,27 @@ Each heading is a tab in the project settings.
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
-| switch | `r` | `r` | `r` | `r` | `rw` | — | — | — |
-| project | `r` | `r` | `r` | `r` | `rw` | — | — | — |
-| jira › switch | `r` | `r` | `r` | `r` | `rw` | — | — | — |
-| jira › settings | `r` | `r` | `r` | `r` | `rw` | — | — | — |
-| jira › active | `r` | `r` | `r` | `r` | `rw` | — | — | — |
-| tfs › settings | `r` | `r` | `r` | `r` | `rw` | — | — | — |
-| tfs › active | `r` | `r` | `r` | `r` | `rw` | — | — | — |
-| github › settings | `r` | `r` | `r` | `r` | `rw` | — | — | — |
-| github › active | `r` | `r` | `r` | `r` | `rw` | — | — | — |
+| switch | `r` | `r` | `r` | `r` | `rw` | - | - | - |
+| project | `r` | `r` | `r` | `r` | `rw` | - | - | - |
+| jira › switch | `r` | `r` | `r` | `r` | `rw` | - | - | - |
+| jira › settings | `r` | `r` | `r` | `r` | `rw` | - | - | - |
+| jira › active | `r` | `r` | `r` | `r` | `rw` | - | - | - |
+| tfs › settings | `r` | `r` | `r` | `r` | `rw` | - | - | - |
+| tfs › active | `r` | `r` | `r` | `r` | `rw` | - | - | - |
+| github › settings | `r` | `r` | `r` | `r` | `rw` | - | - | - |
+| github › active | `r` | `r` | `r` | `r` | `rw` | - | - | - |
 
 ### Module import
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
-| import | `r` | `r` | `r` | `r` | — | — | — | — |
+| import | `r` | `r` | `r` | `r` | - | - | - | - |
 
 ### Danger Operations
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
-| delete | — | — | — | — | — | — | — | — |
+| delete | - | - | - | - | - | - | - | - |
 
 ## Rights that depend on your relationship to the project
 
@@ -190,78 +190,78 @@ The next tables list only settings where at least one of these contexts differs 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `rw` | `r` | `rw` |
-| wizard | — | — | — | — | `rx` | — | `rx` |
-| import_template | — | — | — | — | `rx` | — | `rx` |
-| import | — | — | — | — | `rx` | — | `rx` |
-| propagate | — | — | — | — | `rx` | — | `rx` |
+| wizard | - | - | - | - | `rx` | - | `rx` |
+| import_template | - | - | - | - | `rx` | - | `rx` |
+| import | - | - | - | - | `rx` | - | `rx` |
+| propagate | - | - | - | - | `rx` | - | `rx` |
 
 ### Context rights: Obligations
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | list | `r` | `r` | `r` | `r` | `rw` | `r` | `rw` |
-| import | — | — | — | — | `rx` | — | `rx` |
-| propagate | — | — | — | — | `rx` | — | `rx` |
+| import | - | - | - | - | `rx` | - | `rx` |
+| propagate | - | - | - | - | `rx` | - | `rx` |
 
 ### Context rights: MDR/IVDR Classification
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `rw` | `r` | `rw` |
-| import_template | — | — | — | — | `rx` | — | `rx` |
-| import | — | — | — | — | `rx` | — | `rx` |
-| propagate | — | — | — | — | `rx` | — | `rx` |
+| import_template | - | - | - | - | `rx` | - | `rx` |
+| import | - | - | - | - | `rx` | - | `rx` |
+| propagate | - | - | - | - | `rx` | - | `rx` |
 
 ### Context rights: CIA
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `rw` |
-| import | — | — | — | — | — | — | `rx` |
+| import | - | - | - | - | - | - | `rx` |
 
 ### Context rights: Capabilities
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `rw` |
-| import | — | — | — | — | — | — | `rx` |
+| import | - | - | - | - | - | - | `rx` |
 
 ### Context rights: Crypto management
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `rw` |
-| import | — | — | — | — | — | — | `rx` |
+| import | - | - | - | - | - | - | `rx` |
 
 ### Context rights: End-of-life
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `rw` |
-| import | — | — | — | — | — | — | `rx` |
+| import | - | - | - | - | - | - | `rx` |
 
 ### Context rights: Quality
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `rw` |
-| import | — | — | — | — | — | — | `rx` |
+| import | - | - | - | - | - | - | `rx` |
 
 ### Context rights: OBOM
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | settings | `r` | `r` | `r` | `r` | `r` | `r` | `rw` |
-| import | — | — | — | — | — | — | `rx` |
+| import | - | - | - | - | - | - | `rx` |
 
 ### Context rights: Allow/Deny
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
 | enforce | `r` | `r` | `r` | `rw` | `rw` | `r` | `rw` |
-| whitelist_license_approve | — | — | — | `rx` | `rx` | — | `rx` |
+| whitelist_license_approve | - | - | - | `rx` | `rx` | - | `rx` |
 | whitelist_license | `r` | `r` | `r` | `rw` | `rw` | `r` | `rw` |
-| whitelist_component_approve | — | — | — | `rx` | `rx` | — | `rx` |
+| whitelist_component_approve | - | - | - | `rx` | `rx` | - | `rx` |
 | whitelist_component | `r` | `r` | `r` | `rw` | `rw` | `r` | `rw` |
 | blacklist_license | `r` | `r` | `r` | `rw` | `rw` | `r` | `rw` |
 | blacklist_component | `r` | `r` | `r` | `rw` | `rw` | `r` | `rw` |
@@ -290,7 +290,7 @@ The next tables list only settings where at least one of these contexts differs 
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
-| delete | — | — | — | — | — | — | `rx` |
+| delete | - | - | - | - | - | - | `rx` |
 
 ## Related
 

@@ -1,7 +1,7 @@
 # Allow/Deny (Module)
 
 > [!NOTE]
-> **Required role:** everyone who can open the module settings reads the lists. Adding, changing and removing entries is for developers and for managers and compliance managers who are the module's default manager (or if none is set). **Approve** is for compliance managers. See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
+> **Required role:** everyone who can open the module settings reads the lists. Adding, changing and removing entries is for developers and for managers and compliance managers who are the module's default manager (or if none is set). **Approve** is for compliance managers who are the module's default compliance manager (or if none is set). See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
 
 Allow/Deny lists let you overrule the automatic evaluation for this module: a license you have cleared with legal, or a component you never want to ship. The tab is not shown for infrastructure modules.
 
@@ -24,8 +24,8 @@ Two panels, **Always allow component** and **Always deny component**.
 | **Version** | For example `3.6.1`. |
 | **Comment** | Required, up to 200 characters. |
 
-- **Always allow** — the component is left out of the result evaluation.
-- **Always deny** — the component always fails the evaluation.
+- **Always allow**: the component is left out of the result evaluation.
+- **Always deny**: the component always fails the evaluation.
 
 Use a wildcard `*` as the last character of the key or of a key part (parts are separated by `:`), and as the last character of the version. `mvn:com.acme.billing:*` covers all artifacts of the group, `*:acme:*` every package type with the group `acme`, and `1.*` every 1.x version. The question-mark icon next to the panel title shows these examples.
 

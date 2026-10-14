@@ -1,21 +1,23 @@
 # Post-Release Vulnerability Tracking
 
-Once a module is approved and released, ***TrustSource*** continues monitoring its components for **newly discovered vulnerabilities**. This is critical for CRA and NIS2 compliance — you must respond to new CVEs even after shipping.
+Once a module is approved and released, ***TrustSource*** keeps matching its components against the current vulnerability database to find **newly discovered vulnerabilities**. This is critical for CRA and NIS2 compliance: you must respond to new CVEs even after shipping.
 
 ## What you see
 
-The post-release view shows:
+Open the release under **Internal → Releases** and select the **New vulnerabilities** tab. It compares the vulnerabilities known today for the components in the frozen snapshot with those recorded at approval, and lists:
 
-- **New vulnerabilities** — CVEs published after the approval date that affect components in the frozen snapshot.
-- **Changed components** — components whose vulnerability status changed since the approval.
-- **Export control updates** — changes to export restriction classifications.
+- **new vulnerabilities**: CVEs that were not part of the release snapshot, also on components that were already vulnerable at approval,
+- **resolved vulnerabilities**: the new ones that are muted,
+- **vulnerable components**: the components affected by new vulnerabilities.
 
-📸 *Screenshot: the post-release vulnerability tab showing newly discovered CVEs.*
+Below the counters, each vulnerable component is listed with its new CVEs. **Export as CSAF** downloads a CSAF/VEX document of the new findings. The **Vulnerabilities** tab shows the vulnerabilities as known at approval, the **Export control** tab the detected crypto algorithms. See [Releases](../07-releases.md#release-details).
+
+📸 *Screenshot: the New vulnerabilities tab of a release showing newly discovered CVEs.*
 
 > [!TIP]
-> Set up [webhooks](../../06-administration/08-integrations.md) to receive notifications when new vulnerabilities are found in released modules.
+> To be notified when a new CVE matches a released component, add a webhook or channel with the **Vulnerabilities in releases** trigger on the project's [Webhooks and Channels](../01-projects/settings/13-webhooks-channels.md) tab.
 
 ## Related
 
-- [Releases](../07-releases.md) — managing released versions
-- [Vulnerability Lake](../../05-knowledge/04-vulnerability-lake.md) — the CVE database
+- [Releases](../07-releases.md): managing released versions
+- [Vulnerability Lake](../../05-knowledge/04-vulnerability-lake.md): the CVE database

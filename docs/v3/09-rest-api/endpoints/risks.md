@@ -1,6 +1,6 @@
 # Risks
 
-> Create, list, inspect, and delete risk records — the work-tracking layer for compliance and security findings — together with the tasks attached to them.
+> Create, list, inspect, and delete risk records - the work-tracking layer for compliance and security findings - together with the tasks attached to them.
 
 ## Use cases
 
@@ -84,7 +84,7 @@ A temporary exception whose `validUntil` has passed moves its risk back to `asse
 
 ## Risk assessment scheme
 
-Impact class, `BV_enum`, `EF_enum` and `ARO_enum` must be values of the risk assessment scheme that applies to the risk's module or project (configured under Settings - Policies - Risk assessment, and on a project's or module's CIA tab). Without a configured scheme the built-in values apply. A value that is written or changed and is not in the scheme answers `400` with `{"error": ..., "parameter": "riskProperties.<field>"}`; a stored value the request leaves unchanged is accepted even if the scheme no longer contains it.
+Impact class, `BV_enum`, `EF_enum` and `ARO_enum` must be values of the risk assessment scheme that applies to the risk's module or project (configured under **Administration → Policies → Risk assessment**, and on a project's or module's CIA tab). Without a configured scheme the built-in values apply. A value that is written or changed and is not in the scheme answers `400` with `{"error": ..., "parameter": "riskProperties.<field>"}`; a stored value the request leaves unchanged is accepted even if the scheme no longer contains it.
 
 The treatment strategy is not part of the scheme: it is always one of the four values above.
 
@@ -131,7 +131,7 @@ Send your key in the `x-api-key` header. The **Scopes** column shows which key s
 
 ## Related
 
-- [Risks](../../03-internal/05-risks/01-overview.md) — UI-side documentation
-- [Compliance Approvals](compliance-approvals.md) — risks can block approvals
-- [Reports](reports.md) — risk reports and dashboards
+- [Risks](../../03-internal/05-risks/01-overview.md) - UI-side documentation
+- [Compliance Approvals](compliance-approvals.md) - risks can block approvals
+- [Reports](reports.md) - risk reports and dashboards
 - [Endpoint groups](index.md)

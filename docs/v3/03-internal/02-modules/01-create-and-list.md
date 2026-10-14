@@ -37,22 +37,24 @@ A scan submitted through the REST API creates its module on the fly if it does n
 
 The module list is part of the [project page](../01-projects/02-project-overview.md). The toolbar offers:
 
-- **Filter** — search by module name.
-- **All states / OK / Warnings / Violations** — filter by traffic-light state.
-- **Tags** — select one or more company tags.
-- **Module states** — switch the rows to the analysis states of a past approval; **Current state** is the default.
-- **Show archived / Hide archived** — include or hide archived modules.
-- **Grid / Table** — switch the presentation. Grid also has a sort-order toggle.
-- **Analyze all** — re-analyze every module of the project.
+- **Filter**: search by module name.
+- **All states / OK / Warnings / Violations**: filter by traffic-light state.
+- **Tags**: select one or more company tags.
+- **Module states**: switch the rows to the analysis states of a past approval; **Current state** is the default.
+- **Show archived / Hide archived**: include or hide archived modules.
+- **Grid / Table**: switch the presentation. Grid also has a sort-order toggle.
+- **Import**, **Add/link** and **Analyze all** (`manager`, `compliance_manager`): import or create a module, or re-analyze every module of the project. The **Unassigned Modules** list offers only **Analyze all**.
 
-**Grid** cards show the status ribbon, the architecture type, **Settings** and **Analyse** buttons, and the counts of licenses and components with the dates of the last analysis and scan.
+When the toolbar does not fit on one line, these actions move into a **...** menu (**More actions**).
 
-**Table** rows show State, Name, Tags, Releases, Components, Legal, Security, and a Settings button. The Releases column links to the releases list. Two columns depend on your license: **Quality** (feature `sarif`) and **OBOM** (feature `obom`).
+**Grid** cards show the status ribbon, the architecture type, a **Follow** action, the **Settings** button, **Analyse** (`manager`, `compliance_manager`), status bars for Legal, Vulnerabilities and Viability, and the counts of licenses and components with the dates of the last analysis and scan.
+
+**Table** rows show State, Name, Tags, Releases, Components, Legal, Security, and the Settings and Follow buttons. The Releases column links to the releases list. Two columns depend on your license: **Quality** (feature `sarif`) and **OBOM** (feature `obom`).
 
 Click a module to open the [Module Detail](02-module-detail-tabs.md). A module whose card or header is highlighted asks you to complete its settings (legal and architecture).
 
 ## Related
 
-- [Module Detail Tabs](02-module-detail-tabs.md) — what you see inside a module
-- [Module Settings](settings/index.md) — configuring a module
-- [Working with Scans](../../02-inbound/02-import-scans.md) — how data gets into a module
+- [Module Detail Tabs](02-module-detail-tabs.md): what you see inside a module
+- [Module Settings](settings/index.md): configuring a module
+- [Working with Scans](../../02-inbound/02-import-scans.md): how data gets into a module

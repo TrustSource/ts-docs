@@ -10,7 +10,7 @@ Open it from the **Deployments** tile on the [project page](02-project-overview.
 
 ## Where deployments come from
 
-OBOMs are uploaded by `ts-scan` or through the [OBOM endpoints](../../09-rest-api/endpoints/obom.md). The deployment name travels in the OBOM itself (up to 100 characters). An OBOM without a name appears as **(no deployment)** so older uploads do not disappear. An empty page says "No deployment reported yet".
+OBOMs are uploaded by `ts-scan` or through the [OBOM endpoints](../../09-rest-api/endpoints/obom.md). The deployment name travels in the OBOM itself (up to 100 characters). An OBOM without a name appears in the column **(no deployment)**, marked *Legacy upload*, so older uploads do not disappear. An empty page says "No deployment reported yet".
 
 ## The Deployments tile
 
@@ -30,7 +30,7 @@ Click a module cell to open the module's [OBOM tab](../02-modules/07-obom-tab.md
 ## Compare two deployments
 
 1. Click **Compare deployments**.
-2. Choose a deployment in each of the two lists and click **Compare**.
+2. Choose a deployment in each of the two lists (**Compare** ... **with** ...) and click **Compare**. **Hide** closes the form.
 3. Read the summary line, for example "3 differences · 1 scope only in staging".
 
 The result table lists each scope with the components only in the first deployment, those with a differing version and those only in the second. Expand a row to see component names, versions and purls. Findings that exist in only one deployment, or on different resources, are listed under **Findings**. Use **Show unchanged components** to see the rest.

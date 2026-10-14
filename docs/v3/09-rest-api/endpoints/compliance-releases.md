@@ -1,6 +1,6 @@
 # Compliance Releases
 
-> Fetch the downstream artefacts that ship with a release — SBOM, notice file, CSAF advisory, and CSAF change log.
+> Fetch the downstream artefacts that ship with a release - SBOM, notice file, CSAF advisory, and CSAF change log.
 
 ## Use cases
 

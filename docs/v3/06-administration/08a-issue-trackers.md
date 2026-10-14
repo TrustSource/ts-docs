@@ -49,5 +49,5 @@ Select **Update** to save. Switching between **API** and **Email** is saved imme
 ## Related
 
 - [Integrations](08-integrations.md)
-- [Issue Integration (Project)](../03-internal/01-projects/settings/10-issue-tracker.md) — override the settings for one project
+- [Issue Integration (Project)](../03-internal/01-projects/settings/10-issue-tracker.md) - override the settings for one project
 - [Integration Troubleshooting](../11-troubleshooting-faq/04-integration-troubleshooting.md)

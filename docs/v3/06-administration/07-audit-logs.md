@@ -58,6 +58,6 @@ User logins are not part of this table. Click **Logins history** at the top righ
 
 ## Related
 
-- [Login History](09-login-history.md) — sign-ins and users who have not logged in
-- [Risk History](../03-internal/05-risks/09-risk-history.md) — the full old and new values of a risk
-- [SW Quality Scans](../02-inbound/04-sw-quality-scans.md) — what a SARIF import records
+- [Login History](09-login-history.md) - sign-ins and users who have not logged in
+- [Risk History](../03-internal/05-risks/09-risk-history.md) - the full old and new values of a risk
+- [SW Quality Scans](../02-inbound/04-sw-quality-scans.md) - what a SARIF import records

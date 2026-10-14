@@ -26,11 +26,11 @@ Use the **Filter** box to search by method, type, e-mail and name. Newest entrie
 
 ## Buttons
 
-- **Audit logs** — back to the audit trail.
-- **Users with no logins for 60 days** — lists the users who have not signed in during the last 60 days, a quick way to find accounts you may want to remove. **All logins history** returns to the full table.
-- **Export as CSV** and **Copy to clipboard** — take the table with you; semicolon-delimited.
+- **Audit logs** - back to the audit trail.
+- **Users with no logins for 60 days** - lists the users who have not signed in during the last 60 days, a quick way to find accounts you may want to remove. **All logins history** returns to the full table.
+- **Export as CSV** and **Copy to clipboard** - take the table with you; semicolon-delimited.
 
 ## Related
 
-- [User Management](03-user-management.md) — manage members and their roles
-- [Audit Logs](07-audit-logs.md) — the broader company-wide activity trail
+- [User Management](03-user-management.md) - manage members and their roles
+- [Audit Logs](07-audit-logs.md) - the broader company-wide activity trail

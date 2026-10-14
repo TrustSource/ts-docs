@@ -1,6 +1,6 @@
 # Compliance Approvals
 
-> Drive the approval workflow programmatically — initiate requests, query their state, approve or reject from an external system.
+> Drive the approval workflow programmatically - initiate requests, query their state, approve or reject from an external system.
 
 ## Use cases
 

@@ -25,7 +25,7 @@ Open a risk, then the **Countermeasures** tab, and click **Add countermeasure**.
 
 ## Tasks
 
-On the risk's **Tasks** tab, click **Add a task**:
+On the risk's **Tasks** tab, click **Add task**. The **Add a task** dialog has these fields:
 
 | Field | Description |
 |---|---|
@@ -42,7 +42,7 @@ Each task row also offers **Create issue**, which opens a GitHub issue from the 
 ## The Tasks tab
 
 1. Open **Risks → Tasks**.
-2. Choose a project or module at the top right. The page stays empty until you do.
+2. Choose a project or module at the top right (**Select report target**). Until you do, the page only asks you to select a project.
 3. Read the tiles: **total**, **upcoming** (due within 7 days), **overdue**, **opened** (planned, in progress or in review), **resolved** and **exceptions ending in 30 days**.
 4. Use the buttons **Backlog**, **In progress** and **Completed** to show or hide groups, and the selector **My tasks**, **Unassigned** or **All tasks**.
 
@@ -55,10 +55,10 @@ A task is **overdue** when it is not completed and its due date lies before toda
 - When a task becomes overdue, its responsible users receive one message and one e-mail.
 - 14 days before a [temporary exception](06-decisions.md#temporary-exceptions) ends, the decision maker and the responsible users are notified once.
 
-A reminder is sent at most once. If sending fails, it is logged and not repeated. Users are only notified if they hold a role in the company.
+Each reminder is sent at most once per event: a task whose due date is moved and missed again, or an exception that is renewed, is reminded again. If sending fails, it is logged and not repeated. Users are only notified if they hold a role in the company. The check runs regularly in the background (by default every hour).
 
 ## Related
 
-- [Risks List](02-risks-list.md) — the risk editor
-- [Decisions](06-decisions.md) — temporary exceptions
-- [Integrations](../../06-administration/08-integrations.md) — set up GitHub, Jira or TFS
+- [Risks List](02-risks-list.md) - the risk editor
+- [Decisions](06-decisions.md) - temporary exceptions
+- [Integrations](../../06-administration/08-integrations.md) - set up GitHub, Jira or TFS

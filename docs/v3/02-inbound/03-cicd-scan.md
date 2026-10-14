@@ -11,9 +11,9 @@ A **scan** is a snapshot of a module's bill of materials at one point in time: e
 |---|---|
 | **CI/CD scanner** | A scanner in your build pushes the result through the REST API after each build, using your API key. |
 | **REST API** | Post scan data to the [scans endpoint](../09-rest-api/endpoints/scans.md). |
-| **SBOM import** | An uploaded SPDX or CycloneDX file creates a scan too — see [Import Scans](02-import-scans.md). |
+| **SBOM import** | An uploaded SPDX or CycloneDX file creates a scan too; see [Import Scans](02-import-scans.md). |
 
-Each scan belongs to exactly one module. If the module named in the upload does not exist yet, it is created. Names are trimmed and matched exactly, so a [SARIF upload](04-sw-quality-scans.md) with the same module name lands on the same module.
+Each scan belongs to exactly one module. The project must exist already; if the module named in the upload does not exist yet, it is created. Names are trimmed and matched exactly, so a [SARIF upload](04-sw-quality-scans.md) with the same module name lands on the same module.
 
 > [!WARNING]
 > A mismatch in the module name, for example a package manifest name against a checkout folder name, silently creates a second module instead of adding to the first. See [SW Quality Scans](04-sw-quality-scans.md#import-with-the-api).
@@ -22,6 +22,8 @@ Each scan belongs to exactly one module. If the module named in the upload does 
 
 - A dependency tree nested more than 80 levels is refused with `400`; the message names the limit and the component. The same limit covers deeply nested content elsewhere in the upload.
 - Files above the upload limit (50 MB by default) are refused with `413`; a request without an API key is refused with `401`.
+- A request without a `User-Agent` header is refused with `400` (*mandatory User-Agent header missing*). An unknown or outdated scanner name in the header is accepted; the response then carries a note in `info`.
+- A project that does not exist in your company is refused with `404` (*Resource not found*). Create the project first; only the module is created on the fly.
 - One unusable dependency does not stop the scan: it is skipped and recorded. The scan keeps the count and the first 100 entries, and **Company Logs** shows how many were skipped.
 - A checksum that fails validation is not stored; the response carries a warning.
 
@@ -57,10 +59,10 @@ Select a row to open the scan.
 
 The header shows project, module, branch, tag and the number of binary links, and who submitted the scan when. Buttons:
 
-- **Binary links** — manage the links to the built artifacts.
-- **Analysis** — open the module analysis for this scan; shown as *Analysis N/A* if none exists.
-- **Notices** — appears when validation found unknown licenses; check that they do not affect your company.
-- **Re-Process** — for `manager` and `compliance_manager`: runs processing and analysis of the scan again, for example after policies changed.
+- **Binary links**: manage the links to the built artifacts.
+- **Analysis**: open the module analysis for this scan; shown as *Analysis N/A* if none exists.
+- **Notices**: appears when validation found unknown licenses; check that they do not affect your company.
+- **Re-Process**: for `manager` and `compliance_manager`: runs processing and analysis of the scan again, for example after policies changed.
 
 The body shows the dependency tree. Switch between **List** and **Diagram**, **Expand** or **Collapse** all levels, and **Show linked** or **Hide linked** modules. Selecting a dependency opens **Reported properties** at its side: purl, name, key, versions, description, homepage, repository, scanned and parsed licenses, checksum, meta data and crypto algorithms. **Lake** opens the component in the [Component Lake](../05-knowledge/01-component-lake.md).
 

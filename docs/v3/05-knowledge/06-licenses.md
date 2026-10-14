@@ -26,5 +26,5 @@ The catalogue also contains the special identifiers `NO-LICENSE`, `PUBLIC-DOMAIN
 
 ## Related
 
-- [Open Source Policy](07-open-source-policy.md) — how your company classifies licenses
+- [Open Source Policy](07-open-source-policy.md) - the policy document your company publishes
 - [Legal Manager](../15-legal-manager/index.md)

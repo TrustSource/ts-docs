@@ -23,7 +23,9 @@
 | Format | File types | Notes |
 |---|---|---|
 | **CycloneDX** | `.json`, `.cdx` | CycloneDX 1.2 to 1.7 and the 2.0 draft. Exports stay on CycloneDX 1.7. |
-| **SPDX** | `.json`, `.spdx`, `.rdf`, `.xml` | JSON and RDF/XML are told apart by content, not by file name. |
+| **SPDX** | `.json`, `.spdx`, `.rdf`, `.xml` | SPDX JSON and SPDX RDF/XML, told apart by content, not by file name. SPDX tag-value is not supported, even with the `.spdx` extension. |
+
+The file picker also accepts `.xml` with **CycloneDX** selected, but CycloneDX XML cannot be imported: the project's **Imports** page lists the import with the error *400 import file has invalid schema*. Convert the file to CycloneDX JSON first.
 
 > [!CAUTION]
 > A CycloneDX document written in the 2.x form (`specFormat`) with a `specVersion` other than 2.x is rejected. Through the API the answer is `400` naming the version, for example `Unsupported CycloneDX specVersion: 3.0`.
@@ -38,7 +40,7 @@ Files up to 10 MB can be imported in the web interface. Through the API a file m
 
 ## Module names
 
-The module name decides where the data lands. ***TrustSource*** trims leading and trailing spaces, then matches the name exactly (no case folding) inside the project. If the module exists, the import adds a scan to it; otherwise it creates the module. A later scan or SARIF upload with the **same** name lands on the same module — see [SW Quality Scans](04-sw-quality-scans.md).
+The module name decides where the data lands. ***TrustSource*** trims leading and trailing spaces, then matches the name exactly (no case folding) inside the project. If the module exists, the import adds a scan to it; otherwise it creates the module. A later scan or SARIF upload with the **same** name lands on the same module; see [SW Quality Scans](04-sw-quality-scans.md).
 
 Project names are matched the same way, trimmed: `"  Storefront  "` resolves to `Storefront`. If your company has two projects with the same name, uploads addressed by name go to the oldest one.
 

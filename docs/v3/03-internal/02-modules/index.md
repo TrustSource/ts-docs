@@ -1,13 +1,13 @@
 # Modules & Infrastructure Modules
 
-A **module** is the unit of analysis in ***TrustSource***. It represents one piece of software — a microservice, a library, a frontend, a firmware build — and its bill of materials.
+A **module** is the unit of analysis in ***TrustSource***. It represents one piece of software (a microservice, a library, a frontend, a firmware build) and its bill of materials.
 
 ## In this section
 
 | Page | What it covers |
 |---|---|
 | [Create & List](01-create-and-list.md) | Creating, linking and importing modules; the module list within a project. |
-| [Module Detail Tabs](02-module-detail-tabs.md) | The main module view — tabs, header actions, choosing an analysis. |
+| [Module Detail Tabs](02-module-detail-tabs.md) | The main module view: tabs, header actions, choosing an analysis. |
 | [Infrastructure Modules](03-infrastructure-modules.md) | How infrastructure and COTS modules differ from regular modules. |
 | [Component details](04-component-detail.md) | The side panel in the List tab and the full component page. |
 | [License details](05-license-detail.md) | License text and status from a module's Legal tab. |
@@ -17,8 +17,8 @@ A **module** is the unit of analysis in ***TrustSource***. It represents one pie
 
 ## Key concepts
 
-- Each module belongs to exactly one project.
-- A module's components come from **scans** — CI/CD, manual upload, SBOM import, or deep scan. A module can also hold an operational BOM (OBOM).
+- A module belongs to at most one project. A module without a project (**Assigned Project** set to `-- unassigned --` in its [General settings](settings/01-general.md)) is listed under **Unassigned Modules** in the project list.
+- A module's components come from **scans**: CI/CD, manual upload, SBOM import, or deep scan. A module can also hold an operational BOM (OBOM).
 - Modules have a traffic-light status that rolls up from their components.
 - Module settings can **override** project-level defaults.
 

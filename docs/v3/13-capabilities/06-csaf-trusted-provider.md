@@ -7,7 +7,7 @@ The **CSAF Trusted Provider** capability lets your organisation publish
 Common Security Advisory Framework (CSAF) advisories from
 ***TrustSource*** in a way that meets the requirements of the
 [OASIS CSAF Trusted Provider](https://oasis-open.github.io/csaf-documentation/)
-program — making your advisories machine-readable, discoverable through
+program, making your advisories machine-readable, discoverable through
 the trusted-provider directory, and consumable by downstream automated
 tooling.
 
@@ -17,7 +17,7 @@ tooling.
   products, remediation steps and revision history.
 - **Bulk advisory generation** from a module's SBOM, producing one CSAF
   document per known vulnerability in a single action.
-- **Trusted-Provider publication pipeline** — signed JSON output,
+- **Trusted-Provider publication pipeline**: signed JSON output,
   provider-metadata file, ROLIE feed, and TLP-aware distribution
   channels configurable per advisory.
 - **TLP-based publication:** an advisory is published to the provider
@@ -32,17 +32,16 @@ tooling.
 
 📸 *Screenshot: the CSAF document editor with the Metadata tab active and an advisory under preparation.*
 
-📸 *Screenshot: the provider-metadata / publication-channel configuration screen.*
+📸 *Screenshot: the CSAF feed keys on the Scanners & API keys page (Administration → API keys), with the Create CSAF feed key dialog open.*
 
 ## Editions
 
 - **SaaS:** available with the `csaf` feature flag enabled.
-- **Community Edition:** the CSAF document editor is included; the
-  Trusted-Provider publication pipeline is **not** included in the
-  initial release.
+- **Community Edition:** CSAF advisories and VEX are included; see
+  [CE vs. SaaS](../../ce/13-ce-vs-saas.md) for the differences.
 
 ## Related
 
-- [Outbound → CSAF Documents](../04-outbound/04-csaf.md) — full in-app reference for advisory authoring.
-- [Background: VEX in CSAF](../../shared/background/11-vex-csaf-vex.md) — VEX use cases inside CSAF advisories.
-- [CVD](05-cvd.md) — intake of vulnerability reports that may end up as CSAF advisories.
+- [Outbound → CSAF Documents](../04-outbound/04-csaf.md): full in-app reference for advisory authoring.
+- [Background: VEX in CSAF](../../shared/background/11-vex-csaf-vex.md): VEX use cases inside CSAF advisories.
+- [CVD](05-cvd.md): intake of vulnerability reports that may end up as CSAF advisories.

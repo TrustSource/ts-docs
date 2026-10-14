@@ -1,7 +1,7 @@
 # API scopes
 
 > [!NOTE]
-> Generated from the OpenAPI v2 specification (118 operations) and the scope checks of the REST API in ***TrustSource*** 3.3.59 on 2026-10-10. The Repository and Vulnerabilities rows come from the earlier API documentation.
+> Generated from the OpenAPI v2 specification (118 operations) and the scope checks of the REST API in ***TrustSource*** 3.3.61 (checked 2026-10-14). The Repository and Vulnerabilities rows come from the earlier API documentation.
 
 Every API key carries a scope: one or more role names. A key may call an operation only if at least one of its scopes is allowed to. A call outside the scope fails with `403`. The scope of a key is set when you [create the key](../06-administration/04-api-keys.md). A personal access key takes your own roles as its scope.
 
@@ -93,11 +93,11 @@ An `x` means the scope may call the operation. The column **Licence** names a li
 | `POST /core/scans/{scan_id}/reprocess` | x | x | x | x | x |  |  |  |  |
 | `GET /core/scans/{scan_id}/binaryLinks` | x | x | x | x | x |  |  |  |  |
 | `POST /core/scans/{scan_id}/binaryLinks` | x | x | x |  |  |  |  |  |  |
-| `POST /core/imports/scan/cyclonedx` | x | x | x | x | x | x |  |  |  |
-| `POST /core/imports/scan/cyclonedx/json` | x | x | x | x | x | x |  |  |  |
-| `POST /core/imports/scan/spdx` | x | x | x | x | x | x |  |  |  |
-| `POST /core/imports/scan/spdx/json` | x | x | x | x | x | x |  |  |  |
-| `POST /core/imports/scan/spdx/rdf` | x | x | x | x | x | x |  |  |  |
+| `POST /core/imports/scan/cyclonedx` | x | x |  |  |  |  |  |  |  |
+| `POST /core/imports/scan/cyclonedx/json` | x | x |  |  |  |  |  |  |  |
+| `POST /core/imports/scan/spdx` | x | x |  |  |  |  |  |  |  |
+| `POST /core/imports/scan/spdx/json` | x | x |  |  |  |  |  |  |  |
+| `POST /core/imports/scan/spdx/rdf` | x | x |  |  |  |  |  |  |  |
 
 ### OBOM
 
@@ -237,6 +237,7 @@ Notes:
 
 - Creating or updating a project with `POST /core/projects` is open to `developer`, `manager` and `portfolio_manager`. Setting the automatic-risk switches in the same call additionally needs `account_admin`, `manager` or `compliance_manager`.
 - `GET /account/authorization` and `GET /compliance/company/foss` check no scope: any valid key may call them.
+- The SBOM imports under `/core/imports/scan/` (CycloneDX, SPDX) hand the converted scan to the scan intake, which accepts only `developer` and `manager`. Keys with only other scopes get `403`.
 
 ## Operations with a key in the URL
 

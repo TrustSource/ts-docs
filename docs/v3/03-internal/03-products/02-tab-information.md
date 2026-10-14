@@ -16,7 +16,7 @@ The **Information** tab holds the basic data of a product. The heading above the
 | **Purpose** | What the product is for. |
 | **Features** | Free text listing the product's features. |
 
-Click **Save**. If the identifier is already taken, ***TrustSource*** shows "product with same identifier already exists" and keeps the old data.
+Click **Save**. If the identifier is already taken, ***TrustSource*** shows "Error: product with same identifier already exists" and keeps the old data.
 
 > [!NOTE]
 > Changing the identifier keeps the product selected, but the parent link of existing sub-products still refers to the old identifier. Prefer to keep identifiers stable.
@@ -26,7 +26,7 @@ Click **Save**. If the identifier is already taken, ***TrustSource*** shows "pro
 A product that is no longer sold should be **retired** rather than deleted: its history stays.
 
 1. Click **Retire** (top right of the form).
-2. Enter a reason - it is mandatory - and confirm with **Yes, retire it!**.
+2. Enter a reason (it is mandatory) and confirm with **Yes, retire it!**.
 
 A retired product disappears from the tree (use **Show all** to see it), is excluded from [exports](01-create-import.md#export-products), and shows the reason, the user and the date in the tab.
 

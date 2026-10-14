@@ -10,9 +10,15 @@ If any of your assigned roles grants a function, you have it. There is no deny: 
 
 The navigation shows an entry when your role matches. Many pages also check the role when you open their address and show "access denied" otherwise. See [Functions by Area](04-functions-by-area.md).
 
+## Which projects and modules you see
+
+A project or module that has **members** is visible only to its members, its default project manager, its default compliance manager and every **Portfolio manager**. A project or module without members is visible to everyone in the company. Assign members in the **General** settings of the project or module.
+
 ## Field-level rights in settings
 
 Project and module settings use a rights code per field: `r` view, `w` edit, `x` run an action, `d` delete. A tab appears when you may view it; a field is editable when you may edit it. See the [Settings Permission Matrix](06-settings-permission-matrix.md) for every field.
+
+These codes decide what the interface shows and lets you edit. The server checks every change again against your role and company, and in a few places that check is stricter than the interface.
 
 ## Context: who owns the project or module
 
@@ -34,4 +40,4 @@ If a person holds several roles, each role is evaluated separately and the resul
 - **Account types** and plan features limit capacity and integrations. See [Account Types](08-account-types.md).
 - **API keys** carry scopes of their own. See [API Scopes](09-api-scopes.md).
 
-📸 *Screenshot: a read-only settings field next to an editable one.*
+📸 *Screenshot: the General tab of a project's settings, for a user who may edit only some of its fields, with read-only fields next to editable ones.*

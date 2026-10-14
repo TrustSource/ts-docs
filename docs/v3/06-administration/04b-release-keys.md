@@ -25,7 +25,7 @@ The scope decides which of these routes answer. A key without a scope serves all
 
 ## Create and publish a key
 
-1. Open **Administration → API keys** and select the **Release keys** card.
+1. Open **Administration → API keys** and select the **Release keys** card. The **API keys** menu entry is shown to `account_admin` only; `manager` and `compliance_manager` open the page at `/settings/company/api/releases`, or create keys from a release with **Published keys**.
 2. Select **Create New**. The key starts unpublished and points at your latest approved release.
 3. Choose the **release** in the first drop-down.
 4. Choose the **scope**: any of `sbom`, `notice`, `csaf`.
@@ -40,7 +40,7 @@ While a key is published, its release and scope are locked. To change them, unpu
 
 - The eye button opens a preview of the SBOM, the notice or the CSAF document.
 - The QR button, available for a published key, shows the URL and a QR code for the SBOM, the notice or the CSAF document.
-- The green badge **Requested** counts how often the key was used.
+- The green badge **Requested: n** on a published key counts how often the key was used.
 
 ## Unpublish and delete
 

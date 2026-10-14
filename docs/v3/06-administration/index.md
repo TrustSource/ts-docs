@@ -17,8 +17,8 @@ Company-wide settings and management. Open them from **Administration** in the l
 
 More detail pages:
 
-- [Company details](02a-company-details.md) — General info, FOSS liaison, PSIRT contacts, Written offer
-- [Company tags](02b-company-tags.md) — add, import and remove tags
+- [Company details](02a-company-details.md) - General info, FOSS liaison, PSIRT contacts, Written offer
+- [Company tags](02b-company-tags.md) - add, import and remove tags
 - [API Usage](04a-api-usage.md) and [Release keys](04b-release-keys.md)
 - [Issue trackers](08a-issue-trackers.md), [LeanIX and SCANOSS](08b-leanix-scanoss.md), [Webhooks and channels](08c-webhooks-channels.md)
 

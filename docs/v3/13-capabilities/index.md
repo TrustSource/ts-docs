@@ -8,7 +8,7 @@ or may not be present in a given account.
 
 > [!NOTE]
 > **"Capability" vs. "Module".** In this help portal, a *capability* is
-> an optional functional bundle of the platform — a license-gated
+> an optional functional bundle of the platform: a license-gated
 > feature area. Inside the application itself, the word *module* refers
 > to a deployment artefact of a software product. The two concepts are
 > unrelated despite the similar surface vocabulary.
@@ -20,8 +20,8 @@ or may not be present in a given account.
 | [OSCAR Chat](01-oscar-chat.md) | AI assistant for compliance questions and platform usage | `chat` |
 | [Risk](02-risk.md) | Risk register, portfolio views and risk-task management | `risks` |
 | [Product](03-product.md) | Product-level classification incl. CRA scope, contacts, support data | `products` |
-| [Medical](04-medical.md) | SOUP reports and MDR/IVDR module classification | `medical` |
-| [CVD](05-cvd.md) | Coordinated Vulnerability Disclosure intake and triage | `cvd` |
+| [Medical](04-medical.md) | SOUP reports and MDR/IVDR module classification | `medical` or plan feature `soup_report` (SOUP); Medical account type (MDR/IVDR) |
+| [CVD](05-cvd.md) | Coordinated Vulnerability Disclosure intake and triage | `psirt` |
 | [CSAF Trusted Provider](06-csaf-trusted-provider.md) | Publish CSAF advisories as a registered trusted provider | `csaf` |
 | [Threat Modeling Agent](07-threat-model-agent.md) | Automated STRIDE-per-Element threat modelling with human-in-the-loop review | `threat` |
 
@@ -31,23 +31,19 @@ capability say so at the top.
 
 > [!TIP]
 > All capabilities listed above are available in the SaaS edition. The
-> [Community Edition](../../ce/index.md) includes a subset — each
+> [Community Edition](../../ce/index.md) includes a subset; each
 > capability page states its CE availability.
 
 ## Training subscriptions
 
 Independent of the functional capabilities above, accounts can subscribe
 to a **training package** that bundles e-learning content for using
-TrustSource. Three tiers are available:
-
-- **All trainings included** — the full training catalogue is reachable
-  from inside the app.
-- **Specific trainings** — only the trainings matching the account's
-  licensed capabilities are reachable.
-- **No trainings** — the trainings area is hidden; learning happens
-  through this help portal and direct support.
+TrustSource. The **Trainings** entry in the Knowledge menu opens the
+training area; which trainings it offers depends on your subscription.
+If your account admin entered the address of your own training portal,
+the entry opens that portal instead.
 
 See the [Trainings page](../05-knowledge/08-trainings.md) for how the
 training area looks in the app.
 
-📸 *Screenshot: the capabilities / license-features panel in account settings, with a sample subscription's feature flags visible.*
+📸 *Screenshot: the left navigation with the license-gated entries expanded: Products, Risks and Threat Models under Internal, CSAF and CVD cases under Outbound.*

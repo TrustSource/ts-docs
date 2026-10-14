@@ -11,7 +11,7 @@
 
 | Method | Path | What it does | Scopes |
 |---|---|---|---|
-| GET | `/psirt/csaf` | Get CSAF advisory by component | See [API scopes](../../10-roles-permissions/09-api-scopes.md#operations-without-a-verified-scope) |
+| GET | `/psirt/csaf` | Get CSAF advisory by component | See [API scopes](../../10-roles-permissions/09-api-scopes.md#euvd-epss-and-psirt) |
 
 Request and response schemas are in the [OpenAPI specification](index.md#the-specification), which is also available as interactive documentation in the app.
 

@@ -3,7 +3,7 @@
 > [!NOTE]
 > **Required role:** `legal_manager`
 
-The **Legal mngr.** menu group is visible only to users with the `legal_manager` role. It holds the legal reference data that ***TrustSource*** uses to assess licenses: the license definitions with their legal constraints, preset legal-requirement templates, and the list of copyrights and trademarks.
+The **Legal mngr.** menu group is visible only to users with the `legal_manager` role, an [internal role](../10-roles-permissions/02-internal-roles.md) that is not offered in the role selection. It holds the legal reference data that ***TrustSource*** uses to assess licenses: the license definitions with their legal constraints, preset legal-requirement templates, and the list of copyrights and trademarks.
 
 | Menu entry | What it covers |
 |---|---|

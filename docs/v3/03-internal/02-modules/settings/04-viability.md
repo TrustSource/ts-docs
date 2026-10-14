@@ -25,8 +25,8 @@ The warning threshold must not be lower than the violation threshold, unless it 
 
 Activity data is not always complete. Two settings control how much evidence you demand:
 
-- **Minimum confidence level** — `one indicator`, `two indicators` or `three indicators`.
-- **Status shown, if minimum confidence level not reached** — `OK`, `Warning` or `Violation`.
+- **Minimum confidence level**: `one indicator`, `two indicators` or `three indicators`.
+- **Status shown, if minimum confidence level not reached**: `OK`, `Warning` or `Violation`.
 
 A new module starts with both thresholds at `very low activity`, the minimum confidence at `one indicator` and the fallback status `OK`.
 

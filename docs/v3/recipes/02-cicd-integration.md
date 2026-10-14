@@ -6,8 +6,8 @@ Set up automated scanning in your GitHub Actions, GitLab CI or Jenkins pipeline.
 
 1. [Create an API key](../06-administration/04-api-keys.md) in Administration. A key with the `developer` scope is enough to submit scans.
 2. Store the key as a CI/CD secret.
-3. Add the scanner to your pipeline — see [CI/CD Integrations](../02-inbound/03-cicd-scan.md) for examples, or use the GitHub Actions workflow below.
-4. Run a build and verify the scan appears in ***TrustSource***.
+3. Add the scanner to your pipeline - see [CI/CD Integrations](../02-inbound/03-cicd-scan.md) for examples, or use the GitHub Actions workflow below.
+4. Run a build and verify the scan appears in ***TrustSource***. The project must exist before the first upload; the module is created automatically.
 5. Review the findings and adjust your [whitelists](../03-internal/01-projects/settings/07-whitelists-blacklists.md) if needed.
 
 ## GitHub Actions with ts-scan
@@ -70,15 +70,16 @@ Add `--wait-for-analysis` to wait until ***TrustSource*** has processed the scan
 
 The exit options work only together with `--wait-for-analysis`.
 
-> [!IMPORTANT]
-> Leave out `--format` on both `scan` and `upload`. The scan then writes the native ***TrustSource*** format, which is the only format `ts-scan upload` accepts. A CycloneDX or SPDX document goes through `ts-scan import`, not through `upload`.
+> [!NOTE]
+> Leave out `--format` on both `scan` and `upload`. Both then use the native ***TrustSource*** format. `ts-scan upload -f <format>` can also read a CycloneDX or SPDX file (for example `-f cyclonedx-json`) and converts it to a scan before the upload.
 
-To send a CycloneDX or SPDX file that another tool produced, use the import command instead of `upload`:
+To send a CycloneDX or SPDX file that another tool produced to the import endpoints instead, use the import command:
 
 ```yaml
         run: >
           ts-scan import -f cyclonedx -v <format version> --module "my-module"
-          --project-name "My Project" --api-key "$TS_API_KEY" sbom.json
+          --module-id "<module identifier>" --project-name "My Project"
+          --api-key "$TS_API_KEY" sbom.json
 ```
 
 See `ts-scan import --help` for the supported formats and options.

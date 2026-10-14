@@ -34,6 +34,6 @@ Send your key in the `x-api-key` header. The **Scopes** column shows which key s
 ## Related
 
 - [Tests](../../02-inbound/04-sw-quality-scans.md)
-- [Scans](scans.md) — component scans (parallel track)
-- [Approvals](compliance-approvals.md) — release gates that consume test data
+- [Scans](scans.md) - component scans (parallel track)
+- [Approvals](compliance-approvals.md) - release gates that consume test data
 - [Endpoint groups](index.md)

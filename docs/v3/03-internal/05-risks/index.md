@@ -6,7 +6,7 @@
 
 The Risks module is ***TrustSource***'s **risk register**. It lets you document a risk, assess its impact, decide how to treat it, assign countermeasures and tasks, and see how the whole stock of risks develops over time. Risks can be entered by hand, taken from a finding (a SARIF weakness, a vulnerability, an OBOM finding, a manually set license) or created automatically while you keep working.
 
-Open **Risks** in the menu. The page has three tabs: **Overview**, **Risks** and **Tasks**. Each project also has its own **Risks** page, reachable from the Risks tile on the project page.
+Open **Internal → Risks** in the menu. The page has three tabs: **Overview**, **Risks** and **Tasks**. Each project also has its own **Risks** page, reachable from the Risks tile on the project page.
 
 ## Where to start
 
@@ -43,6 +43,6 @@ Open **Risks** in the menu. The page has three tabs: **Overview**, **Risks** and
 
 ## Related
 
-- [Risk capability](../../13-capabilities/02-risk.md) — what the license feature adds
-- [Risks API](../../09-rest-api/endpoints/risks.md) — read and write risks from your own tools
-- [Threat Models](../08-threat-models/index.md) — threat-model risks arrive with the origin `TMA Assessment`
+- [Risk capability](../../13-capabilities/02-risk.md) - what the license feature adds
+- [Risks API](../../09-rest-api/endpoints/risks.md) - read and write risks from your own tools
+- [Threat Models](../08-threat-models/index.md) - threat-model risks arrive with the origin `TMA Assessment`

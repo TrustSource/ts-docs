@@ -7,10 +7,10 @@ The license details page shows what a license says and how your policy rates it.
 
 ## What the page shows
 
-- **License text** — the full text, with the **Search in license text...** box at the top right to highlight terms. Where ***TrustSource*** does not store the text, the page says so and links to the license's own URL if one is known.
-- **Created / updated** — dates of the catalog entry, in the footer of the panel.
-- **Status label** (`legal_manager` only) — the license's rating under your company policy next to the title.
-- **Edit** (`legal_manager` only) — opens the license editor. See [Licenses](../../05-knowledge/06-licenses.md).
+- **License text**: the full text, with the **Search in license text...** box at the top right to highlight terms. Where ***TrustSource*** does not store the text, the page says so and links to the license's own URL if one is known.
+- **Created / updated**: dates of the catalog entry, in the footer of the panel.
+- **Status label** (`legal_manager` only): the license's rating under your company policy next to the title.
+- **Edit** (`legal_manager` only): opens the license editor. See [Licenses](../../05-knowledge/06-licenses.md).
 
 📸 *Screenshot: the license details page with the search box and the license text.*
 

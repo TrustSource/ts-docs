@@ -22,6 +22,11 @@ Each entry shows the action (**Created**, **Updated** or **Removed**), the perso
 | License resolution | A manually set license created or updated a risk. |
 | CSAF removal | Removing a CSAF draft re-opened risks. |
 | Migration | The upgrade to the treatment model converted the risk. |
+| exception-sweep | A temporary exception ended and the risk returned to `assessed`. |
+| obom-reconcile | The OBOM findings check created or updated a risk. |
+| obom-promote | **Create risk** on a single OBOM finding. |
+
+The last three are shown with their internal names.
 
 Changes made by the system itself carry the badge **Automation**. Each line reads *Field: old → new*; links lead to the project and module. Entries with many fields show the first ones and **Show n more fields**; **Load more** fetches older entries.
 
@@ -41,5 +46,5 @@ The same edits appear in [Company Logs](../../06-administration/07-audit-logs.md
 
 ## Related
 
-- [Decisions](06-decisions.md) — what was decided and why
-- [Automatic Risks](08-automatic-risks.md) — what imports change
+- [Decisions](06-decisions.md) - what was decided and why
+- [Automatic Risks](08-automatic-risks.md) - what imports change

@@ -7,7 +7,7 @@ The **Analytics** page charts how the findings of a project developed over the l
 
 ## The tile
 
-The tile shows the current number of violations and warnings, the change against last month (for example "+2 violations vs. last month"), a small trend line and the age of the last analysis. A project without any analysis shows "No analysis yet"; run **Analyze all** in the module list.
+The tile shows the current number of violations and warnings, the change against last month (for example "+2 violations vs. last month"), a small bar chart and the age of the last analysis (plus the number of outdated modules, if any). A project without any analysis shows "No analysis yet"; run **Analyze all** in the module list below.
 
 ## The page
 

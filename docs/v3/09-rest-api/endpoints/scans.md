@@ -22,6 +22,12 @@
 
 Request and response schemas are in the [OpenAPI specification](index.md#the-specification), which is also available as interactive documentation in the app.
 
+## Submitting a scan
+
+- Send a `User-Agent` header. Without it the call fails with `400` ("mandatory User-Agent header missing"). An agent name that ***TrustSource*** does not know is accepted with an `info` note in the response.
+- The project named in `project` must exist in your company; otherwise the call fails with `404`. The module is created on the first upload.
+- The response carries `scanId` and `moduleId`.
+
 ## Module naming
 
 Every upload path resolves a module name to a module by **exact string match** within the project. It is not normalised, case-folded or fuzzy-matched.
@@ -36,9 +42,9 @@ Send your key in the `x-api-key` header. The **Scopes** column shows which key s
 
 ## Related
 
-- [Imports](imports.md) — CycloneDX / SPDX import endpoints (structurally similar to scan submission)
-- [Modules](modules.md) — the container scans attach to
-- [Projects](projects.md) — higher-level aggregation
-- [Tests (SARIF)](tests.md) — must use the same module name as this path
-- [Scans](../../02-inbound/03-cicd-scan.md) — UI-side documentation
+- [Imports](imports.md) - CycloneDX / SPDX import endpoints (structurally similar to scan submission)
+- [Modules](modules.md) - the container scans attach to
+- [Projects](projects.md) - higher-level aggregation
+- [Tests (SARIF)](tests.md) - must use the same module name as this path
+- [Scans](../../02-inbound/03-cicd-scan.md) - UI-side documentation
 - [Endpoint groups](index.md)

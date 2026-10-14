@@ -6,26 +6,26 @@
 > **Status:** BETA
 
 ***TrustSource*** maintains a threat model per project. The model is
-produced by the [Threat Modeling Agent (TMA)](../../13-capabilities/07-threat-model-agent.md) —
+produced by the [Threat Modeling Agent (TMA)](../../13-capabilities/07-threat-model-agent.md),
 an automated service that reads your project inventory, elicits
 STRIDE-classified threats, proposes countermeasures, and stores each run
-as an interactive Data Flow Diagram (DFD) — or you can import an existing
+as an interactive Data Flow Diagram (DFD). You can also import an existing
 OTM, OWASP Threat Dragon or CycloneDX TM-BOM document instead. Reviewing findings and
 tracking mitigations happens in the app; the agent handles the analysis.
 
-📸 *Screenshot: the Threat Models list with project, run, format and threat count.*
+📸 *Screenshot: the Threat Models list with the Created, Project, Run, Format, Threats and Status columns.*
 
 ## Two ways to run the agent
 
-- **Run all** (the default) — runs the whole pipeline (build model →
+- **Run all** (the default): runs the whole pipeline (build model →
   generate risks → develop countermeasures) in one pass.
-- **Individual stages** — trigger **Build model**, **Generate risks** or
-  **Develop countermeasures** separately, in any order, from the same
+- **Individual stages**: trigger **Build model**, **Generate risks** or
+  **Develop countermeasures** separately, one after the other, from the same
   dialog or later from a model's **Lifecycle** menu. Useful when you want
   to review one stage before committing to the next, or re-trigger a
   single stage after new findings.
 
-Both paths are automated and **idempotent** — re-running with no new
+Both paths are automated and **idempotent**: re-running with no new
 material changes nothing. See [Run Modes](04-run-modes.md) for per-stage
 use-cases and details.
 
@@ -47,6 +47,6 @@ in the Academy walks through the method and the vocabulary the agent uses
 
 ## Related
 
-- [Threat Modeling Agent](../../13-capabilities/07-threat-model-agent.md) — capability overview and guarantees
-- [Application goals upload](../01-projects/settings/01-general.md) — the
+- [Threat Modeling Agent](../../13-capabilities/07-threat-model-agent.md) - capability overview and guarantees
+- [Application goals upload](../01-projects/settings/01-general.md) - the
   `architecture.md` upload the agent reads when building the model

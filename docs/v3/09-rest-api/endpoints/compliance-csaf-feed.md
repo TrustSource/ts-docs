@@ -5,7 +5,7 @@
 ## Use cases
 
 - Expose your CSAF advisories to a downstream consumer (customer portal, partner pipeline, security dashboard) without giving them a TrustSource login.
-- Issue different feed keys for different audiences — e.g. a TLP:WHITE key for the public, a TLP:GREEN/AMBER key for partners — so each consumer sees only what their key entitles them to.
+- Issue different feed keys for different audiences - e.g. a TLP:WHITE key for the public, a TLP:GREEN/AMBER key for partners - so each consumer sees only what their key entitles them to.
 - Poll a stable URL to ingest new CSAF documents as they are published.
 
 ## Operations
@@ -17,7 +17,7 @@
 
 Request and response schemas are in the [OpenAPI specification](index.md#the-specification), which is also available as interactive documentation in the app.
 
-The detail URL for a given list item is built by appending `/<id>` to the list URL — the `id` field is the only identifier needed.
+The detail URL for a given list item is built by appending `/<id>` to the list URL - the `id` field is the only identifier needed.
 
 ### Published versions (`?version=`)
 
@@ -32,11 +32,11 @@ Otherwise the answer is **404**, the same as for an unknown id. An unknown, empt
 
 ## Authentication and access control
 
-- The `csaf_key` path parameter authenticates the request — no `x-api-key` header is used.
+- The `csaf_key` path parameter authenticates the request - no `x-api-key` header is used.
 - A document is returned only when its `tlp` level is in the key's allowed set. Documents at higher TLP levels respond with **404 Not Found** so that their existence is not leaked to lower-tier keys.
 - Only published documents are served. A draft is absent from the list, and fetching it by id answers **404**, the same as an unknown id. Publishing a document makes it appear in both endpoints; removed documents are never returned.
 - The feed serves each document as it was last published. Edits made afterwards, or a re-publish that failed, are not visible until the document is published again. The TLP filter applies to the published version.
-- **Product-restricted advisories (AMBER+STRICT):** an advisory marked AMBER+STRICT is returned only to a key bound to a product it concerns (or to a parent of that product). Every other key gets **404** on both endpoints, the same as for an unknown id. Bind products to a key under **Settings → Scanners & API → CSAF feed keys → Products**. The document itself still carries TLP `AMBER`, because CSAF 2.0 has no AMBER+STRICT label.
+- **Product-restricted advisories (AMBER+STRICT):** an advisory marked AMBER+STRICT is returned only to a key bound to a product it concerns (or to a parent of that product). Every other key gets **404** on both endpoints, the same as for an unknown id. Bind products to a key under **Administration → API keys → CSAF feed keys** with the **Products** button of the key. The document itself still carries TLP `AMBER`, because CSAF 2.0 has no AMBER+STRICT label.
 - **Access log:** every list and document read is recorded per key (documents, answer, time, IP) and kept for 365 days. Open it from **Access log** in the key list.
 - **Internal preview:** a key created with **Include drafts** (or switched on later in the key list) also lists drafts, without a `published` field, and serves the current working copy of every document. Use such a key internally only; never give it to a third party.
 - Lost or compromised keys can be deleted in the UI at any time; deletion revokes the feed immediately.
@@ -56,7 +56,7 @@ The `csaf_key` in the URL authenticates the request. Do not send an `x-api-key` 
 
 ## Related
 
-- [Compliance Releases](compliance-releases.md) — per-release CSAF advisory (different model: keyed by release, not by feed key)
-- [PSIRT](psirt.md) — consume upstream CSAF feeds keyed by package URL
-- [CSAF](../../04-outbound/04-csaf.md) — UI-side CSAF authoring and publishing workflow
+- [Compliance Releases](compliance-releases.md) - per-release CSAF advisory (different model: keyed by release, not by feed key)
+- [PSIRT](psirt.md) - consume upstream CSAF feeds keyed by package URL
+- [CSAF](../../04-outbound/04-csaf.md) - UI-side CSAF authoring and publishing workflow
 - [Endpoint groups](index.md)

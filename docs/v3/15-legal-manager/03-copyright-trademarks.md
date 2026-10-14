@@ -1,7 +1,7 @@
 # Copyright & Trademarks
 
 > [!NOTE]
-> **Required role:** `legal_manager`
+> **Required role:** `legal_manager` (an [internal role](../10-roles-permissions/02-internal-roles.md))
 
 Maintain the copyrights and trademarks of the tools and brands used in ***TrustSource*** under **Legal mngr. → Copyright & Trademarks**; the page is titled **Copyrights / Trademarks**. The entries appear on the **Copyright & Trademarks** page that every user can open from the copyright line at the bottom of the left menu.
 
@@ -11,7 +11,7 @@ The table shows **Name**, **Type** (*Copyright* or *Trademark*), **Description**
 
 ## Add an entry
 
-1. Press the create button.
+1. Press **Create copyright/trademark**.
 2. Enter the **Name** and choose the **Type**.
 3. Add a **Description**, the **Usage** and an **External link**.
 4. Press **Create Trademark**.

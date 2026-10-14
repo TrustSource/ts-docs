@@ -1,9 +1,9 @@
 # Infrastructure Modules
 
 > [!NOTE]
-> **Required role:** `manager` or `compliance_manager` to create and analyze
+> **Required role:** `manager` or `compliance_manager` to create and analyze.
 
-An **infrastructure module** represents third-party runtime components that your software depends on — database servers, base container images, message brokers, web servers, operating systems.
+An **infrastructure module** represents third-party runtime components that your software depends on: database servers, base container images, message brokers, web servers, operating systems.
 
 ## Why infrastructure modules exist
 
@@ -16,11 +16,11 @@ Your software supply chain risk does not stop at your application code. A vulner
 | **Tab bar** | List, Tree, Graph, Legal, DeepScans, Quality, OBOM | None. The page shows the **Component Details** panel of the linked catalog entry. |
 | **Component source** | Scans (CI/CD, upload, API) | Linked from the [Infrastructure catalog](../../05-knowledge/02-infrastructure-elements.md) or the [COTS catalog](../../05-knowledge/03-cots.md) |
 | **Version field** | Derived from scans | Editable in [General settings](settings/01-general.md) |
-| **Header actions** | Full set, see [Module Detail Tabs](02-module-detail-tabs.md) | **Settings**, **Analyse** and **Follow** only |
-| **Settings tabs** | All | Without Quality, Crypto management, AI / ML, Allow/Deny, Capabilities and MDR/IVDR Classification |
+| **Header actions** (`manager`, `compliance_manager`) | Full set, see [Module Detail Tabs](02-module-detail-tabs.md) | **Settings**, **Analyse** and **Follow** only |
+| **Settings tabs** | All | Without Quality, Crypto management, AI / ML, Allow/Deny, Capabilities, MDR/IVDR Classification, Custom components, History and Export SPDX |
 | **Card in the list** | Licenses, components, last analysis and scan | License and last visit of the catalog entry |
 
-The header and the card carry a label, **Infrastructure Module** or **COTS Module**.
+The header and the card carry a label, **Infrastructure Module** or **COTS Module** (on the card only for `manager` and `compliance_manager`). If no details of the catalog entry are available yet, the page says so instead of showing the panel.
 
 ## Creating an infrastructure module
 
@@ -44,5 +44,5 @@ Once created, vulnerabilities and license findings for that entry are surfaced i
 
 ## Related
 
-- [Infrastructure Components](../../05-knowledge/02-infrastructure-elements.md) — the global catalog
-- [Mental Model](../../00-getting-started/05-mental-model.md) — where infrastructure modules fit
+- [Infrastructure Components](../../05-knowledge/02-infrastructure-elements.md): the global catalog
+- [Mental Model](../../00-getting-started/05-mental-model.md): where infrastructure modules fit

@@ -5,8 +5,8 @@ A critical CVE has been published. Find out if you are affected and respond.
 ## Steps
 
 1. Search the [Vulnerability Lake](../05-knowledge/04-vulnerability-lake.md) for the CVE.
-2. Check the **impact** — which of your modules use the affected component.
+2. Check the **impact**: the [CVE impact report](../03-internal/04c-impact-and-portfolio-reports.md#impact-reports) lists the projects and modules that use an affected component.
 3. For each affected module: assess whether the vulnerability is exploitable in your context.
 4. If affected: update the component, re-scan, and re-approve if needed.
-5. If not affected: document the assessment (mute the CVE with a reason).
+5. If not affected: document the assessment by [muting the finding](../03-internal/04a-vulnerability-report.md#muting-a-single-finding) with a reason.
 6. For released products: create a [CSAF advisory](../04-outbound/04-csaf.md) if required.

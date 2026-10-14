@@ -62,7 +62,7 @@ Read the resolved scheme over the API with `GET /core/risks/scheme`; see [Risks 
 
 ## Related
 
-- [Decisions](06-decisions.md) — what the thresholds limit
-- [Project CIA settings](../01-projects/settings/03-cia.md) — where the project override lives
-- [Module CIA settings](../02-modules/settings/08-cia.md) — where the module override lives
-- [Company Policies](../../06-administration/05-policies.md) — the other company policies
+- [Decisions](06-decisions.md) - what the thresholds limit
+- [Project CIA settings](../01-projects/settings/03-cia.md) - where the project override lives
+- [Module CIA settings](../02-modules/settings/08-cia.md) - where the module override lives
+- [Company Policies](../../06-administration/05-policies.md) - the other company policies

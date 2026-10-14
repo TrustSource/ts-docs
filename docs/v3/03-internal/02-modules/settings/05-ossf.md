@@ -15,8 +15,8 @@ The OpenSSF Scorecard rates the security practices of an open-source repository 
 
 | Field | Meaning |
 |---|---|
-| **Warning threshold** | Scorecard value (0–9) at which a component becomes a warning. |
-| **Violation threshold** | Scorecard value (0–9) at which a component becomes a violation. |
+| **Warning threshold** | Scorecard value (0-9) at which a component becomes a warning. |
+| **Violation threshold** | Scorecard value (0-9) at which a component becomes a violation. |
 | **Status shown, if score is not available** | `OK`, `Warning` or `Violation` for components without a score. |
 
 The warning threshold must not be lower than the violation threshold, unless it is `0`. A new module starts with warning `7` and violation `5`.

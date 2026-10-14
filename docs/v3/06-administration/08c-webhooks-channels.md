@@ -1,7 +1,7 @@
 # Webhooks and channels
 
 > [!NOTE]
-> **Required role:** `account_admin`, `manager` or `compliance_manager`. Only these roles can see and create webhooks, because URLs and header values can act as credentials.
+> **Required role:** `account_admin`, `manager` or `compliance_manager`. Only these roles can see and create webhooks, because URLs and header values can act as credentials. The **Integrations** page itself is shown to account admins; managers and compliance managers use a project's **Webhooks and Channels** tab, or open the company page at `/settings/company/webhooks`.
 
 A **webhook** or **channel** sends a message to another system when something happens in ***TrustSource***: a Slack channel, a Microsoft Teams channel or any HTTP endpoint such as your ticketing or chat bridge.
 
@@ -25,22 +25,23 @@ There are two places to manage them:
 | Type | Fields | Notes |
 |---|---|---|
 | **Webhook** | **Method** (POST, PUT, PATCH, DELETE, GET), **Url**, optional **Headers** | Enter headers as `Key: value` pairs separated by `;`, for example `Authorization: Bearer abc123; X-Team: security`. |
-| **Slack** | The "Incoming Webhook" url from your Slack app | |
-| **Microsoft Teams Workflow** | The "Workflow" url of a "Post to a channel when a webhook request is received" workflow | |
-| **Microsoft Teams O365** | The "Incoming Webhook" url of a Teams connector | Marked deprecated since October 1st, 2024. Use the workflow type. |
-| **Gitter** | — | Shown as "Under development" and cannot be selected. |
+| **Microsoft Teams Workflow** | **"Workflow" url** of a "Post to a channel when a webhook request is received" workflow | |
+| **Slack** | **"Incoming Webhook" url** from your Slack app | |
+| **Microsoft Teams O365 (Deprecated - October 1st, 2024)** | **"Incoming Webhook" url** of a Teams connector | Use the workflow type instead. |
+| **Gitter (Under development)** | | Cannot be selected. |
 
 ### Triggers
 
 | Trigger | Sends a message when |
 |---|---|
-| **Approval** | An approval is approved or rejected. |
+| **Analysis** | A module analysis has finished. |
 | **Release** | The documents of an approved release are released. |
-| **Task** | An issue is created in Jira, TFS or GitHub. |
 | **Vulnerability** | New vulnerabilities match a component: one message per component. |
 | **Vulnerabilities by module** | New vulnerabilities match: one message per module. |
 | **Vulnerabilities by project** | New vulnerabilities match: one message per project. |
 | **Vulnerabilities in releases** | New vulnerabilities match the frozen components of a release: one message per release. |
+| **Approval** | An approval is approved or rejected. |
+| **Task** | An issue is created in Jira, TFS or GitHub. |
 
 You can select several triggers per receiver. Choosing two vulnerability triggers delivers the same findings twice, at two levels of detail.
 
@@ -52,12 +53,12 @@ The four vulnerability triggers turn a webhook into an alert channel for newly m
 - Only new matches are sent. Existing findings are not replayed when you add a receiver.
 - **Vulnerabilities by module** is not rendered by Slack and Teams. Use a **Webhook** type receiver for it.
 
-> [!CAUTION]
+> [!WARNING]
 > Review your receivers before you turn alerts on. A very busy day for new CVEs can produce one large message, and some receivers reject messages above a size limit.
 
-## Remove a webhook
+## The list and removal
 
-Select **Remove** in the row. The list shows **Created**, **Name**, **Type**, **Triggers**, **URL**, **Method** and the number of **Headers**.
+The list shows **Created**, **Name**, **Type**, **Triggers**, **URL**, **Method** and the number of **Headers**. Select **Remove** in a row to delete a receiver.
 
 > [!NOTE]
 > Webhook URLs must be public. Addresses that point to a private, loopback or cloud-metadata destination are refused when you save with "Invalid integration URL".

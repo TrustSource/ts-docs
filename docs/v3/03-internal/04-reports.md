@@ -1,7 +1,7 @@
 # Reports
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`
+> **Required role:** `developer`, `compliance_manager` or `manager`. **Reports** is an entry of the **Internal** menu, which is shown to these three roles. Some tiles need further roles, see the table.
 
 The Reports page (titled **Analyse [Reports]** in the app) is a hub of 22 tiles. Each tile opens a report in ***TrustSource***. The SBOM, Notice and SOUP tiles lead to the same lists as the [Outbound chapter](../04-outbound/index.md).
 
@@ -27,7 +27,7 @@ The Reports page (titled **Analyse [Reports]** in the app) is a hub of 22 tiles.
 | **[CVE impact](04c-impact-and-portfolio-reports.md#impact-reports)** | Projects impacted by a CVE. |
 | **[Algorithm impact](04c-impact-and-portfolio-reports.md#impact-reports)** | Projects impacted by an algorithm. |
 | **Notice files** | List of Notice files. |
-| **SOUP files** | List of SOUP files. Shown with the `medical` license or when SOUP reports are possible for the account. |
+| **SOUP files** | List of SOUP files. Shown with the `medical` license or when SOUP reports are part of your plan. |
 | **[COTS overview](04c-impact-and-portfolio-reports.md#cots-overview)** | COTS components in projects. Same condition as SOUP files. |
 | **[Dependent projects](04c-impact-and-portfolio-reports.md#dependent-projects)** | Projects that depend on a selected project. |
 | **[Components](04c-impact-and-portfolio-reports.md#components)** | Components with missing data. Role: `company_component_manager`. |
@@ -40,10 +40,11 @@ The tiles you see depend on your role and license. CSAF documents are not part o
 
 ## Details
 
-- [Analysis Reports](04b-analysis-reports.md) — single project or module: licenses, viability, Scorecard, versioning, end-of-life, algorithms, obligations, credits, modification state
-- [Impact and Portfolio Reports](04c-impact-and-portfolio-reports.md) — impact of a component, CVE or algorithm, bad crypto, COTS, dependent projects, issues
+- [Analysis Reports](04b-analysis-reports.md): single project or module: licenses, viability, Scorecard, versioning, end-of-life, algorithms, obligations, credits, modification state
+- [Impact and Portfolio Reports](04c-impact-and-portfolio-reports.md): impact of a component, CVE or algorithm, bad crypto, COTS, dependent projects, issues
 
 ## Related
 
-- [Outbound chapter](../04-outbound/index.md) — detailed documentation for each report type
-- [Approvals](06-approvals/index.md) — reports are often generated as part of the approval workflow
+- [Vulnerability Report](04a-vulnerability-report.md): CVSS vs. EPSS chart and treatments
+- [Outbound chapter](../04-outbound/index.md): SBOM, Notice, SOUP and CSAF documents
+- [Approvals](06-approvals/index.md): an approval request generates its own compliance report, Notice, SoUP and SBOM

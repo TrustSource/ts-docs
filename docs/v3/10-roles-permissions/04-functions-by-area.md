@@ -29,7 +29,7 @@ Section visible to: **dev, cm, mgr, aa**.
 
 | Entry | Visible to | Requirement |
 |---|---|---|
-| Check, Import Scans, CI/CD Scan, Repository Scans | dev, cm, mgr, aa | — |
+| Check, Import Scans, CI/CD Scan, Repository Scans | dev, cm, mgr, aa | - |
 | SW Quality Scans | dev, cm, mgr, aa | License `sarif` |
 | Mass Scans (BETA) | cm, mgr, aa | Account type Enterprise |
 
@@ -39,11 +39,11 @@ Section visible to: **dev, cm, mgr**.
 
 | Entry | Visible to | Requirement |
 |---|---|---|
-| Projects, Reports, Releases | dev, cm, mgr | — |
+| Projects, Reports, Releases | dev, cm, mgr | - |
 | Products | dev, cm, mgr | License `products` |
 | Risks | dev, cm, mgr | License `risks` |
 | Threat Models (BETA) | dev, cm, mgr | License `threat` |
-| Approvals | cm, mgr | — |
+| Approvals | cm, mgr | - |
 
 The analysis views of a module (dependencies, graphs, vulnerabilities, viability, licenses) are open to dev, mgr, cm and aa.
 
@@ -53,7 +53,7 @@ Section visible to: **cm, mgr, aa**.
 
 | Entry | Requirement |
 |---|---|
-| SBOM + CBOM, Notice Files, Verify | — |
+| SBOM + CBOM, Notice Files, Verify | - |
 | SOUP Lists | Plan feature `soup_report` or license `medical` |
 | CSAF | License `csaf` |
 | CVD cases (BETA) | License `psirt` |
@@ -62,13 +62,13 @@ Section visible to: **cm, mgr, aa**.
 
 | Entry | Visible to | Requirement |
 |---|---|---|
-| Account & Billing | aa, ea | — |
+| Account & Billing | aa, ea | - |
 | Identity Integration | aa | Account type Enterprise or Medical |
-| Integrations | aa, ea | — |
+| Integrations | aa, ea | - |
 | Settings | aa, cm, csm, ccm, pm, mgr, legal_manager | Cards depend on role, see below |
 | User Management | aa | Hidden when corporate login is enforced |
 | API keys | aa | Release keys on the same page also open to mgr and cm |
-| Policies | aa, csm, cm | Opensource policy list: cm only |
+| Policies | aa, csm, cm | The **Opensource policy** card opens for cm only. **Risk assessment** changes need license `risks`. |
 | Enterprise Companies | ea | Account type Enterprise or Medical |
 | Audit logs | aa | Login history is opened from here, also open to mgr and cm |
 

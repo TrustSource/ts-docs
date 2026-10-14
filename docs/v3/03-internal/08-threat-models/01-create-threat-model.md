@@ -10,12 +10,12 @@ TM-BOM document.
 
 ## Generating a model
 
-1. Click **Generate** — from the Threat Models list (choose a project in
-   the dialog) — or **Generate threat model** in the **Threat models**
-   section of a project's Risks page (the project is pre-selected; roles
-   `manager` and `compliance_manager`). That section also lists the
-   project's models.
-2. Pick a **stage**:
+1. Click **Generate** on the Threat Models list (choose a **Project** in
+   the dialog), or **Generate threat model** in the **Threat models**
+   section of a project's Risks page (the project is pre-selected; the
+   button is shown to the `manager` and `compliance_manager` roles). That
+   section also lists the project's models.
+2. Pick a **Stage**:
 
    | Stage | What it produces |
    |---|---|
@@ -24,21 +24,24 @@ TM-BOM document.
    | **Generate risks** | STRIDE risks for an existing model. |
    | **Develop countermeasures** | Countermeasures for the existing risks. |
 
-3. Confirm. The run starts in the background — it can take up to ten
-   minutes — and a **live progress panel** shows the run status, elapsed
+3. Click **Generate**. The run starts in the background (it can take up
+   to ten minutes), and a **live progress panel** shows the run status, elapsed
    time and, per phase, a status icon (running / completed / failed). A
    "View document" link appears once it's done, and you're notified if the
    run fails, times out, or the agent is already busy at its concurrency
    limit.
 
-Every run is **idempotent** — running a stage again with nothing new to
-act on produces no new risks and leaves the document unchanged. See
+Every run is **idempotent**: running a stage again with nothing new to
+act on produces no new risks and a structurally identical document. A
+completed run stores its result as a new document of the project; the
+**Lifecycle** menu offers **View generated model** when you are looking at
+an older one. See
 [Run Modes](04-run-modes.md) for when to use each stage.
 
 The agent reads the project's **Application goals** text (see
 [Project Settings → General](../01-projects/settings/01-general.md)) to seed
-the model — populate that field, or upload an `architecture.md`, before
-generating for the best result.
+the model. For the best result, fill in that field, or replace it with an
+`architecture.md` via **Upload file**, before generating.
 
 ## Re-running a single stage
 
@@ -56,7 +59,7 @@ just that stage without going back to the project.
 
 The model appears in the list next to generated models and opens in the same Data Flow Diagram viewer. An imported **TM-BOM** is read-only: the viewer shows a projection of the document and you cannot edit it there. TM-BOM is a CycloneDX 2.0 draft format.
 
-## Downloading a model
+## Downloading or deleting a model
 
 Open a model and press **Download**. The menu offers, depending on how the model is stored:
 
@@ -68,9 +71,11 @@ Open a model and press **Download**. The menu offers, depending on how the model
 
 A stored TM-BOM has a single **Download** button that returns the document as stored. Threat Dragon models offer the complete download and the TM-BOM export.
 
+**Delete** on the detail page, or **Remove** in the Threat Models list, deletes the document after a confirmation.
+
 📸 *Screenshot: the Generate dialog with the stage selector, and the live progress panel below it.*
 
 ## Related
 
-- [Run Modes](04-run-modes.md) — Complete run vs. individual stages
+- [Run Modes](04-run-modes.md) - Complete run vs. individual stages
 - [Data Flow Diagram & Threat Detail](02-threat-detail-stride-linddun.md)

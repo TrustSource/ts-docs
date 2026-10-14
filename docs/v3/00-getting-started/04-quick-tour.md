@@ -3,96 +3,102 @@
 This page takes you through the six main navigation groups in ***TrustSource***. By the end you will know where to find every major feature.
 
 > [!NOTE]
-> What you see in your sidebar depends on your **role** and **license features**. This tour shows the full menu as an `account_admin` on an Enterprise account. Your view may be smaller — that is by design.
+> What you see in your sidebar depends on your **role** and **license features**. This tour shows the full menu of a user who holds all public roles on an Enterprise account. Your view may be smaller; that is by design.
+
+In the tables, **dev** stands for Developer, **cm** Compliance manager, **pm** Portfolio manager, **mgr** Manager, **aa** Account admin, **ea** Enterprise admin, **ccm** Company component manager and **csm** Company security manager.
 
 ## 1. Overview (Dashboard)
 
-The dashboard is your landing page after login. It shows:
+The dashboard is your landing page after login. Depending on your role it shows:
 
-- **Activity log** — recent actions across your company.
-- **Portfolio overview** — projects and modules with their traffic-light status (green / yellow / red).
-- **Approval widgets** — pending and recent approvals.
-- **Vulnerability charts** — open vulnerabilities by severity.
-- **Pinned items** — your personal shortcuts.
+- **Company portfolio view**: a treemap of all projects and modules, coloured by status (portfolio managers).
+- **Focussed projects**: the projects you pinned.
+- **Incoming approval requests**: open approvals waiting for a decision (compliance managers).
+- **Current modules compliance**, change and history figures, and license charts.
+- **Activity log**: the latest company log entries (compliance managers and managers).
 
-📸 *Screenshot: the dashboard with portfolio overview and vulnerability charts.*
+See [The Dashboard](07-dashboard.md) for every widget.
 
-## 2. Inbound — bringing data in
+📸 *Screenshot: the dashboard with the Focussed projects, Current modules compliance and history widgets.*
 
-Everything that feeds data into ***TrustSource*** lives here.
+## 2. Inbound (Scans): bringing data in
 
-| Menu entry | What it does | Role required |
+Everything that feeds data into ***TrustSource*** lives here. The group is shown to dev, cm, mgr and aa.
+
+| Menu entry | What it does | Requirement |
 |---|---|---|
-| **Check** | Ad-hoc license or component lookup — no scan needed. | developer + |
-| **Import Scans** | Upload scan results manually (JSON, SPDX, CycloneDX). | developer + |
-| **CI/CD Scan** | List of scans from your CI/CD pipelines. | developer + |
-| **SW Quality Scans** | SARIF-based code quality results. | developer + (license: `sarif`) |
-| **Repository Scans** | Connect a Git repository for deep analysis. | developer + |
-| **Mass Scans** | Bulk-scan multiple repositories at once. | compliance_manager + (Enterprise only) |
+| **Check** | Ad-hoc license or component lookup, no scan needed. | - |
+| **Import Scans** | Upload scan results or SBOMs manually (for example SPDX or CycloneDX). | - |
+| **CI/CD Scan** | List of scans from your CI/CD pipelines. | - |
+| **SW Quality Scans** | SARIF-based code quality results. | License `sarif` |
+| **Repository Scans** | Connect a Git repository for deep analysis. | - |
+| **Mass Scans** (BETA) | Bulk-scan multiple repositories at once. | cm, mgr or aa; Enterprise account only |
 
-📸 *Screenshot: the Inbound sub-menu expanded in the sidebar.*
+📸 *Screenshot: the Inbound (Scans) sub-menu expanded in the sidebar.*
 
-## 3. Internal — managing your work
+## 3. Internal: managing your work
 
-The largest group. This is where you manage the core objects.
+The largest group. This is where you manage the core objects. The group is shown to dev, cm and mgr; an account admin without one of these roles does not see it.
 
-| Menu entry | What it does | Role required |
+| Menu entry | What it does | Requirement |
 |---|---|---|
-| **Products** | CRA-classified products with contacts, photos, documents. | developer + (license: `products`) |
-| **Projects** | Organisational containers for modules. | developer + |
-| **Risks** | Risk register with portfolio views. | developer + (license: `risks`) |
-| **Approvals** | Formal release approvals with eight review tabs. | compliance_manager + |
-| **Releases** | Published releases linked to approved modules. | developer + |
-| **Reports** | Hub for all analysis reports (SBOM, SOUP, Notice, CSAF). | compliance_manager + |
-| **Threat Models** | AI-generated STRIDE threat models with a Data Flow Diagram viewer (BETA). | developer + (license: `threat`) |
+| **Products** | CRA-classified products with contacts, photos, documents. | License `products` |
+| **Projects** | Organisational containers for modules. | - |
+| **Risks** | Risk register with portfolio views. | License `risks` |
+| **Approvals** | Formal release approvals with their review tabs. | cm or mgr |
+| **Releases** | Published releases of approved modules. | - |
+| **Reports** | Hub for the analysis reports (licenses, vulnerabilities, viability, end-of-life, impact and more), with links to the SBOM, notice and SOUP files. | - |
+| **Threat Models** (BETA) | AI-generated STRIDE threat models with a Data Flow Diagram viewer. | License `threat` |
 
 📸 *Screenshot: the Internal sub-menu expanded.*
 
-## 4. Outbound — compliance documents
+## 4. Outbound: compliance documents
 
-Documents you generate or verify for external consumption.
+Documents you generate or verify for external consumption. The group is shown to cm, mgr and aa.
 
-| Menu entry | What it does | Role required |
+| Menu entry | What it does | Requirement |
 |---|---|---|
-| **SBOM + CBOM** | Generate and manage Software / Crypto Bills of Materials. | compliance_manager + |
-| **Notice Files** | Attribution / notice file generation. | compliance_manager + |
-| **SOUP Lists** | Software of Unknown Provenance lists (medical). | compliance_manager + (license: `medical`) |
-| **CSAF** | CSAF security advisory documents. | compliance_manager + (license: `csaf`) |
-| **Verify** | Validate an external SBOM, CSAF, CBOM or Notice file. | compliance_manager + |
+| **SBOM + CBOM** | Generate and manage Software / Crypto Bills of Materials. | - |
+| **Notice Files** | Attribution / notice file generation. | - |
+| **SOUP Lists** | Software of Unknown Provenance lists (medical). | License `medical` or plan feature `soup_report` |
+| **CSAF** | CSAF security advisory documents. | License `csaf` |
+| **CVD cases** (BETA) | Coordinated Vulnerability Disclosure cases. | License `psirt` |
+| **Verify** | Check that an SBOM, CSAF, CBOM or notice file generated by ***TrustSource*** is unchanged. | - |
 
 📸 *Screenshot: the Outbound sub-menu expanded.*
 
-## 5. Knowledge — reference data
+## 5. Knowledge: reference data
 
-Global databases and reference material shared across all projects.
+Global databases and reference material shared across all projects. Shown to every role.
 
 | Menu entry | What it does |
 |---|---|
-| **Component Lake** | Global component library — search, inspect, see dependents. |
+| **Component Lake** | Global component library: search, inspect, see dependents. |
 | **Infrastructure Elements** | Cloud/container runtime catalog (databases, base images, web servers). |
 | **COTS** | Commercial off-the-shelf component catalog. |
 | **Vulnerability Lake** | CVE/CWE/GHSA search with severity, affected versions, aliases. |
 | **Algorithms** | Cryptographic algorithm database with FIPS status and deprecation info. |
 | **Licenses** | License database with obligations, commercial terms, approval status. |
-| **Open Source Policy** | View and manage your company's FOSS policy. |
-| **Trainings** | Internal training links or external training portal. |
+| **Open source policy** | View your company's FOSS policy. |
+| **Trainings** | Your company's training portal, if the account admin entered its address; otherwise the built-in Trainings page. |
 
 📸 *Screenshot: the Knowledge sub-menu expanded.*
 
-## 6. Administration — company settings
+## 6. Administration: company settings
 
-Company-wide configuration. Most items require the `account_admin` role.
+Company-wide configuration. Each entry has its own roles.
 
-| Menu entry | What it does | Role required |
+| Menu entry | What it does | Shown to |
 |---|---|---|
-| **Account & Billing** | Subscription, usage, invoices. | account_admin |
-| **Identity Integration** | Keycloak / SSO configuration. | account_admin (Enterprise/Medical) |
-| **Settings** | Company info, integrations, policies, templates. | account_admin + |
-| **User Management** | Invite users, assign roles, remove members. | account_admin |
-| **API Keys** | Manage scanner API keys and their scopes. | account_admin |
-| **Policies** | EOL, FOSS and crypto-algorithm policies. | account_admin |
-| **Enterprise Companies** | Sub-company management (Enterprise/Medical only). | enterprise_admin |
-| **Audit Logs** | Company-wide audit trail. | account_admin |
+| **Account & Billing** | Company (billing) details, account type, terms and privacy documents. | aa, ea |
+| **Identity Integration** | Keycloak / SSO configuration. | aa (Enterprise or Medical account) |
+| **Integrations** | Company integrations: Jira, TFS, GitHub, LeanIX, SCANOSS. | aa, ea |
+| **Settings** | Company info, allow/deny lists, private licenses, tags, templates and more. Which cards you see depends on your role. | aa, cm, csm, ccm, pm, mgr, legal manager |
+| **User Management** | Invite users, assign roles, remove members. Hidden when the company enforces corporate login. | aa |
+| **API keys** | Manage scanner API keys and their scopes. | aa |
+| **Policies** | Open source policy, crypto algorithms, component end-of-life and risk assessment. | aa, csm, cm |
+| **Enterprise Companies** | Member companies of an enterprise group. | ea (Enterprise or Medical account) |
+| **Audit logs** | Company-wide audit trail. | aa |
 
 📸 *Screenshot: the Administration sub-menu expanded.*
 
@@ -100,8 +106,8 @@ Company-wide configuration. Most items require the `account_admin` role.
 
 Two additional menu sections appear only for internal roles:
 
-- **Component mngr.** (role: `component_manager`) — manage infrastructure and COTS catalogs, critical components.
-- **Legal mngr.** (role: `legal_manager`) — manage legal documents, templates, copyright and trademarks.
+- **Component mngr.** (role: `component_manager`): manage infrastructure and COTS catalogs, critical components.
+- **Legal mngr.** (role: `legal_manager`): manage legal documents, templates, copyright and trademarks.
 
 ## The right bar
 
@@ -109,18 +115,21 @@ The narrow icon strip on the right edge of the screen gives you quick access to:
 
 | Icon | Action |
 |---|---|
-| 💬 AI Chat | Open the AI assistant panel (license: `chat`). |
-| ❓ Help | Link to this online help. |
-| 📄 API Docs | Open the built-in API documentation browser. |
-| 🔔 Updates | System updates and notifications. |
-| ✉️ Messages | Your inbox. |
-| 👤 Contact Admin | Reach your account administrator. |
-| 🚪 Logout | Sign out. |
+| **AI Assistant** | Open the AI assistant panel (license `chat`). |
+| **Help** | Open the ***TrustSource*** support center (support.trustsource.io) in a new tab. |
+| **API documentation** | Open the built-in [API documentation browser](../08-personal/05-api-documentation.md). |
+| **Updates** | [Release notes and announcements](../08-personal/01-updates.md). A dot marks unread updates. |
+| **Messages** | Your [inbox](../08-personal/02-inbox-messages.md). |
+| **Contact Account Admin** | Write an email to your account administrator. |
+| **Monitor system health** | Open the status page, when one is configured. |
+| **Logout** | Sign out. |
+
+On small screens the same entries appear at the bottom of the left menu, together with **Profile** and **Support**.
 
 📸 *Screenshot: the right bar with icons annotated.*
 
 ## Where to next
 
-- [Mental Model](05-mental-model.md) — understand the data hierarchy before you start using the app.
-- [Inbound chapter](../02-inbound/index.md) — start scanning your first project.
-- [Roles & Licenses Cheat Sheet](06-roles-licenses-cheatsheet.md) — see all roles and features at a glance.
+- [Mental Model](05-mental-model.md): understand the data hierarchy before you start using the app.
+- [Inbound chapter](../02-inbound/index.md): start scanning your first project.
+- [Roles & Licenses Cheat Sheet](06-roles-licenses-cheatsheet.md): see all roles and features at a glance.

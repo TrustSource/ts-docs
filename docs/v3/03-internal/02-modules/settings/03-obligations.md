@@ -24,8 +24,8 @@ Click a row to change it: the button becomes **Update**, and **Cancel** and **Re
 
 Both buttons are in the upper right of the tab.
 
-- **Import settings from Module** — choose a module (type to search by name) and copy its list into this module. A toast confirms *Obligations settings copied from: …*.
-- **Propagate settings to...** — push this module's list to one other module, or to all your modules (**All my n modules**). Portfolio managers also see **All n modules** and **All n project modules**. "My" modules are those where you are default project manager or default compliance manager.
+- **Import settings from Module**: choose a module (type to search by name) and copy its list into this module. A toast confirms *Obligations settings copied from: …*.
+- **Propagate settings to...**: push this module's list to one other module, to **All my n modules** or to **All my n project modules**. Portfolio managers also see **All n modules** and **All n project modules**. "My" modules are those where you are default project manager or default compliance manager.
 
 > [!CAUTION]
 > Propagating replaces the obligation list of every target module. There is no confirmation dialog.

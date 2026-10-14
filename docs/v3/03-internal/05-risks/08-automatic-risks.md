@@ -27,7 +27,7 @@ Each SARIF document imported for a module creates or updates one risk per tool a
 - The **Occurrences** tab lists the rules, files and severity levels behind the risk, with the number of distinct files.
 - When a later import no longer reports the weakness, the risk stays open. It shows *ready to close?* and **Review state**; nothing is changed for you. Set the state to `closed` if you agree.
 - A hand-created risk is never adopted.
-- If one import holds more weaknesses than the register accepts, the surplus is not tracked and is reported. Limits: 200 risks per tool, 8 tools, 400 risks per import. Company Logs, the upload dialog, the Tests list and the test page say how many were not tracked and which.
+- If one import holds more weaknesses than the register accepts, the surplus is not tracked and is reported. Limits: 200 risks per tool, 8 tools, 400 risks per import. Company Logs, a message after the upload, the module's Tests list and the test page say how many were not tracked and which (*Risk register incomplete ...*).
 
 The impact class is proposed from the worst result level (error, warning, note) and the module's CIA requirements; see [Risks List](02-risks-list.md#proposed-impact-class).
 
@@ -60,6 +60,6 @@ Your changes to name, origin, state, impact class, strategy and every other fiel
 
 ## Related
 
-- [SW Quality Scans](../../02-inbound/04-sw-quality-scans.md) — importing SARIF
-- [Project Quality settings](../01-projects/settings/04-quality.md) — tools and test settings
-- [Risk History](09-risk-history.md) — automatic changes are marked as automation
+- [SW Quality Scans](../../02-inbound/04-sw-quality-scans.md) - importing SARIF
+- [Project Quality settings](../01-projects/settings/04-quality.md) - tools and test settings
+- [Risk History](09-risk-history.md) - automatic changes are marked as automation

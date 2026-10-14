@@ -1,7 +1,7 @@
 # Export SPDX (Module)
 
 > [!NOTE]
-> **Required role:** developers, compliance managers, managers and portfolio managers see the tab. **Generate** is for the same roles (managers and compliance managers only as the module's default manager, or if none is set). See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
+> **Required role:** developers, compliance managers, managers and portfolio managers see the tab. **Generate** is for the same roles. See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
 
 Create an SPDX document for the module, the format many customers and authorities ask for to describe the software bill of materials. The tab is not shown for infrastructure modules.
 

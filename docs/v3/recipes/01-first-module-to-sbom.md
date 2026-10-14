@@ -1,49 +1,53 @@
 # Your first module: from scan to signed-off SBOM in 15 minutes
 
-This recipe takes you from "I just got a ***TrustSource*** login" to "I have an audit-ready SBOM for my software" — without spending an afternoon reading the manual first.
+This recipe takes you from "I just got a ***TrustSource*** login" to "I have an audit-ready SBOM for my software", without spending an afternoon reading the manual first.
 
 > [!NOTE]
-> **Goal:** A complete bill of materials for one piece of your software, signed off through an approval, frozen as a release that ***TrustSource*** keeps watching for new vulnerabilities, and exported as an SBOM in SPDX or CycloneDX format.
+> **Goal:** A complete bill of materials for one piece of your software, signed off through an approval, kept as a release that ***TrustSource*** keeps watching for new vulnerabilities, and downloaded as an SBOM in CycloneDX or SPDX format.
 >
-> **Time:** ~15 minutes if you wear both the developer and project-manager hats (typical first-time scenario in a small team). If a different person has to do the approval, the wall-clock time depends on their availability — the approval review itself takes only a few minutes.
+> **Time:** about 15 minutes if you wear both the developer and the manager hat (typical first-time scenario in a small team), plus the analysis time of your scan. If a different person has to do the approval, the wall-clock time depends on their availability; the approval review itself takes only a few minutes.
 >
 > **You'll need:**
 >
-> - A ***TrustSource*** account with at least the `developer` role (your account admin grants this — see [Roles & Licenses](../00-getting-started/index.md)).
-> - For step 7 onwards: someone with the `manager` or `compliance_manager` role for your project. This may be you.
-> - A small repository to scan. Any of Maven, npm, NuGet, PyPI or a folder of source code works.
-> - **Python 3.10, 3.11 or 3.12** installed locally for running [`ts-scan`](https://trustsource.github.io/ts-scan).
+> - A ***TrustSource*** account with the `manager` or `compliance_manager` role to create the project and request the approval, and someone with the `compliance_manager` role to approve it. This may be you. See [Roles & Licenses](../00-getting-started/index.md).
+> - An API key with the `developer` or `manager` scope. Only an `account_admin` can create company API keys; ask yours, or see step 2.
+> - A small repository to scan. Any of Maven, npm, NuGet, PyPI and more works.
+> - **Python 3.10 or newer** installed locally for running [`ts-scan`](https://github.com/TrustSource/ts-scan).
 >
 > **What you'll have at the end:**
 >
 > - One project with one module in your company.
 > - A scan result populating the module's bill of materials.
-> - An approval signed off by the project manager.
-> - A release that freezes the bill of materials and is monitored continuously for new vulnerabilities.
-> - A downloadable SBOM file in your chosen format.
+> - An approved approval, which is your release.
+> - A downloaded SBOM file of that release.
 
 ## Steps
 
 ### 1. Create your first project
 
-In the left navigation, open **Internal → Projects** and click **+ New Project**. Give it a name that makes sense to your team — for example, the name of the product or service this software belongs to.
+In the left navigation, open **Internal → Projects** and click **Create**. Enter a **Project name** that makes sense to your team, for example the name of the product or service this software belongs to, and click **Create project**.
 
-📸 *Screenshot: project list with the "+ New Project" button highlighted.*
+📸 *Screenshot: the Projects page with the Create new project dialog open.*
 
 > [!TIP]
-> Don't overthink the project name yet. You can rename it later, and you can move modules between projects.
+> Don't overthink the project name yet. You can rename it later.
 
 ### 2. Create an API key
 
-Go to **Administration → API keys** and create a new key.
+An account admin opens **Administration → API keys → API keys** and selects **Create key**:
 
-> [!CAUTION]
-> The API key is shown **once**. Copy it immediately into a safe place — a password manager, your CI secret store, or for this recipe, just an environment variable in your shell.
+1. Enter a **Name**, for example `first-scan`, and pick the scope `developer` under **Scopes**. Select **Create**.
+2. Select **Publish** in the new key's row. The key is unpublished until then.
+3. Select the copy button in the row to copy the full key.
 
-📸 *Screenshot: API key creation dialog, with the one-time-only key revealed.*
+The list shows only part of the key, but the copy button copies the complete key at any time while the key is published. See [API keys](../06-administration/04-api-keys.md).
+
+📸 *Screenshot: the Create key dialog with a name and the developer scope selected.*
+
+Put the key into an environment variable without leaving it in your shell history:
 
 ```bash
-export TS_APIKEY="<paste-your-key-here>"
+read -rs TS_UPLOAD_API_KEY && export TS_UPLOAD_API_KEY   # paste the key and press Enter
 ```
 
 ### 3. Install ts-scan locally
@@ -60,145 +64,146 @@ Verify it works:
 ts-scan --version
 ```
 
-For details and troubleshooting, see the [`ts-scan` installation guide](https://trustsource.github.io/ts-scan/setup).
+For details and troubleshooting, see the [`ts-scan` repository](https://github.com/TrustSource/ts-scan).
 
 ### 4. Scan your repository and upload the result
 
-Move into the root of the repository you want to scan. Then run:
+Run:
 
 ```bash
 ts-scan scan -o myscan.json /path/to/your/project
 ```
 
-This produces `myscan.json` in the TrustSource internal format. ***ts-scan*** auto-detects the package management system — Maven, npm, NuGet, PyPI and more — and walks the dependency tree.
+This produces `myscan.json` in the ***TrustSource*** format. ***ts-scan*** detects the package management system (Maven, npm, NuGet, PyPI and more) and walks the dependency tree.
 
 > [!TIP]
-> If your project uses several ecosystems (e.g. a frontend in npm and a backend in Maven), `ts-scan` handles them in one pass. See the [`ts-scan` usage docs](https://trustsource.github.io/ts-scan/usage) for ecosystem-specific options.
+> If your project uses several ecosystems (for example a frontend in npm and a backend in Maven), `ts-scan` handles them in one pass.
 
 Now upload the result to your project:
 
 ```bash
-ts-scan upload \
-  --apikey "$TS_APIKEY" \
-  --project "<your project name>" \
-  myscan.json
+ts-scan upload --project-name "<your project name>" myscan.json
 ```
 
+`ts-scan upload` takes the key from `TS_UPLOAD_API_KEY`; you can also pass it with `--api-key`. It sends the scan to `https://api.trustsource.io` unless you set another address with `--base-url`.
+
 > [!TIP]
-> **You don't have to create the module beforehand.** ***TrustSource*** creates it automatically on the first upload, taking the module name from the artefact ***ts-scan*** detected (the package name, the directory name, the image name, depending on what you scanned). On subsequent uploads of the same artefact, the existing module is updated in place.
+> **You don't have to create the module beforehand.** ***TrustSource*** creates it on the first upload, taking the module name from the artefact ***ts-scan*** detected (the package name, the directory name or the image name, depending on what you scanned). Later uploads of the same artefact update that module. The project, however, must exist: an unknown project name is refused with `404`.
 
 > [!NOTE]
-> Exact CLI flags may vary slightly between `ts-scan` versions. Run `ts-scan upload --help` if the syntax above doesn't match what you have.
+> Run `ts-scan upload --help` if the options above don't match your version of ts-scan.
 
 ### 5. Review the results and identify ToDos
 
-Open your project in the app. The newly-created module is listed there — click it to open. Within a few seconds, its **Components** tab is populated with everything ***ts-scan*** found.
+Open your project in the app and click the new module. The analysis runs in the background and usually finishes within a minute.
 
-📸 *Screenshot: module Components tab freshly populated after a scan, with traffic-light indicators visible.*
+📸 *Screenshot: the module page with the List tab populated after a scan, with the status markers visible.*
 
-The module now carries a **traffic-light status** (see [Mental Model](../00-getting-started/05-mental-model.md#status-green-yellow-red)) — almost certainly 🟡 yellow or 🔴 red, because any non-trivial scan surfaces something. Take a tour:
+The module carries a **status** (see [Mental Model](../00-getting-started/05-mental-model.md#status-green-yellow-red)), almost certainly with warnings or violations, because any non-trivial scan surfaces something. Take a tour:
 
-- **Components** — the bill of materials. Click any component to see its versions, declared and detected licenses, and any known vulnerabilities. Each row carries its own status.
-- **Vulnerability** — every CVE / GHSA matched against the components, sortable by severity.
-- **Dependencies** and **Graphs** — the dependency tree, in list and visual form.
+- **List**, **Tree** and **Graph**: the components and their dependencies. Click a component to see its versions, licenses and known vulnerabilities.
+- **Legal**: the licenses, their obligations and violations.
+- **Reports** in the module header: the **Vulnerability** report and more.
 
-The day-to-day work in ***TrustSource*** is a loop: **look at the reds and yellows, decide what to do about each one, watch the status improve.** Some yellows turn green by fixing the underlying problem (upgrade a component, swap a license), some by accepting a risk with a comment, some by adjusting your project's whitelist. This back-and-forth between the developer and the project manager is the normal mode.
+The day-to-day work in ***TrustSource*** is a loop: **look at the findings, decide what to do about each one, watch the status improve.** Some findings disappear by fixing the underlying problem (upgrade a component, swap a license), some by accepting a risk with a comment, some by adjusting your project's allow and deny lists. This back-and-forth between the developer and the manager is the normal mode.
 
 > [!TIP]
-> You don't need to be exhaustive on the first pass. The goal here is just to understand the shape of the findings — not to drive everything to green before lunch.
+> You don't need to be exhaustive on the first pass. The goal here is to understand the shape of the findings, not to fix everything before lunch.
 
-### 6. Request an approval (project-manager step)
+### 6. Request an approval (manager step)
 
 > [!NOTE]
-> **Approvals are not done on every upload.** They are the **milestone** before a release. The day-to-day work in steps 4–5 is the loop: scan, look at the traffic lights, fix things, scan again. **Only when the module's status is good enough to ship** does the project manager request an approval.
+> **Approvals are not done on every upload.** They are the **milestone** before a release. The day-to-day work in steps 4-5 is the loop: scan, look at the status, fix things, scan again. **Only when the module's status is good enough to ship** does the manager request an approval.
 
-Approvals are a **project governance step**, not a self-service action. They are **requested by the project manager** of your project — the role that holds accountability for what gets signed off — and reviewed by **a separate person**: typically the **compliance manager** or **security manager**. This four-eyes principle is what makes the approval auditable.
+Approvals are a **project governance step**. They are **requested by a manager** (or a compliance manager) and reviewed by **a compliance manager**. When these are different people, this four-eyes principle makes the approval auditable.
 
-In a small team where you wear multiple hats, you can do both yourself. Otherwise, ping your project manager and ask them to start an approval against the current state of your module — the easiest way is to share the module URL.
+The manager selects **Initiate approval** in the module header. The wizard has four steps:
 
-📸 *Screenshot: project manager initiating an approval from the module's Approve tab.*
+1. **Settings**: enter **Approve name or product name**, optionally **Semantic version**, **Packageurl** and **Approve description**. Leave **Dry run** unticked; a dry run is not sent to the compliance managers.
+2. **Select analysis**: pick the analysis to approve, normally the latest.
+3. **Confirm statuses**: check the module's statuses.
+4. **Finalization**: the app prepares the approval. Select **Jump to Compliance Report**.
 
-### 7. Walk through the eight review tabs
+📸 *Screenshot: step 1 Settings of the approval wizard with Dry run unticked and a name and version entered.*
 
-The **compliance manager** (or **security manager**) — not the requester — opens the approval and works through the eight tabs:
+### 7. Walk through the review tabs
+
+The **compliance manager** opens the approval under **Internal → Approvals** and works through the tabs:
 
 | Tab | What gets reviewed |
 |---|---|
-| **Vulnerabilities** | Every CVE in the snapshot. Each gets a status — *open*, *mitigated*, *not affected* or *risk accepted*. |
+| **Overview** | The modules and analyses in the approval. |
+| **Vulnerabilities** | Every vulnerability in the snapshot. |
 | **Licenses** | Every license found and its obligations. Watch for forbidden licenses or conflicts. |
 | **Versioning** | How far behind current each component is. |
 | **Viability** | End-of-life, low maintainer activity, low community score. |
-| **Changes** | The diff to the previous approval (skip on the first one). |
-| **Export Control** | Dual-use / ECCN classification. Skip if not relevant. |
-| **Tests** | Linked test results — empty if no SARIF has been uploaded. |
-| **Capabilities** | Feature flags / capabilities asserted for this release. |
+| **Status changes** | Changes in the components: different components, modified appearances and undocumented changes. |
+| **Export control** | Cryptography and export classification. Skip if not relevant. |
+| **Capabilities** | Capabilities recorded for this release. |
+| **SW-Quality** | Linked SARIF test results; shown only with the `sarif` license feature. |
 
-📸 *Screenshot: approval tab bar with the eight tabs visible.*
+📸 *Screenshot: the open approval with the Approve and Reject buttons and the tab bar.*
 
-For a first approval, the goal isn't exhaustive review — it's to **see what's there** and catch any show-stopper (e.g. a GPL-3.0 in a module you ship as proprietary).
+For a first approval, the goal isn't an exhaustive review. It's to **see what's there** and catch any show-stopper (for example a GPL-3.0 in a module you ship as proprietary).
 
 ### 8. Approve
 
-Once the review is done, the compliance/security manager clicks **Approve**. This is the formal sign-off: from here on, the approval is **frozen** — the immutable record that this state of the module was accepted, by whom, and at what moment.
+Once the review is done, the compliance manager selects **Approve** (or **Reject** with a reason). This is the formal sign-off: from here on, the approval is **frozen**, the immutable record that this state of the module was accepted, by whom, and at what moment.
 
 > [!WARNING]
 > An approved approval cannot be edited afterwards. If something needs to change, the next iteration goes into a **new** approval. That's how the audit trail stays intact.
 
 > [!TIP]
-> ***TrustSource*** logs every state change across the platform. If anyone — at any point — turned a 🔴 status into a 🟢, or accepted a risk with a comment, it's recorded with timestamp, user and reason. The approval is the formal milestone, but the log behind it is what makes the whole story auditable. See the [Mental Model — Audit log](../00-getting-started/05-mental-model.md#audit-log).
+> ***TrustSource*** logs changes across the platform: who changed a status, accepted a risk or changed a setting, and when. The approval is the formal milestone; the log behind it is what makes the whole story auditable. See the [Mental Model: Audit log](../00-getting-started/05-mental-model.md#audit-log).
 
-### 9. Create a release
+### 9. The release
 
-The approval says "we accept this state." A **release** says "this state is now what we ship." Releases are the central concept for what gets monitored long-term.
+The approval says "we accept this state". An approved approval **is** the release: you don't create it separately. It appears under **Internal → Releases**, and ***TrustSource*** publishes a [release key](../06-administration/04b-release-keys.md) for it.
 
-What a release does:
+What a release gives you:
 
-- **Freezes the SBOM** at a specific version — no further changes possible.
-- **Triggers ongoing monitoring** — ***TrustSource*** keeps watching the components in this release for new vulnerabilities, end-of-life events and policy violations, and raises alerts.
-- **Creates the artifact you ship** — the release-SBOM is what you hand to customers, attach to a build pipeline, or store in your audit archive.
+- **A frozen SBOM** of the approved analysis.
+- **Ongoing monitoring**: the release's **New vulnerabilities** tab shows vulnerabilities found after the approval, so you see when a shipped version becomes affected.
+- **The documents you ship**: SBOM, notice file and CSAF VEX, which you can also share through the release key.
 
-You can create a release in two ways:
+You can also drive the approval from outside: your pipeline can create, approve or reject approvals through the [REST API](../09-rest-api/endpoints/compliance-approvals.md).
 
-- **From inside the app** — the project manager opens the module's **Releases** tab (or **Internal → Releases**) and creates a release referencing the approved version. Useful for manual / human-paced ship cadences.
-- **From outside via CI/CD** — your build pipeline calls the ***TrustSource*** API at the moment the build is published. Useful for high-frequency releases or when the human approval already happened upstream.
-
-📸 *Screenshot: release dialog showing the version field and the link to the approved module state.*
+📸 *Screenshot: the release page with the SBOM button and the Overview, New vulnerabilities, Vulnerabilities and Export control tabs.*
 
 > [!TIP]
-> **Why this matters.** A release-SBOM is what stays in the field — running on customer machines, baked into firmware, or shipped as a container. Your dev team may be 256 commits ahead, but the release stands still. ***TrustSource*** keeps that frozen SBOM under continuous watch, so the day a new CVE drops on a component you released six months ago, you get the alert — even if nobody on the team remembers that version exists anymore.
+> **Why this matters.** A release SBOM is what stays in the field: running on customer machines, baked into firmware, or shipped as a container. Your development team may be 256 commits ahead, but the release stands still. ***TrustSource*** keeps that frozen SBOM under watch, so the day a new CVE drops on a component you released six months ago, you see it on the release.
 
-### 10. Download the release-SBOM
+### 10. Download the release SBOM
 
-From the release, open the **Documents** action and pick your format:
+Open the release under **Internal → Releases** and select **SBOM**. The SBOM page offers:
 
-- **SPDX** (JSON, YAML or tag-value) — the most widely accepted standard, especially in enterprise procurement.
-- **CycloneDX** (JSON or XML) — popular in vulnerability tooling, especially with VEX support.
+- **PDF**: a readable report.
+- **CycloneDX**: **SBOM (components)**, **CBOM (cryptography)**, **AIBOM (AI / ML)** or **Full BOM (components + crypto + AI)** as JSON.
+- **SPDX**: an SPDX document.
 
-📸 *Screenshot: SBOM export dialog from a release.*
+📸 *Screenshot: the SBOM page of a release with the PDF, CycloneDX and SPDX buttons.*
 
-That's the file you ship — and the one ***TrustSource*** will keep watching for as long as the release exists.
+That's the file you ship.
 
 ## Did it work?
 
 You're done if all of the following are true:
 
-- [ ] Your project shows one module with a populated **Components** tab.
-- [ ] The module's **Vulnerability** tab lists CVEs (or shows "no findings").
-- [ ] An **approved approval** is visible under the module's **Approve** tab.
-- [ ] A **release** appears under the module's **Releases** tab (or in **Internal → Releases**), referencing the approval.
+- [ ] Your project shows one module with components on the **List** tab.
+- [ ] An **approved** approval is listed under **Internal → Approvals**.
+- [ ] The release appears under **Internal → Releases**.
 - [ ] The downloaded SBOM file opens in any text editor and lists your components.
 
 ## Variants
 
-- **No `ts-scan` available?** Skip steps 3–4 and instead upload an SBOM you already have via **Outbound → SBOM Files → Upload**. The rest of the recipe is identical.
-- **Container image instead of source code?** Use `ts-scan` against your image — see the [`ts-scan` container guide](https://trustsource.github.io/ts-scan/container) — then continue from step 5.
-- **Already running in CI/CD?** Step 4 (scan + upload) and step 9 (release creation) can both be triggered from your build pipeline. The recipe *Integrate TrustSource into your CI/CD pipeline* (coming soon) covers the patterns.
-- **You're not the project manager?** Steps 1–5 are yours; ping the PM after step 5 with the module URL so they can request the approval and trigger the release.
+- **No `ts-scan` available?** Skip steps 2-4 and import an SBOM you already have under **Inbound (Scans) → Import Scans**: pick the **Project**, choose **CycloneDX** or **SPDX**, select the **File**, enter a **Module name** and select **Import**. The rest of the recipe is identical.
+- **Container image instead of source code?** `ts-scan scan --use-syft -o myscan.json docker:<image>` scans an image with [Syft](https://github.com/anchore/syft), which must be installed. Then continue with the upload.
+- **Already running in CI/CD?** Step 4 (scan and upload) runs in your build pipeline. See [CI/CD Integration](02-cicd-integration.md).
+- **You're not the manager?** Steps 3-5 are yours; send the manager the module URL after step 5 so they can request the approval.
 
 ## What's next
 
-- Add an [Infrastructure Module](../00-getting-started/05-mental-model.md) to the same project so your release-SBOM covers your runtime surface, not just your code — that's where ongoing CVE monitoring really earns its keep.
-- Configure a [whitelist or blacklist](#) *(coming soon)* so future approvals surface only the findings that actually matter to you.
-- Connect ***TrustSource*** to your issue tracker so CVE alerts on a release automatically open Jira / GitHub / TFS tickets *(coming soon)*.
-- Set up [public sharing](#) of this release-SBOM for a customer who doesn't have a ***TrustSource*** login *(coming soon)*.
-- React to a 0-day CVE on a release that's already in the field — see *React to a 0-day in an already-released module* (coming soon).
+- [Add an infrastructure module](10-add-infrastructure-module.md) to the same project, so your bill of materials covers your runtime surface, not just your code.
+- [Handle a license conflict](03-handle-license-conflict.md) that the analysis found.
+- [Share the release SBOM publicly](08-share-sbom-publicly.md) with a customer who doesn't have a ***TrustSource*** login.
+- [React to a 0-day](04-react-to-0day.md) on a release that's already in the field.

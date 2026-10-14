@@ -9,7 +9,7 @@ The General tab holds the identity of a ***TrustSource*** module: what it is cal
 
 | Field | What you enter |
 |---|---|
-| **Name** | 1–200 characters, no `<` or `>`. Example: `payment-service`. |
+| **Name** | 1-200 characters, no `<` or `>`. Example: `payment-service`. |
 | **Version** | Infrastructure modules only. Changing it also updates the linked infrastructure or COTS component and marks the module for a new analysis. |
 | **Description** | Up to 2000 characters. |
 | **Assigned Project** | The project the module belongs to. `-- unassigned --` detaches it. |
@@ -32,7 +32,7 @@ If you leave **Default confidence level** empty, the module inherits the value o
 
 ## Run a repository scan
 
-Next to **Update**, **View/execute repository scan** opens the [Repository Scans](../../../02-inbound/05-repository-scans.md) page with this module's **Repository** prefilled. Until you enter a repository URL the button is disabled.
+Next to **Update**, **View/execute repository scan** opens the [Repository Scans](../../../02-inbound/05-repository-scans.md) page with this module's **Repository** prefilled. Until you enter a repository URL, a disabled **View/execute deepScan** button shows instead. Both buttons appear only to users who may edit the tab.
 
 ## Who can change what
 

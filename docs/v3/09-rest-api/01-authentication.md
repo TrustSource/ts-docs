@@ -20,8 +20,10 @@ Each key carries a scope, a list of role names. A key may call an operation only
 
 | Status | Meaning |
 |---|---|
-| `401` | The key is missing. |
-| `403` | The key is unknown or unpublished, or its scope does not allow the operation. |
+| `401` | The key is missing (`"API-key missing"`). |
+| `403` | The key is unknown or unpublished (`"Invalid API-key"`), or its scope does not allow the operation (`"API-key scope is limited"`). |
+
+Requests pass an API gateway before they reach ***TrustSource***. The gateway can answer on its own: `403` with `{"message": "Forbidden"}` when it does not accept the key, and `429` when your account's usage plan is exhausted. See [Errors & Responses](02-error-handling.md).
 
 ## Keys in the URL
 

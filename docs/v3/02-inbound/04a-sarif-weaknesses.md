@@ -52,7 +52,7 @@ To keep the register readable, one import creates at most **200 risks per tool**
 
 If an import exceeds a limit, ***TrustSource*** tells you in four places:
 
-- the upload dialog shows *Risk register incomplete* with the numbers;
+- after an upload in the UI, a warning message shows *Risk register incomplete* with the numbers;
 - the Tests list shows *n weaknesses not in risk register* in the **Details** column;
 - the test page shows a warning that names the first weaknesses that were not tracked;
 - [Audit Logs](../06-administration/07-audit-logs.md) hold one entry, *Risk modified*, with the same sentence.
@@ -61,7 +61,7 @@ The API reports it in `riskRegister.notTracked`. Weaknesses over a limit are sti
 
 ## Related
 
-- [SW Quality Scans](04-sw-quality-scans.md) — import, status and counts
-- [Automatic Risks](../03-internal/05-risks/08-automatic-risks.md) — how CWE risks are kept up to date
-- [Threat Models](../03-internal/08-threat-models/index.md) — weaknesses from tests also feed threat models
+- [SW Quality Scans](04-sw-quality-scans.md) - import, status and counts
+- [Automatic Risks](../03-internal/05-risks/08-automatic-risks.md) - how CWE risks are kept up to date
+- [Threat Models](../03-internal/08-threat-models/index.md) - weaknesses from tests also feed threat models
 - [Tests (SARIF) API](../09-rest-api/endpoints/tests.md)

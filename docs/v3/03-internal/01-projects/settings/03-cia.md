@@ -1,30 +1,32 @@
 # CIA (Project)
 
 > [!NOTE]
-> **Required role:** users with `project.cia.settings` write permission
+> **Required role:** everyone who can open the project settings reads the values. `company_security_manager`, and managers who are the project's default project manager or default compliance manager (or any manager while none is set), can edit them and use **Import CIA requirements from...**.
 
-The CIA tab sets minimum Confidentiality, Integrity and Availability requirements at the project level. Modules inherit these values but can set **higher** requirements.
+The CIA tab (heading **CIA requirements**) sets the Confidentiality, Integrity and Availability requirements at the project level. The tab describes them as the minimum that is forwarded to all modules; a module can set its own values on its [CIA tab](../../02-modules/settings/08-cia.md).
 
 ## Fields
 
-| Field | Description |
+| Field | Options |
 |---|---|
-| **CR (Confidentiality Requirement)** | Minimum confidentiality level for this project. |
-| **IR (Integrity Requirement)** | Minimum integrity level. |
-| **AR (Availability Requirement)** | Minimum availability level. |
+| **Confidentiality requirement (CR)** | not defined, low, medium, high |
+| **Integrity requirement (IR)** | same |
+| **Availability requirement (AR)** | same |
+
+Click **Update** to save.
 
 ## Actions
 
-- **Import from other project** — copy CIA requirements from another project.
+- **Import CIA requirements from...**: copy the CIA requirements of another project.
 
 > [!NOTE]
-> CIA values affect how CVSS vulnerability scores are adjusted for this project. Higher requirements increase the effective severity of vulnerabilities that impact the corresponding dimension.
+> The requirements are stored with every module analysis and are part of the environmental context that the REST API returns for projects and modules, next to the environmental CVSS vector set with **Env. settings** on the module page. The CVSS scores of findings are adjusted with that environmental vector, not with the CIA requirements.
 
-📸 *Screenshot: the CIA tab with three dropdown fields for CR, IR and AR.*
+📸 *Screenshot: the CIA tab with the three fields Confidentiality requirement (CR), Integrity requirement (IR) and Availability requirement (AR), and the Risk assessment scheme panel below.*
 
 ## Impact class proposals for risks
 
-The CIA requirements of a module and its project (the stricter value counts) also weigh the impact class that ***TrustSource*** proposes for automatically created risks. A high requirement raises the proposal, a low one lowers it. See [Risks List](../../05-risks/02-risks-list.md#proposed-impact-class).
+The CIA requirements of a module and its project (the stricter value counts) also weigh the impact class that ***TrustSource*** proposes for automatically created risks. A high requirement raises the proposal, a low one lowers it. The **Risks** tile on the project page shows the project's CIA rating. See [Risks List](../../05-risks/02-risks-list.md#proposed-impact-class).
 
 ## Risk assessment scheme
 

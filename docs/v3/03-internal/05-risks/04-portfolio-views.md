@@ -29,5 +29,5 @@ With more than 100 entries the chart shows projects only until you zoom in.
 
 ## Related
 
-- [Risk Overview](01-overview.md) — the rest of the dashboard
-- [Treatment and State](05-treatment-and-state.md) — what the colours mean
+- [Risk Overview](01-overview.md) - the rest of the dashboard
+- [Treatment and State](05-treatment-and-state.md) - what the colours mean

@@ -17,7 +17,7 @@ This tab keeps the cryptographic inventory of the module. ***TrustSource*** list
 |---|---|
 | **Name** | Required. Suggestions come from the algorithm database; see [Algorithms](../../../05-knowledge/05-algorithms.md). |
 | **Asset type** | `algorithm`, `certificate`, `protocol` or `related-crypto-material`. The fields below the type change with it. |
-| Algorithm | **Primitive**, **Parameter Set Identifier**, **Elliptic Curve**, **Mode**, **Padding**, **Cryptographic functions**, **Execution Environment**, **Implementation platform**, **Certification Level**, **Classical security level**, **NIST QSL** (0–6). |
+| Algorithm | **Primitive**, **Parameter Set Identifier**, **Elliptic Curve**, **Mode**, **Padding**, **Cryptographic functions**, **Execution Environment**, **Implementation platform**, **Certification Level**, **Classical security level**, **NIST QSL** (0-6). |
 | Certificate | **Subject name**, **Issuer name**, **Not valid before**, **Not valid after** (ISO 8601), **Certificate format**, **File extension**, **Serial number**, **State**. |
 | Protocol | **Protocol type**, **Version**, for example `1.3`. |
 | Related crypto material | **Material type**, **State**, **Size (bits)** and **Format**. |
