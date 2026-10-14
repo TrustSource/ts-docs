@@ -49,6 +49,15 @@ Opens at `http://localhost:8000` with live reload.
 
 Pushes to `main` trigger a GitHub Actions workflow that builds with Zensical and deploys to GitHub Pages.
 
+## Reading tools
+
+Every page has an **Aa** button (bottom right) with two tools, implemented in `docs/assets/a11y-tools.js` and `docs/assets/stylesheet.css`:
+
+- **Text size** (A−, A, A+, 100–200 %), remembered in the browser.
+- **Read aloud** with play/pause, stop, previous/next paragraph, speed and voice. The text is spoken by the browser's speech synthesis, so nothing is sent to an external service. Selected text is read on its own. Code blocks and screenshot placeholders are skipped.
+
+No per-page work is needed. New pages get the tools automatically.
+
 ## Screenshot Agent
 
 This repo is used as a submodule by the [screenshotGenAgent](https://github.com/eacg-gmbh/screenshotGenAgent) which automatically generates annotated screenshots for pages marked with `📸` anchors. See `.cfg4docGenAgent` for the agent's per-repo config.

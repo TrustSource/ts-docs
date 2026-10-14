@@ -672,6 +672,7 @@ extra_css:
 
 extra_javascript:
   - assets/feedback.js
+  - assets/a11y-tools.js
 
 markdown_extensions:
   - admonition
