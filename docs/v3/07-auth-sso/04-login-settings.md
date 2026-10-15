@@ -6,7 +6,7 @@
 
 Login settings control what users can do on the sign-in page of your identity store. Each setting is a switch. Select **Update** to save.
 
-📸 *Screenshot: the Login settings form.*
+![The Login settings form with switches for User registration, Email as username, Edit username, Forgot password, Remember Me, Verify email and Login with email, the Require SSL drop-down set to external requests, and the Update button.](../../assets/images/v3/07-auth-sso/04-login-settings-1.webp)
 
 | Setting | When switched on |
 |---|---|

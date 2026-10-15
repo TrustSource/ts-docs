@@ -6,13 +6,15 @@
 
 **Stored users** are accounts that live in your identity store itself, not in an external directory. Use them for people who have no account in your directory. The list shows **Created**, **Name** and **Email**.
 
-📸 *Screenshot: the Stored users list.*
+![The Stored users list with the Create new user button and the columns Created, Name and Email, one Edit button per user.](../../assets/images/v3/07-auth-sso/03-stored-users-1.webp)
 
 ## Create a user
 
 1. Select **Create new user**.
-2. Fill in the form.
-3. Select **Create**.
+2. Enter the **Username** and **Email**. The create form shows only these required fields.
+3. Select **Create**. The edit page of the new user opens, where you can set **Enabled** and **Name**.
+
+A new user is enabled.
 
 | Field | Description |
 |---|---|

@@ -30,4 +30,4 @@ If you may only read the tab, the same fields appear greyed out.
 > [!TIP]
 > The result is listed in the Versioning report of the project. See [Analysis Reports](../../04b-analysis-reports.md#versioning-report).
 
-📸 *Screenshot: the Versioning tab with jump detection and the two threshold sliders.*
+![The Versioning tab with the switch Enable versioning analysis for module turned on, Versioning jump detection switched on, and the Warning threshold and Violation threshold sliders from no monitoring to less than 3 behind.](../../../../assets/images/v3/03-internal/02-modules/settings/06-versioning-1.webp)

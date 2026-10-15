@@ -18,7 +18,7 @@ A badge in the assigned style means that **every** finding behind it was attribu
 
 An empty cell shows a dash. Hover for the reason: either none of the document's findings carry a CWE, or the document was imported before CWEs were recorded; open it to see its weaknesses.
 
-📸 *Screenshot: the CWE strip and rule groups on a test page, one assigned badge in a different style.*
+![The CodeQL test page with the CWEs strip and the collapsed rule groups with their CWEs; CWE-563 of java/unused-local-variable is shown in the assigned style.](../../assets/images/v3/02-inbound/04a-sarif-weaknesses-1.webp)
 
 ## Assign a CWE to a rule
 

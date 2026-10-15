@@ -20,7 +20,7 @@ CSAF (Common Security Advisory Framework) documents are structured security advi
 - **Publish** an advisory to the provider directory that matches its TLP label, and keep every published version.
 - **Share restricted advisories** with a recipient through a feed key, optionally limited to the products that recipient is entitled to (AMBER+STRICT).
 
-📸 *Screenshot: the CSAF document editor with the Meta information tab active.*
+![The CSAF document editor of the draft Example advisory: remote code execution in log4j-core with the Publish and Remove buttons, the tabs Meta information, Affected, Remediation, Checks, History and JSON, and the Meta information tab active with title, CSAF version, document category and language.](../../assets/images/v3/04-outbound/04-csaf-1.webp)
 
 ## The life of an advisory
 
@@ -133,7 +133,7 @@ An AMBER+STRICT advisory is served only to a feed key that is **bound to a produ
 4. **Bind the recipient's key to the product.** Create a key (or use the **Products** button of an existing key) and select the products the recipient is entitled to.
 5. **Publish the advisory.**
 
-📸 *Screenshot: the AMBER+STRICT option on the Meta information tab, with the products the advisory concerns.*
+![The Rules for sharing document section on the Meta information tab with the TLP label AMBER, AMBER+STRICT (product-restricted) ticked and the products it concerns, Example Fridges and Example Home Appliances.](../../assets/images/v3/04-outbound/04-csaf-2.webp)
 
 ![The Create CSAF feed key dialog with the Name field, the TLP levels to select, the Products selection for AMBER+STRICT advisories, the Include drafts option and the Create button.](../../assets/images/v3/04-outbound/04-csaf-3.webp)
 

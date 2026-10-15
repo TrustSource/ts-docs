@@ -1,8 +1,9 @@
 // v3 shots of agent a7-admin: administration, identity integration and recipes.
 // DEV company TrainCo Ltd., user Max Mustermann. Admin screens show real users and addresses:
-// .mask-v3-a7-admin.json replaces them. The Identity Integration list and form pages are not
-// taken: on DEV every call to the identity service fails with 503 and the pages show
-// "Loading ..." for ever. Nothing in this file submits a form.
+// .mask-v3-a7-admin.json replaces them. The Identity Integration list and form pages
+// (07-auth-sso, except index-1) are taken on production instead: on DEV every call to the
+// identity service fails with 503 and the pages show "Loading ..." for ever. Capture them only
+// with the production environment and the filter "07-auth-sso". Nothing in this file submits a form.
 const ADM = '06-administration';
 const SSO = '07-auth-sso';
 const REC = 'recipes';
@@ -33,6 +34,14 @@ async function waitText(page, ...texts) {
 async function ready(page, ...texts) {
   await clean(page);
   await waitText(page, 'TrainCo', ...texts);
+}
+
+// Identity Integration pages (taken on production): no company name to wait for, and the
+// version footer of the sidebar is hidden in case a crop ever reaches it.
+async function ssoReady(page, ...texts) {
+  await clean(page);
+  await page.addStyleTag({ content: '.nav-footer { visibility: hidden !important; }' });
+  await waitText(page, ...texts);
 }
 
 const $ = (page, fn, arg) => page.evaluate(fn, arg);
@@ -206,6 +215,68 @@ export default [
     url: '/settings/company/auth',
     prepare: async (page) => { await ready(page, 'SMTP settings'); },
     target: headerToCard('SMTP settings'),
+  },
+  // The six pages below are taken on PRODUCTION (TS_BASE_URL=https://app.trustsource.io,
+  // TS_EMAIL=prod-sso), because the identity service on DEV answers 503. They are view only:
+  // nothing is typed or submitted. Each crop starts at the page title bar, so the header (user
+  // name), the sidebar (company name) and the version footer stay out of the image;
+  // .mask-v3-a8-sso.json masks people, addresses and identity provider data on top of that.
+  {
+    id: `${SSO}/01-user-storage-1`,
+    alt: 'The Create user storage form with the provider LDAP and its pre-filled required fields, from Name and Vendor down to Bind DN and Bind Credential, and the Create button.',
+    doc: `${SSO}/01-user-storage.md`,
+    url: '/settings/company/auth/user_storage/create',
+    viewport: { width: 1440, height: 1300 },
+    prepare: async (page) => { await ssoReady(page, 'Bind Credential'); },
+    target: headerTo('.content .hpanel'),
+  },
+  {
+    id: `${SSO}/02-identity-providers-1`,
+    alt: 'The Identity providers list with the Create new identity provider button and one enabled OpenID Connect provider with the alias example-sso and the display name Example SSO.',
+    doc: `${SSO}/02-identity-providers.md`,
+    url: '/settings/company/auth/identity_provider',
+    prepare: async (page) => { await ssoReady(page, 'Create new identity provider', 'oidc'); },
+    target: headerTo('.content .hpanel'),
+  },
+  {
+    id: `${SSO}/03-stored-users-1`,
+    alt: 'The Stored users list with the Create new user button and the columns Created, Name and Email, one Edit button per user.',
+    doc: `${SSO}/03-stored-users.md`,
+    url: '/settings/company/auth/user',
+    prepare: async (page) => {
+      await ssoReady(page, 'Create new user', 'Edit');
+      // A user whose name is its e-mail address: the text masks cannot tell the Name cell from
+      // the Email cell (same text), so give that Name cell a fictional name here.
+      await page.evaluate(() => {
+        for (const td of document.querySelectorAll('td.firstName')) if (td.textContent.includes('@')) td.textContent = 'Jordan Kim';
+      });
+    },
+    target: headerTo('.content .hpanel'),
+  },
+  {
+    id: `${SSO}/04-login-settings-1`,
+    alt: 'The Login settings form with switches for User registration, Email as username, Edit username, Forgot password, Remember Me, Verify email and Login with email, the Require SSL drop-down set to external requests, and the Update button.',
+    doc: `${SSO}/04-login-settings.md`,
+    url: '/settings/company/auth/login_settings',
+    prepare: async (page) => { await ssoReady(page, 'Require SSL'); },
+    target: headerTo('.content .hpanel'),
+  },
+  {
+    id: `${SSO}/05-authentication-settings-1`,
+    alt: 'The Authentication settings page with one drop-down per step of the browser flow: Cookie, Kerberos, Identity Provider Redirector and forms, with the indented sub-steps Username Password Form, Browser - Conditional OTP, Condition - user configured and OTP Form.',
+    doc: `${SSO}/05-authentication-settings.md`,
+    url: '/settings/company/auth/authentication_settings',
+    prepare: async (page) => { await ssoReady(page, 'OTP Form'); },
+    target: headerTo('.content .hpanel'),
+  },
+  {
+    id: `${SSO}/06-smtp-settings-1`,
+    alt: 'The SMTP settings form with the fields Host, Port, From display name, From, Reply to display name, Reply to and EnvelopeFrom, the switches SSL enabled, STARTTLS enabled and Auth enabled, the User and Password fields, and the Update button.',
+    doc: `${SSO}/06-smtp-settings.md`,
+    url: '/settings/company/auth/smtp_settings',
+    viewport: { width: 1440, height: 1300 },
+    prepare: async (page) => { await ssoReady(page, 'EnvelopeFrom', 'Password'); },
+    target: headerTo('.content .hpanel'),
   },
   // ---------------------------------------------------------------- recipes
   {

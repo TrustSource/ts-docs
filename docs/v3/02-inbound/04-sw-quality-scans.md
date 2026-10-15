@@ -54,7 +54,7 @@ The JSON variant `POST /core/tests/sarif` takes the document as the request body
 
 Click a row to open the test. Use the buttons **Passed**, **Unfinished** and **Failed/Findings** to show or hide each status, and the **Filter** box to search.
 
-📸 *Screenshot: the Tests list with several imports from different tools.*
+![The Tests list with Example SARIF imports from CodeQL, Semgrep OSS and ESLint for the module mai_fit_app of mAIfit-app, status Failed, with the findings per severity, the CWE badges and links to project, module, scan and analysis.](../../assets/images/v3/02-inbound/04-sw-quality-scans-2.webp)
 
 ### How findings are counted
 

@@ -23,4 +23,4 @@ The module's component views show end-of-life status for components. The project
 > [!NOTE]
 > The same policy exists on company level (**Settings → Policies**, see [Policies](../../../06-administration/05-policies.md)) and on project level ([End-of-life (Project)](../../01-projects/settings/06-end-of-life.md)).
 
-📸 *Screenshot: the End-of-life tab with the enable switch and two month sliders.*
+![The End-of-life tab with the switch Enable end-of-life analysis for module turned on and the two threshold sliders from no monitoring to 24 months, both at no monitoring, with the Update button.](../../../../assets/images/v3/03-internal/02-modules/settings/11-end-of-life-1.webp)

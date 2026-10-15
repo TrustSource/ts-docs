@@ -152,6 +152,31 @@ const shots = [
     target: '#TestImportModal .modal-content',
   },
   {
+    id: `${IN}/04-sw-quality-scans-2`,
+    doc: `${IN}/04-sw-quality-scans.md`,
+    alt: 'The Tests list with Example SARIF imports from CodeQL, Semgrep OSS and ESLint for the module mai_fit_app of mAIfit-app, status Failed, with the findings per severity, the CWE badges and links to project, module, scan and analysis.',
+    url: '/tests',
+    prepare: async (page, seed, h) => { await h.settle(page, 2500); await hide(page); },
+    target: 'viewport',
+  },
+  {
+    id: `${IN}/04a-sarif-weaknesses-1`,
+    doc: `${IN}/04a-sarif-weaknesses.md`,
+    alt: 'The CodeQL test page with the CWEs strip and the collapsed rule groups with their CWEs; CWE-563 of java/unused-local-variable is shown in the assigned style.',
+    url: '/tests/G6PoYpo5t8A66EGoT',
+    prepare: async (page, seed, h) => {
+      await h.settle(page, 2500);
+      const heads = page.locator('.panel-heading.collapse-action');
+      for (let i = 0; i < await heads.count(); i++) {
+        const c = heads.nth(i).locator('.collapse-chevron');
+        if (await c.count()) { await c.click(); await page.waitForTimeout(300); }
+      }
+      await h.settle(page, 800);
+      await hide(page);
+    },
+    target: content(28),
+  },
+  {
     id: `${IN}/05-repository-scans-1`,
     doc: `${IN}/05-repository-scans.md`,
     alt: 'The Schedule DeepScan dialog with a repository Url and a tag filled in, the switch Points to set to Repository, Yes or No for the scorecard, crypto and copyright analysis and for Urls is password protected, and the deny list selection.',
@@ -267,6 +292,35 @@ const shots = [
     target: 'viewport',
   },
 
+  {
+    id: `${OUT}/04-csaf-1`,
+    doc: `${OUT}/04-csaf.md`,
+    alt: 'The CSAF document editor of the draft Example advisory: remote code execution in log4j-core with the Publish and Remove buttons, the tabs Meta information, Affected, Remediation, Checks, History and JSON, and the Meta information tab active with title, CSAF version, document category and language.',
+    url: '/csaf/C3WPcs9AKQgs8yvxu/meta',
+    prepare: async (page, seed, h) => { await h.settle(page, 2500); await hide(page); },
+    target: 'viewport',
+  },
+  {
+    id: `${OUT}/04-csaf-2`,
+    doc: `${OUT}/04-csaf.md`,
+    alt: 'The Rules for sharing document section on the Meta information tab with the TLP label AMBER, AMBER+STRICT (product-restricted) ticked and the products it concerns, Example Fridges and Example Home Appliances.',
+    url: '/csaf/C3WPcs9AKQgs8yvxu/meta',
+    prepare: async (page, seed, h) => {
+      await h.settle(page, 2500);
+      await page.locator('.panel-heading.collapse-action').filter({ hasText: /rules for sharing document/i }).first().click();
+      await h.settle(page, 1200);
+      await page.locator('.csaf-strict-handling').scrollIntoViewIfNeeded();
+      await page.evaluate(() => document.querySelector('.csaf-strict-handling').scrollIntoView({ block: 'center' }));
+      await h.settle(page, 600);
+      await hide(page);
+    },
+    target: async (page) => {
+      const panel = page.locator('.panel').filter({ has: page.locator('.csaf-strict-handling') }).last();
+      const r = await panel.boundingBox();
+      const y = Math.max(0, r.y - 12);
+      return { clip: { x: r.x - 12, y, width: r.width + 24, height: Math.min(900 - y, r.height + 24) } };
+    },
+  },
   {
     id: `${OUT}/04-csaf-3`,
     doc: `${OUT}/04-csaf.md`,
