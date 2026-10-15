@@ -29,7 +29,7 @@ Click a row to open the release.
 
 A project has its own releases page as well: open it from the **Releases** tile on the project page. It lists only that project's releases (**All modules of** *project* or one module), shows how many approvals of the project are still pending with a link to **Open approvals**, and offers **Start approval** to `manager` and `compliance_manager`.
 
-📸 *Screenshot: the releases list with approval dates and version numbers.*
+![The Releases list with All company projects selected and one release with its approval date, name, version 1.0.0, project mAIfit, contact Max Mustermann and the Link button.](../../assets/images/v3/03-internal/07-releases-1.webp)
 
 ### Link a release into a project
 

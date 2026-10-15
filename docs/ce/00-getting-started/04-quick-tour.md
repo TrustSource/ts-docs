@@ -93,6 +93,12 @@ Company-wide configuration.
 > [!NOTE]
 > Billing, account types, enterprise companies, identity integration (SSO), the AI assistants (OSCAR chat, Threat Model Agent), repository and mass scans and trainings are not part of CE. See [CE and SaaS compared](../13-ce-vs-saas.md).
 
+## Copyright & Trademarks
+
+The copyright line (EACG) at the bottom of the left menu opens the **Copyright & Trademarks** page (`/copyright_trademarks`), "Tools and trademarks used in TrustSource CE". Every signed-in user can open it. After a short statement that EACG is neither owner of nor related to these brands and trademarks, each entry shows its name with an anchor link, a description of the tool or data source and its license, how TrustSource CE uses it, and a **View** link to the source where one exists.
+
+The list ships with TrustSource CE and is read-only: there is no screen to add or edit entries, and every start of the app restores the shipped entries.
+
 ## The right bar
 
 The narrow icon strip on the right edge of the screen gives you quick access to:

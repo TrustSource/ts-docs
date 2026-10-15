@@ -1,11 +1,10 @@
 # Roles & Permissions
 
-This chapter documents the role-based access control system in ***TrustSource***: the 8 public roles, 2 internal roles and 1 licence-bound role, the permission model, and how roles interact with license features and account types.
+This chapter documents the role-based access control system in ***TrustSource***: the 8 public roles and 1 licence-bound role, the permission model, and how roles interact with license features and account types.
 
 | Page | What it covers |
 |---|---|
-| [The 8 Public Roles](01-roles-overview.md) | Detailed description of each public role. |
-| [Internal Roles](02-internal-roles.md) | component_manager, legal_manager and cvd_coordinator. |
+| [The 8 Public Roles](01-roles-overview.md) | Detailed description of each public role and the licence-bound role cvd_coordinator. |
 | [Permission Model](03-permission-model.md) | OR-aggregation, owner-vacuum, resource-layer. |
 | [Functions by Area](04-functions-by-area.md) | What each area allows, grouped by app section. |
 | [Functions by Role](05-functions-by-role.md) | What each role can do, grouped by role. |

@@ -261,14 +261,6 @@ export default [
     target: 'viewport',
   },
   {
-    id: '14-component-manager/03-critical-components-1',
-    doc: '14-component-manager/03-critical-components.md',
-    alt: 'The Components report for Webshop with the counters modules and critical components, and the numbered list of critical components such as axios, bcprov-jdk15on, commons-collections and log4j-core, each opening its edit page.',
-    url: '/reports/critical_components',
-    prepare: prep(async (page, seed, h) => pickTarget(page, seed.projects.Webshop, h)),
-    target: 'viewport',
-  },
-  {
     id: `${R1}-1`,
     doc: `${R1}.md`,
     alt: 'The Projects page with the Create new project dialog open and Smart Home Hub entered as Project name, with Close and Create project below.',

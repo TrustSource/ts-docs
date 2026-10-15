@@ -1,7 +1,7 @@
 # License Details
 
 > [!NOTE]
-> **Required role:** any role with access to the project can read. **Edit** and the status label need `legal_manager`.
+> **Required role:** any role with access to the project can read.
 
 The license details page shows what a license says and how your policy rates it. You reach it from a module: open the **Legal** tab and click a license name. The page title shows the license name and its key, for example `Apache License 2.0 [Apache-2.0]`.
 
@@ -9,8 +9,6 @@ The license details page shows what a license says and how your policy rates it.
 
 - **License text**: the full text, with the **Search in license text...** box at the top right to highlight terms. Where ***TrustSource*** does not store the text, the page says so and links to the license's own URL if one is known.
 - **Created / updated**: dates of the catalog entry, in the footer of the panel.
-- **Status label** (`legal_manager` only): the license's rating under your company policy next to the title.
-- **Edit** (`legal_manager` only): opens the license editor. See [Licenses](../../05-knowledge/06-licenses.md).
 
 ![The license details page of Apache License 2.0 with the key Apache-2.0, the Search in license text box at the top right and the beginning of the license text.](../../../assets/images/v3/03-internal/02-modules/05-license-detail-1.webp)
 

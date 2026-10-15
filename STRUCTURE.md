@@ -42,7 +42,7 @@ ohelp/
 │   │   ├── glossary.md
 │   │   ├── support.md
 │   │   └── background/              # 11 background articles
-│   ├── v3/                           # SaaS documentation (231 pages)
+│   ├── v3/                           # SaaS documentation (222 pages)
 │   │   ├── index.md
 │   │   ├── 00-getting-started/      # 8 pages
 │   │   ├── 02-inbound/              # 8 pages
@@ -53,14 +53,12 @@ ohelp/
 │   │   ├── 07-auth-sso/             # 7 pages
 │   │   ├── 08-personal/             # 6 pages
 │   │   ├── 09-rest-api/             # 30 pages (incl. endpoints/ with 22 group pages)
-│   │   ├── 10-roles-permissions/    # 11 pages
+│   │   ├── 10-roles-permissions/    # 10 pages
 │   │   ├── 11-troubleshooting-faq/  # 7 pages
 │   │   ├── 12-release-notes/        # 4 pages
 │   │   ├── 13-capabilities/         # 8 pages (OSCAR, Risk, Product, Medical, CVD, CSAF)
-│   │   ├── 14-component-manager/    # 4 pages
-│   │   ├── 15-legal-manager/        # 4 pages
 │   │   └── recipes/                 # 13 pages
-│   └── ce/                           # Community Edition (193 pages)
+│   └── ce/                           # Community Edition (186 pages)
 │       ├── index.md
 │       ├── 00-getting-started/      # 8 pages (incl. guide, tour and demo project)
 │       ├── 01-installation-setup/   # 9 pages (CE only - self-hosted)
@@ -75,8 +73,6 @@ ohelp/
 │       ├── 11-troubleshooting-faq/  # 7 pages
 │       ├── 12-release-notes/        # 2 pages
 │       ├── 13-ce-vs-saas.md         # what CE includes and what is SaaS-only
-│       ├── 14-component-manager/    # 4 pages
-│       ├── 15-legal-manager/        # 3 pages ("Legal Reference Data")
 │       └── recipes/                 # 12 pages
 ```
 

@@ -113,6 +113,19 @@ export default [
     prepare: openProduct('Example Fridge FR-050', null, { showAll: true }),
     target: { clip: { x: 211, y: 62, width: 1181, height: 670 } },
   },
+  productTab('03-tab-solutions-1', 'Solutions',
+    'The Solutions tab of Example Fridge FR-100 with the Add solution and Generate SBOM buttons and one linked release, Example dry run 1.0.0, in the columns Solution, Version and Capabilities; its approval recorded no capabilities.'),
+  {
+    id: `${P}/10-link-with-release-1`,
+    doc: `${P}/10-link-with-release.md`,
+    alt: 'The Add solution dialog listing the approved release Example dry run 1.0.0 with its approval date, version and contact Max Mustermann, and an Add button.',
+    url: '/products',
+    prepare: async (page, seed, h) => {
+      await openProduct('Example Fridge FR-100', 'Solutions')(page, seed, h);
+      await h.click(page, 'a[data-target="#productLinkWithReleaseModal"]', 2000);
+    },
+    target: '#productLinkWithReleaseModal .modal-content',
+  },
   productTab('04-tab-classification-cra-1', 'Classification',
     'The Classification tab of Example Fridge FR-100 with IMPORTANT Class 1 saved under Classified as and the sample areas for this class listed below the form.'),
   productTab('07-tab-contacts-1', 'Contacts',

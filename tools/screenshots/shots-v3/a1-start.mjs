@@ -321,4 +321,25 @@ export default [
     prepare: products(true),
     target: 'viewport',
   },
+  {
+    id: `${CAP}/04-medical-1`,
+    alt: 'The MDR/IVDR Classification tab of the auth-service module settings with the MDR Classification options None, I, IIa, IIb and III, the IVDR Classification options None, A, B, C and D, both set to None, and the Update button.',
+    doc: `${CAP}/04-medical.md`,
+    url: `/projects/${MAIFIT}/modules/${AUTH_SERVICE}/settings`,
+    prepare: async (page, seed, h) => {
+      await clean(page);
+      await waitText(page, 'Module Identifier');
+      await h.click(page, 'a[href="#m-classification"]', 1500);
+      await waitText(page, 'IVDR Classification');
+    },
+    target: { clip: { x: 211, y: 70, width: 1173, height: 452 } },
+  },
+  {
+    id: `${CAP}/04-medical-2`,
+    alt: 'The SOUP files page with the Create soup file button and the list of SOUP files with the columns Created, Frozen, Project/Module, Components, Version, Edited, By and Complete, showing one SOUP file for mAIfit 1.0.0 with 406 components, by Max Mustermann, 0% complete.',
+    doc: `${CAP}/04-medical.md`,
+    url: '/reports/soup',
+    prepare: async (page) => { await clean(page); await waitText(page, '406', 'Max Mustermann'); },
+    target: { clip: { x: 211, y: 70, width: 1173, height: 220 } },
+  },
 ];

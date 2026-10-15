@@ -45,7 +45,7 @@ Select a project to list all projects that depend on it, with their description,
 
 ## Components
 
-Role: `company_component_manager`. Lists components with missing data so you can complete them. See [Critical Components](../14-component-manager/03-critical-components.md).
+Role: `company_component_manager`. Lists the components with missing data that are used by your company's modules, so you can complete them, with a PDF export. Open it with the **Critical components** button in the [Component Lake](../05-knowledge/01-component-lake.md). Before the first use you are asked to confirm the role's conditions (window **Policy confirmation**).
 
 ## Issue report
 

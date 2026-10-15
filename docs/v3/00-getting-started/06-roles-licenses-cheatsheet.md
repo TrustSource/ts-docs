@@ -16,7 +16,7 @@ A one-page reference for the roles, license features and account types in ***Tru
 | **Company Security Manager** | `company_security_manager` | Manages security configurations: CIA settings, capabilities, crypto-algorithm policies, vulnerability activity. |
 
 > [!NOTE]
-> Two additional **internal roles** exist (`component_manager`, `legal_manager`) that are not assignable through the standard UI. They unlock dedicated menu sections for component library and legal document management. A licence-bound role, `cvd_coordinator` (licence `cvdself`), is assignable only when the company holds the licence and has no permissions inside the app. See [Internal Roles](../10-roles-permissions/02-internal-roles.md).
+> A licence-bound role, `cvd_coordinator` (licence `cvdself`), is assignable only when the company holds the licence and has no permissions inside the app. See [Licence-bound role](../10-roles-permissions/01-roles-overview.md#licence-bound-role).
 
 ## Role assignment rules
 

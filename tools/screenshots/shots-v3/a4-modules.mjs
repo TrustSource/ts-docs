@@ -201,6 +201,8 @@ export default [
     }),
   setting('03-obligations', '#obligations',
     'The Resolved obligations tab: the Project obligations panel with the note that the obligation settings of the project are empty, the form with Obligation, Key and Comment and the Add button, and the empty list, with Import settings from Module and Propagate settings to in the upper right.'),
+  setting('07-module-classification-mdr-ivdr', '#m-classification',
+    'The MDR/IVDR Classification tab with the radio groups MDR Classification and IVDR Classification, each from None up to the highest class with a short description, and the Update button.'),
   setting('08-cia', '#risk',
     'The CIA tab: the note that the project risk settings still need completion, the fields Confidentiality requirement (CR), Integrity requirement (IR) and Availability requirement (AR) with the Update button, and the Risk assessment scheme panel with the inherited impact classes, value scale and annual rate of occurrence, each with an Override switch, the thresholds and Save scheme.',
     { viewport: { width: 1440, height: 1900 } }),

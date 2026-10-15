@@ -27,7 +27,7 @@ For the SaaS documentation see [TrustSource (SaaS)](../v3/index.md).
 | Trainings | Training content inside the app |
 | Zendesk support | Support tickets from the app |
 | SPDX tag-value and spreadsheet import | Further SBOM import formats |
-| License legal assessment and Manage Legal | Curated obligations and classification per license, edited on the **Manage Legal** screen |
+| License legal assessment | Curated obligations and classification per license, maintained by TrustSource |
 | OBOM | Operations bill of materials |
 | Risk decisions and history | **Decision** and **History** tabs of a risk (CE records decisions in the risk's own fields) |
 | Configurable risk assessment schemes | Company-, project- and module-specific scales and thresholds (CE uses one fixed scheme) |

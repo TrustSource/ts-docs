@@ -52,7 +52,7 @@ Roles add up: a person with several roles can do everything any of them can do.
 ## Company component manager (`company_component_manager`)
 
 - **Menu:** Overview, Knowledge, Settings with Component allow/deny and Manual vulnerability.
-- **Knowledge:** create and edit components in the Component Lake, manage infrastructure elements and COTS, edit license entries, and the critical components report. See [Component manager](../14-component-manager/index.md).
+- **Knowledge:** create and edit components in the Component Lake, manage infrastructure elements and COTS, edit license entries, and the critical components report. See [Infrastructure Elements](../05-knowledge/02-infrastructure-elements.md#maintain-the-catalog), [3rd party (COTS)](../05-knowledge/03-cots.md#maintain-the-catalog) and [Components report](../03-internal/04c-impact-and-portfolio-reports.md#components).
 - **Project settings:** read access to most tabs; no Issue Integration and no Imports.
 - **Module settings:** read access to most tabs; no Legal, Resolved obligations, Allow/Deny, History or Export SPDX.
 

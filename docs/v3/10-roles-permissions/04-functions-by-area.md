@@ -65,7 +65,7 @@ Section visible to: **cm, mgr, aa**.
 | Account & Billing | aa, ea | - |
 | Identity Integration | aa | Account type Enterprise or Medical |
 | Integrations | aa, ea | - |
-| Settings | aa, cm, csm, ccm, pm, mgr, legal_manager | Cards depend on role, see below |
+| Settings | aa, cm, csm, ccm, pm, mgr | Cards depend on role, see below |
 | User Management | aa | Hidden when corporate login is enforced |
 | API keys | aa | Release keys on the same page also open to mgr and cm |
 | Policies | aa, csm, cm | The **Opensource policy** card opens for cm only. **Risk assessment** changes need license `risks`. |
@@ -82,19 +82,10 @@ Section visible to: **cm, mgr, aa**.
 | Component allow/deny | aa, cm, csm, ccm |
 | Encryption, Quality | aa, cm, csm |
 | Company tags | aa, pm, mgr, csm, cm |
-| Legal templates | aa, cm, legal manager |
+| Legal templates | aa, cm |
 | Manual vulnerability | aa, csm, ccm |
 
 Private licenses are shown for Enterprise and Medical accounts only. Some forms behind a card are restricted further; see [Settings](../06-administration/02-settings.md).
-
-## Component Manager and Legal Manager
-
-These sections belong to the [internal roles](02-internal-roles.md).
-
-| Section | Entries | Role |
-|---|---|---|
-| Component mngr. | Manage IC, Manage COTS, Critical Components | `component_manager` |
-| Legal mngr. | Manage Legal, Legal templates, Copyright & Trademarks | `legal_manager` |
 
 ## Pages with their own role check
 

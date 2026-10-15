@@ -22,7 +22,7 @@ This is useful for CRA compliance: you can provide customers with proof of your 
 > [!CAUTION]
 > Anyone who holds the key can read what it serves. Treat it like a password.
 
-📸 *Screenshot: the Release keys card with a key created by an approval.*
+![The Release keys page with one public release key created by approving the release Example dry run 1.0.0, serving sbom, notice and csaf, with its copy, view, QR code and Delete buttons and Requested 0.](../../../assets/images/v3/03-internal/06-approvals/05-public-approves-1.webp)
 
 ## Related
 

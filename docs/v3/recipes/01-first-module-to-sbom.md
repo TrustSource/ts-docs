@@ -142,7 +142,7 @@ The **compliance manager** opens the approval under **Internal → Approvals** a
 | **Capabilities** | Capabilities recorded for this release. |
 | **SW-Quality** | Linked SARIF test results; shown only with the `sarif` license feature. |
 
-📸 *Screenshot: the open approval with the Approve and Reject buttons and the tab bar.*
+![The open approval Example release with the Manage binary links, Approve and Reject buttons in the header, the tabs Overview, Vulnerabilities, Licenses, Versioning, Viability, Status changes, Export control, Capabilities and SW-Quality, and the four modules of the approval.](../../assets/images/v3/recipes/01-first-module-to-sbom-5.webp)
 
 For a first approval, the goal isn't an exhaustive review. It's to **see what's there** and catch any show-stopper (for example a GPL-3.0 in a module you ship as proprietary).
 
@@ -168,7 +168,7 @@ What a release gives you:
 
 You can also drive the approval from outside: your pipeline can create, approve or reject approvals through the [REST API](../09-rest-api/endpoints/compliance-approvals.md).
 
-📸 *Screenshot: the release page with the SBOM button and the Overview, New vulnerabilities, Vulnerabilities and Export control tabs.*
+![The release page of Example dry run with the SBOM, Binary links and Published keys buttons and the Approved state in the header, the tabs Overview, New vulnerabilities, Vulnerabilities and Export control, and the four modules of the release.](../../assets/images/v3/recipes/01-first-module-to-sbom-6.webp)
 
 > [!TIP]
 > **Why this matters.** A release SBOM is what stays in the field: running on customer machines, baked into firmware, or shipped as a container. Your development team may be 256 commits ahead, but the release stands still. ***TrustSource*** keeps that frozen SBOM under watch, so the day a new CVE drops on a component you released six months ago, you see it on the release.
@@ -181,7 +181,7 @@ Open the release under **Internal → Releases** and select **SBOM**. The SBOM p
 - **CycloneDX**: **SBOM (components)**, **CBOM (cryptography)**, **AIBOM (AI / ML)** or **Full BOM (components + crypto + AI)** as JSON.
 - **SPDX**: an SPDX document.
 
-📸 *Screenshot: the SBOM page of a release with the PDF, CycloneDX and SPDX buttons.*
+![The SBOM page of the mAIfit release, version 1.0.0, with the PDF, CycloneDX, SPDX, Version and Freeze buttons, the component list with a cleared checkbox per component, and the TODOs Navigator.](../../assets/images/v3/recipes/01-first-module-to-sbom-7.webp)
 
 That's the file you ship.
 

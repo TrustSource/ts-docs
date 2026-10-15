@@ -177,6 +177,8 @@ const SHOTS = [
     target: (page) => clipOf(page, ['.normalheader', '.project-obligations-content .panel-body *'], 16),
     alt: 'The Resolved obligations page of Example Project with Propagate settings to in the header and the form with Obligation Reproduce Copyright Notice, Key npm:example-lib, a Comment and the Add button above the still empty list.',
   },
+  settingsShot('09-module-classification', 1, MAIFIT_APP, 'm-classification',
+    'The MDR/IVDR Classification tab of mAIfit-app with the Propagate settings to button, the MDR Classification options None, I, IIa, IIb and III and the IVDR Classification options None, A, B, C and D, both set to None, and the Update button.'),
   settingsShot('10-issue-tracker', 1, MAIFIT, 'issue',
     'The Issue Integration tab of mAIfit with Jira selected, the API and Email switch on API, and the fields Project key, Company url, User, Password and Active filled in with example values.',
     { prepare: async (page, seed, h) => {

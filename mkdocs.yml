@@ -181,16 +181,6 @@ nav:
       - Audit Logs:
         - v3/06-administration/07-audit-logs.md
         - Login History: v3/06-administration/09-login-history.md
-    - Component Manager:
-      - v3/14-component-manager/index.md
-      - Manage Infrastructure: v3/14-component-manager/01-manage-infrastructure.md
-      - Manage COTS: v3/14-component-manager/02-manage-cots.md
-      - Critical Components: v3/14-component-manager/03-critical-components.md
-    - Legal Manager:
-      - v3/15-legal-manager/index.md
-      - Manage Legal: v3/15-legal-manager/01-manage-legal.md
-      - Legal Templates: v3/15-legal-manager/02-legal-templates.md
-      - Copyright & Trademarks: v3/15-legal-manager/03-copyright-trademarks.md
     - Personal:
       - v3/08-personal/index.md
       - Updates Feed: v3/08-personal/01-updates.md
@@ -233,7 +223,6 @@ nav:
     - Roles & Permissions:
       - v3/10-roles-permissions/index.md
       - The 8 Public Roles: v3/10-roles-permissions/01-roles-overview.md
-      - Internal Roles: v3/10-roles-permissions/02-internal-roles.md
       - Permission Model: v3/10-roles-permissions/03-permission-model.md
       - Functions by Area: v3/10-roles-permissions/04-functions-by-area.md
       - Functions by Role: v3/10-roles-permissions/05-functions-by-role.md
@@ -424,15 +413,6 @@ nav:
       - Audit Logs:
         - ce/06-administration/07-audit-logs.md
         - Login History: ce/06-administration/09-login-history.md
-    - Component Manager:
-      - ce/14-component-manager/index.md
-      - Manage Infrastructure: ce/14-component-manager/01-manage-infrastructure.md
-      - Manage COTS: ce/14-component-manager/02-manage-cots.md
-      - Critical Components: ce/14-component-manager/03-critical-components.md
-    - Legal Reference Data:
-      - ce/15-legal-manager/index.md
-      - Legal Templates: ce/15-legal-manager/02-legal-templates.md
-      - Copyright & Trademarks: ce/15-legal-manager/03-copyright-trademarks.md
     - Personal:
       - ce/08-personal/index.md
       - Updates: ce/08-personal/01-updates.md
@@ -537,9 +517,9 @@ plugins:
         'ce/03-internal/08-threat-models/02-threat-detail-stride-linddun.md': 'ce/03-internal/05-risks/10-threat-model-fields.md'
         'ce/03-internal/08-threat-models/03-mitigations-status.md': 'ce/03-internal/05-risks/10-threat-model-fields.md'
         'ce/03-internal/08-threat-models/index.md': 'ce/03-internal/05-risks/10-threat-model-fields.md'
-        'ce/03-internal/09-settings-templates.md': 'ce/15-legal-manager/02-legal-templates.md'
+        'ce/03-internal/09-settings-templates.md': 'ce/06-administration/02-settings.md'
         'ce/03-internal/10-vulnerabilities-activity.md': 'ce/03-internal/04a-vulnerability-report.md'
-        'ce/03-internal/11-critical-components.md': 'ce/14-component-manager/03-critical-components.md'
+        'ce/03-internal/11-critical-components.md': 'ce/03-internal/04c-impact-and-portfolio-reports.md'
         'ce/04-outbound/01-sbom-files.md': 'ce/04-outbound/01-sbom-cbom.md'
         'ce/04-outbound/02-soup-files.md': 'ce/04-outbound/index.md'
         'ce/04-outbound/03-notice-files.md': 'ce/04-outbound/02-notice-files.md'
@@ -551,7 +531,7 @@ plugins:
         'ce/05-knowledge/06-algorithms.md': 'ce/05-knowledge/index.md'
         'ce/05-knowledge/07-open-source-policies.md': 'ce/05-knowledge/07-open-source-policy.md'
         'ce/05-knowledge/08-open-source-policy.md': 'ce/05-knowledge/07-open-source-policy.md'
-        'ce/05-knowledge/09-copyright-trademarks.md': 'ce/15-legal-manager/03-copyright-trademarks.md'
+        'ce/05-knowledge/09-copyright-trademarks.md': 'ce/00-getting-started/04-quick-tour.md'
         'ce/05-knowledge/10-chat.md': 'ce/05-knowledge/index.md'
         'ce/05-knowledge/11-trainings.md': 'ce/05-knowledge/index.md'
         'ce/06-administration/01-general-info.md': 'ce/06-administration/02a-company-details.md'
@@ -562,7 +542,7 @@ plugins:
         'ce/06-administration/06-api-keys.md': 'ce/06-administration/04-api-keys.md'
         'ce/06-administration/07-integrations.md': 'ce/06-administration/08-integrations.md'
         'ce/06-administration/08-policies.md': 'ce/06-administration/05-policies.md'
-        'ce/06-administration/09-templates.md': 'ce/15-legal-manager/02-legal-templates.md'
+        'ce/06-administration/09-templates.md': 'ce/06-administration/02-settings.md'
         'ce/06-administration/10-audit-logs.md': 'ce/06-administration/07-audit-logs.md'
         'ce/06-administration/11-tc-privacy-documents.md': 'ce/06-administration/index.md'
         'ce/07-account-admin-auth/01-user-storage.md': 'ce/01-installation-setup/index.md'
@@ -585,6 +565,24 @@ plugins:
         'ce/14-capabilities/06-csaf-trusted-provider.md': 'ce/13-ce-vs-saas.md'
         'ce/14-capabilities/index.md': 'ce/13-ce-vs-saas.md'
         'ce/recipes/05-mdr-soup-workflow.md': 'ce/recipes/index.md'
+        # CE pages named after internal TrustSource roles, removed from the docs
+        'ce/14-component-manager/index.md': 'ce/05-knowledge/index.md'
+        'ce/14-component-manager/01-manage-infrastructure.md': 'ce/05-knowledge/02-infrastructure-elements.md'
+        'ce/14-component-manager/02-manage-cots.md': 'ce/05-knowledge/03-cots.md'
+        'ce/14-component-manager/03-critical-components.md': 'ce/03-internal/04c-impact-and-portfolio-reports.md'
+        'ce/15-legal-manager/index.md': 'ce/05-knowledge/06-licenses.md'
+        'ce/15-legal-manager/02-legal-templates.md': 'ce/06-administration/02-settings.md'
+        'ce/15-legal-manager/03-copyright-trademarks.md': 'ce/00-getting-started/04-quick-tour.md'
+        # v3 pages of internal TrustSource roles, removed from the docs
+        'v3/10-roles-permissions/02-internal-roles.md': 'v3/10-roles-permissions/01-roles-overview.md'
+        'v3/14-component-manager/index.md': 'v3/05-knowledge/01-component-lake.md'
+        'v3/14-component-manager/01-manage-infrastructure.md': 'v3/05-knowledge/02-infrastructure-elements.md'
+        'v3/14-component-manager/02-manage-cots.md': 'v3/05-knowledge/03-cots.md'
+        'v3/14-component-manager/03-critical-components.md': 'v3/03-internal/04c-impact-and-portfolio-reports.md'
+        'v3/15-legal-manager/index.md': 'v3/05-knowledge/06-licenses.md'
+        'v3/15-legal-manager/01-manage-legal.md': 'v3/05-knowledge/06-licenses.md'
+        'v3/15-legal-manager/02-legal-templates.md': 'v3/06-administration/02-settings.md'
+        'v3/15-legal-manager/03-copyright-trademarks.md': 'v3/00-getting-started/04-quick-tour.md'
 
 theme:
   name: material

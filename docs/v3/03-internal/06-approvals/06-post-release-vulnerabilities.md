@@ -12,7 +12,7 @@ Open the release under **Internal → Releases** and select the **New vulnerabil
 
 Below the counters, each vulnerable component is listed with its new CVEs. **Export as CSAF** downloads a CSAF/VEX document of the new findings. The **Vulnerabilities** tab shows the vulnerabilities as known at approval, the **Export control** tab the detected crypto algorithms. See [Releases](../07-releases.md#release-details).
 
-📸 *Screenshot: the New vulnerabilities tab of a release showing newly discovered CVEs.*
+![The New vulnerabilities tab of a release with the counters new vulnerabilities, resolved vulnerabilities and vulnerable components, Export as CSAF, and the affected components with their new advisories.](../../../assets/images/v3/03-internal/06-approvals/06-post-release-vulnerabilities-1.webp)
 
 > [!TIP]
 > To be notified when a new CVE matches a released component, add a webhook or channel with the **Vulnerabilities in releases** trigger on the project's [Webhooks and Channels](../01-projects/settings/13-webhooks-channels.md) tab.

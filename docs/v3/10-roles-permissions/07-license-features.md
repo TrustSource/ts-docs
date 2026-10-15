@@ -17,7 +17,7 @@ A **license feature** is a flag in your company's `allowedLicenses`. Without the
 | `psirt` | CVD cases (BETA) | |
 | `chat` | AI chat assistant | |
 | `obom` | OBOM upload, Deployments tile and OBOM tab | REST: `403` without the flag. Importing OBOM findings as risks also needs `risks`. |
-| `cvdself` | Makes the role `cvd_coordinator` assignable | The role carries no permissions in the app; see [Internal Roles](02-internal-roles.md). |
+| `cvdself` | Makes the role `cvd_coordinator` assignable | The role carries no permissions in the app; see [Licence-bound role](01-roles-overview.md#licence-bound-role). |
 | `medical` | **SOUP Lists** in the Outbound menu and the SOUP and COTS reports | The plan feature `soup_report` has the same effect. The MDR/IVDR tabs depend on the account type, not on this flag. |
 
 Creating risks from SARIF findings needs both `sarif` and `risks`.

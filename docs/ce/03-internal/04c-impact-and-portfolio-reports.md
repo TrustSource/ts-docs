@@ -46,7 +46,9 @@ Select a project to list all projects that depend on it, with their description,
 
 Role: Company component manager. Also reachable from the **Critical components** button in the [Component Lake](../05-knowledge/01-component-lake.md).
 
-Select a project to list the components of its modules whose catalog data is incomplete: a version without license, a license without key, or no repository URL. Counters: **modules**, **critical components**. Each entry opens the component's edit page in a new tab. See [Critical Components](../14-component-manager/03-critical-components.md).
+Select a project at the upper right to list the critical components of its modules: components whose catalog data makes the license assessment of every scan using them unreliable, because a version has no license, a license has no key, or the repository URL is missing. Counters: **modules**, **critical components**. Fixing these entries improves the results of all projects that use the component. To look beyond one project, search the [Component Lake](../05-knowledge/01-component-lake.md); component pages mark incomplete license data with *Key missing* or *Key and Name missing*.
+
+Each entry opens the component's edit page in a new tab. Set the **Declared**, **Effective** and **Concluded licenses**, the **Repository** and the other information; changes are saved as soon as you leave a field. For the affected versions, select them and use **Set to selected** to assign license, license URL and copyright in one step; a version filter narrows long lists. The page opened from the report shows the fields only. Opened with **Edit** from the component page in the Component Lake, it also has the tabs **Info** and **Logs**, and the header offers **Soft-delete** to mark a bad entry as removed and **Revert-delete** to restore it. Licenses missing from the catalog can be added under [Knowledge → Licenses](../05-knowledge/06-licenses.md#edit-the-catalog).
 
 ## Issue report
 

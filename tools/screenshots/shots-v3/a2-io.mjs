@@ -8,7 +8,6 @@ import { cyclonedx } from '../fixtures.mjs';
 const IN = '02-inbound';
 const OUT = '04-outbound';
 const K = '05-knowledge';
-const LM = '15-legal-manager';
 
 const BOOSTME = 'QcJprNstGvbQX7ccY';
 const AUTH_SERVICE = 'bYAbTbEhZsmyuQYoW';
@@ -210,6 +209,40 @@ const shots = [
     target: content(),
   },
   {
+    id: `${OUT}/03-soup-lists-1`,
+    doc: `${OUT}/03-soup-lists.md`,
+    alt: 'The SOUP files list with the Create soup file button and the columns Created, Frozen, Project/Module, Components, Version, Edited, By and Complete; two files of mAIfit with 406 components, version 1.0.0, 0 percent complete, each with a Remove button.',
+    url: '/reports/soup',
+    prepare: async (page) => hide(page),
+    target: content(),
+  },
+  {
+    // The signed SBOM of the release, as the Release keys page previews it (view only), pasted into Verify.
+    id: `${OUT}/05-verify-1`,
+    doc: `${OUT}/05-verify.md`,
+    alt: 'The Verification page with the signed SBOM of the Example dry run 1.0.0 release of mAIfit pasted into the text field, scrolled to its components, and the result Verified successfully, Verified and found in server.',
+    url: '/settings/company/api/releases',
+    prepare: async (page, seed, h) => {
+      await page.evaluate(() => document.querySelector('.preview-public-sbom').click());
+      await page.waitForFunction(() => window.Package.session.Session.get('previewData'), null, { timeout: 20000 });
+      const json = await page.evaluate(() => JSON.stringify(window.Package.session.Session.get('previewData'), null, 2));
+      await page.keyboard.press('Escape');
+      await routeTo(page, '/verify/json', h, 2000);
+      await page.evaluate(() => { document.querySelector('textarea[name=inputBody]').spellcheck = false; });
+      await page.locator('textarea[name=inputBody]').fill(json);
+      await page.locator('#verifyForm button[type=submit]').click();
+      await h.settle(page, 3000);
+      // Show the component part of the document, not the project description at its top.
+      await page.evaluate(() => {
+        const t = document.querySelector('textarea[name=inputBody]');
+        const i = t.value.search(/"(components|dependencies|packages)"/);
+        t.scrollTop = i > 0 ? Math.max(0, t.scrollHeight * (i / t.value.length) - 20) : t.scrollHeight;
+      });
+      await hide(page);
+    },
+    target: content(),
+  },
+  {
     id: `${OUT}/06-cvd-cases-1`,
     doc: `${OUT}/06-cvd-cases.md`,
     alt: 'The CVD cases list with the New case button, the filter and the columns Case, Advisory ids, Status, CS state, Embargo, Origin, Created and Updated; one active case from external intake with a CVE and a GHSA id and embargo None.',
@@ -315,34 +348,8 @@ const shots = [
     prepare: async (page, seed, h) => {
       await h.settle(page, 3000);
       await hide(page);
-      // The course list is rendered in a frame, which the framework's masking does not reach:
-      // apply this agent's mask rules to every frame.
-      const rules = JSON.parse(await fs.readFile(path.join(HERE, '.mask-v3-a2-io.json'), 'utf8'));
-      for (const f of page.frames()) {
-        await f.evaluate((rules) => {
-          const res = rules.map(([p, r]) => [new RegExp(p, 'gi'), r]);
-          const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-          for (let n = w.nextNode(); n; n = w.nextNode()) n.nodeValue = res.reduce((a, [re, r]) => a.replace(re, r), n.nodeValue);
-          // Shadow roots too.
-          for (const el of document.querySelectorAll('*')) if (el.shadowRoot) {
-            const w2 = document.createTreeWalker(el.shadowRoot, NodeFilter.SHOW_TEXT);
-            for (let n = w2.nextNode(); n; n = w2.nextNode()) n.nodeValue = res.reduce((a, [re, r]) => a.replace(re, r), n.nodeValue);
-          }
-        }, rules).catch(() => {});
-      }
     },
     target: 'viewport',
-  },
-
-  // ---------------------------------------------------------------- Legal manager
-  {
-    // The list itself; the Create copyright/trademark button in the header is legal_manager only.
-    id: `${LM}/03-copyright-trademarks-1`,
-    doc: `${LM}/03-copyright-trademarks.md`,
-    alt: 'The Copyrights / Trademarks list with the filter and the columns Name, Type, Description, Usage and Link; the entry OpenSSF Scorecard of type trademark with a Remove button.',
-    url: '/trademarks',
-    prepare: async (page) => hide(page),
-    target: content(),
   },
 ];
 

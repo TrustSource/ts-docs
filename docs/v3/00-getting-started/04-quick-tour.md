@@ -93,7 +93,7 @@ Company-wide configuration. Each entry has its own roles.
 | **Account & Billing** | Company (billing) details, account type, terms and privacy documents. | aa, ea |
 | **Identity Integration** | Keycloak / SSO configuration. | aa (Enterprise or Medical account) |
 | **Integrations** | Company integrations: Jira, TFS, GitHub, LeanIX, SCANOSS. | aa, ea |
-| **Settings** | Company info, allow/deny lists, private licenses, tags, templates and more. Which cards you see depends on your role. | aa, cm, csm, ccm, pm, mgr, legal manager |
+| **Settings** | Company info, allow/deny lists, private licenses, tags, templates and more. Which cards you see depends on your role. | aa, cm, csm, ccm, pm, mgr |
 | **User Management** | Invite users, assign roles, remove members. Hidden when the company enforces corporate login. | aa |
 | **API keys** | Manage scanner API keys and their scopes. | aa |
 | **Policies** | Open source policy, crypto algorithms, component end-of-life and risk assessment. | aa, csm, cm |
@@ -102,12 +102,9 @@ Company-wide configuration. Each entry has its own roles.
 
 ![The left sidebar with the Administration group expanded.](../../assets/images/v3/00-getting-started/04-quick-tour-6.webp)
 
-## Special role menus
+## Copyright & Trademarks
 
-Two additional menu sections appear only for internal roles:
-
-- **Component mngr.** (role: `component_manager`): manage infrastructure and COTS catalogs, critical components.
-- **Legal mngr.** (role: `legal_manager`): manage legal documents, templates, copyright and trademarks.
+The copyright line at the bottom of the left menu opens the **Copyright & Trademarks** page. It lists the copyrights and trademarks of the tools and brands used in ***TrustSource***, each with its name, description and usage text, and a **View** link where one is known.
 
 ## The right bar
 

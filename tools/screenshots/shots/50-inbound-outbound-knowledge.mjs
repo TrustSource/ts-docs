@@ -1,6 +1,6 @@
 // Inbound (check, import, scans, SARIF tests), Outbound (SBOM and notice files, CSAF,
 // verification), Knowledge (component, infrastructure, COTS, vulnerability and license
-// catalogs, open source policy), component manager and legal reference pages.
+// catalogs, open source policy).
 // Extra data comes from seeds/50-inbound-outbound-knowledge.mjs (seed.extra[STEP]).
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -11,8 +11,6 @@ const STEP = '50-inbound-outbound-knowledge';
 const IN = '02-inbound';
 const OUT = '04-outbound';
 const K = '05-knowledge';
-const CM = '14-component-manager';
-const LM = '15-legal-manager';
 const extra = (seed) => seed.extra[STEP] || {};
 
 // Client-side navigation inside a prepare step (a full reload costs a login, see the report).
@@ -373,62 +371,6 @@ export default withLogin([
     doc: `${K}/07-open-source-policy.md`,
     alt: 'The Open source policy page with the active policy Open Source Policy 2026, its Active from date, the description, the View policy file link and the Updated date.',
     url: '/open_source_policy',
-    target: content(),
-  },
-
-  // ---------------------------------------------------------------- Component manager
-  {
-    id: `${CM}/01-manage-infrastructure-1`,
-    doc: `${CM}/01-manage-infrastructure.md`,
-    alt: 'The Add infrastructure component dialog filled in with the name PostgreSQL, the key im:postgresql, the versions 15.8, 16.4 and the homepage and repository, with the Create component button.',
-    url: '/infrastructure_components',
-    prepare: async (page, seed, h) => {
-      await page.locator('[data-target="#createInfrastructureModule"]').first().click();
-      await h.settle(page, 1000);
-      const f = (s, v) => page.locator(`#createInfrastructureModule ${s}`).fill(v);
-      await f('#componentName', 'PostgreSQL');
-      await f('#componentKey', 'im:postgresql');
-      await f('#componentVersions', '15.8, 16.4');
-      await f('#componentHomepage', 'https://www.postgresql.org');
-      await f('#componentRepository', 'https://git.postgresql.org/gitweb/?p=postgresql.git');
-    },
-    target: box('#createInfrastructureModule .modal-content', 16),
-  },
-  {
-    id: `${CM}/02-manage-cots-1`,
-    doc: `${CM}/02-manage-cots.md`,
-    alt: 'The Commercial terms panel on the edit page of Example Analytics Suite: Right to re-sell no, Right to distribute limited, Right to host/operate as SaaS unlimited and Right to modify no.',
-    url: (seed) => `/management/cots_components/${extra(seed).cotsId}/edit`,
-    prepare: async (page, seed, h) => {
-      await page.locator('h5:has-text("Commercial terms")').first().scrollIntoViewIfNeeded();
-      await page.evaluate(() => window.scrollBy(0, 0));
-      await h.settle(page, 800);
-    },
-    target: async (page) => {
-      const handle = await page.locator('.panel').filter({ has: page.locator('h5:has-text("Commercial terms")') }).first();
-      await handle.scrollIntoViewIfNeeded();
-      const r = await handle.boundingBox();
-      return { clip: { x: r.x - 12, y: r.y - 12, width: r.width + 24, height: r.height + 24 } };
-    },
-  },
-
-  // ---------------------------------------------------------------- Legal manager
-  {
-    id: `${LM}/02-legal-templates-1`,
-    doc: `${LM}/02-legal-templates.md`,
-    alt: 'The project template SaaS product (default) with Update template information and the Legal settings wizard started: Question 1 of 3 asks for the intended commercial use, with the View all button and Next.',
-    url: (seed) => `/settings/company/legal_templates/${extra(seed).templateId}`,
-    prepare: async (page, seed, h) => {
-      await page.locator('.view-wizard').first().click();
-      await h.settle(page, 1500);
-    },
-    target: 'viewport',
-  },
-  {
-    id: `${LM}/03-copyright-trademarks-1`,
-    doc: `${LM}/03-copyright-trademarks.md`,
-    alt: 'The Copyright & Trademarks page with the statement about the tools and trademarks used and the entry ScanOSS cpe2purl with its description, its use in TrustSource CE and the View link.',
-    url: '/copyright_trademarks',
     target: content(),
   },
 ]);

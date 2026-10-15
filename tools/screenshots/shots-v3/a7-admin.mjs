@@ -8,6 +8,8 @@ const SSO = '07-auth-sso';
 const REC = 'recipes';
 const MAIFIT = '7gh7aPoBvJW4rjdYE';
 const AUTH_SERVICE = 'AowET9wDPWZyonktu';
+const RELEASE = 'tTRNSjhNc3cYAmH3e'; // approved "Example dry run" 1.0.0 on mAIfit
+const OPEN_REQUEST = 'PzHWrraDiRogcpufK'; // open approval "Example release" 1.0.0 on mAIfit (view only)
 
 const CLEAN_CSS = `
   .chat-mascot { display: none !important; }
@@ -256,6 +258,37 @@ export default [
       await page.fill('input[name=approve_version]', '1.0.0');
       await page.waitForTimeout(600);
     },
+    target: 'viewport',
+  },
+  {
+    id: `${REC}/01-first-module-to-sbom-6`,
+    alt: 'The release page of Example dry run with the SBOM, Binary links and Published keys buttons and the Approved state in the header, the tabs Overview, New vulnerabilities, Vulnerabilities and Export control, and the four modules of the release.',
+    doc: `${REC}/01-first-module-to-sbom.md`,
+    url: `/releases/${RELEASE}/overview`,
+    prepare: async (page) => { await ready(page, 'Example dry run', 'SBOM', 'Export control'); await page.waitForTimeout(1500); },
+    target: 'viewport',
+  },
+  {
+    id: `${REC}/01-first-module-to-sbom-7`,
+    alt: 'The SBOM page of the mAIfit release, version 1.0.0, with the PDF, CycloneDX, SPDX, Version and Freeze buttons, the component list with a cleared checkbox per component, and the TODOs Navigator.',
+    doc: `${REC}/01-first-module-to-sbom.md`,
+    url: `/releases/${RELEASE}/overview`,
+    prepare: async (page) => {
+      await ready(page, 'Example dry run', 'SBOM');
+      const href = await page.locator('a[title="View SBOM"]').first().getAttribute('href');
+      await page.goto(new URL(href, page.url()).href);
+      await page.addStyleTag({ content: '.chat-mascot { display: none !important; }' });
+      await waitText(page, 'CycloneDX', 'SPDX');
+      await page.waitForTimeout(2500);
+    },
+    target: 'viewport',
+  },
+  {
+    id: `${REC}/01-first-module-to-sbom-5`,
+    alt: 'The open approval Example release with the Manage binary links, Approve and Reject buttons in the header, the tabs Overview, Vulnerabilities, Licenses, Versioning, Viability, Status changes, Export control, Capabilities and SW-Quality, and the four modules of the approval.',
+    doc: `${REC}/01-first-module-to-sbom.md`,
+    url: `/approves/${OPEN_REQUEST}/overview`,
+    prepare: async (page) => { await ready(page, 'Example release', 'Approve', 'Reject'); await page.waitForTimeout(1500); },
     target: 'viewport',
   },
 ];

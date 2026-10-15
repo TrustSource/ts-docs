@@ -20,9 +20,9 @@ obligations of the EU **MDR** (Medical Device Regulation, 2017/745) and
 - A project-level **MDR/IVDR Classification** tab that holds the defaults
   for the project's modules and can import and propagate them.
 
-📸 *Screenshot: a module's MDR/IVDR Classification settings tab with the MDR Classification and IVDR Classification selectors.*
+![The MDR/IVDR Classification tab of the auth-service module settings with the MDR Classification options None, I, IIa, IIb and III, the IVDR Classification options None, A, B, C and D, both set to None, and the Update button.](../../assets/images/v3/13-capabilities/04-medical-1.webp)
 
-📸 *Screenshot: the SOUP Lists page from the Outbound menu.*
+![The SOUP files page with the Create soup file button and the list of SOUP files with the columns Created, Frozen, Project/Module, Components, Version, Edited, By and Complete, showing one SOUP file for mAIfit 1.0.0 with 406 components, by Max Mustermann, 0% complete.](../../assets/images/v3/13-capabilities/04-medical-2.webp)
 
 ## Editions
 

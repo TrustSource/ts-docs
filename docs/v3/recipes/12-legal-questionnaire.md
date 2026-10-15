@@ -82,7 +82,7 @@ the same obligation set. Two projects with identical Legal answers
 and identical component licenses yield identical obligations.
 
 > [!TIP]
-> If many projects share the same answers, create a legal template once under **Administration → Settings → Legal templates** and import it into each project. See [Legal Templates](../15-legal-manager/02-legal-templates.md).
+> If many projects share the same answers, create a legal template once under **Administration → Settings → Legal templates** and import it into each project. See [Legal templates](../06-administration/02-settings.md#legal-templates).
 
 ## Background reading
 

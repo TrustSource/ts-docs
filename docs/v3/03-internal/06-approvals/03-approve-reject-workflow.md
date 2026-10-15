@@ -39,7 +39,7 @@ Managers who have approval events enabled are notified with the reason, and the 
 > [!NOTE]
 > Once approved or rejected, the app no longer offers **Approve** or **Reject** for the request, and the binary links of an approved request can no longer be edited in the app. This keeps the audit trail intact.
 
-📸 *Screenshot: the reject dialog with the reason field.*
+![The reject dialog asking whether to reject the approval Example release, with a text field for the rejection reason and the Cancel and Yes, reject it buttons.](../../../assets/images/v3/03-internal/06-approvals/03-approve-reject-workflow-1.webp)
 
 ## Related
 

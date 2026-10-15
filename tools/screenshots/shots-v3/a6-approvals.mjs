@@ -4,7 +4,11 @@
 // list, New vulnerabilities tab, release key of an approval) and the reject dialog (needs an
 // open, non-draft request) are not taken.
 const MAIFIT = '7gh7aPoBvJW4rjdYE';
-const EXAMPLE_DRY_RUN = 'QTQTMev8bboJZcyWc';
+const EXAMPLE_DRY_RUN = 'QTQTMev8bboJZcyWc'; // promoted and approved since; the draft no longer exists
+// The approved release (the promoted dry run, still named "Example dry run").
+const RELEASE = 'tTRNSjhNc3cYAmH3e';
+// An open (non-draft) request, used only to open the reject dialog; nothing is confirmed.
+const OPEN_REQUEST = 'PzHWrraDiRogcpufK';
 const DIR = '03-internal';
 const APP = `${DIR}/06-approvals`;
 
@@ -108,5 +112,53 @@ export default [
     },
     target: '#binaryLinks .modal-content',
     alt: 'The Binary links dialog with the Link and Comment fields, the Add link button and one link with its creation date, comment, creator Max Mustermann and a Remove button.',
+  },
+  {
+    id: `${APP}/05-public-approves-1`,
+    doc: `${APP}/05-public-approves.md`,
+    url: '/settings/company/api/releases',
+    prepare: async (page, seed, h) => { await hide(page); await h.settle(page, 2000); },
+    target: async (page) => page.evaluate(() => {
+      const head = document.querySelector('.page-header, #page-header, .normalheader') || document.querySelector('.content');
+      const panels = [...document.querySelectorAll('.content .panel, .content .hpanel')].filter((p) => /Key 0/.test(p.innerText));
+      const a = (head.getBoundingClientRect().top > 40 ? head : document.querySelector('.content')).getBoundingClientRect();
+      const b = (panels[panels.length - 1] || document.querySelector('.content')).getBoundingClientRect();
+      const x = 211;
+      const y = Math.max(0, Math.min(a.top, 66));
+      return { clip: { x, y, width: 1386 - x, height: Math.min(900, b.bottom + 16) - y } };
+    }),
+    alt: 'The Release keys page with one public release key created by approving the release Example dry run 1.0.0, serving sbom, notice and csaf, with its copy, view, QR code and Delete buttons and Requested 0.',
+  },
+  {
+    id: `${APP}/06-post-release-vulnerabilities-1`,
+    doc: `${APP}/06-post-release-vulnerabilities.md`,
+    url: `/releases/${RELEASE}/new_vulnerabilities`,
+    prepare: async (page, seed, h) => { await hide(page); await h.settle(page, 5000); },
+    target: 'viewport',
+    alt: 'The New vulnerabilities tab of a release with the counters new vulnerabilities, resolved vulnerabilities and vulnerable components, Export as CSAF, and the affected components with their new advisories.',
+  },
+  {
+    id: `${DIR}/07-releases-1`,
+    doc: `${DIR}/07-releases.md`,
+    url: '/releases',
+    prepare: async (page, seed, h) => { await hide(page); await h.settle(page, 2500); },
+    target: spanClip('.releases-header', '.reactive-table'),
+    alt: 'The Releases list with All company projects selected and one release with its approval date, name, version 1.0.0, project mAIfit, contact Max Mustermann and the Link button.',
+  },
+  {
+    // Opens the reject dialog and leaves it open; the page is closed after the shot, so
+    // nothing is rejected.
+    id: `${APP}/03-approve-reject-workflow-1`,
+    doc: `${APP}/03-approve-reject-workflow.md`,
+    url: `/approves/${OPEN_REQUEST}/overview`,
+    prepare: async (page, seed, h) => {
+      await hide(page);
+      await h.settle(page, 2000);
+      await page.locator('button.reject').filter({ visible: true }).first().click();
+      await page.locator('.sweet-alert').filter({ visible: true }).first().waitFor({ timeout: 10000 });
+      await page.waitForTimeout(800);
+    },
+    target: '.sweet-alert',
+    alt: 'The reject dialog asking whether to reject the approval Example release, with a text field for the rejection reason and the Cancel and Yes, reject it buttons.',
   },
 ];

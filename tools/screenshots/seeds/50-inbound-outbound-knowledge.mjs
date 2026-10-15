@@ -1,5 +1,5 @@
 // Seed step for the Inbound, Outbound and Knowledge screenshots (docs/ce/02-inbound,
-// 04-outbound, 05-knowledge, 14-component-manager, 15-legal-manager).
+// 04-outbound, 05-knowledge).
 //
 //   - A CWE assignment for the CodeQL rule java/unused-local-variable (CWE-563), so a test
 //     page shows one badge in the assigned style. The Semgrep rule without a CWE stays

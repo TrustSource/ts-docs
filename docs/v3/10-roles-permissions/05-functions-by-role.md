@@ -57,15 +57,13 @@ Roles add up: a person with several roles can do everything any of them can do. 
 - **Project and module settings:** edit CIA and Capabilities and run their imports.
 - **Pages:** vulnerability activity.
 
-## Internal and licence-bound roles
+## Licence-bound role
 
 | Role | Gives access to |
 |---|---|
-| `component_manager` | The Component mngr. section: Manage IC, Manage COTS, Critical Components. |
-| `legal_manager` | The Legal mngr. section: Manage Legal, Legal templates, Copyright & Trademarks, and the Legal templates card in Settings. |
 | `cvd_coordinator` | Nothing inside the app; it is passed on to the CVD service. Needs license `cvdself`. |
 
-See [Internal Roles](02-internal-roles.md).
+See [Licence-bound role](01-roles-overview.md#licence-bound-role).
 
 ## Approvals
 

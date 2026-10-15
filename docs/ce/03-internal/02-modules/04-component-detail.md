@@ -45,7 +45,7 @@ The external-link icon in **Details** opens **Component Details** in a new tab. 
 - **Comment** and commercial terms, if any.
 - **Versions**: a filterable list. Each version shows the release date, purl, licenses (linked to the license page), checksums, copyright and known vulnerabilities.
 
-The **Edit** button appears for Company component manager and opens the component editor. See [Component Lake](../../05-knowledge/01-component-lake.md) and [Component Manager](../../14-component-manager/index.md).
+The **Edit** button appears for Company component manager and opens the component editor. See [Component Lake](../../05-knowledge/01-component-lake.md).
 
 ## Related
 
