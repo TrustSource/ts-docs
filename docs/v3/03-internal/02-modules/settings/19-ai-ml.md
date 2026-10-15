@@ -30,11 +30,11 @@ The bin icon removes an artifact.
 
 ## Export as CycloneDX
 
-**Export as CycloneDX** offers **AIBOM** (only the AI artifacts) and **Full BOM (components + crypto + AI)**. Both download a JSON file named after the module. The same documents are available through the API, see [Modules](../../../09-rest-api/endpoints/modules.md).
+**Export as CycloneDX** offers **AIBOM** (only the AI artifacts) and **Full BOM (components + crypto + AI)**. Both download a JSON file named after the module: `<module name>-aibom-file-0.1.0.json` and `<module name>-full-cyclonedx-0.1.0.json`. The same documents are available through the API, see [Modules](../../../09-rest-api/endpoints/modules.md).
 
 AI models also appear in the **AI / ML models** section of the component side panel; see [Component details](../04-component-detail.md).
 
-📸 *Screenshot: the AI / ML tab with the detected and managed lists.*
+![The AI / ML tab: List of AI artifacts as detected, which says that no machine-learning-model components or AI artifacts were identified, and List of AI artifacts as managed with the Add AI artifact and Export as CycloneDX buttons.](../../../../assets/images/v3/03-internal/02-modules/settings/19-ai-ml-1.webp)
 
 ## Related
 

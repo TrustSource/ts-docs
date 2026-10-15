@@ -26,4 +26,4 @@ The table lists the tabs in the order the app shows them. Infrastructure and COT
 | [Export SPDX](17-spdx-export.md) | SPDX RDF document generation. |
 | [Danger Operations](18-danger-zone.md) | Archive the module, delete its analysis history, or delete it. |
 
-📸 *Screenshot: module settings with the General tab active.*
+![The settings of the module scan_mAIfit_app.cdx.json with the General tab active: the tab bar General, Legal, Quality, Crypto management, AI / ML, Allow/Deny, Capabilities, End-of-life, CIA, Resolved obligations, OSSF, Viability and more, and the General form below.](../../../../assets/images/v3/03-internal/02-modules/settings/index-1.webp)

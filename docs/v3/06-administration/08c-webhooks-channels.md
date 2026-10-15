@@ -10,7 +10,7 @@ There are two places to manage them:
 - **Company-wide:** **Administration → Integrations → Webhooks and Channels** ("Company webhooks and channels"). Receivers created here apply to every project in your company.
 - **Per project:** the **Webhooks and Channels** tab in the project settings. Receivers created there apply to that project only.
 
-📸 *Screenshot: the Company webhooks and channels page with the Add webhook/channel button.*
+![The Company webhooks and channels page with the Add webhook/channel button and the list with one receiver: Example security channel, type Webhook, triggers Release and Approval, an example.com URL and the method POST.](../../assets/images/v3/06-administration/08c-webhooks-channels-1.webp)
 
 ## Add a webhook or channel
 

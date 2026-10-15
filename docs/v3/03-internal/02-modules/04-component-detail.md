@@ -21,7 +21,7 @@ Click a row in the **List** or **Tree** tab of a [module](02-module-detail-tabs.
 | **Comment** and **Comments** | Add a comment, or **Set status** to OK, Warning or Violation with a comment; **Reset component** removes the manual status. |
 | **History** | The last 100 entries; **Load 30 days history** shows more. |
 
-📸 *Screenshot: the Component Details side panel with Vulnerabilities and License sections.*
+![The Component Details side panel of fast-xml-builder 1.1.4: the Vulnerabilities section with the advisory GHSA-5wm8-gmm8-39j9 and its dependency path, then the license MIT with its two obligations, the Settings used for this analysis and the path Settings.](../../../assets/images/v3/03-internal/02-modules/04-component-detail-1.webp)
 
 ### Actions in the panel
 

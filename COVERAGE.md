@@ -12,7 +12,7 @@ row, append to the log). Sits at the repo root, deliberately outside
 
 | Service | Repo | Docs cover | Live in DEV | Live in PRD | Gap (docs → PRD) |
 |---|---|---|---|---|---|
-| **Core (ts-app)** | [`eacg-gmbh/ts-app`](https://github.com/eacg-gmbh/ts-app) | **v3.3.59** (feature pages, release notes and REST API, state 2026-10-10). Unpublished work (e.g. Software portfolio) is not covered. 20 pages are still short (personal pages, troubleshooting/FAQ, 7 recipes). | not verified this session | not verified this session | Screenshots are placeholders (📸) and need to be taken; the usage screenshots date from 2024. Open questions are listed in the 2026-10-10 log entry. |
+| **Core (ts-app)** | [`eacg-gmbh/ts-app`](https://github.com/eacg-gmbh/ts-app) | **v3.3.61** (text checked against the code and the DEV stage, state 2026-10-15). Unpublished work (e.g. Software portfolio) is not covered. | 3.3.61 (verified 2026-10-15) | not verified this session | 129 of 180 screenshots taken from DEV on 2026-10-15 (real data masked); 51 placeholders remain where DEV lacks the data, role or service (see `tasks/v3-sync/b-*.md`). App issues found: ts-app #202-#228. |
 | **ts-scan** | [`trustsource/ts-scan`](https://github.com/trustsource/ts-scan) | — | — | — | not yet documented in v3 track |
 | **ts-legalcheck** | Public CLI: [`trustsource/ts-legalcheck`](https://github.com/trustsource/ts-legalcheck) · SaaS service: `eacg-gmbh/ts-legalcheck` (private) · Rule-set: proprietary | **Service v2.0.0 + rule-set v4.4** | v2.0.0 + v4.4 | v2.0.0 + v4.4 | **at parity** — Legal tab + obligations documented; new Legal Questionnaire page in progress |
 | **ts-deepscan** | [`trustsource/ts-deepscan`](https://github.com/trustsource/ts-deepscan) | — | — | — | not yet documented in v3 track |
@@ -56,6 +56,14 @@ longer derives from the v2.16 SaaS baseline.
 
 ## Update log
 
+- **2026-10-15 (v3 sync, phase B)** - Core (ts-app) docs checked against 3.3.61 on the DEV stage
+  (develop.dev, company TrainCo Ltd.): the open "verify in the UI" items were confirmed or corrected,
+  and 129 of the 180 screenshot placeholders in `docs/v3/` were replaced with WebP screenshots under
+  `docs/assets/images/v3/`. Real people, companies and e-mail addresses are masked
+  (`tools/screenshots`, `TS_TRACK=v3`, manual login). Plan limits follow the DEV plan data. App
+  defects found on the way are filed as ts-app #218-#228 (phase A: #202-#217).
+- **2026-10-14 (v3 sync, phase A)** - Text of `docs/v3/` aligned with ts-app 3.3.61 from the code
+  (194 files), navigation of the project settings reordered, REST anchors fixed.
 - **2026-10-13 (CE refresh, stage 2)** - All 170 screenshot placeholders in `docs/ce/` replaced with
   screenshots of CE 1.0.0 (`6a354f3`), taken with Playwright from a local instance filled with
   fictional example data (Example Corp, `example.com` users). Images are WebP under

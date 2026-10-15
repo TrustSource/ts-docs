@@ -14,12 +14,12 @@ The project overview is the landing page when you click a project. It shows the 
     - [**Releases**](05-risks-and-releases.md): approved releases and pending approvals.
     - [**Analytics**](04-analytics.md): violations and warnings with the change against last month.
 
-    A tile that cannot be loaded shows `?` and the reason on hover.
+    A tile that cannot be loaded shows `?` and the reason, for example *Status not determinable - the OBOM service did not answer.*
 - **Module list:** the project's modules as **cards** (grid) or **rows** (table), each with approval status badge, status ribbon (OK, Warnings, Violations), compliance bars and last analysis date. The list toolbar has the **Filter** box, the state filter (**All states**, **OK**, **Warnings**, **Violations**), the **Tags** filter, the **Module states** selector, **Import**, **Add/link** and **Analyze all**, **Show archived** / **Hide archived** and the **Grid** / **Table** switch. On a narrow screen these actions move into a **More actions** menu. The grid or table choice is remembered separately for the project list and the module list.
 
 **Module states** switches the module list to the analyses approved with an earlier version of the project (**Current state** shows the modules as they are now). A note above the list then shows which approval you are looking at, with **Back to current state**. The tiles always show the current state.
 
-📸 *Screenshot: the project page with the four tiles above the module list.*
+![The mAIfit project page with the Reports, Follow and Settings buttons in the header, the Risks, Deployments, Releases and Analytics tiles and the first modules of the module list in table view.](../../../assets/images/v3/03-internal/01-projects/02-project-overview-1.webp)
 
 ## Header actions
 

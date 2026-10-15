@@ -35,7 +35,7 @@ The page header offers two actions (shown when you have the rights to use them):
 - **Import settings from project...**: copy the resolved obligations from another project. If no other project has any, the header says so instead.
 - **Propagate settings to...**: push your list to one project, to **All my n projects** or (portfolio managers) to **All n projects**.
 
-📸 *Screenshot: the Resolved obligations page with the Obligation, Key and Comment form and a list of resolved obligations.*
+![The Resolved obligations page of Example Project with Propagate settings to in the header and the form with Obligation Reproduce Copyright Notice, Key npm:example-lib, a Comment and the Add button above the still empty list.](../../../../assets/images/v3/03-internal/01-projects/settings/08-obligations-1.webp)
 
 ## Related
 

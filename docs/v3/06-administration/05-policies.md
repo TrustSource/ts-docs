@@ -5,7 +5,7 @@
 
 **Administration → Policies** collects the company-wide rules that projects and modules are measured against. The page shows four cards.
 
-📸 *Screenshot: the Policies page with the four cards.*
+![The Policies page with four cards: Opensource policy, Crypto algorithms, Component end-of-life and Risk assessment.](../../assets/images/v3/06-administration/05-policies-1.webp)
 
 | Card | What it holds |
 |---|---|

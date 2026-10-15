@@ -2,7 +2,7 @@
 
 The **Manage Profile** page ("Configure your settings") holds your personal settings in ***TrustSource***. Open it by selecting your name and roles in the header.
 
-📸 *Screenshot: the Manage Profile page with the Enable Two-Factor Authentication and Change your Password buttons, and the User, Personal access keys, Connected applications and Communication preferences panels.*
+![The Manage Profile page with the Enable Two-Factor Authentication and Change your Password buttons, the User panel with login e-mail, roles, name, correspondence e-mail, theme and language, and the Personal access keys and Connected applications panels.](../../assets/images/v3/08-personal/03-profile-1.webp)
 
 The page header has two buttons: **Enable Two-Factor Authentication** (or **Disable Two-Factor Authentication**) and **Change your Password**. The 2FA button is shown only if you sign in with a password. If your company enforces corporate login, **Change your Password** is disabled.
 

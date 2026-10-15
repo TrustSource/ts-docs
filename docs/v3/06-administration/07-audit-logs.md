@@ -7,7 +7,7 @@ The **Audit logs** page is your company's audit trail: who did what, when, and t
 
 Open **Administration → Audit logs** in the menu, or click **View all logs** on the dashboard's activity panel.
 
-📸 *Screenshot: the Audit logs page with the filter bar and the log table.*
+![The Audit logs page with the Logins history, Export as CSV and Copy to clipboard buttons, the Filter field with the Advanced button, the sorting selector, and the log table with the columns Date, Company, Name, Type and Action.](../../assets/images/v3/06-administration/07-audit-logs-1.webp)
 
 ## Read the table
 

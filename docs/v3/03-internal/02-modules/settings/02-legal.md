@@ -24,12 +24,12 @@ Click **Update** to save. A toast confirms *Legal settings changed!*.
 The buttons in the upper right:
 
 - **View history** / **Close history**: show earlier versions of the settings with author and date.
-- **Start wizard** / **View all**: switch between a step-by-step wizard (Trade Secret Protection, Sub-licensing alert, Distribution; **Next**, **Back**, **Finish**) and the full form. See the [Fill in the Legal Questionnaire](../../../recipes/12-legal-questionnaire.md) recipe (Part 2).
+- **Start wizard** / **View all**: switch between the **Legal settings wizard** (steps **Question 1** to **Question 3**: Trade Secret Protection, Sub-licensing alert, Distribution; **Next**, **Back**, **Finish**) and the full form. While the module's legal settings are incomplete, the tab opens in the wizard. See the [Fill in the Legal Questionnaire](../../../recipes/12-legal-questionnaire.md) recipe (Part 2).
 - **Import settings from Template**: apply a company legal template. The button appears only if templates exist.
 - **Import settings from Module**: copy the legal settings of another module (with a name search).
 - **Propagate settings to...**: push the settings to one other module, **All my n modules** or **All my n project modules**. Portfolio managers also see **All n modules** and **All n project modules**. Not shown while the wizard is open.
 
-📸 *Screenshot: the module Legal tab with the Legal requirements panel of the project, the Trade Secret Aspects, Licensing Strategy and Distribution of the module sections, and the action buttons in the upper right.*
+![The Legal tab in the View all mode: the Legal requirements panel with the note that the project legal settings still need completion, the sections Trade Secret Aspects, Licensing Strategy and Distribution of the module, and the buttons View history, Start wizard, Import settings from Template, Import settings from Module and Propagate settings to in the upper right.](../../../../assets/images/v3/03-internal/02-modules/settings/02-legal-1.webp)
 
 ## How the answers feed the engine
 

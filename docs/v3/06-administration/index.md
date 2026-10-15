@@ -22,4 +22,4 @@ More detail pages:
 - [API Usage](04a-api-usage.md) and [Release keys](04b-release-keys.md)
 - [Issue trackers](08a-issue-trackers.md), [LeanIX and SCANOSS](08b-leanix-scanoss.md), [Webhooks and channels](08c-webhooks-channels.md)
 
-📸 *Screenshot: the Administration section in the sidebar.*
+![The left sidebar with the Administration group expanded: Account & Billing, Identity Integration, Integrations, Settings, User Management, API keys, Policies, Enterprise Companies and Audit logs.](../../assets/images/v3/06-administration/index-1.webp)

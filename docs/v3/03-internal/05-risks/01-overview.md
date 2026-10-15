@@ -21,7 +21,7 @@ Choose **Last 3 months**, **Last 6 months** or **Last 12 months**, and **By mont
 > [!NOTE]
 > Risks that were finished before version 3.3.23, or marked done by the upgrade to 3.3.28, have no recorded resolution date. They are not drawn in the chart; a note under the chart gives their number.
 
-📸 *Screenshot: the Risk development chart with the period and granularity buttons.*
+![The Risk development chart of the Overview tab with the Last 3 months, Last 6 months and Last 12 months buttons and the By month and By week buttons, showing the risks opened per month and the open stock at the end of each month, and below it the Risk inventory cards Risks, By state, By impact class and By origin.](../../../assets/images/v3/03-internal/05-risks/01-overview-1.webp)
 
 ## Risk inventory
 

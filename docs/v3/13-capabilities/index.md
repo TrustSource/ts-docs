@@ -34,16 +34,17 @@ capability say so at the top.
 > [Community Edition](../../ce/index.md) includes a subset; each
 > capability page states its CE availability.
 
-## Training subscriptions
+## Trainings
 
-Independent of the functional capabilities above, accounts can subscribe
-to a **training package** that bundles e-learning content for using
-TrustSource. The **Trainings** entry in the Knowledge menu opens the
-training area; which trainings it offers depends on your subscription.
-If your account admin entered the address of your own training portal,
-the entry opens that portal instead.
+Independent of the functional capabilities above, the **Trainings**
+entry in the Knowledge menu opens the training catalog: e-learning
+courses on TrustSource and software supply chain topics, filtered by
+**Level** and **Tags**. Each course card shows whether the course is
+**Free** or what it costs; a paid course is bought through a checkout
+from the course. If your account admin entered the address of your own
+training portal, the entry opens that portal instead.
 
 See the [Trainings page](../05-knowledge/08-trainings.md) for how the
 training area looks in the app.
 
-📸 *Screenshot: the left navigation with the license-gated entries expanded: Products, Risks and Threat Models under Internal, CSAF and CVD cases under Outbound.*
+![The left sidebar with the Internal group expanded, showing Products, Risks and Threat Models next to the core entries, and the Outbound group expanded, showing SOUP Lists, CSAF and CVD cases.](../../assets/images/v3/13-capabilities/index-1.webp)

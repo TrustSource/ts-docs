@@ -27,4 +27,4 @@ If the same component with the same version is already in the module, you see *E
 
 **Remove** takes the component out of the module at once, without a confirmation, and logs it. A toast confirms *Component … successfully removed!*. Run an analysis to refresh the views.
 
-📸 *Screenshot: the Custom components tab with two manually added components.*
+![The Custom components tab with the Add component button and the panel Module custom components, which has no entries yet.](../../../../assets/images/v3/03-internal/02-modules/settings/16-custom-components-1.webp)

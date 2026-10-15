@@ -14,7 +14,7 @@ This page walks you through logging into ***TrustSource*** for the first time, c
 | **Corporate login (Keycloak)** | For Enterprise and Medical accounts with SSO. Under **or use Corporate login**, enter your company name in **Your company name**, click **Login**, and you are redirected to your corporate identity provider. |
 | **Enrollment link** | When an admin invites you to a company, you receive an email with a direct enrollment link. |
 
-📸 *Screenshot: the Sign in page with the Username and Password fields, the GitHub and LinkedIn buttons and the Corporate login field.*
+![The Sign in page with the Username and Password fields, the Login button, the GitHub and LinkedIn buttons and the Your company name field under or use Corporate login.](../../assets/images/v3/00-getting-started/03-first-login-1.webp)
 
 > [!NOTE]
 > Your admin can **enforce corporate IDM login** for all users in the company. When this is active, a sign-in with password, GitHub or LinkedIn into that company is refused, and everyone must authenticate through **Corporate login**. In the company switcher, such companies carry a key icon.
@@ -56,12 +56,12 @@ The interface has four main areas:
 | **Header** | Top bar | Logo, breadcrumbs, your name and roles (a link to your [profile](../08-personal/03-profile.md)), and a warning when you hold all roles. |
 | **Left sidebar** | Left edge | Main navigation: six menu groups (Overview, Inbound (Scans), Internal, Outbound, Knowledge, Administration) plus role-specific sections. The version number is shown at the bottom. |
 | **Content area** | Center | The current page, list or detail view. |
-| **Right bar** | Right edge | Quick actions: AI Assistant, Help, API documentation, Updates, Messages, Contact Account Admin, Logout. |
+| **Right bar** | Right edge | Quick actions: AI Assistant, Help, API documentation, Updates, Messages, Contact Account Admin, Monitor system health, Logout. |
 
 > [!TIP]
 > The left sidebar is **role-aware**: you only see menu items your role has access to. If something seems missing, check the [Roles & Licenses Cheat Sheet](06-roles-licenses-cheatsheet.md).
 
-📸 *Screenshot: the main layout with header, left sidebar, content area and right bar annotated.*
+![The main layout with four numbered areas: 1 the header, 2 the left sidebar, 3 the content area showing the Projects list, 4 the right bar.](../../assets/images/v3/00-getting-started/03-first-login-3.webp)
 
 ## Next steps
 

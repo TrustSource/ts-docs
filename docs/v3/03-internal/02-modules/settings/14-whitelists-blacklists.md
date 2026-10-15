@@ -42,4 +42,4 @@ If your company or the project requires approved allow lists (the company switch
 - [Allow/Deny (Project)](../../01-projects/settings/07-whitelists-blacklists.md)
 - [Open Source Policy](../../../05-knowledge/07-open-source-policy.md)
 
-📸 *Screenshot: the Allow/Deny tab with the license and component panels.*
+![The Allow/Deny tab: under Licenses the panels Always allow license and Always deny license with License, Comment and Add; under Components the panels Always allow component and Always deny component with Key, Version, Comment and Add.](../../../../assets/images/v3/03-internal/02-modules/settings/14-whitelists-blacklists-1.webp)

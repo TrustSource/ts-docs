@@ -17,7 +17,7 @@ A mass scan runs a [repository scan](05-repository-scans.md) for every component
 
 ***TrustSource*** takes every component version of that analysis whose repository it knows and schedules one scan for each. A mass scan covers at most **500 component versions**; for a larger module the request is refused with a message saying so.
 
-📸 *Screenshot: the Schedule bulk scan dialog.*
+![The Schedule bulk scan dialog with the Module selection, Yes or No for the scorecard, crypto and copyright analysis and for Scan is private, and the Close and Schedule DeepScan List buttons.](../../assets/images/v3/02-inbound/06-mass-scans-1.webp)
 
 ## Monitor and review
 

@@ -18,6 +18,10 @@ platform without having to know the underlying click-paths.
 - **Context-aware answers** that pull from your account's projects and
   components, not from a generic knowledge base.
 
+Before your first question, the assistant shows the **Chat usage policy**:
+tick its three statements and select **Confirm**. In the full-page chat,
+**View policy** shows the policy again.
+
 📸 *Screenshot: the OSCAR chat panel open alongside a project module list, with a question and answer visible.*
 
 📸 *Screenshot: the full-page chat view at /chat with a multi-turn conversation.*

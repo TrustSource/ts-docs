@@ -11,4 +11,4 @@ Select a component to open its page: the **Information** panel (key, purl, wheth
 > [!NOTE]
 > Everyone can read the catalogue. Users with the `component_manager` role also see **Add infrastructure component**, **View used as Modules** and an **Edit** button. See [Manage Infrastructure Components](../14-component-manager/01-manage-infrastructure.md).
 
-📸 *Screenshot: the infrastructure components list.*
+![The Infrastructure components list, 1196 components, with the search criteria Name, Key, Language and Description, the sort order, and the components with their categories, description, OSSF score and links.](../../assets/images/v3/05-knowledge/02-infrastructure-elements-1.webp)

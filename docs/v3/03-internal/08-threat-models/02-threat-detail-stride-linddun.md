@@ -31,9 +31,10 @@ act on here.
 - Manually arranged node positions are **saved** and preserved across
   reloads and later agent runs; Auto Layout asks for confirmation before
   discarding a manual arrangement.
-- Each node shows a **threat count badge**; components with many known
-  vulnerabilities show up to five severity pills plus a "+N more" that
-  expands the side panel's vulnerability list.
+- Each node shows a **threat count badge**. Components with known
+  vulnerabilities show one pill per vulnerability with its ID and
+  severity, at most five; further ones are counted in a "+N more" pill
+  that opens the side panel's vulnerability list.
 - Trust zones can be resized by dragging a corner (when you have edit
   rights).
 
@@ -61,7 +62,7 @@ the threat-model context. Once you set a state on such a risk, that is a
 **human decision the agent will not overwrite** on later runs.
 See [Run Modes](04-run-modes.md#what-the-agent-will-not-touch).
 
-📸 *Screenshot: the DFD viewer with a component selected and the threat side panel open.*
+![The Data Flow Diagram of a boostME threat model with the component auth-service selected: the rest of the diagram is faded, the two connected flows are labelled, and the side panel shows its type, trust zone, connections and the first of its 30 threats.](../../../assets/images/v3/03-internal/08-threat-models/02-threat-detail-stride-linddun-1.webp)
 
 ## Related
 

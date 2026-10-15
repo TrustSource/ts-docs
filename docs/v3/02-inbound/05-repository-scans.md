@@ -8,14 +8,14 @@ A repository scan (DeepScan) analyses a Git repository or a file at source level
 ## Schedule a scan
 
 1. Press **Schedule DeepScan**.
-2. Enter the **Url**. The switch **Repository / File** says whether it points to a Git repository or to a single file.
+2. Enter the **Url**. The switch **Points to** (**Repository** or **File**) says whether it points to a Git repository or to a single file.
 3. Optionally enter a **Tag** or **Branch**.
 4. Choose per option **Yes** or **No**: **Scorecard**, **Crypto** and **Copyright** analysis.
-5. For a private repository, switch authentication on and enter the **Username** and the **Password / PersonalAccessToken(PAT)**.
+5. For a private repository, set **Urls is password protected** to **Yes** and enter the **Username** and the **Password / PersonalAccessToken(PAT)**.
 6. Optionally select a deny list under **Compare effective licenses with deny list**.
 7. Press **Schedule DeepScan**.
 
-📸 *Screenshot: the Schedule DeepScan dialog.*
+![The Schedule DeepScan dialog with a repository Url and a tag filled in, the switch Points to set to Repository, Yes or No for the scorecard, crypto and copyright analysis and for Urls is password protected, and the deny list selection.](../../assets/images/v3/02-inbound/05-repository-scans-1.webp)
 
 ## The scan list
 

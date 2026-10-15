@@ -34,7 +34,7 @@ Changes are recorded from version 3.3.23; older risks start with an empty histor
 
 Edits on the Countermeasures and Tasks tabs show up too: showing the tab reads the trail again.
 
-📸 *Screenshot: the History tab with a state change from assessed to approved.*
+![The History tab of the risk Example: session token readable from browser storage, newest first: an update by Max Mustermann via UI that added a countermeasure, an update changing the state from assessed to approved and the treatment strategy from none to mitigate, an update from identified to assessed, and the start of the Created entry.](../../../assets/images/v3/03-internal/05-risks/09-risk-history-1.webp)
 
 ## Company Logs
 

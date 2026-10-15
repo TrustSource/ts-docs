@@ -4,7 +4,7 @@ Build an inventory of cryptographic algorithms used in your software.
 
 ## Steps
 
-1. Set **Crypto** to **Yes** when you start a [repository scan (DeepScan)](../02-inbound/05-repository-scans.md).
+1. When you start a [repository scan (DeepScan)](../02-inbound/05-repository-scans.md), leave **Please choose whether to include the crypto analysis** on **Yes** (the default).
 2. Review the crypto algorithms found per file in the scan results.
 3. Look up each algorithm's **PQC Status** in the [Algorithms catalogue](../05-knowledge/05-algorithms.md).
 4. Review the project's inventory on its [Crypto management](../03-internal/01-projects/settings/05-encryption.md) settings tab.

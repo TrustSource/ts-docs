@@ -25,7 +25,7 @@ Shows the project health of each component: **Stars**, **Code forks**, **Open is
 
 ## OpenSSF Scorecard report
 
-Lists the OpenSSF Scorecard of each component. Choose the whole project (**All module of** *project*) or a single module. Counters: **modules** (when the whole project is selected), **different components**, **scores**, **avg score**, plus a score distribution chart. With fewer than 50 % scored components the chart shows *Not enough data available.* Settings: [OSSF](02-modules/settings/05-ossf.md).
+Lists the OpenSSF Scorecard of each component. Choose the whole project (**All module of** *project*) or a single module. Counters: **modules** (when the whole project is selected), **different components**, **scores**, **avg score**, plus a score distribution chart. With fewer than 50 % scored components the chart shows *Not enough data available.* A **Project Goals** panel with the project description follows. Settings: [OSSF](02-modules/settings/05-ossf.md).
 
 ### Score missing components
 

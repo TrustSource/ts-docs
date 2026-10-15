@@ -34,4 +34,4 @@ Without the right to edit, the panel shows who may change it.
 - [CIA (Project)](../../01-projects/settings/03-cia.md)
 - [Risks](../../05-risks/index.md)
 
-📸 *Screenshot: the CIA tab with three requirement fields and the Risk assessment scheme panel.*
+![The CIA tab: the note that the project risk settings still need completion, the fields Confidentiality requirement (CR), Integrity requirement (IR) and Availability requirement (AR) with the Update button, and the Risk assessment scheme panel with the inherited impact classes, value scale and annual rate of occurrence, each with an Override switch, the thresholds and Save scheme.](../../../../assets/images/v3/03-internal/02-modules/settings/08-cia-1.webp)

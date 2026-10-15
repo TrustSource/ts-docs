@@ -19,7 +19,7 @@ The file is validated against the SARIF schema before it is stored; an invalid f
 > [!IMPORTANT]
 > Import from the module's **Quality** tab to attach the results to that module. A file imported on the **SW Quality Scans** page itself is stored *without a module*: it shows in the list, but it is not part of any module and creates no risks. To import for a module without opening the UI, use the API with a project and module name.
 
-📸 *Screenshot: the Import test dialog.*
+![The Import test dialog opened from the Quality tab of the module auth-service, with the Browse button for the SARIF file and the Import button.](../../assets/images/v3/02-inbound/04-sw-quality-scans-1.webp)
 
 ### Import with the API
 

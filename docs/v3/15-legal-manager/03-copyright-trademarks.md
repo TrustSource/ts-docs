@@ -18,7 +18,7 @@ The table shows **Name**, **Type** (*Copyright* or *Trademark*), **Description**
 
 On the public page each entry is shown with its name (an anchor you can link to), description and usage text, and a **View** link when a link was entered.
 
-📸 *Screenshot: the Copyrights / Trademarks list.*
+![The Copyrights / Trademarks list with the filter and the columns Name, Type, Description, Usage and Link; the entry OpenSSF Scorecard of type trademark with a Remove button.](../../assets/images/v3/15-legal-manager/03-copyright-trademarks-1.webp)
 
 ## Related
 

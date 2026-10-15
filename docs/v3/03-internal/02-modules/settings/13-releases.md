@@ -38,4 +38,4 @@ You can filter by project, module, user, branch and tag.
 
 How scans get into a module is described in [Inbound](../../../02-inbound/index.md).
 
-📸 *Screenshot: the History tab with the Module analysis table and the Module scans table.*
+![The History tab: the Module analysis table with two analyses, their license and component overview and a Remove button each, and the Module scans table below with one scan of mAIfit-app, its uploader and its dependency count.](../../../../assets/images/v3/03-internal/02-modules/settings/13-releases-1.webp)

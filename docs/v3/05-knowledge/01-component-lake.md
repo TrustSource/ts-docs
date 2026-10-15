@@ -35,4 +35,4 @@ Component managers see **Add component** on the lake page and **Edit** on a comp
 > [!TIP]
 > Users with the Company Component Manager role also find a **Critical components** button here, which opens the company critical-components report.
 
-📸 *Screenshot: the three search cards, and a Registry search result list.*
+![A Registry search for lodash in the Components lake: the results with name, description, package icon, license and links to homepage and repository.](../../assets/images/v3/05-knowledge/01-component-lake-1.webp)

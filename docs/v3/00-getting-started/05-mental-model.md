@@ -29,7 +29,7 @@ The top-level tenant. All your projects, products, users, policies and integrati
 
 An organizational container. A project groups related modules, typically one project per software product line, business unit or team. Projects carry their own legal and obligation settings, default project / compliance manager, integration credentials (Jira, GitHub, TFS) and policy overrides.
 
-📸 *Screenshot: a project page with its tiles (Risks, Deployments, Releases, Analytics) above the module list.*
+![The mAIfit project page with the Risks, Deployments, Releases and Analytics tiles above its list of 16 modules with their state, components and legal and security bars.](../../assets/images/v3/00-getting-started/05-mental-model-1.webp)
 
 ### Module
 
@@ -42,7 +42,7 @@ The **unit of analysis** in ***TrustSource***. A module represents one piece of 
 
 A module belongs to at most one project; a module that is not assigned to a project is listed under **Unassigned**. Module-level settings can override project-level defaults where it makes sense.
 
-📸 *Screenshot: a module page with its tabs List, Tree, Graph, Legal and DeepScans (plus Quality and OBOM when licensed) and the Settings and Initiate approval buttons.*
+![The auth-service module page with the views List, Tree, Graph, Legal, DeepScans, Quality and OBOM, the Settings, Analyse, Reports and Stats buttons, the component list and the details of the selected component.](../../assets/images/v3/00-getting-started/05-mental-model-2.webp)
 
 ### Infrastructure Module
 
@@ -57,7 +57,7 @@ Concretely, an Infrastructure Module is a Module that points to one of the entri
 
 - Vulnerabilities and license findings for that infrastructure entry show up in the project just like for any other module.
 - It participates in approvals, reports, BoMs and SBOMs.
-- You can mark it as `public` (visible in shared SBOMs) or keep it internal-only.
+- When you add it, **Is open source module** records whether the element is open source; without the tick its privacy is set to private.
 
 Use Infrastructure Modules whenever you want to be honest about the **complete** runtime and distribution surface of your software, which is increasingly required by frameworks like the EU CRA, NIS2 and customer due-diligence questionnaires.
 
@@ -82,7 +82,7 @@ A product is **what you ship to the customer**. It can contain one or more modul
 > [!NOTE]
 > The Products module is gated by the `products` license feature. Ask your ***TrustSource*** contact if you can't find the menu entry.
 
-📸 *Screenshot: a product page with its eight tabs (Information, Solutions, Classification, Photos, Documents, Contacts, Support, Misuse).*
+![The Products page with the product tree on the left and Example Fridge FR-100 selected, showing the tabs Information, Solutions, Classification, Photos and Documents, with more tabs behind the arrow.](../../assets/images/v3/00-getting-started/05-mental-model-4.webp)
 
 ## Two cross-cutting ideas
 

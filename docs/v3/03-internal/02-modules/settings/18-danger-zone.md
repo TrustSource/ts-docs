@@ -32,4 +32,4 @@ Click **Delete module** and confirm *Are you sure you want to delete module …?
 
 Archiving, unarchiving and deleting a module write an entry to the audit log, see [Audit Logs](../../../06-administration/07-audit-logs.md).
 
-📸 *Screenshot: the Danger Operations tab with the three operations.*
+![The Danger Operations tab, Here starts the Danger Zone, with the three operations Archive module, Delete history and Delete module.](../../../../assets/images/v3/03-internal/02-modules/settings/18-danger-zone-1.webp)

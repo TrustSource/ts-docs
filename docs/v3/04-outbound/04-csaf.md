@@ -80,7 +80,7 @@ Rules:
 
 A restricted advisory is not meant for the public. You give each recipient a **feed key**. The recipient uses the key to list and read exactly the advisories the key allows.
 
-Create and manage keys under **Administration → API keys** (page **Scanners & API keys**), card **CSAF feed keys**. The card is shown only with the `csaf` feature. **Create CSAF feed key** opens the dialog.
+Create and manage keys under **Administration → API keys** (page **Scanners & API keys**): the card **CSAF feed keys** opens the page of the same name. The card is shown only with the `csaf` feature. **Create key** opens the dialog **Create CSAF feed key**; **Create** saves the key.
 
 | Field | What it does |
 |---|---|
@@ -135,7 +135,7 @@ An AMBER+STRICT advisory is served only to a feed key that is **bound to a produ
 
 📸 *Screenshot: the AMBER+STRICT option on the Meta information tab, with the products the advisory concerns.*
 
-📸 *Screenshot: the Create CSAF feed key dialog with TLP levels and Products.*
+![The Create CSAF feed key dialog with the Name field, the TLP levels to select, the Products selection for AMBER+STRICT advisories, the Include drafts option and the Create button.](../../assets/images/v3/04-outbound/04-csaf-3.webp)
 
 ### What to expect
 

@@ -6,7 +6,7 @@
 
 Invite colleagues, set their roles and remove users. Open **Administration → User Management**.
 
-📸 *Screenshot: the User Management page with the user list, the CSV import and the invite form.*
+![The User management page: the user list with login, name, roles and the remove and RTBF buttons per user, the Import users from CSV panel with its rules, and the start of the Invite your colleagues form.](../../assets/images/v3/06-administration/03-user-management-1.webp)
 
 If your plan has a user limit and you exceed it, the page shows "Limit was reached": contact your account manager to upgrade, or remove the number of users it names.
 
@@ -34,7 +34,7 @@ Use **Import users from CSV** to invite, change or remove many users at once.
 
 1. Prepare a semicolon-separated CSV file of up to 1 MB. Select **(see sample)** for an example. The first line holds the column names `matchID;Name;Email;Company;Roles`.
 2. Select **Browse...** and choose the file. The page shows **Expected results** per line: **Invited**, **Updated**, **Removed**, **Not found** or **Error**.
-3. Select **Import CSV** to run the import. **Clear results** resets the panel.
+3. Select **Import CSV** to run the import. Until you choose a file, this button reads **Try importing CSV** and is disabled. **Clear results** resets the panel.
 
 | Situation | Result |
 |---|---|

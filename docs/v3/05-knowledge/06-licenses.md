@@ -22,7 +22,7 @@ If ***TrustSource*** does not hold the text, the page says so and links to the o
 
 The catalogue also contains the special identifiers `NO-LICENSE`, `PUBLIC-DOMAIN` and `UNKNOWN`. Use them when you assign a license by hand to a component the scan could not match.
 
-📸 *Screenshot: the license list with the All and Top List tabs.*
+![The Licenses page, 417 licenses known, with the tabs All and Top List; the All tab lists the licenses alphabetically.](../../assets/images/v3/05-knowledge/06-licenses-1.webp)
 
 ## Related
 

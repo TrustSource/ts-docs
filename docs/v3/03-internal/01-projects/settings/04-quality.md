@@ -1,7 +1,7 @@
 # Quality (Project)
 
 > [!NOTE]
-> **Required role:** everyone who can open the project settings reads the tab. Managers who are the project's default project manager or default compliance manager (or any manager while none is set) can change it. The risk switches need write access to the tab and the role `account_admin`, `manager` or `compliance_manager`.
+> **Required role:** everyone who can open the project settings reads the tab. `manager` users who are the project's default project manager (or any `manager` while none is set) can change it. The risk switches need write access to the tab and the role `account_admin`, `manager` or `compliance_manager`.
 
 The Quality tab defines which test tools must deliver results for the modules of this project, and whether findings create risks.
 
@@ -15,7 +15,7 @@ The panel **Define test requirements** has one row per required tool, for exampl
 
 Rows that come from the company's quality list carry the label **in Company**. Every module of the project shows the project rows with the label **in Project**. The test results are reported on the **SW-Quality** tab of an approval.
 
-📸 *Screenshot: the Quality tab with the Define test requirements panel and the Risk register panel.*
+![The Quality tab of mAIfit with the Define test requirements panel, its Tool selector, the Add button and one required tool, and the Risk register panel with its three switches for SARIF weaknesses, vulnerabilities and OBOM findings.](../../../../assets/images/v3/03-internal/01-projects/settings/04-quality-1.webp)
 
 ## Risk register
 

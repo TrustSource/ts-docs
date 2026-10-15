@@ -2,7 +2,7 @@
 
 Field-level permissions for the **module** settings tabs. For the codes, role abbreviations and contexts, see the [project settings matrix](06-settings-permission-matrix.md#how-to-read-the-tables).
 
-📸 *Screenshot: the module settings tabs.*
+![The module settings of auth-service with the tabs General, Legal, Quality, Crypto management, AI / ML, Allow/Deny, Capabilities, End-of-life, CIA, Resolved obligations, OSSF, Viability and more, and the first General fields.](../../assets/images/v3/10-roles-permissions/06a-module-settings-matrix-1.webp)
 
 Roles are combined with **OR**. See [Permission Model](03-permission-model.md).
 

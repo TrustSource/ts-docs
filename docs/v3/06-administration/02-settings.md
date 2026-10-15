@@ -7,7 +7,7 @@
 
 The **Settings** page ("General settings") is the entry point for company-wide configuration. It shows one card per settings group. What you see depends on your role: account admins see every card, other roles only the cards that belong to their work.
 
-📸 *Screenshot: the General settings page with the card grid.*
+![The General settings page with one card per settings group: General info, FOSS liaison, PSIRT contacts, Written offer, License allow/deny, Component allow/deny, Encryption, Quality, Company tags, Private licenses, Legal templates and Private algorithms.](../../assets/images/v3/06-administration/02-settings-1.webp)
 
 ## Cards
 

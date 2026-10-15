@@ -48,4 +48,4 @@ A manager or compliance manager can edit only if they are the module's default p
 > [!TIP]
 > An infrastructure module hides the tabs for Quality, Crypto management, AI / ML, Allow/Deny, Capabilities, MDR/IVDR Classification, Custom components, History and Export SPDX. See [Infrastructure Modules](../03-infrastructure-modules.md).
 
-📸 *Screenshot: the General tab with name, project, tags, managers and the confidence level hint.*
+![The General tab: Name, Description, Assigned Project mAIfit-app, Type of architecture, Tags with the link to the company tags, Default project manager, Default compliance manager, Members, Link with LeanIX, Module Identifier, Default confidence level and Repository, with the Update and View/execute deepScan buttons.](../../../../assets/images/v3/03-internal/02-modules/settings/01-general-1.webp)

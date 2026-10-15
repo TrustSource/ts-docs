@@ -13,7 +13,7 @@ Public approves let you share the documents of an approved release with **extern
 
 You do not have to mark an approval as public.
 
-To see the keys of a release or create another one, click **Published keys** on the [release](../07-releases.md). To limit what a key serves, change its scope, show its URL as a QR code, or take it offline, open **Administration → API keys → Release keys**. See [Release keys](../../06-administration/04b-release-keys.md).
+To see the keys of a release, copy, publish, unpublish or delete one, or create another one, click **Published keys** on the [release](../07-releases.md). To limit what a key serves, change its scope, show its URL as a QR code, or take it offline, open **Administration → API keys → Release keys**. The **API keys** menu entry is shown to `account_admin` only. See [Release keys](../../06-administration/04b-release-keys.md).
 
 The **Packageurl** you enter in the [approval wizard](01-request-approval.md#the-five-steps) is stored with the approval and identifies the release for the public vulnerability exchange (VEX).
 

@@ -2,7 +2,7 @@
 
 What each role can do, one role at a time. Use it to decide which roles a person needs. Menu details are on [Functions by Area](04-functions-by-area.md); field-level rights in project and module settings are in the [Settings Permission Matrix](06-settings-permission-matrix.md).
 
-📸 *Screenshot: the role selection of a user in User Management, with several roles selected.*
+![The user list in User Management: each user has a Roles field with several roles, for example Developer, Compliance manager, Portfolio manager and Account admin.](../../assets/images/v3/10-roles-permissions/05-functions-by-role-1.webp)
 
 Roles add up: a person with several roles can do everything any of them can do. License flags and account types can hide entries on top of that.
 

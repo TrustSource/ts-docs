@@ -8,7 +8,7 @@ The **Messages** page ("All messages available on this page. You may filter them
 
 | Folder | What it holds |
 |---|---|
-| **Inbox** | Your messages. |
+| **Inbox** | Your messages, including the marked ones. |
 | **Marked** | Messages you flagged. |
 | **Trash** | Messages you moved to the trash. |
 
@@ -22,7 +22,7 @@ A badge on a folder button shows its number of unread messages.
 - In **Trash**, **Empty Trash now** deletes all messages in it.
 - **See more...** next to a message opens the related module, project, approval or report.
 
-The table shows **From**, a type icon, **Message** and **Date**.
+The table shows **From**, a type icon, **Message** and **Date**. The **Filter** field above it searches the listed messages.
 
 ## Filter by type
 

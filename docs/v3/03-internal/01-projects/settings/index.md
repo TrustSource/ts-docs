@@ -22,4 +22,4 @@ Open the project settings with the cogs icon on the [project page](../02-project
 > [!TIP]
 > On the General tab, **Propagate to modules** pushes the tags, default managers or members to all modules of the project at once. Legal and MDR/IVDR Classification offer **Propagate settings to...**, which copies the settings to other projects.
 
-📸 *Screenshot: project settings with the General tab active showing Name, Application goals, Tags and the default manager fields with Propagate to modules.*
+![The project settings of Example Project with the General tab active: Name, Application goals with Upload file, Tags, Max Mustermann as default project manager and default compliance manager, each with a Propagate to modules button, and Members.](../../../../assets/images/v3/03-internal/01-projects/settings/index-1.webp)

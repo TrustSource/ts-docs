@@ -32,7 +32,7 @@ tooling.
 
 📸 *Screenshot: the CSAF document editor with the Metadata tab active and an advisory under preparation.*
 
-📸 *Screenshot: the CSAF feed keys on the Scanners & API keys page (Administration → API keys), with the Create CSAF feed key dialog open.*
+![The CSAF feed keys page under Scanners & API with the Create CSAF feed key dialog open: Name, the TLP levels WHITE, GREEN, AMBER and RED, Products and Include drafts.](../../assets/images/v3/13-capabilities/06-csaf-trusted-provider-2.webp)
 
 ## Editions
 

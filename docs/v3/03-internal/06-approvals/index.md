@@ -18,7 +18,9 @@ Dry run (draft) → Open request → Approved / Rejected
 
 ## The approvals list
 
-Open **Internal → Approvals**. The page **Your approvals** lists the requests, newest first, and opens the approval when you click a row. A compliance manager sees every request of the company, dry runs included. A manager sees the requests of the projects they manage (projects without assigned users, or where they are the default project manager) and their own dry runs.
+Open **Internal → Approvals**. The page **Your approvals** lists the requests, newest first, and opens the approval when you click a row. A compliance manager can see every request of the company, dry runs included. A manager sees the requests of the projects they manage (projects without assigned users, or where they are the default project manager) and their own dry runs.
+
+The selector next to the filter field narrows the list: **My requests** (the default) shows the requests assigned to you, **Unassigned** those without an assignee, and **All requests** everything you can see.
 
 | Column | Meaning |
 |---|---|
@@ -30,7 +32,7 @@ Open **Internal → Approvals**. The page **Your approvals** lists the requests,
 | **Notice**, **SOUP** | How far the notice file and the SoUP list are completed, in percent. **SOUP** appears only when SoUP reports are part of your plan. |
 | (last column) | **Approve** and **Reject** for open requests (compliance manager only), **Remove DRAFT** for dry runs, or the result with approver and date. |
 
-The status buttons above the list show or hide each state:
+The four status buttons in the page header show or hide each state. They show icons only (folder, check mark, ban sign and hourglass):
 
 | Button | Status |
 |---|---|
@@ -52,4 +54,4 @@ A request is a draft whatever else is set on it; otherwise it counts as approved
 | [Public Approves](05-public-approves.md) | Sharing approved releases with external stakeholders. |
 | [Post-Release Vulnerabilities](06-post-release-vulnerabilities.md) | Monitoring for new CVEs after a release. |
 
-📸 *Screenshot: the approvals list with status filter and assignment column.*
+![The Your approvals list showing All requests, with the Create button and the four status buttons in the header and two dry runs in the table, one assigned to Max Mustermann and one with the assign to me link.](../../../assets/images/v3/03-internal/06-approvals/index-1.webp)

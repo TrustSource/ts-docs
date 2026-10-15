@@ -39,7 +39,7 @@ The **CI/CD Integrations** catalogue lists the available scanners with links to 
 | **Development languages** | Java, JavaScript, NodeJS, C/C++, PHP, Python, Ruby |
 | **IDE Plugins** | VisualStudio |
 
-📸 *Screenshot: the CI/CD Integrations catalogue.*
+![The CI/CD Integrations page with the groups Package managers, Continuous development tools, Containers, Development languages and IDE Plugins, each integration with its Github, Wiki or plugin links.](../../assets/images/v3/02-inbound/03-cicd-scan-1.webp)
 
 ## The scan list
 
@@ -64,9 +64,9 @@ The header shows project, module, branch, tag and the number of binary links, an
 - **Notices**: appears when validation found unknown licenses; check that they do not affect your company.
 - **Re-Process**: for `manager` and `compliance_manager`: runs processing and analysis of the scan again, for example after policies changed.
 
-The body shows the dependency tree. Switch between **List** and **Diagram**, **Expand** or **Collapse** all levels, and **Show linked** or **Hide linked** modules. Selecting a dependency opens **Reported properties** at its side: purl, name, key, versions, description, homepage, repository, scanned and parsed licenses, checksum, meta data and crypto algorithms. **Lake** opens the component in the [Component Lake](../05-knowledge/01-component-lake.md).
+The body shows the dependency tree. Switch between **List** and **Diagram**, **Expand** or **Collapse** all levels, and **Show linked** or **Hide linked** modules. Selecting a dependency opens **Reported properties** at its side: purl, name, key, versions, whether it is private, description, homepage, repository, scanned and parsed licenses, checksum, meta data and crypto algorithms. For the module's own component (the root of the tree), a `compliance_manager` or `manager` of an account with private licenses can **Select license**; the selection is saved per module and re-applied on the next analysis run. **Lake** opens the component in the [Component Lake](../05-knowledge/01-component-lake.md).
 
-📸 *Screenshot: a scan with the dependency tree and the Reported properties panel.*
+![The scan of boostME - auth-service with the Binary links, Analysis and Re-Process buttons, the dependency tree in list view on the left and the Reported properties of the selected dependency @aws-sdk/core on the right.](../../assets/images/v3/02-inbound/03-cicd-scan-2.webp)
 
 ## Related
 

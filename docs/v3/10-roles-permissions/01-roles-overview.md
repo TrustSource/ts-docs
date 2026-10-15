@@ -2,7 +2,7 @@
 
 ***TrustSource*** knows eight roles that account admins can assign. Roles are set per company, and a user can hold several at once; the rights add up. Two internal roles and one licence-bound role are described under [Internal Roles](02-internal-roles.md).
 
-📸 *Screenshot: the Roles drop-down in User Management.*
+![User Management with the Roles field of each user: the assigned roles appear as tags, for example Developer, Manager and Account admin, and your own roles are greyed out.](../../assets/images/v3/10-roles-permissions/01-roles-overview-1.webp)
 
 | Role | Key | Focus |
 |---|---|---|

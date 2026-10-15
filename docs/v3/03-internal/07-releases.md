@@ -41,7 +41,7 @@ The header shows the name, **Packageurl** and description of the release, and th
 
 - **SBOM** opens the SBOM file of the release.
 - **Binary links** shows the binary links of the release, read-only. See [Binary Linking](06-approvals/04-binary-linking.md).
-- **Published keys** lists the release keys and creates new ones with **Create new key**. See [Public Approves](06-approvals/05-public-approves.md).
+- **Published keys** lists the release keys, lets you copy, publish, unpublish or delete them, and creates new ones with **Create new key**. See [Public Approves](06-approvals/05-public-approves.md).
 - **Approved** shows who approved the release and when.
 
 | Tab | What it shows |

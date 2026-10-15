@@ -19,13 +19,13 @@ Select a row to open the algorithm.
 
 ### PQC status
 
-The status is shown as a coloured label, ordered here from best to worst: **Quantum-Safe**, **Resistant**, **Not applicable**, **n.f.**, **Limited**, **Vulnerable**, **Broken**. For a broken algorithm the year is added in brackets.
+The status is shown as a coloured label, ordered here from best to worst: **Quantum-Safe**, **Resistant**, **Not Applicable**, **n.f.**, **Limited**, **Vulnerable**, **Broken**. For a broken algorithm the year is added in brackets.
 
 ## Algorithm details
 
 The page shows **Information** (key, name, strength, category, year invented, authors, and whether and when it was broken), the **PQC Status** with score and notes, and, where available, tables of **Substitutes** (with their PQC status), **References** and **Standards**. A red **Denied in Company** label appears when your company has denied the algorithm in its [policies](../06-administration/05-policies.md).
 
-📸 *Screenshot: the algorithm list filtered by PQC status.*
+![The Algorithms list filtered by the PQC Status Vulnerable, with the PQC label, algorithm key and name, strength, year invented, category and substitutes of each algorithm.](../../assets/images/v3/05-knowledge/05-algorithms-1.webp)
 
 ## Related
 

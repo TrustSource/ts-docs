@@ -28,4 +28,4 @@ Each click on **Generate** creates a new document; earlier ones stay in the list
 > [!NOTE]
 > Your account type decides whether SPDX export is part of your plan, see [Roles & Licenses Cheat Sheet](../../../00-getting-started/06-roles-licenses-cheatsheet.md). For a full SBOM in CycloneDX, see [SBOM](../../../04-outbound/01-sbom-cbom.md).
 
-📸 *Screenshot: the Export SPDX tab with the Generate button and an export marked finished.*
+![The Export SPDX tab with the Generate button, the Filter box and one export in the table with its ID, the status generating rdf file and the creation date.](../../../../assets/images/v3/03-internal/02-modules/settings/17-spdx-export-1.webp)

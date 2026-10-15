@@ -54,12 +54,12 @@ Account type and plan features are not license flags:
 
 | Capability | Free | Professional | Corporate | Enterprise | Medical |
 |---|---|---|---|---|---|
-| Projects | 1 | 3 | 20 | unlimited | unlimited |
-| Modules | 5 | 20 | 200 | unlimited | unlimited |
+| Projects | 1 | 10 | 40 | unlimited | unlimited |
+| Modules | 5 | 200 | 400 | unlimited | unlimited |
 | Components | 500 | 2,000 | unlimited | unlimited | unlimited |
-| Users | 1 | 10 | 50 | unlimited | unlimited |
+| Users | 1 | 10 | 100 | unlimited | unlimited |
 | SPDX export | - | - | ✓ | ✓ | ✓ |
-| Full reporting | - | - | ✓ | ✓ | ✓ |
+| Full reporting | - | ✓ | ✓ | ✓ | ✓ |
 | Jira / LeanIX | - | - | ✓ | ✓ | ✓ |
 | Multi-company hierarchy | - | - | - | ✓ | ✓ |
 | Cascading auth (Keycloak) | - | - | - | ✓ | ✓ |

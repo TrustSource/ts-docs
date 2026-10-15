@@ -16,7 +16,7 @@ compares it against the last agent run, and produces:
 - An updated **OTM (Open Threat Model) v0.2.0** document per run,
   stored as an audit trail.
 
-📸 *Screenshot: an OTM run detail page with the improvement-summary hints and a link to the DFD viewer.*
+![The details of a boostME threat model run in OTM format: the Status, Lifecycle and Download buttons and the data flow diagram with trust zones, services and their open threat counts.](../../assets/images/v3/13-capabilities/07-threat-model-agent-1.webp)
 
 Risks that the agent creates in the risk register carry
 `origin: TMA Assessment` so they are distinguishable from manually
@@ -69,9 +69,11 @@ sharpen the input to the next run: modules without a description,
 modules without a scan, components that landed in the fallback trust
 zone, assets without CIA classification, absent infrastructure
 evidence, and open questions the model could not resolve. The
-summary travels with the OTM (`project.attributes.improvementHints`)
-and is surfaced in the UI, giving the security / compliance owner a
-short checklist for the next iteration.
+summary travels with the OTM (`project.attributes.improvementHints`),
+giving the security / compliance owner a short checklist for the next
+iteration. The app has no separate list for it: open a run and switch
+the diagram from **Graph** to **Raw** to read the hints in the OTM
+document.
 
 ## Editions
 
@@ -80,7 +82,7 @@ short checklist for the next iteration.
   deployment (it depends on hosted LLM inference and the runs
   DynamoDB store).
 
-📸 *Screenshot: the Threat Modelling page with the Import and Generate buttons and the Generate threat model dialog open on the Stage selector (Run all, Build model, Generate risks, Develop countermeasures).*
+![The Threat Modelling page with the Import and Generate buttons and the Generate threat model dialog open, with the Project selector and the Stage selector set to Run all.](../../assets/images/v3/13-capabilities/07-threat-model-agent-2.webp)
 
 ## Related
 

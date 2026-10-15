@@ -21,9 +21,9 @@ that shipment.
 - **Solutions** view that groups multiple modules into a single
   shippable product offering.
 
-📸 *Screenshot: the Products list.*
+![The Products page with the expanded Tree of Products: the class Example Home Appliances with the families Example Fridges and Example Ovens and their variants and versions.](../../assets/images/v3/13-capabilities/03-product-1.webp)
 
-📸 *Screenshot: a product page open on the Classification tab.*
+![Example Fridge FR-100 open on the Classification tab: Classified as IMPORTANT Class 1, with sample areas for this class listed below.](../../assets/images/v3/13-capabilities/03-product-2.webp)
 
 ## Editions
 

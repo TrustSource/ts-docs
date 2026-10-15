@@ -12,7 +12,7 @@ The license details page shows what a license says and how your policy rates it.
 - **Status label** (`legal_manager` only): the license's rating under your company policy next to the title.
 - **Edit** (`legal_manager` only): opens the license editor. See [Licenses](../../05-knowledge/06-licenses.md).
 
-📸 *Screenshot: the license details page with the search box and the license text.*
+![The license details page of Apache License 2.0 with the key Apache-2.0, the Search in license text box at the top right and the beginning of the license text.](../../../assets/images/v3/03-internal/02-modules/05-license-detail-1.webp)
 
 ## From the Legal tab
 

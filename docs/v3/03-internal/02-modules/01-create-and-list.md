@@ -31,7 +31,7 @@ If your company has reached its module limit, the list shows a **Limit was reach
 
 A scan submitted through the REST API creates its module on the fly if it does not exist yet. See [CI/CD scan](../../02-inbound/03-cicd-scan.md).
 
-📸 *Screenshot: the Add/link module dialog with the Module type selector.*
+![The Add/link module dialog with Module type set to Create custom module, a Module name entered, and the Close and Create module buttons.](../../../assets/images/v3/03-internal/02-modules/01-create-and-list-1.webp)
 
 ## The module list
 

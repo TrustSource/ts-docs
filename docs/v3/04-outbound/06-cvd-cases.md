@@ -30,7 +30,7 @@ created/updated) with a text filter and "Load more" paging. Filtering
 searches everything the list shows: case number, advisory id, status,
 embargo, origin and dates.
 
-📸 *Screenshot: the CVD cases list with the state and embargo columns.*
+![The CVD cases list with the New case button, the filter and the columns Case, Advisory ids, Status, CS state, Embargo, Origin, Created and Updated; one active case from external intake with a CVE and a GHSA id and embargo None.](../../assets/images/v3/04-outbound/06-cvd-cases-1.webp)
 
 ## Creating a case
 
@@ -41,7 +41,7 @@ such as GHSA, RHSA, DSA, PYSEC and around fifty more, not only CVE), package URL
 proof of concept, an estimated CVSS v3.1/v3.0 vector (the score is computed
 as you type), and the TrustSource projects and modules the issue affects.
 
-📸 *Screenshot: the New CVD case form with the CVSS vector field.*
+![The New CVD case form further down, with the vulnerability details and the estimated CVSS vector CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H entered and its computed score.](../../assets/images/v3/04-outbound/06-cvd-cases-2.webp)
 
 ## Opening a case from a report
 
