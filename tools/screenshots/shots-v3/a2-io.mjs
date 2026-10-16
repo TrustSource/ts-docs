@@ -117,7 +117,7 @@ const shots = [
   {
     id: `${IN}/03-cicd-scan-1`,
     doc: `${IN}/03-cicd-scan.md`,
-    alt: 'The CI/CD Integrations page with the groups Package managers, Continuous development tools, Containers, Development languages and IDE Plugins, each integration with its Github, Wiki or plugin links.',
+    alt: 'The CI/CD Integrations page with the groups Package managers, Continuous development tools, Containers, Development languages and IDE Plugins, each integration with its GitHub, Wiki or plugin links.',
     url: '/scanners',
     prepare: async (page) => hide(page),
     target: 'viewport',

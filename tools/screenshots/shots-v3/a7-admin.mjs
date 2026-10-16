@@ -177,7 +177,7 @@ export default [
   },
   {
     id: `${ADM}/08-integrations-1`,
-    alt: 'The Integrations page with six tiles: Github, Jira, TFS, SCANOSS, Webhooks and Channels, and LeanIX.',
+    alt: 'The Integrations page with six tiles: GitHub, Jira, TFS, SCANOSS, Webhooks and Channels, and LeanIX.',
     doc: `${ADM}/08-integrations.md`,
     url: '/settings/company/integrations',
     prepare: async (page) => { await ready(page, 'LeanIX'); },

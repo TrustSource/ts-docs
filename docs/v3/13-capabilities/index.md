@@ -22,7 +22,7 @@ or may not be present in a given account.
 | [Product](03-product.md) | Product-level classification incl. CRA scope, contacts, support data | `products` |
 | [Medical](04-medical.md) | SOUP reports and MDR/IVDR module classification | `medical` or plan feature `soup_report` (SOUP); Medical account type (MDR/IVDR) |
 | [CVD](05-cvd.md) | Coordinated Vulnerability Disclosure intake and triage | `psirt` |
-| [CSAF Trusted Provider](06-csaf-trusted-provider.md) | Publish CSAF advisories as a registered trusted provider | `csaf` |
+| [CSAF Trusted Provider](06-csaf-trusted-provider.md) | Publish CSAF advisories following the CSAF trusted provider requirements | `csaf` |
 | [Threat Modeling Agent](07-threat-model-agent.md) | Automated STRIDE-per-Element threat modelling with human-in-the-loop review | `threat` |
 
 The exact set of capabilities available on your account depends on

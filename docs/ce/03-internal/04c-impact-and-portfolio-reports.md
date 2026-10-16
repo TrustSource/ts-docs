@@ -61,6 +61,8 @@ If no integration is configured for the project, the page says so and offers **S
 
 ![The CVE impact report for CVE-2022-24785: the CVE description with score 7.5, CWE-22 and the CVSS vector, Send alert and Export as PDF, and the two impacted projects Demo project with its project and compliance manager and Webshop with the module webshop-frontend.](../../assets/images/ce/03-internal/04c-impact-and-portfolio-reports-1.webp)
 
+*The CVE description in the screenshot comes from the [GitHub Advisory Database](https://github.com/advisories) (CC BY 4.0).*
+
 ## Related
 
 - [Reports hub](04-reports.md)

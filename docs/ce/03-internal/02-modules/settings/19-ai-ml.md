@@ -7,7 +7,7 @@ The **AI / ML** tab manages the AI artifacts of a module, the basis of its **AIB
 
 ## List of AI artifacts as detected
 
-The upper panel lists the machine-learning models and AI artifacts found in the module's components, for example `stable-diffusion-xl-base [1.0] · text-to-image`. If there are none, it reads *No machine-learning-model components or AI artifacts identified*. Models arrive with a scan or a CycloneDX import.
+The upper panel lists the machine-learning models and AI artifacts found in the module's components, for example `image-classifier [1.0] · image-classification`. If there are none, it reads *No machine-learning-model components or AI artifacts identified*. Models arrive with a scan or a CycloneDX import.
 
 ## List of AI artifacts as managed
 
@@ -17,13 +17,13 @@ Click **Add AI artifact** (or the pencil on a row for **Edit AI artifact**), fil
 
 | Field | Example |
 |---|---|
-| **Name** (required) | `stable-diffusion-xl-base` |
+| **Name** (required) | `image-classifier` |
 | **Version** | `1.0` |
-| **Provider** | `Stability AI` |
-| **Task** | `text-to-image` |
-| **Model family** | `diffusion` |
-| **Architecture** | `Stable Diffusion with Refiner` |
-| **PURL** | `pkg:huggingface/stabilityai/stable-diffusion-xl-base-1.0` |
+| **Provider** | `Example AI` |
+| **Task** | `image-classification` |
+| **Model family** | `vision-transformer` |
+| **Architecture** | `ViT-B/16` |
+| **PURL** | `pkg:huggingface/example-org/image-classifier@1.0` |
 | **Comment** | optional note |
 
 The bin icon removes an artifact.

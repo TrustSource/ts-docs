@@ -5,9 +5,9 @@
 
 The **CSAF Trusted Provider** capability lets your organisation publish
 Common Security Advisory Framework (CSAF) advisories from
-***TrustSource*** in a way that meets the requirements of the
-[OASIS CSAF Trusted Provider](https://oasis-open.github.io/csaf-documentation/)
-program, making your advisories machine-readable, discoverable through
+***TrustSource*** following the requirements of the trusted provider role
+defined in the [OASIS CSAF 2.0](https://oasis-open.github.io/csaf-documentation/)
+standard, making your advisories machine-readable, discoverable through
 the trusted-provider directory, and consumable by downstream automated
 tooling.
 

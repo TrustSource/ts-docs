@@ -4,7 +4,7 @@
 
 It is built around one idea: every piece of software you ship has a known and complete bill of materials, and every release is documented in a way that holds up to an audit.
 
-TrustSource CE is **self-hosted**. You run it on your own infrastructure with Docker Compose, and your data stays there. It is **open source** under the AGPL-3.0; the source code is at [github.com/TrustSource/ts-core-ce](https://github.com/TrustSource/ts-core-ce), and the **Source code (AGPL-3.0)** link at the bottom of the sidebar points to it.
+TrustSource CE is **self-hosted**. You run it on your own infrastructure with Docker Compose, and your data stays there. It is **open source** under the [AGPL-3.0-only](https://www.gnu.org/licenses/agpl-3.0.html) (GNU Affero General Public License v3.0); the source code is at [github.com/TrustSource/ts-core-ce](https://github.com/TrustSource/ts-core-ce), and the **Source code (AGPL-3.0)** link at the bottom of the sidebar points to it. The name TrustSource and its logo are trademarks of EACG GmbH and are not licensed with the code; see the NOTICE file that ships with the source code.
 
 ## What you do with TrustSource CE
 
@@ -34,7 +34,7 @@ The user interface is available in English only.
 
 | Edition | Notes |
 |---|---|
-| **TrustSource CE** | Self-hosted, open source (AGPL-3.0). Documented in this manual. |
+| **TrustSource CE** | Self-hosted, open source (AGPL-3.0-only). Documented in this manual. |
 | **TrustSource SaaS (v3)** | The hosted platform, documented in the [v3 manual](../../v3/index.md). |
 
 Some SaaS capabilities, such as single sign-on, the AI assistants (OSCAR chat, Threat Model Agent) and repository deep scans, are not part of CE. See [CE and SaaS compared](../13-ce-vs-saas.md).

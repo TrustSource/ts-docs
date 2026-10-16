@@ -39,7 +39,7 @@ The **CI/CD Integrations** catalogue lists the available scanners with links to 
 | **Development languages** | Java, JavaScript, NodeJS, C/C++, PHP, Python, Ruby |
 | **IDE Plugins** | VisualStudio |
 
-![The CI/CD Integrations page with the groups Package managers, Continuous development tools, Containers, Development languages and IDE Plugins, each integration with its Github, Wiki or plugin links.](../../assets/images/v3/02-inbound/03-cicd-scan-1.webp)
+![The CI/CD Integrations page with the groups Package managers, Continuous development tools, Containers, Development languages and IDE Plugins, each integration with its GitHub, Wiki or plugin links.](../../assets/images/v3/02-inbound/03-cicd-scan-1.webp)
 
 ## The scan list
 
