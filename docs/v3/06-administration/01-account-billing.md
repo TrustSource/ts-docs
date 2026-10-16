@@ -5,7 +5,7 @@
 
 **Administration → Account & Billing** holds your company data, your account type and the legal documents. Use it to keep invoices correct and to change your plan. See [Account Types](../00-getting-started/02-account-types.md) for what each plan includes.
 
-📸 *Screenshot: the Account & Billing page.*
+![The Account & Billing page with the Company details form, the Account type buttons Free, Professional, Corporate, Enterprise and Medical with Enterprise selected, See pricing plan details, and the start of the Terms and Conditions panel.](../../assets/images/v3/06-administration/01-account-billing-1.webp)
 
 ## Company details
 

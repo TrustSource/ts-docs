@@ -24,4 +24,4 @@ The warning threshold must not be lower than the violation threshold, unless it 
 > [!NOTE]
 > Components without a repository cannot be scored. To fill the gaps, use **Score missing components** in the [OpenSSF Scorecard report](../../04b-analysis-reports.md#openssf-scorecard-report).
 
-📸 *Screenshot: the OSSF tab with the enable switch, two threshold sliders and the no-score status.*
+![The OSSF tab with the switch Enable OSSF analysis for module turned on and the Warning threshold and Violation threshold sliders on the scale 0 to 9, and Status shown, if score is not available.](../../../../assets/images/v3/03-internal/02-modules/settings/05-ossf-1.webp)

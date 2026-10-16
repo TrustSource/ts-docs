@@ -12,11 +12,11 @@ The tile shows the current number of violations and warnings, the change against
 ## The page
 
 1. Pick a **category**: Overall, Legal, Security, Viability, Versioning, Integrity, Crypto or OpenSSF.
-2. Read the headline ("This month: 4 violations, 9 warnings") and the chart of violations and warnings per month. Months without an analysis stay empty.
+2. Read the headline ("This month: 4 violations · 9 warnings") and the chart of violations and warnings per month. Months without an analysis stay empty.
 3. Click **Open ... report** to jump to the matching report (Licenses, Vulnerability, Viability, Versioning, Algorithms, OpenSSF). Overall and Integrity have no report.
 4. The table **Modules that got worse** lists the modules whose numbers rose in the chosen category.
 
-📸 *Screenshot: the Analytics page with the Security category selected.*
+![The Analytics page of mAIfit with the Security category selected: the headline This month 16 violations and 18 warnings, the Open Vulnerability report button, the chart of violations and warnings per month and the empty Modules that got worse table.](../../../assets/images/v3/03-internal/01-projects/04-analytics-1.webp)
 
 > [!NOTE]
 > The series covers only modules that exist today. A deleted module takes its history with it.

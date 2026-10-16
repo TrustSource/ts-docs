@@ -39,4 +39,4 @@ Click **Update** to save and re-analyse the module. A toast confirms *Viability 
 > [!TIP]
 > To see the result across a project, open the Viability report from the project's **Reports** menu. See [Analysis Reports](../../04b-analysis-reports.md#viability-report).
 
-📸 *Screenshot: the Viability tab with the enable switch, two sliders and the confidence settings.*
+![The Viability tab with the switch Enable viability analysis for module turned on, the Warning threshold and Violation threshold sliders from no monitoring to very active, the Minimum confidence level slider and Status shown, if minimum confidence level not reached.](../../../../assets/images/v3/03-internal/02-modules/settings/04-viability-1.webp)

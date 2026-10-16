@@ -5,7 +5,7 @@ Field-level permissions for the **project** settings tabs. Which role may read, 
 > [!NOTE]
 > The tables are generated from the permission definitions of the app. A tab or button only appears when the matching right includes `r`; a field is editable only with `w`.
 
-📸 *Screenshot: the project settings tabs with a read-only field and an editable field.*
+![The project settings tabs General, Legal, Quality, Crypto management, CIA, End-of-life, Allow/Deny, Issue Integration and Webhooks and Channels, with the read-only Name field and the editable Default project manager field.](../../assets/images/v3/10-roles-permissions/06-settings-permission-matrix-1.webp)
 
 ## How to read the tables
 
@@ -50,8 +50,8 @@ Each heading is a tab in the project settings.
 | description | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | tags | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | leanix | `r` | `r` | `r` | `r` | `rw` | `r` | `r` | `r` |
-| relatedUsers › defaultProjectManager | `r` | `r` | `rw` | `r` | `r` | `r` | `r` | `r` |
-| relatedUsers › defaultComplianceManager | `r` | `r` | `rw` | `r` | `r` | `r` | `r` | `r` |
+| relatedUsers › defaultProjectManager | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
+| relatedUsers › defaultComplianceManager | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | relatedUsers › members | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 
 ### Legal

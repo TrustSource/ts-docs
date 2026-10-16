@@ -29,8 +29,6 @@ docs/
     11-troubleshooting-faq/
     12-release-notes/
     13-ce-vs-saas.md
-    14-component-manager/
-    15-legal-manager/
     recipes/
 ```
 

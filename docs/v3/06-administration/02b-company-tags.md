@@ -6,7 +6,7 @@
 
 **Company tags** is the list of tags that projects and modules can carry. Open it from **Administration → Settings → Company tags**.
 
-📸 *Screenshot: the Company tags page with the import panel and the tag list.*
+![The Company tags page with the Add new tag and View removed tags buttons, the Import tags from CSV panel with its rules, and the tag list with the tags example-team:payments and example-customer-facing, their descriptions, creator and Remove buttons.](../../assets/images/v3/06-administration/02b-company-tags-1.webp)
 
 ## Add a tag
 
@@ -21,7 +21,7 @@ Use **Import tags from CSV** to create many tags at once.
 
 1. Prepare a semicolon-separated CSV file of up to 1 MB. The first line holds the column names `Name;Description`. Select **(see sample)** for an example.
 2. Select **Browse...** and choose the file. The page shows **Expected results** with the lines it can import and the lines with an error, such as a duplicate or an invalid name.
-3. Select **Import CSV** to create the tags. **Clear results** resets the panel.
+3. Select **Import CSV** to create the tags. Until you choose a file, this button reads **Try importing CSV** and is disabled. **Clear results** resets the panel.
 
 ## Remove and re-activate
 

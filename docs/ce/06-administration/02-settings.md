@@ -23,7 +23,7 @@ The **Settings** page ("General settings", "Please select a settings group") is 
 | **Quality** | Test tools whose results are required before a release. | Account admin, Compliance manager, Company security manager | [below](#quality) |
 | **Company tags** | The tag list for projects and modules. | Account admin, Portfolio manager, Manager, Company security manager, Compliance manager | [Company tags](02b-company-tags.md) |
 | **Private licenses** | Your own license keys and the default license for root components. | Account admin, Compliance manager | [below](#private-licenses) |
-| **Legal templates** | Reusable legal settings for projects and modules. | Account admin, Compliance manager | [Legal templates](../15-legal-manager/02-legal-templates.md) |
+| **Legal templates** | Reusable legal settings for projects and modules. | Account admin, Compliance manager | [below](#legal-templates) |
 | **Private algorithms** | The cryptographic algorithms your company works with. | Account admin, Company security manager | [below](#private-algorithms) |
 | **Manual vulnerability** | Vulnerabilities you record yourself for a component version. | Account admin, Company security manager, Company component manager | [below](#manual-vulnerability) |
 
@@ -89,6 +89,19 @@ Licenses your organisation created itself. Components with such a license key ar
 
 > [!NOTE]
 > **Create private license** and **Usage stats** are only shown to Compliance managers. Account admins can view and delete entries.
+
+## Legal templates
+
+Legal templates are presets for the **legal requirements** of a project or module: how it is sold, operated and distributed, and what intellectual-property protection it needs. They belong to your company. The **Legal templates** card opens **Company legal settings templates**. When you set up the legal settings of a project or module, **Import settings from Template** copies a template's answers; see [Project Settings → Legal](../03-internal/01-projects/settings/02-legal.md) and [Module Settings → Legal](../03-internal/02-modules/settings/02-legal.md).
+
+The list shows each template's **order**, **Type** (*project* or *module*) and **Name**. Select a row to open it; **Remove** deletes a template after a confirmation. To add one, press **Create template**, enter a **Name**, choose the **Type** (*Project* or *Module*) and optionally an **Order**, then press **Create Rule**.
+
+On a template, change name and order under **Update template information** and press **Update template**. Below, set the requirements with **Start wizard** (a questionnaire, **Legal settings wizard**, that ends with **Finish**) or **View all** (all questions in one form), and press **Update legal requirements** to save. For a **Project** template the questions cover the *Commercial Aspects* (if unsure, choose *usage fee*, the most restrictive), the *Operating Model* (if unsure, choose the *embedded model*) and *Intellectual Property Aspects* (inbound protection against contributor claims and outbound protection when you defend your rights). For a **Module** template they cover *Trade Secret Aspects*, the *Licensing Strategy* and the *Distribution of the module*.
+
+Creating, changing and removing templates is written to the company's audit log.
+
+> [!NOTE]
+> The card is shown to Account admins and Compliance managers. Only Account admins can create, change and remove templates.
 
 ## Private algorithms
 

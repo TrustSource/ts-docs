@@ -1,11 +1,11 @@
 # Policies
 
 > [!NOTE]
-> **Required role:** `account_admin`, `company_security_manager` or `compliance_manager`. The **Opensource policy** card is shown to all three, but the policy list behind it opens for `compliance_manager` only.
+> **Required role:** `account_admin`, `company_security_manager` or `compliance_manager`. The **Opensource policy** card is shown to `compliance_manager` only; **Risk assessment** only with the `risks` feature.
 
-**Administration → Policies** collects the company-wide rules that projects and modules are measured against. The page shows four cards.
+**Administration → Policies** collects the company-wide rules that projects and modules are measured against. The page shows up to four cards.
 
-📸 *Screenshot: the Policies page with the four cards.*
+![The Policies page with four cards: Opensource policy, Crypto algorithms, Component end-of-life and Risk assessment.](../../assets/images/v3/06-administration/05-policies-1.webp)
 
 | Card | What it holds |
 |---|---|
@@ -22,6 +22,9 @@ Compliance managers upload the policy document here. Users then see the active p
 2. Choose the **Document** (PDF or PPTX, up to 20 MB).
 3. Under **Notify users**, choose the roles that must be informed about the policy.
 4. Add a **Summary of changes** and select **Create Policy**.
+5. The new policy is not active yet. Click its row to open **Update policy information**, switch **Active** on and select **Submit**.
+
+Activating a policy sets its **Active from** date to today and deactivates the policy that was active before. Only one policy is active at a time. Switching **Active** off removes the date again.
 
 The list shows **Active**, **Active from**, **Created**, **Updated**, **Policy name**, **Document**, **Notify**, **Presented**, **Viewed** and **Confirmed**, so you can follow who has read and confirmed the policy. A policy name must be unique.
 

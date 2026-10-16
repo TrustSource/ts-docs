@@ -19,7 +19,7 @@
 The architecture types are Frontend-UI-Module, Frontend-Endpoint, Frontend-Service, Backend-Service, Backend-Endpoint, System component, Infrastructure Service and Distributable Component.
 
 > [!TIP]
-> If the component you need is not in the catalog, click **Not finding what you are looking for?**, enter **Module name** and **Module version** yourself and click **Send request**. The module is created with the values you entered. The dialog's note that "our support" makes the component available does not apply to TrustSource CE; no request leaves your installation. To make the component available for selection next time, a company component manager adds it to the catalog; see [Component Manager](../../14-component-manager/index.md).
+> If the component you need is not in the catalog, click **Not finding what you are looking for?**, enter **Module name** and **Module version** yourself and click **Send request**. The module is created with the values you entered. The dialog's note that "our support" makes the component available does not apply to TrustSource CE; no request leaves your installation. To make the component available for selection next time, a Company component manager adds it to the catalog; see [Infrastructure Elements](../../05-knowledge/02-infrastructure-elements.md#maintain-the-catalog) and [3rd party (COTS)](../../05-knowledge/03-cots.md#maintain-the-catalog).
 
 ![The Add/link module dialog with Module type set to Create custom module and a Module name entered, and the Close and Create module buttons.](../../../assets/images/ce/03-internal/02-modules/01-create-and-list-1.webp)
 

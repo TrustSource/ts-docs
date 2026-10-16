@@ -1,14 +1,14 @@
 # The 8 Roles
 
-***TrustSource*** knows eight roles that account admins can assign. Roles are set per company, and a user can hold several at once; the rights add up. Two internal roles and one licence-bound role are described under [Internal Roles](02-internal-roles.md).
+***TrustSource*** knows eight roles that account admins can assign. Roles are set per company, and a user can hold several at once; the rights add up. One more role is bound to a licence, see [Licence-bound role](#licence-bound-role).
 
-📸 *Screenshot: the Roles drop-down in User Management.*
+![User Management with the Roles field of each user: the assigned roles appear as tags, for example Developer, Manager and Account admin, and your own roles are greyed out.](../../assets/images/v3/10-roles-permissions/01-roles-overview-1.webp)
 
 | Role | Key | Focus |
 |---|---|---|
 | **Developer** | `developer` | Works with scans and modules. Edits module settings such as tags, thresholds, allow/deny lists and CIA. |
 | **Compliance manager** | `compliance_manager` | Owns the compliance workflow: approvals, allow/deny lists and their approval, outbound documents, license-related company settings and policies. |
-| **Portfolio manager** | `portfolio_manager` | Organizes the portfolio: assigns the default project manager and default compliance manager, maintains tags and capabilities. |
+| **Portfolio manager** | `portfolio_manager` | Organizes the portfolio: sees every project and module, maintains capabilities. |
 | **Manager** | `manager` | Leads projects: approvals, tags, webhooks, and broad rights on the projects and modules they manage. |
 | **Account admin** | `account_admin` | Administers the company: users, integrations, API keys, policies, billing and audit logs. |
 | **Enterprise admin** | `enterprise_admin` | Administers an enterprise group: account and integrations, and the list of member companies. |
@@ -27,6 +27,10 @@ For what each role sees and can change, see [Functions by Role](05-functions-by-
 
 > [!WARNING]
 > Ticking every role for one user gives that user all privileges. The app shows a warning when you do this, because it overrules the idea that compliance duties are shared between people.
+
+## Licence-bound role
+
+**CVD Coordinator** (`cvd_coordinator`) requires the `cvdself` license. It is assignable only in companies that hold the license, carries no permissions in the app and is passed on to the CVD service as a role claim. If the license is removed, the role stops taking effect.
 
 ## Related
 

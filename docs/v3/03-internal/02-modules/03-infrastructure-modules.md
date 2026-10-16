@@ -34,7 +34,7 @@ If the entry is missing, click **Not finding what you are looking for?**, enter 
 
 Once created, vulnerabilities and license findings for that entry are surfaced in the project like for any other module. Click **Analyse** after changing settings to refresh the module's statistics.
 
-📸 *Screenshot: an infrastructure module page with the Component Details panel.*
+![The page of the infrastructure module Redis (6.2.6) with the labels Infrastructure Service and Infrastructure Module, the Settings, Analyse and Follow buttons, and the Component Details panel of the catalog entry im:redis with Details, Select license, Viability, OSSF, End-of-life, Versioning, Export control and the vulnerabilities of version 6.2.6.](../../../assets/images/v3/03-internal/02-modules/03-infrastructure-modules-1.webp)
 
 ## When to use them
 

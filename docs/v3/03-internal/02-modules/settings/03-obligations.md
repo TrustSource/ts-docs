@@ -35,4 +35,4 @@ Both buttons are in the upper right of the tab.
 - [Resolved obligations (Project)](../../01-projects/settings/08-obligations.md)
 - [Fill in the Legal Questionnaire](../../../recipes/12-legal-questionnaire.md)
 
-📸 *Screenshot: the Resolved obligations tab with the Project obligations panel and the module list.*
+![The Resolved obligations tab: the Project obligations panel with the note that the obligation settings of the project are empty, the form with Obligation, Key and Comment and the Add button, and the empty list, with Import settings from Module and Propagate settings to in the upper right.](../../../../assets/images/v3/03-internal/02-modules/settings/03-obligations-1.webp)

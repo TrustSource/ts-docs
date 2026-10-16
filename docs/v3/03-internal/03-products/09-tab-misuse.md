@@ -19,7 +19,7 @@ The table lists **Created**, **Case name** and **Description**; filter and sort 
 
 You can read and write misuse cases through the [Products API](../../09-rest-api/endpoints/products.md) as well.
 
-📸 *Screenshot: the Misuse tab with two cases.*
+![The Misuse tab of Example Fridge FR-100 with the Add potential misuse case button and two cases, Default admin password left unchanged and Device used as a relay in a botnet.](../../../assets/images/v3/03-internal/03-products/09-tab-misuse-1.webp)
 
 ## Related
 

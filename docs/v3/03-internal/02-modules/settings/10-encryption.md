@@ -37,4 +37,4 @@ Click **Add**; the toast says *Algorithm settings added*. The table shows **Adde
 - [Crypto management (Project)](../../01-projects/settings/05-encryption.md)
 - [Algorithm report](../../04b-analysis-reports.md#algorithm-report)
 
-📸 *Screenshot: the Crypto management tab with the detected labels and the managed table.*
+![The Crypto management tab: List of Algorithms as detected, which says that no crypto algorithms were identified, and List of Algorithms as managed with the Add algorithm and Export as CycloneDX buttons.](../../../../assets/images/v3/03-internal/02-modules/settings/10-encryption-1.webp)

@@ -6,7 +6,7 @@
 
 Identity Integration lets your company sign in with its own identity systems instead of ***TrustSource*** passwords: your directory (LDAP), a SAML or OpenID Connect provider, or a social login. The page ("Account admin") shows six cards.
 
-📸 *Screenshot: the Account admin page with the six cards.*
+![The Account admin page with six cards: User storage, Identity providers, Stored users, Login settings, Authentication settings and SMTP settings.](../../assets/images/v3/07-auth-sso/index-1.webp)
 
 | Card | What you do there |
 |---|---|

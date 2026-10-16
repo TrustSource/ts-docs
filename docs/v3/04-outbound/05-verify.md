@@ -21,7 +21,7 @@ Each of them carries a `signatures` list with an `hmac-sha256` signature over th
 2. Paste the complete JSON document, including its `signatures`, into the text field.
 3. Click **Verify**.
 
-📸 *Screenshot: the Verification page with a signed release SBOM pasted into the text field and the result Verified successfully.*
+![The Verification page with the signed SBOM of the Example dry run 1.0.0 release of mAIfit pasted into the text field, scrolled to its components, and the result Verified successfully, Verified and found in server.](../../assets/images/v3/04-outbound/05-verify-1.webp)
 
 ## Results
 

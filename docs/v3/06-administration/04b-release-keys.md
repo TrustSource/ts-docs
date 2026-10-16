@@ -25,7 +25,7 @@ The scope decides which of these routes answer. A key without a scope serves all
 
 ## Create and publish a key
 
-1. Open **Administration → API keys** and select the **Release keys** card. The **API keys** menu entry is shown to `account_admin` only; `manager` and `compliance_manager` open the page at `/settings/company/api/releases`, or create keys from a release with **Published keys**.
+1. Open **Administration → API keys** and select the **Release keys** card. The **API keys** menu entry is also shown to `manager` and `compliance_manager`, who see the **Release keys** card.
 2. Select **Create New**. The key starts unpublished and points at your latest approved release.
 3. Choose the **release** in the first drop-down.
 4. Choose the **scope**: any of `sbom`, `notice`, `csaf`.

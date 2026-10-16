@@ -1,7 +1,7 @@
 # End-of-life (Module)
 
 > [!NOTE]
-> **Required role:** everyone who can open the module settings reads the tab. Editing is for developers and for managers and compliance managers who are the module's default manager (or if none is set). Saving is also checked on the server, which accepts account admins, managers and compliance managers. See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
+> **Required role:** everyone who can open the module settings reads the tab. Editing is for managers and compliance managers who are the module's default manager (or if none is set); developers see it read-only. Saving is also checked on the server, which accepts account admins, managers and compliance managers. See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
 
 Software that has reached its end of life no longer gets security fixes. This tab controls when ***TrustSource*** flags such components in this module, for example a `debian:11` base image or a Node.js 16 runtime.
 
@@ -23,4 +23,4 @@ The module's component views show end-of-life status for components. The project
 > [!NOTE]
 > The same policy exists on company level (**Settings → Policies**, see [Policies](../../../06-administration/05-policies.md)) and on project level ([End-of-life (Project)](../../01-projects/settings/06-end-of-life.md)).
 
-📸 *Screenshot: the End-of-life tab with the enable switch and two month sliders.*
+![The End-of-life tab with the switch Enable end-of-life analysis for module turned on and the two threshold sliders from no monitoring to 24 months, both at no monitoring, with the Update button.](../../../../assets/images/v3/03-internal/02-modules/settings/11-end-of-life-1.webp)

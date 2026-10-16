@@ -21,7 +21,7 @@ After you save, the tab lists the example areas of the stored value below the fo
 > [!NOTE]
 > The examples are a guide, not a legal assessment. ***TrustSource*** stores your choice but does not derive it.
 
-📸 *Screenshot: the Classification tab with IMPORTANT Class 1 saved and the Samples of areas list below the form.*
+![The Classification tab of Example Fridge FR-100 with IMPORTANT Class 1 saved under Classified as and the sample areas for this class listed below the form.](../../../assets/images/v3/03-internal/03-products/04-tab-classification-cra-1.webp)
 
 ## Related
 

@@ -17,7 +17,7 @@ The **Risk** capability turns ***TrustSource*** from a compliance system into a 
 - **History**: every change with who, when, from where and old and new values, also in Company Logs. See [Risk History](../03-internal/05-risks/09-risk-history.md).
 - **Integration with the Threat Modeling Agent**: risks raised by the [TMA](07-threat-model-agent.md) land in the same register with `origin: TMA Assessment` so they are distinguishable from risks entered manually. The agent never overwrites a state a person has set; see the [TMA capability page](07-threat-model-agent.md#key-guarantees) for the full guarantees.
 
-📸 *Screenshot: the Risk Overview with the development chart and inventory cards.*
+![The Risk management overview with the Risk development chart for the last six months and the Risk inventory cards Risks, By state, By impact class and By origin.](../../assets/images/v3/13-capabilities/02-risk-1.webp)
 
 ## Works together with
 
@@ -30,7 +30,7 @@ The **Risk** capability turns ***TrustSource*** from a compliance system into a 
 
 ## Roles
 
-The Risks menu sits in the Internal section, which is shown to `developer`, `compliance_manager` and `manager`; everybody who can open it can view and edit risks. Adding a risk by hand and creating risks from findings needs `compliance_manager` or `manager`. The company scheme can be changed by `account_admin`, `compliance_manager` and `company_security_manager`.
+The Risks menu sits in the Internal section, which is shown to `developer`, `compliance_manager`, `manager` and `account_admin`; everybody who can open it can view and edit risks. Adding a risk by hand and creating risks from findings needs `compliance_manager` or `manager`. The company scheme can be changed by `account_admin`, `compliance_manager` and `company_security_manager`.
 
 ## Editions
 

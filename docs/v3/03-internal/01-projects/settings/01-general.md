@@ -1,7 +1,7 @@
 # General (Project)
 
 > [!NOTE]
-> **Required role:** everyone who can open the project settings reads the tab. Name, Application goals, Tags, the default managers and Members can be changed by `manager` and `compliance_manager` users who are the project's default project manager or default compliance manager (or any of them while none is set). `portfolio_manager` can also set the default managers. **Link with LeanIX** is changed by `account_admin` and by managers who are owner. **Upload file** is for `account_admin`, `manager` and `compliance_manager`.
+> **Required role:** everyone who can open the project settings reads the tab. Name, Application goals, Tags, the default managers and Members can be changed by `manager` and `compliance_manager` users who are the project's default project manager or default compliance manager (or any of them while none is set). **Link with LeanIX** is changed by `account_admin` and by managers who are owner. **Upload file** is for `account_admin`, `manager` and `compliance_manager`.
 
 The General tab is where you configure the project's identity and team assignments.
 
@@ -24,4 +24,4 @@ Click **Update** to save.
 > [!TIP]
 > Next to **Tags**, **Default project manager**, **Default compliance manager** and **Members**, use **Propagate to modules** after a change to apply the value to all existing modules of the project at once.
 
-📸 *Screenshot: the General settings tab with Name, Application goals with Upload file, Tags, the default manager fields with Propagate to modules, Members, Link with LeanIX, Default confidence level and Threat model layout.*
+![The General tab of Example Project with Name, Application goals and Upload file, Tags, the default managers and Members with Propagate to modules, Link with LeanIX, Default confidence level Medium +, Threat model layout Keep manual layout and the Update button.](../../../../assets/images/v3/03-internal/01-projects/settings/01-general-1.webp)

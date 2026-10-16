@@ -1,7 +1,7 @@
 # Legal (Project)
 
 > [!NOTE]
-> **Required role:** the form, the wizard, import and propagate are for `manager` and `compliance_manager` users who are the project's default project manager or default compliance manager (or any of them while none is set). Other roles see the tab without the form.
+> **Required role:** the form, the wizard, import and propagate are for `manager` and `compliance_manager` users who are the project's default project manager or default compliance manager (or any of them while none is set). Other roles see the form greyed out and can use **View history**.
 
 The Legal tab captures the **project-level** answers of the Legal
 Questionnaire (Part 1): the commercial and IP-protection framing that
@@ -28,9 +28,9 @@ The buttons in the upper right:
   recipe for the full flow across both parts.
 - **Import settings from Template**: apply a company legal template (shown when templates exist).
 - **Import settings from Project**: copy the legal settings of another project (with a name search).
-- **Propagate settings to...**: push these settings to one other project or to **All my n projects**. Portfolio managers also see **All n projects**.
+- **Propagate settings to...**: push these settings to one other project or to **All my n projects** (shown when you are default project manager or default compliance manager of at least one other project). Portfolio managers also see **All n projects**.
 
-📸 *Screenshot: the Legal tab with the Commercial Aspects and Operating Model options, the Inbound and Outbound IP Protection switches and the buttons View history, Start wizard, Import settings from Project and Propagate settings to.*
+![The Legal tab of mAIfit-app with the Commercial Aspects and Operating Model options, the Inbound and Outbound IP Protection switches and the View history, Start wizard, Import settings from Template, Import settings from Project and Propagate settings to buttons.](../../../../assets/images/v3/03-internal/01-projects/settings/02-legal-1.webp)
 
 ## How this drives obligations
 

@@ -6,7 +6,7 @@
 Versioning checks how far the component versions in your module lag behind the newer versions known for the component. A module that still uses `spring-core 5.2.1` while `6.1.x` is known lags several releases.
 
 > [!NOTE]
-> TrustSource CE compares against the versions recorded in its own [Component Lake](../../../05-knowledge/01-component-lake.md), which grows with the scans of your installation and the entries of your component managers. It does not query package registries for new releases.
+> TrustSource CE compares against the versions recorded in its own [Component Lake](../../../05-knowledge/01-component-lake.md), which grows with the scans of your installation and the entries of your Company component managers. It does not query package registries for new releases.
 
 ## Steps
 

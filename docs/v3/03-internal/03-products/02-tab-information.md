@@ -35,7 +35,7 @@ To bring it back, click **Revert**, enter a reason and confirm with **Yes, rever
 > [!NOTE]
 > Retiring a product does not retire its sub-products.
 
-📸 *Screenshot: the Information tab of a retired product showing reason, user and date next to the Revert button.*
+![The retired product Example Fridge FR-050, shown after Show all. Its Information tab shows the shortened reason, the user Max Mustermann and the date in a red box next to the Revert button.](../../../assets/images/v3/03-internal/03-products/02-tab-information-1.webp)
 
 ## Related
 

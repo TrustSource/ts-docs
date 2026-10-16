@@ -26,7 +26,7 @@ Each threat the agent generates is filed as a **risk**, with the origin
 context (STRIDE/ENISA categories, CWEs, affected element, trust-boundary
 crossing, run id and threat id) wherever the risk is viewed or edited.
 
-📸 *Screenshot: a threat card in the side panel showing its STRIDE, ENISA and CWE classification and its countermeasures.*
+![A threat card in the side panel: the threat title and description, STRIDE Denial of Service, the ENISA category Nefarious activity / Abuse, the CWEs CWE-770 and CWE-799, the state exposed, the risk rating, and three countermeasure rows with their status icon.](../../../assets/images/v3/03-internal/08-threat-models/03-mitigations-status-1.webp)
 
 ## Related
 

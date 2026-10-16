@@ -12,7 +12,7 @@ The list shows every SOUP file of your company, including the ones created by ap
 
 To create one, click **Create soup file**, choose the **Project or module** (**All module of ...** for a whole project, or one module) and click **Create soup file**.
 
-📸 *Screenshot: the SOUP files list with version and completion status.*
+![The SOUP files list with the Create soup file button and the columns Created, Frozen, Project/Module, Components, Version, Edited, By and Complete; two files of mAIfit with 406 components, version 1.0.0, 0 percent complete, each with a Remove button.](../../assets/images/v3/04-outbound/03-soup-lists-1.webp)
 
 ## Work on a SOUP file
 

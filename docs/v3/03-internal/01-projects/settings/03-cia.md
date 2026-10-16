@@ -1,7 +1,7 @@
 # CIA (Project)
 
 > [!NOTE]
-> **Required role:** everyone who can open the project settings reads the values. `company_security_manager`, and managers who are the project's default project manager or default compliance manager (or any manager while none is set), can edit them and use **Import CIA requirements from...**.
+> **Required role:** everyone who can open the project settings reads the values. `company_security_manager`, and `manager` users who are the project's default project manager (or any `manager` while none is set), can edit them and use **Import CIA requirements from...**.
 
 The CIA tab (heading **CIA requirements**) sets the Confidentiality, Integrity and Availability requirements at the project level. The tab describes them as the minimum that is forwarded to all modules; a module can set its own values on its [CIA tab](../../02-modules/settings/08-cia.md).
 
@@ -22,7 +22,7 @@ Click **Update** to save.
 > [!NOTE]
 > The requirements are stored with every module analysis and are part of the environmental context that the REST API returns for projects and modules, next to the environmental CVSS vector set with **Env. settings** on the module page. The CVSS scores of findings are adjusted with that environmental vector, not with the CIA requirements.
 
-📸 *Screenshot: the CIA tab with the three fields Confidentiality requirement (CR), Integrity requirement (IR) and Availability requirement (AR), and the Risk assessment scheme panel below.*
+![The CIA tab of mAIfit with Confidentiality requirement (CR) high, Integrity requirement (IR) medium and Availability requirement (AR) low, and below it the Risk assessment scheme panel with impact classes, value scale, ARO and thresholds.](../../../../assets/images/v3/03-internal/01-projects/settings/03-cia-1.webp)
 
 ## Impact class proposals for risks
 

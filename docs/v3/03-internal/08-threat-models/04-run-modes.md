@@ -19,7 +19,7 @@ proposal → write-back. This is the right choice when
   (new modules, structural refactor, new external dependencies), or
 - you have not run the model in a while and simply want it refreshed.
 
-📸 *Screenshot: the Generate dialog's stage selector with "Run all" selected.*
+![The Stage field of the Generate threat model dialog with Run all selected and the explanation of what the run does.](../../../assets/images/v3/03-internal/08-threat-models/04-run-modes-1.webp)
 
 ## Individual stages
 
@@ -45,7 +45,7 @@ Use the individual stages when you want to
   first, then run Develop countermeasures for the risks that still have
   none. It does not replace countermeasures that already exist.
 
-📸 *Screenshot: the three stages in the Lifecycle dropdown: Build model, Generate risks, Develop countermeasures.*
+![The Lifecycle menu of a threat model with the three stages Build model, Generate risks and Develop countermeasures, each with a check mark, its count and a Re-run button.](../../../assets/images/v3/03-internal/08-threat-models/04-run-modes-2.webp)
 
 ## Idempotence: safe to re-run
 
@@ -61,11 +61,13 @@ This has two practical consequences:
 
 - You can trigger a refresh **whenever** you are unsure whether the
   model still reflects reality; worst case, nothing happens.
-- Clean components carry a "no risks reviewed on `<date>`" marker
-  and are not re-analysed on every run. The marker expires after
-  60 days by default, so quiet parts of the project are still
-  periodically re-examined without wasting analysis on them in the
-  meantime.
+- When you run **Generate risks** on its own, a module in which the
+  STRIDE analysis found no threat is marked as reviewed with nothing
+  found on that date, and is skipped by later runs of this stage. The
+  marker expires after 60 days by default, so quiet parts of the
+  project are still periodically re-examined. **Run all** does not use
+  the marker, and infrastructure and COTS components are always
+  re-analysed while they have no risk.
 
 ## What the agent will not touch
 

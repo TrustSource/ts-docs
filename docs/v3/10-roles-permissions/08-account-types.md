@@ -4,7 +4,7 @@ An **account type** (also called plan) sets the capacity of your company and a f
 
 Account types are different from [license features](07-license-features.md): a license feature is a flag provisioned for your company, while the account type comes from your plan.
 
-📸 *Screenshot: the account type selector with the pricing plan details.*
+![The Account type panel with the pricing plan details opened: cards for Free, Team, Corporate and Enterprise/Medical with their monthly price and limits for projects, modules, components and users.](../../assets/images/v3/10-roles-permissions/08-account-types-1.webp)
 
 ## What an account type controls
 

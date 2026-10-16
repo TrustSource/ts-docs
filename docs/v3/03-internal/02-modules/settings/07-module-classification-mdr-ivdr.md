@@ -29,4 +29,4 @@ Select the class and click **Update**. A toast confirms *Classification settings
 - [Medical capability](../../../13-capabilities/04-medical.md)
 - [MDR SoUP workflow](../../../recipes/05-mdr-soup-workflow.md) and [SoUP lists](../../../04-outbound/03-soup-lists.md)
 
-📸 *Screenshot: the MDR/IVDR Classification tab with the two radio groups.*
+![The MDR/IVDR Classification tab with the radio groups MDR Classification and IVDR Classification, each from None up to the highest class with a short description, and the Update button.](../../../../assets/images/v3/03-internal/02-modules/settings/07-module-classification-mdr-ivdr-1.webp)

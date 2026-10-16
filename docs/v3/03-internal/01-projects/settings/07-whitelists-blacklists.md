@@ -1,7 +1,7 @@
 # Allow/Deny (Project)
 
 > [!NOTE]
-> **Required role:** everyone who can open the project settings reads the lists. `compliance_manager`, and managers who are the project's default project manager or default compliance manager (or any manager while none is set), can change them. **Approve** is for `compliance_manager`.
+> **Required role:** everyone who can open the project settings reads the lists. `compliance_manager`, and `manager` users who are the project's default project manager (or any `manager` while none is set), can change them. **Approve** is for `compliance_manager`.
 
 The Allow/Deny tab lets you define which licenses and components are explicitly permitted or forbidden in this project.
 
@@ -36,7 +36,7 @@ When the allow list is enforced, entries that are not added by a compliance mana
 > [!NOTE]
 > Whether a component was modified and whether it is loosely coupled is not set on this tab. You set it per component in the **Settings** section of the [component side panel](../../02-modules/04-component-detail.md) (**Component was not modified**, **Loose coupling architecture**).
 
-📸 *Screenshot: the Allow/Deny tab with the Enforce Allow list switch, the Always allow license and Always deny license panels and the Always allow component and Always deny component panels.*
+![The Allow/Deny tab of mAIfit with the Enforce Allow list switch, the Always allow license and Always deny license panels with No-License on the deny list, and the Always allow component and Always deny component panels.](../../../../assets/images/v3/03-internal/01-projects/settings/07-whitelists-blacklists-1.webp)
 
 ## Related
 

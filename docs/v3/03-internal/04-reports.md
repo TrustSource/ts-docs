@@ -1,7 +1,7 @@
 # Reports
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager` or `manager`. **Reports** is an entry of the **Internal** menu, which is shown to these three roles. Some tiles need further roles, see the table.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`. **Reports** is an entry of the **Internal** menu, which is shown to these four roles. Some tiles need further roles, see the table.
 
 The Reports page (titled **Analyse [Reports]** in the app) is a hub of 22 tiles. Each tile opens a report in ***TrustSource***. The SBOM, Notice and SOUP tiles lead to the same lists as the [Outbound chapter](../04-outbound/index.md).
 
@@ -36,7 +36,7 @@ Open a project's or module's own **Reports** dropdown to start a report with tha
 
 The tiles you see depend on your role and license. CSAF documents are not part of this hub; find them under [Outbound → CSAF](../04-outbound/04-csaf.md).
 
-📸 *Screenshot: the Reports hub with the report tiles.*
+![The Analyse Reports hub with report tiles such as Licenses overview, Vulnerability report, Viability report, OpenSSF Scorecard report, Versioning report, End-of-life report, Algorithm report and All bad crypto.](../../assets/images/v3/03-internal/04-reports-1.webp)
 
 ## Details
 

@@ -6,11 +6,11 @@
 
 A **user storage** connects your user directory to ***TrustSource***, so your people sign in with the accounts they already have. The list shows each storage with its **Name** and **Provider**. Select **Edit** to open one, or **Create new user storage** to add one.
 
-📸 *Screenshot: the User storage list with the Create new user storage button.*
-
 ## Create a user storage
 
-The provider is LDAP. The form is pre-filled with example values; replace them with your own.
+The provider is LDAP. The create form shows only the required fields (marked with an asterisk) and is pre-filled with example values; replace them with your own.
+
+![The Create user storage form with the provider LDAP and its pre-filled required fields, from Name and Vendor down to Bind DN and Bind Credential, and the Create button.](../../assets/images/v3/07-auth-sso/01-user-storage-1.webp)
 
 | Field | Description |
 |---|---|
@@ -29,7 +29,7 @@ The provider is LDAP. The form is pre-filled with example values; replace them w
 | **Connection Pooling**, **Connection Timeout**, **Read Timeout**, **Pagination** | Connection behavior. |
 | **Full Sync Period**, **Changed Users Sync Period** | How often users are synchronized automatically. |
 
-Select **Create** to save. The form checks the required fields.
+Select **Create** to save. The form checks the required fields. After saving, the edit page of the new storage opens; set the optional fields there.
 
 ## Maintain a user storage
 

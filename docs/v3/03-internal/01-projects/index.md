@@ -21,4 +21,4 @@ A **project** in ***TrustSource*** is an organisational container that groups re
 - The **default project manager**, **default compliance manager** and **members** are set per project and can be propagated to all its modules.
 - Who sees a project: a project without members is visible to all users with access to Projects. Once members are set, only the members, the default project manager and the default compliance manager see it. Portfolio managers see all projects of the company.
 
-📸 *Screenshot: the project list in table view showing the columns State, Name, Tags, Releases, Modules, Components, Legal, Security, Quality and Deployments.*
+![The Projects list in table view with the columns State, Name, Tags, Releases, Modules, Components, Legal, Security, Quality and Deployments for the projects boostME, Example Project, mAIfit and mAIfit-app.](../../../assets/images/v3/03-internal/01-projects/index-1.webp)

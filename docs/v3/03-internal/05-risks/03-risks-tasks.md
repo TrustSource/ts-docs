@@ -37,7 +37,7 @@ On the risk's **Tasks** tab, click **Add task**. The **Add a task** dialog has t
 | **Comment** | For example *Re-check after each release*. |
 | **Responsible** | One or more users. |
 
-Each task row also offers **Create issue**, which opens a GitHub issue from the task, and **View issue** once it exists. Without a GitHub integration the link reads **Copy details** and copies the task text to the clipboard.
+Each task row also offers **Create issue**, which opens a GitHub issue from the task, and **View issue** once it exists. Without a GitHub integration, or when the project or module has no repository set, the link reads **Copy details** and copies the task text to the clipboard.
 
 ## The Tasks tab
 
@@ -48,7 +48,7 @@ Each task row also offers **Create issue**, which opens a GitHub issue from the 
 
 A task is **overdue** when it is not completed and its due date lies before today. Overdue tasks carry *(overdue)* after the date and a coloured row. A task due today is not yet overdue.
 
-📸 *Screenshot: the Tasks tab with the tiles and one overdue task.*
+![The Tasks tab for All module of boostME with the tiles total, upcoming, overdue, opened, resolved and exceptions ending in 30 days, the Backlog, In progress and Completed buttons, All tasks selected, and one task due Oct 1, 2026 marked as overdue.](../../../assets/images/v3/03-internal/05-risks/03-risks-tasks-1.webp)
 
 ## Reminders
 

@@ -1,6 +1,6 @@
 # TrustSource CE
 
-This is the documentation for ***TrustSource CE***, the Community Edition of TrustSource. TrustSource CE is a self-hosted, open source application for open source compliance: component and license compliance, vulnerability tracking, SBOMs and release approvals. It is licensed under the AGPL-3.0 and its source code is on GitHub at [TrustSource/ts-core-ce](https://github.com/TrustSource/ts-core-ce).
+This is the documentation for ***TrustSource CE***, the Community Edition of TrustSource. TrustSource CE is a self-hosted, open source application for open source compliance: component and license compliance, vulnerability tracking, SBOMs and release approvals. It is licensed under the [AGPL-3.0-only](https://www.gnu.org/licenses/agpl-3.0.html) (GNU Affero General Public License v3.0) and its source code is on GitHub at [TrustSource/ts-core-ce](https://github.com/TrustSource/ts-core-ce).
 
 This manual describes TrustSource CE **1.0.0**. The version of your installation is shown at the bottom of the left sidebar.
 

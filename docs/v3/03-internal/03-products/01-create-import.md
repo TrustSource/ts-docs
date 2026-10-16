@@ -29,7 +29,9 @@ The left panel shows **Tree of Products**. Click a product to open its tabs on t
 - **Show all** also lists retired products; **Hide retired** returns to the default view.
 - **Stats** shows the number of products, root entries and retired entries.
 
-📸 *Screenshot: the product tree with the Stats menu open and a product selected.*
+On screens narrower than 1500 pixels, the tree buttons show only their icons: the eye for **Show all** and **Hide retired**, the arrows for **Expand all** and **Collapse all**.
+
+![The Products page with the expanded Tree of Products, Example Fridge FR-100 selected, and the Stats menu open showing 6 products, 1 root entries and 1 retired entries.](../../../assets/images/v3/03-internal/03-products/01-create-import-1.webp)
 
 ## Import products
 

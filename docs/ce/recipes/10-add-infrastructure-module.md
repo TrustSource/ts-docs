@@ -31,7 +31,7 @@ Select **Create module**. The module appears in the project; in the grid view an
 
 ### 4. If the component is not in the catalog
 
-Select **Not finding what you are looking for?**, enter **Module name** and **Module version** and select **Send request**. The module is created with these values but without catalog data. Ask a Company component manager to add the component under **Knowledge → Infrastructure Elements** with its versions and licenses. See [Manage infrastructure](../14-component-manager/01-manage-infrastructure.md).
+Select **Not finding what you are looking for?**, enter **Module name** and **Module version** and select **Send request**. The module is created with these values but without catalog data. Ask a Company component manager to add the component under **Knowledge → Infrastructure Elements** with its versions and licenses. See [Infrastructure Elements](../05-knowledge/02-infrastructure-elements.md#maintain-the-catalog).
 
 ### 5. Keep it current
 

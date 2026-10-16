@@ -27,7 +27,7 @@ This recipe takes you from "I just got a ***TrustSource*** login" to "I have an 
 
 In the left navigation, open **Internal → Projects** and click **Create**. Enter a **Project name** that makes sense to your team, for example the name of the product or service this software belongs to, and click **Create project**.
 
-📸 *Screenshot: the Projects page with the Create new project dialog open.*
+![The Projects page with the Create new project dialog open, a Project name field and the Create project button.](../../assets/images/v3/recipes/01-first-module-to-sbom-1.webp)
 
 > [!TIP]
 > Don't overthink the project name yet. You can rename it later.
@@ -42,7 +42,7 @@ An account admin opens **Administration → API keys → API keys** and selects 
 
 The list shows only part of the key, but the copy button copies the complete key at any time while the key is published. See [API keys](../06-administration/04-api-keys.md).
 
-📸 *Screenshot: the Create key dialog with a name and the developer scope selected.*
+![The Create key dialog with the name first-scan and the scope developer selected, and the Close and Create buttons.](../../assets/images/v3/recipes/01-first-module-to-sbom-2.webp)
 
 Put the key into an environment variable without leaving it in your shell history:
 
@@ -97,7 +97,7 @@ ts-scan upload --project-name "<your project name>" myscan.json
 
 Open your project in the app and click the new module. The analysis runs in the background and usually finishes within a minute.
 
-📸 *Screenshot: the module page with the List tab populated after a scan, with the status markers visible.*
+![The auth-service module page on the List view with the component list, the status markers for legal, security and quality, and the details of the selected component.](../../assets/images/v3/recipes/01-first-module-to-sbom-3.webp)
 
 The module carries a **status** (see [Mental Model](../00-getting-started/05-mental-model.md#status-green-yellow-red)), almost certainly with warnings or violations, because any non-trivial scan surfaces something. Take a tour:
 
@@ -124,7 +124,7 @@ The manager selects **Initiate approval** in the module header. The wizard has f
 3. **Confirm statuses**: check the module's statuses.
 4. **Finalization**: the app prepares the approval. Select **Jump to Compliance Report**.
 
-📸 *Screenshot: step 1 Settings of the approval wizard with Dry run unticked and a name and version entered.*
+![Step 1 Settings of the Initiate Approval wizard with Dry run unticked, the name Example first release and the version 1.0.0 entered, and empty Packageurl and Approve description fields.](../../assets/images/v3/recipes/01-first-module-to-sbom-4.webp)
 
 ### 7. Walk through the review tabs
 
@@ -142,7 +142,7 @@ The **compliance manager** opens the approval under **Internal → Approvals** a
 | **Capabilities** | Capabilities recorded for this release. |
 | **SW-Quality** | Linked SARIF test results; shown only with the `sarif` license feature. |
 
-📸 *Screenshot: the open approval with the Approve and Reject buttons and the tab bar.*
+![The open approval Example release with the Manage binary links, Approve and Reject buttons in the header, the tabs Overview, Vulnerabilities, Licenses, Versioning, Viability, Status changes, Export control, Capabilities and SW-Quality, and the four modules of the approval.](../../assets/images/v3/recipes/01-first-module-to-sbom-5.webp)
 
 For a first approval, the goal isn't an exhaustive review. It's to **see what's there** and catch any show-stopper (for example a GPL-3.0 in a module you ship as proprietary).
 
@@ -168,7 +168,7 @@ What a release gives you:
 
 You can also drive the approval from outside: your pipeline can create, approve or reject approvals through the [REST API](../09-rest-api/endpoints/compliance-approvals.md).
 
-📸 *Screenshot: the release page with the SBOM button and the Overview, New vulnerabilities, Vulnerabilities and Export control tabs.*
+![The release page of Example dry run with the SBOM, Binary links and Published keys buttons and the Approved state in the header, the tabs Overview, New vulnerabilities, Vulnerabilities and Export control, and the four modules of the release.](../../assets/images/v3/recipes/01-first-module-to-sbom-6.webp)
 
 > [!TIP]
 > **Why this matters.** A release SBOM is what stays in the field: running on customer machines, baked into firmware, or shipped as a container. Your development team may be 256 commits ahead, but the release stands still. ***TrustSource*** keeps that frozen SBOM under watch, so the day a new CVE drops on a component you released six months ago, you see it on the release.
@@ -181,7 +181,7 @@ Open the release under **Internal → Releases** and select **SBOM**. The SBOM p
 - **CycloneDX**: **SBOM (components)**, **CBOM (cryptography)**, **AIBOM (AI / ML)** or **Full BOM (components + crypto + AI)** as JSON.
 - **SPDX**: an SPDX document.
 
-📸 *Screenshot: the SBOM page of a release with the PDF, CycloneDX and SPDX buttons.*
+![The SBOM page of the mAIfit release, version 1.0.0, with the PDF, CycloneDX, SPDX, Version and Freeze buttons, the component list with a cleared checkbox per component, and the TODOs Navigator.](../../assets/images/v3/recipes/01-first-module-to-sbom-7.webp)
 
 That's the file you ship.
 

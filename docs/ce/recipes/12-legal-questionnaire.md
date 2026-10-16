@@ -51,7 +51,7 @@ If you are unsure, the app recommends the most restrictive answers: **usage fee*
 On the next analysis, the licenses of the module's components are evaluated against these settings by the bundled ts-legalcheck service. The results appear on the module's **Legal** tab as obligations and violations, and in the [license check](../09-rest-api/endpoints/compliance-check.md), which refuses to check a project or module whose legal settings are incomplete. Record how you meet obligations on the **Resolved obligations** settings tab.
 
 > [!TIP]
-> If many projects share the same answers, create a legal template once under **Administration → Settings → Legal templates** and import it into each project. See [Legal templates](../15-legal-manager/02-legal-templates.md).
+> If many projects share the same answers, create a legal template once under **Administration → Settings → Legal templates** and import it into each project. See [Legal templates](../06-administration/02-settings.md#legal-templates).
 
 ## Related
 

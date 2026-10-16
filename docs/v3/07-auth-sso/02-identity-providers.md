@@ -6,16 +6,16 @@
 
 An **identity provider** is the system your users sign in with: your SAML or OpenID Connect service or a social login. The list shows **Enabled**, **Alias**, **Display name** and **Provider**.
 
-📸 *Screenshot: the Identity providers list.*
+![The Identity providers list with the Create new identity provider button and one enabled OpenID Connect provider with the alias example-sso and the display name Example SSO.](../../assets/images/v3/07-auth-sso/02-identity-providers-1.webp)
 
 ## Add an identity provider
 
 1. Select **Create new identity provider**.
 2. Choose the **Provider**: **SAML v2.0** or **OpenID Connect v1.0**, or a social provider such as GitHub, Google, GitLab, LinkedIn or Microsoft. A social provider you already added is not offered again.
 3. Copy the **Redirect URI** that the form shows and register it at your provider.
-4. Fill in the provider fields (below) and select **Create**.
+4. Fill in the required fields that the form shows (marked with an asterisk) and select **Create**.
 
-After saving, the edit page opens. Use **Update** to change the settings and **Remove** to delete the provider. The provider type cannot be changed.
+After saving, the edit page opens with all the fields below. Use **Update** to change the settings and **Remove** to delete the provider. The provider type cannot be changed.
 
 ## Fields shared by all providers
 

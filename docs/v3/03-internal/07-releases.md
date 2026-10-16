@@ -1,7 +1,7 @@
 # Releases
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager` or `manager` (the **Internal** menu). Creating release keys needs `compliance_manager`, `manager` or `account_admin`.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` (the **Internal** menu). Creating release keys needs `compliance_manager`, `manager` or `account_admin`.
 
 A **release** is an approved approval: a frozen set of module analyses with its SBOM, notice file and compliance report. Once released, ***TrustSource*** keeps tracking new vulnerabilities in its components, even after your development team has moved on.
 
@@ -29,7 +29,7 @@ Click a row to open the release.
 
 A project has its own releases page as well: open it from the **Releases** tile on the project page. It lists only that project's releases (**All modules of** *project* or one module), shows how many approvals of the project are still pending with a link to **Open approvals**, and offers **Start approval** to `manager` and `compliance_manager`.
 
-📸 *Screenshot: the releases list with approval dates and version numbers.*
+![The Releases list with All company projects selected and one release with its approval date, name, version 1.0.0, project mAIfit, contact Max Mustermann and the Link button.](../../assets/images/v3/03-internal/07-releases-1.webp)
 
 ### Link a release into a project
 
@@ -41,7 +41,7 @@ The header shows the name, **Packageurl** and description of the release, and th
 
 - **SBOM** opens the SBOM file of the release.
 - **Binary links** shows the binary links of the release, read-only. See [Binary Linking](06-approvals/04-binary-linking.md).
-- **Published keys** lists the release keys and creates new ones with **Create new key**. See [Public Approves](06-approvals/05-public-approves.md).
+- **Published keys** lists the release keys, lets you copy, publish, unpublish or delete them, and creates new ones with **Create new key**. See [Public Approves](06-approvals/05-public-approves.md).
 - **Approved** shows who approved the release and when.
 
 | Tab | What it shows |

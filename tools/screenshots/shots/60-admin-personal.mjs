@@ -241,7 +241,7 @@ const SHOTS = [
   {
     id: `${A}/08-integrations-1`,
     doc: `${A}/08-integrations.md`,
-    alt: 'The Integrations page with the tiles Github, Jira, TFS, SCANOSS, Webhooks and Channels, and LeanIX.',
+    alt: 'The Integrations page with the tiles GitHub, Jira, TFS, SCANOSS, Webhooks and Channels, and LeanIX.',
     url: '/settings/company/integrations',
     target: content,
   },

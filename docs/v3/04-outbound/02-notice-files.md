@@ -11,7 +11,7 @@ The page **Notice files** lists every notice file of your company, including the
 
 If your company has not set up a written offer yet, a **Written Offer** warning above the list says so and links to **Configure now**. The written offer is maintained under **Administration → Settings**, see [Settings](../06-administration/02-settings.md).
 
-📸 *Screenshot: the Notice files list with the Complete column.*
+![The Notice files list below the Written Offer warning with its Configure now link, with the columns Created, Frozen, Project/Module, Components, Version, Edited, By and Complete, showing the files of mAIfit, boostME and boostME / admin-service between 12 and 26 percent complete.](../../assets/images/v3/04-outbound/02-notice-files-1.webp)
 
 ## Create a notice file
 

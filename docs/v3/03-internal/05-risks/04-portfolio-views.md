@@ -25,7 +25,7 @@ A colour legend sits under the chart, so colour is never the only signal.
 
 With more than 100 entries the chart shows projects only until you zoom in.
 
-📸 *Screenshot: the portfolio treemap coloured by treatment.*
+![The Portfolio overview treemap with the view type Risks - Treatment: the project boostME with one red rectangle per module and one for the project risks, all with at least one untreated risk, and the colour legend below the chart.](../../../assets/images/v3/03-internal/05-risks/04-portfolio-views-1.webp)
 
 ## Related
 

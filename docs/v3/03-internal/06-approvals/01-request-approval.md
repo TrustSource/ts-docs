@@ -7,20 +7,20 @@ You request an approval for a project and choose which of its modules, in which 
 
 ## Start the wizard
 
-- **From the approvals list:** click **Create**, choose the **Project** and click **Create approval request**, or **Dry-run** to try it out.
+- **From the approvals list:** click **Create**, choose the **Project** and click **Create approval request**, or **Dry-run** to try it out. The list offers every project you can see: projects without members, and projects where you are a member or default manager (portfolio managers: all projects).
 - **From a project:** click **Start approval** on the project's **Releases** tile or on the project's releases page.
 - **From a module:** click **Initiate approval** in the module header. The wizard opens with that module preselected.
 
-📸 *Screenshot: the Create approval request dialog on the approvals list.*
+![The Create approval request dialog with the Project field and the Close, Dry-run and Create approval request buttons.](../../../assets/images/v3/03-internal/06-approvals/01-request-approval-1.webp)
 
 ## The five steps
 
 | Step | What you do |
 |---|---|
 | **1 Settings** | Under **Prepare Approval**, enter the **Approval Name** (required), an optional **Semantic version** (only the version of the approval, not of your product), a **Packageurl** (a valid PURL, used by the public VEX lookup) and an **Approve description** for the compliance manager. Tick **Dry run** to see the results without sending the request to the compliance managers. |
-| **2 Pick modules** | Tick the modules of the project that belong to the release. The table shows each module's state, name, components, legal, security and quality figures. |
+| **2 Pick modules** | All modules of the project are ticked at first; untick those that do not belong to the release. The table shows each module's state, name, components, legal, security and quality figures. |
 | **3 Select analysis** | Choose the analysis (scan version) of each module. You can search by branch or tag. |
-| **4 Confirm statuses** | Check state, analysis and the figures once more, then confirm. |
+| **4 Confirm statuses** | Check state, analysis and the figures once more, then click **Next** to create the request. |
 | **5 Finalization** | The request is created at once and the documents are generated in the background. |
 
 Only modules of the same project that you can see can be selected, each with one of its own analyses.

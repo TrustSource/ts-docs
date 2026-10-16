@@ -7,19 +7,19 @@
 | Edition | Projects | Modules | Components | Users | Typical use case |
 |---|---|---|---|---|---|
 | **Free** | 1 | 5 | 500 | 1 | Personal evaluation, single-project hobby use. |
-| **Professional** | 3 | 20 | 2,000 | 10 | Small team or startup managing a handful of products. |
-| **Corporate** | 20 | 200 | unlimited | 50 | Mid-size engineering org with SPDX export, full reporting, Jira and LeanIX integration. |
+| **Professional** | 10 | 200 | 2,000 | 10 | Small team or startup managing a handful of products. |
+| **Corporate** | 40 | 400 | unlimited | 100 | Mid-size engineering org with SPDX export, full reporting, Jira and LeanIX integration. |
 | **Enterprise** | unlimited | unlimited | unlimited | unlimited | Large organisation with multi-company hierarchy, cascading auth, private license/algorithm catalogs. |
 | **Medical** | unlimited | unlimited | unlimited | unlimited | Same capacity as Enterprise, plus healthcare-specific compliance support (SOUP reports, MDR/IVDR classification). |
 
 > [!NOTE]
 > **Community Edition (CE)** is a free, self-hosted, open-source edition that is documented separately. See the [CE landing page](../../ce/index.md).
 
-📸 *Screenshot: the Account & Billing page with the Account type selector (Free, Professional, Corporate, Enterprise, Medical) and the See pricing plan details button.*
+![The Account type panel of Account & Billing with the selector Free, Professional, Corporate, Enterprise and Medical, Enterprise selected, and the See pricing plan details button.](../../assets/images/v3/00-getting-started/02-account-types-1.webp)
 
 ## Where to see your account type
 
-Your current account type appears in brackets after your company name at the top of the left navigation, for example "Acme GmbH (corporate)". While a trial runs, a **TRIAL** marker appears below it; hover it to see the expiry date. You can change the account type under **Administration → Account & Billing**; see [Account & Billing](../06-administration/01-account-billing.md).
+Your current account type appears in brackets after your company name at the top of the left navigation, for example "Acme GmbH (corporate)". While a trial runs, a **TRIAL** marker appears below it; hover it to see the expiry date. You can change the account type under **Administration → Account & Billing**; see [Account & Billing](../06-administration/01-account-billing.md). There, **See pricing plan details** shows the limits and monthly price of each plan; the Professional plan is called **Team** in that overview, and Enterprise and Medical share one card.
 
 Only users with the `account_admin` or `enterprise_admin` role can open that page.
 

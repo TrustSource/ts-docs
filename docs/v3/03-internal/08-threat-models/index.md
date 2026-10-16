@@ -13,7 +13,7 @@ as an interactive Data Flow Diagram (DFD). You can also import an existing
 OTM, OWASP Threat Dragon or CycloneDX TM-BOM document instead. Reviewing findings and
 tracking mitigations happens in the app; the agent handles the analysis.
 
-📸 *Screenshot: the Threat Models list with the Created, Project, Run, Format, Threats and Status columns.*
+![The Threat Modelling list with the Import and Generate buttons and the columns Created, Project, Run, Format, Threats and Status, listing several boostME and mAIfit models, each with a Remove button.](../../../assets/images/v3/03-internal/08-threat-models/index-1.webp)
 
 ## Two ways to run the agent
 
@@ -40,10 +40,11 @@ use-cases and details.
 
 ## Background reading
 
-New to STRIDE and threat modelling? The EACG
-[Threat Modeling course](https://app.trustsource.io/trainings?id=threatmodeling)
-in the Academy walks through the method and the vocabulary the agent uses
-(trust zones, data flows, STRIDE categories) in about an hour.
+New to STRIDE and threat modelling? The EACG course
+[Threat Modeling - From Concept to Countermeasure](https://app.trustsource.io/trainings?id=threatmodeling)
+under **Knowledge → Trainings** walks through the method and the vocabulary
+the agent uses (trust zones, data flows, STRIDE categories) in six modules.
+It is a paid course.
 
 ## Related
 

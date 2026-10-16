@@ -7,7 +7,7 @@ The dashboard is the first page after login. It gives you your portfolio status,
 The banner at the top has these buttons:
 
 - **Take tour** starts a guided tour of the navigation, content area, settings, messages and help. It starts by itself on your first visit.
-- **Load demo project** creates a demo project with sample modules, so you can try the widgets. It shows while you have no modules, and until you have loaded the demo once.
+- **Load demo project** creates a demo project with sample modules, so you can try the widgets. It shows while your company has no modules, and also as long as you have never loaded the demo, even when modules exist.
 - **Remove demo data** deletes the demo project again. It replaces the load button while demo data exists.
 
 ## Widgets by role
@@ -36,7 +36,7 @@ A treemap of all your projects (large rectangles) and their modules (small recta
 2. Click a project to zoom into it. Click **Back to all** to return.
 3. Click a module to open its dependencies in a new tab.
 
-📸 *Screenshot: the Company portfolio view treemap with the View type selector.*
+![The Company portfolio view: a treemap with one rectangle per project and module, coloured by status, and the view type selector set to Components - Summary.](../../assets/images/v3/00-getting-started/07-dashboard-1.webp)
 
 ## Focussed projects
 

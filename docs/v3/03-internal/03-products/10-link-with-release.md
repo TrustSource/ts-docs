@@ -26,7 +26,7 @@ Product (what you ship)
 
 At any point you can trace from a customer-facing product down to the individual components and their licenses, vulnerabilities and obligations.
 
-📸 *Screenshot: the Add solution dialog showing available approved releases.*
+![The Add solution dialog listing the approved release Example dry run 1.0.0 with its approval date, version and contact Max Mustermann, and an Add button.](../../../assets/images/v3/03-internal/03-products/10-link-with-release-1.webp)
 
 ## Related
 

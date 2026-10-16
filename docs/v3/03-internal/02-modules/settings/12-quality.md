@@ -23,4 +23,4 @@ Upload the test results of every required tool as SARIF with the module's scans,
 
 - [Quality (Project)](../../01-projects/settings/04-quality.md)
 
-📸 *Screenshot: the Quality tab with the tool selector and two required tools.*
+![The Quality tab of the module admin-service: Define test requirements with the note on SARIF test results, the Tool selector with the Add button, and the required tool Selenium inherited from the project, labelled in Project.](../../../../assets/images/v3/03-internal/02-modules/settings/12-quality-1.webp)

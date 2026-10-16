@@ -73,7 +73,7 @@ A stored TM-BOM has a single **Download** button that returns the document as st
 
 **Delete** on the detail page, or **Remove** in the Threat Models list, deletes the document after a confirmation.
 
-📸 *Screenshot: the Generate dialog with the stage selector, and the live progress panel below it.*
+![The Generate threat model dialog with boostME selected as Project, the Stage selector set to Run all with its explanation, and the Close and Generate buttons.](../../../assets/images/v3/03-internal/08-threat-models/01-create-threat-model-1.webp)
 
 ## Related
 

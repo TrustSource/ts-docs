@@ -2,7 +2,7 @@
 
 The right bar gives you two ways to get help in ***TrustSource***.
 
-📸 *Screenshot: the right bar with the Help icon and the Contact Account Admin icon outlined.*
+![The right bar with two outlined icons: 1 Help, the question mark, and 2 Contact Account Admin, the paper plane.](../../assets/images/v3/08-personal/04-support-1.webp)
 
 | Right bar icon | What it does |
 |---|---|

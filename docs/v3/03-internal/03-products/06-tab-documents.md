@@ -31,7 +31,7 @@ Uploaded documents are listed with their type, upload date and uploader; click t
 
 **Download all** packs all documents into one ZIP archive (it does nothing while no document is uploaded). **incl. Photos** (shown when photos exist) adds the pictures from the [Photos](05-tab-photos.md) tab.
 
-📸 *Screenshot: the Documents tab with User Manual and SBOM file uploaded.*
+![The Documents tab of Example Fridge FR-100 with the Add new document, Download all and incl. Photos buttons and two documents, User Manual and SBOM file, each with its upload date and uploader Max Mustermann.](../../../assets/images/v3/03-internal/03-products/06-tab-documents-1.webp)
 
 ## Related
 

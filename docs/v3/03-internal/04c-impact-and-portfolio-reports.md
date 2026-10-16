@@ -1,7 +1,7 @@
 # Impact and Portfolio Reports
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager` or `manager` (the roles that see the [Reports hub](04-reports.md)). Tiles with narrower roles are marked below.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` (the roles that see the [Reports hub](04-reports.md)). Tiles with narrower roles are marked below.
 
 These reports from the [Reports hub](04-reports.md) look across your portfolio: which projects are hit by a component, a CVE or an algorithm, where your crypto policy is violated, and what your issue trackers hold. Single-project reports are on [Analysis Reports](04b-analysis-reports.md).
 
@@ -45,7 +45,7 @@ Select a project to list all projects that depend on it, with their description,
 
 ## Components
 
-Role: `company_component_manager`. Lists components with missing data so you can complete them. See [Critical Components](../14-component-manager/03-critical-components.md).
+Role: `company_component_manager`. Lists the components with missing data that are used by your company's modules, so you can complete them, with a PDF export. Open it with the **Critical components** button in the [Component Lake](../05-knowledge/01-component-lake.md). Before the first use you are asked to confirm the role's conditions (window **Policy confirmation**).
 
 ## Issue report
 

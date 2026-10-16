@@ -26,6 +26,8 @@ Open **Internal → Reports → CVE impact**, enter the id (for example `CVE-202
 
 ![The CVE impact report for CVE-2021-44228: the CVE description with score 10, CWE-20 and the CVSS vector, and the impacted project Webshop with the module webshop-backend and its analysis of v2.4.0.](../../assets/images/ce/recipes/04-react-to-0day-1.webp)
 
+*The CVE description in the screenshot comes from the [GitHub Advisory Database](https://github.com/advisories) (CC BY 4.0).*
+
 Alternatives:
 
 - **Knowledge → Vulnerability Lake → Find vuln** finds the vulnerability and the components it affects.

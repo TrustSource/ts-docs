@@ -39,7 +39,7 @@ Open **Internal → Risks** in the menu. The page has three tabs: **Overview**, 
 > [!NOTE]
 > **Upgrade note, version 3.3.28.** Risks now record the treatment strategy apart from the state. Existing risks were converted once; the numbers of open and done risks changed, and risks that were `deferred` count as open again. Details are in [Treatment and State](05-treatment-and-state.md#older-risks).
 
-📸 *Screenshot: the Risks module with the Overview, Risks and Tasks tabs.*
+![The Risk management page with the Overview, Risks and Tasks tabs and the report target set to All modules of boostME, showing the risk tiles, the Add risk and treatment group buttons and the top of the risk list.](../../../assets/images/v3/03-internal/05-risks/index-1.webp)
 
 ## Related
 

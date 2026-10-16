@@ -30,7 +30,7 @@ The header and the card carry a label, **Infrastructure Module** or **COTS Modul
 4. Choose the **Type of architecture** and tick **Is open source module** if it applies.
 5. Click **Create module**.
 
-If the entry is missing, click **Not finding what you are looking for?**, enter name and version and click **Send request**; the module is created with your values. A company component manager can add the entry to the catalog; see [Manage Infrastructure](../../14-component-manager/01-manage-infrastructure.md) and [Manage COTS](../../14-component-manager/02-manage-cots.md).
+If the entry is missing, click **Not finding what you are looking for?**, enter name and version and click **Send request**; the module is created with your values. A Company component manager can add the entry to the catalog; see [Infrastructure Elements](../../05-knowledge/02-infrastructure-elements.md#maintain-the-catalog) and [3rd party (COTS)](../../05-knowledge/03-cots.md#maintain-the-catalog).
 
 Once created, the module takes part in the project's license findings, approvals and SBOMs like any other module. TrustSource CE does not look up vulnerabilities for catalog components, so the module shows no vulnerability findings. Click **Analyse** after changing settings to refresh the module's statistics. If the catalog entry has no details yet, the page reads *Sorry, detailed information not available yet.*
 

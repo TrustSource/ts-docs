@@ -6,7 +6,7 @@
 
 Connect an issue tracker once for the whole company. Afterwards, users see a **Create issue** link next to findings in reports, risks and algorithms. It opens a dialog with a **Title** and a **Description** and files the issue in your tracker. Open the settings from **Administration → Integrations**.
 
-📸 *Screenshot: the Create new Jira issue dialog.*
+![The Create new Jira issue dialog with a Title made of the Jira project key SHOP, the component log4j-core and its status violations, a Description that explains the status and asks to resolve it, and the Close and Create issue buttons.](../../assets/images/v3/06-administration/08a-issue-trackers-1.webp)
 
 ## Jira
 

@@ -9,4 +9,4 @@ If your company runs its own training portal, **Trainings** in the menu opens th
 > [!TIP]
 > If the page shows an error instead of the course list, reload it. If the error stays, contact [support](../../shared/support.md).
 
-📸 *Screenshot: the Trainings page with the course list.*
+![The Trainings page with the Level and Tags filters, 9 courses, and the first course cards with price or Free, title, summary, level, duration, languages and authors.](../../assets/images/v3/05-knowledge/08-trainings-1.webp)

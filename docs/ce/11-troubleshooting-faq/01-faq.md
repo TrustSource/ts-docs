@@ -5,7 +5,7 @@ The most common questions about ***TrustSource CE***. If your question is not an
 ## About TrustSource CE
 
 **Is TrustSource CE free to use?**
-Yes. TrustSource CE is open source under the AGPL-3.0. The source code is at [github.com/TrustSource/ts-core-ce](https://github.com/TrustSource/ts-core-ce), and the **Source code (AGPL-3.0)** link in the sidebar footer points to it. If you modify TrustSource CE, read the license for the conditions that apply to offering it to others.
+Yes. TrustSource CE is open source under the [AGPL-3.0-only](https://www.gnu.org/licenses/agpl-3.0.html) (GNU Affero General Public License v3.0). The source code is at [github.com/TrustSource/ts-core-ce](https://github.com/TrustSource/ts-core-ce), and the **Source code (AGPL-3.0)** link in the sidebar footer points to it. If you modify TrustSource CE, read the license for the conditions that apply to offering it to others. The name TrustSource and its logo are trademarks of EACG GmbH and are not licensed with the code; see the NOTICE file that ships with the source code.
 
 **What is the difference to the TrustSource SaaS platform?**
 CE is self-hosted and shares the core of the platform. Some capabilities, for example single sign-on, the AI assistants (OSCAR chat, Threat Model Agent) and repository deep scans, are only in the SaaS edition. See [CE and SaaS compared](../13-ce-vs-saas.md).

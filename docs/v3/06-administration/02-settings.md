@@ -1,13 +1,13 @@
 # Settings
 
 > [!NOTE]
-> **Required role:** `account_admin`, `compliance_manager`, `company_security_manager`, `company_component_manager`, `portfolio_manager`, `manager` or `legal_manager`
+> **Required role:** `account_admin`, `compliance_manager`, `company_security_manager`, `company_component_manager`, `portfolio_manager` or `manager`
 >
 > Each card is only visible to the roles that own it. Users without any matching role do not see **Administration → Settings**.
 
 The **Settings** page ("General settings") is the entry point for company-wide configuration. It shows one card per settings group. What you see depends on your role: account admins see every card, other roles only the cards that belong to their work.
 
-📸 *Screenshot: the General settings page with the card grid.*
+![The General settings page with one card per settings group: General info, FOSS liaison, PSIRT contacts, Written offer, License allow/deny, Component allow/deny, Encryption, Quality, Company tags, Private licenses, Legal templates and Private algorithms.](../../assets/images/v3/06-administration/02-settings-1.webp)
 
 ## Cards
 
@@ -23,12 +23,20 @@ The **Settings** page ("General settings") is the entry point for company-wide c
 | **Quality** | Test requirements. | `account_admin`, `company_security_manager`, `compliance_manager` |
 | **Company tags** | The tag list for projects and modules. See [Company tags](02b-company-tags.md). | `account_admin`, `portfolio_manager`, `manager`, `company_security_manager`, `compliance_manager` |
 | **Private licenses** | Licenses that are not in the public database. Only shown for Enterprise and Medical accounts. | `account_admin`, `compliance_manager` |
-| **Legal templates** | Obligation and notice templates. See [Legal Templates](../15-legal-manager/02-legal-templates.md). | `account_admin`, `compliance_manager`, `legal_manager` |
+| **Legal templates** | Company templates for the legal requirements of projects and modules. See [Legal templates](#legal-templates). | `account_admin`, `compliance_manager` |
 | **Private algorithms** | Cryptographic algorithms that are not in the public catalog. | `account_admin`, `company_security_manager` |
 | **Manual vulnerability** | Vulnerabilities you track yourself because they are not in public feeds. | `account_admin`, `company_security_manager`, `company_component_manager` |
 
 > [!NOTE]
-> A card can be visible to a role that may only look at the page. For example, the **FOSS liaison**, **PSIRT contacts** and **Written offer** forms are only shown to account admins, and only account admins and managers can add or remove company tags.
+> A card can be visible to a role that may only look at the page. For example, only account admins and managers can add or remove company tags.
+
+## Legal templates
+
+Legal templates are presets for the **legal requirements** of a project or module: how it is sold, operated and distributed, and what intellectual-property protection it needs. The **Legal templates** card opens **Company legal settings templates**. When the legal settings of a project or module are set up, a template can be imported with **Import settings from Template**, as described under [Project Settings → Legal](../03-internal/01-projects/settings/02-legal.md).
+
+The list shows each template's **order**, **Type** (*Project* or *Module*) and **Name**. Select a row to open it; **Remove** deletes a template. Account admins add a template with **Create template**: enter a **Name**, choose the **Type** and optionally an **Order**, then press **Create Rule**.
+
+On a template, change name and order under **Update template information** and press **Update template**. Below, set the requirements with **Start wizard** (a questionnaire that ends with **Finish**) or **View all** (all questions in one form), and press **Update legal requirements** to save. For a **Project** template the questions cover the *Commercial Aspects* (if unsure, choose *usage fee*, the most restrictive), the *Operating Model* (if unsure, choose the *embedded model*) and *Intellectual Property Aspects*. For a **Module** template they cover *Trade Secret Aspects*, the *Licensing Strategy* and the *Distribution of the module*.
 
 ## Related
 

@@ -5,9 +5,9 @@
 
 The **CSAF Trusted Provider** capability lets your organisation publish
 Common Security Advisory Framework (CSAF) advisories from
-***TrustSource*** in a way that meets the requirements of the
-[OASIS CSAF Trusted Provider](https://oasis-open.github.io/csaf-documentation/)
-program, making your advisories machine-readable, discoverable through
+***TrustSource*** following the requirements of the trusted provider role
+defined in the [OASIS CSAF 2.0](https://oasis-open.github.io/csaf-documentation/)
+standard, making your advisories machine-readable, discoverable through
 the trusted-provider directory, and consumable by downstream automated
 tooling.
 
@@ -30,9 +30,9 @@ tooling.
 - Integration with the [CVD capability](05-cvd.md) so external
   vulnerability reports can flow directly into a CSAF advisory.
 
-📸 *Screenshot: the CSAF document editor with the Metadata tab active and an advisory under preparation.*
+![The CSAF document editor of the draft Example advisory: remote code execution in log4j-core with the Publish and Remove buttons, the tabs Meta information, Affected, Remediation, Checks, History and JSON, and the Meta information tab active.](../../assets/images/v3/13-capabilities/06-csaf-trusted-provider-1.webp)
 
-📸 *Screenshot: the CSAF feed keys on the Scanners & API keys page (Administration → API keys), with the Create CSAF feed key dialog open.*
+![The CSAF feed keys page under Scanners & API with the Create CSAF feed key dialog open: Name, the TLP levels WHITE, GREEN, AMBER and RED, Products and Include drafts.](../../assets/images/v3/13-capabilities/06-csaf-trusted-provider-2.webp)
 
 ## Editions
 

@@ -1,7 +1,7 @@
 # Analysis Reports
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager` or `manager` (the roles that see the [Reports hub](04-reports.md)). Narrower roles are marked below.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` (the roles that see the [Reports hub](04-reports.md)). Narrower roles are marked below.
 
 These reports from the [Reports hub](04-reports.md) analyse one project or module at a time. Use them to check licenses, component health and obligations before a release. Reports across the whole portfolio are on the [next page](04c-impact-and-portfolio-reports.md); the [Vulnerability report](04a-vulnerability-report.md) has its own page.
 
@@ -25,7 +25,7 @@ Shows the project health of each component: **Stars**, **Code forks**, **Open is
 
 ## OpenSSF Scorecard report
 
-Lists the OpenSSF Scorecard of each component. Choose the whole project (**All module of** *project*) or a single module. Counters: **modules** (when the whole project is selected), **different components**, **scores**, **avg score**, plus a score distribution chart. With fewer than 50 % scored components the chart shows *Not enough data available.* Settings: [OSSF](02-modules/settings/05-ossf.md).
+Lists the OpenSSF Scorecard of each component. Choose the whole project (**All module of** *project*) or a single module. Counters: **modules** (when the whole project is selected), **different components**, **scores**, **avg score**, plus a score distribution chart. With fewer than 50 % scored components the chart shows *Not enough data available.* A **Project Goals** panel with the project description follows. Settings: [OSSF](02-modules/settings/05-ossf.md).
 
 ### Score missing components
 

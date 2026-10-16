@@ -16,7 +16,7 @@
 
 ***TrustSource*** shows a note that the import status can be checked on the project's **Imports** page (open it from the project's **Reports** dropdown) and takes you to the project's modules. See [Imports (Project)](../03-internal/01-projects/settings/11-module-import.md).
 
-📸 *Screenshot: the Import Scans form with project, format switch, file and module name.*
+![The Import Scans form with the project boostME selected, the switch set to CycloneDX, the file example-payment-sdk-bom.json chosen and the module name changed to example-payment-sdk.](../../assets/images/v3/02-inbound/02-import-scans-1.webp)
 
 ## Supported files
 

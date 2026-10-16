@@ -21,7 +21,7 @@ The buttons in the upper right:
 
 - **View history** / **Close history**: show earlier versions of the settings with author and date.
 - **Start wizard** / **View all**: switch between a step-by-step wizard (Commercial Aspects, Operating Model, IP Aspects; **Next**, **Back**, **Finish**) and the full form.
-- **Import settings from Template**: apply a company legal template. See [Legal Templates](../../../15-legal-manager/02-legal-templates.md).
+- **Import settings from Template**: apply a company legal template. See [Legal Templates](../../../06-administration/02-settings.md#legal-templates).
 - **Import settings from Project**: copy the legal settings of another project (with a name search).
 - **Propagate settings to...**: push the settings to one other project or to **All my n projects**. Portfolio managers also see **All n projects**.
 

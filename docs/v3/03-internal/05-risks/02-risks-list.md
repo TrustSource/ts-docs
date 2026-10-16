@@ -1,7 +1,7 @@
 # Risks List
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` to view. The **Add risk** button and the treatment group buttons are shown to `compliance_manager` and `manager` only.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` to view. The **Add risk** button is shown to `compliance_manager` and `manager` only.
 > **Required license feature:** `risks`
 
 The **Risks** tab is the register: one row per risk, for the whole company or for the project or module you choose. Click a row to open the risk in the editor.
@@ -15,7 +15,7 @@ Use the selector at the top right:
 
 On a project's own Risks page (the Risks tile on the project page) the project is fixed and you can only narrow down to one of its modules. That page also lists the project's threat models if your plan includes the `threat` feature.
 
-📸 *Screenshot: the Risks list with the project selector and the tiles above the table.*
+![The Risks tab for All modules of boostME, with the project selector at the upper right, the tiles total, added last 7 days, untreated, in treatment, done, overdue tasks and exceptions ending in 30 days, and the risk table below.](../../../assets/images/v3/03-internal/05-risks/02-risks-list-1.webp)
 
 ## Tiles
 
@@ -23,7 +23,7 @@ The tiles count the risks in scope: **total**, **added last 7 days**, the three 
 
 ## Filter the list
 
-- Switch the **Untreated**, **In treatment** and **Done** buttons on or off to show or hide a group (shown to the `compliance_manager` and `manager` roles).
+- Switch the **Untreated**, **In treatment** and **Done** buttons on or off to show or hide a group.
 - Use the search box above the table to filter by any text.
 - Links from the [Overview](01-overview.md) open the list with a filter, shown as chips such as *State: assessed*. Click **Clear filter** to remove them.
 
@@ -31,7 +31,7 @@ The tiles count the risks in scope: **total**, **added last 7 days**, the three 
 
 *Added*, *Name*, *Origin*, *Impact class*, *C*, *I* and *A* (the confidentiality, integrity and availability boxes), *Impact description*, *Value* (the annual loss expectancy), *Treatment strategy*, *Decision*, *Valid until*, *Countermeasures*, *State* and *Treatment*. An impact class that your [scheme](07-risk-assessment-scheme.md) no longer contains is kept and marked **not in scheme**. Impact classes sort by their rank in the scheme.
 
-When you look at a project, the risks that belong to one of its modules show **in Module** instead of a delete button. Click the label to open the module's own list; these risks can only be edited and removed there. In the same way, a module's list shows the project's own risks with **in Project**.
+When you look at a project, the risks that belong to one of its modules show **in Module** instead of a delete button. Click the label to open the module's own list; these risks can only be edited and removed there. A module's list shows only the module's own risks, not those of its project.
 
 The trash button at the end of a row removes the risk at once, without a confirmation. The removal is recorded in the risk's history and in Company Logs.
 

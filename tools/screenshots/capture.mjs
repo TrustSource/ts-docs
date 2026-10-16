@@ -168,8 +168,13 @@ async function loadMasks() {
   return [...rules, ['[A-Za-z0-9._%+-]+@(?!example\\.com\\b)[A-Za-z0-9.-]+\\.[A-Za-z]{2,}', 'user@example.com']];
 }
 
+// Every frame is masked: some lists (e.g. the Trainings catalog) render inside an iframe.
 async function mask(page, rules) {
-  await page.evaluate((rules) => {
+  for (const frame of page.frames()) await maskFrame(frame, rules).catch(() => {});
+}
+
+async function maskFrame(frame, rules) {
+  await frame.evaluate((rules) => {
     const res = rules.map(([p, r]) => [new RegExp(p, 'gi'), r]);
     const apply = (t) => res.reduce((acc, [re, r]) => acc.replace(re, r), t);
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
@@ -177,7 +182,8 @@ async function mask(page, rules) {
       const t = apply(n.nodeValue);
       if (t !== n.nodeValue) n.nodeValue = t;
     }
-    for (const el of document.querySelectorAll('input, textarea')) {
+    // File inputs refuse a value assignment (InvalidStateError).
+    for (const el of document.querySelectorAll('input:not([type=file]), textarea')) {
       if (el.value) el.value = apply(el.value);
       if (el.placeholder) el.placeholder = apply(el.placeholder);
     }

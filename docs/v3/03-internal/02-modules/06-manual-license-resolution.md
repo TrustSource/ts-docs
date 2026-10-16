@@ -19,7 +19,7 @@ Open the component in the [List tab](04-component-detail.md#the-side-panel). The
 ## Set the license of an unmatched component
 
 1. In the side panel, open **Set the license**.
-2. Pick a license under **License**. The catalog groups **Special cases**, **Standard licenses** and, for enterprise and medical accounts, **Private licenses**.
+2. Pick a license under **License**. The catalog lists **Special cases** first, then, for enterprise and medical accounts with private licenses, **Private licenses**, and then **Standard licenses**.
 3. In the confirmation dialog, read which paths and versions are affected. The setting applies to every occurrence of the component in this module, not only the path you selected.
 4. Enter **Why does this license apply? (required)**, up to 2000 characters, and click **Set license**.
 5. The module is re-analyzed. The section now reads **License set manually** with the license, justification, author and date, plus the resulting **Policy status**.

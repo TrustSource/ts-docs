@@ -40,4 +40,4 @@ If a person holds several roles, each role is evaluated separately and the resul
 - **Account types** and plan features limit capacity and integrations. See [Account Types](08-account-types.md).
 - **API keys** carry scopes of their own. See [API Scopes](09-api-scopes.md).
 
-📸 *Screenshot: the General tab of a project's settings, for a user who may edit only some of its fields, with read-only fields next to editable ones.*
+![The General tab of the mAIfit project settings: Name, Application goals, Members and the lower fields are read-only, while Default project manager and Default compliance manager can be changed.](../../assets/images/v3/10-roles-permissions/03-permission-model-1.webp)

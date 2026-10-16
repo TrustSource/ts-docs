@@ -1,7 +1,7 @@
 # Module Detail Tabs
 
 > [!NOTE]
-> **Required role:** any role with access to the project can open a module. The header actions below are available to `manager` and `compliance_manager`; other roles see no header actions.
+> **Required role:** any role with access to the project can open a module. The header actions below are available to `manager` and `compliance_manager`; developers, portfolio managers and account admins see only **Resolve via Notice file**.
 
 Open a module from the [module list](01-create-and-list.md). The header shows the module name (with version, release name and architecture type), the traffic-light state, and the analysis selector. Below it, the tab bar switches the view. Infrastructure and COTS modules have no tab bar; see [Infrastructure Modules](03-infrastructure-modules.md).
 
@@ -21,9 +21,9 @@ If your company has used up its component allowance, a **Limit reached: N over**
 
 ### List
 
-Each row shows the component name, version and detected licenses (**Multi-license** if you must choose one), plus small status badges for Licenses, Vulnerabilities, Viability, OpenSSF Scorecard, Versioning, Export control and End-of-life. Use the **Filter** box, the sort toggle and the status filters above the list. Click a row to open the **Component Details** side panel; see [Component details](04-component-detail.md).
+Each row shows the component name, version and detected licenses (**Multi-license** if you must choose one), plus small status badges for Licenses, Vulnerabilities, Viability, OpenSSF Scorecard, Versioning and Export control, plus End-of-life when the component has an end-of-life warning or violation. Use the **Filter** box, the sort toggle and the status filters above the list; the dropdown next to the filters (**Overall**, **Legal**, **Vulnerability**, **Viability**, **OpenSSF**, **Versioning**, **End of Life**, **Encryption**, **Multi-Legal**) picks the status the filters apply to. Tick components to act on several at once: **Allow/deny** adds them to the allow list of the module, project or company or removes them, and **Mark as** marks them **Unchanged** or **Loose coupled**. Click a row to open the **Component Details** side panel; see [Component details](04-component-detail.md).
 
-📸 *Screenshot: the List tab with the Component Details side panel open.*
+![The List tab of admin-service filtered by Vulnerability to the components with findings, fast-xml-builder 1.1.4 selected, and the Component Details side panel next to the list with Details, Viability, OSSF, End-of-life, Versioning and Export control.](../../../assets/images/v3/03-internal/02-modules/02-module-detail-tabs-1.webp)
 
 ### Tree and Graph
 
@@ -47,10 +47,10 @@ For `manager` and `compliance_manager`:
 | **Resolve via Notice file** | Lists the obligations a [notice file](../../04-outbound/02-notice-files.md) resolves and creates it (**Create Notice file**). Becomes **View Notice file** once one exists. |
 | **Initiate approval** | Starts an [approval](../06-approvals/index.md). Not shown for modules outside a project. |
 | **Follow** | Follow the module for notifications. |
-| **Stats** | Dropdown with the module's status chart. |
+| **Stats** | Dropdown with an overview of the module: status bars for Components, Vulnerabilities, Legal and Versioning. |
 | **Take tour** | Starts the guided tour. |
 
-On narrow screens some of these move into a **...** menu.
+Depending on the window width, some of these move into the **...** menu; at 1440 pixels, for example, **Env. settings**, **Add component**, **Resolve via Notice file**, **Initiate approval**, **Follow** and **Take tour** are there.
 
 ## Choosing an analysis
 

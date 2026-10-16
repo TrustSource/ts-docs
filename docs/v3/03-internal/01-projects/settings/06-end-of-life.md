@@ -1,7 +1,7 @@
 # End-of-life (Project)
 
 > [!NOTE]
-> **Required role:** everyone who can open the project settings reads the tab. Managers who are the project's default project manager or default compliance manager (or any manager while none is set) can change it.
+> **Required role:** everyone who can open the project settings reads the tab. `manager` users who are the project's default project manager (or any `manager` while none is set) can change it.
 
 The End-of-life tab (heading **Component end-of-life**) controls how ***TrustSource*** handles components approaching or past their end-of-life date.
 
@@ -17,7 +17,7 @@ The warning threshold must not be lower than the violation threshold, unless it 
 > [!TIP]
 > A typical configuration is a warning at 6 months and a violation at 1 month. This gives your team half a year to plan a migration away from the end-of-life component.
 
-📸 *Screenshot: the End-of-life tab with Enable end-of-life analysis for all modules switched on and the Warning threshold and Violation threshold sliders.*
+![The End-of-life tab of mAIfit with Enable end-of-life analysis for all modules switched on, the Warning threshold slider at 6m and the Violation threshold slider at 1m.](../../../../assets/images/v3/03-internal/01-projects/settings/06-end-of-life-1.webp)
 
 ## Related
 

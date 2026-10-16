@@ -55,4 +55,4 @@ Company-specific licenses that should not go into the shared catalog belong unde
 
 - [Open Source Policy](07-open-source-policy.md) - your company's policy document
 - [Manual License Resolution](../03-internal/02-modules/06-manual-license-resolution.md) - assigning a license by hand
-- [Legal Reference Data](../15-legal-manager/index.md)
+- [Settings → Legal templates](../06-administration/02-settings.md#legal-templates) - presets for the legal requirements of projects and modules

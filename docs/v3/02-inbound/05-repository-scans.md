@@ -1,21 +1,21 @@
 # Repository Scans
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` to open the page. Scheduling and linking a scan needs `account_admin`, `company_component_manager`, `compliance_manager` or `manager`.
+> **Required role:** `account_admin`, `company_component_manager`, `compliance_manager` or `manager` (the menu entry is shown to these roles only).
 
 A repository scan (DeepScan) analyses a Git repository or a file at source level. It finds licenses and copyright notices in individual files and can add a crypto inventory and an OpenSSF Scorecard. It catches what package managers do not report: vendored code, copied snippets and non-standard license headers. The page is titled **Repositories [DeepScan]** and opens from **Inbound → Repository Scans**.
 
 ## Schedule a scan
 
 1. Press **Schedule DeepScan**.
-2. Enter the **Url**. The switch **Repository / File** says whether it points to a Git repository or to a single file.
+2. Enter the **Url**. The switch **Points to** (**Repository** or **File**) says whether it points to a Git repository or to a single file.
 3. Optionally enter a **Tag** or **Branch**.
 4. Choose per option **Yes** or **No**: **Scorecard**, **Crypto** and **Copyright** analysis.
-5. For a private repository, switch authentication on and enter the **Username** and the **Password / PersonalAccessToken(PAT)**.
+5. For a private repository, set **Urls is password protected** to **Yes** and enter the **Username** and the **Password / PersonalAccessToken(PAT)**.
 6. Optionally select a deny list under **Compare effective licenses with deny list**.
 7. Press **Schedule DeepScan**.
 
-📸 *Screenshot: the Schedule DeepScan dialog.*
+![The Schedule DeepScan dialog with a repository Url and a tag filled in, the switch Points to set to Repository, Yes or No for the scorecard, crypto and copyright analysis and for Urls is password protected, and the deny list selection.](../../assets/images/v3/02-inbound/05-repository-scans-1.webp)
 
 ## The scan list
 

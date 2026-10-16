@@ -18,13 +18,12 @@ The detail page is titled with the license name and its identifier in brackets, 
 If ***TrustSource*** does not hold the text, the page says so and links to the official text instead.
 
 > [!NOTE]
-> Users with the **Legal Manager** role (`legal_manager`) also see whether the license is *Analysed* or *Not analysed* and an **Edit** button. See [Manage Legal](../15-legal-manager/01-manage-legal.md).
+> The license catalogue and the legal assessment of each license are maintained by ***TrustSource***.
 
 The catalogue also contains the special identifiers `NO-LICENSE`, `PUBLIC-DOMAIN` and `UNKNOWN`. Use them when you assign a license by hand to a component the scan could not match.
 
-📸 *Screenshot: the license list with the All and Top List tabs.*
+![The Licenses page, 417 licenses known, with the tabs All and Top List; the All tab lists the licenses alphabetically.](../../assets/images/v3/05-knowledge/06-licenses-1.webp)
 
 ## Related
 
 - [Open Source Policy](07-open-source-policy.md) - the policy document your company publishes
-- [Legal Manager](../15-legal-manager/index.md)

@@ -25,7 +25,7 @@ A **product** in ***TrustSource*** represents what you ship to the customer. Pro
 | [Support](08-tab-support.md) | Support contracts with end dates; EoL info file. |
 | [Misuse](09-tab-misuse.md) | Potential misuse cases required by the CRA. |
 
-📸 *Screenshot: the product list showing a hierarchical tree of products.*
+![The Products page with the Tree of Products on the left, from the class Example Home Appliances down to its families, variants and a version, and Example Fridge FR-100 selected on the right with its Information tab.](../../../assets/images/v3/03-internal/03-products/index-1.webp)
 
 ## Related
 

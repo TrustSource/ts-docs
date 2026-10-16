@@ -6,7 +6,7 @@
 
 If your organization runs several companies in one enterprise group, the enterprise admin sees them under **Administration → Enterprise Companies**. The page is a read-only overview of the member companies and their API usage.
 
-📸 *Screenshot: the Enterprise companies list.*
+![The Enterprise companies page with a filter field and a table with the columns Created, Name, Email and Account type, listing TrainCo Ltd. with the account type enterprise.](../../assets/images/v3/06-administration/06-enterprise-companies-1.webp)
 
 ## The company list
 

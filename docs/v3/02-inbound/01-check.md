@@ -34,7 +34,7 @@ You get the **Vulnerabilities** known for that version (each linked, coloured by
 
 If the project or module has incomplete legal settings, ***TrustSource*** says it cannot be selected and links to the settings to complete the legal requirements first. Until all required fields are chosen, the page lists what is missing.
 
-📸 *Screenshot: the Check page in Component mode with a result.*
+![The Check page in Component mode for the project boostME, the module auth-service and minimist 1.2.5 (MIT): two vulnerabilities with score 9.8, then the obligations for an unmodified and a modified component.](../../assets/images/v3/02-inbound/01-check-1.webp)
 
 > [!TIP]
 > A bell button next to a legal problem or obligation marks it as accepted or resolved, where it can be resolved by hand; the same button reopens it. For automation, the [Check API](../09-rest-api/endpoints/compliance-check.md) offers the same evaluation.

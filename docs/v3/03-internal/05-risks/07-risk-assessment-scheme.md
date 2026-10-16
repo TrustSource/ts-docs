@@ -52,7 +52,7 @@ Open the project's or module's settings, tab **CIA**, and scroll to **Risk asses
 
 The text under each part says where its current values come from: built-in default, company, project or module scheme.
 
-📸 *Screenshot: the Risk assessment page with the impact class table and the threshold selectors.*
+![The company Risk assessment page with Customise switched on for the impact classes, showing the table of values, labels and ranks from low to existential with Add entry, the value scale and ARO entries, and the three threshold selectors set to Default (off).](../../../assets/images/v3/03-internal/05-risks/07-risk-assessment-scheme-1.webp)
 
 ## Which scheme applies
 

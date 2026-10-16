@@ -82,13 +82,13 @@ the same obligation set. Two projects with identical Legal answers
 and identical component licenses yield identical obligations.
 
 > [!TIP]
-> If many projects share the same answers, create a legal template once under **Administration → Settings → Legal templates** and import it into each project. See [Legal Templates](../15-legal-manager/02-legal-templates.md).
+> If many projects share the same answers, create a legal template once under **Administration → Settings → Legal templates** and import it into each project. See [Legal templates](../06-administration/02-settings.md#legal-templates).
 
 ## Background reading
 
 An **EACG Academy course** on the Legal Questionnaire is planned;
 this recipe will link to it as soon as the course is live. Until
-then, the printed **CGM Legal Questionnaire** guide (PDF) and the
+then, the printed **Legal Questionnaire** guide (PDF) and the
 three-part video walkthrough that were used to develop the course
 are available on request from support.
 

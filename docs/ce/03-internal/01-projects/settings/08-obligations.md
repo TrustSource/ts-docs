@@ -14,7 +14,7 @@ The list below the form has three columns: **Obligation**, **Comment** and **Com
 3. Enter a comment of up to 200 characters (required).
 4. Click **Add**.
 
-Click a row to change it: the button becomes **Update**, and **Cancel** and **Remove** appear. Rows labelled **in Company** come from the company and link to its [Legal Templates](../../../15-legal-manager/02-legal-templates.md).
+Click a row to change it: the button becomes **Update**, and **Cancel** and **Remove** appear. Rows labelled **in Company** come from the company and link to its [Legal Templates](../../../06-administration/02-settings.md#legal-templates).
 
 ## Import and propagate
 

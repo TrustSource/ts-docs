@@ -6,13 +6,13 @@ The header shows the approval name, its **Packageurl** and description, the **Ma
 
 ## Overview
 
-The counters show **Modules**, **Component status changes**, **SW-Tests passed**, **Vulnerabilities resolved**, **Legal actions taken**, **Components outdated**, **Notice file completed**, **SOUP list completed** (with SoUP reports) and **Capabilities**, followed by the table of modules in the approval.
+The counters show **Modules**, **Component status changes**, **SW-Tests passed** (with the `sarif` license), **Vulnerabilities resolved**, **Legal actions taken**, **Components outdated**, **Notice file completed** and either **SOUP list completed** (with SoUP reports) or **Capabilities**, followed by the table of modules in the approval.
 
 ## Tabs
 
 | # | Tab | What it shows |
 |---|---|---|
-| 1 | **Vulnerabilities** | Vulnerable components with their CVEs; counters for resolved vulnerabilities, unique vulnerabilities and vulnerable components. |
+| 1 | **Vulnerabilities** | Vulnerable components with their CVEs; counters for unique vulnerabilities, resolved vulnerabilities and vulnerable components. **Export as CSAF** downloads a CSAF/VEX document. |
 | 2 | **Licenses** | Licenses grouped by violations, obligations and no further obligations, with the license distribution across the modules. |
 | 3 | **Versioning** | Components with version problems, as in the [Versioning report](../04b-analysis-reports.md#versioning-report). |
 | 4 | **Viability** | Project health of each component (as in the [Viability report](../04b-analysis-reports.md#viability-report)), with components without information. |
@@ -21,7 +21,7 @@ The counters show **Modules**, **Component status changes**, **SW-Tests passed**
 | 7 | **Capabilities** | Software capabilities of the modules, with name, description and the version they were introduced at. |
 | 8 | **SW-Quality** | SARIF quality results of the modules (only with the `sarif` license). |
 
-📸 *Screenshot: the approval detail page with the Vulnerabilities tab active.*
+![The approval Example dry run with Manage binary links, Create approval request and Remove DRAFT in the header, the Vulnerabilities tab active, the counters 4 unique vulnerabilities, 0 resolved vulnerabilities and 4 vulnerable components, and the vulnerable components with their appearances and advisories.](../../../assets/images/v3/03-internal/06-approvals/02-approval-detail-tabs-1.webp)
 
 > [!TIP]
 > Use **Status changes** to check that every modified component documents its changes: undocumented changes are counted at the top.
