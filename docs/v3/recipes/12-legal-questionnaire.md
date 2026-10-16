@@ -88,7 +88,7 @@ and identical component licenses yield identical obligations.
 
 An **EACG Academy course** on the Legal Questionnaire is planned;
 this recipe will link to it as soon as the course is live. Until
-then, the printed **CGM Legal Questionnaire** guide (PDF) and the
+then, the printed **Legal Questionnaire** guide (PDF) and the
 three-part video walkthrough that were used to develop the course
 are available on request from support.
 
