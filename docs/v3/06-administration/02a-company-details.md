@@ -1,7 +1,7 @@
 # Company details: general info, FOSS liaison, PSIRT and written offer
 
 > [!NOTE]
-> **Required role:** `account_admin`. The cards for FOSS liaison, PSIRT contacts and written offer are also shown to `compliance_manager` or `company_security_manager`, but only account admins see the form.
+> **Required role:** `account_admin`. FOSS liaison and Written offer are also edited by `compliance_manager`, PSIRT contacts by `company_security_manager`.
 
 Four cards on **Administration → Settings** hold data about your company. Each form ends with **Update**.
 

@@ -1,7 +1,7 @@
 # Releases
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager` or `manager` (the **Internal** menu). Creating release keys needs `compliance_manager`, `manager` or `account_admin`.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` (the **Internal** menu). Creating release keys needs `compliance_manager`, `manager` or `account_admin`.
 
 A **release** is an approved approval: a frozen set of module analyses with its SBOM, notice file and compliance report. Once released, ***TrustSource*** keeps tracking new vulnerabilities in its components, even after your development team has moved on.
 

@@ -8,7 +8,7 @@
 |---|---|---|
 | **Developer** | `developer` | Works with scans and modules. Edits module settings such as tags, thresholds, allow/deny lists and CIA. |
 | **Compliance manager** | `compliance_manager` | Owns the compliance workflow: approvals, allow/deny lists and their approval, outbound documents, license-related company settings and policies. |
-| **Portfolio manager** | `portfolio_manager` | Organizes the portfolio: assigns the default project manager and default compliance manager, maintains tags and capabilities. |
+| **Portfolio manager** | `portfolio_manager` | Organizes the portfolio: sees every project and module, maintains capabilities. |
 | **Manager** | `manager` | Leads projects: approvals, tags, webhooks, and broad rights on the projects and modules they manage. |
 | **Account admin** | `account_admin` | Administers the company: users, integrations, API keys, policies, billing and audit logs. |
 | **Enterprise admin** | `enterprise_admin` | Administers an enterprise group: account and integrations, and the list of member companies. |

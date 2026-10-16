@@ -30,7 +30,7 @@ The **Risk** capability turns ***TrustSource*** from a compliance system into a 
 
 ## Roles
 
-The Risks menu sits in the Internal section, which is shown to `developer`, `compliance_manager` and `manager`; everybody who can open it can view and edit risks. Adding a risk by hand and creating risks from findings needs `compliance_manager` or `manager`. The company scheme can be changed by `account_admin`, `compliance_manager` and `company_security_manager`.
+The Risks menu sits in the Internal section, which is shown to `developer`, `compliance_manager`, `manager` and `account_admin`; everybody who can open it can view and edit risks. Adding a risk by hand and creating risks from findings needs `compliance_manager` or `manager`. The company scheme can be changed by `account_admin`, `compliance_manager` and `company_security_manager`.
 
 ## Editions
 

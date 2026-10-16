@@ -1,7 +1,7 @@
 # Analysis Reports
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager` or `manager` (the roles that see the [Reports hub](04-reports.md)). Narrower roles are marked below.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` (the roles that see the [Reports hub](04-reports.md)). Narrower roles are marked below.
 
 These reports from the [Reports hub](04-reports.md) analyse one project or module at a time. Use them to check licenses, component health and obligations before a release. Reports across the whole portfolio are on the [next page](04c-impact-and-portfolio-reports.md); the [Vulnerability report](04a-vulnerability-report.md) has its own page.
 

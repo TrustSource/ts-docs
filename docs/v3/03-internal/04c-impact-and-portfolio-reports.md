@@ -1,7 +1,7 @@
 # Impact and Portfolio Reports
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager` or `manager` (the roles that see the [Reports hub](04-reports.md)). Tiles with narrower roles are marked below.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` (the roles that see the [Reports hub](04-reports.md)). Tiles with narrower roles are marked below.
 
 These reports from the [Reports hub](04-reports.md) look across your portfolio: which projects are hit by a component, a CVE or an algorithm, where your crypto policy is violated, and what your issue trackers hold. Single-project reports are on [Analysis Reports](04b-analysis-reports.md).
 

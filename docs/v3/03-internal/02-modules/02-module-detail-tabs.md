@@ -1,7 +1,7 @@
 # Module Detail Tabs
 
 > [!NOTE]
-> **Required role:** any role with access to the project can open a module. The header actions below are available to `manager` and `compliance_manager`; other roles see no header actions.
+> **Required role:** any role with access to the project can open a module. The header actions below are available to `manager` and `compliance_manager`; developers, portfolio managers and account admins see only **Resolve via Notice file**.
 
 Open a module from the [module list](01-create-and-list.md). The header shows the module name (with version, release name and architecture type), the traffic-light state, and the analysis selector. Below it, the tab bar switches the view. Infrastructure and COTS modules have no tab bar; see [Infrastructure Modules](03-infrastructure-modules.md).
 

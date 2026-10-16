@@ -50,8 +50,8 @@ Each heading is a tab in the project settings.
 | description | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | tags | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | leanix | `r` | `r` | `r` | `r` | `rw` | `r` | `r` | `r` |
-| relatedUsers › defaultProjectManager | `r` | `r` | `rw` | `r` | `r` | `r` | `r` | `r` |
-| relatedUsers › defaultComplianceManager | `r` | `r` | `rw` | `r` | `r` | `r` | `r` | `r` |
+| relatedUsers › defaultProjectManager | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
+| relatedUsers › defaultComplianceManager | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | relatedUsers › members | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 
 ### Legal

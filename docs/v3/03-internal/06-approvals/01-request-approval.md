@@ -7,7 +7,7 @@ You request an approval for a project and choose which of its modules, in which 
 
 ## Start the wizard
 
-- **From the approvals list:** click **Create**, choose the **Project** and click **Create approval request**, or **Dry-run** to try it out. The list offers only projects without assigned users and projects where you are the default project manager; start other projects' approvals from the project.
+- **From the approvals list:** click **Create**, choose the **Project** and click **Create approval request**, or **Dry-run** to try it out. The list offers every project you can see: projects without members, and projects where you are a member or default manager (portfolio managers: all projects).
 - **From a project:** click **Start approval** on the project's **Releases** tile or on the project's releases page.
 - **From a module:** click **Initiate approval** in the module header. The wizard opens with that module preselected.
 

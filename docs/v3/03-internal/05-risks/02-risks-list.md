@@ -1,7 +1,7 @@
 # Risks List
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` to view. The **Add risk** button and the treatment group buttons are shown to `compliance_manager` and `manager` only.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` to view. The **Add risk** button is shown to `compliance_manager` and `manager` only.
 > **Required license feature:** `risks`
 
 The **Risks** tab is the register: one row per risk, for the whole company or for the project or module you choose. Click a row to open the risk in the editor.
@@ -23,7 +23,7 @@ The tiles count the risks in scope: **total**, **added last 7 days**, the three 
 
 ## Filter the list
 
-- Switch the **Untreated**, **In treatment** and **Done** buttons on or off to show or hide a group (shown to the `compliance_manager` and `manager` roles).
+- Switch the **Untreated**, **In treatment** and **Done** buttons on or off to show or hide a group.
 - Use the search box above the table to filter by any text.
 - Links from the [Overview](01-overview.md) open the list with a filter, shown as chips such as *State: assessed*. Click **Clear filter** to remove them.
 

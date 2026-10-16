@@ -1,7 +1,7 @@
 # End-of-life (Module)
 
 > [!NOTE]
-> **Required role:** everyone who can open the module settings reads the tab. Editing is for developers and for managers and compliance managers who are the module's default manager (or if none is set). Saving is also checked on the server, which accepts account admins, managers and compliance managers. See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
+> **Required role:** everyone who can open the module settings reads the tab. Editing is for managers and compliance managers who are the module's default manager (or if none is set); developers see it read-only. Saving is also checked on the server, which accepts account admins, managers and compliance managers. See the [Settings Permission Matrix](../../../10-roles-permissions/06-settings-permission-matrix.md).
 
 Software that has reached its end of life no longer gets security fixes. This tab controls when ***TrustSource*** flags such components in this module, for example a `debian:11` base image or a Node.js 16 runtime.
 

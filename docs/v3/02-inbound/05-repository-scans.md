@@ -1,7 +1,7 @@
 # Repository Scans
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin` to open the page. Scheduling and linking a scan needs `account_admin`, `company_component_manager`, `compliance_manager` or `manager`.
+> **Required role:** `account_admin`, `company_component_manager`, `compliance_manager` or `manager` (the menu entry is shown to these roles only).
 
 A repository scan (DeepScan) analyses a Git repository or a file at source level. It finds licenses and copyright notices in individual files and can add a crypto inventory and an OpenSSF Scorecard. It catches what package managers do not report: vendored code, copied snippets and non-standard license headers. The page is titled **Repositories [DeepScan]** and opens from **Inbound → Repository Scans**.
 

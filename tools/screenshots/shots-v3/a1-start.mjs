@@ -256,6 +256,45 @@ export default [
     target: 'viewport',
   },
   {
+    // The fully expanded menu is about 1360 px tall, so this shot uses a taller window.
+    id: `${RP}/04-functions-by-area-1`,
+    alt: 'The left navigation with every section expanded: Overview, Inbound (Scans), Internal, Outbound, Knowledge and Administration with all their entries.',
+    doc: `${RP}/04-functions-by-area.md`,
+    url: '/projects',
+    viewport: { width: 1440, height: 1500 },
+    prepare: async (page, seed, h) => {
+      await clean(page);
+      // Clicking would collapse the other groups again; open every group in place.
+      await page.evaluate(() => document.querySelectorAll('#side-menu .collapse, #side-menu .nav-second-level').forEach((e) => {
+        e.classList.add('in'); e.style.height = 'auto'; e.style.display = 'block';
+        e.closest('li')?.classList.add('active');
+      }));
+      // The version footer is fixed to the bottom of the window and would overlap the last entries.
+      await page.evaluate(() => [...document.querySelectorAll('body *')]
+        .filter((e) => e.children.length < 6 && /^TrustSource \d/.test(e.innerText || '') && /Copyright/.test(e.innerText))
+        .forEach((e) => { e.style.display = 'none'; }));
+      await h.settle(page, 800);
+    },
+    target: async (page) => {
+      const box = await page.evaluate(() => {
+        const menu = document.querySelector('#side-menu').getBoundingClientRect();
+        const items = [...document.querySelectorAll('#side-menu li > a')].filter((a) => !/Copyright/.test(a.innerText))
+          .map((e) => e.getBoundingClientRect()).filter((r) => r.height);
+        const bottom = Math.max(...items.map((r) => r.bottom));
+        return { x: 0, y: menu.top - 6, width: menu.width, height: bottom + 7 - menu.top + 6 };
+      });
+      return { clip: box };
+    },
+  },
+  {
+    id: `${CAP}/06-csaf-trusted-provider-1`,
+    alt: 'The CSAF document editor of the draft Example advisory: remote code execution in log4j-core with the Publish and Remove buttons, the tabs Meta information, Affected, Remediation, Checks, History and JSON, and the Meta information tab active.',
+    doc: `${CAP}/06-csaf-trusted-provider.md`,
+    url: '/csaf/C3WPcs9AKQgs8yvxu/meta',
+    prepare: async (page, seed, h) => { await clean(page); await h.settle(page, 2500); },
+    target: 'viewport',
+  },
+  {
     id: `${CAP}/06-csaf-trusted-provider-2`,
     alt: 'The CSAF feed keys page under Scanners & API with the Create CSAF feed key dialog open: Name, the TLP levels WHITE, GREEN, AMBER and RED, Products and Include drafts.',
     doc: `${CAP}/06-csaf-trusted-provider.md`,

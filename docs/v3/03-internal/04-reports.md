@@ -1,7 +1,7 @@
 # Reports
 
 > [!NOTE]
-> **Required role:** `developer`, `compliance_manager` or `manager`. **Reports** is an entry of the **Internal** menu, which is shown to these three roles. Some tiles need further roles, see the table.
+> **Required role:** `developer`, `compliance_manager`, `manager` or `account_admin`. **Reports** is an entry of the **Internal** menu, which is shown to these four roles. Some tiles need further roles, see the table.
 
 The Reports page (titled **Analyse [Reports]** in the app) is a hub of 22 tiles. Each tile opens a report in ***TrustSource***. The SBOM, Notice and SOUP tiles lead to the same lists as the [Outbound chapter](../04-outbound/index.md).
 

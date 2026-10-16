@@ -19,7 +19,7 @@ Use the gallery to page through the pictures: click a picture, or focus the gall
 
 Each picture stores who uploaded it and when. Photos can be downloaded together with the product documents; see [Documents](06-tab-documents.md).
 
-📸 *Screenshot: the Photos tab with a gallery of three pictures.*
+![The Photos tab of Example Fridge FR-100 with the Upload additional pictures or illustrations button, a gallery of three pictures fanned out with the front view in front, and the Remove picture button.](../../../assets/images/v3/03-internal/03-products/05-tab-photos-1.webp)
 
 ## Related
 

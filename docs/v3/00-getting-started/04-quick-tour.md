@@ -23,7 +23,7 @@ See [The Dashboard](07-dashboard.md) for every widget.
 
 ## 2. Inbound (Scans): bringing data in
 
-Everything that feeds data into ***TrustSource*** lives here. The group is shown to dev, cm, mgr and aa.
+Everything that feeds data into ***TrustSource*** lives here. The group is shown to dev, cm, mgr and aa; ccm sees it with Repository Scans only.
 
 | Menu entry | What it does | Requirement |
 |---|---|---|
@@ -31,14 +31,14 @@ Everything that feeds data into ***TrustSource*** lives here. The group is shown
 | **Import Scans** | Upload scan results or SBOMs manually (for example SPDX or CycloneDX). | - |
 | **CI/CD Scan** | List of scans from your CI/CD pipelines. | - |
 | **SW Quality Scans** | SARIF-based code quality results. | License `sarif` |
-| **Repository Scans** | Connect a Git repository for deep analysis. | - |
+| **Repository Scans** | Connect a Git repository for deep analysis. | aa, ccm, cm or mgr |
 | **Mass Scans** (BETA) | Bulk-scan multiple repositories at once. | cm, mgr or aa; Enterprise account only |
 
 ![The left sidebar with the Inbound (Scans) group expanded.](../../assets/images/v3/00-getting-started/04-quick-tour-2.webp)
 
 ## 3. Internal: managing your work
 
-The largest group. This is where you manage the core objects. The group is shown to dev, cm and mgr; an account admin without one of these roles does not see it.
+The largest group. This is where you manage the core objects. The group is shown to dev, cm, mgr and aa.
 
 | Menu entry | What it does | Requirement |
 |---|---|---|

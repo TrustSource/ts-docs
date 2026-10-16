@@ -18,12 +18,12 @@ Each heading is a tab in the module settings. The columns are Dev, CM, PM, Mgr, 
 | version | `rw` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | description | `rw` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | projectId | `rw` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
-| tags | `rw` | `r` | `rw` | `r` | `r` | `r` | `r` | `r` |
+| tags | `rw` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | leanix | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | moduleIdentifier | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | architectureType | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
-| relatedUsers › defaultProjectManager | `r` | `r` | `rw` | `r` | `r` | `r` | `r` | `r` |
-| relatedUsers › defaultComplianceManager | `r` | `r` | `rw` | `r` | `r` | `r` | `r` | `r` |
+| relatedUsers › defaultProjectManager | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
+| relatedUsers › defaultComplianceManager | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | relatedUsers › members | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | properties › privacy | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 
@@ -112,7 +112,7 @@ Each heading is a tab in the module settings. The columns are Dev, CM, PM, Mgr, 
 
 | Setting | Dev | CM | PM | Mgr | AA | EA | CCM | CSM |
 |---|---|---|---|---|---|---|---|---|
-| settings | `rw` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
+| settings | `r` | `r` | `r` | `r` | `r` | `r` | `r` | `r` |
 | import | `rx` | - | - | - | - | - | - | - |
 
 ### Quality
@@ -278,7 +278,7 @@ The next tables list only settings where at least one of these contexts differs 
 
 | Setting | Dev base | Dev member | Dev non-member | CM base | CM default owner | Mgr base | Mgr default owner |
 |---|---|---|---|---|---|---|---|
-| settings | `rw` | `rw` | `r` | `r` | `rw` | `r` | `rw` |
+| settings | `r` | `r` | `r` | `r` | `rw` | `r` | `rw` |
 | import | `rx` | `rx` | `r` | - | `rx` | - | `rx` |
 
 ### Context rights: Quality

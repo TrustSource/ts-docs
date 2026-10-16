@@ -1,7 +1,7 @@
 # Legal (Project)
 
 > [!NOTE]
-> **Required role:** the form, the wizard, import and propagate are for `manager` and `compliance_manager` users who are the project's default project manager or default compliance manager (or any of them while none is set). Other roles see the tab without the form.
+> **Required role:** the form, the wizard, import and propagate are for `manager` and `compliance_manager` users who are the project's default project manager or default compliance manager (or any of them while none is set). Other roles see the form greyed out and can use **View history**.
 
 The Legal tab captures the **project-level** answers of the Legal
 Questionnaire (Part 1): the commercial and IP-protection framing that

@@ -41,9 +41,9 @@ A manager or compliance manager can edit only if they are the module's default p
 | Field | Who can edit |
 |---|---|
 | Name, Version, Description, Default confidence level, Repository, Link with LeanIX | Developers and managers. |
-| Assigned Project, Tags | Developers, managers and compliance managers. Portfolio managers can also change Tags. |
+| Assigned Project, Tags | Developers, managers and compliance managers. |
 | Type of architecture, Privacy, Members | Managers and compliance managers. |
-| Default project manager, Default compliance manager | Managers, compliance managers and portfolio managers. |
+| Default project manager, Default compliance manager | Managers and compliance managers. |
 
 > [!TIP]
 > An infrastructure module hides the tabs for Quality, Crypto management, AI / ML, Allow/Deny, Capabilities, MDR/IVDR Classification, Custom components, History and Export SPDX. See [Infrastructure Modules](../03-infrastructure-modules.md).

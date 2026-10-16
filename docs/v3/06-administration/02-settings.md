@@ -28,7 +28,7 @@ The **Settings** page ("General settings") is the entry point for company-wide c
 | **Manual vulnerability** | Vulnerabilities you track yourself because they are not in public feeds. | `account_admin`, `company_security_manager`, `company_component_manager` |
 
 > [!NOTE]
-> A card can be visible to a role that may only look at the page. For example, the **FOSS liaison**, **PSIRT contacts** and **Written offer** forms are only shown to account admins, and only account admins and managers can add or remove company tags.
+> A card can be visible to a role that may only look at the page. For example, only account admins and managers can add or remove company tags.
 
 ## Legal templates
 

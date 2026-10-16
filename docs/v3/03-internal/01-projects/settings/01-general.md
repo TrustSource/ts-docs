@@ -1,7 +1,7 @@
 # General (Project)
 
 > [!NOTE]
-> **Required role:** everyone who can open the project settings reads the tab. Name, Application goals, Tags, the default managers and Members can be changed by `manager` and `compliance_manager` users who are the project's default project manager or default compliance manager (or any of them while none is set). `portfolio_manager` can also set the default managers. **Link with LeanIX** is changed by `account_admin` and by managers who are owner. **Upload file** is for `account_admin`, `manager` and `compliance_manager`.
+> **Required role:** everyone who can open the project settings reads the tab. Name, Application goals, Tags, the default managers and Members can be changed by `manager` and `compliance_manager` users who are the project's default project manager or default compliance manager (or any of them while none is set). **Link with LeanIX** is changed by `account_admin` and by managers who are owner. **Upload file** is for `account_admin`, `manager` and `compliance_manager`.
 
 The General tab is where you configure the project's identity and team assignments.
 

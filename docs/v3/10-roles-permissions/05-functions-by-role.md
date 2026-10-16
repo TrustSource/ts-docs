@@ -8,8 +8,8 @@ Roles add up: a person with several roles can do everything any of them can do. 
 
 ## Developer (`developer`)
 
-- **Menu:** Overview, Inbound (Check, Import Scans, CI/CD Scan, Repository Scans, SW Quality Scans with `sarif`), Internal (Projects, Reports, Releases, Products with `products`, Risks with `risks`, Threat Models with `threat`), Knowledge.
-- **Module settings:** edit General (name, version, description, project id, tags), Viability, OSSF, Versioning, MDR/IVDR classification, CIA, Capabilities, Crypto management, End-of-life, Quality, Allow/Deny lists, Allowed vulnerabilities and Custom components; export SPDX; delete a module and its history.
+- **Menu:** Overview, Inbound (Check, Import Scans, CI/CD Scan, SW Quality Scans with `sarif`), Internal (Projects, Reports, Releases, Products with `products`, Risks with `risks`, Threat Models with `threat`), Knowledge.
+- **Module settings:** edit General (name, version, description, project id, tags), Viability, OSSF, Versioning, MDR/IVDR classification, CIA, Capabilities, Crypto management, Quality, Allow/Deny lists, Allowed vulnerabilities and Custom components (add only); export SPDX; delete a module and its history.
 - **Project settings:** read only.
 - **Context:** the member and non-member rights in the [module matrix](06a-module-settings-matrix.md) apply.
 
@@ -18,13 +18,13 @@ Roles add up: a person with several roles can do everything any of them can do. 
 - **Menu:** everything a developer sees, plus Approvals, Outbound (SBOM + CBOM, Notice Files, Verify, SOUP Lists, CSAF, CVD cases with the matching license), Mass Scans.
 - **Approvals:** start and approve or reject approvals. See [Approve / Reject](../03-internal/06-approvals/03-approve-reject-workflow.md).
 - **Project settings:** edit Allow/Deny lists, enforce them and approve license and component allow-list entries.
-- **Company settings:** Settings cards for FOSS liaison, Written offer, License allow/deny, Component allow/deny, Encryption, Quality, Company tags, Private licenses and Legal templates (the FOSS liaison and Written offer forms are shown to account admins only); Policies including the Opensource policy; the Login history page.
+- **Company settings:** Settings cards for FOSS liaison, Written offer, License allow/deny, Component allow/deny, Encryption, Quality, Company tags, Private licenses and Legal templates; Policies including the Opensource policy; the Login history page.
 - **Context:** gets default-owner rights on projects and modules where they are the default compliance manager or none is set.
 
 ## Portfolio manager (`portfolio_manager`)
 
 - **Menu:** Overview, Knowledge, Settings with Company tags.
-- **Project and module settings:** assign the default project manager and default compliance manager; edit module tags and Capabilities; export SPDX.
+- **Project and module settings:** edit Capabilities; export SPDX.
 - **Visibility:** sees every project and module of the company, also those whose members do not include them. See [Permission Model](03-permission-model.md#which-projects-and-modules-you-see).
 
 ## Manager (`manager`)
@@ -37,7 +37,7 @@ Roles add up: a person with several roles can do everything any of them can do. 
 
 ## Account admin (`account_admin`)
 
-- **Menu:** Inbound, Outbound and the whole Administration section: Account & Billing, Identity Integration (Enterprise or Medical), Integrations, Settings, User Management, API keys, Policies, Audit logs.
+- **Menu:** Inbound, Internal (Projects, Reports, Releases, Products, Risks, Threat Models with their licenses), Outbound and the whole Administration section: Account & Billing, Identity Integration (Enterprise or Medical), Integrations, Settings, User Management, API keys, Policies, Audit logs.
 - **Company data:** invite users, change roles, import users, remove users; manage integrations, webhooks and API keys; all Settings cards.
 - **Project settings:** Issue Integration (Jira, TFS, GitHub) and the LeanIX link; read access elsewhere.
 
@@ -48,7 +48,7 @@ Roles add up: a person with several roles can do everything any of them can do. 
 
 ## Company component manager (`company_component_manager`)
 
-- **Menu:** Overview, Knowledge, Settings with Component allow/deny and Manual vulnerability.
+- **Menu:** Overview, Knowledge, Inbound (Repository Scans only), Settings with Component allow/deny and Manual vulnerability.
 - **Pages:** the critical components report.
 
 ## Company security manager (`company_security_manager`)

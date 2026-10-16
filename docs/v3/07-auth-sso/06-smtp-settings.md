@@ -16,10 +16,10 @@ SMTP settings define the mail server that your identity store uses for its own e
 | **Reply to display name**, **Reply to** | Name and address for replies. |
 | **EnvelopeFrom** | Address for bounces (optional). |
 | **SSL enabled**, **STARTTLS enabled** | How the connection to the mail server is encrypted. |
-| **Auth enabled*** | Switch on when the server needs a login. |
-| **User***, **Password*** | The login for the mail server. |
+| **Auth enabled** | Switch on when the server needs a login. |
+| **User**, **Password** | The login for the mail server; required while **Auth enabled** is on. |
 
-The form marks **Auth enabled**, **User** and **Password** as required, in addition to **Host** and **From**.
+The form requires **Host** and **From**, and **User** and **Password** while **Auth enabled** is on.
 
 ## Related
 

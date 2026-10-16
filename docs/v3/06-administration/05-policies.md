@@ -1,9 +1,9 @@
 # Policies
 
 > [!NOTE]
-> **Required role:** `account_admin`, `company_security_manager` or `compliance_manager`. The **Opensource policy** card is shown to all three, but the policy list behind it opens for `compliance_manager` only.
+> **Required role:** `account_admin`, `company_security_manager` or `compliance_manager`. The **Opensource policy** card is shown to `compliance_manager` only; **Risk assessment** only with the `risks` feature.
 
-**Administration → Policies** collects the company-wide rules that projects and modules are measured against. The page shows four cards.
+**Administration → Policies** collects the company-wide rules that projects and modules are measured against. The page shows up to four cards.
 
 ![The Policies page with four cards: Opensource policy, Crypto algorithms, Component end-of-life and Risk assessment.](../../assets/images/v3/06-administration/05-policies-1.webp)
 
