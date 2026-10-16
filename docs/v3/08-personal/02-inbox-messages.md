@@ -2,7 +2,7 @@
 
 The **Messages** page ("All messages available on this page. You may filter them by type") collects the notifications ***TrustSource*** sends to you, for example about analyses, approvals, allow-list decisions, new vulnerabilities and risk deadlines. Open it with the envelope icon **Messages** in the right bar. An open envelope ("Unread messages available") means you have unread messages.
 
-📸 *Screenshot: the Messages page with the Inbox, Marked and Trash buttons, the type filter buttons and the message table with From, Message and Date.*
+![The Messages page with the Inbox (4), Marked and Trash buttons, the Filter field and the message table with From, Message and Date: a new vulnerability, an overdue risk task, an approval request and a reset component status, each with See more.](../../assets/images/v3/08-personal/02-inbox-messages-1.webp)
 
 ## Folders
 

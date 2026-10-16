@@ -25,7 +25,7 @@ The matrix has one row per scope (the project itself and each module) and one co
 
 Click a module cell to open the module's [OBOM tab](../02-modules/07-obom-tab.md). Click a project cell to open the document in place below the matrix, with the **Components**, **Findings** and **Raw JSON** views; **Close** hides it.
 
-📸 *Screenshot: the Deployments matrix with three deployments and one Defaults cell.*
+![The Deployments page of Example Webshop with the Compare deployments button and the matrix of the scopes Project (overall), order-service, payment-service and shop-frontend against the deployments development, production-eu and staging: each cell shows the age and number of components, red findings chips, Explicit chips and one Defaults chip for order-service in production-eu.](../../../assets/images/v3/03-internal/01-projects/03-deployments-1.webp)
 
 ## Compare two deployments
 

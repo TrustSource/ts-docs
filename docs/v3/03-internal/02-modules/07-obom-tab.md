@@ -22,7 +22,7 @@ Open the module and click **OBOM**. A line above the table gives the **Source** 
 
 A **Defaults scan** chip means the scan used default parameters, so resource names may differ in the real environment. If the OBOM cannot be loaded, the tab says so instead of showing an empty state.
 
-📸 *Screenshot: the OBOM tab with the Components table and the Defaults scan chip.*
+![The OBOM tab of the module order-service with Source ts-scan 2.4.0, the Created date, CycloneDX 1.6 and the Defaults scan chip, the Components, Findings (1) and Raw JSON buttons, and the Components table with eclipse-temurin, postgresql and ubuntu, their version, type, purl and findings.](../../../assets/images/v3/03-internal/02-modules/07-obom-tab-1.webp)
 
 ## Deployments
 

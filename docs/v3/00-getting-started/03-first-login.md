@@ -35,7 +35,7 @@ If you sign in with a password and have 2FA enabled, you will be asked for a six
 3. **Workspace loading**: while your company is being set up, you see a brief **Setting up your workspace** screen ("We're getting your account ready. This usually takes a few seconds.").
 4. **Dashboard**: once ready, you land on the [dashboard](07-dashboard.md).
 
-📸 *Screenshot: the dashboard of a new company without modules: the Welcome to TrustSource banner with Load demo project and Take tour, and the video panel.*
+![The dashboard of a new company without modules: the Welcome to TrustSource banner with Load demo project and Take tour, the Our latest videos panel and the Activity log with the creation of the new user.](../../assets/images/v3/00-getting-started/03-first-login-2.webp)
 
 ## Switching companies
 
