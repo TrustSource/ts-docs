@@ -252,7 +252,8 @@ nav:
       - v3/12-release-notes/index.md
       - v3.3: v3/12-release-notes/3.3.md
       - v3.2: v3/12-release-notes/3.2.md
-      - v3.1.20: v3/12-release-notes/3.1.20.md
+      - v3.1: v3/12-release-notes/3.1.md
+      - v3.0: v3/12-release-notes/3.0.md
     - Recipes:
       - v3/recipes/index.md
       - First Module to SBOM: v3/recipes/01-first-module-to-sbom.md
@@ -573,6 +574,8 @@ plugins:
         'ce/15-legal-manager/index.md': 'ce/05-knowledge/06-licenses.md'
         'ce/15-legal-manager/02-legal-templates.md': 'ce/06-administration/02-settings.md'
         'ce/15-legal-manager/03-copyright-trademarks.md': 'ce/00-getting-started/04-quick-tour.md'
+        # v3 release notes page renamed to its series
+        'v3/12-release-notes/3.1.20.md': 'v3/12-release-notes/3.1.md'
         # v3 pages of internal TrustSource roles, removed from the docs
         'v3/10-roles-permissions/02-internal-roles.md': 'v3/10-roles-permissions/01-roles-overview.md'
         'v3/14-component-manager/index.md': 'v3/05-knowledge/01-component-lake.md'

@@ -85,14 +85,15 @@ export default [
     target: '.createIssue.in .modal-content',
   },
   {
+    // The entry is a copy of the 3.3.59 entry of the production Updates feed (app.trustsource.io/updates).
     // The local database also holds a CE "1.0" entry; the shot shows the newest entry only.
     id: '08-personal/01-updates-1',
-    alt: 'The Updates page with the entry 3.3 and its publication date, and its items under New, Improvement and Fix.',
+    alt: 'The Updates page with the entry 3.3.59 and its publication date, its items under New and the first items under Improvement.',
     doc: '08-personal/01-updates.md',
     url: '/updates',
-    prepare: async (page) => { await clean(page); await waitText(page, 'Improvement', 'Approvals of unassigned modules'); },
+    prepare: async (page) => { await clean(page); await waitText(page, '3.3.59', 'Approvals work again for unassigned modules'); },
     target: async (page) => {
-      const box = await page.locator('.hpanel, .panel').filter({ hasText: 'Approvals of unassigned modules' }).last().boundingBox();
+      const box = await page.locator('.hpanel, .panel').filter({ hasText: 'Approvals work again for unassigned modules' }).last().boundingBox();
       return { clip: { x: 211, y: 62, width: 1181, height: box.y + box.height + 12 - 62 } };
     },
   },
