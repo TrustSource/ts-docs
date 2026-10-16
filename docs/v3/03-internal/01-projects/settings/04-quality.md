@@ -15,7 +15,7 @@ The panel **Define test requirements** has one row per required tool, for exampl
 
 Rows that come from the company's quality list carry the label **in Company**. Every module of the project shows the project rows with the label **in Project**. The test results are reported on the **SW-Quality** tab of an approval.
 
-![The Quality tab of mAIfit with the Define test requirements panel, its Tool selector, the Add button and one required tool, and the Risk register panel with its three switches for SARIF weaknesses, vulnerabilities and OBOM findings.](../../../../assets/images/v3/03-internal/01-projects/settings/04-quality-1.webp)
+![The Quality tab of mAIfit as a user without write access sees it: the Define test requirements panel with the required tool Selenium and no Tool selector, and the Risk register panel with its three switches for SARIF weaknesses, vulnerabilities and OBOM findings, all off.](../../../../assets/images/v3/03-internal/01-projects/settings/04-quality-1.webp)
 
 ## Risk register
 

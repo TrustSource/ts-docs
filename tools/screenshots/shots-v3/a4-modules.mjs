@@ -247,7 +247,7 @@ export default [
   {
     id: `${S}/12-quality-1`,
     doc: `${S}/12-quality.md`,
-    alt: 'The Quality tab of the module admin-service: Define test requirements with the note on SARIF test results, the Tool selector with the Add button, and the required tool playwrite inherited from the project, labelled in Project.',
+    alt: 'The Quality tab of the module admin-service: Define test requirements with the note on SARIF test results, the Tool selector with the Add button, and the required tool Selenium inherited from the project, labelled in Project.',
     url: `/projects/${MAIFIT}`,
     prepare: async (page, seed, h) => {
       await openSettings(page, h, MAIFIT, MAIFIT_ADMIN);

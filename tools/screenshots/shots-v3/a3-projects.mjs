@@ -156,7 +156,7 @@ const SHOTS = [
     'The CIA tab of mAIfit with Confidentiality requirement (CR) high, Integrity requirement (IR) medium and Availability requirement (AR) low, and below it the Risk assessment scheme panel with impact classes, value scale, ARO and thresholds.',
     { viewport: { width: 1440, height: 1200 } }),
   settingsShot('04-quality', 1, MAIFIT, 'quality',
-    'The Quality tab of mAIfit with the Define test requirements panel, its Tool selector, the Add button and one required tool, and the Risk register panel with its three switches for SARIF weaknesses, vulnerabilities and OBOM findings.',
+    'The Quality tab of mAIfit as a user without write access sees it: the Define test requirements panel with the required tool Selenium and no Tool selector, and the Risk register panel with its three switches for SARIF weaknesses, vulnerabilities and OBOM findings, all off.',
     { viewport: { width: 1440, height: 1200 } }),
   settingsShot('05-encryption', 1, MAIFIT, 'encryption',
     'The Crypto management tab of mAIfit: List of Algorithms as detected without findings, List of Algorithms as managed with Add algorithm and Export as CycloneDX, and the Export controls management panel with its Import and Export columns.'),
