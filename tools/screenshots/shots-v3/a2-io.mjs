@@ -334,7 +334,7 @@ const shots = [
   },
 
   // ---------------------------------------------------------------- Knowledge
-  // A direct load of a COTS component page hangs (see the ts-app issue on the COTS detail page),
+  // A direct load of a COTS component page hangs (eacg-gmbh/ts-app#234),
   // so the page is opened from the list. No COTS entry on DEV has commercial terms.
   {
     id: `${K}/03-cots-1`,
