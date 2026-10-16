@@ -12,7 +12,7 @@ The **Contacts** tab identifies the manufacturer and the contact for security re
 | **Manufacturer Name** | Name of the manufacturer. |
 | **Manufacturer Address** | Postal address. |
 | **Manufacturer Website** | Web address of the manufacturer. |
-| **Product Security Contact** | Where to report vulnerabilities, for example `psirt@example-appliances.com`. |
+| **Product Security Contact** | Where to report vulnerabilities, for example `psirt@example.com`. |
 | **Weblink** | Link to your vulnerability disclosure policy or PSIRT page. |
 
 Click **Save** to store the data. All fields are optional.

@@ -4,7 +4,7 @@ Company-wide settings and management in ***TrustSource CE***. Open them from **A
 
 | Page | What it covers | Menu entry shown to |
 |---|---|---|
-| [Integrations](08-integrations.md) | Github, Jira, TFS, SCANOSS, webhooks and channels, LeanIX. | Account admin |
+| [Integrations](08-integrations.md) | GitHub, Jira, TFS, SCANOSS, webhooks and channels, LeanIX. | Account admin |
 | [Settings](02-settings.md) | Company settings cards: general info, FOSS liaison, PSIRT contacts, written offer, allow/deny lists, encryption, quality, tags, private licenses, legal templates, private algorithms, manual vulnerabilities. | Account admin, Compliance manager, Company security manager, Company component manager, Portfolio manager, Manager (cards depend on role) |
 | [User Management](03-user-management.md) | Invite, import, assign roles, remove users. | Account admin |
 | [API keys](04-api-keys.md) | API keys, release keys and CSAF feed keys. | Account admin |
