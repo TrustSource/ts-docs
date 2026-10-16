@@ -12,7 +12,7 @@ repo_url: https://github.com/trustsource/ts-docs
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2025-2026 <a href="https://www.eacg.de/editorial">EACG GmbH</a>
+copyright: Copyright &copy; 2025-2026 <a href="https://www.eacg.de/editorial">EACG GmbH</a>. Third-party product names and logos shown in these pages are trademarks of their respective owners; their use does not imply endorsement.
 
 nav:
   - Home:
