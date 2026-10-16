@@ -11,4 +11,4 @@ Filter the list and select a component to open its page. It shows the **Informat
 
 COTS components are linked to modules of the COTS type; see [Infrastructure modules](../03-internal/02-modules/03-infrastructure-modules.md) for the comparable workflow.
 
-📸 *Screenshot: a COTS component with its commercial terms.*
+![The COTS component Aruba ClearPass Policy Manage with its Information (key, purl, private flag, homepage, repository, issues, release notes, language and last update), the Comment and the Versions table with version 6.6.8 and its Commercial License.](../../assets/images/v3/05-knowledge/03-cots-1.webp)

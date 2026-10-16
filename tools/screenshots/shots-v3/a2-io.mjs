@@ -334,6 +334,22 @@ const shots = [
   },
 
   // ---------------------------------------------------------------- Knowledge
+  // A direct load of a COTS component page hangs (see the ts-app issue on the COTS detail page),
+  // so the page is opened from the list. No COTS entry on DEV has commercial terms.
+  {
+    id: `${K}/03-cots-1`,
+    doc: `${K}/03-cots.md`,
+    alt: 'The COTS component Aruba ClearPass Policy Manage with its Information (key, purl, private flag, homepage, repository, issues, release notes, language and last update), the Comment and the Versions table with version 6.6.8 and its Commercial License.',
+    url: '/cots_components',
+    prepare: async (page, seed, h) => {
+      await h.settle(page, 2500);
+      await page.getByText('Aruba ClearPass').first().click();
+      await page.getByText('Information', { exact: true }).waitFor();
+      await h.settle(page, 2000);
+      await hide(page);
+    },
+    target: 'viewport',
+  },
   // Example Open Source Policy 1.0 was uploaded for this shot (notify: compliance managers) and activated.
   {
     id: `${K}/07-open-source-policy-1`,
