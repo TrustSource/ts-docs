@@ -61,7 +61,7 @@ Concretely, an Infrastructure Module is a Module that points to one of the entri
 
 Use Infrastructure Modules whenever you want to be honest about the **complete** runtime and distribution surface of your software, which is increasingly required by frameworks like the EU CRA, NIS2 and customer due-diligence questionnaires.
 
-📸 *Screenshot: an infrastructure module in the project's module list, with its linked catalog entry and version visible.*
+![The module list of Example Project in grid view with one card, Redis, labelled Infrastructure Service and Infrastructure Module, with the Follow and Settings buttons and the License and Last visit fields of the linked catalog entry.](../../assets/images/v3/00-getting-started/05-mental-model-3.webp)
 
 ### Component
 

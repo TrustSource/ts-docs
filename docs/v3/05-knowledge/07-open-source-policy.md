@@ -8,7 +8,7 @@ When a new or updated policy becomes active, ***TrustSource*** shows it to you i
 
 If your company has no active policy, the page says so and links to your compliance manager and account administrators by e-mail.
 
-📸 *Screenshot: the Open source policy page with the active policy, its Active from date and the View policy file link.*
+![The Open source policy page with the active policy Example Open Source Policy 1.0, its Active from date, the summary of changes, the View policy file link and the date of the last update.](../../assets/images/v3/05-knowledge/07-open-source-policy-1.webp)
 
 ## Related
 

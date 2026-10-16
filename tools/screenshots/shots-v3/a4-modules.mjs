@@ -15,6 +15,8 @@ const MAIFIT_ADMIN = 'uRHTQdDyRbpwyCYMf';
 const APP = 'AJ6Bmg6AfhzuTDBBz';
 const APP_MOD = 'uNydCv9WXmGQhKSAG';
 
+const EXAMPLE_PROJECT = 'ZjkZwkWRRFWPhf3AR';
+const EXAMPLE_REDIS = 'jeREBDkfTmkzCdDia';
 const moduleUrl = (p, m, view = 'dependencies') => `/projects/${p}/modules/${m}/${view}`;
 
 // The chat mascot floats over the header actions; the guided tour of the module page starts
@@ -105,6 +107,15 @@ async function vulnerableComponent(page, h) {
 }
 
 export default [
+  // Redis 6.2.6 was added to Example Project for this shot as an infrastructure module.
+  {
+    id: `${M}/03-infrastructure-modules-1`,
+    doc: `${M}/03-infrastructure-modules.md`,
+    alt: 'The page of the infrastructure module Redis (6.2.6) with the labels Infrastructure Service and Infrastructure Module, the Settings, Analyse and Follow buttons, and the Component Details panel of the catalog entry im:redis with Details, Select license, Viability, OSSF, End-of-life, Versioning, Export control and the vulnerabilities of version 6.2.6.',
+    url: moduleUrl(EXAMPLE_PROJECT, EXAMPLE_REDIS),
+    prepare: async (page, seed, h) => { await calm(page, h); await page.getByText('im:redis').first().waitFor(); await h.settle(page, 1200); },
+    target: 'viewport',
+  },
   {
     id: `${M}/index-1`,
     doc: `${M}/index.md`,

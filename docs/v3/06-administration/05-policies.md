@@ -22,6 +22,9 @@ Compliance managers upload the policy document here. Users then see the active p
 2. Choose the **Document** (PDF or PPTX, up to 20 MB).
 3. Under **Notify users**, choose the roles that must be informed about the policy.
 4. Add a **Summary of changes** and select **Create Policy**.
+5. The new policy is not active yet. Click its row to open **Update policy information**, switch **Active** on and select **Submit**.
+
+Activating a policy sets its **Active from** date to today and deactivates the policy that was active before. Only one policy is active at a time. Switching **Active** off removes the date again.
 
 The list shows **Active**, **Active from**, **Created**, **Updated**, **Policy name**, **Document**, **Notify**, **Presented**, **Viewed** and **Confirmed**, so you can follow who has read and confirmed the policy. A policy name must be unique.
 

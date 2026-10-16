@@ -92,6 +92,20 @@ const products = (classification) => async (page, seed, h) => {
 };
 
 export default [
+  // Grid view of Example Project, whose only module is the infrastructure module Redis 6.2.6.
+  // The grid view choice is not kept for the next page load, so other shots still get the table.
+  {
+    id: `${GS}/05-mental-model-3`,
+    alt: 'The module list of Example Project in grid view with one card, Redis, labelled Infrastructure Service and Infrastructure Module, with the Follow and Settings buttons and the License and Last visit fields of the linked catalog entry.',
+    doc: `${GS}/05-mental-model.md`,
+    url: '/projects/ZjkZwkWRRFWPhf3AR',
+    prepare: async (page, seed, h) => {
+      await clean(page);
+      await waitText(page, 'Redis');
+      await h.click(page, 'a[title="Grid view"]', 1500);
+    },
+    target: { clip: { x: 221, y: 270, width: 1153, height: 392 } },
+  },
   {
     id: `${GS}/02-account-types-1`,
     alt: 'The Account type panel of Account & Billing with the selector Free, Professional, Corporate, Enterprise and Medical, Enterprise selected, and the See pricing plan details button.',
@@ -253,6 +267,47 @@ export default [
     doc: `${CAP}/02-risk.md`,
     url: '/risks/overview',
     prepare: async (page) => { await clean(page); await waitText(page, 'Risk inventory', 'risks in total'); await page.waitForTimeout(1500); },
+    target: 'viewport',
+  },
+  // The chat history of Max (two questions on SBOMs) was created for these shots. Answers are
+  // long, so the log is scrolled to the second question.
+  {
+    id: `${CAP}/01-oscar-chat-1`,
+    alt: 'The mAIfit project page with its module list and the AI Assistant panel docked on the right, showing the question Which formats can I export it in? and the start of the answer, with the message box and Send button below.',
+    doc: `${CAP}/01-oscar-chat.md`,
+    url: `/projects/${MAIFIT}`,
+    prepare: async (page, seed, h) => {
+      await clean(page);
+      await waitText(page, 'admin-service');
+      await page.locator('#right-bar li.intro-chat').first().click();
+      await page.waitForFunction(() => [...document.querySelectorAll('.log .user')].filter((e) => e.offsetParent).length >= 2, null, { timeout: 30000 });
+      await h.settle(page, 1500);
+      await page.evaluate(() => {
+        const users = [...document.querySelectorAll('.log .user')].filter((e) => e.offsetParent);
+        const u = users[users.length - 1]; const log = u.closest('.log');
+        log.scrollTop += u.getBoundingClientRect().top - log.getBoundingClientRect().top - 12;
+      });
+      await page.waitForTimeout(600);
+    },
+    target: 'viewport',
+  },
+  {
+    id: `${CAP}/01-oscar-chat-2`,
+    alt: 'The full-page chat at /chat with the View policy, Leave a feedback, Clear history and Reset session buttons, the end of the answer to the first question and the follow-up question Which formats can I export it in? with its answer.',
+    doc: `${CAP}/01-oscar-chat.md`,
+    url: '/chat',
+    prepare: async (page, seed, h) => {
+      await clean(page);
+      // The hidden chat panel holds a second copy of the log; use the visible one.
+      await page.waitForFunction(() => [...document.querySelectorAll('.chat-page-content .log .user')].length >= 2, null, { timeout: 30000 });
+      await h.settle(page, 1500);
+      await page.evaluate(() => {
+        const users = [...document.querySelectorAll('.chat-page-content .log .user')];
+        const u = users[users.length - 1]; const log = u.closest('.log');
+        log.scrollTop += u.getBoundingClientRect().top - log.getBoundingClientRect().top - 260;
+      });
+      await page.waitForTimeout(600);
+    },
     target: 'viewport',
   },
   {

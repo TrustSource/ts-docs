@@ -334,6 +334,15 @@ const shots = [
   },
 
   // ---------------------------------------------------------------- Knowledge
+  // Example Open Source Policy 1.0 was uploaded for this shot (notify: compliance managers) and activated.
+  {
+    id: `${K}/07-open-source-policy-1`,
+    doc: `${K}/07-open-source-policy.md`,
+    alt: 'The Open source policy page with the active policy Example Open Source Policy 1.0, its Active from date, the summary of changes, the View policy file link and the date of the last update.',
+    url: '/open_source_policy',
+    prepare: async (page, seed, h) => { await h.settle(page, 2500); await hide(page); },
+    target: { clip: { x: 211, y: 62, width: 1181, height: 230 } },
+  },
   {
     id: `${K}/05-algorithms-1`,
     doc: `${K}/05-algorithms.md`,

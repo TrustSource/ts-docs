@@ -22,9 +22,9 @@ Before your first question, the assistant shows the **Chat usage policy**:
 tick its three statements and select **Confirm**. In the full-page chat,
 **View policy** shows the policy again.
 
-📸 *Screenshot: the OSCAR chat panel open alongside a project module list, with a question and answer visible.*
+![The mAIfit project page with its module list and the AI Assistant panel docked on the right, showing the question Which formats can I export it in? and the start of the answer, with the message box and Send button below.](../../assets/images/v3/13-capabilities/01-oscar-chat-1.webp)
 
-📸 *Screenshot: the full-page chat view at /chat with a multi-turn conversation.*
+![The full-page chat at /chat with the View policy, Leave a feedback, Clear history and Reset session buttons, the end of the answer to the first question and the follow-up question Which formats can I export it in? with its answer.](../../assets/images/v3/13-capabilities/01-oscar-chat-2.webp)
 
 ## Editions
 
