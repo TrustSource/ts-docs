@@ -171,6 +171,8 @@ nav:
         - v3/06-administration/02-settings.md
         - Company Details: v3/06-administration/02a-company-details.md
         - Company Tags: v3/06-administration/02b-company-tags.md
+        - DeepScan Scaleout: v3/06-administration/02c-deepscan-scaleout.md
+        - Install the Access Role: v3/06-administration/02d-deepscan-scaleout-access-role.md
       - User Management: v3/06-administration/03-user-management.md
       - API Keys:
         - v3/06-administration/04-api-keys.md
@@ -239,6 +241,7 @@ nav:
       - Integration Issues: v3/11-troubleshooting-faq/04-integration-troubleshooting.md
       - SSO Issues: v3/11-troubleshooting-faq/05-sso-troubleshooting.md
       - Contact Support: v3/11-troubleshooting-faq/06-contact-support.md
+      - DeepScan Scaleout: v3/11-troubleshooting-faq/07-deepscan-scaleout.md
     - Capabilities:
       - v3/13-capabilities/index.md
       - OSCAR Chat: v3/13-capabilities/01-oscar-chat.md
