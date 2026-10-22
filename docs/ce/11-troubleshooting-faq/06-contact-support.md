@@ -43,7 +43,7 @@ Do **not** report security issues in public issues. Use GitHub's private vulnera
 
 ## Contribute
 
-Pull requests are welcome in the same repository. The README describes the development setup and the checks to run before opening a pull request. Contributions are licensed under the AGPL-3.0.
+Pull requests are welcome in the same repository. [CONTRIBUTING.md](https://github.com/TrustSource/ts-core-ce/blob/main/CONTRIBUTING.md) describes the development setup and the checks to run before opening a pull request. Contributions are licensed under the AGPL-3.0.
 
 ## More documents
 

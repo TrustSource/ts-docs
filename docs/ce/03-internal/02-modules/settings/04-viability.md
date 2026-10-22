@@ -6,7 +6,7 @@
 Viability asks: is a component still alive? ***TrustSource CE*** rates a component by repository activity indicators stored with the component (stars, forks and commits during the last year) and turns the rating into **OK**, **Warning** or **Violation**. On this tab you decide where the lines are drawn for this module.
 
 > [!WARNING]
-> TrustSource CE does not collect repository activity itself; it has no crawler and no connection to a component index. For most components no indicators are available, so the status you choose under **Status shown, if minimum confidence level not reached** applies. Set it to `OK` unless you want missing data to be flagged.
+> TrustSource CE does not collect repository activity itself; it has no crawler and no connection to a component index (planned for 1.1.0). For most components no indicators are available, so the status you choose under **Status shown, if minimum confidence level not reached** applies. Set it to `OK` unless you want missing data to be flagged.
 
 ## Switch it on
 

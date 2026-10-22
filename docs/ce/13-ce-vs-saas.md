@@ -44,7 +44,7 @@ These features are on the roadmap for CE. Dates are plans, not promises.
 | OBOM | 2.3.0 | Q4 2027 |
 | SSO and Identity Integration | 3.0.0 | Q1 2028 |
 
-See the [roadmap on GitHub](https://github.com/TrustSource/ts-core-ce/blob/main/ROADMAP.md) for the descriptions. Target dates are plans and can change.
+See the [roadmap on GitHub](https://github.com/TrustSource/ts-core-ce/blob/main/ROADMAP.md) for the descriptions.
 
 ## What works differently
 
