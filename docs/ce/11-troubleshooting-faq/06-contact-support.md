@@ -12,17 +12,18 @@
 
 Open an issue at [github.com/TrustSource/ts-core-ce/issues](https://github.com/TrustSource/ts-core-ce/issues). Search the existing issues first; your problem may already be known.
 
-Use the issue forms: choose the bug template for a problem and fill in every field. Feature requests and questions go through issues too.
+Use the issue forms: choose the **Bug report** form for a problem and fill in every field. Feature requests and questions go through issues too.
 
 Please include:
 
-1. The **TrustSource CE version** - shown at the bottom of the left sidebar, e.g. *TrustSource CE 1.0.0*.
-2. **How you run it** - the reference Docker Compose setup or your own, the host's CPU architecture (amd64 or ARM), and whether a reverse proxy is in front.
+1. The **TrustSource CE version** - shown at the bottom of the left sidebar, e.g. *TrustSource CE 1.0.3*.
+2. **How you run it** - the reference Docker Compose setup, your own Docker setup or from source, the host's CPU architecture (amd64 or ARM), and whether a reverse proxy is in front.
 3. The **page or feature** where the problem occurs.
 4. **Steps to reproduce** the problem.
-5. The **error message** as shown in the app (screenshot or text).
-6. The relevant **log lines** from `docker compose logs ts_core` (and `ts_legalcheck` for license check problems).
-7. Your **browser** and **OS**, for problems in the user interface.
+5. The **expected and actual result**.
+6. The **error message** as shown in the app (screenshot or text).
+7. The relevant **log lines** from `docker compose logs ts_core` (and `ts_legalcheck` for license check problems).
+8. Your **browser** and **OS**, for problems in the user interface.
 
 > [!WARNING]
 > GitHub issues are public. Before you post logs or screenshots, remove secrets and personal data: passwords, API keys, `TS_ENCRYPTION_KEY`, the contents of `.env`, email addresses, and the names of your projects and components if they are confidential. The app masks secrets in its `=> Config:` output, but other lines may still contain data you do not want to publish.
@@ -33,17 +34,17 @@ CE is maintained by one person, and support is best effort with no SLA.
 
 - **Security vulnerabilities and critical bugs** get a first response within 5 working days. Critical means that installation or start-up fails on a supported setup, data is lost or corrupted, or a core flow (login, import, analysis, reports) is broken for all users.
 - **Other bugs, feature requests and questions** get a first response at the latest in the next quarterly sprint.
-- Fixes are made as they come and released as patch versions. Only the latest release gets fixes, so upgrade first if you run an older version.
+- Fixes are made as they come and shipped in a patch or sprint release. Only the latest release gets fixes, so upgrade first if you run an older version.
 
 Commercial support is available through the TrustSource SaaS.
 
 ## Report a security vulnerability
 
-Do **not** report security issues in public issues. Use GitHub's private vulnerability reporting for the repository: [github.com/TrustSource/ts-core-ce](https://github.com/TrustSource/ts-core-ce), **Security → Report a vulnerability**.
+Do **not** report security issues in public issues. Use GitHub's private vulnerability reporting for the repository: [github.com/TrustSource/ts-core-ce](https://github.com/TrustSource/ts-core-ce), **Security > Report a vulnerability**.
 
 ## Contribute
 
-Pull requests are welcome in the same repository. [CONTRIBUTING.md](https://github.com/TrustSource/ts-core-ce/blob/main/CONTRIBUTING.md) describes the development setup and the checks to run before opening a pull request. Contributions are licensed under the AGPL-3.0.
+Pull requests are welcome in the same repository. The README describes the development setup; [CONTRIBUTING.md](https://github.com/TrustSource/ts-core-ce/blob/main/CONTRIBUTING.md) lists the checks to run before opening a pull request. Contributions are licensed under the AGPL-3.0.
 
 ## More documents
 

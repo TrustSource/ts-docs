@@ -2,7 +2,7 @@
 
 The **Knowledge** menu holds the reference data that ***TrustSource CE*** uses when it analyses your modules: the components it has seen, the infrastructure and commercial components it knows, the vulnerabilities reported for them, the license catalog and your company's open source policy. Every signed-in user can read these pages.
 
-All data lives in your own installation. The catalogs grow from the scans you import and from what your users enter; TrustSource CE does not download a public component index (planned for 1.1.0). Vulnerabilities come from OSV during analysis.
+All data lives in your own installation. The catalogs grow from the scans you import and from what your users enter; TrustSource CE does not download a public component index. Searching public registries is planned for 1.1.0. Vulnerabilities come from OSV during analysis.
 
 | Page | What it covers |
 |---|---|

@@ -37,12 +37,12 @@ These features are on the roadmap for CE. Dates are plans, not promises.
 
 | Feature | Version | Target |
 |---|---|---|
-| Registry search over the public Component Index | 1.1.0 | Q4 2026 |
-| Deep scan | 2.0.0 | Q1 2027 |
-| Mass scans | 2.1.0 | Q2 2027 |
-| Algorithms catalogue | 2.2.0 | Q3 2027 |
-| OBOM | 2.3.0 | Q4 2027 |
-| SSO and Identity Integration | 3.0.0 | Q1 2028 |
+| Registry (index API) - search public package registries | 1.1.0 | Dec 2026 |
+| Deep scan | 2.0.0 | Mar 2027 |
+| Mass scans | 2.1.0 | Jun 2027 |
+| Algorithms (catalog of cryptographic algorithms) | 2.2.0 | Sep 2027 |
+| OBOM | 2.3.0 | Dec 2027 |
+| IDM (SSO and identity integration) | 3.0.0 | Mar 2028 |
 
 See the [roadmap on GitHub](https://github.com/TrustSource/ts-core-ce/blob/main/ROADMAP.md) for the descriptions.
 
@@ -57,7 +57,7 @@ See the [roadmap on GitHub](https://github.com/TrustSource/ts-core-ce/blob/main/
 | End-of-life and viability data | CE has no data source for end-of-life dates or repository activity, so the end-of-life and viability checks mostly report no data or OK. |
 | Legal evaluation | Done by the bundled ts-legalcheck service. Without it, licenses stay unevaluated. |
 | License catalog | Holds license metadata and text, seeded with common licenses. Obligations and classification are not curated per license; the legal evaluation comes from ts-legalcheck. |
-| Support | Help and support links lead to the project's GitHub page. |
+| Support | Help and support links lead to the project's GitHub page. Support is best effort with no SLA; see the support policy in [Reporting a Problem](11-troubleshooting-faq/06-contact-support.md#response-times). |
 | Language | The UI is English only. |
 
 See [External services](01-installation-setup/04-external-services.md) for every outbound connection an installation makes.
