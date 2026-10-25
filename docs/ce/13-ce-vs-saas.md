@@ -17,22 +17,34 @@ For the SaaS documentation see [TrustSource (SaaS)](../v3/index.md).
 | Account types, plans and billing | Subscriptions, quotas and the **Account & Billing** area |
 | License features | Per-account switches that enable feature areas |
 | Enterprise Companies | Several companies managed under one enterprise account |
-| SSO and Identity Integration | Single sign-on through Keycloak, and login with GitHub or LinkedIn |
 | OSCAR | AI chat assistant for compliance questions |
 | Threat Model Agent and Threat Models | Generation and management of threat models (risks keep their threat-model fields in CE) |
 | CVD cases | Coordinated vulnerability disclosure case handling (ts-psirt) |
 | SOUP lists and MDR/IVDR classification | Medical device documentation |
-| DeepScan, Repository Scans and Mass Scans | File-level scanning of repositories by the TrustSource cloud |
 | OpenSSF Scorecard | Scorecard ratings of open source projects |
 | Trainings | Training content inside the app |
 | Zendesk support | Support tickets from the app |
 | SPDX tag-value and spreadsheet import | Further SBOM import formats |
 | License legal assessment | Curated obligations and classification per license, maintained by TrustSource |
-| OBOM | Operations bill of materials |
 | Risk decisions and history | **Decision** and **History** tabs of a risk (CE records decisions in the risk's own fields) |
 | Configurable risk assessment schemes | Company-, project- and module-specific scales and thresholds (CE uses one fixed scheme) |
 | Viability and Vulnerability activity reports | Report tiles in **Internal → Reports** (CE offers viability data via `GET /core/reports/viability`) |
 | API usage statistics | Usage figures for API keys under **Administration → API keys** |
+
+## Planned for CE
+
+These features are on the roadmap for CE. Dates are plans, not promises.
+
+| Feature | Version | Target |
+|---|---|---|
+| Registry (index API) - search public package registries | 1.1.0 | Dec 2026 |
+| Deep scan | 2.0.0 | Mar 2027 |
+| Mass scans | 2.1.0 | Jun 2027 |
+| Algorithms (catalog of cryptographic algorithms) | 2.2.0 | Sep 2027 |
+| OBOM | 2.3.0 | Dec 2027 |
+| IDM (SSO and identity integration) | 3.0.0 | Mar 2028 |
+
+See the [roadmap on GitHub](https://github.com/TrustSource/ts-core-ce/blob/main/ROADMAP.md) for the descriptions.
 
 ## What works differently
 
@@ -45,7 +57,7 @@ For the SaaS documentation see [TrustSource (SaaS)](../v3/index.md).
 | End-of-life and viability data | CE has no data source for end-of-life dates or repository activity, so the end-of-life and viability checks mostly report no data or OK. |
 | Legal evaluation | Done by the bundled ts-legalcheck service. Without it, licenses stay unevaluated. |
 | License catalog | Holds license metadata and text, seeded with common licenses. Obligations and classification are not curated per license; the legal evaluation comes from ts-legalcheck. |
-| Support | Help and support links lead to the project's GitHub page. |
+| Support | Help and support links lead to the project's GitHub page. Support is best effort with no SLA; see the support policy in [Reporting a Problem](11-troubleshooting-faq/06-contact-support.md#response-times). |
 | Language | The UI is English only. |
 
 See [External services](01-installation-setup/04-external-services.md) for every outbound connection an installation makes.
