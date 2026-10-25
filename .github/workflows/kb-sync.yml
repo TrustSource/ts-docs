@@ -1,0 +1,62 @@
+name: kb-sync
+# Pushes the help pages into the chatbot knowledge base: markdown + metadata into S3, then a KB ingestion.
+# Needs the repository variables HELP_KB_ROLE_ARN, HELP_KB_BUCKET, HELP_KB_ID, HELP_KB_DATA_SOURCE_ID
+# and HELP_KB_REGION (outputs of the ts-help-kb-source stack in ts-app/awscf).
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - docs/**
+      - tools/kb/**
+      - .github/workflows/kb-sync.yml
+  workflow_dispatch:
+
+# One ingestion at a time - a second StartIngestionJob while one runs is rejected.
+concurrency:
+  group: kb-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      AWS_REGION: ${{ vars.HELP_KB_REGION }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: python3 tools/kb/build_kb.py --out build/kb
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.HELP_KB_ROLE_ARN }}
+          aws-region: ${{ vars.HELP_KB_REGION }}
+      - name: Sync into the KB bucket
+        run: aws s3 sync build/kb "s3://${{ vars.HELP_KB_BUCKET }}/" --delete --only-show-errors
+      - name: Start and wait for the ingestion
+        run: |
+          set -euo pipefail
+          KB="${{ vars.HELP_KB_ID }}"; DS="${{ vars.HELP_KB_DATA_SOURCE_ID }}"
+          JOB=$(aws bedrock-agent start-ingestion-job --knowledge-base-id "$KB" --data-source-id "$DS" \
+            --query ingestionJob.ingestionJobId --output text)
+          echo "ingestion job $JOB started"
+          for i in $(seq 1 90); do
+            STATUS=$(aws bedrock-agent get-ingestion-job --knowledge-base-id "$KB" --data-source-id "$DS" \
+              --ingestion-job-id "$JOB" --query ingestionJob.status --output text)
+            case "$STATUS" in
+              COMPLETE)
+                aws bedrock-agent get-ingestion-job --knowledge-base-id "$KB" --data-source-id "$DS" \
+                  --ingestion-job-id "$JOB" --query ingestionJob.statistics --output table
+                exit 0 ;;
+              FAILED|STOPPED)
+                aws bedrock-agent get-ingestion-job --knowledge-base-id "$KB" --data-source-id "$DS" \
+                  --ingestion-job-id "$JOB" --query ingestionJob.failureReasons --output text
+                exit 1 ;;
+            esac
+            sleep 20
+          done
+          echo "ingestion job $JOB still $STATUS after 30 min"; exit 1

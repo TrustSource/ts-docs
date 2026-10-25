@@ -10,3 +10,4 @@ tools/screenshots/.auth-*.json
 tools/screenshots/.seed*.json
 tools/screenshots/.cache/
 tools/screenshots/.mask-*.json
+build/
