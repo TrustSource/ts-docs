@@ -22,6 +22,7 @@ The **Settings** page ("General settings") is the entry point for company-wide c
 | **Encryption** | Export controls management. | `account_admin`, `compliance_manager`, `company_security_manager` |
 | **Quality** | Test requirements. | `account_admin`, `company_security_manager`, `compliance_manager` |
 | **Company tags** | The tag list for projects and modules. See [Company tags](02b-company-tags.md). | `account_admin`, `portfolio_manager`, `manager`, `company_security_manager`, `compliance_manager` |
+| **DeepScan Scaleout** | Run DeepScan in a private network in your own AWS account. Enterprise accounts only. See [DeepScan Scaleout](02c-deepscan-scaleout.md). | `account_admin` |
 | **Private licenses** | Licenses that are not in the public database. Only shown for Enterprise and Medical accounts. | `account_admin`, `compliance_manager` |
 | **Legal templates** | Company templates for the legal requirements of projects and modules. See [Legal templates](#legal-templates). | `account_admin`, `compliance_manager` |
 | **Private algorithms** | Cryptographic algorithms that are not in the public catalog. | `account_admin`, `company_security_manager` |
