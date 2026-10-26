@@ -34,7 +34,7 @@ use-cases and details.
 | Page | What it covers |
 |---|---|
 | [Generate or Import a Threat Model](01-create-threat-model.md) | Starting a run, choosing a stage, importing and downloading documents. |
-| [Data Flow Diagram & Threat Detail](02-threat-detail-stride-linddun.md) | Reading the diagram and the threat side panel (STRIDE / ENISA / CWE). |
+| [Data Flow Diagram & Threat Detail](02-threat-detail-stride-linddun.md) | Reading the diagram, the threat side panel (STRIDE / ENISA / CWE) and the Model review panel for the agent's open questions. |
 | [Mitigations & Status](03-mitigations-status.md) | Where countermeasures show up and how their status is tracked. |
 | [Run Modes](04-run-modes.md) | Complete run vs. individual stages, and when to use each. |
 
@@ -50,4 +50,5 @@ It is a paid course.
 
 - [Threat Modeling Agent](../../13-capabilities/07-threat-model-agent.md) - capability overview and guarantees
 - [Application goals upload](../01-projects/settings/01-general.md) - the
-  `architecture.md` upload the agent reads when building the model
+  `architecture.md` upload the agent reads when building the model; your
+  answers from the Model review panel are added there
