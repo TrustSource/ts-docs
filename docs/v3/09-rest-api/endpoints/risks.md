@@ -11,6 +11,7 @@
 - Record a documented decision - accept, transfer, a temporary exception until a date - with its rationale.
 - Report the risk stock and how it develops, or export the register to a spreadsheet (`/reports/*`, `format=csv`).
 - Progress tasks on a risk as engineering work lands.
+- Write the results of a tool run - hundreds of risks with countermeasures - in a few requests (`/batch`).
 
 ## Operations
 
@@ -18,6 +19,7 @@
 |---|---|---|---|
 | GET | `/core/risks` | List risks | `manager`, `compliance_manager`, `portfolio_manager`, `company_security_manager` |
 | POST | `/core/risks` | Create risk | `developer`, `manager`, `portfolio_manager`, `compliance_manager`, `company_security_manager` |
+| POST | `/core/risks/batch` | Create, update or upsert up to 100 risks | `developer`, `manager`, `portfolio_manager`, `compliance_manager`, `company_security_manager` |
 | GET | `/core/risks/{risk_id}` | Get risk details | `manager`, `compliance_manager`, `portfolio_manager`, `company_security_manager` |
 | POST | `/core/risks/{risk_id}` | Update risk | `developer`, `manager`, `portfolio_manager`, `compliance_manager`, `company_security_manager` |
 | PATCH | `/core/risks/{risk_id}` | Update risk (PATCH) | `developer`, `manager`, `portfolio_manager`, `compliance_manager`, `company_security_manager` |
@@ -124,6 +126,46 @@ A project with `autoCreateCveRisks` (see [Projects](projects.md#automatic-risks)
 Both reports take the same `projectId`, `moduleId`, `state`, `origin` and `treatment` filters as the list and are company-wide without them. The inventory counts `total`, `untreated`, `inTreatment`, `open` (`untreated + inTreatment`) and `resolved` (the `done` class), so `open + resolved = total`; each class count equals the length of `GET /core/risks?treatment=<class>` with the same filters. In the trend, `resolved` counts risks that became done. The trend needs `from`; `to` defaults to now, `granularity` to `month` (or `week`), and a range may span at most 60 months or 261 weeks. Buckets are UTC calendar months or ISO weeks, `[start, end)`. Risks resolved before 3.3.23, and risks that became done through the 3.3.28 migration without a recorded state change, have no resolution date; the trend counts them in `unknownResolutionDate` instead of guessing a bucket.
 
 `format=csv` on either report, and on `GET /core/risks`, returns `text/csv` (RFC 4180, header row). On the list it exports the whole register - every matching risk, up to 50,000 - rather than one page; its `generalApproach` and `treatment` columns follow `state`. Cells that a spreadsheet would run as a formula are prefixed with `'`.
+
+## Writing many risks at once
+
+`POST /core/risks/batch` creates, updates or upserts up to 100 risks of one project in one request, together with their countermeasures. It is meant for tools that write many risks per run, e.g. the threat-model agent. Same scopes as `POST /core/risks`.
+
+```json
+{
+  "projectId": "<project id>",
+  "source": "tma",
+  "runId": "<optional, stored in the risk history>",
+  "items": [
+    {"ref": "t-1", "op": "upsert", "externalKey": "t-1", "moduleId": "<module id>",
+     "risk": {"name": "...", "riskProperties": {"...": "...", "countermeasures": [{"countermeasure": "...", "otmMitigationId": "m-1"}]}},
+     "countermeasureMode": "merge"},
+    {"ref": "t-2", "op": "update", "riskId": "<risk id>", "patch": {"riskProperties": {"state": "out-of-scope"}}}
+  ]
+}
+```
+
+| Field | Meaning |
+|---|---|
+| `source` | Namespace of `externalKey`: `tma` or `import`. |
+| `op` | `create`, `update` or `upsert`. |
+| `externalKey` | Your stable key for the risk. Required for `upsert`; an `upsert` with a key that already exists updates that risk, so repeating a request never creates a duplicate. |
+| `riskId` | Identifies the risk for `update`; `externalKey` is the fallback. |
+| `risk` / `patch` | The full risk for `create` and `upsert`; for `update` only the fields to change, merged one level deep into `riskProperties`. |
+| `countermeasureMode` | `replace` sets the list as sent; `merge` matches by `otmMitigationId` (or the name), adds new measures and never changes measures that are `completed`, `verified` or `ok`. `merge` with an empty list keeps everything. |
+| `moduleId` | Must be a module of the project. |
+
+Each item is validated like a single write (schema, decision, risk assessment scheme) and is recorded in the risk's history. A risk in a state a person decided keeps its fields: only a countermeasure `merge` is applied (`protectedState: true`), otherwise the item fails with `protected_state`.
+
+The answer is `200` with one result per item, in request order, whatever the outcome of the single items:
+
+```json
+{"summary": {"created": 1, "updated": 0, "unchanged": 0, "failed": 1},
+ "results": [{"ref": "t-1", "index": 0, "status": "created", "riskId": "..."},
+             {"ref": "t-2", "index": 1, "status": "failed", "error": {"code": "protected_state", "message": "..."}}]}
+```
+
+`status` is `created`, `updated`, `unchanged` or `failed`. Error codes: `validation_failed`, `scheme_violation`, `decision_rejected`, `not_found`, `protected_state`, `duplicate`, `write_failed`. The request as a whole answers `400` (malformed, unknown `source`, project not in your company), `403` (scope) or `413` (more than 100 items). Send larger sets in several requests.
 
 ## Authentication
 

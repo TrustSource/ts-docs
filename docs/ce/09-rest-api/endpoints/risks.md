@@ -18,6 +18,7 @@ Delete scopes: `manager`, `account_admin`, `portfolio_manager`, `company_securit
 |---|---|---|---|
 | GET | `/core/risks` | List risks of a project or module | Read |
 | POST | `/core/risks` | Create risk | Write |
+| POST | `/core/risks/batch` | Create, update or upsert up to 100 risks | Write |
 | GET | `/core/risks/{risk_id}` | Get risk details | Read |
 | POST | `/core/risks/{risk_id}` | Update risk | Write |
 | DELETE | `/core/risks/{risk_id}` | Delete risk | Delete |
@@ -56,6 +57,46 @@ Create answers `201` with `{"riskId": "..."}`. `POST /core/risks/{risk_id}` merg
 Risks that the SARIF import maintains carry `sourceRefs`, `autoKey`, `autoTool` and `autoCwe`. These fields are read-only.
 
 `DELETE /core/risks/{risk_id}` answers `400` while the risk has tasks, unless you add `?force=true`; then the tasks are deleted too.
+
+## Writing many risks at once
+
+`POST /core/risks/batch` creates, updates or upserts up to 100 risks of one project in one request, together with their countermeasures. It is meant for tools that write many risks per run, e.g. the threat-model agent. Same scopes as `POST /core/risks`.
+
+```json
+{
+  "projectId": "<project id>",
+  "source": "tma",
+  "runId": "<optional, stored in the risk history>",
+  "items": [
+    {"ref": "t-1", "op": "upsert", "externalKey": "t-1", "moduleId": "<module id>",
+     "risk": {"name": "...", "riskProperties": {"...": "...", "countermeasures": [{"countermeasure": "...", "otmMitigationId": "m-1"}]}},
+     "countermeasureMode": "merge"},
+    {"ref": "t-2", "op": "update", "riskId": "<risk id>", "patch": {"riskProperties": {"state": "out-of-scope"}}}
+  ]
+}
+```
+
+| Field | Meaning |
+|---|---|
+| `source` | Namespace of `externalKey`: `tma` or `import`. |
+| `op` | `create`, `update` or `upsert`. |
+| `externalKey` | Your stable key for the risk. Required for `upsert`; an `upsert` with a key that already exists updates that risk, so repeating a request never creates a duplicate. |
+| `riskId` | Identifies the risk for `update`; `externalKey` is the fallback. |
+| `risk` / `patch` | The full risk for `create` and `upsert`; for `update` only the fields to change, merged one level deep into `riskProperties`. |
+| `countermeasureMode` | `replace` sets the list as sent; `merge` matches by `otmMitigationId` (or the name), adds new measures and never changes measures that are `completed`, `verified` or `ok`. `merge` with an empty list keeps everything. |
+| `moduleId` | Must be a module of the project. |
+
+Each item is validated like a single write (schema, decision, risk assessment scheme) and is recorded in the risk's history. A risk in a state a person decided keeps its fields: only a countermeasure `merge` is applied (`protectedState: true`), otherwise the item fails with `protected_state`.
+
+The answer is `200` with one result per item, in request order, whatever the outcome of the single items:
+
+```json
+{"summary": {"created": 1, "updated": 0, "unchanged": 0, "failed": 1},
+ "results": [{"ref": "t-1", "index": 0, "status": "created", "riskId": "..."},
+             {"ref": "t-2", "index": 1, "status": "failed", "error": {"code": "protected_state", "message": "..."}}]}
+```
+
+`status` is `created`, `updated`, `unchanged` or `failed`. Error codes: `validation_failed`, `scheme_violation`, `decision_rejected`, `not_found`, `protected_state`, `duplicate`, `write_failed`. The request as a whole answers `400` (malformed, unknown `source`, project not in your company), `403` (scope) or `413` (more than 100 items). Send larger sets in several requests.
 
 ## Tasks
 
