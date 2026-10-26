@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > **Required license feature:** `threat`
-> **Service version at time of writing:** v0.32.0 
+> **Service version at time of writing:** v0.45.0 (with ***TrustSource*** 3.3.87)
 
 The **Threat Modeling Agent** is the automated engine behind every
 project's threat model. It reads the current project state
@@ -13,6 +13,12 @@ compares it against the last agent run, and produces:
   (only for new or changed components; unchanged parts are not
   re-analysed).
 - **Proposed countermeasures** for every new threat.
+- **Baseline controls**: generic supply-chain and hygiene controls
+  (pinned dependencies with a defined update cadence, a private mirror
+  or registry, provenance and signature checks, SBOM generation,
+  secrets in CI), listed once per project and mapped to the SSDF and
+  the CRA Annex I, instead of being repeated as a threat for every
+  package.
 - An updated **OTM (Open Threat Model) v0.2.0** document per run,
   stored as an audit trail.
 
@@ -21,6 +27,35 @@ compares it against the last agent run, and produces:
 Risks that the agent creates in the risk register carry
 `origin: TMA Assessment` so they are distinguishable from manually
 raised risks.
+
+## What the agent models
+
+- **Modules** of the project are the main elements of the model. Their
+  libraries are analysed as part of the module, together with the
+  libraries' known vulnerabilities; a library is not a separate element.
+- **Operating-system packages** of a container image or firmware module
+  are grouped into one element per image ("OS packages of …").
+- **Runtime infrastructure** (databases, message brokers, runtimes,
+  container base images) and COTS components get their own element.
+- **Datastores** come from evidence: a database, cache, search or
+  message-broker driver in a module's direct dependencies (recognised
+  for npm, Maven/Gradle, PyPI, Go, NuGet, Composer, Cargo, Dart/Flutter,
+  Swift/CocoaPods, Conan/vcpkg and VB6), a database server in the
+  project, or a statement in the project's Application goals.
+  - A **self-hosted database** is modelled through its server: the
+    application talks to the server component (for example a
+    `mysql-server` module or a `postgres` image), the server writes to
+    the datastore, and the datastore sits in the server's trust zone.
+    Managed services such as S3 or DynamoDB are connected directly;
+    embedded stores such as SQLite stay inside their module.
+  - A datastore without such evidence is kept but marked **inferred**
+    and listed in the [Model review](../03-internal/08-threat-models/02-threat-detail-stride-linddun.md#model-review)
+    panel for you to confirm, correct or remove.
+- **Impact classes `critical` and `existential`** are only proposed
+  when a threat is backed by evidence: a known vulnerability of the
+  element, a SARIF/CWE finding, an OBOM access finding or a
+  cryptography finding. Without such evidence a threat is rated at
+  most `high`.
 
 ## Execution modes
 
@@ -58,22 +93,29 @@ pipeline.
 - **Auditable**: every run stores an OTM document linked via
   `tmRunId` and `previousTmRunId`, so the model's full history is
   recoverable.
-- **Incremental**: unchanged components produce zero LLM calls; a
-  quiet project is a cheap project.
+- **Incremental**: unchanged components produce zero LLM calls, and
+  the system model is reused when its inputs (inventory, Application
+  goals, OBOM data) have not changed; a quiet project is a cheap
+  project.
+- **Robust**: one component the analysis cannot handle is skipped and
+  the run continues. If a run stops before its results are saved, the
+  next run picks up every component that has not been analysed yet.
 
-## Model-improvement summary
+## Model review
 
-Beyond the threat list, each run also produces an
-**improvement summary**: a deterministic set of hints on how to
-sharpen the input to the next run: modules without a description,
-modules without a scan, components that landed in the fallback trust
-zone, assets without CIA classification, absent infrastructure
-evidence, and open questions the model could not resolve. The
-summary travels with the OTM (`project.attributes.improvementHints`),
-giving the security / compliance owner a short checklist for the next
-iteration. The app has no separate list for it: open a run and switch
-the diagram from **Graph** to **Raw** to read the hints in the OTM
-document.
+Beyond the threats, each run records what would sharpen the next one:
+**open questions** the agent could not decide (for example which of
+two database servers a datastore belongs to), **assumptions** it made
+without evidence, **improvement hints** (modules without a description
+or a scan, components in the fallback trust zone, missing
+infrastructure or OBOM evidence, no architecture document), **inferred
+datastores** and the **evidence sources** the model was built from.
+
+The threat model's detail page lists these in the
+[Model review](../03-internal/08-threat-models/02-threat-detail-stride-linddun.md#model-review)
+panel. Your answers and confirmations are written to the project's
+Application goals, which the agent reads on its next run; the model is
+then rebuilt with them.
 
 ## Editions
 

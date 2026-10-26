@@ -37,6 +37,13 @@ act on here.
   that opens the side panel's vulnerability list.
 - Trust zones can be resized by dragging a corner (when you have edit
   rights).
+- **Datastores of self-hosted databases** are drawn behind their server:
+  the application's flow ends at the database server component, which
+  in turn writes to the datastore in the same trust zone. Managed
+  services such as S3 are connected directly.
+- Elements with open review items carry an amber **? N** badge (toggle
+  **Review** in the Overlays toolbar); clicking it opens the
+  [Model review](#model-review) panel at that item.
 
 ## Review status
 
@@ -64,8 +71,47 @@ See [Run Modes](04-run-modes.md#what-the-agent-will-not-touch).
 
 ![The Data Flow Diagram of a boostME threat model with the component auth-service selected: the rest of the diagram is faded, the two connected flows are labelled, and the side panel shows its type, trust zone, connections and the first of its 30 threats.](../../../assets/images/v3/03-internal/08-threat-models/02-threat-detail-stride-linddun-1.webp)
 
+## Model review
+
+Next to the diagram, the **Model review** panel lists what the
+[Threat Modeling Agent](../../13-capabilities/07-threat-model-agent.md#model-review)
+could not decide or would like to know, so you can correct the model
+without editing the diagram. Toggle it with **Review (N)** in the
+Diagram heading; N counts the unanswered questions, assumptions and
+inferred datastores. The panel opens on its own when a model has review
+items.
+
+| Section | What you can do |
+|---|---|
+| **Open questions** | Answer each in a short text box. |
+| **Assumptions** | **Confirm**, or **Correct** with a short text. |
+| **Improvement hints** | Read-only, grouped by target (the project or a module). Module hints link to the element in the diagram and to the module's settings; architecture hints link to the project settings. |
+| **Inferred datastores** | Datastores the agent added without dependency, server or document evidence. **Confirm**, **Remove** (with an optional reason) or **Correct**. |
+| **Evidence sources** | What the model was built from; collapsed, read-only. |
+
+**Answers go into the project's Application goals.** Each answer or
+confirmation becomes one line in a section *Clarifications for the
+threat model* at the end of the project's
+[Application goals](../01-projects/settings/01-general.md); answering
+the same item again replaces its line, and the rest of the text stays
+unchanged. The text is checked like an `architecture.md` upload
+(size limit, screening for prompt-injection content); a rejected
+answer is shown in the panel and nothing is saved.
+
+Answered items show "Answered - applied on the next run": the agent
+reads the Application goals on its next run and rebuilds the model with
+your answers. **Run model step now** rebuilds only the model, without
+regenerating risks or countermeasures; it is disabled while a run is in
+progress.
+
+Only `manager` and `compliance_manager` can answer; everyone else sees
+the panel read-only. A model without review items shows "The agent has
+no open questions for this model." Review information is kept when a
+model is exported to or imported from OTM or TM-BOM.
+
 ## Related
 
 - [Mitigations & Status](03-mitigations-status.md) - tracking countermeasures
 - [Run Modes](04-run-modes.md) - re-eliciting threats via Generate risks
+- [Application goals](../01-projects/settings/01-general.md) - where your review answers are stored
 - [Background: Product Security](../../../shared/background/05-product-security.md)
