@@ -29,15 +29,16 @@ Generate dialog, or trigger (and re-trigger) separately from a model's
 
 | Stage | What it does |
 |---|---|
-| **Build model** | Rebuilds the system model from the current project inventory: trust zones, components, data flows, assets. |
+| **Build model** | Rebuilds the system model from the current project inventory and the project's Application goals: trust zones, components, data flows, datastores, assets. When nothing it reads has changed since the last run, the stored model is reused. |
 | **Generate risks** | Runs STRIDE analysis on new / changed components in the system model and records the threats it finds. |
 | **Develop countermeasures** | For every agent risk that has no countermeasure yet, proposes one to three countermeasures with a standards reference, an estimated risk reduction, and a validation method. Risks that already have a countermeasure, or that carry a human decision, are skipped. |
 
 Use the individual stages when you want to
 
 - **review the system model before threats are elicited**: Build model
-  produces the model; look it over in the DFD viewer, sharpen the
-  classifications where needed, then trigger Generate risks;
+  produces the model; look it over in the DFD viewer, answer the
+  questions in the [Model review](02-threat-detail-stride-linddun.md#model-review)
+  panel, run **Run model step now** if needed, then trigger Generate risks;
 - **re-elicit threats after new information**: you added a new
   external interface or corrected a component's trust zone and want
   the STRIDE analysis re-done without touching countermeasures;
@@ -61,13 +62,19 @@ This has two practical consequences:
 
 - You can trigger a refresh **whenever** you are unsure whether the
   model still reflects reality; worst case, nothing happens.
-- When you run **Generate risks** on its own, a module in which the
-  STRIDE analysis found no threat is marked as reviewed with nothing
-  found on that date, and is skipped by later runs of this stage. The
-  marker expires after 60 days by default, so quiet parts of the
-  project are still periodically re-examined. **Run all** does not use
-  the marker, and infrastructure and COTS components are always
-  re-analysed while they have no risk.
+- A module in which the STRIDE analysis found no threat is marked as
+  reviewed with nothing found on that date, by **Run all** as well as by
+  **Generate risks**. When you run **Generate risks** on its own, such a
+  module is skipped by later runs of this stage; the marker expires
+  after 60 days by default, so quiet parts of the project are still
+  periodically re-examined. Infrastructure and COTS components that
+  already have agent risks are not analysed again.
+- If a run stops before its results are saved (for example while
+  writing the risks), the next run analyses every component that has
+  neither threats in the model, nor the reviewed marker, nor an agent
+  risk. Nothing is lost by re-running.
+- A component the analysis cannot handle is skipped with a note in the
+  run log; the rest of the run completes.
 
 ## What the agent will not touch
 
